@@ -19,7 +19,7 @@
         </el-form-item>
       </el-form>
       <div style="text-align: right;">
-        还没有账号？请 <a href="/register">注册</a>
+        还没有账号？请 <a href="/register">注册</a><div style="margin-top:8px;color:#888">演示账号：admin/admin123（管理员）</div>
       </div>
     </div>
 

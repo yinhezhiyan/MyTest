@@ -6,6 +6,8 @@ import com.example.service.ExerciseService;
 import com.github.pagehelper.PageInfo;
 import jakarta.annotation.Resource;
 import org.springframework.web.bind.annotation.*;
+import jakarta.servlet.http.HttpServletRequest;
+import com.example.utils.AuthUtils;
 
 @RestController
 @RequestMapping("/api/exercises")
@@ -15,13 +17,13 @@ public class ExerciseController {
     private ExerciseService exerciseService;
 
     @PostMapping
-    public Result add(@RequestBody Exercise exercise) { exerciseService.add(exercise); return Result.success(); }
+    public Result add(@RequestBody Exercise exercise, HttpServletRequest request) { AuthUtils.requireAdmin(request); exerciseService.add(exercise); return Result.success(); }
 
     @PutMapping
-    public Result update(@RequestBody Exercise exercise) { exerciseService.updateById(exercise); return Result.success(); }
+    public Result update(@RequestBody Exercise exercise, HttpServletRequest request) { AuthUtils.requireAdmin(request); exerciseService.updateById(exercise); return Result.success(); }
 
     @DeleteMapping("/{id}")
-    public Result delete(@PathVariable Integer id) { exerciseService.deleteById(id); return Result.success(); }
+    public Result delete(@PathVariable Integer id, HttpServletRequest request) { AuthUtils.requireAdmin(request); exerciseService.deleteById(id); return Result.success(); }
 
     @GetMapping("/{id}")
     public Result byId(@PathVariable Integer id) { return Result.success(exerciseService.selectById(id)); }

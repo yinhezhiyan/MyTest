@@ -18,8 +18,18 @@ const router = createRouter({
         { path: 'recommend-logs', component: () => import('@/views/manager/RecommendLogs.vue') }
       ]
     },
-    { path: '/login', component: () => import('@/views/Login.vue') }
+    { path: '/login', component: () => import('@/views/Login.vue') },
+    { path: '/register', component: () => import('@/views/Register.vue') }
   ]
 })
 
 export default router
+
+router.beforeEach((to, from, next) => {
+  const token = localStorage.getItem('system-token')
+  if (to.path.startsWith('/manager') && !token) {
+    next('/login')
+    return
+  }
+  next()
+})
