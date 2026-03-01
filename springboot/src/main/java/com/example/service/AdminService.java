@@ -27,7 +27,7 @@ public class AdminService {
     public void add(Admin admin) {
         Admin dbAdmin = adminMapper.selectByUsername(admin.getUsername());
         if (ObjectUtil.isNotNull(dbAdmin)) {
-            throw new CustomException("用户不存在");
+            throw new CustomException("用户名已存在");
         }
         if (ObjectUtil.isEmpty(admin.getPassword())) {
             admin.setPassword("admin");

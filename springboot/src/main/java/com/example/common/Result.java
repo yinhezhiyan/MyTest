@@ -14,7 +14,7 @@ public class Result {
 
     public static Result success() {
         Result result = new Result();
-        result.setCode("200");
+        result.setCode(ResultCode.SUCCESS);
         result.setMsg("请求成功");
         return result;
     }
@@ -27,14 +27,14 @@ public class Result {
 
     public static Result error() {
         Result result = new Result();
-        result.setCode("500");
+        result.setCode(ResultCode.ERROR);
         result.setMsg("请求失败");
         return result;
     }
 
     public static Result error(String msg) {
         Result result = new Result();
-        result.setCode("500");
+        result.setCode(ResultCode.ERROR);
         result.setMsg(msg);
         return result;
     }
