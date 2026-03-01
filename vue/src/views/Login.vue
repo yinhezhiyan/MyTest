@@ -52,11 +52,12 @@
     formRef.value.validate((valid => {
       if (valid) {
         // 调用后台的接口
-        request.post('/login', data.form).then(res => {
+        request.post('/api/auth/login', data.form).then(res => {
           if (res.code === '200') {
             ElMessage.success("登录成功")
             router.push('/manager/home')
-            localStorage.setItem('system-user', JSON.stringify(res.data))
+            localStorage.setItem('system-token', res.data.token)
+            localStorage.setItem('system-user', JSON.stringify(res.data.user))
           } else {
             ElMessage.error(res.msg)
           }

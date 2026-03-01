@@ -34,7 +34,27 @@
               <el-icon><User /></el-icon>
               <span>管理员信息</span>
             </el-menu-item>
+            <el-menu-item index="/manager/users">
+              <el-icon><User /></el-icon>
+              <span>学生用户</span>
+            </el-menu-item>
+            <el-menu-item index="/manager/exercises">
+              <el-icon><Document /></el-icon>
+              <span>题库管理</span>
+            </el-menu-item>
+            <el-menu-item index="/manager/knowledge">
+              <el-icon><Collection /></el-icon>
+              <span>知识点管理</span>
+            </el-menu-item>
+            <el-menu-item index="/manager/recommend-logs">
+              <el-icon><DataLine /></el-icon>
+              <span>推荐日志</span>
+            </el-menu-item>
           </el-sub-menu>
+          <el-menu-item index="/manager/recommend">
+            <el-icon><MagicStick /></el-icon>
+            <span>我的推荐</span>
+          </el-menu-item>
           <el-menu-item @click="logout">
             <el-icon><SwitchButton /></el-icon>
             <span>退出系统</span>
@@ -70,7 +90,8 @@ const updateUser = () => {
 const logout = () => {
   router.push('/login')
   ElMessage.success('退出成功')
-  localStorage.removeItem('code2026-user')
+  localStorage.removeItem('system-user')
+  localStorage.removeItem('system-token')
 }
 </script>
 
