@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.mapper.RecommendationLogMapper">
+    <insert id="insert" parameterType="com.example.entity.RecommendationLog" useGeneratedKeys="true" keyProperty="id">
+        insert into recommendation_log(user_id, exercise_id, cf_score, kg_score, hybrid_score, reason)
+        values(#{userId}, #{exerciseId}, #{cfScore}, #{kgScore}, #{hybridScore}, #{reason})
+    </insert>
+</mapper>
