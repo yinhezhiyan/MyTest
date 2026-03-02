@@ -18,6 +18,7 @@ public class ExerciseService {
     public void updateById(Exercise exercise) { exerciseMapper.updateById(exercise); }
     public void deleteById(Integer id) { exerciseMapper.deleteById(id); }
     public Exercise selectById(Integer id) { return exerciseMapper.selectById(id); }
+    public Exercise selectRandomBySubject(String subject) { return exerciseMapper.selectRandomBySubject(subject); }
     public List<Exercise> selectAll(Exercise exercise) { return exerciseMapper.selectAll(exercise); }
     public PageInfo<Exercise> selectPage(Exercise exercise, Integer pageNum, Integer pageSize) {
         PageHelper.startPage(pageNum, pageSize);
