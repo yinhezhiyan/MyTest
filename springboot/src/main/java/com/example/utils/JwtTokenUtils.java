@@ -21,19 +21,26 @@ public class JwtTokenUtils {
     @Value("${jwt.expire-hours:24}")
     private Integer expireHours;
 
-    public String generateToken(Integer userId, String username, String role, String subject) {
+    public String generateToken(Integer userId, String username, String role) {
         Date now = new Date();
         Date expireAt = DateUtil.offsetHour(now, expireHours);
         Map<String, Object> payload = new HashMap<>();
         payload.put("userId", userId);
         payload.put("username", username);
         payload.put("role", role);
-        payload.put("subject", subject);
         payload.put("iat", now.getTime());
         payload.put("exp", expireAt.getTime());
         return JWTUtil.createToken(payload, secret.getBytes(StandardCharsets.UTF_8));
     }
 
-    public JWT parse(String token) { return StrUtil.isBlank(token) ? null : JWTUtil.parseToken(token); }
-    public boolean verify(String token) { return StrUtil.isNotBlank(token) && JWTUtil.verify(token, secret.getBytes(StandardCharsets.UTF_8)); }
+    public JWT parse(String token) {
+        if (StrUtil.isBlank(token)) {
+            return null;
+        }
+        return JWTUtil.parseToken(token);
+    }
+
+    public boolean verify(String token) {
+        return StrUtil.isNotBlank(token) && JWTUtil.verify(token, secret.getBytes(StandardCharsets.UTF_8));
+    }
 }

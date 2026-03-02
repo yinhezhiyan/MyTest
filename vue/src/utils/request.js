@@ -28,11 +28,6 @@ request.interceptors.response.use(response => {
     localStorage.removeItem('system-user')
     router.push('/login')
   }
-  if (res.code === '403') {
-    ElMessage.error(res.msg || '无权限访问')
-    const user = JSON.parse(localStorage.getItem('system-user') || '{}')
-    router.push(user.role === 'ADMIN' ? '/admin/home' : '/student/dashboard')
-  }
   return res
 }, error => Promise.reject(error))
 

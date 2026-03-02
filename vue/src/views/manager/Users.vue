@@ -24,7 +24,7 @@ const query = reactive({ username: '', role: 'STUDENT' })
 const tableData = ref([])
 
 const load = () => {
-  request.get('/api/admin/users', { params: { ...query, pageNum: 1, pageSize: 50 } }).then(res => {
+  request.get('/api/users/page', { params: { ...query, pageNum: 1, pageSize: 50 } }).then(res => {
     tableData.value = res.data?.list || []
   })
 }

@@ -7,7 +7,6 @@
         select * from knowledge_point
         <where>
             <if test="name != null and name != ''"> and name like concat('%', #{name}, '%')</if>
-            <if test="subject != null and subject != ''"> and subject = #{subject}</if>
         </where>
         order by id desc
     </select>
@@ -15,11 +14,11 @@
         select * from knowledge_point where id = #{id}
     </select>
     <insert id="insert" parameterType="com.example.entity.KnowledgePoint" useGeneratedKeys="true" keyProperty="id">
-        insert into knowledge_point(name, description, parent_id, subject)
-        values(#{name}, #{description}, #{parentId}, #{subject})
+        insert into knowledge_point(name, description, parent_id)
+        values(#{name}, #{description}, #{parentId})
     </insert>
     <update id="updateById" parameterType="com.example.entity.KnowledgePoint">
-        update knowledge_point set name=#{name}, description=#{description}, parent_id=#{parentId}, subject=#{subject} where id=#{id}
+        update knowledge_point set name=#{name}, description=#{description}, parent_id=#{parentId} where id=#{id}
     </update>
     <delete id="deleteById">
         delete from knowledge_point where id=#{id}
