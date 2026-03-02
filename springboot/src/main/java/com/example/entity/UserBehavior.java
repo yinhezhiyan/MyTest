@@ -7,6 +7,10 @@ public class UserBehavior {
     private String actionType;
     private Integer isCorrect;
     private Integer score;
+    private String chosen;
+    private String attemptTime;
+    private String subject;
+    private String exerciseTitle;
 
     public Integer getId() { return id; }
     public void setId(Integer id) { this.id = id; }
@@ -20,4 +24,12 @@ public class UserBehavior {
     public void setIsCorrect(Integer isCorrect) { this.isCorrect = isCorrect; }
     public Integer getScore() { return score; }
     public void setScore(Integer score) { this.score = score; }
+    public String getChosen() { return chosen; }
+    public void setChosen(String chosen) { this.chosen = chosen; }
+    public String getAttemptTime() { return attemptTime; }
+    public void setAttemptTime(String attemptTime) { this.attemptTime = attemptTime; }
+    public String getSubject() { return subject; }
+    public void setSubject(String subject) { this.subject = subject; }
+    public String getExerciseTitle() { return exerciseTitle; }
+    public void setExerciseTitle(String exerciseTitle) { this.exerciseTitle = exerciseTitle; }
 }

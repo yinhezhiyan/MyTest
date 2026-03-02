@@ -10,4 +10,5 @@ public interface ExerciseMapper {
     int deleteById(Integer id);
     Exercise selectById(Integer id);
     List<Exercise> selectAll(Exercise exercise);
+    Exercise selectRandomBySubject(String subject);
 }

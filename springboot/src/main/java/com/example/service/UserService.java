@@ -19,7 +19,17 @@ public class UserService {
     public User register(User user) {
         if (ObjectUtil.isNotNull(userMapper.selectByUsername(user.getUsername()))) throw new CustomException("用户名已存在");
         if (ObjectUtil.isEmpty(user.getSubject())) throw new CustomException("请选择学科");
+        if (ObjectUtil.isNotEmpty(user.getRole()) && !"STUDENT".equals(user.getRole())) throw new CustomException("注册仅支持学生账号");
         user.setRole("STUDENT");
+        userMapper.insert(user);
+        return user;
+    }
+
+    public User addByAdmin(User user) {
+        if (ObjectUtil.isNotNull(userMapper.selectByUsername(user.getUsername()))) throw new CustomException("用户名已存在");
+        if (ObjectUtil.isEmpty(user.getSubject())) throw new CustomException("请选择学科");
+        if (ObjectUtil.isEmpty(user.getRole())) user.setRole("STUDENT");
+        if (ObjectUtil.isEmpty(user.getPassword())) user.setPassword("123456");
         userMapper.insert(user);
         return user;
     }

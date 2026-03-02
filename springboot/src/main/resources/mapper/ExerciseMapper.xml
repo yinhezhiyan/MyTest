@@ -17,12 +17,16 @@
     <select id="selectById" resultType="com.example.entity.Exercise">
         select * from exercise where id=#{id}
     </select>
+    <select id="selectRandomBySubject" resultType="com.example.entity.Exercise">
+        select * from exercise where subject = #{subject} order by rand() limit 1
+    </select>
     <insert id="insert" parameterType="com.example.entity.Exercise" useGeneratedKeys="true" keyProperty="id">
-        insert into exercise(title, content, difficulty, knowledge_point_id, file_url, subject)
-        values(#{title}, #{content}, #{difficulty}, #{knowledgePointId}, #{fileUrl}, #{subject})
+        insert into exercise(title, content, difficulty, knowledge_point_id, file_url, subject, option_a, option_b, option_c, option_d, answer, analysis)
+        values(#{title}, #{content}, #{difficulty}, #{knowledgePointId}, #{fileUrl}, #{subject}, #{optionA}, #{optionB}, #{optionC}, #{optionD}, #{answer}, #{analysis})
     </insert>
     <update id="updateById" parameterType="com.example.entity.Exercise">
-        update exercise set title=#{title}, content=#{content}, difficulty=#{difficulty}, knowledge_point_id=#{knowledgePointId}, file_url=#{fileUrl}, subject=#{subject}
+        update exercise set title=#{title}, content=#{content}, difficulty=#{difficulty}, knowledge_point_id=#{knowledgePointId}, file_url=#{fileUrl}, subject=#{subject},
+        option_a=#{optionA}, option_b=#{optionB}, option_c=#{optionC}, option_d=#{optionD}, answer=#{answer}, analysis=#{analysis}
         where id=#{id}
     </update>
     <delete id="deleteById">
