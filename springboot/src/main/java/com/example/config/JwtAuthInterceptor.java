@@ -21,19 +21,23 @@ public class JwtAuthInterceptor implements HandlerInterceptor {
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) {
         String authorization = request.getHeader("Authorization");
         String token = authorization;
-        if (StrUtil.isNotBlank(authorization) && authorization.startsWith("Bearer ")) {
-            token = authorization.substring(7);
-        }
-        if (!jwtTokenUtils.verify(token)) {
-            throw new CustomException(ResultCode.UNAUTHORIZED, "未登录或登录已过期");
-        }
+        if (StrUtil.isNotBlank(authorization) && authorization.startsWith("Bearer ")) token = authorization.substring(7);
+        if (!jwtTokenUtils.verify(token)) throw new CustomException(ResultCode.UNAUTHORIZED, "未登录或登录已过期");
+
         JWT jwt = jwtTokenUtils.parse(token);
         Object exp = jwt.getPayload("exp");
         if (exp == null || Long.parseLong(exp.toString()) < System.currentTimeMillis()) {
             throw new CustomException(ResultCode.UNAUTHORIZED, "登录已过期，请重新登录");
         }
+
+        String role = String.valueOf(jwt.getPayload("role"));
+        String uri = request.getRequestURI();
+        if (uri.startsWith("/api/admin/") && !"ADMIN".equals(role)) throw new CustomException(ResultCode.FORBIDDEN, "无权限访问管理员接口");
+        if (uri.startsWith("/api/student/") && !"STUDENT".equals(role)) throw new CustomException(ResultCode.FORBIDDEN, "无权限访问学生接口");
+
         request.setAttribute("currentUserId", Integer.parseInt(jwt.getPayload("userId").toString()));
-        request.setAttribute("currentUserRole", String.valueOf(jwt.getPayload("role")));
+        request.setAttribute("currentUserRole", role);
+        request.setAttribute("currentUserSubject", String.valueOf(jwt.getPayload("subject")));
         return true;
     }
 }

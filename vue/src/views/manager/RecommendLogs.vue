@@ -16,5 +16,5 @@ import { ref } from 'vue'
 import request from '@/utils/request'
 
 const tableData = ref([])
-request.get('/api/recommendations/logs').then(res => { tableData.value = res.data || [] })
+request.get('/api/admin/recommendation-logs').then(res => { tableData.value = res.data || [] })
 </script>
