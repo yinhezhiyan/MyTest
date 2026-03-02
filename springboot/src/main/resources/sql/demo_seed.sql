@@ -32,7 +32,13 @@ CREATE TABLE exercise (
   difficulty VARCHAR(20),
   knowledge_point_id INT,
   file_url VARCHAR(255),
-  subject VARCHAR(32) NOT NULL DEFAULT '数学'
+  subject VARCHAR(32) NOT NULL DEFAULT '数学',
+  option_a VARCHAR(255) NOT NULL DEFAULT 'A. 选项A',
+  option_b VARCHAR(255) NOT NULL DEFAULT 'B. 选项B',
+  option_c VARCHAR(255) NOT NULL DEFAULT 'C. 选项C',
+  option_d VARCHAR(255) NOT NULL DEFAULT 'D. 选项D',
+  answer CHAR(1) NOT NULL DEFAULT 'A',
+  analysis VARCHAR(255)
 );
 
 CREATE TABLE user_behavior (
@@ -41,7 +47,10 @@ CREATE TABLE user_behavior (
   exercise_id INT NOT NULL,
   action_type VARCHAR(30) NOT NULL,
   is_correct TINYINT,
-  score INT
+  score INT,
+  chosen CHAR(1),
+  attempt_time DATETIME DEFAULT CURRENT_TIMESTAMP,
+  subject VARCHAR(32) NOT NULL DEFAULT '数学'
 );
 
 CREATE TABLE recommendation_log (

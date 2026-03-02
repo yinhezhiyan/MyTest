@@ -4,7 +4,7 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.example.mapper.UserBehaviorMapper">
     <insert id="insert" parameterType="com.example.entity.UserBehavior" useGeneratedKeys="true" keyProperty="id">
-        insert into user_behavior(user_id, exercise_id, action_type, is_correct, score)
-        values(#{userId}, #{exerciseId}, #{actionType}, #{isCorrect}, #{score})
+        insert into user_behavior(user_id, exercise_id, action_type, is_correct, score, chosen, attempt_time, subject)
+        values(#{userId}, #{exerciseId}, #{actionType}, #{isCorrect}, #{score}, #{chosen}, now(), #{subject})
     </insert>
 </mapper>
