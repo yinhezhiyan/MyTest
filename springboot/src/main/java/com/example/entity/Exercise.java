@@ -8,6 +8,7 @@ public class Exercise {
     private Integer knowledgePointId;
     private String knowledgePointName;
     private String fileUrl;
+    private String subject;
 
     public Integer getId() { return id; }
     public void setId(Integer id) { this.id = id; }
@@ -23,4 +24,6 @@ public class Exercise {
     public void setKnowledgePointName(String knowledgePointName) { this.knowledgePointName = knowledgePointName; }
     public String getFileUrl() { return fileUrl; }
     public void setFileUrl(String fileUrl) { this.fileUrl = fileUrl; }
+    public String getSubject() { return subject; }
+    public void setSubject(String subject) { this.subject = subject; }
 }

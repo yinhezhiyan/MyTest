@@ -25,13 +25,13 @@ const query = reactive({ title: '' })
 const tableData = ref([])
 
 const load = () => {
-  request.get('/api/exercises/page', { params: { ...query, pageNum: 1, pageSize: 50 } }).then(res => {
+  request.get('/api/admin/exercises', { params: { ...query, pageNum: 1, pageSize: 50 } }).then(res => {
     tableData.value = res.data?.list || []
   })
 }
 
 const addSample = () => {
-  request.post('/api/exercises', {
+  request.post('/api/admin/exercises', {
     title: '示例题-' + Date.now(),
     content: '请简述协同过滤的核心思想',
     difficulty: '中等',

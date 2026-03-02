@@ -22,17 +22,17 @@ public class AuthController {
 
     @PostMapping("/register")
     public Result register(@RequestBody User user) {
-        if (ObjectUtil.isEmpty(user.getPassword())) {
-            user.setPassword("123456");
-        }
+        if (ObjectUtil.isEmpty(user.getPassword())) user.setPassword("123456");
         User db = userService.register(user);
+        db.setPassword(null);
         return Result.success(db);
     }
 
     @PostMapping("/login")
     public Result login(@RequestBody User user) {
-        User db = userService.login(user.getUsername(), user.getPassword());
-        String token = jwtTokenUtils.generateToken(db.getId(), db.getUsername(), db.getRole());
+        User db = userService.login(user.getUsername(), user.getPassword(), user.getSubject(), user.getLoginType());
+        String token = jwtTokenUtils.generateToken(db.getId(), db.getUsername(), db.getRole(), db.getSubject());
+        db.setPassword(null);
         Map<String, Object> data = new HashMap<>();
         data.put("token", token);
         data.put("user", db);

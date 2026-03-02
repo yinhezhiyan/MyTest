@@ -6,6 +6,13 @@
         <el-form-item prop="username"><el-input v-model="form.username" placeholder="请输入账号" /></el-form-item>
         <el-form-item prop="name"><el-input v-model="form.name" placeholder="请输入姓名" /></el-form-item>
         <el-form-item prop="password"><el-input v-model="form.password" show-password placeholder="请输入密码" /></el-form-item>
+        <el-form-item prop="subject">
+          <el-select v-model="form.subject" placeholder="请选择学科" style="width:100%">
+            <el-option label="数学" value="数学"/>
+            <el-option label="英语" value="英语"/>
+            <el-option label="C语言程序设计" value="C语言程序设计"/>
+          </el-select>
+        </el-form-item>
         <el-form-item prop="grade"><el-input v-model="form.grade" placeholder="请输入年级（如大二）" /></el-form-item>
         <el-form-item><el-button type="primary" style="width:100%" @click="register">注 册</el-button></el-form-item>
       </el-form>
@@ -25,7 +32,8 @@ const form = reactive({ role: 'STUDENT' })
 const rules = {
   username: [{ required: true, message: '请输入账号', trigger: 'blur' }],
   password: [{ required: true, message: '请输入密码', trigger: 'blur' }],
-  name: [{ required: true, message: '请输入姓名', trigger: 'blur' }]
+  name: [{ required: true, message: '请输入姓名', trigger: 'blur' }],
+  subject: [{ required: true, message: '请选择学科', trigger: 'change' }]
 }
 
 const register = () => {
