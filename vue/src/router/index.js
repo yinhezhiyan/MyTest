@@ -24,6 +24,7 @@ const router = createRouter({
       redirect: '/student/dashboard',
       children: [
         { path: 'dashboard', component: () => import('@/views/student/StudentDashboard.vue') },
+        { path: 'extend', component: () => import('@/views/student/StudentExtend.vue') },
         { path: 'recommend', component: () => import('@/views/student/StudentRecommend.vue') },
         { path: 'practice', component: () => import('@/views/student/StudentPractice.vue') },
         { path: 'records', component: () => import('@/views/student/StudentRecords.vue') }

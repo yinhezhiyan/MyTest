@@ -54,6 +54,9 @@ const login = () => {
         const role = res.data.user?.role
         router.push(role === 'ADMIN' ? '/admin/home' : '/student/dashboard')
       } else ElMessage.error(res.msg)
+    }).catch(err => {
+      const message = err?.response?.data?.msg || err?.message || '登录请求失败，请检查后端服务是否启动'
+      ElMessage.error(message)
     })
   })
 }
