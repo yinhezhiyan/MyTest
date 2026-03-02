@@ -1,5 +1,6 @@
 package com.example.utils;
 
+import com.example.common.ResultCode;
 import com.example.exception.CustomException;
 import jakarta.servlet.http.HttpServletRequest;
 
@@ -21,5 +22,11 @@ public class AuthUtils {
     public static String currentUserSubject(HttpServletRequest request) {
         Object subject = request.getAttribute("currentUserSubject");
         return subject == null ? "" : String.valueOf(subject);
+    }
+
+    public static void requireAdmin(HttpServletRequest request) {
+        if (!"ADMIN".equals(currentUserRole(request))) {
+            throw new CustomException(ResultCode.FORBIDDEN, "无权限执行该操作");
+        }
     }
 }
