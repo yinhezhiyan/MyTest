@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.mapper.ExerciseMapper">
+    <select id="selectAll" resultType="com.example.entity.Exercise">
+        select e.*, k.name as knowledge_point_name
+        from exercise e
+        left join knowledge_point k on e.knowledge_point_id = k.id
+        <where>
+            <if test="title != null and title != ''"> and e.title like concat('%', #{title}, '%')</if>
+            <if test="difficulty != null and difficulty != ''"> and e.difficulty = #{difficulty}</if>
+            <if test="subject != null and subject != ''"> and e.subject = #{subject}</if>
+        </where>
+        order by e.id desc
+    </select>
+    <select id="selectById" resultType="com.example.entity.Exercise">
+        select * from exercise where id=#{id}
+    </select>
+    <insert id="insert" parameterType="com.example.entity.Exercise" useGeneratedKeys="true" keyProperty="id">
+        insert into exercise(title, content, difficulty, knowledge_point_id, file_url, subject)
+        values(#{title}, #{content}, #{difficulty}, #{knowledgePointId}, #{fileUrl}, #{subject})
+    </insert>
+    <update id="updateById" parameterType="com.example.entity.Exercise">
+        update exercise set title=#{title}, content=#{content}, difficulty=#{difficulty}, knowledge_point_id=#{knowledgePointId}, file_url=#{fileUrl}, subject=#{subject}
+        where id=#{id}
+    </update>
+    <delete id="deleteById">
+        delete from exercise where id=#{id}
+    </delete>
+</mapper>
