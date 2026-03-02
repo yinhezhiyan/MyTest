@@ -19,7 +19,8 @@ public class RecommendationController {
     @GetMapping
     public Result recommend(HttpServletRequest request, @RequestParam(defaultValue = "10") Integer limit) {
         Integer userId = AuthUtils.currentUserId(request);
-        return Result.success(hybridRecommendService.recommend(userId, limit));
+        String subject = AuthUtils.currentUserSubject(request);
+        return Result.success(hybridRecommendService.recommend(userId, subject, limit));
     }
 
     @GetMapping("/logs")
