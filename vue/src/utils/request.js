@@ -3,15 +3,19 @@ import router from '../router'
 import axios from 'axios'
 
 const request = axios.create({
-  baseURL: import.meta.env.VITE_BASE_URL,
+  baseURL: (import.meta.env.VITE_BASE_URL || '').trim(),
   timeout: 30000
 })
 
 request.interceptors.request.use(config => {
   config.headers['Content-Type'] = 'application/json;charset=utf-8'
   const token = localStorage.getItem('system-token')
+  const user = JSON.parse(localStorage.getItem('system-user') || '{}')
   if (token) {
     config.headers.Authorization = `Bearer ${token}`
+  }
+  if (user?.subject) {
+    config.headers['X-Subject-Id'] = user.subject
   }
   return config
 }, error => Promise.reject(error))

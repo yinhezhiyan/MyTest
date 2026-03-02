@@ -34,7 +34,14 @@ public class AdminApiController {
     }
 
     @PostMapping("/users")
-    public Result addUser(@RequestBody User user, HttpServletRequest request) { user.setSubject(AuthUtils.currentUserSubject(request)); userService.add(user); return Result.success(); }
+    public Result addUser(@RequestBody User user, HttpServletRequest request) {
+        if (user.getRole() == null || user.getRole().isBlank()) {
+            user.setRole("STUDENT");
+            user.setSubject(AuthUtils.currentUserSubject(request));
+        }
+        userService.addByAdmin(user);
+        return Result.success();
+    }
     @PutMapping("/users")
     public Result updateUser(@RequestBody User user, HttpServletRequest request) { user.setSubject(AuthUtils.currentUserSubject(request)); userService.updateById(user); return Result.success(); }
     @DeleteMapping("/users/{id}")
