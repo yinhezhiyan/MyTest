@@ -17,18 +17,21 @@ public class UserService {
     private UserMapper userMapper;
 
     public User register(User user) {
-        if (ObjectUtil.isNotNull(userMapper.selectByUsername(user.getUsername()))) throw new CustomException("用户名已存在");
-        if (ObjectUtil.isEmpty(user.getSubject())) throw new CustomException("请选择学科");
-        user.setRole("STUDENT");
+        if (ObjectUtil.isNotNull(userMapper.selectByUsername(user.getUsername()))) {
+            throw new CustomException("用户名已存在");
+        }
+        if (ObjectUtil.isEmpty(user.getRole())) {
+            user.setRole("STUDENT");
+        }
         userMapper.insert(user);
         return user;
     }
 
-    public User login(String username, String password, String subject, String loginType) {
+    public User login(String username, String password) {
         User dbUser = userMapper.selectByUsername(username);
-        if (ObjectUtil.isNull(dbUser) || !password.equals(dbUser.getPassword())) throw new CustomException("账号或密码错误");
-        if (ObjectUtil.isNotEmpty(subject) && !subject.equals(dbUser.getSubject())) throw new CustomException("不可跨学科登录");
-        if (ObjectUtil.isNotEmpty(loginType) && !loginType.equals(dbUser.getRole())) throw new CustomException("登录身份与账号角色不匹配");
+        if (ObjectUtil.isNull(dbUser) || !password.equals(dbUser.getPassword())) {
+            throw new CustomException("账号或密码错误");
+        }
         return dbUser;
     }
 
@@ -37,5 +40,9 @@ public class UserService {
     public void deleteById(Integer id) { userMapper.deleteById(id); }
     public User selectById(Integer id) { return userMapper.selectById(id); }
     public List<User> selectAll(User user) { return userMapper.selectAll(user); }
-    public PageInfo<User> selectPage(User user, Integer pageNum, Integer pageSize) { PageHelper.startPage(pageNum, pageSize); return PageInfo.of(userMapper.selectAll(user)); }
+
+    public PageInfo<User> selectPage(User user, Integer pageNum, Integer pageSize) {
+        PageHelper.startPage(pageNum, pageSize);
+        return PageInfo.of(userMapper.selectAll(user));
+    }
 }

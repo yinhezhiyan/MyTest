@@ -10,7 +10,6 @@
         <where>
             <if test="title != null and title != ''"> and e.title like concat('%', #{title}, '%')</if>
             <if test="difficulty != null and difficulty != ''"> and e.difficulty = #{difficulty}</if>
-            <if test="subject != null and subject != ''"> and e.subject = #{subject}</if>
         </where>
         order by e.id desc
     </select>
@@ -18,11 +17,11 @@
         select * from exercise where id=#{id}
     </select>
     <insert id="insert" parameterType="com.example.entity.Exercise" useGeneratedKeys="true" keyProperty="id">
-        insert into exercise(title, content, difficulty, knowledge_point_id, file_url, subject)
-        values(#{title}, #{content}, #{difficulty}, #{knowledgePointId}, #{fileUrl}, #{subject})
+        insert into exercise(title, content, difficulty, knowledge_point_id, file_url)
+        values(#{title}, #{content}, #{difficulty}, #{knowledgePointId}, #{fileUrl})
     </insert>
     <update id="updateById" parameterType="com.example.entity.Exercise">
-        update exercise set title=#{title}, content=#{content}, difficulty=#{difficulty}, knowledge_point_id=#{knowledgePointId}, file_url=#{fileUrl}, subject=#{subject}
+        update exercise set title=#{title}, content=#{content}, difficulty=#{difficulty}, knowledge_point_id=#{knowledgePointId}, file_url=#{fileUrl}
         where id=#{id}
     </update>
     <delete id="deleteById">

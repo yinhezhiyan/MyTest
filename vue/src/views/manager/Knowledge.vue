@@ -24,12 +24,12 @@ const name = ref('')
 const tableData = ref([])
 
 const load = () => {
-  request.get('/api/admin/knowledge-points').then(res => { tableData.value = res.data || [] })
+  request.get('/api/knowledge-points').then(res => { tableData.value = res.data || [] })
 }
 
 const add = () => {
   if (!name.value) return
-  request.post('/api/admin/knowledge-points', { name: name.value, description: '自动创建' }).then(res => {
+  request.post('/api/knowledge-points', { name: name.value, description: '自动创建' }).then(res => {
     if (res.code === '200') {
       ElMessage.success('新增成功')
       name.value = ''

@@ -5,7 +5,6 @@ public class KnowledgePoint {
     private String name;
     private String description;
     private Integer parentId;
-    private String subject;
 
     public Integer getId() { return id; }
     public void setId(Integer id) { this.id = id; }
@@ -15,6 +14,4 @@ public class KnowledgePoint {
     public void setDescription(String description) { this.description = description; }
     public Integer getParentId() { return parentId; }
     public void setParentId(Integer parentId) { this.parentId = parentId; }
-    public String getSubject() { return subject; }
-    public void setSubject(String subject) { this.subject = subject; }
 }
