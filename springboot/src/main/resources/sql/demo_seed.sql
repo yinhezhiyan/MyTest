@@ -1,86 +1,141 @@
 -- 演示版初始化脚本（MySQL 8+）
-CREATE TABLE IF NOT EXISTS sys_user (
-  id INT PRIMARY KEY AUTO_INCREMENT,
-  username VARCHAR(64) NOT NULL UNIQUE,
-  password VARCHAR(128) NOT NULL,
-  name VARCHAR(64),
-  role VARCHAR(20) NOT NULL DEFAULT 'STUDENT',
-  avatar VARCHAR(255),
-  grade VARCHAR(32)
-);
-
+CREATE TABLE IF NOT EXISTS sys_user (id INT PRIMARY KEY AUTO_INCREMENT, username VARCHAR(64) NOT NULL UNIQUE, password VARCHAR(128) NOT NULL, name VARCHAR(64), role VARCHAR(20) NOT NULL DEFAULT 'STUDENT', subject VARCHAR(32) NOT NULL DEFAULT '数学', avatar VARCHAR(255), grade VARCHAR(32));
 ALTER TABLE sys_user MODIFY COLUMN role VARCHAR(20) NOT NULL DEFAULT 'STUDENT';
-
-CREATE TABLE IF NOT EXISTS knowledge_point (
-  id INT PRIMARY KEY AUTO_INCREMENT,
-  name VARCHAR(128) NOT NULL,
-  description VARCHAR(255),
-  parent_id INT NULL
-);
-
-CREATE TABLE IF NOT EXISTS exercise (
-  id INT PRIMARY KEY AUTO_INCREMENT,
-  title VARCHAR(255) NOT NULL,
-  content TEXT,
-  difficulty VARCHAR(20),
-  knowledge_point_id INT,
-  file_url VARCHAR(255)
-);
-
-CREATE TABLE IF NOT EXISTS user_behavior (
-  id INT PRIMARY KEY AUTO_INCREMENT,
-  user_id INT NOT NULL,
-  exercise_id INT NOT NULL,
-  action_type VARCHAR(30) NOT NULL,
-  is_correct TINYINT,
-  score INT
-);
-
-CREATE TABLE IF NOT EXISTS recommendation_log (
-  id INT PRIMARY KEY AUTO_INCREMENT,
-  user_id INT NOT NULL,
-  exercise_id INT NOT NULL,
-  cf_score DECIMAL(10,2),
-  kg_score DECIMAL(10,2),
-  hybrid_score DECIMAL(10,2),
-  reason VARCHAR(255)
-);
-
-DELETE FROM recommendation_log;
-DELETE FROM user_behavior;
-DELETE FROM exercise;
-DELETE FROM knowledge_point;
-DELETE FROM sys_user;
-
-INSERT INTO sys_user (id, username, password, name, role, grade) VALUES
-(1, 'admin', 'admin123', '系统管理员', 'ADMIN', NULL),
-(2, 'stu_zhang', '123456', '张同学', 'STUDENT', '大二'),
-(3, 'stu_li', '123456', '李同学', 'STUDENT', '大三'),
-(4, 'stu_wang', '123456', '王同学', 'STUDENT', '大二'),
-(5, 'stu_zhao', '123456', '赵同学', 'STUDENT', '大一');
-
-INSERT INTO knowledge_point (id, name, description, parent_id) VALUES
-(1, '协同过滤', '基于行为相似度进行推荐', NULL),
-(2, '知识图谱', '基于知识关联进行推理推荐', NULL),
-(3, '相似度计算', '余弦相似度/皮尔逊相关系数', 1),
-(4, '图谱推理', '从薄弱知识点扩展关联题目', 2),
-(5, '推荐解释', '可解释性推荐文本生成', 2),
-(6, '混合策略', 'CF 与 KG 融合打分', 1);
-
-INSERT INTO exercise (id, title, content, difficulty, knowledge_point_id) VALUES
-(1, '协同过滤基础概念', '说明UserCF与ItemCF的区别。', '简单', 1),
-(2, '余弦相似度练习', '计算两个用户向量的余弦相似度。', '中等', 3),
-(3, '知识图谱实体关系建模', '设计习题-知识点图谱结构。', '中等', 2),
-(4, '图谱路径推理题', '给定弱项知识点，推导可推荐题目集合。', '困难', 4),
-(5, '混合推荐融合策略', '设计CF与KG融合评分公式。', '中等', 6),
-(6, '推荐解释性分析', '给出推荐理由生成逻辑。', '简单', 5),
-(7, '用户画像建模', '基于行为构建学习画像字段。', '中等', 1),
-(8, '知识点先修关系判断', '判断图中先修关系是否存在环。', '困难', 2),
-(9, '稀疏矩阵处理', '如何处理冷启动与稀疏问题。', '中等', 3),
-(10, '推荐结果评估', '设计准确率与召回率计算过程。', '简单', 5);
-
+ALTER TABLE sys_user ADD COLUMN IF NOT EXISTS subject VARCHAR(32) NOT NULL DEFAULT '数学';
+CREATE TABLE IF NOT EXISTS knowledge_point (id INT PRIMARY KEY AUTO_INCREMENT, name VARCHAR(128) NOT NULL, description VARCHAR(255), parent_id INT NULL, subject VARCHAR(32) NOT NULL DEFAULT '数学');
+ALTER TABLE knowledge_point ADD COLUMN IF NOT EXISTS subject VARCHAR(32) NOT NULL DEFAULT '数学';
+CREATE TABLE IF NOT EXISTS exercise (id INT PRIMARY KEY AUTO_INCREMENT, title VARCHAR(255) NOT NULL, content TEXT, difficulty VARCHAR(20), knowledge_point_id INT, file_url VARCHAR(255), subject VARCHAR(32) NOT NULL DEFAULT '数学');
+ALTER TABLE exercise ADD COLUMN IF NOT EXISTS subject VARCHAR(32) NOT NULL DEFAULT '数学';
+CREATE TABLE IF NOT EXISTS user_behavior (id INT PRIMARY KEY AUTO_INCREMENT, user_id INT NOT NULL, exercise_id INT NOT NULL, action_type VARCHAR(30) NOT NULL, is_correct TINYINT, score INT);
+CREATE TABLE IF NOT EXISTS recommendation_log (id INT PRIMARY KEY AUTO_INCREMENT, user_id INT NOT NULL, exercise_id INT NOT NULL, cf_score DECIMAL(10,2), kg_score DECIMAL(10,2), hybrid_score DECIMAL(10,2), reason VARCHAR(255));
+DELETE FROM recommendation_log; DELETE FROM user_behavior; DELETE FROM exercise; DELETE FROM knowledge_point; DELETE FROM sys_user;
+INSERT INTO sys_user (id, username, password, name, role, subject, grade) VALUES
+(1,'admin_math','admin123','数学管理员','ADMIN','数学',NULL),
+(2,'admin_english','admin123','英语管理员','ADMIN','英语',NULL),
+(3,'admin_c','admin123','C语言管理员','ADMIN','C语言程序设计',NULL),
+(4,'stu_math_1','123456','数学学生1','STUDENT','数学','大二'),
+(5,'stu_math_2','123456','数学学生2','STUDENT','数学','大二'),
+(6,'stu_eng_1','123456','英语学生1','STUDENT','英语','大一'),
+(7,'stu_eng_2','123456','英语学生2','STUDENT','英语','大三'),
+(8,'stu_c_1','123456','C语言学生1','STUDENT','C语言程序设计','大二'),
+(9,'stu_c_2','123456','C语言学生2','STUDENT','C语言程序设计','大三');
+INSERT INTO knowledge_point (id, name, description, parent_id, subject) VALUES
+(1,'数学-基础概念','数学核心概念',NULL,'数学'),
+(2,'数学-进阶技巧','数学进阶方法',1,'数学'),
+(3,'数学-综合应用','数学综合训练',2,'数学'),
+(4,'英语-基础概念','英语核心概念',NULL,'英语'),
+(5,'英语-进阶技巧','英语进阶方法',4,'英语'),
+(6,'英语-综合应用','英语综合训练',5,'英语'),
+(7,'C语言程序设计-基础概念','C语言程序设计核心概念',NULL,'C语言程序设计'),
+(8,'C语言程序设计-进阶技巧','C语言程序设计进阶方法',7,'C语言程序设计'),
+(9,'C语言程序设计-综合应用','C语言程序设计综合训练',8,'C语言程序设计');
+INSERT INTO exercise (id, title, content, difficulty, knowledge_point_id, subject) VALUES
+(1,'数学第1题','这是数学题库中的第1道练习题，请完成作答并提交。','简单',1,'数学'),
+(2,'数学第2题','这是数学题库中的第2道练习题，请完成作答并提交。','简单',1,'数学'),
+(3,'数学第3题','这是数学题库中的第3道练习题，请完成作答并提交。','简单',1,'数学'),
+(4,'数学第4题','这是数学题库中的第4道练习题，请完成作答并提交。','简单',1,'数学'),
+(5,'数学第5题','这是数学题库中的第5道练习题，请完成作答并提交。','简单',1,'数学'),
+(6,'数学第6题','这是数学题库中的第6道练习题，请完成作答并提交。','简单',1,'数学'),
+(7,'数学第7题','这是数学题库中的第7道练习题，请完成作答并提交。','简单',1,'数学'),
+(8,'数学第8题','这是数学题库中的第8道练习题，请完成作答并提交。','中等',2,'数学'),
+(9,'数学第9题','这是数学题库中的第9道练习题，请完成作答并提交。','中等',2,'数学'),
+(10,'数学第10题','这是数学题库中的第10道练习题，请完成作答并提交。','中等',2,'数学'),
+(11,'数学第11题','这是数学题库中的第11道练习题，请完成作答并提交。','中等',2,'数学'),
+(12,'数学第12题','这是数学题库中的第12道练习题，请完成作答并提交。','中等',2,'数学'),
+(13,'数学第13题','这是数学题库中的第13道练习题，请完成作答并提交。','中等',2,'数学'),
+(14,'数学第14题','这是数学题库中的第14道练习题，请完成作答并提交。','中等',2,'数学'),
+(15,'数学第15题','这是数学题库中的第15道练习题，请完成作答并提交。','困难',3,'数学'),
+(16,'数学第16题','这是数学题库中的第16道练习题，请完成作答并提交。','困难',3,'数学'),
+(17,'数学第17题','这是数学题库中的第17道练习题，请完成作答并提交。','困难',3,'数学'),
+(18,'数学第18题','这是数学题库中的第18道练习题，请完成作答并提交。','困难',3,'数学'),
+(19,'数学第19题','这是数学题库中的第19道练习题，请完成作答并提交。','困难',3,'数学'),
+(20,'数学第20题','这是数学题库中的第20道练习题，请完成作答并提交。','困难',3,'数学'),
+(21,'英语第1题','这是英语题库中的第1道练习题，请完成作答并提交。','简单',4,'英语'),
+(22,'英语第2题','这是英语题库中的第2道练习题，请完成作答并提交。','简单',4,'英语'),
+(23,'英语第3题','这是英语题库中的第3道练习题，请完成作答并提交。','简单',4,'英语'),
+(24,'英语第4题','这是英语题库中的第4道练习题，请完成作答并提交。','简单',4,'英语'),
+(25,'英语第5题','这是英语题库中的第5道练习题，请完成作答并提交。','简单',4,'英语'),
+(26,'英语第6题','这是英语题库中的第6道练习题，请完成作答并提交。','简单',4,'英语'),
+(27,'英语第7题','这是英语题库中的第7道练习题，请完成作答并提交。','简单',4,'英语'),
+(28,'英语第8题','这是英语题库中的第8道练习题，请完成作答并提交。','中等',5,'英语'),
+(29,'英语第9题','这是英语题库中的第9道练习题，请完成作答并提交。','中等',5,'英语'),
+(30,'英语第10题','这是英语题库中的第10道练习题，请完成作答并提交。','中等',5,'英语'),
+(31,'英语第11题','这是英语题库中的第11道练习题，请完成作答并提交。','中等',5,'英语'),
+(32,'英语第12题','这是英语题库中的第12道练习题，请完成作答并提交。','中等',5,'英语'),
+(33,'英语第13题','这是英语题库中的第13道练习题，请完成作答并提交。','中等',5,'英语'),
+(34,'英语第14题','这是英语题库中的第14道练习题，请完成作答并提交。','中等',5,'英语'),
+(35,'英语第15题','这是英语题库中的第15道练习题，请完成作答并提交。','困难',6,'英语'),
+(36,'英语第16题','这是英语题库中的第16道练习题，请完成作答并提交。','困难',6,'英语'),
+(37,'英语第17题','这是英语题库中的第17道练习题，请完成作答并提交。','困难',6,'英语'),
+(38,'英语第18题','这是英语题库中的第18道练习题，请完成作答并提交。','困难',6,'英语'),
+(39,'英语第19题','这是英语题库中的第19道练习题，请完成作答并提交。','困难',6,'英语'),
+(40,'英语第20题','这是英语题库中的第20道练习题，请完成作答并提交。','困难',6,'英语'),
+(41,'C语言程序设计第1题','这是C语言程序设计题库中的第1道练习题，请完成作答并提交。','简单',7,'C语言程序设计'),
+(42,'C语言程序设计第2题','这是C语言程序设计题库中的第2道练习题，请完成作答并提交。','简单',7,'C语言程序设计'),
+(43,'C语言程序设计第3题','这是C语言程序设计题库中的第3道练习题，请完成作答并提交。','简单',7,'C语言程序设计'),
+(44,'C语言程序设计第4题','这是C语言程序设计题库中的第4道练习题，请完成作答并提交。','简单',7,'C语言程序设计'),
+(45,'C语言程序设计第5题','这是C语言程序设计题库中的第5道练习题，请完成作答并提交。','简单',7,'C语言程序设计'),
+(46,'C语言程序设计第6题','这是C语言程序设计题库中的第6道练习题，请完成作答并提交。','简单',7,'C语言程序设计'),
+(47,'C语言程序设计第7题','这是C语言程序设计题库中的第7道练习题，请完成作答并提交。','简单',7,'C语言程序设计'),
+(48,'C语言程序设计第8题','这是C语言程序设计题库中的第8道练习题，请完成作答并提交。','中等',8,'C语言程序设计'),
+(49,'C语言程序设计第9题','这是C语言程序设计题库中的第9道练习题，请完成作答并提交。','中等',8,'C语言程序设计'),
+(50,'C语言程序设计第10题','这是C语言程序设计题库中的第10道练习题，请完成作答并提交。','中等',8,'C语言程序设计'),
+(51,'C语言程序设计第11题','这是C语言程序设计题库中的第11道练习题，请完成作答并提交。','中等',8,'C语言程序设计'),
+(52,'C语言程序设计第12题','这是C语言程序设计题库中的第12道练习题，请完成作答并提交。','中等',8,'C语言程序设计'),
+(53,'C语言程序设计第13题','这是C语言程序设计题库中的第13道练习题，请完成作答并提交。','中等',8,'C语言程序设计'),
+(54,'C语言程序设计第14题','这是C语言程序设计题库中的第14道练习题，请完成作答并提交。','中等',8,'C语言程序设计'),
+(55,'C语言程序设计第15题','这是C语言程序设计题库中的第15道练习题，请完成作答并提交。','困难',9,'C语言程序设计'),
+(56,'C语言程序设计第16题','这是C语言程序设计题库中的第16道练习题，请完成作答并提交。','困难',9,'C语言程序设计'),
+(57,'C语言程序设计第17题','这是C语言程序设计题库中的第17道练习题，请完成作答并提交。','困难',9,'C语言程序设计'),
+(58,'C语言程序设计第18题','这是C语言程序设计题库中的第18道练习题，请完成作答并提交。','困难',9,'C语言程序设计'),
+(59,'C语言程序设计第19题','这是C语言程序设计题库中的第19道练习题，请完成作答并提交。','困难',9,'C语言程序设计'),
+(60,'C语言程序设计第20题','这是C语言程序设计题库中的第20道练习题，请完成作答并提交。','困难',9,'C语言程序设计');
 INSERT INTO user_behavior (user_id, exercise_id, action_type, is_correct, score) VALUES
-(2, 1, 'ANSWER', 1, 90),(2, 2, 'ANSWER', 0, 50),(2, 3, 'ANSWER', 0, 45),(2, 6, 'ANSWER', 1, 82),
-(3, 1, 'ANSWER', 1, 88),(3, 2, 'ANSWER', 1, 80),(3, 5, 'ANSWER', 1, 86),(3, 9, 'ANSWER', 1, 84),
-(4, 1, 'ANSWER', 1, 91),(4, 3, 'ANSWER', 1, 85),(4, 6, 'ANSWER', 1, 89),(4, 10, 'ANSWER', 1, 90),
-(5, 2, 'ANSWER', 0, 48),(5, 4, 'ANSWER', 0, 40),(5, 8, 'ANSWER', 0, 35);
+(4,1,'ANSWER',0,45),
+(4,2,'ANSWER',1,85),
+(4,3,'ANSWER',1,85),
+(4,4,'ANSWER',0,45),
+(4,5,'ANSWER',1,85),
+(4,6,'ANSWER',1,85),
+(4,7,'ANSWER',0,45),
+(4,8,'ANSWER',1,85),
+(5,1,'ANSWER',0,45),
+(5,2,'ANSWER',1,85),
+(5,3,'ANSWER',1,85),
+(5,4,'ANSWER',0,45),
+(5,5,'ANSWER',1,85),
+(5,6,'ANSWER',1,85),
+(5,7,'ANSWER',0,45),
+(5,8,'ANSWER',1,85),
+(6,21,'ANSWER',0,45),
+(6,22,'ANSWER',1,85),
+(6,23,'ANSWER',1,85),
+(6,24,'ANSWER',0,45),
+(6,25,'ANSWER',1,85),
+(6,26,'ANSWER',1,85),
+(6,27,'ANSWER',0,45),
+(6,28,'ANSWER',1,85),
+(7,21,'ANSWER',0,45),
+(7,22,'ANSWER',1,85),
+(7,23,'ANSWER',1,85),
+(7,24,'ANSWER',0,45),
+(7,25,'ANSWER',1,85),
+(7,26,'ANSWER',1,85),
+(7,27,'ANSWER',0,45),
+(7,28,'ANSWER',1,85),
+(8,41,'ANSWER',0,45),
+(8,42,'ANSWER',1,85),
+(8,43,'ANSWER',1,85),
+(8,44,'ANSWER',0,45),
+(8,45,'ANSWER',1,85),
+(8,46,'ANSWER',1,85),
+(8,47,'ANSWER',0,45),
+(8,48,'ANSWER',1,85),
+(9,41,'ANSWER',0,45),
+(9,42,'ANSWER',1,85),
+(9,43,'ANSWER',1,85),
+(9,44,'ANSWER',0,45),
+(9,45,'ANSWER',1,85),
+(9,46,'ANSWER',1,85),
+(9,47,'ANSWER',0,45),
+(9,48,'ANSWER',1,85);

@@ -2,7 +2,7 @@
   <div>
     <div style="height:60px;background:#2e3143;color:#fff;display:flex;align-items:center;padding:0 16px;justify-content:space-between">
       <div style="font-weight:700">管理员后台</div>
-      <div>{{ user.name || user.username }} <el-button link style="color:#fff" @click="logout">退出</el-button></div>
+      <div>{{ user.name || user.username }}（{{ user.subject }}） <el-button link style="color:#fff" @click="logout">退出</el-button></div>
     </div>
     <div style="display:flex;min-height:calc(100vh - 60px)">
       <el-menu router :default-active="router.currentRoute.value.path" style="width:220px">

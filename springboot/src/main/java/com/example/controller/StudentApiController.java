@@ -29,16 +29,17 @@ public class StudentApiController {
     @GetMapping("/recommendations")
     public Result recommendations(HttpServletRequest request, @RequestParam(defaultValue = "10") Integer limit) {
         Integer userId = AuthUtils.currentUserId(request);
-        List<RecommendationItem> items = hybridRecommendService.recommend(userId, limit);
-        for (RecommendationItem item : items) {
-            item.setReason(item.getReason() + " | HybridScore: " + item.getHybridScore());
-        }
+        String subject = AuthUtils.currentUserSubject(request);
+        List<RecommendationItem> items = hybridRecommendService.recommend(userId, subject, limit);
+        for (RecommendationItem item : items) item.setReason(item.getReason() + " | HybridScore: " + item.getHybridScore());
         return Result.success(items);
     }
 
     @GetMapping("/exercises/{id}")
-    public Result exerciseDetail(@PathVariable Integer id) {
-        return Result.success(exerciseService.selectById(id));
+    public Result exerciseDetail(@PathVariable Integer id, HttpServletRequest request) {
+        Exercise e = exerciseService.selectById(id);
+        if (e == null || !AuthUtils.currentUserSubject(request).equals(e.getSubject())) return Result.error("无权访问该学科习题");
+        return Result.success(e);
     }
 
     @PostMapping("/behaviors/answer")
