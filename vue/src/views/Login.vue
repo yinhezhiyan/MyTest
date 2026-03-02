@@ -21,7 +21,7 @@
         <el-form-item><el-button size="large" type="primary" style="width: 100%" @click="login">登 录</el-button></el-form-item>
       </el-form>
       <div style="text-align: right;">还没有账号？请 <a href="/register">注册</a>
-        <div style="margin-top:8px;color:#888">演示管理员：admin/admin123(数学)</div>
+        <div style="margin-top:8px;color:#888">演示管理员：admin_math/admin123(数学)</div>
       </div>
     </div>
   </div>
