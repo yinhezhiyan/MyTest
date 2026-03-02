@@ -4,6 +4,14 @@ CREATE TABLE IF NOT EXISTS knowledge_point (id INT PRIMARY KEY AUTO_INCREMENT, n
 CREATE TABLE IF NOT EXISTS exercise (id INT PRIMARY KEY AUTO_INCREMENT, title VARCHAR(255) NOT NULL, content TEXT, difficulty VARCHAR(20), knowledge_point_id INT, file_url VARCHAR(255), subject VARCHAR(32) NOT NULL DEFAULT '数学');
 CREATE TABLE IF NOT EXISTS user_behavior (id INT PRIMARY KEY AUTO_INCREMENT, user_id INT NOT NULL, exercise_id INT NOT NULL, action_type VARCHAR(30) NOT NULL, is_correct TINYINT, score INT);
 CREATE TABLE IF NOT EXISTS recommendation_log (id INT PRIMARY KEY AUTO_INCREMENT, user_id INT NOT NULL, exercise_id INT NOT NULL, cf_score DECIMAL(10,2), kg_score DECIMAL(10,2), hybrid_score DECIMAL(10,2), reason VARCHAR(255));
+
+-- 兼容历史库结构（老版本可能缺少这些字段，导致初始化脚本执行失败并清空后无数据）
+ALTER TABLE sys_user ADD COLUMN IF NOT EXISTS subject VARCHAR(32) NOT NULL DEFAULT '数学';
+ALTER TABLE sys_user ADD COLUMN IF NOT EXISTS grade VARCHAR(32) NULL;
+ALTER TABLE knowledge_point ADD COLUMN IF NOT EXISTS subject VARCHAR(32) NOT NULL DEFAULT '数学';
+ALTER TABLE exercise ADD COLUMN IF NOT EXISTS subject VARCHAR(32) NOT NULL DEFAULT '数学';
+ALTER TABLE recommendation_log ADD COLUMN IF NOT EXISTS reason VARCHAR(255) NULL;
+
 DELETE FROM recommendation_log; DELETE FROM user_behavior; DELETE FROM exercise; DELETE FROM knowledge_point; DELETE FROM sys_user;
 INSERT INTO sys_user (id, username, password, name, role, subject, grade) VALUES
 (1,'admin_math','admin123','数学管理员','ADMIN','数学',NULL),
