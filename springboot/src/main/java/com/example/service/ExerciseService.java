@@ -111,7 +111,7 @@ public class ExerciseService {
         return res;
     }
 
-    public List<Map<String, Object>> answerRecords(String chapter, Integer correct) {
+    public List<Map<String, Object>> answerRecords(String chapter, Integer correct, String date) {
         Account user = requireLogin();
         StringBuilder sql = new StringBuilder("""
                 select ua.exercise_id, ua.answered_at, ua.is_correct, ua.chosen_option, ua.correct_answer, e.chapter, e.stem
@@ -126,6 +126,10 @@ public class ExerciseService {
         if (correct != null) {
             sql.append(" and ua.is_correct=?");
             args.add(correct);
+        }
+        if (ObjectUtil.isNotEmpty(date)) {
+            sql.append(" and date(ua.answered_at)=?");
+            args.add(date);
         }
         sql.append(" order by ua.answered_at desc");
         return jdbcTemplate.queryForList(sql.toString(), args.toArray());
@@ -168,10 +172,14 @@ public class ExerciseService {
             ranked.add(buildRecommendationItem(e, finalScore, ""));
         }
 
-        return ranked.stream()
+        List<Map<String, Object>> result = ranked.stream()
                 .sorted((a, b) -> Double.compare((Double) b.get("score"), (Double) a.get("score")))
                 .limit(topN)
                 .collect(Collectors.toList());
+        if (result.isEmpty() && !includeDone && !done.isEmpty()) {
+            return recommendations(topN, true);
+        }
+        return result;
     }
 
     public List<Map<String, Object>> dailyUnseen(int topN) {

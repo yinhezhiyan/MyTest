@@ -1,7 +1,8 @@
 <template>
   <div class="card">
     <h2>答题记录</h2>
-    <div style="margin-bottom:10px;display:flex;gap:8px">
+    <div style="margin-bottom:10px;display:flex;gap:8px;align-items:center;flex-wrap:wrap">
+      <el-date-picker v-model="date" type="date" value-format="YYYY-MM-DD" placeholder="选择日期" clearable />
       <el-input v-model="chapter" placeholder="章节筛选" style="width:200px"/>
       <el-select v-model="correct" clearable placeholder="正确与否" style="width:140px">
         <el-option :value="1" label="正确"/><el-option :value="0" label="错误"/>
@@ -23,8 +24,8 @@
 <script setup>
 import {ref} from 'vue';
 import request from '@/utils/request';
-const list = ref([]); const chapter = ref(''); const correct = ref(null)
-const load = ()=> request.get('/api/answers/records',{params:{chapter:chapter.value||undefined, correct:correct.value}}).then(res=> list.value=res.data||[])
+const list = ref([]); const chapter = ref(''); const correct = ref(null); const date = ref('')
+const load = ()=> request.get('/api/answers/records',{params:{chapter:chapter.value||undefined, correct:correct.value, date: date.value || undefined}}).then(res=> list.value=res.data||[])
 load()
 </script>
 <style scoped>.card{background:#fff;padding:18px;border-radius:12px}</style>

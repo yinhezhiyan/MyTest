@@ -48,8 +48,9 @@ public class ExerciseController {
 
     @GetMapping("/api/answers/records")
     public Result records(@RequestParam(required = false) String chapter,
-                          @RequestParam(required = false) Integer correct) {
-        return Result.success(exerciseService.answerRecords(chapter, correct));
+                          @RequestParam(required = false) Integer correct,
+                          @RequestParam(required = false) String date) {
+        return Result.success(exerciseService.answerRecords(chapter, correct, date));
     }
 
     @GetMapping("/api/recommendations")
