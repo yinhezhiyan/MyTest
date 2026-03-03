@@ -1,0 +1,52 @@
+plugins {
+    id 'java'
+    id 'application'
+}
+
+group = 'com.ttl'
+version = '0.0.1-SNAPSHOT'
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(21)
+    }
+}
+
+repositories {
+    maven { url 'https://maven.aliyun.com/repository/public' }
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.springframework.boot:spring-boot-starter-web:3.3.1'
+    implementation 'org.mybatis.spring.boot:mybatis-spring-boot-starter:3.0.3'
+    runtimeOnly 'com.mysql:mysql-connector-j:8.4.0'
+    implementation 'cn.hutool:hutool-all:5.8.25'
+    implementation('com.github.pagehelper:pagehelper-spring-boot-starter:1.4.6') {
+        exclude group: 'org.mybatis', module: 'mybatis'
+    }
+    testImplementation 'org.junit.jupiter:junit-jupiter:5.10.2'
+}
+
+sourceSets {
+    main {
+        java.srcDirs = ['springboot/src/main/java']
+        resources.srcDirs = ['springboot/src/main/resources']
+    }
+    test {
+        java.srcDirs = ['springboot/src/test/java']
+        resources.srcDirs = ['springboot/src/test/resources']
+    }
+}
+
+application {
+    mainClass = 'com.example.SpringbootApplication'
+}
+
+tasks.withType(JavaCompile).configureEach {
+    options.encoding = 'UTF-8'
+}
+
+test {
+    useJUnitPlatform()
+}

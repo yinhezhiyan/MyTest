@@ -1,23 +1,11 @@
 <component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="SpringbootApplication" type="MavenRunConfiguration" factoryName="Maven">
-    <MavenSettings>
-      <option name="myGeneralSettings" />
-      <option name="myRunnerSettings" />
-      <option name="myRunnerParameters">
-        <MavenRunnerParameters>
-          <option name="workingDirPath" value="$PROJECT_DIR$/springboot" />
-          <option name="pomFileName" value="pom.xml" />
-          <option name="goals">
-            <list>
-              <option value="spring-boot:run" />
-            </list>
-          </option>
-          <option name="profiles">
-            <set />
-          </option>
-        </MavenRunnerParameters>
-      </option>
-    </MavenSettings>
-    <method v="2" />
+  <configuration default="false" name="SpringbootApplication (springboot module)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+    <module name="springboot" />
+    <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.SpringbootApplication" />
+    <option name="PROGRAM_PARAMETERS" value="" />
+    <option name="VM_PARAMETERS" value="" />
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
   </configuration>
 </component>
