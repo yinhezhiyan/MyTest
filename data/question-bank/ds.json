@@ -1,0 +1,10 @@
+[
+  {"id":"linear-list-001","subject":"DS","chapter":"线性表","chapterSlug":"linear-list","stem":"顺序表中，在第 i 个位置插入一个元素的平均时间复杂度是？","options":{"A":"O(1)","B":"O(log n)","C":"O(n)","D":"O(n log n)"},"answer":"C","analysis":"需要移动后续元素，平均移动量与 n 同阶。","difficulty":2,"knowledge_points":["顺序表","时间复杂度"]},
+  {"id":"stack-queue-001","subject":"DS","chapter":"栈与队列","chapterSlug":"stack-queue","stem":"栈的基本操作遵循哪种原则？","options":{"A":"FIFO","B":"LIFO","C":"随机访问","D":"双端访问"},"answer":"B","analysis":"栈是后进先出结构。","difficulty":1,"knowledge_points":["栈","基本概念"]},
+  {"id":"stack-queue-002","subject":"DS","chapter":"栈与队列","chapterSlug":"stack-queue","stem":"用两个栈实现一个队列时，出队操作最坏时间复杂度是？","options":{"A":"O(1)","B":"O(log n)","C":"O(n)","D":"O(n^2)"},"answer":"C","analysis":"当需要整体搬运元素时为 O(n)。","difficulty":3,"knowledge_points":["队列","栈应用"]},
+  {"id":"tree-001","subject":"DS","chapter":"树与二叉树","chapterSlug":"tree","stem":"一棵有 n 个结点的二叉树，其空指针域个数为？","options":{"A":"n-1","B":"n","C":"n+1","D":"2n"},"answer":"C","analysis":"二叉树共有 2n 个指针域，非空边 n-1，故空指针 n+1。","difficulty":2,"knowledge_points":["二叉树性质"]},
+  {"id":"graph-001","subject":"DS","chapter":"图","chapterSlug":"graph","stem":"无权图中求单源最短路径应优先使用？","options":{"A":"DFS","B":"BFS","C":"Prim","D":"Floyd"},"answer":"B","analysis":"无权图边权相等，BFS 按层扩展可得最短路径。","difficulty":2,"knowledge_points":["图遍历","最短路径"]},
+  {"id":"sort-001","subject":"DS","chapter":"排序","chapterSlug":"sort","stem":"下列排序算法中稳定的是？","options":{"A":"快速排序","B":"选择排序","C":"堆排序","D":"归并排序"},"answer":"D","analysis":"归并排序稳定；其余常规实现不稳定。","difficulty":2,"knowledge_points":["排序稳定性"]},
+  {"id":"search-001","subject":"DS","chapter":"查找","chapterSlug":"search","stem":"折半查找要求线性表必须？","options":{"A":"链式存储","B":"有序","C":"元素互异","D":"长度为 2 的幂"},"answer":"B","analysis":"核心前提是有序。","difficulty":1,"knowledge_points":["折半查找"]},
+  {"id":"hash-001","subject":"DS","chapter":"散列表","chapterSlug":"hash","stem":"处理哈希冲突的开放定址法中，查找失败的探测序列长度通常与什么相关？","options":{"A":"关键字值大小","B":"装填因子","C":"散列函数数量","D":"桶排序轮数"},"answer":"B","analysis":"装填因子越高，平均探测长度越大。","difficulty":3,"knowledge_points":["哈希表","冲突处理"]}
+]

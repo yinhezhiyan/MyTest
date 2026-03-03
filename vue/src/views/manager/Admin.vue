@@ -10,6 +10,7 @@
     <div class="card" style="margin-bottom: 5px">
       <div style="margin-bottom: 10px">
         <el-button type="primary" @click="handleAdd">新增</el-button>
+        <el-button type="success" style="margin-left: 10px" @click="importCurrentBank">导入当前学科题库</el-button>
       </div>
       <el-table :data="data.tableData" stripe>
         <el-table-column label="用户名" prop="username"></el-table-column>
@@ -75,6 +76,17 @@ const data = reactive({
   tableData: [],
   name: null
 })
+
+
+const importCurrentBank = () => {
+  request.post('/admin/question-bank/importCurrent').then(res => {
+    if (res.code === '200') {
+      ElMessage.success(`已导入 ${res.data.imported} 道题（${res.data.subject}）`)
+    } else {
+      ElMessage.error(res.msg)
+    }
+  })
+}
 
 // 分页查询
 const load = () => {
