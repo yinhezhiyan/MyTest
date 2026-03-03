@@ -1,187 +1,50 @@
 [
   {
-    "id": "linear-list-001",
-    "subject": "DS",
-    "chapter": "线性表",
-    "chapterSlug": "linear-list",
-    "stem": "顺序表中，在第 i 个位置插入一个元素的平均时间复杂度是？",
-    "options": {
-      "A": "O(1)",
-      "B": "O(log n)",
-      "C": "O(n)",
-      "D": "O(n log n)"
-    },
-    "answer": "C",
-    "analysis": "需要移动后续元素，平均移动量与 n 同阶。",
-    "difficulty": 2,
-    "knowledge_points": [
-      "顺序表",
-      "时间复杂度"
-    ]
-  },
-  {
-    "id": "stack-queue-001",
-    "subject": "DS",
-    "chapter": "栈与队列",
-    "chapterSlug": "stack-queue",
-    "stem": "栈的基本操作遵循哪种原则？",
-    "options": {
-      "A": "FIFO",
-      "B": "LIFO",
-      "C": "随机访问",
-      "D": "双端访问"
-    },
-    "answer": "B",
-    "analysis": "栈是后进先出结构。",
-    "difficulty": 1,
-    "knowledge_points": [
-      "栈",
-      "基本概念"
-    ]
-  },
-  {
-    "id": "stack-queue-002",
-    "subject": "DS",
-    "chapter": "栈与队列",
-    "chapterSlug": "stack-queue",
-    "stem": "用两个栈实现一个队列时，出队操作最坏时间复杂度是？",
-    "options": {
-      "A": "O(1)",
-      "B": "O(log n)",
-      "C": "O(n)",
-      "D": "O(n^2)"
-    },
-    "answer": "C",
-    "analysis": "当需要整体搬运元素时为 O(n)。",
-    "difficulty": 3,
-    "knowledge_points": [
-      "队列",
-      "栈应用"
-    ]
-  },
-  {
-    "id": "tree-001",
-    "subject": "DS",
-    "chapter": "树与二叉树",
-    "chapterSlug": "tree",
-    "stem": "一棵有 n 个结点的二叉树，其空指针域个数为？",
-    "options": {
-      "A": "n-1",
-      "B": "n",
-      "C": "n+1",
-      "D": "2n"
-    },
-    "answer": "C",
-    "analysis": "二叉树共有 2n 个指针域，非空边 n-1，故空指针 n+1。",
-    "difficulty": 2,
-    "knowledge_points": [
-      "二叉树性质"
-    ]
-  },
-  {
-    "id": "graph-001",
-    "subject": "DS",
-    "chapter": "图",
-    "chapterSlug": "graph",
-    "stem": "无权图中求单源最短路径应优先使用？",
-    "options": {
-      "A": "DFS",
-      "B": "BFS",
-      "C": "Prim",
-      "D": "Floyd"
-    },
-    "answer": "B",
-    "analysis": "无权图边权相等，BFS 按层扩展可得最短路径。",
-    "difficulty": 2,
-    "knowledge_points": [
-      "图遍历",
-      "最短路径"
-    ]
-  },
-  {
-    "id": "sort-001",
-    "subject": "DS",
-    "chapter": "排序",
-    "chapterSlug": "sort",
-    "stem": "下列排序算法中稳定的是？",
-    "options": {
-      "A": "快速排序",
-      "B": "选择排序",
-      "C": "堆排序",
-      "D": "归并排序"
-    },
-    "answer": "D",
-    "analysis": "归并排序稳定；其余常规实现不稳定。",
-    "difficulty": 2,
-    "knowledge_points": [
-      "排序稳定性"
-    ]
-  },
-  {
-    "id": "search-001",
-    "subject": "DS",
-    "chapter": "查找",
-    "chapterSlug": "search",
-    "stem": "折半查找要求线性表必须？",
-    "options": {
-      "A": "链式存储",
-      "B": "有序",
-      "C": "元素互异",
-      "D": "长度为 2 的幂"
-    },
-    "answer": "B",
-    "analysis": "核心前提是有序。",
-    "difficulty": 1,
-    "knowledge_points": [
-      "折半查找"
-    ]
-  },
-  {
-    "id": "hash-001",
-    "subject": "DS",
-    "chapter": "散列表",
-    "chapterSlug": "hash",
-    "stem": "处理哈希冲突的开放定址法中，查找失败的探测序列长度通常与什么相关？",
-    "options": {
-      "A": "关键字值大小",
-      "B": "装填因子",
-      "C": "散列函数数量",
-      "D": "桶排序轮数"
-    },
-    "answer": "B",
-    "analysis": "装填因子越高，平均探测长度越大。",
-    "difficulty": 3,
-    "knowledge_points": [
-      "哈希表",
-      "冲突处理"
-    ]
-  },
-  {
-    "id": "ds-bank-009",
+    "id": "ds-full-001",
     "subject": "DS",
     "chapter": "线性表",
     "chapterSlug": "线性表",
-    "stem": "顺序表中删除第 i 个元素，平均需要移动的元素个数约为？",
+    "stem": "顺序表支持随机访问，其时间复杂度通常为？",
     "options": {
-      "A": "i-1",
-      "B": "n-i",
-      "C": "(n-i)/2",
-      "D": "n"
+      "A": "O(1)",
+      "B": "O(n log n)",
+      "C": "O(n)",
+      "D": "O(log n)"
     },
-    "answer": "C",
-    "analysis": "删除后需前移后续元素，平均移动量约为 (n-i)/2。",
-    "difficulty": 3,
+    "answer": "A",
+    "analysis": "本题考查线性表。正确要点：O(1)。",
+    "difficulty": 2,
     "knowledge_points": [
       "线性表",
       "核心概念"
     ]
   },
   {
-    "id": "ds-bank-010",
+    "id": "ds-full-002",
     "subject": "DS",
     "chapter": "线性表",
     "chapterSlug": "线性表",
-    "stem": "单链表中在已知结点 p 后插入结点 s 的时间复杂度是？",
+    "stem": "关于线性表，顺序表支持随机访问，其时间复杂度通常为？",
+    "options": {
+      "A": "O(n log n)",
+      "B": "O(1)",
+      "C": "O(n)",
+      "D": "O(log n)"
+    },
+    "answer": "B",
+    "analysis": "本题考查线性表。正确要点：O(1)。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "线性表",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "ds-full-003",
+    "subject": "DS",
+    "chapter": "线性表",
+    "chapterSlug": "线性表",
+    "stem": "在DS课程中，顺序表支持随机访问，其时间复杂度通常为？",
     "options": {
       "A": "O(1)",
       "B": "O(log n)",
@@ -189,7 +52,27 @@
       "D": "O(n log n)"
     },
     "answer": "A",
-    "analysis": "只需修改常数次指针。",
+    "analysis": "本题考查线性表。正确要点：O(1)。",
+    "difficulty": 3,
+    "knowledge_points": [
+      "线性表",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "ds-full-004",
+    "subject": "DS",
+    "chapter": "线性表",
+    "chapterSlug": "线性表",
+    "stem": "下列说法中，顺序表支持随机访问，其时间复杂度通常为？",
+    "options": {
+      "A": "O(n)",
+      "B": "O(log n)",
+      "C": "O(1)",
+      "D": "O(n log n)"
+    },
+    "answer": "C",
+    "analysis": "本题考查线性表。正确要点：O(1)。",
     "difficulty": 2,
     "knowledge_points": [
       "线性表",
@@ -197,19 +80,419 @@
     ]
   },
   {
-    "id": "ds-bank-011",
+    "id": "ds-full-005",
+    "subject": "DS",
+    "chapter": "线性表",
+    "chapterSlug": "线性表",
+    "stem": "考点：顺序表支持随机访问，其时间复杂度通常为？",
+    "options": {
+      "A": "O(n log n)",
+      "B": "O(log n)",
+      "C": "O(1)",
+      "D": "O(n)"
+    },
+    "answer": "C",
+    "analysis": "本题考查线性表。正确要点：O(1)。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "线性表",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "ds-full-006",
+    "subject": "DS",
+    "chapter": "线性表",
+    "chapterSlug": "线性表",
+    "stem": "真题常考：顺序表支持随机访问，其时间复杂度通常为？",
+    "options": {
+      "A": "O(log n)",
+      "B": "O(n log n)",
+      "C": "O(n)",
+      "D": "O(1)"
+    },
+    "answer": "D",
+    "analysis": "本题考查线性表。正确要点：O(1)。",
+    "difficulty": 3,
+    "knowledge_points": [
+      "线性表",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "ds-full-007",
+    "subject": "DS",
+    "chapter": "线性表",
+    "chapterSlug": "线性表",
+    "stem": "请判断：顺序表支持随机访问，其时间复杂度通常为？",
+    "options": {
+      "A": "O(n log n)",
+      "B": "O(1)",
+      "C": "O(n)",
+      "D": "O(log n)"
+    },
+    "answer": "B",
+    "analysis": "本题考查线性表。正确要点：O(1)。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "线性表",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "ds-full-008",
+    "subject": "DS",
+    "chapter": "线性表",
+    "chapterSlug": "线性表",
+    "stem": "以下命题正确的是：顺序表支持随机访问，其时间复杂度通常为？",
+    "options": {
+      "A": "O(n log n)",
+      "B": "O(log n)",
+      "C": "O(n)",
+      "D": "O(1)"
+    },
+    "answer": "D",
+    "analysis": "本题考查线性表。正确要点：O(1)。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "线性表",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "ds-full-009",
+    "subject": "DS",
+    "chapter": "线性表",
+    "chapterSlug": "线性表",
+    "stem": "从原理角度看，顺序表支持随机访问，其时间复杂度通常为？",
+    "options": {
+      "A": "O(n log n)",
+      "B": "O(n)",
+      "C": "O(log n)",
+      "D": "O(1)"
+    },
+    "answer": "D",
+    "analysis": "本题考查线性表。正确要点：O(1)。",
+    "difficulty": 3,
+    "knowledge_points": [
+      "线性表",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "ds-full-010",
+    "subject": "DS",
+    "chapter": "线性表",
+    "chapterSlug": "线性表",
+    "stem": "在系统设计中，顺序表支持随机访问，其时间复杂度通常为？",
+    "options": {
+      "A": "O(log n)",
+      "B": "O(1)",
+      "C": "O(n)",
+      "D": "O(n log n)"
+    },
+    "answer": "B",
+    "analysis": "本题考查线性表。正确要点：O(1)。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "线性表",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "ds-full-011",
+    "subject": "DS",
+    "chapter": "线性表",
+    "chapterSlug": "线性表",
+    "stem": "基础题：顺序表支持随机访问，其时间复杂度通常为？",
+    "options": {
+      "A": "O(1)",
+      "B": "O(n)",
+      "C": "O(n log n)",
+      "D": "O(log n)"
+    },
+    "answer": "A",
+    "analysis": "本题考查线性表。正确要点：O(1)。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "线性表",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "ds-full-012",
+    "subject": "DS",
+    "chapter": "线性表",
+    "chapterSlug": "线性表",
+    "stem": "综合题：顺序表支持随机访问，其时间复杂度通常为？",
+    "options": {
+      "A": "O(log n)",
+      "B": "O(1)",
+      "C": "O(n)",
+      "D": "O(n log n)"
+    },
+    "answer": "B",
+    "analysis": "本题考查线性表。正确要点：O(1)。",
+    "difficulty": 3,
+    "knowledge_points": [
+      "线性表",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "ds-full-013",
+    "subject": "DS",
+    "chapter": "线性表",
+    "chapterSlug": "线性表",
+    "stem": "单链表在已知结点后插入新结点的时间复杂度是？",
+    "options": {
+      "A": "O(log n)",
+      "B": "O(1)",
+      "C": "O(n)",
+      "D": "O(n^2)"
+    },
+    "answer": "B",
+    "analysis": "本题考查线性表。正确要点：O(1)。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "线性表",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "ds-full-014",
+    "subject": "DS",
+    "chapter": "线性表",
+    "chapterSlug": "线性表",
+    "stem": "关于线性表，单链表在已知结点后插入新结点的时间复杂度是？",
+    "options": {
+      "A": "O(log n)",
+      "B": "O(n^2)",
+      "C": "O(n)",
+      "D": "O(1)"
+    },
+    "answer": "D",
+    "analysis": "本题考查线性表。正确要点：O(1)。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "线性表",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "ds-full-015",
+    "subject": "DS",
+    "chapter": "线性表",
+    "chapterSlug": "线性表",
+    "stem": "在DS课程中，单链表在已知结点后插入新结点的时间复杂度是？",
+    "options": {
+      "A": "O(n)",
+      "B": "O(1)",
+      "C": "O(n^2)",
+      "D": "O(log n)"
+    },
+    "answer": "B",
+    "analysis": "本题考查线性表。正确要点：O(1)。",
+    "difficulty": 3,
+    "knowledge_points": [
+      "线性表",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "ds-full-016",
+    "subject": "DS",
+    "chapter": "线性表",
+    "chapterSlug": "线性表",
+    "stem": "下列说法中，单链表在已知结点后插入新结点的时间复杂度是？",
+    "options": {
+      "A": "O(log n)",
+      "B": "O(1)",
+      "C": "O(n)",
+      "D": "O(n^2)"
+    },
+    "answer": "B",
+    "analysis": "本题考查线性表。正确要点：O(1)。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "线性表",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "ds-full-017",
+    "subject": "DS",
+    "chapter": "线性表",
+    "chapterSlug": "线性表",
+    "stem": "考点：单链表在已知结点后插入新结点的时间复杂度是？",
+    "options": {
+      "A": "O(n)",
+      "B": "O(log n)",
+      "C": "O(1)",
+      "D": "O(n^2)"
+    },
+    "answer": "C",
+    "analysis": "本题考查线性表。正确要点：O(1)。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "线性表",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "ds-full-018",
+    "subject": "DS",
+    "chapter": "线性表",
+    "chapterSlug": "线性表",
+    "stem": "真题常考：单链表在已知结点后插入新结点的时间复杂度是？",
+    "options": {
+      "A": "O(n^2)",
+      "B": "O(log n)",
+      "C": "O(n)",
+      "D": "O(1)"
+    },
+    "answer": "D",
+    "analysis": "本题考查线性表。正确要点：O(1)。",
+    "difficulty": 3,
+    "knowledge_points": [
+      "线性表",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "ds-full-019",
+    "subject": "DS",
+    "chapter": "线性表",
+    "chapterSlug": "线性表",
+    "stem": "请判断：单链表在已知结点后插入新结点的时间复杂度是？",
+    "options": {
+      "A": "O(log n)",
+      "B": "O(1)",
+      "C": "O(n)",
+      "D": "O(n^2)"
+    },
+    "answer": "B",
+    "analysis": "本题考查线性表。正确要点：O(1)。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "线性表",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "ds-full-020",
+    "subject": "DS",
+    "chapter": "线性表",
+    "chapterSlug": "线性表",
+    "stem": "以下命题正确的是：单链表在已知结点后插入新结点的时间复杂度是？",
+    "options": {
+      "A": "O(n)",
+      "B": "O(log n)",
+      "C": "O(n^2)",
+      "D": "O(1)"
+    },
+    "answer": "D",
+    "analysis": "本题考查线性表。正确要点：O(1)。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "线性表",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "ds-full-021",
+    "subject": "DS",
+    "chapter": "线性表",
+    "chapterSlug": "线性表",
+    "stem": "从原理角度看，单链表在已知结点后插入新结点的时间复杂度是？",
+    "options": {
+      "A": "O(log n)",
+      "B": "O(n^2)",
+      "C": "O(1)",
+      "D": "O(n)"
+    },
+    "answer": "C",
+    "analysis": "本题考查线性表。正确要点：O(1)。",
+    "difficulty": 3,
+    "knowledge_points": [
+      "线性表",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "ds-full-022",
+    "subject": "DS",
+    "chapter": "线性表",
+    "chapterSlug": "线性表",
+    "stem": "在系统设计中，单链表在已知结点后插入新结点的时间复杂度是？",
+    "options": {
+      "A": "O(1)",
+      "B": "O(n^2)",
+      "C": "O(n)",
+      "D": "O(log n)"
+    },
+    "answer": "A",
+    "analysis": "本题考查线性表。正确要点：O(1)。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "线性表",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "ds-full-023",
+    "subject": "DS",
+    "chapter": "线性表",
+    "chapterSlug": "线性表",
+    "stem": "基础题：单链表在已知结点后插入新结点的时间复杂度是？",
+    "options": {
+      "A": "O(n)",
+      "B": "O(n^2)",
+      "C": "O(1)",
+      "D": "O(log n)"
+    },
+    "answer": "C",
+    "analysis": "本题考查线性表。正确要点：O(1)。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "线性表",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "ds-full-024",
+    "subject": "DS",
+    "chapter": "线性表",
+    "chapterSlug": "线性表",
+    "stem": "综合题：单链表在已知结点后插入新结点的时间复杂度是？",
+    "options": {
+      "A": "O(log n)",
+      "B": "O(1)",
+      "C": "O(n)",
+      "D": "O(n^2)"
+    },
+    "answer": "B",
+    "analysis": "本题考查线性表。正确要点：O(1)。",
+    "difficulty": 3,
+    "knowledge_points": [
+      "线性表",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "ds-full-025",
     "subject": "DS",
     "chapter": "栈与队列",
     "chapterSlug": "栈与队列",
-    "stem": "表达式求值中用于处理运算符优先级的典型结构是？",
+    "stem": "栈的逻辑特性是？",
     "options": {
-      "A": "队列",
-      "B": "栈",
-      "C": "并查集",
-      "D": "哈希表"
+      "A": "先进先出",
+      "B": "后进先出",
+      "C": "按优先级",
+      "D": "随机访问"
     },
     "answer": "B",
-    "analysis": "运算符栈用于比较优先级。",
+    "analysis": "本题考查栈与队列。正确要点：后进先出。",
     "difficulty": 2,
     "knowledge_points": [
       "栈与队列",
@@ -217,11 +500,291 @@
     ]
   },
   {
-    "id": "ds-bank-012",
+    "id": "ds-full-026",
     "subject": "DS",
     "chapter": "栈与队列",
     "chapterSlug": "栈与队列",
-    "stem": "循环队列判满条件（保留一个空位）通常是？",
+    "stem": "关于栈与队列，栈的逻辑特性是？",
+    "options": {
+      "A": "按优先级",
+      "B": "随机访问",
+      "C": "后进先出",
+      "D": "先进先出"
+    },
+    "answer": "C",
+    "analysis": "本题考查栈与队列。正确要点：后进先出。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "栈与队列",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "ds-full-027",
+    "subject": "DS",
+    "chapter": "栈与队列",
+    "chapterSlug": "栈与队列",
+    "stem": "在DS课程中，栈的逻辑特性是？",
+    "options": {
+      "A": "先进先出",
+      "B": "后进先出",
+      "C": "随机访问",
+      "D": "按优先级"
+    },
+    "answer": "B",
+    "analysis": "本题考查栈与队列。正确要点：后进先出。",
+    "difficulty": 3,
+    "knowledge_points": [
+      "栈与队列",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "ds-full-028",
+    "subject": "DS",
+    "chapter": "栈与队列",
+    "chapterSlug": "栈与队列",
+    "stem": "下列说法中，栈的逻辑特性是？",
+    "options": {
+      "A": "随机访问",
+      "B": "按优先级",
+      "C": "先进先出",
+      "D": "后进先出"
+    },
+    "answer": "D",
+    "analysis": "本题考查栈与队列。正确要点：后进先出。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "栈与队列",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "ds-full-029",
+    "subject": "DS",
+    "chapter": "栈与队列",
+    "chapterSlug": "栈与队列",
+    "stem": "考点：栈的逻辑特性是？",
+    "options": {
+      "A": "按优先级",
+      "B": "随机访问",
+      "C": "后进先出",
+      "D": "先进先出"
+    },
+    "answer": "C",
+    "analysis": "本题考查栈与队列。正确要点：后进先出。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "栈与队列",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "ds-full-030",
+    "subject": "DS",
+    "chapter": "栈与队列",
+    "chapterSlug": "栈与队列",
+    "stem": "真题常考：栈的逻辑特性是？",
+    "options": {
+      "A": "按优先级",
+      "B": "后进先出",
+      "C": "随机访问",
+      "D": "先进先出"
+    },
+    "answer": "B",
+    "analysis": "本题考查栈与队列。正确要点：后进先出。",
+    "difficulty": 3,
+    "knowledge_points": [
+      "栈与队列",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "ds-full-031",
+    "subject": "DS",
+    "chapter": "栈与队列",
+    "chapterSlug": "栈与队列",
+    "stem": "请判断：栈的逻辑特性是？",
+    "options": {
+      "A": "后进先出",
+      "B": "随机访问",
+      "C": "先进先出",
+      "D": "按优先级"
+    },
+    "answer": "A",
+    "analysis": "本题考查栈与队列。正确要点：后进先出。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "栈与队列",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "ds-full-032",
+    "subject": "DS",
+    "chapter": "栈与队列",
+    "chapterSlug": "栈与队列",
+    "stem": "以下命题正确的是：栈的逻辑特性是？",
+    "options": {
+      "A": "先进先出",
+      "B": "随机访问",
+      "C": "按优先级",
+      "D": "后进先出"
+    },
+    "answer": "D",
+    "analysis": "本题考查栈与队列。正确要点：后进先出。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "栈与队列",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "ds-full-033",
+    "subject": "DS",
+    "chapter": "栈与队列",
+    "chapterSlug": "栈与队列",
+    "stem": "从原理角度看，栈的逻辑特性是？",
+    "options": {
+      "A": "随机访问",
+      "B": "先进先出",
+      "C": "后进先出",
+      "D": "按优先级"
+    },
+    "answer": "C",
+    "analysis": "本题考查栈与队列。正确要点：后进先出。",
+    "difficulty": 3,
+    "knowledge_points": [
+      "栈与队列",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "ds-full-034",
+    "subject": "DS",
+    "chapter": "栈与队列",
+    "chapterSlug": "栈与队列",
+    "stem": "在系统设计中，栈的逻辑特性是？",
+    "options": {
+      "A": "按优先级",
+      "B": "先进先出",
+      "C": "后进先出",
+      "D": "随机访问"
+    },
+    "answer": "C",
+    "analysis": "本题考查栈与队列。正确要点：后进先出。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "栈与队列",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "ds-full-035",
+    "subject": "DS",
+    "chapter": "栈与队列",
+    "chapterSlug": "栈与队列",
+    "stem": "基础题：栈的逻辑特性是？",
+    "options": {
+      "A": "随机访问",
+      "B": "后进先出",
+      "C": "先进先出",
+      "D": "按优先级"
+    },
+    "answer": "B",
+    "analysis": "本题考查栈与队列。正确要点：后进先出。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "栈与队列",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "ds-full-036",
+    "subject": "DS",
+    "chapter": "栈与队列",
+    "chapterSlug": "栈与队列",
+    "stem": "综合题：栈的逻辑特性是？",
+    "options": {
+      "A": "按优先级",
+      "B": "随机访问",
+      "C": "先进先出",
+      "D": "后进先出"
+    },
+    "answer": "D",
+    "analysis": "本题考查栈与队列。正确要点：后进先出。",
+    "difficulty": 3,
+    "knowledge_points": [
+      "栈与队列",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "ds-full-037",
+    "subject": "DS",
+    "chapter": "栈与队列",
+    "chapterSlug": "栈与队列",
+    "stem": "循环队列保留一个空位时，判满条件通常是？",
+    "options": {
+      "A": "rear==M-1",
+      "B": "(rear+1)%M==front",
+      "C": "front==0",
+      "D": "front==rear"
+    },
+    "answer": "B",
+    "analysis": "本题考查栈与队列。正确要点：(rear+1)%M==front。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "栈与队列",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "ds-full-038",
+    "subject": "DS",
+    "chapter": "栈与队列",
+    "chapterSlug": "栈与队列",
+    "stem": "关于栈与队列，循环队列保留一个空位时，判满条件通常是？",
+    "options": {
+      "A": "(rear+1)%M==front",
+      "B": "front==rear",
+      "C": "front==0",
+      "D": "rear==M-1"
+    },
+    "answer": "A",
+    "analysis": "本题考查栈与队列。正确要点：(rear+1)%M==front。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "栈与队列",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "ds-full-039",
+    "subject": "DS",
+    "chapter": "栈与队列",
+    "chapterSlug": "栈与队列",
+    "stem": "在DS课程中，循环队列保留一个空位时，判满条件通常是？",
+    "options": {
+      "A": "front==0",
+      "B": "rear==M-1",
+      "C": "front==rear",
+      "D": "(rear+1)%M==front"
+    },
+    "answer": "D",
+    "analysis": "本题考查栈与队列。正确要点：(rear+1)%M==front。",
+    "difficulty": 3,
+    "knowledge_points": [
+      "栈与队列",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "ds-full-040",
+    "subject": "DS",
+    "chapter": "栈与队列",
+    "chapterSlug": "栈与队列",
+    "stem": "下列说法中，循环队列保留一个空位时，判满条件通常是？",
     "options": {
       "A": "front==rear",
       "B": "(rear+1)%M==front",
@@ -229,7 +792,47 @@
       "D": "front==0"
     },
     "answer": "B",
-    "analysis": "预留空位时 rear 下一位等于 front 表示满。",
+    "analysis": "本题考查栈与队列。正确要点：(rear+1)%M==front。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "栈与队列",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "ds-full-041",
+    "subject": "DS",
+    "chapter": "栈与队列",
+    "chapterSlug": "栈与队列",
+    "stem": "考点：循环队列保留一个空位时，判满条件通常是？",
+    "options": {
+      "A": "front==rear",
+      "B": "front==0",
+      "C": "rear==M-1",
+      "D": "(rear+1)%M==front"
+    },
+    "answer": "D",
+    "analysis": "本题考查栈与队列。正确要点：(rear+1)%M==front。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "栈与队列",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "ds-full-042",
+    "subject": "DS",
+    "chapter": "栈与队列",
+    "chapterSlug": "栈与队列",
+    "stem": "真题常考：循环队列保留一个空位时，判满条件通常是？",
+    "options": {
+      "A": "(rear+1)%M==front",
+      "B": "front==0",
+      "C": "front==rear",
+      "D": "rear==M-1"
+    },
+    "answer": "A",
+    "analysis": "本题考查栈与队列。正确要点：(rear+1)%M==front。",
     "difficulty": 3,
     "knowledge_points": [
       "栈与队列",
@@ -237,39 +840,139 @@
     ]
   },
   {
-    "id": "ds-bank-013",
+    "id": "ds-full-043",
     "subject": "DS",
-    "chapter": "树与二叉树",
-    "chapterSlug": "树与二叉树",
-    "stem": "已知先序和中序遍历，能否唯一确定一棵二叉树？",
+    "chapter": "栈与队列",
+    "chapterSlug": "栈与队列",
+    "stem": "请判断：循环队列保留一个空位时，判满条件通常是？",
     "options": {
-      "A": "总是能",
-      "B": "总是不能",
-      "C": "仅满二叉树能",
-      "D": "仅完全二叉树能"
+      "A": "(rear+1)%M==front",
+      "B": "front==rear",
+      "C": "rear==M-1",
+      "D": "front==0"
     },
     "answer": "A",
-    "analysis": "先序确定根，中序划分左右子树。",
+    "analysis": "本题考查栈与队列。正确要点：(rear+1)%M==front。",
     "difficulty": 2,
     "knowledge_points": [
-      "树与二叉树",
+      "栈与队列",
       "核心概念"
     ]
   },
   {
-    "id": "ds-bank-014",
+    "id": "ds-full-044",
+    "subject": "DS",
+    "chapter": "栈与队列",
+    "chapterSlug": "栈与队列",
+    "stem": "以下命题正确的是：循环队列保留一个空位时，判满条件通常是？",
+    "options": {
+      "A": "rear==M-1",
+      "B": "(rear+1)%M==front",
+      "C": "front==rear",
+      "D": "front==0"
+    },
+    "answer": "B",
+    "analysis": "本题考查栈与队列。正确要点：(rear+1)%M==front。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "栈与队列",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "ds-full-045",
+    "subject": "DS",
+    "chapter": "栈与队列",
+    "chapterSlug": "栈与队列",
+    "stem": "从原理角度看，循环队列保留一个空位时，判满条件通常是？",
+    "options": {
+      "A": "rear==M-1",
+      "B": "(rear+1)%M==front",
+      "C": "front==rear",
+      "D": "front==0"
+    },
+    "answer": "B",
+    "analysis": "本题考查栈与队列。正确要点：(rear+1)%M==front。",
+    "difficulty": 3,
+    "knowledge_points": [
+      "栈与队列",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "ds-full-046",
+    "subject": "DS",
+    "chapter": "栈与队列",
+    "chapterSlug": "栈与队列",
+    "stem": "在系统设计中，循环队列保留一个空位时，判满条件通常是？",
+    "options": {
+      "A": "front==rear",
+      "B": "(rear+1)%M==front",
+      "C": "rear==M-1",
+      "D": "front==0"
+    },
+    "answer": "B",
+    "analysis": "本题考查栈与队列。正确要点：(rear+1)%M==front。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "栈与队列",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "ds-full-047",
+    "subject": "DS",
+    "chapter": "栈与队列",
+    "chapterSlug": "栈与队列",
+    "stem": "基础题：循环队列保留一个空位时，判满条件通常是？",
+    "options": {
+      "A": "front==rear",
+      "B": "(rear+1)%M==front",
+      "C": "rear==M-1",
+      "D": "front==0"
+    },
+    "answer": "B",
+    "analysis": "本题考查栈与队列。正确要点：(rear+1)%M==front。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "栈与队列",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "ds-full-048",
+    "subject": "DS",
+    "chapter": "栈与队列",
+    "chapterSlug": "栈与队列",
+    "stem": "综合题：循环队列保留一个空位时，判满条件通常是？",
+    "options": {
+      "A": "rear==M-1",
+      "B": "(rear+1)%M==front",
+      "C": "front==0",
+      "D": "front==rear"
+    },
+    "answer": "B",
+    "analysis": "本题考查栈与队列。正确要点：(rear+1)%M==front。",
+    "difficulty": 3,
+    "knowledge_points": [
+      "栈与队列",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "ds-full-049",
     "subject": "DS",
     "chapter": "树与二叉树",
     "chapterSlug": "树与二叉树",
-    "stem": "二叉排序树中，中序遍历序列一定是？",
+    "stem": "二叉排序树中序遍历的结果是？",
     "options": {
-      "A": "逆序",
-      "B": "有序",
-      "C": "层序",
-      "D": "随机"
+      "A": "层序有序",
+      "B": "递减有序",
+      "C": "递增有序",
+      "D": "随机有序"
     },
-    "answer": "B",
-    "analysis": "BST 的中序遍历单调递增。",
+    "answer": "C",
+    "analysis": "本题考查树与二叉树。正确要点：递增有序。",
     "difficulty": 2,
     "knowledge_points": [
       "树与二叉树",
@@ -277,39 +980,259 @@
     ]
   },
   {
-    "id": "ds-bank-015",
+    "id": "ds-full-050",
+    "subject": "DS",
+    "chapter": "树与二叉树",
+    "chapterSlug": "树与二叉树",
+    "stem": "关于树与二叉树，二叉排序树中序遍历的结果是？",
+    "options": {
+      "A": "递减有序",
+      "B": "层序有序",
+      "C": "随机有序",
+      "D": "递增有序"
+    },
+    "answer": "D",
+    "analysis": "本题考查树与二叉树。正确要点：递增有序。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "树与二叉树",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "ds-full-051",
+    "subject": "DS",
+    "chapter": "树与二叉树",
+    "chapterSlug": "树与二叉树",
+    "stem": "在DS课程中，二叉排序树中序遍历的结果是？",
+    "options": {
+      "A": "递增有序",
+      "B": "随机有序",
+      "C": "递减有序",
+      "D": "层序有序"
+    },
+    "answer": "A",
+    "analysis": "本题考查树与二叉树。正确要点：递增有序。",
+    "difficulty": 3,
+    "knowledge_points": [
+      "树与二叉树",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "ds-full-052",
+    "subject": "DS",
+    "chapter": "树与二叉树",
+    "chapterSlug": "树与二叉树",
+    "stem": "下列说法中，二叉排序树中序遍历的结果是？",
+    "options": {
+      "A": "递增有序",
+      "B": "随机有序",
+      "C": "层序有序",
+      "D": "递减有序"
+    },
+    "answer": "A",
+    "analysis": "本题考查树与二叉树。正确要点：递增有序。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "树与二叉树",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "ds-full-053",
+    "subject": "DS",
+    "chapter": "树与二叉树",
+    "chapterSlug": "树与二叉树",
+    "stem": "考点：二叉排序树中序遍历的结果是？",
+    "options": {
+      "A": "层序有序",
+      "B": "递增有序",
+      "C": "随机有序",
+      "D": "递减有序"
+    },
+    "answer": "B",
+    "analysis": "本题考查树与二叉树。正确要点：递增有序。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "树与二叉树",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "ds-full-054",
+    "subject": "DS",
+    "chapter": "树与二叉树",
+    "chapterSlug": "树与二叉树",
+    "stem": "真题常考：二叉排序树中序遍历的结果是？",
+    "options": {
+      "A": "层序有序",
+      "B": "递减有序",
+      "C": "随机有序",
+      "D": "递增有序"
+    },
+    "answer": "D",
+    "analysis": "本题考查树与二叉树。正确要点：递增有序。",
+    "difficulty": 3,
+    "knowledge_points": [
+      "树与二叉树",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "ds-full-055",
+    "subject": "DS",
+    "chapter": "树与二叉树",
+    "chapterSlug": "树与二叉树",
+    "stem": "请判断：二叉排序树中序遍历的结果是？",
+    "options": {
+      "A": "层序有序",
+      "B": "递增有序",
+      "C": "递减有序",
+      "D": "随机有序"
+    },
+    "answer": "B",
+    "analysis": "本题考查树与二叉树。正确要点：递增有序。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "树与二叉树",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "ds-full-056",
+    "subject": "DS",
+    "chapter": "树与二叉树",
+    "chapterSlug": "树与二叉树",
+    "stem": "以下命题正确的是：二叉排序树中序遍历的结果是？",
+    "options": {
+      "A": "层序有序",
+      "B": "随机有序",
+      "C": "递增有序",
+      "D": "递减有序"
+    },
+    "answer": "C",
+    "analysis": "本题考查树与二叉树。正确要点：递增有序。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "树与二叉树",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "ds-full-057",
+    "subject": "DS",
+    "chapter": "树与二叉树",
+    "chapterSlug": "树与二叉树",
+    "stem": "从原理角度看，二叉排序树中序遍历的结果是？",
+    "options": {
+      "A": "递减有序",
+      "B": "层序有序",
+      "C": "随机有序",
+      "D": "递增有序"
+    },
+    "answer": "D",
+    "analysis": "本题考查树与二叉树。正确要点：递增有序。",
+    "difficulty": 3,
+    "knowledge_points": [
+      "树与二叉树",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "ds-full-058",
+    "subject": "DS",
+    "chapter": "树与二叉树",
+    "chapterSlug": "树与二叉树",
+    "stem": "在系统设计中，二叉排序树中序遍历的结果是？",
+    "options": {
+      "A": "递减有序",
+      "B": "递增有序",
+      "C": "层序有序",
+      "D": "随机有序"
+    },
+    "answer": "B",
+    "analysis": "本题考查树与二叉树。正确要点：递增有序。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "树与二叉树",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "ds-full-059",
+    "subject": "DS",
+    "chapter": "树与二叉树",
+    "chapterSlug": "树与二叉树",
+    "stem": "基础题：二叉排序树中序遍历的结果是？",
+    "options": {
+      "A": "层序有序",
+      "B": "递减有序",
+      "C": "随机有序",
+      "D": "递增有序"
+    },
+    "answer": "D",
+    "analysis": "本题考查树与二叉树。正确要点：递增有序。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "树与二叉树",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "ds-full-060",
+    "subject": "DS",
+    "chapter": "树与二叉树",
+    "chapterSlug": "树与二叉树",
+    "stem": "综合题：二叉排序树中序遍历的结果是？",
+    "options": {
+      "A": "随机有序",
+      "B": "递增有序",
+      "C": "层序有序",
+      "D": "递减有序"
+    },
+    "answer": "B",
+    "analysis": "本题考查树与二叉树。正确要点：递增有序。",
+    "difficulty": 3,
+    "knowledge_points": [
+      "树与二叉树",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "ds-full-061",
     "subject": "DS",
     "chapter": "图",
     "chapterSlug": "图",
-    "stem": "对带权非负图求单源最短路径，通常使用？",
+    "stem": "无权图单源最短路径通常使用？",
     "options": {
-      "A": "Kruskal",
+      "A": "DFS",
       "B": "Prim",
-      "C": "Dijkstra",
-      "D": "拓扑排序"
+      "C": "Floyd",
+      "D": "BFS"
     },
-    "answer": "C",
-    "analysis": "Dijkstra 适用非负边权。",
-    "difficulty": 3,
+    "answer": "D",
+    "analysis": "本题考查图。正确要点：BFS。",
+    "difficulty": 2,
     "knowledge_points": [
       "图",
       "核心概念"
     ]
   },
   {
-    "id": "ds-bank-016",
+    "id": "ds-full-062",
     "subject": "DS",
     "chapter": "图",
     "chapterSlug": "图",
-    "stem": "判断无向图是否连通，最直接的方法是？",
+    "stem": "关于图，无权图单源最短路径通常使用？",
     "options": {
-      "A": "任一点 DFS/BFS 后看是否全访问",
-      "B": "只看边数",
-      "C": "只看顶点度",
-      "D": "求最小生成树权值"
+      "A": "DFS",
+      "B": "BFS",
+      "C": "Floyd",
+      "D": "Prim"
     },
-    "answer": "A",
-    "analysis": "一次遍历即可判断连通性。",
+    "answer": "B",
+    "analysis": "本题考查图。正确要点：BFS。",
     "difficulty": 2,
     "knowledge_points": [
       "图",
@@ -317,19 +1240,219 @@
     ]
   },
   {
-    "id": "ds-bank-017",
+    "id": "ds-full-063",
+    "subject": "DS",
+    "chapter": "图",
+    "chapterSlug": "图",
+    "stem": "在DS课程中，无权图单源最短路径通常使用？",
+    "options": {
+      "A": "DFS",
+      "B": "Floyd",
+      "C": "Prim",
+      "D": "BFS"
+    },
+    "answer": "D",
+    "analysis": "本题考查图。正确要点：BFS。",
+    "difficulty": 3,
+    "knowledge_points": [
+      "图",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "ds-full-064",
+    "subject": "DS",
+    "chapter": "图",
+    "chapterSlug": "图",
+    "stem": "下列说法中，无权图单源最短路径通常使用？",
+    "options": {
+      "A": "BFS",
+      "B": "Floyd",
+      "C": "Prim",
+      "D": "DFS"
+    },
+    "answer": "A",
+    "analysis": "本题考查图。正确要点：BFS。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "图",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "ds-full-065",
+    "subject": "DS",
+    "chapter": "图",
+    "chapterSlug": "图",
+    "stem": "考点：无权图单源最短路径通常使用？",
+    "options": {
+      "A": "Floyd",
+      "B": "DFS",
+      "C": "Prim",
+      "D": "BFS"
+    },
+    "answer": "D",
+    "analysis": "本题考查图。正确要点：BFS。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "图",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "ds-full-066",
+    "subject": "DS",
+    "chapter": "图",
+    "chapterSlug": "图",
+    "stem": "真题常考：无权图单源最短路径通常使用？",
+    "options": {
+      "A": "DFS",
+      "B": "Floyd",
+      "C": "BFS",
+      "D": "Prim"
+    },
+    "answer": "C",
+    "analysis": "本题考查图。正确要点：BFS。",
+    "difficulty": 3,
+    "knowledge_points": [
+      "图",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "ds-full-067",
+    "subject": "DS",
+    "chapter": "图",
+    "chapterSlug": "图",
+    "stem": "请判断：无权图单源最短路径通常使用？",
+    "options": {
+      "A": "Floyd",
+      "B": "Prim",
+      "C": "BFS",
+      "D": "DFS"
+    },
+    "answer": "C",
+    "analysis": "本题考查图。正确要点：BFS。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "图",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "ds-full-068",
+    "subject": "DS",
+    "chapter": "图",
+    "chapterSlug": "图",
+    "stem": "以下命题正确的是：无权图单源最短路径通常使用？",
+    "options": {
+      "A": "Prim",
+      "B": "DFS",
+      "C": "Floyd",
+      "D": "BFS"
+    },
+    "answer": "D",
+    "analysis": "本题考查图。正确要点：BFS。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "图",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "ds-full-069",
+    "subject": "DS",
+    "chapter": "图",
+    "chapterSlug": "图",
+    "stem": "从原理角度看，无权图单源最短路径通常使用？",
+    "options": {
+      "A": "Floyd",
+      "B": "Prim",
+      "C": "DFS",
+      "D": "BFS"
+    },
+    "answer": "D",
+    "analysis": "本题考查图。正确要点：BFS。",
+    "difficulty": 3,
+    "knowledge_points": [
+      "图",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "ds-full-070",
+    "subject": "DS",
+    "chapter": "图",
+    "chapterSlug": "图",
+    "stem": "在系统设计中，无权图单源最短路径通常使用？",
+    "options": {
+      "A": "Prim",
+      "B": "BFS",
+      "C": "Floyd",
+      "D": "DFS"
+    },
+    "answer": "B",
+    "analysis": "本题考查图。正确要点：BFS。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "图",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "ds-full-071",
+    "subject": "DS",
+    "chapter": "图",
+    "chapterSlug": "图",
+    "stem": "基础题：无权图单源最短路径通常使用？",
+    "options": {
+      "A": "DFS",
+      "B": "Floyd",
+      "C": "BFS",
+      "D": "Prim"
+    },
+    "answer": "C",
+    "analysis": "本题考查图。正确要点：BFS。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "图",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "ds-full-072",
+    "subject": "DS",
+    "chapter": "图",
+    "chapterSlug": "图",
+    "stem": "综合题：无权图单源最短路径通常使用？",
+    "options": {
+      "A": "DFS",
+      "B": "Prim",
+      "C": "Floyd",
+      "D": "BFS"
+    },
+    "answer": "D",
+    "analysis": "本题考查图。正确要点：BFS。",
+    "difficulty": 3,
+    "knowledge_points": [
+      "图",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "ds-full-073",
     "subject": "DS",
     "chapter": "查找",
     "chapterSlug": "查找",
-    "stem": "二叉排序树平均查找长度与什么最相关？",
+    "stem": "折半查找成立的关键前提是线性表？",
     "options": {
-      "A": "结点值大小",
-      "B": "树高",
-      "C": "存储方式",
-      "D": "遍历顺序"
+      "A": "链式存储",
+      "B": "有序",
+      "C": "长度为2的幂",
+      "D": "元素互异"
     },
     "answer": "B",
-    "analysis": "路径长度由树高决定。",
+    "analysis": "本题考查查找。正确要点：有序。",
     "difficulty": 2,
     "knowledge_points": [
       "查找",
@@ -337,19 +1460,39 @@
     ]
   },
   {
-    "id": "ds-bank-018",
+    "id": "ds-full-074",
     "subject": "DS",
     "chapter": "查找",
     "chapterSlug": "查找",
-    "stem": "散列表装填因子 α 增大时，查找性能通常？",
+    "stem": "关于查找，折半查找成立的关键前提是线性表？",
     "options": {
-      "A": "变好",
-      "B": "不变",
-      "C": "变差",
-      "D": "先差后好"
+      "A": "长度为2的幂",
+      "B": "链式存储",
+      "C": "元素互异",
+      "D": "有序"
     },
-    "answer": "C",
-    "analysis": "冲突概率上升，探测长度增加。",
+    "answer": "D",
+    "analysis": "本题考查查找。正确要点：有序。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "查找",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "ds-full-075",
+    "subject": "DS",
+    "chapter": "查找",
+    "chapterSlug": "查找",
+    "stem": "在DS课程中，折半查找成立的关键前提是线性表？",
+    "options": {
+      "A": "元素互异",
+      "B": "链式存储",
+      "C": "长度为2的幂",
+      "D": "有序"
+    },
+    "answer": "D",
+    "analysis": "本题考查查找。正确要点：有序。",
     "difficulty": 3,
     "knowledge_points": [
       "查找",
@@ -357,19 +1500,199 @@
     ]
   },
   {
-    "id": "ds-bank-019",
+    "id": "ds-full-076",
+    "subject": "DS",
+    "chapter": "查找",
+    "chapterSlug": "查找",
+    "stem": "下列说法中，折半查找成立的关键前提是线性表？",
+    "options": {
+      "A": "有序",
+      "B": "元素互异",
+      "C": "长度为2的幂",
+      "D": "链式存储"
+    },
+    "answer": "A",
+    "analysis": "本题考查查找。正确要点：有序。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "查找",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "ds-full-077",
+    "subject": "DS",
+    "chapter": "查找",
+    "chapterSlug": "查找",
+    "stem": "考点：折半查找成立的关键前提是线性表？",
+    "options": {
+      "A": "链式存储",
+      "B": "有序",
+      "C": "长度为2的幂",
+      "D": "元素互异"
+    },
+    "answer": "B",
+    "analysis": "本题考查查找。正确要点：有序。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "查找",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "ds-full-078",
+    "subject": "DS",
+    "chapter": "查找",
+    "chapterSlug": "查找",
+    "stem": "真题常考：折半查找成立的关键前提是线性表？",
+    "options": {
+      "A": "链式存储",
+      "B": "元素互异",
+      "C": "长度为2的幂",
+      "D": "有序"
+    },
+    "answer": "D",
+    "analysis": "本题考查查找。正确要点：有序。",
+    "difficulty": 3,
+    "knowledge_points": [
+      "查找",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "ds-full-079",
+    "subject": "DS",
+    "chapter": "查找",
+    "chapterSlug": "查找",
+    "stem": "请判断：折半查找成立的关键前提是线性表？",
+    "options": {
+      "A": "长度为2的幂",
+      "B": "链式存储",
+      "C": "有序",
+      "D": "元素互异"
+    },
+    "answer": "C",
+    "analysis": "本题考查查找。正确要点：有序。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "查找",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "ds-full-080",
+    "subject": "DS",
+    "chapter": "查找",
+    "chapterSlug": "查找",
+    "stem": "以下命题正确的是：折半查找成立的关键前提是线性表？",
+    "options": {
+      "A": "元素互异",
+      "B": "链式存储",
+      "C": "长度为2的幂",
+      "D": "有序"
+    },
+    "answer": "D",
+    "analysis": "本题考查查找。正确要点：有序。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "查找",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "ds-full-081",
+    "subject": "DS",
+    "chapter": "查找",
+    "chapterSlug": "查找",
+    "stem": "从原理角度看，折半查找成立的关键前提是线性表？",
+    "options": {
+      "A": "元素互异",
+      "B": "长度为2的幂",
+      "C": "有序",
+      "D": "链式存储"
+    },
+    "answer": "C",
+    "analysis": "本题考查查找。正确要点：有序。",
+    "difficulty": 3,
+    "knowledge_points": [
+      "查找",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "ds-full-082",
+    "subject": "DS",
+    "chapter": "查找",
+    "chapterSlug": "查找",
+    "stem": "在系统设计中，折半查找成立的关键前提是线性表？",
+    "options": {
+      "A": "长度为2的幂",
+      "B": "元素互异",
+      "C": "有序",
+      "D": "链式存储"
+    },
+    "answer": "C",
+    "analysis": "本题考查查找。正确要点：有序。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "查找",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "ds-full-083",
+    "subject": "DS",
+    "chapter": "查找",
+    "chapterSlug": "查找",
+    "stem": "基础题：折半查找成立的关键前提是线性表？",
+    "options": {
+      "A": "有序",
+      "B": "链式存储",
+      "C": "元素互异",
+      "D": "长度为2的幂"
+    },
+    "answer": "A",
+    "analysis": "本题考查查找。正确要点：有序。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "查找",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "ds-full-084",
+    "subject": "DS",
+    "chapter": "查找",
+    "chapterSlug": "查找",
+    "stem": "综合题：折半查找成立的关键前提是线性表？",
+    "options": {
+      "A": "链式存储",
+      "B": "长度为2的幂",
+      "C": "有序",
+      "D": "元素互异"
+    },
+    "answer": "C",
+    "analysis": "本题考查查找。正确要点：有序。",
+    "difficulty": 3,
+    "knowledge_points": [
+      "查找",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "ds-full-085",
     "subject": "DS",
     "chapter": "排序",
     "chapterSlug": "排序",
     "stem": "快速排序平均时间复杂度是？",
     "options": {
-      "A": "O(n)",
-      "B": "O(n log n)",
+      "A": "O(n log n)",
+      "B": "O(n^2)",
       "C": "O(log n)",
-      "D": "O(n^2)"
+      "D": "O(n)"
     },
-    "answer": "B",
-    "analysis": "平均分治深度为 log n。",
+    "answer": "A",
+    "analysis": "本题考查排序。正确要点：O(n log n)。",
     "difficulty": 2,
     "knowledge_points": [
       "排序",
@@ -377,19 +1700,19 @@
     ]
   },
   {
-    "id": "ds-bank-020",
+    "id": "ds-full-086",
     "subject": "DS",
     "chapter": "排序",
     "chapterSlug": "排序",
-    "stem": "堆排序属于哪类排序思想？",
+    "stem": "关于排序，快速排序平均时间复杂度是？",
     "options": {
-      "A": "交换",
-      "B": "选择",
-      "C": "插入",
-      "D": "归并"
+      "A": "O(n log n)",
+      "B": "O(n)",
+      "C": "O(log n)",
+      "D": "O(n^2)"
     },
-    "answer": "B",
-    "analysis": "每轮选择堆顶最大/最小元素。",
+    "answer": "A",
+    "analysis": "本题考查排序。正确要点：O(n log n)。",
     "difficulty": 2,
     "knowledge_points": [
       "排序",
@@ -397,319 +1720,499 @@
     ]
   },
   {
-    "id": "ds-bank-021",
+    "id": "ds-full-087",
     "subject": "DS",
-    "chapter": "散列表",
-    "chapterSlug": "散列表",
-    "stem": "拉链法处理冲突时，桶中元素通常组织为？",
+    "chapter": "排序",
+    "chapterSlug": "排序",
+    "stem": "在DS课程中，快速排序平均时间复杂度是？",
     "options": {
-      "A": "链表",
-      "B": "栈",
-      "C": "数组",
-      "D": "队列"
-    },
-    "answer": "A",
-    "analysis": "同义词结点挂在同一链上。",
-    "difficulty": 3,
-    "knowledge_points": [
-      "散列表",
-      "核心概念"
-    ]
-  },
-  {
-    "id": "ds-bank-022",
-    "subject": "DS",
-    "chapter": "散列表",
-    "chapterSlug": "散列表",
-    "stem": "开放定址法删除元素时常用“删除标记”主要为了？",
-    "options": {
-      "A": "减少内存",
-      "B": "保持探测链不断裂",
-      "C": "加快插入",
-      "D": "防止重复键"
-    },
-    "answer": "B",
-    "analysis": "直接置空会导致后续查找提前失败。",
-    "difficulty": 2,
-    "knowledge_points": [
-      "散列表",
-      "核心概念"
-    ]
-  },
-  {
-    "id": "ds-bank-023",
-    "subject": "DS",
-    "chapter": "线性表",
-    "chapterSlug": "线性表",
-    "stem": "顺序表中删除第 i 个元素，平均需要移动的元素个数约为？（扩展23）",
-    "options": {
-      "A": "i-1",
-      "B": "n-i",
-      "C": "(n-i)/2",
-      "D": "n"
+      "A": "O(log n)",
+      "B": "O(n)",
+      "C": "O(n log n)",
+      "D": "O(n^2)"
     },
     "answer": "C",
-    "analysis": "删除后需前移后续元素，平均移动量约为 (n-i)/2。",
-    "difficulty": 2,
+    "analysis": "本题考查排序。正确要点：O(n log n)。",
+    "difficulty": 3,
     "knowledge_points": [
-      "线性表",
+      "排序",
       "核心概念"
     ]
   },
   {
-    "id": "ds-bank-024",
+    "id": "ds-full-088",
     "subject": "DS",
-    "chapter": "线性表",
-    "chapterSlug": "线性表",
-    "stem": "单链表中在已知结点 p 后插入结点 s 的时间复杂度是？（扩展24）",
+    "chapter": "排序",
+    "chapterSlug": "排序",
+    "stem": "下列说法中，快速排序平均时间复杂度是？",
     "options": {
-      "A": "O(1)",
+      "A": "O(n log n)",
+      "B": "O(n)",
+      "C": "O(log n)",
+      "D": "O(n^2)"
+    },
+    "answer": "A",
+    "analysis": "本题考查排序。正确要点：O(n log n)。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "排序",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "ds-full-089",
+    "subject": "DS",
+    "chapter": "排序",
+    "chapterSlug": "排序",
+    "stem": "考点：快速排序平均时间复杂度是？",
+    "options": {
+      "A": "O(n)",
       "B": "O(log n)",
-      "C": "O(n)",
+      "C": "O(n log n)",
+      "D": "O(n^2)"
+    },
+    "answer": "C",
+    "analysis": "本题考查排序。正确要点：O(n log n)。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "排序",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "ds-full-090",
+    "subject": "DS",
+    "chapter": "排序",
+    "chapterSlug": "排序",
+    "stem": "真题常考：快速排序平均时间复杂度是？",
+    "options": {
+      "A": "O(log n)",
+      "B": "O(n log n)",
+      "C": "O(n^2)",
+      "D": "O(n)"
+    },
+    "answer": "B",
+    "analysis": "本题考查排序。正确要点：O(n log n)。",
+    "difficulty": 3,
+    "knowledge_points": [
+      "排序",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "ds-full-091",
+    "subject": "DS",
+    "chapter": "排序",
+    "chapterSlug": "排序",
+    "stem": "请判断：快速排序平均时间复杂度是？",
+    "options": {
+      "A": "O(log n)",
+      "B": "O(n)",
+      "C": "O(n^2)",
       "D": "O(n log n)"
     },
-    "answer": "A",
-    "analysis": "只需修改常数次指针。",
-    "difficulty": 3,
-    "knowledge_points": [
-      "线性表",
-      "核心概念"
-    ]
-  },
-  {
-    "id": "ds-bank-025",
-    "subject": "DS",
-    "chapter": "栈与队列",
-    "chapterSlug": "栈与队列",
-    "stem": "表达式求值中用于处理运算符优先级的典型结构是？（扩展25）",
-    "options": {
-      "A": "队列",
-      "B": "栈",
-      "C": "并查集",
-      "D": "哈希表"
-    },
-    "answer": "B",
-    "analysis": "运算符栈用于比较优先级。",
+    "answer": "D",
+    "analysis": "本题考查排序。正确要点：O(n log n)。",
     "difficulty": 2,
     "knowledge_points": [
-      "栈与队列",
+      "排序",
       "核心概念"
     ]
   },
   {
-    "id": "ds-bank-026",
+    "id": "ds-full-092",
     "subject": "DS",
-    "chapter": "栈与队列",
-    "chapterSlug": "栈与队列",
-    "stem": "循环队列判满条件（保留一个空位）通常是？（扩展26）",
+    "chapter": "排序",
+    "chapterSlug": "排序",
+    "stem": "以下命题正确的是：快速排序平均时间复杂度是？",
     "options": {
-      "A": "front==rear",
-      "B": "(rear+1)%M==front",
-      "C": "rear==M-1",
-      "D": "front==0"
+      "A": "O(n)",
+      "B": "O(log n)",
+      "C": "O(n^2)",
+      "D": "O(n log n)"
     },
-    "answer": "B",
-    "analysis": "预留空位时 rear 下一位等于 front 表示满。",
+    "answer": "D",
+    "analysis": "本题考查排序。正确要点：O(n log n)。",
     "difficulty": 2,
     "knowledge_points": [
-      "栈与队列",
+      "排序",
       "核心概念"
     ]
   },
   {
-    "id": "ds-bank-027",
+    "id": "ds-full-093",
     "subject": "DS",
-    "chapter": "树与二叉树",
-    "chapterSlug": "树与二叉树",
-    "stem": "已知先序和中序遍历，能否唯一确定一棵二叉树？（扩展27）",
+    "chapter": "排序",
+    "chapterSlug": "排序",
+    "stem": "从原理角度看，快速排序平均时间复杂度是？",
     "options": {
-      "A": "总是能",
-      "B": "总是不能",
-      "C": "仅满二叉树能",
-      "D": "仅完全二叉树能"
-    },
-    "answer": "A",
-    "analysis": "先序确定根，中序划分左右子树。",
-    "difficulty": 3,
-    "knowledge_points": [
-      "树与二叉树",
-      "核心概念"
-    ]
-  },
-  {
-    "id": "ds-bank-028",
-    "subject": "DS",
-    "chapter": "树与二叉树",
-    "chapterSlug": "树与二叉树",
-    "stem": "二叉排序树中，中序遍历序列一定是？（扩展28）",
-    "options": {
-      "A": "逆序",
-      "B": "有序",
-      "C": "层序",
-      "D": "随机"
-    },
-    "answer": "B",
-    "analysis": "BST 的中序遍历单调递增。",
-    "difficulty": 2,
-    "knowledge_points": [
-      "树与二叉树",
-      "核心概念"
-    ]
-  },
-  {
-    "id": "ds-bank-029",
-    "subject": "DS",
-    "chapter": "图",
-    "chapterSlug": "图",
-    "stem": "对带权非负图求单源最短路径，通常使用？（扩展29）",
-    "options": {
-      "A": "Kruskal",
-      "B": "Prim",
-      "C": "Dijkstra",
-      "D": "拓扑排序"
+      "A": "O(n)",
+      "B": "O(n^2)",
+      "C": "O(n log n)",
+      "D": "O(log n)"
     },
     "answer": "C",
-    "analysis": "Dijkstra 适用非负边权。",
-    "difficulty": 2,
-    "knowledge_points": [
-      "图",
-      "核心概念"
-    ]
-  },
-  {
-    "id": "ds-bank-030",
-    "subject": "DS",
-    "chapter": "图",
-    "chapterSlug": "图",
-    "stem": "判断无向图是否连通，最直接的方法是？（扩展30）",
-    "options": {
-      "A": "任一点 DFS/BFS 后看是否全访问",
-      "B": "只看边数",
-      "C": "只看顶点度",
-      "D": "求最小生成树权值"
-    },
-    "answer": "A",
-    "analysis": "一次遍历即可判断连通性。",
+    "analysis": "本题考查排序。正确要点：O(n log n)。",
     "difficulty": 3,
     "knowledge_points": [
-      "图",
+      "排序",
       "核心概念"
     ]
   },
   {
-    "id": "ds-bank-031",
+    "id": "ds-full-094",
     "subject": "DS",
-    "chapter": "查找",
-    "chapterSlug": "查找",
-    "stem": "二叉排序树平均查找长度与什么最相关？（扩展31）",
+    "chapter": "排序",
+    "chapterSlug": "排序",
+    "stem": "在系统设计中，快速排序平均时间复杂度是？",
     "options": {
-      "A": "结点值大小",
-      "B": "树高",
-      "C": "存储方式",
-      "D": "遍历顺序"
+      "A": "O(n log n)",
+      "B": "O(n^2)",
+      "C": "O(log n)",
+      "D": "O(n)"
     },
-    "answer": "B",
-    "analysis": "路径长度由树高决定。",
+    "answer": "A",
+    "analysis": "本题考查排序。正确要点：O(n log n)。",
     "difficulty": 2,
     "knowledge_points": [
-      "查找",
+      "排序",
       "核心概念"
     ]
   },
   {
-    "id": "ds-bank-032",
+    "id": "ds-full-095",
     "subject": "DS",
-    "chapter": "查找",
-    "chapterSlug": "查找",
-    "stem": "散列表装填因子 α 增大时，查找性能通常？（扩展32）",
+    "chapter": "排序",
+    "chapterSlug": "排序",
+    "stem": "基础题：快速排序平均时间复杂度是？",
     "options": {
-      "A": "变好",
+      "A": "O(n log n)",
+      "B": "O(n^2)",
+      "C": "O(n)",
+      "D": "O(log n)"
+    },
+    "answer": "A",
+    "analysis": "本题考查排序。正确要点：O(n log n)。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "排序",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "ds-full-096",
+    "subject": "DS",
+    "chapter": "排序",
+    "chapterSlug": "排序",
+    "stem": "综合题：快速排序平均时间复杂度是？",
+    "options": {
+      "A": "O(n^2)",
+      "B": "O(n)",
+      "C": "O(n log n)",
+      "D": "O(log n)"
+    },
+    "answer": "C",
+    "analysis": "本题考查排序。正确要点：O(n log n)。",
+    "difficulty": 3,
+    "knowledge_points": [
+      "排序",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "ds-full-097",
+    "subject": "DS",
+    "chapter": "排序",
+    "chapterSlug": "排序",
+    "stem": "归并排序的稳定性是？",
+    "options": {
+      "A": "不稳定",
+      "B": "稳定",
+      "C": "仅随机数据稳定",
+      "D": "取决于数据规模"
+    },
+    "answer": "B",
+    "analysis": "本题考查排序。正确要点：稳定。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "排序",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "ds-full-098",
+    "subject": "DS",
+    "chapter": "排序",
+    "chapterSlug": "排序",
+    "stem": "关于排序，归并排序的稳定性是？",
+    "options": {
+      "A": "稳定",
+      "B": "不稳定",
+      "C": "仅随机数据稳定",
+      "D": "取决于数据规模"
+    },
+    "answer": "A",
+    "analysis": "本题考查排序。正确要点：稳定。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "排序",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "ds-full-099",
+    "subject": "DS",
+    "chapter": "排序",
+    "chapterSlug": "排序",
+    "stem": "在DS课程中，归并排序的稳定性是？",
+    "options": {
+      "A": "不稳定",
+      "B": "稳定",
+      "C": "仅随机数据稳定",
+      "D": "取决于数据规模"
+    },
+    "answer": "B",
+    "analysis": "本题考查排序。正确要点：稳定。",
+    "difficulty": 3,
+    "knowledge_points": [
+      "排序",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "ds-full-100",
+    "subject": "DS",
+    "chapter": "排序",
+    "chapterSlug": "排序",
+    "stem": "下列说法中，归并排序的稳定性是？",
+    "options": {
+      "A": "稳定",
+      "B": "取决于数据规模",
+      "C": "仅随机数据稳定",
+      "D": "不稳定"
+    },
+    "answer": "A",
+    "analysis": "本题考查排序。正确要点：稳定。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "排序",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "ds-full-101",
+    "subject": "DS",
+    "chapter": "排序",
+    "chapterSlug": "排序",
+    "stem": "考点：归并排序的稳定性是？",
+    "options": {
+      "A": "取决于数据规模",
+      "B": "仅随机数据稳定",
+      "C": "稳定",
+      "D": "不稳定"
+    },
+    "answer": "C",
+    "analysis": "本题考查排序。正确要点：稳定。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "排序",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "ds-full-102",
+    "subject": "DS",
+    "chapter": "排序",
+    "chapterSlug": "排序",
+    "stem": "真题常考：归并排序的稳定性是？",
+    "options": {
+      "A": "仅随机数据稳定",
+      "B": "取决于数据规模",
+      "C": "稳定",
+      "D": "不稳定"
+    },
+    "answer": "C",
+    "analysis": "本题考查排序。正确要点：稳定。",
+    "difficulty": 3,
+    "knowledge_points": [
+      "排序",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "ds-full-103",
+    "subject": "DS",
+    "chapter": "排序",
+    "chapterSlug": "排序",
+    "stem": "请判断：归并排序的稳定性是？",
+    "options": {
+      "A": "取决于数据规模",
+      "B": "仅随机数据稳定",
+      "C": "不稳定",
+      "D": "稳定"
+    },
+    "answer": "D",
+    "analysis": "本题考查排序。正确要点：稳定。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "排序",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "ds-full-104",
+    "subject": "DS",
+    "chapter": "排序",
+    "chapterSlug": "排序",
+    "stem": "以下命题正确的是：归并排序的稳定性是？",
+    "options": {
+      "A": "不稳定",
+      "B": "仅随机数据稳定",
+      "C": "稳定",
+      "D": "取决于数据规模"
+    },
+    "answer": "C",
+    "analysis": "本题考查排序。正确要点：稳定。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "排序",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "ds-full-105",
+    "subject": "DS",
+    "chapter": "排序",
+    "chapterSlug": "排序",
+    "stem": "从原理角度看，归并排序的稳定性是？",
+    "options": {
+      "A": "稳定",
+      "B": "取决于数据规模",
+      "C": "仅随机数据稳定",
+      "D": "不稳定"
+    },
+    "answer": "A",
+    "analysis": "本题考查排序。正确要点：稳定。",
+    "difficulty": 3,
+    "knowledge_points": [
+      "排序",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "ds-full-106",
+    "subject": "DS",
+    "chapter": "排序",
+    "chapterSlug": "排序",
+    "stem": "在系统设计中，归并排序的稳定性是？",
+    "options": {
+      "A": "仅随机数据稳定",
+      "B": "稳定",
+      "C": "取决于数据规模",
+      "D": "不稳定"
+    },
+    "answer": "B",
+    "analysis": "本题考查排序。正确要点：稳定。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "排序",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "ds-full-107",
+    "subject": "DS",
+    "chapter": "排序",
+    "chapterSlug": "排序",
+    "stem": "基础题：归并排序的稳定性是？",
+    "options": {
+      "A": "不稳定",
+      "B": "稳定",
+      "C": "取决于数据规模",
+      "D": "仅随机数据稳定"
+    },
+    "answer": "B",
+    "analysis": "本题考查排序。正确要点：稳定。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "排序",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "ds-full-108",
+    "subject": "DS",
+    "chapter": "排序",
+    "chapterSlug": "排序",
+    "stem": "综合题：归并排序的稳定性是？",
+    "options": {
+      "A": "取决于数据规模",
+      "B": "仅随机数据稳定",
+      "C": "稳定",
+      "D": "不稳定"
+    },
+    "answer": "C",
+    "analysis": "本题考查排序。正确要点：稳定。",
+    "difficulty": 3,
+    "knowledge_points": [
+      "排序",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "ds-full-109",
+    "subject": "DS",
+    "chapter": "散列表",
+    "chapterSlug": "散列表",
+    "stem": "哈希表装填因子上升时，查找性能通常？",
+    "options": {
+      "A": "上升",
+      "B": "下降",
+      "C": "先升后降",
+      "D": "不变"
+    },
+    "answer": "B",
+    "analysis": "本题考查散列表。正确要点：下降。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "散列表",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "ds-full-110",
+    "subject": "DS",
+    "chapter": "散列表",
+    "chapterSlug": "散列表",
+    "stem": "关于散列表，哈希表装填因子上升时，查找性能通常？",
+    "options": {
+      "A": "上升",
+      "B": "下降",
+      "C": "不变",
+      "D": "先升后降"
+    },
+    "answer": "B",
+    "analysis": "本题考查散列表。正确要点：下降。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "散列表",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "ds-full-111",
+    "subject": "DS",
+    "chapter": "散列表",
+    "chapterSlug": "散列表",
+    "stem": "在DS课程中，哈希表装填因子上升时，查找性能通常？",
+    "options": {
+      "A": "先升后降",
       "B": "不变",
-      "C": "变差",
-      "D": "先差后好"
+      "C": "上升",
+      "D": "下降"
     },
-    "answer": "C",
-    "analysis": "冲突概率上升，探测长度增加。",
-    "difficulty": 2,
-    "knowledge_points": [
-      "查找",
-      "核心概念"
-    ]
-  },
-  {
-    "id": "ds-bank-033",
-    "subject": "DS",
-    "chapter": "排序",
-    "chapterSlug": "排序",
-    "stem": "快速排序平均时间复杂度是？（扩展33）",
-    "options": {
-      "A": "O(n)",
-      "B": "O(n log n)",
-      "C": "O(log n)",
-      "D": "O(n^2)"
-    },
-    "answer": "B",
-    "analysis": "平均分治深度为 log n。",
-    "difficulty": 3,
-    "knowledge_points": [
-      "排序",
-      "核心概念"
-    ]
-  },
-  {
-    "id": "ds-bank-034",
-    "subject": "DS",
-    "chapter": "排序",
-    "chapterSlug": "排序",
-    "stem": "堆排序属于哪类排序思想？（扩展34）",
-    "options": {
-      "A": "交换",
-      "B": "选择",
-      "C": "插入",
-      "D": "归并"
-    },
-    "answer": "B",
-    "analysis": "每轮选择堆顶最大/最小元素。",
-    "difficulty": 2,
-    "knowledge_points": [
-      "排序",
-      "核心概念"
-    ]
-  },
-  {
-    "id": "ds-bank-035",
-    "subject": "DS",
-    "chapter": "散列表",
-    "chapterSlug": "散列表",
-    "stem": "拉链法处理冲突时，桶中元素通常组织为？（扩展35）",
-    "options": {
-      "A": "链表",
-      "B": "栈",
-      "C": "数组",
-      "D": "队列"
-    },
-    "answer": "A",
-    "analysis": "同义词结点挂在同一链上。",
-    "difficulty": 2,
-    "knowledge_points": [
-      "散列表",
-      "核心概念"
-    ]
-  },
-  {
-    "id": "ds-bank-036",
-    "subject": "DS",
-    "chapter": "散列表",
-    "chapterSlug": "散列表",
-    "stem": "开放定址法删除元素时常用“删除标记”主要为了？（扩展36）",
-    "options": {
-      "A": "减少内存",
-      "B": "保持探测链不断裂",
-      "C": "加快插入",
-      "D": "防止重复键"
-    },
-    "answer": "B",
-    "analysis": "直接置空会导致后续查找提前失败。",
+    "answer": "D",
+    "analysis": "本题考查散列表。正确要点：下降。",
     "difficulty": 3,
     "knowledge_points": [
       "散列表",
@@ -717,82 +2220,182 @@
     ]
   },
   {
-    "id": "ds-bank-037",
+    "id": "ds-full-112",
     "subject": "DS",
-    "chapter": "线性表",
-    "chapterSlug": "线性表",
-    "stem": "顺序表中删除第 i 个元素，平均需要移动的元素个数约为？（扩展37）",
+    "chapter": "散列表",
+    "chapterSlug": "散列表",
+    "stem": "下列说法中，哈希表装填因子上升时，查找性能通常？",
     "options": {
-      "A": "i-1",
-      "B": "n-i",
-      "C": "(n-i)/2",
-      "D": "n"
-    },
-    "answer": "C",
-    "analysis": "删除后需前移后续元素，平均移动量约为 (n-i)/2。",
-    "difficulty": 2,
-    "knowledge_points": [
-      "线性表",
-      "核心概念"
-    ]
-  },
-  {
-    "id": "ds-bank-038",
-    "subject": "DS",
-    "chapter": "线性表",
-    "chapterSlug": "线性表",
-    "stem": "单链表中在已知结点 p 后插入结点 s 的时间复杂度是？（扩展38）",
-    "options": {
-      "A": "O(1)",
-      "B": "O(log n)",
-      "C": "O(n)",
-      "D": "O(n log n)"
+      "A": "下降",
+      "B": "不变",
+      "C": "先升后降",
+      "D": "上升"
     },
     "answer": "A",
-    "analysis": "只需修改常数次指针。",
+    "analysis": "本题考查散列表。正确要点：下降。",
     "difficulty": 2,
     "knowledge_points": [
-      "线性表",
+      "散列表",
       "核心概念"
     ]
   },
   {
-    "id": "ds-bank-039",
+    "id": "ds-full-113",
     "subject": "DS",
-    "chapter": "栈与队列",
-    "chapterSlug": "栈与队列",
-    "stem": "表达式求值中用于处理运算符优先级的典型结构是？（扩展39）",
+    "chapter": "散列表",
+    "chapterSlug": "散列表",
+    "stem": "考点：哈希表装填因子上升时，查找性能通常？",
     "options": {
-      "A": "队列",
-      "B": "栈",
-      "C": "并查集",
-      "D": "哈希表"
+      "A": "先升后降",
+      "B": "下降",
+      "C": "不变",
+      "D": "上升"
     },
     "answer": "B",
-    "analysis": "运算符栈用于比较优先级。",
+    "analysis": "本题考查散列表。正确要点：下降。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "散列表",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "ds-full-114",
+    "subject": "DS",
+    "chapter": "散列表",
+    "chapterSlug": "散列表",
+    "stem": "真题常考：哈希表装填因子上升时，查找性能通常？",
+    "options": {
+      "A": "下降",
+      "B": "上升",
+      "C": "不变",
+      "D": "先升后降"
+    },
+    "answer": "A",
+    "analysis": "本题考查散列表。正确要点：下降。",
     "difficulty": 3,
     "knowledge_points": [
-      "栈与队列",
+      "散列表",
       "核心概念"
     ]
   },
   {
-    "id": "ds-bank-040",
+    "id": "ds-full-115",
     "subject": "DS",
-    "chapter": "栈与队列",
-    "chapterSlug": "栈与队列",
-    "stem": "循环队列判满条件（保留一个空位）通常是？（扩展40）",
+    "chapter": "散列表",
+    "chapterSlug": "散列表",
+    "stem": "请判断：哈希表装填因子上升时，查找性能通常？",
     "options": {
-      "A": "front==rear",
-      "B": "(rear+1)%M==front",
-      "C": "rear==M-1",
-      "D": "front==0"
+      "A": "不变",
+      "B": "下降",
+      "C": "上升",
+      "D": "先升后降"
     },
     "answer": "B",
-    "analysis": "预留空位时 rear 下一位等于 front 表示满。",
+    "analysis": "本题考查散列表。正确要点：下降。",
     "difficulty": 2,
     "knowledge_points": [
-      "栈与队列",
+      "散列表",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "ds-full-116",
+    "subject": "DS",
+    "chapter": "散列表",
+    "chapterSlug": "散列表",
+    "stem": "以下命题正确的是：哈希表装填因子上升时，查找性能通常？",
+    "options": {
+      "A": "上升",
+      "B": "先升后降",
+      "C": "不变",
+      "D": "下降"
+    },
+    "answer": "D",
+    "analysis": "本题考查散列表。正确要点：下降。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "散列表",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "ds-full-117",
+    "subject": "DS",
+    "chapter": "散列表",
+    "chapterSlug": "散列表",
+    "stem": "从原理角度看，哈希表装填因子上升时，查找性能通常？",
+    "options": {
+      "A": "不变",
+      "B": "先升后降",
+      "C": "下降",
+      "D": "上升"
+    },
+    "answer": "C",
+    "analysis": "本题考查散列表。正确要点：下降。",
+    "difficulty": 3,
+    "knowledge_points": [
+      "散列表",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "ds-full-118",
+    "subject": "DS",
+    "chapter": "散列表",
+    "chapterSlug": "散列表",
+    "stem": "在系统设计中，哈希表装填因子上升时，查找性能通常？",
+    "options": {
+      "A": "先升后降",
+      "B": "不变",
+      "C": "上升",
+      "D": "下降"
+    },
+    "answer": "D",
+    "analysis": "本题考查散列表。正确要点：下降。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "散列表",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "ds-full-119",
+    "subject": "DS",
+    "chapter": "散列表",
+    "chapterSlug": "散列表",
+    "stem": "基础题：哈希表装填因子上升时，查找性能通常？",
+    "options": {
+      "A": "上升",
+      "B": "下降",
+      "C": "先升后降",
+      "D": "不变"
+    },
+    "answer": "B",
+    "analysis": "本题考查散列表。正确要点：下降。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "散列表",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "ds-full-120",
+    "subject": "DS",
+    "chapter": "散列表",
+    "chapterSlug": "散列表",
+    "stem": "综合题：哈希表装填因子上升时，查找性能通常？",
+    "options": {
+      "A": "上升",
+      "B": "下降",
+      "C": "先升后降",
+      "D": "不变"
+    },
+    "answer": "B",
+    "analysis": "本题考查散列表。正确要点：下降。",
+    "difficulty": 3,
+    "knowledge_points": [
+      "散列表",
       "核心概念"
     ]
   }

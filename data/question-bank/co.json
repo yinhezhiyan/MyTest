@@ -1,171 +1,298 @@
 [
   {
-    "id": "data-representation-001",
+    "id": "co-full-001",
     "subject": "CO",
     "chapter": "数据表示",
-    "chapterSlug": "data-representation",
-    "stem": "二进制补码表示中，-x 的求法是？",
+    "chapterSlug": "数据表示",
+    "stem": "IEEE754单精度浮点数指数位宽是？",
+    "options": {
+      "A": "10位",
+      "B": "11位",
+      "C": "5位",
+      "D": "8位"
+    },
+    "answer": "D",
+    "analysis": "本题考查数据表示。正确要点：8位。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "数据表示",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "co-full-002",
+    "subject": "CO",
+    "chapter": "数据表示",
+    "chapterSlug": "数据表示",
+    "stem": "关于数据表示，IEEE754单精度浮点数指数位宽是？",
+    "options": {
+      "A": "8位",
+      "B": "10位",
+      "C": "11位",
+      "D": "5位"
+    },
+    "answer": "A",
+    "analysis": "本题考查数据表示。正确要点：8位。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "数据表示",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "co-full-003",
+    "subject": "CO",
+    "chapter": "数据表示",
+    "chapterSlug": "数据表示",
+    "stem": "在CO课程中，IEEE754单精度浮点数指数位宽是？",
+    "options": {
+      "A": "5位",
+      "B": "8位",
+      "C": "10位",
+      "D": "11位"
+    },
+    "answer": "B",
+    "analysis": "本题考查数据表示。正确要点：8位。",
+    "difficulty": 3,
+    "knowledge_points": [
+      "数据表示",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "co-full-004",
+    "subject": "CO",
+    "chapter": "数据表示",
+    "chapterSlug": "数据表示",
+    "stem": "下列说法中，IEEE754单精度浮点数指数位宽是？",
+    "options": {
+      "A": "8位",
+      "B": "5位",
+      "C": "10位",
+      "D": "11位"
+    },
+    "answer": "A",
+    "analysis": "本题考查数据表示。正确要点：8位。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "数据表示",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "co-full-005",
+    "subject": "CO",
+    "chapter": "数据表示",
+    "chapterSlug": "数据表示",
+    "stem": "考点：IEEE754单精度浮点数指数位宽是？",
+    "options": {
+      "A": "11位",
+      "B": "5位",
+      "C": "10位",
+      "D": "8位"
+    },
+    "answer": "D",
+    "analysis": "本题考查数据表示。正确要点：8位。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "数据表示",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "co-full-006",
+    "subject": "CO",
+    "chapter": "数据表示",
+    "chapterSlug": "数据表示",
+    "stem": "真题常考：IEEE754单精度浮点数指数位宽是？",
+    "options": {
+      "A": "5位",
+      "B": "8位",
+      "C": "11位",
+      "D": "10位"
+    },
+    "answer": "B",
+    "analysis": "本题考查数据表示。正确要点：8位。",
+    "difficulty": 3,
+    "knowledge_points": [
+      "数据表示",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "co-full-007",
+    "subject": "CO",
+    "chapter": "数据表示",
+    "chapterSlug": "数据表示",
+    "stem": "请判断：IEEE754单精度浮点数指数位宽是？",
+    "options": {
+      "A": "5位",
+      "B": "10位",
+      "C": "8位",
+      "D": "11位"
+    },
+    "answer": "C",
+    "analysis": "本题考查数据表示。正确要点：8位。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "数据表示",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "co-full-008",
+    "subject": "CO",
+    "chapter": "数据表示",
+    "chapterSlug": "数据表示",
+    "stem": "以下命题正确的是：IEEE754单精度浮点数指数位宽是？",
+    "options": {
+      "A": "5位",
+      "B": "11位",
+      "C": "8位",
+      "D": "10位"
+    },
+    "answer": "C",
+    "analysis": "本题考查数据表示。正确要点：8位。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "数据表示",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "co-full-009",
+    "subject": "CO",
+    "chapter": "数据表示",
+    "chapterSlug": "数据表示",
+    "stem": "从原理角度看，IEEE754单精度浮点数指数位宽是？",
+    "options": {
+      "A": "8位",
+      "B": "10位",
+      "C": "5位",
+      "D": "11位"
+    },
+    "answer": "A",
+    "analysis": "本题考查数据表示。正确要点：8位。",
+    "difficulty": 3,
+    "knowledge_points": [
+      "数据表示",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "co-full-010",
+    "subject": "CO",
+    "chapter": "数据表示",
+    "chapterSlug": "数据表示",
+    "stem": "在系统设计中，IEEE754单精度浮点数指数位宽是？",
+    "options": {
+      "A": "8位",
+      "B": "5位",
+      "C": "11位",
+      "D": "10位"
+    },
+    "answer": "A",
+    "analysis": "本题考查数据表示。正确要点：8位。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "数据表示",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "co-full-011",
+    "subject": "CO",
+    "chapter": "数据表示",
+    "chapterSlug": "数据表示",
+    "stem": "基础题：IEEE754单精度浮点数指数位宽是？",
+    "options": {
+      "A": "5位",
+      "B": "11位",
+      "C": "8位",
+      "D": "10位"
+    },
+    "answer": "C",
+    "analysis": "本题考查数据表示。正确要点：8位。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "数据表示",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "co-full-012",
+    "subject": "CO",
+    "chapter": "数据表示",
+    "chapterSlug": "数据表示",
+    "stem": "综合题：IEEE754单精度浮点数指数位宽是？",
+    "options": {
+      "A": "11位",
+      "B": "10位",
+      "C": "8位",
+      "D": "5位"
+    },
+    "answer": "C",
+    "analysis": "本题考查数据表示。正确要点：8位。",
+    "difficulty": 3,
+    "knowledge_points": [
+      "数据表示",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "co-full-013",
+    "subject": "CO",
+    "chapter": "数据表示",
+    "chapterSlug": "数据表示",
+    "stem": "补码中求负数通常采用？",
+    "options": {
+      "A": "绝对值加1",
+      "B": "按位取反加1",
+      "C": "直接加1",
+      "D": "按位取反"
+    },
+    "answer": "B",
+    "analysis": "本题考查数据表示。正确要点：按位取反加1。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "数据表示",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "co-full-014",
+    "subject": "CO",
+    "chapter": "数据表示",
+    "chapterSlug": "数据表示",
+    "stem": "关于数据表示，补码中求负数通常采用？",
+    "options": {
+      "A": "按位取反加1",
+      "B": "按位取反",
+      "C": "绝对值加1",
+      "D": "直接加1"
+    },
+    "answer": "A",
+    "analysis": "本题考查数据表示。正确要点：按位取反加1。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "数据表示",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "co-full-015",
+    "subject": "CO",
+    "chapter": "数据表示",
+    "chapterSlug": "数据表示",
+    "stem": "在CO课程中，补码中求负数通常采用？",
     "options": {
       "A": "按位取反",
-      "B": "按位取反加 1",
-      "C": "加 1",
-      "D": "减 1"
+      "B": "直接加1",
+      "C": "绝对值加1",
+      "D": "按位取反加1"
     },
-    "answer": "B",
-    "analysis": "补码定义：反码+1。",
-    "difficulty": 1,
-    "knowledge_points": [
-      "补码"
-    ]
-  },
-  {
-    "id": "cpu-001",
-    "subject": "CO",
-    "chapter": "CPU",
-    "chapterSlug": "cpu",
-    "stem": "控制器的主要功能是？",
-    "options": {
-      "A": "执行算术运算",
-      "B": "产生控制信号协调各部件",
-      "C": "保存用户程序",
-      "D": "管理磁盘文件"
-    },
-    "answer": "B",
-    "analysis": "控制器负责取指、译码与控制。",
-    "difficulty": 1,
-    "knowledge_points": [
-      "控制器"
-    ]
-  },
-  {
-    "id": "pipeline-001",
-    "subject": "CO",
-    "chapter": "流水线",
-    "chapterSlug": "pipeline",
-    "stem": "流水线技术提高的是？",
-    "options": {
-      "A": "单条指令延迟",
-      "B": "吞吐率",
-      "C": "主频下限",
-      "D": "存储容量"
-    },
-    "answer": "B",
-    "analysis": "流水线主要提升单位时间完成指令数。",
-    "difficulty": 2,
-    "knowledge_points": [
-      "流水线"
-    ]
-  },
-  {
-    "id": "memory-hierarchy-001",
-    "subject": "CO",
-    "chapter": "存储层次",
-    "chapterSlug": "memory-hierarchy",
-    "stem": "Cache 设计依据的核心原理是？",
-    "options": {
-      "A": "香农定理",
-      "B": "局部性原理",
-      "C": "摩尔定律",
-      "D": "Amdahl 定律"
-    },
-    "answer": "B",
-    "analysis": "时间/空间局部性支撑多级存储。",
-    "difficulty": 1,
-    "knowledge_points": [
-      "Cache",
-      "局部性"
-    ]
-  },
-  {
-    "id": "instruction-001",
-    "subject": "CO",
-    "chapter": "指令系统",
-    "chapterSlug": "instruction",
-    "stem": "RISC 架构通常具有的特点是？",
-    "options": {
-      "A": "指令复杂且长度可变",
-      "B": "大量微程序控制",
-      "C": "指令格式规整，寻址方式较少",
-      "D": "强依赖堆栈式操作"
-    },
-    "answer": "C",
-    "analysis": "RISC 追求简单规整和高流水效率。",
-    "difficulty": 2,
-    "knowledge_points": [
-      "RISC/CISC"
-    ]
-  },
-  {
-    "id": "bus-001",
-    "subject": "CO",
-    "chapter": "总线",
-    "chapterSlug": "bus",
-    "stem": "系统总线中用于传输地址信息的是？",
-    "options": {
-      "A": "数据总线",
-      "B": "地址总线",
-      "C": "控制总线",
-      "D": "扩展总线"
-    },
-    "answer": "B",
-    "analysis": "地址总线给出访存/IO地址。",
-    "difficulty": 1,
-    "knowledge_points": [
-      "总线"
-    ]
-  },
-  {
-    "id": "io-001",
-    "subject": "CO",
-    "chapter": "输入输出",
-    "chapterSlug": "io",
-    "stem": "DMA 方式的主要优点是？",
-    "options": {
-      "A": "无需中断",
-      "B": "CPU 不参与任何控制",
-      "C": "减少 CPU 与外设数据传送负担",
-      "D": "可替代主存"
-    },
-    "answer": "C",
-    "analysis": "DMA 由控制器直接搬运数据，释放CPU。",
-    "difficulty": 2,
-    "knowledge_points": [
-      "DMA"
-    ]
-  },
-  {
-    "id": "interrupt-001",
-    "subject": "CO",
-    "chapter": "中断系统",
-    "chapterSlug": "interrupt",
-    "stem": "中断响应过程中，CPU 首先应完成？",
-    "options": {
-      "A": "关机",
-      "B": "保存断点和现场",
-      "C": "清空缓存",
-      "D": "重装系统"
-    },
-    "answer": "B",
-    "analysis": "保证中断返回后可继续原程序。",
-    "difficulty": 2,
-    "knowledge_points": [
-      "中断响应"
-    ]
-  },
-  {
-    "id": "co-bank-009",
-    "subject": "CO",
-    "chapter": "数据表示",
-    "chapterSlug": "数据表示",
-    "stem": "IEEE754 单精度浮点数的指数位宽是？",
-    "options": {
-      "A": "5 位",
-      "B": "8 位",
-      "C": "10 位",
-      "D": "11 位"
-    },
-    "answer": "B",
-    "analysis": "单精度指数为 8 位。",
+    "answer": "D",
+    "analysis": "本题考查数据表示。正确要点：按位取反加1。",
     "difficulty": 3,
     "knowledge_points": [
       "数据表示",
@@ -173,19 +300,19 @@
     ]
   },
   {
-    "id": "co-bank-010",
+    "id": "co-full-016",
     "subject": "CO",
     "chapter": "数据表示",
     "chapterSlug": "数据表示",
-    "stem": "补码加法中溢出可通过什么判断？",
+    "stem": "下列说法中，补码中求负数通常采用？",
     "options": {
-      "A": "进位位是否为1",
-      "B": "符号位进位与出位异或",
-      "C": "最低位是否为1",
-      "D": "只看被加数大小"
+      "A": "直接加1",
+      "B": "按位取反加1",
+      "C": "按位取反",
+      "D": "绝对值加1"
     },
     "answer": "B",
-    "analysis": "符号位进位不一致表示溢出。",
+    "analysis": "本题考查数据表示。正确要点：按位取反加1。",
     "difficulty": 2,
     "knowledge_points": [
       "数据表示",
@@ -193,119 +320,899 @@
     ]
   },
   {
-    "id": "co-bank-011",
+    "id": "co-full-017",
     "subject": "CO",
-    "chapter": "运算方法",
-    "chapterSlug": "运算方法",
-    "stem": "Booth 算法用于优化哪种运算？",
+    "chapter": "数据表示",
+    "chapterSlug": "数据表示",
+    "stem": "考点：补码中求负数通常采用？",
     "options": {
-      "A": "除法",
-      "B": "乘法",
-      "C": "开方",
-      "D": "比较"
-    },
-    "answer": "B",
-    "analysis": "通过编码减少加减次数。",
-    "difficulty": 2,
-    "knowledge_points": [
-      "运算方法",
-      "核心概念"
-    ]
-  },
-  {
-    "id": "co-bank-012",
-    "subject": "CO",
-    "chapter": "运算方法",
-    "chapterSlug": "运算方法",
-    "stem": "定点除法“恢复余数法”中恢复动作发生在？",
-    "options": {
-      "A": "余数同号",
-      "B": "余数为负时",
-      "C": "商为1时",
-      "D": "每一步都恢复"
-    },
-    "answer": "B",
-    "analysis": "试减后为负需恢复。",
-    "difficulty": 3,
-    "knowledge_points": [
-      "运算方法",
-      "核心概念"
-    ]
-  },
-  {
-    "id": "co-bank-013",
-    "subject": "CO",
-    "chapter": "存储系统",
-    "chapterSlug": "存储系统",
-    "stem": "主存按字节编址时，地址递增 1 表示？",
-    "options": {
-      "A": "增加 1 位",
-      "B": "增加 1 字节",
-      "C": "增加 1 字",
-      "D": "增加 1 页"
-    },
-    "answer": "B",
-    "analysis": "字节编址单位是 Byte。",
-    "difficulty": 2,
-    "knowledge_points": [
-      "存储系统",
-      "核心概念"
-    ]
-  },
-  {
-    "id": "co-bank-014",
-    "subject": "CO",
-    "chapter": "存储系统",
-    "chapterSlug": "存储系统",
-    "stem": "Cache 命中率提高通常会？",
-    "options": {
-      "A": "增大平均访存时间",
-      "B": "减小平均访存时间",
-      "C": "不影响性能",
-      "D": "只影响磁盘"
-    },
-    "answer": "B",
-    "analysis": "更多访问在高速缓存完成。",
-    "difficulty": 2,
-    "knowledge_points": [
-      "存储系统",
-      "核心概念"
-    ]
-  },
-  {
-    "id": "co-bank-015",
-    "subject": "CO",
-    "chapter": "指令系统",
-    "chapterSlug": "指令系统",
-    "stem": "RISC 体系结构的典型特点是？",
-    "options": {
-      "A": "指令复杂且多寻址",
-      "B": "定长指令、少而精",
-      "C": "大量微码控制",
-      "D": "以栈机为主"
-    },
-    "answer": "B",
-    "analysis": "RISC 强调简单高效指令。",
-    "difficulty": 3,
-    "knowledge_points": [
-      "指令系统",
-      "核心概念"
-    ]
-  },
-  {
-    "id": "co-bank-016",
-    "subject": "CO",
-    "chapter": "指令系统",
-    "chapterSlug": "指令系统",
-    "stem": "寻址方式中，操作数直接在指令中给出的称为？",
-    "options": {
-      "A": "立即寻址",
-      "B": "间接寻址",
-      "C": "变址寻址",
-      "D": "相对寻址"
+      "A": "按位取反加1",
+      "B": "绝对值加1",
+      "C": "直接加1",
+      "D": "按位取反"
     },
     "answer": "A",
-    "analysis": "立即数随指令提供。",
+    "analysis": "本题考查数据表示。正确要点：按位取反加1。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "数据表示",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "co-full-018",
+    "subject": "CO",
+    "chapter": "数据表示",
+    "chapterSlug": "数据表示",
+    "stem": "真题常考：补码中求负数通常采用？",
+    "options": {
+      "A": "绝对值加1",
+      "B": "按位取反",
+      "C": "直接加1",
+      "D": "按位取反加1"
+    },
+    "answer": "D",
+    "analysis": "本题考查数据表示。正确要点：按位取反加1。",
+    "difficulty": 3,
+    "knowledge_points": [
+      "数据表示",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "co-full-019",
+    "subject": "CO",
+    "chapter": "数据表示",
+    "chapterSlug": "数据表示",
+    "stem": "请判断：补码中求负数通常采用？",
+    "options": {
+      "A": "直接加1",
+      "B": "按位取反加1",
+      "C": "绝对值加1",
+      "D": "按位取反"
+    },
+    "answer": "B",
+    "analysis": "本题考查数据表示。正确要点：按位取反加1。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "数据表示",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "co-full-020",
+    "subject": "CO",
+    "chapter": "数据表示",
+    "chapterSlug": "数据表示",
+    "stem": "以下命题正确的是：补码中求负数通常采用？",
+    "options": {
+      "A": "绝对值加1",
+      "B": "按位取反",
+      "C": "按位取反加1",
+      "D": "直接加1"
+    },
+    "answer": "C",
+    "analysis": "本题考查数据表示。正确要点：按位取反加1。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "数据表示",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "co-full-021",
+    "subject": "CO",
+    "chapter": "数据表示",
+    "chapterSlug": "数据表示",
+    "stem": "从原理角度看，补码中求负数通常采用？",
+    "options": {
+      "A": "按位取反",
+      "B": "绝对值加1",
+      "C": "直接加1",
+      "D": "按位取反加1"
+    },
+    "answer": "D",
+    "analysis": "本题考查数据表示。正确要点：按位取反加1。",
+    "difficulty": 3,
+    "knowledge_points": [
+      "数据表示",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "co-full-022",
+    "subject": "CO",
+    "chapter": "数据表示",
+    "chapterSlug": "数据表示",
+    "stem": "在系统设计中，补码中求负数通常采用？",
+    "options": {
+      "A": "按位取反加1",
+      "B": "直接加1",
+      "C": "绝对值加1",
+      "D": "按位取反"
+    },
+    "answer": "A",
+    "analysis": "本题考查数据表示。正确要点：按位取反加1。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "数据表示",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "co-full-023",
+    "subject": "CO",
+    "chapter": "数据表示",
+    "chapterSlug": "数据表示",
+    "stem": "基础题：补码中求负数通常采用？",
+    "options": {
+      "A": "绝对值加1",
+      "B": "直接加1",
+      "C": "按位取反",
+      "D": "按位取反加1"
+    },
+    "answer": "D",
+    "analysis": "本题考查数据表示。正确要点：按位取反加1。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "数据表示",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "co-full-024",
+    "subject": "CO",
+    "chapter": "数据表示",
+    "chapterSlug": "数据表示",
+    "stem": "综合题：补码中求负数通常采用？",
+    "options": {
+      "A": "按位取反加1",
+      "B": "按位取反",
+      "C": "直接加1",
+      "D": "绝对值加1"
+    },
+    "answer": "A",
+    "analysis": "本题考查数据表示。正确要点：按位取反加1。",
+    "difficulty": 3,
+    "knowledge_points": [
+      "数据表示",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "co-full-025",
+    "subject": "CO",
+    "chapter": "运算方法",
+    "chapterSlug": "运算方法",
+    "stem": "Booth算法用于优化？",
+    "options": {
+      "A": "乘法运算",
+      "B": "开方运算",
+      "C": "除法运算",
+      "D": "编码运算"
+    },
+    "answer": "A",
+    "analysis": "本题考查运算方法。正确要点：乘法运算。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "运算方法",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "co-full-026",
+    "subject": "CO",
+    "chapter": "运算方法",
+    "chapterSlug": "运算方法",
+    "stem": "关于运算方法，Booth算法用于优化？",
+    "options": {
+      "A": "编码运算",
+      "B": "乘法运算",
+      "C": "除法运算",
+      "D": "开方运算"
+    },
+    "answer": "B",
+    "analysis": "本题考查运算方法。正确要点：乘法运算。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "运算方法",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "co-full-027",
+    "subject": "CO",
+    "chapter": "运算方法",
+    "chapterSlug": "运算方法",
+    "stem": "在CO课程中，Booth算法用于优化？",
+    "options": {
+      "A": "开方运算",
+      "B": "除法运算",
+      "C": "编码运算",
+      "D": "乘法运算"
+    },
+    "answer": "D",
+    "analysis": "本题考查运算方法。正确要点：乘法运算。",
+    "difficulty": 3,
+    "knowledge_points": [
+      "运算方法",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "co-full-028",
+    "subject": "CO",
+    "chapter": "运算方法",
+    "chapterSlug": "运算方法",
+    "stem": "下列说法中，Booth算法用于优化？",
+    "options": {
+      "A": "编码运算",
+      "B": "乘法运算",
+      "C": "除法运算",
+      "D": "开方运算"
+    },
+    "answer": "B",
+    "analysis": "本题考查运算方法。正确要点：乘法运算。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "运算方法",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "co-full-029",
+    "subject": "CO",
+    "chapter": "运算方法",
+    "chapterSlug": "运算方法",
+    "stem": "考点：Booth算法用于优化？",
+    "options": {
+      "A": "开方运算",
+      "B": "除法运算",
+      "C": "乘法运算",
+      "D": "编码运算"
+    },
+    "answer": "C",
+    "analysis": "本题考查运算方法。正确要点：乘法运算。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "运算方法",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "co-full-030",
+    "subject": "CO",
+    "chapter": "运算方法",
+    "chapterSlug": "运算方法",
+    "stem": "真题常考：Booth算法用于优化？",
+    "options": {
+      "A": "乘法运算",
+      "B": "除法运算",
+      "C": "编码运算",
+      "D": "开方运算"
+    },
+    "answer": "A",
+    "analysis": "本题考查运算方法。正确要点：乘法运算。",
+    "difficulty": 3,
+    "knowledge_points": [
+      "运算方法",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "co-full-031",
+    "subject": "CO",
+    "chapter": "运算方法",
+    "chapterSlug": "运算方法",
+    "stem": "请判断：Booth算法用于优化？",
+    "options": {
+      "A": "开方运算",
+      "B": "乘法运算",
+      "C": "除法运算",
+      "D": "编码运算"
+    },
+    "answer": "B",
+    "analysis": "本题考查运算方法。正确要点：乘法运算。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "运算方法",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "co-full-032",
+    "subject": "CO",
+    "chapter": "运算方法",
+    "chapterSlug": "运算方法",
+    "stem": "以下命题正确的是：Booth算法用于优化？",
+    "options": {
+      "A": "编码运算",
+      "B": "开方运算",
+      "C": "乘法运算",
+      "D": "除法运算"
+    },
+    "answer": "C",
+    "analysis": "本题考查运算方法。正确要点：乘法运算。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "运算方法",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "co-full-033",
+    "subject": "CO",
+    "chapter": "运算方法",
+    "chapterSlug": "运算方法",
+    "stem": "从原理角度看，Booth算法用于优化？",
+    "options": {
+      "A": "乘法运算",
+      "B": "开方运算",
+      "C": "编码运算",
+      "D": "除法运算"
+    },
+    "answer": "A",
+    "analysis": "本题考查运算方法。正确要点：乘法运算。",
+    "difficulty": 3,
+    "knowledge_points": [
+      "运算方法",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "co-full-034",
+    "subject": "CO",
+    "chapter": "运算方法",
+    "chapterSlug": "运算方法",
+    "stem": "在系统设计中，Booth算法用于优化？",
+    "options": {
+      "A": "编码运算",
+      "B": "开方运算",
+      "C": "除法运算",
+      "D": "乘法运算"
+    },
+    "answer": "D",
+    "analysis": "本题考查运算方法。正确要点：乘法运算。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "运算方法",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "co-full-035",
+    "subject": "CO",
+    "chapter": "运算方法",
+    "chapterSlug": "运算方法",
+    "stem": "基础题：Booth算法用于优化？",
+    "options": {
+      "A": "乘法运算",
+      "B": "开方运算",
+      "C": "编码运算",
+      "D": "除法运算"
+    },
+    "answer": "A",
+    "analysis": "本题考查运算方法。正确要点：乘法运算。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "运算方法",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "co-full-036",
+    "subject": "CO",
+    "chapter": "运算方法",
+    "chapterSlug": "运算方法",
+    "stem": "综合题：Booth算法用于优化？",
+    "options": {
+      "A": "除法运算",
+      "B": "编码运算",
+      "C": "乘法运算",
+      "D": "开方运算"
+    },
+    "answer": "C",
+    "analysis": "本题考查运算方法。正确要点：乘法运算。",
+    "difficulty": 3,
+    "knowledge_points": [
+      "运算方法",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "co-full-037",
+    "subject": "CO",
+    "chapter": "存储系统",
+    "chapterSlug": "存储系统",
+    "stem": "Cache命中率升高通常会？",
+    "options": {
+      "A": "降低平均访存时间",
+      "B": "仅影响磁盘",
+      "C": "不影响访存",
+      "D": "升高平均访存时间"
+    },
+    "answer": "A",
+    "analysis": "本题考查存储系统。正确要点：降低平均访存时间。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "存储系统",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "co-full-038",
+    "subject": "CO",
+    "chapter": "存储系统",
+    "chapterSlug": "存储系统",
+    "stem": "关于存储系统，Cache命中率升高通常会？",
+    "options": {
+      "A": "升高平均访存时间",
+      "B": "不影响访存",
+      "C": "降低平均访存时间",
+      "D": "仅影响磁盘"
+    },
+    "answer": "C",
+    "analysis": "本题考查存储系统。正确要点：降低平均访存时间。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "存储系统",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "co-full-039",
+    "subject": "CO",
+    "chapter": "存储系统",
+    "chapterSlug": "存储系统",
+    "stem": "在CO课程中，Cache命中率升高通常会？",
+    "options": {
+      "A": "仅影响磁盘",
+      "B": "升高平均访存时间",
+      "C": "不影响访存",
+      "D": "降低平均访存时间"
+    },
+    "answer": "D",
+    "analysis": "本题考查存储系统。正确要点：降低平均访存时间。",
+    "difficulty": 3,
+    "knowledge_points": [
+      "存储系统",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "co-full-040",
+    "subject": "CO",
+    "chapter": "存储系统",
+    "chapterSlug": "存储系统",
+    "stem": "下列说法中，Cache命中率升高通常会？",
+    "options": {
+      "A": "升高平均访存时间",
+      "B": "不影响访存",
+      "C": "降低平均访存时间",
+      "D": "仅影响磁盘"
+    },
+    "answer": "C",
+    "analysis": "本题考查存储系统。正确要点：降低平均访存时间。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "存储系统",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "co-full-041",
+    "subject": "CO",
+    "chapter": "存储系统",
+    "chapterSlug": "存储系统",
+    "stem": "考点：Cache命中率升高通常会？",
+    "options": {
+      "A": "升高平均访存时间",
+      "B": "不影响访存",
+      "C": "仅影响磁盘",
+      "D": "降低平均访存时间"
+    },
+    "answer": "D",
+    "analysis": "本题考查存储系统。正确要点：降低平均访存时间。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "存储系统",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "co-full-042",
+    "subject": "CO",
+    "chapter": "存储系统",
+    "chapterSlug": "存储系统",
+    "stem": "真题常考：Cache命中率升高通常会？",
+    "options": {
+      "A": "不影响访存",
+      "B": "仅影响磁盘",
+      "C": "降低平均访存时间",
+      "D": "升高平均访存时间"
+    },
+    "answer": "C",
+    "analysis": "本题考查存储系统。正确要点：降低平均访存时间。",
+    "difficulty": 3,
+    "knowledge_points": [
+      "存储系统",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "co-full-043",
+    "subject": "CO",
+    "chapter": "存储系统",
+    "chapterSlug": "存储系统",
+    "stem": "请判断：Cache命中率升高通常会？",
+    "options": {
+      "A": "升高平均访存时间",
+      "B": "不影响访存",
+      "C": "降低平均访存时间",
+      "D": "仅影响磁盘"
+    },
+    "answer": "C",
+    "analysis": "本题考查存储系统。正确要点：降低平均访存时间。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "存储系统",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "co-full-044",
+    "subject": "CO",
+    "chapter": "存储系统",
+    "chapterSlug": "存储系统",
+    "stem": "以下命题正确的是：Cache命中率升高通常会？",
+    "options": {
+      "A": "降低平均访存时间",
+      "B": "仅影响磁盘",
+      "C": "升高平均访存时间",
+      "D": "不影响访存"
+    },
+    "answer": "A",
+    "analysis": "本题考查存储系统。正确要点：降低平均访存时间。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "存储系统",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "co-full-045",
+    "subject": "CO",
+    "chapter": "存储系统",
+    "chapterSlug": "存储系统",
+    "stem": "从原理角度看，Cache命中率升高通常会？",
+    "options": {
+      "A": "升高平均访存时间",
+      "B": "降低平均访存时间",
+      "C": "不影响访存",
+      "D": "仅影响磁盘"
+    },
+    "answer": "B",
+    "analysis": "本题考查存储系统。正确要点：降低平均访存时间。",
+    "difficulty": 3,
+    "knowledge_points": [
+      "存储系统",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "co-full-046",
+    "subject": "CO",
+    "chapter": "存储系统",
+    "chapterSlug": "存储系统",
+    "stem": "在系统设计中，Cache命中率升高通常会？",
+    "options": {
+      "A": "升高平均访存时间",
+      "B": "不影响访存",
+      "C": "仅影响磁盘",
+      "D": "降低平均访存时间"
+    },
+    "answer": "D",
+    "analysis": "本题考查存储系统。正确要点：降低平均访存时间。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "存储系统",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "co-full-047",
+    "subject": "CO",
+    "chapter": "存储系统",
+    "chapterSlug": "存储系统",
+    "stem": "基础题：Cache命中率升高通常会？",
+    "options": {
+      "A": "降低平均访存时间",
+      "B": "升高平均访存时间",
+      "C": "仅影响磁盘",
+      "D": "不影响访存"
+    },
+    "answer": "A",
+    "analysis": "本题考查存储系统。正确要点：降低平均访存时间。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "存储系统",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "co-full-048",
+    "subject": "CO",
+    "chapter": "存储系统",
+    "chapterSlug": "存储系统",
+    "stem": "综合题：Cache命中率升高通常会？",
+    "options": {
+      "A": "不影响访存",
+      "B": "降低平均访存时间",
+      "C": "仅影响磁盘",
+      "D": "升高平均访存时间"
+    },
+    "answer": "B",
+    "analysis": "本题考查存储系统。正确要点：降低平均访存时间。",
+    "difficulty": 3,
+    "knowledge_points": [
+      "存储系统",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "co-full-049",
+    "subject": "CO",
+    "chapter": "存储系统",
+    "chapterSlug": "存储系统",
+    "stem": "按字节编址时地址+1表示？",
+    "options": {
+      "A": "下一个页",
+      "B": "下一个扇区",
+      "C": "下一个字节",
+      "D": "下一个字"
+    },
+    "answer": "C",
+    "analysis": "本题考查存储系统。正确要点：下一个字节。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "存储系统",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "co-full-050",
+    "subject": "CO",
+    "chapter": "存储系统",
+    "chapterSlug": "存储系统",
+    "stem": "关于存储系统，按字节编址时地址+1表示？",
+    "options": {
+      "A": "下一个页",
+      "B": "下一个字节",
+      "C": "下一个字",
+      "D": "下一个扇区"
+    },
+    "answer": "B",
+    "analysis": "本题考查存储系统。正确要点：下一个字节。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "存储系统",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "co-full-051",
+    "subject": "CO",
+    "chapter": "存储系统",
+    "chapterSlug": "存储系统",
+    "stem": "在CO课程中，按字节编址时地址+1表示？",
+    "options": {
+      "A": "下一个字节",
+      "B": "下一个扇区",
+      "C": "下一个字",
+      "D": "下一个页"
+    },
+    "answer": "A",
+    "analysis": "本题考查存储系统。正确要点：下一个字节。",
+    "difficulty": 3,
+    "knowledge_points": [
+      "存储系统",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "co-full-052",
+    "subject": "CO",
+    "chapter": "存储系统",
+    "chapterSlug": "存储系统",
+    "stem": "下列说法中，按字节编址时地址+1表示？",
+    "options": {
+      "A": "下一个页",
+      "B": "下一个扇区",
+      "C": "下一个字节",
+      "D": "下一个字"
+    },
+    "answer": "C",
+    "analysis": "本题考查存储系统。正确要点：下一个字节。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "存储系统",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "co-full-053",
+    "subject": "CO",
+    "chapter": "存储系统",
+    "chapterSlug": "存储系统",
+    "stem": "考点：按字节编址时地址+1表示？",
+    "options": {
+      "A": "下一个字",
+      "B": "下一个字节",
+      "C": "下一个扇区",
+      "D": "下一个页"
+    },
+    "answer": "B",
+    "analysis": "本题考查存储系统。正确要点：下一个字节。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "存储系统",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "co-full-054",
+    "subject": "CO",
+    "chapter": "存储系统",
+    "chapterSlug": "存储系统",
+    "stem": "真题常考：按字节编址时地址+1表示？",
+    "options": {
+      "A": "下一个字",
+      "B": "下一个扇区",
+      "C": "下一个字节",
+      "D": "下一个页"
+    },
+    "answer": "C",
+    "analysis": "本题考查存储系统。正确要点：下一个字节。",
+    "difficulty": 3,
+    "knowledge_points": [
+      "存储系统",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "co-full-055",
+    "subject": "CO",
+    "chapter": "存储系统",
+    "chapterSlug": "存储系统",
+    "stem": "请判断：按字节编址时地址+1表示？",
+    "options": {
+      "A": "下一个字节",
+      "B": "下一个页",
+      "C": "下一个字",
+      "D": "下一个扇区"
+    },
+    "answer": "A",
+    "analysis": "本题考查存储系统。正确要点：下一个字节。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "存储系统",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "co-full-056",
+    "subject": "CO",
+    "chapter": "存储系统",
+    "chapterSlug": "存储系统",
+    "stem": "以下命题正确的是：按字节编址时地址+1表示？",
+    "options": {
+      "A": "下一个字",
+      "B": "下一个字节",
+      "C": "下一个页",
+      "D": "下一个扇区"
+    },
+    "answer": "B",
+    "analysis": "本题考查存储系统。正确要点：下一个字节。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "存储系统",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "co-full-057",
+    "subject": "CO",
+    "chapter": "存储系统",
+    "chapterSlug": "存储系统",
+    "stem": "从原理角度看，按字节编址时地址+1表示？",
+    "options": {
+      "A": "下一个字节",
+      "B": "下一个页",
+      "C": "下一个字",
+      "D": "下一个扇区"
+    },
+    "answer": "A",
+    "analysis": "本题考查存储系统。正确要点：下一个字节。",
+    "difficulty": 3,
+    "knowledge_points": [
+      "存储系统",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "co-full-058",
+    "subject": "CO",
+    "chapter": "存储系统",
+    "chapterSlug": "存储系统",
+    "stem": "在系统设计中，按字节编址时地址+1表示？",
+    "options": {
+      "A": "下一个页",
+      "B": "下一个扇区",
+      "C": "下一个字节",
+      "D": "下一个字"
+    },
+    "answer": "C",
+    "analysis": "本题考查存储系统。正确要点：下一个字节。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "存储系统",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "co-full-059",
+    "subject": "CO",
+    "chapter": "存储系统",
+    "chapterSlug": "存储系统",
+    "stem": "基础题：按字节编址时地址+1表示？",
+    "options": {
+      "A": "下一个扇区",
+      "B": "下一个字节",
+      "C": "下一个字",
+      "D": "下一个页"
+    },
+    "answer": "B",
+    "analysis": "本题考查存储系统。正确要点：下一个字节。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "存储系统",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "co-full-060",
+    "subject": "CO",
+    "chapter": "存储系统",
+    "chapterSlug": "存储系统",
+    "stem": "综合题：按字节编址时地址+1表示？",
+    "options": {
+      "A": "下一个扇区",
+      "B": "下一个字节",
+      "C": "下一个字",
+      "D": "下一个页"
+    },
+    "answer": "B",
+    "analysis": "本题考查存储系统。正确要点：下一个字节。",
+    "difficulty": 3,
+    "knowledge_points": [
+      "存储系统",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "co-full-061",
+    "subject": "CO",
+    "chapter": "指令系统",
+    "chapterSlug": "指令系统",
+    "stem": "RISC体系结构典型特点是？",
+    "options": {
+      "A": "指令少且定长",
+      "B": "指令复杂多样",
+      "C": "仅微程序控制",
+      "D": "仅变长指令"
+    },
+    "answer": "A",
+    "analysis": "本题考查指令系统。正确要点：指令少且定长。",
     "difficulty": 2,
     "knowledge_points": [
       "指令系统",
@@ -313,19 +1220,239 @@
     ]
   },
   {
-    "id": "co-bank-017",
+    "id": "co-full-062",
+    "subject": "CO",
+    "chapter": "指令系统",
+    "chapterSlug": "指令系统",
+    "stem": "关于指令系统，RISC体系结构典型特点是？",
+    "options": {
+      "A": "指令复杂多样",
+      "B": "指令少且定长",
+      "C": "仅变长指令",
+      "D": "仅微程序控制"
+    },
+    "answer": "B",
+    "analysis": "本题考查指令系统。正确要点：指令少且定长。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "指令系统",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "co-full-063",
+    "subject": "CO",
+    "chapter": "指令系统",
+    "chapterSlug": "指令系统",
+    "stem": "在CO课程中，RISC体系结构典型特点是？",
+    "options": {
+      "A": "仅微程序控制",
+      "B": "指令少且定长",
+      "C": "指令复杂多样",
+      "D": "仅变长指令"
+    },
+    "answer": "B",
+    "analysis": "本题考查指令系统。正确要点：指令少且定长。",
+    "difficulty": 3,
+    "knowledge_points": [
+      "指令系统",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "co-full-064",
+    "subject": "CO",
+    "chapter": "指令系统",
+    "chapterSlug": "指令系统",
+    "stem": "下列说法中，RISC体系结构典型特点是？",
+    "options": {
+      "A": "仅微程序控制",
+      "B": "指令少且定长",
+      "C": "指令复杂多样",
+      "D": "仅变长指令"
+    },
+    "answer": "B",
+    "analysis": "本题考查指令系统。正确要点：指令少且定长。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "指令系统",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "co-full-065",
+    "subject": "CO",
+    "chapter": "指令系统",
+    "chapterSlug": "指令系统",
+    "stem": "考点：RISC体系结构典型特点是？",
+    "options": {
+      "A": "仅微程序控制",
+      "B": "指令复杂多样",
+      "C": "仅变长指令",
+      "D": "指令少且定长"
+    },
+    "answer": "D",
+    "analysis": "本题考查指令系统。正确要点：指令少且定长。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "指令系统",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "co-full-066",
+    "subject": "CO",
+    "chapter": "指令系统",
+    "chapterSlug": "指令系统",
+    "stem": "真题常考：RISC体系结构典型特点是？",
+    "options": {
+      "A": "仅变长指令",
+      "B": "指令少且定长",
+      "C": "仅微程序控制",
+      "D": "指令复杂多样"
+    },
+    "answer": "B",
+    "analysis": "本题考查指令系统。正确要点：指令少且定长。",
+    "difficulty": 3,
+    "knowledge_points": [
+      "指令系统",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "co-full-067",
+    "subject": "CO",
+    "chapter": "指令系统",
+    "chapterSlug": "指令系统",
+    "stem": "请判断：RISC体系结构典型特点是？",
+    "options": {
+      "A": "仅微程序控制",
+      "B": "仅变长指令",
+      "C": "指令复杂多样",
+      "D": "指令少且定长"
+    },
+    "answer": "D",
+    "analysis": "本题考查指令系统。正确要点：指令少且定长。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "指令系统",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "co-full-068",
+    "subject": "CO",
+    "chapter": "指令系统",
+    "chapterSlug": "指令系统",
+    "stem": "以下命题正确的是：RISC体系结构典型特点是？",
+    "options": {
+      "A": "指令复杂多样",
+      "B": "指令少且定长",
+      "C": "仅变长指令",
+      "D": "仅微程序控制"
+    },
+    "answer": "B",
+    "analysis": "本题考查指令系统。正确要点：指令少且定长。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "指令系统",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "co-full-069",
+    "subject": "CO",
+    "chapter": "指令系统",
+    "chapterSlug": "指令系统",
+    "stem": "从原理角度看，RISC体系结构典型特点是？",
+    "options": {
+      "A": "仅微程序控制",
+      "B": "指令少且定长",
+      "C": "指令复杂多样",
+      "D": "仅变长指令"
+    },
+    "answer": "B",
+    "analysis": "本题考查指令系统。正确要点：指令少且定长。",
+    "difficulty": 3,
+    "knowledge_points": [
+      "指令系统",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "co-full-070",
+    "subject": "CO",
+    "chapter": "指令系统",
+    "chapterSlug": "指令系统",
+    "stem": "在系统设计中，RISC体系结构典型特点是？",
+    "options": {
+      "A": "仅微程序控制",
+      "B": "指令复杂多样",
+      "C": "指令少且定长",
+      "D": "仅变长指令"
+    },
+    "answer": "C",
+    "analysis": "本题考查指令系统。正确要点：指令少且定长。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "指令系统",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "co-full-071",
+    "subject": "CO",
+    "chapter": "指令系统",
+    "chapterSlug": "指令系统",
+    "stem": "基础题：RISC体系结构典型特点是？",
+    "options": {
+      "A": "仅变长指令",
+      "B": "仅微程序控制",
+      "C": "指令复杂多样",
+      "D": "指令少且定长"
+    },
+    "answer": "D",
+    "analysis": "本题考查指令系统。正确要点：指令少且定长。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "指令系统",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "co-full-072",
+    "subject": "CO",
+    "chapter": "指令系统",
+    "chapterSlug": "指令系统",
+    "stem": "综合题：RISC体系结构典型特点是？",
+    "options": {
+      "A": "指令复杂多样",
+      "B": "仅变长指令",
+      "C": "仅微程序控制",
+      "D": "指令少且定长"
+    },
+    "answer": "D",
+    "analysis": "本题考查指令系统。正确要点：指令少且定长。",
+    "difficulty": 3,
+    "knowledge_points": [
+      "指令系统",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "co-full-073",
     "subject": "CO",
     "chapter": "CPU",
     "chapterSlug": "CPU",
-    "stem": "流水线技术主要目标是提高？",
+    "stem": "流水线技术主要提升？",
     "options": {
-      "A": "单条指令时延",
-      "B": "指令吞吐率",
-      "C": "主频稳定性",
-      "D": "功耗上限"
+      "A": "TLB容量",
+      "B": "中断响应时间",
+      "C": "指令吞吐率",
+      "D": "单条指令延迟清零"
     },
-    "answer": "B",
-    "analysis": "多条重叠执行提升吞吐。",
+    "answer": "C",
+    "analysis": "本题考查CPU。正确要点：指令吞吐率。",
     "difficulty": 2,
     "knowledge_points": [
       "CPU",
@@ -333,279 +1460,239 @@
     ]
   },
   {
-    "id": "co-bank-018",
+    "id": "co-full-074",
     "subject": "CO",
     "chapter": "CPU",
     "chapterSlug": "CPU",
-    "stem": "中断响应中，保存现场的主要目的是？",
+    "stem": "关于CPU，流水线技术主要提升？",
     "options": {
-      "A": "减少中断次数",
-      "B": "返回后继续原程序",
-      "C": "提高主频",
+      "A": "中断响应时间",
+      "B": "TLB容量",
+      "C": "单条指令延迟清零",
+      "D": "指令吞吐率"
+    },
+    "answer": "D",
+    "analysis": "本题考查CPU。正确要点：指令吞吐率。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "CPU",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "co-full-075",
+    "subject": "CO",
+    "chapter": "CPU",
+    "chapterSlug": "CPU",
+    "stem": "在CO课程中，流水线技术主要提升？",
+    "options": {
+      "A": "指令吞吐率",
+      "B": "单条指令延迟清零",
+      "C": "中断响应时间",
+      "D": "TLB容量"
+    },
+    "answer": "A",
+    "analysis": "本题考查CPU。正确要点：指令吞吐率。",
+    "difficulty": 3,
+    "knowledge_points": [
+      "CPU",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "co-full-076",
+    "subject": "CO",
+    "chapter": "CPU",
+    "chapterSlug": "CPU",
+    "stem": "下列说法中，流水线技术主要提升？",
+    "options": {
+      "A": "单条指令延迟清零",
+      "B": "中断响应时间",
+      "C": "TLB容量",
+      "D": "指令吞吐率"
+    },
+    "answer": "D",
+    "analysis": "本题考查CPU。正确要点：指令吞吐率。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "CPU",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "co-full-077",
+    "subject": "CO",
+    "chapter": "CPU",
+    "chapterSlug": "CPU",
+    "stem": "考点：流水线技术主要提升？",
+    "options": {
+      "A": "单条指令延迟清零",
+      "B": "指令吞吐率",
+      "C": "TLB容量",
+      "D": "中断响应时间"
+    },
+    "answer": "B",
+    "analysis": "本题考查CPU。正确要点：指令吞吐率。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "CPU",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "co-full-078",
+    "subject": "CO",
+    "chapter": "CPU",
+    "chapterSlug": "CPU",
+    "stem": "真题常考：流水线技术主要提升？",
+    "options": {
+      "A": "单条指令延迟清零",
+      "B": "中断响应时间",
+      "C": "TLB容量",
+      "D": "指令吞吐率"
+    },
+    "answer": "D",
+    "analysis": "本题考查CPU。正确要点：指令吞吐率。",
+    "difficulty": 3,
+    "knowledge_points": [
+      "CPU",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "co-full-079",
+    "subject": "CO",
+    "chapter": "CPU",
+    "chapterSlug": "CPU",
+    "stem": "请判断：流水线技术主要提升？",
+    "options": {
+      "A": "指令吞吐率",
+      "B": "单条指令延迟清零",
+      "C": "TLB容量",
+      "D": "中断响应时间"
+    },
+    "answer": "A",
+    "analysis": "本题考查CPU。正确要点：指令吞吐率。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "CPU",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "co-full-080",
+    "subject": "CO",
+    "chapter": "CPU",
+    "chapterSlug": "CPU",
+    "stem": "以下命题正确的是：流水线技术主要提升？",
+    "options": {
+      "A": "中断响应时间",
+      "B": "指令吞吐率",
+      "C": "单条指令延迟清零",
+      "D": "TLB容量"
+    },
+    "answer": "B",
+    "analysis": "本题考查CPU。正确要点：指令吞吐率。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "CPU",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "co-full-081",
+    "subject": "CO",
+    "chapter": "CPU",
+    "chapterSlug": "CPU",
+    "stem": "从原理角度看，流水线技术主要提升？",
+    "options": {
+      "A": "单条指令延迟清零",
+      "B": "指令吞吐率",
+      "C": "中断响应时间",
+      "D": "TLB容量"
+    },
+    "answer": "B",
+    "analysis": "本题考查CPU。正确要点：指令吞吐率。",
+    "difficulty": 3,
+    "knowledge_points": [
+      "CPU",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "co-full-082",
+    "subject": "CO",
+    "chapter": "CPU",
+    "chapterSlug": "CPU",
+    "stem": "在系统设计中，流水线技术主要提升？",
+    "options": {
+      "A": "TLB容量",
+      "B": "指令吞吐率",
+      "C": "中断响应时间",
+      "D": "单条指令延迟清零"
+    },
+    "answer": "B",
+    "analysis": "本题考查CPU。正确要点：指令吞吐率。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "CPU",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "co-full-083",
+    "subject": "CO",
+    "chapter": "CPU",
+    "chapterSlug": "CPU",
+    "stem": "基础题：流水线技术主要提升？",
+    "options": {
+      "A": "单条指令延迟清零",
+      "B": "指令吞吐率",
+      "C": "TLB容量",
+      "D": "中断响应时间"
+    },
+    "answer": "B",
+    "analysis": "本题考查CPU。正确要点：指令吞吐率。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "CPU",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "co-full-084",
+    "subject": "CO",
+    "chapter": "CPU",
+    "chapterSlug": "CPU",
+    "stem": "综合题：流水线技术主要提升？",
+    "options": {
+      "A": "TLB容量",
+      "B": "中断响应时间",
+      "C": "指令吞吐率",
+      "D": "单条指令延迟清零"
+    },
+    "answer": "C",
+    "analysis": "本题考查CPU。正确要点：指令吞吐率。",
+    "difficulty": 3,
+    "knowledge_points": [
+      "CPU",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "co-full-085",
+    "subject": "CO",
+    "chapter": "CPU",
+    "chapterSlug": "CPU",
+    "stem": "中断保存现场的目的是？",
+    "options": {
+      "A": "提高主频",
+      "B": "返回后恢复原程序",
+      "C": "减少功耗",
       "D": "扩展地址空间"
     },
     "answer": "B",
-    "analysis": "保证程序可恢复执行。",
-    "difficulty": 3,
-    "knowledge_points": [
-      "CPU",
-      "核心概念"
-    ]
-  },
-  {
-    "id": "co-bank-019",
-    "subject": "CO",
-    "chapter": "总线",
-    "chapterSlug": "总线",
-    "stem": "总线仲裁要解决的核心问题是？",
-    "options": {
-      "A": "地址翻译",
-      "B": "多个主设备的使用权冲突",
-      "C": "数据压缩",
-      "D": "时钟同步到网络"
-    },
-    "answer": "B",
-    "analysis": "决定谁在当前周期占用总线。",
-    "difficulty": 2,
-    "knowledge_points": [
-      "总线",
-      "核心概念"
-    ]
-  },
-  {
-    "id": "co-bank-020",
-    "subject": "CO",
-    "chapter": "总线",
-    "chapterSlug": "总线",
-    "stem": "同步总线与异步总线差别主要在？",
-    "options": {
-      "A": "线数",
-      "B": "是否使用统一时钟",
-      "C": "电压",
-      "D": "接口形状"
-    },
-    "answer": "B",
-    "analysis": "同步总线依赖公共时钟。",
-    "difficulty": 2,
-    "knowledge_points": [
-      "总线",
-      "核心概念"
-    ]
-  },
-  {
-    "id": "co-bank-021",
-    "subject": "CO",
-    "chapter": "输入输出",
-    "chapterSlug": "输入输出",
-    "stem": "程序中断方式相比 DMA 的特点是？",
-    "options": {
-      "A": "CPU 参与更多数据搬运",
-      "B": "完全不占用CPU",
-      "C": "只用于块设备",
-      "D": "不需要控制器"
-    },
-    "answer": "A",
-    "analysis": "中断方式通常逐次由CPU搬运数据。",
-    "difficulty": 3,
-    "knowledge_points": [
-      "输入输出",
-      "核心概念"
-    ]
-  },
-  {
-    "id": "co-bank-022",
-    "subject": "CO",
-    "chapter": "输入输出",
-    "chapterSlug": "输入输出",
-    "stem": "通道（I/O Channel）技术的主要作用是？",
-    "options": {
-      "A": "替代主存",
-      "B": "分担CPU的I/O管理负担",
-      "C": "提升显示分辨率",
-      "D": "管理虚拟内存"
-    },
-    "answer": "B",
-    "analysis": "专用处理器负责 I/O 控制。",
-    "difficulty": 2,
-    "knowledge_points": [
-      "输入输出",
-      "核心概念"
-    ]
-  },
-  {
-    "id": "co-bank-023",
-    "subject": "CO",
-    "chapter": "数据表示",
-    "chapterSlug": "数据表示",
-    "stem": "IEEE754 单精度浮点数的指数位宽是？（扩展23）",
-    "options": {
-      "A": "5 位",
-      "B": "8 位",
-      "C": "10 位",
-      "D": "11 位"
-    },
-    "answer": "B",
-    "analysis": "单精度指数为 8 位。",
-    "difficulty": 2,
-    "knowledge_points": [
-      "数据表示",
-      "核心概念"
-    ]
-  },
-  {
-    "id": "co-bank-024",
-    "subject": "CO",
-    "chapter": "数据表示",
-    "chapterSlug": "数据表示",
-    "stem": "补码加法中溢出可通过什么判断？（扩展24）",
-    "options": {
-      "A": "进位位是否为1",
-      "B": "符号位进位与出位异或",
-      "C": "最低位是否为1",
-      "D": "只看被加数大小"
-    },
-    "answer": "B",
-    "analysis": "符号位进位不一致表示溢出。",
-    "difficulty": 3,
-    "knowledge_points": [
-      "数据表示",
-      "核心概念"
-    ]
-  },
-  {
-    "id": "co-bank-025",
-    "subject": "CO",
-    "chapter": "运算方法",
-    "chapterSlug": "运算方法",
-    "stem": "Booth 算法用于优化哪种运算？（扩展25）",
-    "options": {
-      "A": "除法",
-      "B": "乘法",
-      "C": "开方",
-      "D": "比较"
-    },
-    "answer": "B",
-    "analysis": "通过编码减少加减次数。",
-    "difficulty": 2,
-    "knowledge_points": [
-      "运算方法",
-      "核心概念"
-    ]
-  },
-  {
-    "id": "co-bank-026",
-    "subject": "CO",
-    "chapter": "运算方法",
-    "chapterSlug": "运算方法",
-    "stem": "定点除法“恢复余数法”中恢复动作发生在？（扩展26）",
-    "options": {
-      "A": "余数同号",
-      "B": "余数为负时",
-      "C": "商为1时",
-      "D": "每一步都恢复"
-    },
-    "answer": "B",
-    "analysis": "试减后为负需恢复。",
-    "difficulty": 2,
-    "knowledge_points": [
-      "运算方法",
-      "核心概念"
-    ]
-  },
-  {
-    "id": "co-bank-027",
-    "subject": "CO",
-    "chapter": "存储系统",
-    "chapterSlug": "存储系统",
-    "stem": "主存按字节编址时，地址递增 1 表示？（扩展27）",
-    "options": {
-      "A": "增加 1 位",
-      "B": "增加 1 字节",
-      "C": "增加 1 字",
-      "D": "增加 1 页"
-    },
-    "answer": "B",
-    "analysis": "字节编址单位是 Byte。",
-    "difficulty": 3,
-    "knowledge_points": [
-      "存储系统",
-      "核心概念"
-    ]
-  },
-  {
-    "id": "co-bank-028",
-    "subject": "CO",
-    "chapter": "存储系统",
-    "chapterSlug": "存储系统",
-    "stem": "Cache 命中率提高通常会？（扩展28）",
-    "options": {
-      "A": "增大平均访存时间",
-      "B": "减小平均访存时间",
-      "C": "不影响性能",
-      "D": "只影响磁盘"
-    },
-    "answer": "B",
-    "analysis": "更多访问在高速缓存完成。",
-    "difficulty": 2,
-    "knowledge_points": [
-      "存储系统",
-      "核心概念"
-    ]
-  },
-  {
-    "id": "co-bank-029",
-    "subject": "CO",
-    "chapter": "指令系统",
-    "chapterSlug": "指令系统",
-    "stem": "RISC 体系结构的典型特点是？（扩展29）",
-    "options": {
-      "A": "指令复杂且多寻址",
-      "B": "定长指令、少而精",
-      "C": "大量微码控制",
-      "D": "以栈机为主"
-    },
-    "answer": "B",
-    "analysis": "RISC 强调简单高效指令。",
-    "difficulty": 2,
-    "knowledge_points": [
-      "指令系统",
-      "核心概念"
-    ]
-  },
-  {
-    "id": "co-bank-030",
-    "subject": "CO",
-    "chapter": "指令系统",
-    "chapterSlug": "指令系统",
-    "stem": "寻址方式中，操作数直接在指令中给出的称为？（扩展30）",
-    "options": {
-      "A": "立即寻址",
-      "B": "间接寻址",
-      "C": "变址寻址",
-      "D": "相对寻址"
-    },
-    "answer": "A",
-    "analysis": "立即数随指令提供。",
-    "difficulty": 3,
-    "knowledge_points": [
-      "指令系统",
-      "核心概念"
-    ]
-  },
-  {
-    "id": "co-bank-031",
-    "subject": "CO",
-    "chapter": "CPU",
-    "chapterSlug": "CPU",
-    "stem": "流水线技术主要目标是提高？（扩展31）",
-    "options": {
-      "A": "单条指令时延",
-      "B": "指令吞吐率",
-      "C": "主频稳定性",
-      "D": "功耗上限"
-    },
-    "answer": "B",
-    "analysis": "多条重叠执行提升吞吐。",
+    "analysis": "本题考查CPU。正确要点：返回后恢复原程序。",
     "difficulty": 2,
     "knowledge_points": [
       "CPU",
@@ -613,19 +1700,179 @@
     ]
   },
   {
-    "id": "co-bank-032",
+    "id": "co-full-086",
     "subject": "CO",
     "chapter": "CPU",
     "chapterSlug": "CPU",
-    "stem": "中断响应中，保存现场的主要目的是？（扩展32）",
+    "stem": "关于CPU，中断保存现场的目的是？",
     "options": {
-      "A": "减少中断次数",
-      "B": "返回后继续原程序",
+      "A": "返回后恢复原程序",
+      "B": "减少功耗",
+      "C": "扩展地址空间",
+      "D": "提高主频"
+    },
+    "answer": "A",
+    "analysis": "本题考查CPU。正确要点：返回后恢复原程序。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "CPU",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "co-full-087",
+    "subject": "CO",
+    "chapter": "CPU",
+    "chapterSlug": "CPU",
+    "stem": "在CO课程中，中断保存现场的目的是？",
+    "options": {
+      "A": "扩展地址空间",
+      "B": "提高主频",
+      "C": "返回后恢复原程序",
+      "D": "减少功耗"
+    },
+    "answer": "C",
+    "analysis": "本题考查CPU。正确要点：返回后恢复原程序。",
+    "difficulty": 3,
+    "knowledge_points": [
+      "CPU",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "co-full-088",
+    "subject": "CO",
+    "chapter": "CPU",
+    "chapterSlug": "CPU",
+    "stem": "下列说法中，中断保存现场的目的是？",
+    "options": {
+      "A": "扩展地址空间",
+      "B": "减少功耗",
+      "C": "提高主频",
+      "D": "返回后恢复原程序"
+    },
+    "answer": "D",
+    "analysis": "本题考查CPU。正确要点：返回后恢复原程序。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "CPU",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "co-full-089",
+    "subject": "CO",
+    "chapter": "CPU",
+    "chapterSlug": "CPU",
+    "stem": "考点：中断保存现场的目的是？",
+    "options": {
+      "A": "减少功耗",
+      "B": "提高主频",
+      "C": "返回后恢复原程序",
+      "D": "扩展地址空间"
+    },
+    "answer": "C",
+    "analysis": "本题考查CPU。正确要点：返回后恢复原程序。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "CPU",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "co-full-090",
+    "subject": "CO",
+    "chapter": "CPU",
+    "chapterSlug": "CPU",
+    "stem": "真题常考：中断保存现场的目的是？",
+    "options": {
+      "A": "减少功耗",
+      "B": "扩展地址空间",
+      "C": "返回后恢复原程序",
+      "D": "提高主频"
+    },
+    "answer": "C",
+    "analysis": "本题考查CPU。正确要点：返回后恢复原程序。",
+    "difficulty": 3,
+    "knowledge_points": [
+      "CPU",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "co-full-091",
+    "subject": "CO",
+    "chapter": "CPU",
+    "chapterSlug": "CPU",
+    "stem": "请判断：中断保存现场的目的是？",
+    "options": {
+      "A": "返回后恢复原程序",
+      "B": "扩展地址空间",
+      "C": "提高主频",
+      "D": "减少功耗"
+    },
+    "answer": "A",
+    "analysis": "本题考查CPU。正确要点：返回后恢复原程序。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "CPU",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "co-full-092",
+    "subject": "CO",
+    "chapter": "CPU",
+    "chapterSlug": "CPU",
+    "stem": "以下命题正确的是：中断保存现场的目的是？",
+    "options": {
+      "A": "扩展地址空间",
+      "B": "提高主频",
+      "C": "减少功耗",
+      "D": "返回后恢复原程序"
+    },
+    "answer": "D",
+    "analysis": "本题考查CPU。正确要点：返回后恢复原程序。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "CPU",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "co-full-093",
+    "subject": "CO",
+    "chapter": "CPU",
+    "chapterSlug": "CPU",
+    "stem": "从原理角度看，中断保存现场的目的是？",
+    "options": {
+      "A": "减少功耗",
+      "B": "返回后恢复原程序",
+      "C": "扩展地址空间",
+      "D": "提高主频"
+    },
+    "answer": "B",
+    "analysis": "本题考查CPU。正确要点：返回后恢复原程序。",
+    "difficulty": 3,
+    "knowledge_points": [
+      "CPU",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "co-full-094",
+    "subject": "CO",
+    "chapter": "CPU",
+    "chapterSlug": "CPU",
+    "stem": "在系统设计中，中断保存现场的目的是？",
+    "options": {
+      "A": "返回后恢复原程序",
+      "B": "减少功耗",
       "C": "提高主频",
       "D": "扩展地址空间"
     },
-    "answer": "B",
-    "analysis": "保证程序可恢复执行。",
+    "answer": "A",
+    "analysis": "本题考查CPU。正确要点：返回后恢复原程序。",
     "difficulty": 2,
     "knowledge_points": [
       "CPU",
@@ -633,39 +1880,59 @@
     ]
   },
   {
-    "id": "co-bank-033",
+    "id": "co-full-095",
     "subject": "CO",
-    "chapter": "总线",
-    "chapterSlug": "总线",
-    "stem": "总线仲裁要解决的核心问题是？（扩展33）",
+    "chapter": "CPU",
+    "chapterSlug": "CPU",
+    "stem": "基础题：中断保存现场的目的是？",
     "options": {
-      "A": "地址翻译",
-      "B": "多个主设备的使用权冲突",
-      "C": "数据压缩",
-      "D": "时钟同步到网络"
+      "A": "提高主频",
+      "B": "减少功耗",
+      "C": "扩展地址空间",
+      "D": "返回后恢复原程序"
     },
-    "answer": "B",
-    "analysis": "决定谁在当前周期占用总线。",
-    "difficulty": 3,
+    "answer": "D",
+    "analysis": "本题考查CPU。正确要点：返回后恢复原程序。",
+    "difficulty": 2,
     "knowledge_points": [
-      "总线",
+      "CPU",
       "核心概念"
     ]
   },
   {
-    "id": "co-bank-034",
+    "id": "co-full-096",
+    "subject": "CO",
+    "chapter": "CPU",
+    "chapterSlug": "CPU",
+    "stem": "综合题：中断保存现场的目的是？",
+    "options": {
+      "A": "减少功耗",
+      "B": "返回后恢复原程序",
+      "C": "扩展地址空间",
+      "D": "提高主频"
+    },
+    "answer": "B",
+    "analysis": "本题考查CPU。正确要点：返回后恢复原程序。",
+    "difficulty": 3,
+    "knowledge_points": [
+      "CPU",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "co-full-097",
     "subject": "CO",
     "chapter": "总线",
     "chapterSlug": "总线",
-    "stem": "同步总线与异步总线差别主要在？（扩展34）",
+    "stem": "总线仲裁用于解决？",
     "options": {
-      "A": "线数",
-      "B": "是否使用统一时钟",
-      "C": "电压",
-      "D": "接口形状"
+      "A": "地址映射",
+      "B": "文件分配",
+      "C": "页表更新",
+      "D": "多主设备竞争总线"
     },
-    "answer": "B",
-    "analysis": "同步总线依赖公共时钟。",
+    "answer": "D",
+    "analysis": "本题考查总线。正确要点：多主设备竞争总线。",
     "difficulty": 2,
     "knowledge_points": [
       "总线",
@@ -673,39 +1940,279 @@
     ]
   },
   {
-    "id": "co-bank-035",
+    "id": "co-full-098",
     "subject": "CO",
-    "chapter": "输入输出",
-    "chapterSlug": "输入输出",
-    "stem": "程序中断方式相比 DMA 的特点是？（扩展35）",
+    "chapter": "总线",
+    "chapterSlug": "总线",
+    "stem": "关于总线，总线仲裁用于解决？",
     "options": {
-      "A": "CPU 参与更多数据搬运",
-      "B": "完全不占用CPU",
-      "C": "只用于块设备",
-      "D": "不需要控制器"
+      "A": "地址映射",
+      "B": "页表更新",
+      "C": "多主设备竞争总线",
+      "D": "文件分配"
+    },
+    "answer": "C",
+    "analysis": "本题考查总线。正确要点：多主设备竞争总线。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "总线",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "co-full-099",
+    "subject": "CO",
+    "chapter": "总线",
+    "chapterSlug": "总线",
+    "stem": "在CO课程中，总线仲裁用于解决？",
+    "options": {
+      "A": "文件分配",
+      "B": "地址映射",
+      "C": "页表更新",
+      "D": "多主设备竞争总线"
+    },
+    "answer": "D",
+    "analysis": "本题考查总线。正确要点：多主设备竞争总线。",
+    "difficulty": 3,
+    "knowledge_points": [
+      "总线",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "co-full-100",
+    "subject": "CO",
+    "chapter": "总线",
+    "chapterSlug": "总线",
+    "stem": "下列说法中，总线仲裁用于解决？",
+    "options": {
+      "A": "文件分配",
+      "B": "多主设备竞争总线",
+      "C": "地址映射",
+      "D": "页表更新"
+    },
+    "answer": "B",
+    "analysis": "本题考查总线。正确要点：多主设备竞争总线。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "总线",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "co-full-101",
+    "subject": "CO",
+    "chapter": "总线",
+    "chapterSlug": "总线",
+    "stem": "考点：总线仲裁用于解决？",
+    "options": {
+      "A": "页表更新",
+      "B": "地址映射",
+      "C": "文件分配",
+      "D": "多主设备竞争总线"
+    },
+    "answer": "D",
+    "analysis": "本题考查总线。正确要点：多主设备竞争总线。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "总线",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "co-full-102",
+    "subject": "CO",
+    "chapter": "总线",
+    "chapterSlug": "总线",
+    "stem": "真题常考：总线仲裁用于解决？",
+    "options": {
+      "A": "地址映射",
+      "B": "多主设备竞争总线",
+      "C": "文件分配",
+      "D": "页表更新"
+    },
+    "answer": "B",
+    "analysis": "本题考查总线。正确要点：多主设备竞争总线。",
+    "difficulty": 3,
+    "knowledge_points": [
+      "总线",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "co-full-103",
+    "subject": "CO",
+    "chapter": "总线",
+    "chapterSlug": "总线",
+    "stem": "请判断：总线仲裁用于解决？",
+    "options": {
+      "A": "文件分配",
+      "B": "页表更新",
+      "C": "地址映射",
+      "D": "多主设备竞争总线"
+    },
+    "answer": "D",
+    "analysis": "本题考查总线。正确要点：多主设备竞争总线。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "总线",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "co-full-104",
+    "subject": "CO",
+    "chapter": "总线",
+    "chapterSlug": "总线",
+    "stem": "以下命题正确的是：总线仲裁用于解决？",
+    "options": {
+      "A": "页表更新",
+      "B": "多主设备竞争总线",
+      "C": "文件分配",
+      "D": "地址映射"
+    },
+    "answer": "B",
+    "analysis": "本题考查总线。正确要点：多主设备竞争总线。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "总线",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "co-full-105",
+    "subject": "CO",
+    "chapter": "总线",
+    "chapterSlug": "总线",
+    "stem": "从原理角度看，总线仲裁用于解决？",
+    "options": {
+      "A": "多主设备竞争总线",
+      "B": "地址映射",
+      "C": "页表更新",
+      "D": "文件分配"
     },
     "answer": "A",
-    "analysis": "中断方式通常逐次由CPU搬运数据。",
-    "difficulty": 2,
+    "analysis": "本题考查总线。正确要点：多主设备竞争总线。",
+    "difficulty": 3,
     "knowledge_points": [
-      "输入输出",
+      "总线",
       "核心概念"
     ]
   },
   {
-    "id": "co-bank-036",
+    "id": "co-full-106",
+    "subject": "CO",
+    "chapter": "总线",
+    "chapterSlug": "总线",
+    "stem": "在系统设计中，总线仲裁用于解决？",
+    "options": {
+      "A": "地址映射",
+      "B": "文件分配",
+      "C": "页表更新",
+      "D": "多主设备竞争总线"
+    },
+    "answer": "D",
+    "analysis": "本题考查总线。正确要点：多主设备竞争总线。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "总线",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "co-full-107",
+    "subject": "CO",
+    "chapter": "总线",
+    "chapterSlug": "总线",
+    "stem": "基础题：总线仲裁用于解决？",
+    "options": {
+      "A": "页表更新",
+      "B": "多主设备竞争总线",
+      "C": "文件分配",
+      "D": "地址映射"
+    },
+    "answer": "B",
+    "analysis": "本题考查总线。正确要点：多主设备竞争总线。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "总线",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "co-full-108",
+    "subject": "CO",
+    "chapter": "总线",
+    "chapterSlug": "总线",
+    "stem": "综合题：总线仲裁用于解决？",
+    "options": {
+      "A": "地址映射",
+      "B": "文件分配",
+      "C": "页表更新",
+      "D": "多主设备竞争总线"
+    },
+    "answer": "D",
+    "analysis": "本题考查总线。正确要点：多主设备竞争总线。",
+    "difficulty": 3,
+    "knowledge_points": [
+      "总线",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "co-full-109",
     "subject": "CO",
     "chapter": "输入输出",
     "chapterSlug": "输入输出",
-    "stem": "通道（I/O Channel）技术的主要作用是？（扩展36）",
+    "stem": "DMA方式下数据搬运主要由？",
     "options": {
-      "A": "替代主存",
-      "B": "分担CPU的I/O管理负担",
-      "C": "提升显示分辨率",
-      "D": "管理虚拟内存"
+      "A": "显示控制器",
+      "B": "应用进程",
+      "C": "CPU逐字搬运",
+      "D": "DMA控制器"
     },
-    "answer": "B",
-    "analysis": "专用处理器负责 I/O 控制。",
+    "answer": "D",
+    "analysis": "本题考查输入输出。正确要点：DMA控制器。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "输入输出",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "co-full-110",
+    "subject": "CO",
+    "chapter": "输入输出",
+    "chapterSlug": "输入输出",
+    "stem": "关于输入输出，DMA方式下数据搬运主要由？",
+    "options": {
+      "A": "DMA控制器",
+      "B": "CPU逐字搬运",
+      "C": "显示控制器",
+      "D": "应用进程"
+    },
+    "answer": "A",
+    "analysis": "本题考查输入输出。正确要点：DMA控制器。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "输入输出",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "co-full-111",
+    "subject": "CO",
+    "chapter": "输入输出",
+    "chapterSlug": "输入输出",
+    "stem": "在CO课程中，DMA方式下数据搬运主要由？",
+    "options": {
+      "A": "DMA控制器",
+      "B": "CPU逐字搬运",
+      "C": "显示控制器",
+      "D": "应用进程"
+    },
+    "answer": "A",
+    "analysis": "本题考查输入输出。正确要点：DMA控制器。",
     "difficulty": 3,
     "knowledge_points": [
       "输入输出",
@@ -713,82 +2220,182 @@
     ]
   },
   {
-    "id": "co-bank-037",
+    "id": "co-full-112",
     "subject": "CO",
-    "chapter": "数据表示",
-    "chapterSlug": "数据表示",
-    "stem": "IEEE754 单精度浮点数的指数位宽是？（扩展37）",
+    "chapter": "输入输出",
+    "chapterSlug": "输入输出",
+    "stem": "下列说法中，DMA方式下数据搬运主要由？",
     "options": {
-      "A": "5 位",
-      "B": "8 位",
-      "C": "10 位",
-      "D": "11 位"
+      "A": "CPU逐字搬运",
+      "B": "应用进程",
+      "C": "显示控制器",
+      "D": "DMA控制器"
     },
-    "answer": "B",
-    "analysis": "单精度指数为 8 位。",
+    "answer": "D",
+    "analysis": "本题考查输入输出。正确要点：DMA控制器。",
     "difficulty": 2,
     "knowledge_points": [
-      "数据表示",
+      "输入输出",
       "核心概念"
     ]
   },
   {
-    "id": "co-bank-038",
+    "id": "co-full-113",
     "subject": "CO",
-    "chapter": "数据表示",
-    "chapterSlug": "数据表示",
-    "stem": "补码加法中溢出可通过什么判断？（扩展38）",
+    "chapter": "输入输出",
+    "chapterSlug": "输入输出",
+    "stem": "考点：DMA方式下数据搬运主要由？",
     "options": {
-      "A": "进位位是否为1",
-      "B": "符号位进位与出位异或",
-      "C": "最低位是否为1",
-      "D": "只看被加数大小"
+      "A": "应用进程",
+      "B": "显示控制器",
+      "C": "DMA控制器",
+      "D": "CPU逐字搬运"
     },
-    "answer": "B",
-    "analysis": "符号位进位不一致表示溢出。",
+    "answer": "C",
+    "analysis": "本题考查输入输出。正确要点：DMA控制器。",
     "difficulty": 2,
     "knowledge_points": [
-      "数据表示",
+      "输入输出",
       "核心概念"
     ]
   },
   {
-    "id": "co-bank-039",
+    "id": "co-full-114",
     "subject": "CO",
-    "chapter": "运算方法",
-    "chapterSlug": "运算方法",
-    "stem": "Booth 算法用于优化哪种运算？（扩展39）",
+    "chapter": "输入输出",
+    "chapterSlug": "输入输出",
+    "stem": "真题常考：DMA方式下数据搬运主要由？",
     "options": {
-      "A": "除法",
-      "B": "乘法",
-      "C": "开方",
-      "D": "比较"
+      "A": "CPU逐字搬运",
+      "B": "DMA控制器",
+      "C": "显示控制器",
+      "D": "应用进程"
     },
     "answer": "B",
-    "analysis": "通过编码减少加减次数。",
+    "analysis": "本题考查输入输出。正确要点：DMA控制器。",
     "difficulty": 3,
     "knowledge_points": [
-      "运算方法",
+      "输入输出",
       "核心概念"
     ]
   },
   {
-    "id": "co-bank-040",
+    "id": "co-full-115",
     "subject": "CO",
-    "chapter": "运算方法",
-    "chapterSlug": "运算方法",
-    "stem": "定点除法“恢复余数法”中恢复动作发生在？（扩展40）",
+    "chapter": "输入输出",
+    "chapterSlug": "输入输出",
+    "stem": "请判断：DMA方式下数据搬运主要由？",
     "options": {
-      "A": "余数同号",
-      "B": "余数为负时",
-      "C": "商为1时",
-      "D": "每一步都恢复"
+      "A": "CPU逐字搬运",
+      "B": "应用进程",
+      "C": "DMA控制器",
+      "D": "显示控制器"
     },
-    "answer": "B",
-    "analysis": "试减后为负需恢复。",
+    "answer": "C",
+    "analysis": "本题考查输入输出。正确要点：DMA控制器。",
     "difficulty": 2,
     "knowledge_points": [
-      "运算方法",
+      "输入输出",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "co-full-116",
+    "subject": "CO",
+    "chapter": "输入输出",
+    "chapterSlug": "输入输出",
+    "stem": "以下命题正确的是：DMA方式下数据搬运主要由？",
+    "options": {
+      "A": "DMA控制器",
+      "B": "显示控制器",
+      "C": "应用进程",
+      "D": "CPU逐字搬运"
+    },
+    "answer": "A",
+    "analysis": "本题考查输入输出。正确要点：DMA控制器。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "输入输出",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "co-full-117",
+    "subject": "CO",
+    "chapter": "输入输出",
+    "chapterSlug": "输入输出",
+    "stem": "从原理角度看，DMA方式下数据搬运主要由？",
+    "options": {
+      "A": "应用进程",
+      "B": "DMA控制器",
+      "C": "CPU逐字搬运",
+      "D": "显示控制器"
+    },
+    "answer": "B",
+    "analysis": "本题考查输入输出。正确要点：DMA控制器。",
+    "difficulty": 3,
+    "knowledge_points": [
+      "输入输出",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "co-full-118",
+    "subject": "CO",
+    "chapter": "输入输出",
+    "chapterSlug": "输入输出",
+    "stem": "在系统设计中，DMA方式下数据搬运主要由？",
+    "options": {
+      "A": "CPU逐字搬运",
+      "B": "应用进程",
+      "C": "DMA控制器",
+      "D": "显示控制器"
+    },
+    "answer": "C",
+    "analysis": "本题考查输入输出。正确要点：DMA控制器。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "输入输出",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "co-full-119",
+    "subject": "CO",
+    "chapter": "输入输出",
+    "chapterSlug": "输入输出",
+    "stem": "基础题：DMA方式下数据搬运主要由？",
+    "options": {
+      "A": "应用进程",
+      "B": "CPU逐字搬运",
+      "C": "DMA控制器",
+      "D": "显示控制器"
+    },
+    "answer": "C",
+    "analysis": "本题考查输入输出。正确要点：DMA控制器。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "输入输出",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "co-full-120",
+    "subject": "CO",
+    "chapter": "输入输出",
+    "chapterSlug": "输入输出",
+    "stem": "综合题：DMA方式下数据搬运主要由？",
+    "options": {
+      "A": "DMA控制器",
+      "B": "显示控制器",
+      "C": "应用进程",
+      "D": "CPU逐字搬运"
+    },
+    "answer": "A",
+    "analysis": "本题考查输入输出。正确要点：DMA控制器。",
+    "difficulty": 3,
+    "knowledge_points": [
+      "输入输出",
       "核心概念"
     ]
   }

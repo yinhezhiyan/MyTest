@@ -1,173 +1,418 @@
 [
   {
-    "id": "process-thread-001",
+    "id": "os-full-001",
     "subject": "OS",
     "chapter": "进程与线程",
-    "chapterSlug": "process-thread",
+    "chapterSlug": "进程与线程",
     "stem": "进程与程序的本质区别是？",
     "options": {
-      "A": "程序更大",
-      "B": "进程是程序的一次执行",
-      "C": "程序可并发",
-      "D": "进程不可调度"
+      "A": "程序是调度单位",
+      "B": "程序可并发",
+      "C": "进程是静态文件",
+      "D": "进程是程序的一次执行"
     },
-    "answer": "B",
-    "analysis": "进程是动态概念，程序是静态文件。",
-    "difficulty": 1,
+    "answer": "D",
+    "analysis": "本题考查进程与线程。正确要点：进程是程序的一次执行。",
+    "difficulty": 2,
     "knowledge_points": [
-      "进程",
-      "程序"
+      "进程与线程",
+      "核心概念"
     ]
   },
   {
-    "id": "process-thread-002",
+    "id": "os-full-002",
     "subject": "OS",
     "chapter": "进程与线程",
-    "chapterSlug": "process-thread",
-    "stem": "线程是 CPU 调度的？",
+    "chapterSlug": "进程与线程",
+    "stem": "关于进程与线程，进程与程序的本质区别是？",
     "options": {
-      "A": "最小单位",
-      "B": "最大单位",
-      "C": "I/O 单位",
+      "A": "进程是程序的一次执行",
+      "B": "程序可并发",
+      "C": "进程是静态文件",
+      "D": "程序是调度单位"
+    },
+    "answer": "A",
+    "analysis": "本题考查进程与线程。正确要点：进程是程序的一次执行。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "进程与线程",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "os-full-003",
+    "subject": "OS",
+    "chapter": "进程与线程",
+    "chapterSlug": "进程与线程",
+    "stem": "在OS课程中，进程与程序的本质区别是？",
+    "options": {
+      "A": "进程是静态文件",
+      "B": "程序可并发",
+      "C": "程序是调度单位",
+      "D": "进程是程序的一次执行"
+    },
+    "answer": "D",
+    "analysis": "本题考查进程与线程。正确要点：进程是程序的一次执行。",
+    "difficulty": 3,
+    "knowledge_points": [
+      "进程与线程",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "os-full-004",
+    "subject": "OS",
+    "chapter": "进程与线程",
+    "chapterSlug": "进程与线程",
+    "stem": "下列说法中，进程与程序的本质区别是？",
+    "options": {
+      "A": "进程是静态文件",
+      "B": "程序可并发",
+      "C": "进程是程序的一次执行",
+      "D": "程序是调度单位"
+    },
+    "answer": "C",
+    "analysis": "本题考查进程与线程。正确要点：进程是程序的一次执行。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "进程与线程",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "os-full-005",
+    "subject": "OS",
+    "chapter": "进程与线程",
+    "chapterSlug": "进程与线程",
+    "stem": "考点：进程与程序的本质区别是？",
+    "options": {
+      "A": "进程是静态文件",
+      "B": "进程是程序的一次执行",
+      "C": "程序是调度单位",
+      "D": "程序可并发"
+    },
+    "answer": "B",
+    "analysis": "本题考查进程与线程。正确要点：进程是程序的一次执行。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "进程与线程",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "os-full-006",
+    "subject": "OS",
+    "chapter": "进程与线程",
+    "chapterSlug": "进程与线程",
+    "stem": "真题常考：进程与程序的本质区别是？",
+    "options": {
+      "A": "程序可并发",
+      "B": "进程是静态文件",
+      "C": "进程是程序的一次执行",
+      "D": "程序是调度单位"
+    },
+    "answer": "C",
+    "analysis": "本题考查进程与线程。正确要点：进程是程序的一次执行。",
+    "difficulty": 3,
+    "knowledge_points": [
+      "进程与线程",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "os-full-007",
+    "subject": "OS",
+    "chapter": "进程与线程",
+    "chapterSlug": "进程与线程",
+    "stem": "请判断：进程与程序的本质区别是？",
+    "options": {
+      "A": "进程是静态文件",
+      "B": "进程是程序的一次执行",
+      "C": "程序可并发",
+      "D": "程序是调度单位"
+    },
+    "answer": "B",
+    "analysis": "本题考查进程与线程。正确要点：进程是程序的一次执行。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "进程与线程",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "os-full-008",
+    "subject": "OS",
+    "chapter": "进程与线程",
+    "chapterSlug": "进程与线程",
+    "stem": "以下命题正确的是：进程与程序的本质区别是？",
+    "options": {
+      "A": "进程是程序的一次执行",
+      "B": "程序可并发",
+      "C": "程序是调度单位",
+      "D": "进程是静态文件"
+    },
+    "answer": "A",
+    "analysis": "本题考查进程与线程。正确要点：进程是程序的一次执行。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "进程与线程",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "os-full-009",
+    "subject": "OS",
+    "chapter": "进程与线程",
+    "chapterSlug": "进程与线程",
+    "stem": "从原理角度看，进程与程序的本质区别是？",
+    "options": {
+      "A": "进程是程序的一次执行",
+      "B": "程序是调度单位",
+      "C": "程序可并发",
+      "D": "进程是静态文件"
+    },
+    "answer": "A",
+    "analysis": "本题考查进程与线程。正确要点：进程是程序的一次执行。",
+    "difficulty": 3,
+    "knowledge_points": [
+      "进程与线程",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "os-full-010",
+    "subject": "OS",
+    "chapter": "进程与线程",
+    "chapterSlug": "进程与线程",
+    "stem": "在系统设计中，进程与程序的本质区别是？",
+    "options": {
+      "A": "进程是程序的一次执行",
+      "B": "进程是静态文件",
+      "C": "程序是调度单位",
+      "D": "程序可并发"
+    },
+    "answer": "A",
+    "analysis": "本题考查进程与线程。正确要点：进程是程序的一次执行。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "进程与线程",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "os-full-011",
+    "subject": "OS",
+    "chapter": "进程与线程",
+    "chapterSlug": "进程与线程",
+    "stem": "基础题：进程与程序的本质区别是？",
+    "options": {
+      "A": "程序可并发",
+      "B": "进程是程序的一次执行",
+      "C": "程序是调度单位",
+      "D": "进程是静态文件"
+    },
+    "answer": "B",
+    "analysis": "本题考查进程与线程。正确要点：进程是程序的一次执行。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "进程与线程",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "os-full-012",
+    "subject": "OS",
+    "chapter": "进程与线程",
+    "chapterSlug": "进程与线程",
+    "stem": "综合题：进程与程序的本质区别是？",
+    "options": {
+      "A": "进程是程序的一次执行",
+      "B": "进程是静态文件",
+      "C": "程序是调度单位",
+      "D": "程序可并发"
+    },
+    "answer": "A",
+    "analysis": "本题考查进程与线程。正确要点：进程是程序的一次执行。",
+    "difficulty": 3,
+    "knowledge_points": [
+      "进程与线程",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "os-full-013",
+    "subject": "OS",
+    "chapter": "进程与线程",
+    "chapterSlug": "进程与线程",
+    "stem": "线程是CPU调度的？",
+    "options": {
+      "A": "文件单位",
+      "B": "基本单位",
+      "C": "中断单位",
+      "D": "存储单位"
+    },
+    "answer": "B",
+    "analysis": "本题考查进程与线程。正确要点：基本单位。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "进程与线程",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "os-full-014",
+    "subject": "OS",
+    "chapter": "进程与线程",
+    "chapterSlug": "进程与线程",
+    "stem": "关于进程与线程，线程是CPU调度的？",
+    "options": {
+      "A": "中断单位",
+      "B": "存储单位",
+      "C": "文件单位",
+      "D": "基本单位"
+    },
+    "answer": "D",
+    "analysis": "本题考查进程与线程。正确要点：基本单位。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "进程与线程",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "os-full-015",
+    "subject": "OS",
+    "chapter": "进程与线程",
+    "chapterSlug": "进程与线程",
+    "stem": "在OS课程中，线程是CPU调度的？",
+    "options": {
+      "A": "存储单位",
+      "B": "中断单位",
+      "C": "文件单位",
+      "D": "基本单位"
+    },
+    "answer": "D",
+    "analysis": "本题考查进程与线程。正确要点：基本单位。",
+    "difficulty": 3,
+    "knowledge_points": [
+      "进程与线程",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "os-full-016",
+    "subject": "OS",
+    "chapter": "进程与线程",
+    "chapterSlug": "进程与线程",
+    "stem": "下列说法中，线程是CPU调度的？",
+    "options": {
+      "A": "存储单位",
+      "B": "基本单位",
+      "C": "文件单位",
+      "D": "中断单位"
+    },
+    "answer": "B",
+    "analysis": "本题考查进程与线程。正确要点：基本单位。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "进程与线程",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "os-full-017",
+    "subject": "OS",
+    "chapter": "进程与线程",
+    "chapterSlug": "进程与线程",
+    "stem": "考点：线程是CPU调度的？",
+    "options": {
+      "A": "存储单位",
+      "B": "文件单位",
+      "C": "基本单位",
+      "D": "中断单位"
+    },
+    "answer": "C",
+    "analysis": "本题考查进程与线程。正确要点：基本单位。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "进程与线程",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "os-full-018",
+    "subject": "OS",
+    "chapter": "进程与线程",
+    "chapterSlug": "进程与线程",
+    "stem": "真题常考：线程是CPU调度的？",
+    "options": {
+      "A": "中断单位",
+      "B": "存储单位",
+      "C": "文件单位",
+      "D": "基本单位"
+    },
+    "answer": "D",
+    "analysis": "本题考查进程与线程。正确要点：基本单位。",
+    "difficulty": 3,
+    "knowledge_points": [
+      "进程与线程",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "os-full-019",
+    "subject": "OS",
+    "chapter": "进程与线程",
+    "chapterSlug": "进程与线程",
+    "stem": "请判断：线程是CPU调度的？",
+    "options": {
+      "A": "基本单位",
+      "B": "文件单位",
+      "C": "存储单位",
+      "D": "中断单位"
+    },
+    "answer": "A",
+    "analysis": "本题考查进程与线程。正确要点：基本单位。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "进程与线程",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "os-full-020",
+    "subject": "OS",
+    "chapter": "进程与线程",
+    "chapterSlug": "进程与线程",
+    "stem": "以下命题正确的是：线程是CPU调度的？",
+    "options": {
+      "A": "基本单位",
+      "B": "文件单位",
+      "C": "中断单位",
       "D": "存储单位"
     },
     "answer": "A",
-    "analysis": "现代操作系统通常以线程作为调度基本单位。",
-    "difficulty": 1,
-    "knowledge_points": [
-      "线程调度"
-    ]
-  },
-  {
-    "id": "scheduling-001",
-    "subject": "OS",
-    "chapter": "处理机调度",
-    "chapterSlug": "scheduling",
-    "stem": "时间片轮转算法主要适用于？",
-    "options": {
-      "A": "批处理系统",
-      "B": "实时系统",
-      "C": "分时系统",
-      "D": "嵌入式裸机"
-    },
-    "answer": "C",
-    "analysis": "RR 保证交互响应，适合分时系统。",
+    "analysis": "本题考查进程与线程。正确要点：基本单位。",
     "difficulty": 2,
     "knowledge_points": [
-      "调度算法"
+      "进程与线程",
+      "核心概念"
     ]
   },
   {
-    "id": "memory-001",
+    "id": "os-full-021",
     "subject": "OS",
-    "chapter": "存储管理",
-    "chapterSlug": "memory",
-    "stem": "虚拟内存技术主要基于？",
+    "chapter": "进程与线程",
+    "chapterSlug": "进程与线程",
+    "stem": "从原理角度看，线程是CPU调度的？",
     "options": {
-      "A": "覆盖与交换",
-      "B": "DMA 与中断",
-      "C": "流水与并行",
-      "D": "缓存一致性"
+      "A": "基本单位",
+      "B": "文件单位",
+      "C": "中断单位",
+      "D": "存储单位"
     },
     "answer": "A",
-    "analysis": "通过局部性原理配合请求分页等实现。",
-    "difficulty": 2,
-    "knowledge_points": [
-      "虚拟内存",
-      "分页"
-    ]
-  },
-  {
-    "id": "memory-002",
-    "subject": "OS",
-    "chapter": "存储管理",
-    "chapterSlug": "memory",
-    "stem": "页面置换算法中，Belady 异常可能出现在？",
-    "options": {
-      "A": "OPT",
-      "B": "LRU",
-      "C": "FIFO",
-      "D": "Clock"
-    },
-    "answer": "C",
-    "analysis": "FIFO 可能出现页框增多缺页反而增加。",
-    "difficulty": 3,
-    "knowledge_points": [
-      "页面置换"
-    ]
-  },
-  {
-    "id": "file-001",
-    "subject": "OS",
-    "chapter": "文件系统",
-    "chapterSlug": "file",
-    "stem": "文件控制块 FCB 主要用于保存？",
-    "options": {
-      "A": "文件数据内容",
-      "B": "文件元数据",
-      "C": "用户口令",
-      "D": "中断向量"
-    },
-    "answer": "B",
-    "analysis": "FCB 保存权限、位置、大小等元信息。",
-    "difficulty": 1,
-    "knowledge_points": [
-      "文件系统"
-    ]
-  },
-  {
-    "id": "deadlock-001",
-    "subject": "OS",
-    "chapter": "死锁",
-    "chapterSlug": "deadlock",
-    "stem": "死锁产生的必要条件不包括？",
-    "options": {
-      "A": "互斥",
-      "B": "请求和保持",
-      "C": "可剥夺",
-      "D": "循环等待"
-    },
-    "answer": "C",
-    "analysis": "不可剥夺才是必要条件。",
-    "difficulty": 2,
-    "knowledge_points": [
-      "死锁条件"
-    ]
-  },
-  {
-    "id": "io-001",
-    "subject": "OS",
-    "chapter": "设备管理",
-    "chapterSlug": "io",
-    "stem": "缓冲技术的主要作用是？",
-    "options": {
-      "A": "提高CPU频率",
-      "B": "匹配设备与CPU速度差异",
-      "C": "减少主存容量",
-      "D": "避免中断"
-    },
-    "answer": "B",
-    "analysis": "通过缓冲减少速度不匹配带来的等待。",
-    "difficulty": 1,
-    "knowledge_points": [
-      "I/O管理",
-      "缓冲"
-    ]
-  },
-  {
-    "id": "os-bank-009",
-    "subject": "OS",
-    "chapter": "进程与线程",
-    "chapterSlug": "进程与线程",
-    "stem": "进程切换比线程切换开销更大的主要原因是？",
-    "options": {
-      "A": "进程数量更少",
-      "B": "需切换地址空间等更多上下文",
-      "C": "线程不能并发",
-      "D": "线程无需调度"
-    },
-    "answer": "B",
-    "analysis": "进程切换涉及页表和资源上下文。",
+    "analysis": "本题考查进程与线程。正确要点：基本单位。",
     "difficulty": 3,
     "knowledge_points": [
       "进程与线程",
@@ -175,19 +420,19 @@
     ]
   },
   {
-    "id": "os-bank-010",
+    "id": "os-full-022",
     "subject": "OS",
     "chapter": "进程与线程",
     "chapterSlug": "进程与线程",
-    "stem": "同一进程内多个线程共享的是？",
+    "stem": "在系统设计中，线程是CPU调度的？",
     "options": {
-      "A": "栈",
-      "B": "程序计数器",
-      "C": "代码段与堆",
-      "D": "寄存器"
+      "A": "基本单位",
+      "B": "存储单位",
+      "C": "文件单位",
+      "D": "中断单位"
     },
-    "answer": "C",
-    "analysis": "线程共享进程资源，栈/寄存器私有。",
+    "answer": "A",
+    "analysis": "本题考查进程与线程。正确要点：基本单位。",
     "difficulty": 2,
     "knowledge_points": [
       "进程与线程",
@@ -195,19 +440,59 @@
     ]
   },
   {
-    "id": "os-bank-011",
+    "id": "os-full-023",
+    "subject": "OS",
+    "chapter": "进程与线程",
+    "chapterSlug": "进程与线程",
+    "stem": "基础题：线程是CPU调度的？",
+    "options": {
+      "A": "文件单位",
+      "B": "存储单位",
+      "C": "中断单位",
+      "D": "基本单位"
+    },
+    "answer": "D",
+    "analysis": "本题考查进程与线程。正确要点：基本单位。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "进程与线程",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "os-full-024",
+    "subject": "OS",
+    "chapter": "进程与线程",
+    "chapterSlug": "进程与线程",
+    "stem": "综合题：线程是CPU调度的？",
+    "options": {
+      "A": "文件单位",
+      "B": "中断单位",
+      "C": "存储单位",
+      "D": "基本单位"
+    },
+    "answer": "D",
+    "analysis": "本题考查进程与线程。正确要点：基本单位。",
+    "difficulty": 3,
+    "knowledge_points": [
+      "进程与线程",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "os-full-025",
     "subject": "OS",
     "chapter": "处理机调度",
     "chapterSlug": "处理机调度",
-    "stem": "时间片轮转算法主要改善的是？",
+    "stem": "时间片轮转算法主要改善？",
     "options": {
-      "A": "吞吐量极大化",
-      "B": "响应时间公平性",
-      "C": "实时性硬保证",
-      "D": "减少内存占用"
+      "A": "吞吐量绝对最优",
+      "B": "内存命中率",
+      "C": "实时硬保证",
+      "D": "响应公平性"
     },
-    "answer": "B",
-    "analysis": "RR 让各进程轮流获得 CPU。",
+    "answer": "D",
+    "analysis": "本题考查处理机调度。正确要点：响应公平性。",
     "difficulty": 2,
     "knowledge_points": [
       "处理机调度",
@@ -215,19 +500,39 @@
     ]
   },
   {
-    "id": "os-bank-012",
+    "id": "os-full-026",
     "subject": "OS",
     "chapter": "处理机调度",
     "chapterSlug": "处理机调度",
-    "stem": "短作业优先的主要缺点是？",
+    "stem": "关于处理机调度，时间片轮转算法主要改善？",
     "options": {
-      "A": "上下文切换多",
-      "B": "长作业可能饥饿",
-      "C": "实现简单",
-      "D": "不能抢占"
+      "A": "实时硬保证",
+      "B": "内存命中率",
+      "C": "响应公平性",
+      "D": "吞吐量绝对最优"
     },
-    "answer": "B",
-    "analysis": "长作业等待时间可能过长。",
+    "answer": "C",
+    "analysis": "本题考查处理机调度。正确要点：响应公平性。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "处理机调度",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "os-full-027",
+    "subject": "OS",
+    "chapter": "处理机调度",
+    "chapterSlug": "处理机调度",
+    "stem": "在OS课程中，时间片轮转算法主要改善？",
+    "options": {
+      "A": "响应公平性",
+      "B": "实时硬保证",
+      "C": "吞吐量绝对最优",
+      "D": "内存命中率"
+    },
+    "answer": "A",
+    "analysis": "本题考查处理机调度。正确要点：响应公平性。",
     "difficulty": 3,
     "knowledge_points": [
       "处理机调度",
@@ -235,299 +540,299 @@
     ]
   },
   {
-    "id": "os-bank-013",
+    "id": "os-full-028",
+    "subject": "OS",
+    "chapter": "处理机调度",
+    "chapterSlug": "处理机调度",
+    "stem": "下列说法中，时间片轮转算法主要改善？",
+    "options": {
+      "A": "响应公平性",
+      "B": "实时硬保证",
+      "C": "内存命中率",
+      "D": "吞吐量绝对最优"
+    },
+    "answer": "A",
+    "analysis": "本题考查处理机调度。正确要点：响应公平性。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "处理机调度",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "os-full-029",
+    "subject": "OS",
+    "chapter": "处理机调度",
+    "chapterSlug": "处理机调度",
+    "stem": "考点：时间片轮转算法主要改善？",
+    "options": {
+      "A": "内存命中率",
+      "B": "实时硬保证",
+      "C": "吞吐量绝对最优",
+      "D": "响应公平性"
+    },
+    "answer": "D",
+    "analysis": "本题考查处理机调度。正确要点：响应公平性。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "处理机调度",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "os-full-030",
+    "subject": "OS",
+    "chapter": "处理机调度",
+    "chapterSlug": "处理机调度",
+    "stem": "真题常考：时间片轮转算法主要改善？",
+    "options": {
+      "A": "吞吐量绝对最优",
+      "B": "响应公平性",
+      "C": "实时硬保证",
+      "D": "内存命中率"
+    },
+    "answer": "B",
+    "analysis": "本题考查处理机调度。正确要点：响应公平性。",
+    "difficulty": 3,
+    "knowledge_points": [
+      "处理机调度",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "os-full-031",
+    "subject": "OS",
+    "chapter": "处理机调度",
+    "chapterSlug": "处理机调度",
+    "stem": "请判断：时间片轮转算法主要改善？",
+    "options": {
+      "A": "内存命中率",
+      "B": "吞吐量绝对最优",
+      "C": "响应公平性",
+      "D": "实时硬保证"
+    },
+    "answer": "C",
+    "analysis": "本题考查处理机调度。正确要点：响应公平性。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "处理机调度",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "os-full-032",
+    "subject": "OS",
+    "chapter": "处理机调度",
+    "chapterSlug": "处理机调度",
+    "stem": "以下命题正确的是：时间片轮转算法主要改善？",
+    "options": {
+      "A": "吞吐量绝对最优",
+      "B": "响应公平性",
+      "C": "内存命中率",
+      "D": "实时硬保证"
+    },
+    "answer": "B",
+    "analysis": "本题考查处理机调度。正确要点：响应公平性。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "处理机调度",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "os-full-033",
+    "subject": "OS",
+    "chapter": "处理机调度",
+    "chapterSlug": "处理机调度",
+    "stem": "从原理角度看，时间片轮转算法主要改善？",
+    "options": {
+      "A": "实时硬保证",
+      "B": "响应公平性",
+      "C": "内存命中率",
+      "D": "吞吐量绝对最优"
+    },
+    "answer": "B",
+    "analysis": "本题考查处理机调度。正确要点：响应公平性。",
+    "difficulty": 3,
+    "knowledge_points": [
+      "处理机调度",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "os-full-034",
+    "subject": "OS",
+    "chapter": "处理机调度",
+    "chapterSlug": "处理机调度",
+    "stem": "在系统设计中，时间片轮转算法主要改善？",
+    "options": {
+      "A": "实时硬保证",
+      "B": "响应公平性",
+      "C": "内存命中率",
+      "D": "吞吐量绝对最优"
+    },
+    "answer": "B",
+    "analysis": "本题考查处理机调度。正确要点：响应公平性。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "处理机调度",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "os-full-035",
+    "subject": "OS",
+    "chapter": "处理机调度",
+    "chapterSlug": "处理机调度",
+    "stem": "基础题：时间片轮转算法主要改善？",
+    "options": {
+      "A": "响应公平性",
+      "B": "实时硬保证",
+      "C": "内存命中率",
+      "D": "吞吐量绝对最优"
+    },
+    "answer": "A",
+    "analysis": "本题考查处理机调度。正确要点：响应公平性。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "处理机调度",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "os-full-036",
+    "subject": "OS",
+    "chapter": "处理机调度",
+    "chapterSlug": "处理机调度",
+    "stem": "综合题：时间片轮转算法主要改善？",
+    "options": {
+      "A": "响应公平性",
+      "B": "内存命中率",
+      "C": "实时硬保证",
+      "D": "吞吐量绝对最优"
+    },
+    "answer": "A",
+    "analysis": "本题考查处理机调度。正确要点：响应公平性。",
+    "difficulty": 3,
+    "knowledge_points": [
+      "处理机调度",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "os-full-037",
     "subject": "OS",
     "chapter": "同步与互斥",
     "chapterSlug": "同步与互斥",
-    "stem": "PV 操作中的 P 操作本质上是？",
+    "stem": "P操作的语义通常是？",
     "options": {
       "A": "释放资源",
-      "B": "申请并可能阻塞",
-      "C": "忙等自旋",
+      "B": "强制唤醒",
+      "C": "申请资源，可能阻塞",
+      "D": "删除信号量"
+    },
+    "answer": "C",
+    "analysis": "本题考查同步与互斥。正确要点：申请资源，可能阻塞。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "同步与互斥",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "os-full-038",
+    "subject": "OS",
+    "chapter": "同步与互斥",
+    "chapterSlug": "同步与互斥",
+    "stem": "关于同步与互斥，P操作的语义通常是？",
+    "options": {
+      "A": "删除信号量",
+      "B": "强制唤醒",
+      "C": "释放资源",
+      "D": "申请资源，可能阻塞"
+    },
+    "answer": "D",
+    "analysis": "本题考查同步与互斥。正确要点：申请资源，可能阻塞。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "同步与互斥",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "os-full-039",
+    "subject": "OS",
+    "chapter": "同步与互斥",
+    "chapterSlug": "同步与互斥",
+    "stem": "在OS课程中，P操作的语义通常是？",
+    "options": {
+      "A": "释放资源",
+      "B": "申请资源，可能阻塞",
+      "C": "强制唤醒",
       "D": "删除信号量"
     },
     "answer": "B",
-    "analysis": "资源不足则进入等待队列。",
-    "difficulty": 2,
+    "analysis": "本题考查同步与互斥。正确要点：申请资源，可能阻塞。",
+    "difficulty": 3,
     "knowledge_points": [
       "同步与互斥",
       "核心概念"
     ]
   },
   {
-    "id": "os-bank-014",
+    "id": "os-full-040",
     "subject": "OS",
     "chapter": "同步与互斥",
     "chapterSlug": "同步与互斥",
-    "stem": "“一次只允许一个线程进入临界区”描述的是？",
-    "options": {
-      "A": "同步",
-      "B": "互斥",
-      "C": "并行",
-      "D": "虚拟化"
-    },
-    "answer": "B",
-    "analysis": "互斥保护共享临界资源。",
-    "difficulty": 2,
-    "knowledge_points": [
-      "同步与互斥",
-      "核心概念"
-    ]
-  },
-  {
-    "id": "os-bank-015",
-    "subject": "OS",
-    "chapter": "内存管理",
-    "chapterSlug": "内存管理",
-    "stem": "分页存储管理中，页内地址转换由什么决定？",
-    "options": {
-      "A": "页号",
-      "B": "页内偏移",
-      "C": "段号",
-      "D": "TLB 行号"
-    },
-    "answer": "B",
-    "analysis": "物理页框基址 + 页内偏移。",
-    "difficulty": 3,
-    "knowledge_points": [
-      "内存管理",
-      "核心概念"
-    ]
-  },
-  {
-    "id": "os-bank-016",
-    "subject": "OS",
-    "chapter": "内存管理",
-    "chapterSlug": "内存管理",
-    "stem": "分段系统中，一个段通常对应？",
-    "options": {
-      "A": "固定大小块",
-      "B": "逻辑上完整模块",
-      "C": "磁盘柱面",
-      "D": "中断向量"
-    },
-    "answer": "B",
-    "analysis": "段反映程序逻辑结构。",
-    "difficulty": 2,
-    "knowledge_points": [
-      "内存管理",
-      "核心概念"
-    ]
-  },
-  {
-    "id": "os-bank-017",
-    "subject": "OS",
-    "chapter": "虚拟内存",
-    "chapterSlug": "虚拟内存",
-    "stem": "页面置换中，FIFO 可能出现？",
-    "options": {
-      "A": "Belady 异常",
-      "B": "死锁",
-      "C": "饥饿",
-      "D": "抖动消失"
-    },
-    "answer": "A",
-    "analysis": "页框增加反而缺页增加。",
-    "difficulty": 2,
-    "knowledge_points": [
-      "虚拟内存",
-      "核心概念"
-    ]
-  },
-  {
-    "id": "os-bank-018",
-    "subject": "OS",
-    "chapter": "虚拟内存",
-    "chapterSlug": "虚拟内存",
-    "stem": "局部性原理中“时间局部性”指？",
-    "options": {
-      "A": "相邻地址被访问",
-      "B": "刚访问的数据可能再次访问",
-      "C": "仅代码复用",
-      "D": "仅栈增长"
-    },
-    "answer": "B",
-    "analysis": "短时间内重复访问同一数据。",
-    "difficulty": 3,
-    "knowledge_points": [
-      "虚拟内存",
-      "核心概念"
-    ]
-  },
-  {
-    "id": "os-bank-019",
-    "subject": "OS",
-    "chapter": "文件系统",
-    "chapterSlug": "文件系统",
-    "stem": "文件控制块 FCB 主要用于存放？",
-    "options": {
-      "A": "文件数据内容",
-      "B": "文件元数据",
-      "C": "用户密码",
-      "D": "网卡状态"
-    },
-    "answer": "B",
-    "analysis": "如权限、大小、指针等。",
-    "difficulty": 2,
-    "knowledge_points": [
-      "文件系统",
-      "核心概念"
-    ]
-  },
-  {
-    "id": "os-bank-020",
-    "subject": "OS",
-    "chapter": "文件系统",
-    "chapterSlug": "文件系统",
-    "stem": "目录项中最关键的是文件名与？",
-    "options": {
-      "A": "索引节点号",
-      "B": "CPU 编号",
-      "C": "页号",
-      "D": "进程号"
-    },
-    "answer": "A",
-    "analysis": "通过 inode 定位文件元数据。",
-    "difficulty": 2,
-    "knowledge_points": [
-      "文件系统",
-      "核心概念"
-    ]
-  },
-  {
-    "id": "os-bank-021",
-    "subject": "OS",
-    "chapter": "I/O系统",
-    "chapterSlug": "I/O系统",
-    "stem": "DMA 方式相较程序查询方式的优势是？",
-    "options": {
-      "A": "实现最简单",
-      "B": "减少 CPU 参与数据搬运",
-      "C": "不需要中断",
-      "D": "仅适用于字符设备"
-    },
-    "answer": "B",
-    "analysis": "DMA 控制器直接搬运数据。",
-    "difficulty": 3,
-    "knowledge_points": [
-      "I/O系统",
-      "核心概念"
-    ]
-  },
-  {
-    "id": "os-bank-022",
-    "subject": "OS",
-    "chapter": "I/O系统",
-    "chapterSlug": "I/O系统",
-    "stem": "设备独立性主要由哪一层提供？",
-    "options": {
-      "A": "中断处理程序",
-      "B": "设备驱动上层统一接口",
-      "C": "应用层 UI",
-      "D": "BIOS 菜单"
-    },
-    "answer": "B",
-    "analysis": "通过统一抽象屏蔽具体设备差异。",
-    "difficulty": 2,
-    "knowledge_points": [
-      "I/O系统",
-      "核心概念"
-    ]
-  },
-  {
-    "id": "os-bank-023",
-    "subject": "OS",
-    "chapter": "进程与线程",
-    "chapterSlug": "进程与线程",
-    "stem": "进程切换比线程切换开销更大的主要原因是？（扩展23）",
-    "options": {
-      "A": "进程数量更少",
-      "B": "需切换地址空间等更多上下文",
-      "C": "线程不能并发",
-      "D": "线程无需调度"
-    },
-    "answer": "B",
-    "analysis": "进程切换涉及页表和资源上下文。",
-    "difficulty": 2,
-    "knowledge_points": [
-      "进程与线程",
-      "核心概念"
-    ]
-  },
-  {
-    "id": "os-bank-024",
-    "subject": "OS",
-    "chapter": "进程与线程",
-    "chapterSlug": "进程与线程",
-    "stem": "同一进程内多个线程共享的是？（扩展24）",
-    "options": {
-      "A": "栈",
-      "B": "程序计数器",
-      "C": "代码段与堆",
-      "D": "寄存器"
-    },
-    "answer": "C",
-    "analysis": "线程共享进程资源，栈/寄存器私有。",
-    "difficulty": 3,
-    "knowledge_points": [
-      "进程与线程",
-      "核心概念"
-    ]
-  },
-  {
-    "id": "os-bank-025",
-    "subject": "OS",
-    "chapter": "处理机调度",
-    "chapterSlug": "处理机调度",
-    "stem": "时间片轮转算法主要改善的是？（扩展25）",
-    "options": {
-      "A": "吞吐量极大化",
-      "B": "响应时间公平性",
-      "C": "实时性硬保证",
-      "D": "减少内存占用"
-    },
-    "answer": "B",
-    "analysis": "RR 让各进程轮流获得 CPU。",
-    "difficulty": 2,
-    "knowledge_points": [
-      "处理机调度",
-      "核心概念"
-    ]
-  },
-  {
-    "id": "os-bank-026",
-    "subject": "OS",
-    "chapter": "处理机调度",
-    "chapterSlug": "处理机调度",
-    "stem": "短作业优先的主要缺点是？（扩展26）",
-    "options": {
-      "A": "上下文切换多",
-      "B": "长作业可能饥饿",
-      "C": "实现简单",
-      "D": "不能抢占"
-    },
-    "answer": "B",
-    "analysis": "长作业等待时间可能过长。",
-    "difficulty": 2,
-    "knowledge_points": [
-      "处理机调度",
-      "核心概念"
-    ]
-  },
-  {
-    "id": "os-bank-027",
-    "subject": "OS",
-    "chapter": "同步与互斥",
-    "chapterSlug": "同步与互斥",
-    "stem": "PV 操作中的 P 操作本质上是？（扩展27）",
+    "stem": "下列说法中，P操作的语义通常是？",
     "options": {
       "A": "释放资源",
-      "B": "申请并可能阻塞",
-      "C": "忙等自旋",
+      "B": "申请资源，可能阻塞",
+      "C": "删除信号量",
+      "D": "强制唤醒"
+    },
+    "answer": "B",
+    "analysis": "本题考查同步与互斥。正确要点：申请资源，可能阻塞。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "同步与互斥",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "os-full-041",
+    "subject": "OS",
+    "chapter": "同步与互斥",
+    "chapterSlug": "同步与互斥",
+    "stem": "考点：P操作的语义通常是？",
+    "options": {
+      "A": "强制唤醒",
+      "B": "申请资源，可能阻塞",
+      "C": "删除信号量",
+      "D": "释放资源"
+    },
+    "answer": "B",
+    "analysis": "本题考查同步与互斥。正确要点：申请资源，可能阻塞。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "同步与互斥",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "os-full-042",
+    "subject": "OS",
+    "chapter": "同步与互斥",
+    "chapterSlug": "同步与互斥",
+    "stem": "真题常考：P操作的语义通常是？",
+    "options": {
+      "A": "强制唤醒",
+      "B": "申请资源，可能阻塞",
+      "C": "释放资源",
       "D": "删除信号量"
     },
     "answer": "B",
-    "analysis": "资源不足则进入等待队列。",
+    "analysis": "本题考查同步与互斥。正确要点：申请资源，可能阻塞。",
     "difficulty": 3,
     "knowledge_points": [
       "同步与互斥",
@@ -535,19 +840,19 @@
     ]
   },
   {
-    "id": "os-bank-028",
+    "id": "os-full-043",
     "subject": "OS",
     "chapter": "同步与互斥",
     "chapterSlug": "同步与互斥",
-    "stem": "“一次只允许一个线程进入临界区”描述的是？（扩展28）",
+    "stem": "请判断：P操作的语义通常是？",
     "options": {
-      "A": "同步",
-      "B": "互斥",
-      "C": "并行",
-      "D": "虚拟化"
+      "A": "强制唤醒",
+      "B": "删除信号量",
+      "C": "释放资源",
+      "D": "申请资源，可能阻塞"
     },
-    "answer": "B",
-    "analysis": "互斥保护共享临界资源。",
+    "answer": "D",
+    "analysis": "本题考查同步与互斥。正确要点：申请资源，可能阻塞。",
     "difficulty": 2,
     "knowledge_points": [
       "同步与互斥",
@@ -555,242 +860,1542 @@
     ]
   },
   {
-    "id": "os-bank-029",
+    "id": "os-full-044",
     "subject": "OS",
-    "chapter": "内存管理",
-    "chapterSlug": "内存管理",
-    "stem": "分页存储管理中，页内地址转换由什么决定？（扩展29）",
+    "chapter": "同步与互斥",
+    "chapterSlug": "同步与互斥",
+    "stem": "以下命题正确的是：P操作的语义通常是？",
     "options": {
-      "A": "页号",
-      "B": "页内偏移",
-      "C": "段号",
-      "D": "TLB 行号"
-    },
-    "answer": "B",
-    "analysis": "物理页框基址 + 页内偏移。",
-    "difficulty": 2,
-    "knowledge_points": [
-      "内存管理",
-      "核心概念"
-    ]
-  },
-  {
-    "id": "os-bank-030",
-    "subject": "OS",
-    "chapter": "内存管理",
-    "chapterSlug": "内存管理",
-    "stem": "分段系统中，一个段通常对应？（扩展30）",
-    "options": {
-      "A": "固定大小块",
-      "B": "逻辑上完整模块",
-      "C": "磁盘柱面",
-      "D": "中断向量"
-    },
-    "answer": "B",
-    "analysis": "段反映程序逻辑结构。",
-    "difficulty": 3,
-    "knowledge_points": [
-      "内存管理",
-      "核心概念"
-    ]
-  },
-  {
-    "id": "os-bank-031",
-    "subject": "OS",
-    "chapter": "虚拟内存",
-    "chapterSlug": "虚拟内存",
-    "stem": "页面置换中，FIFO 可能出现？（扩展31）",
-    "options": {
-      "A": "Belady 异常",
-      "B": "死锁",
-      "C": "饥饿",
-      "D": "抖动消失"
-    },
-    "answer": "A",
-    "analysis": "页框增加反而缺页增加。",
-    "difficulty": 2,
-    "knowledge_points": [
-      "虚拟内存",
-      "核心概念"
-    ]
-  },
-  {
-    "id": "os-bank-032",
-    "subject": "OS",
-    "chapter": "虚拟内存",
-    "chapterSlug": "虚拟内存",
-    "stem": "局部性原理中“时间局部性”指？（扩展32）",
-    "options": {
-      "A": "相邻地址被访问",
-      "B": "刚访问的数据可能再次访问",
-      "C": "仅代码复用",
-      "D": "仅栈增长"
-    },
-    "answer": "B",
-    "analysis": "短时间内重复访问同一数据。",
-    "difficulty": 2,
-    "knowledge_points": [
-      "虚拟内存",
-      "核心概念"
-    ]
-  },
-  {
-    "id": "os-bank-033",
-    "subject": "OS",
-    "chapter": "文件系统",
-    "chapterSlug": "文件系统",
-    "stem": "文件控制块 FCB 主要用于存放？（扩展33）",
-    "options": {
-      "A": "文件数据内容",
-      "B": "文件元数据",
-      "C": "用户密码",
-      "D": "网卡状态"
-    },
-    "answer": "B",
-    "analysis": "如权限、大小、指针等。",
-    "difficulty": 3,
-    "knowledge_points": [
-      "文件系统",
-      "核心概念"
-    ]
-  },
-  {
-    "id": "os-bank-034",
-    "subject": "OS",
-    "chapter": "文件系统",
-    "chapterSlug": "文件系统",
-    "stem": "目录项中最关键的是文件名与？（扩展34）",
-    "options": {
-      "A": "索引节点号",
-      "B": "CPU 编号",
-      "C": "页号",
-      "D": "进程号"
-    },
-    "answer": "A",
-    "analysis": "通过 inode 定位文件元数据。",
-    "difficulty": 2,
-    "knowledge_points": [
-      "文件系统",
-      "核心概念"
-    ]
-  },
-  {
-    "id": "os-bank-035",
-    "subject": "OS",
-    "chapter": "I/O系统",
-    "chapterSlug": "I/O系统",
-    "stem": "DMA 方式相较程序查询方式的优势是？（扩展35）",
-    "options": {
-      "A": "实现最简单",
-      "B": "减少 CPU 参与数据搬运",
-      "C": "不需要中断",
-      "D": "仅适用于字符设备"
-    },
-    "answer": "B",
-    "analysis": "DMA 控制器直接搬运数据。",
-    "difficulty": 2,
-    "knowledge_points": [
-      "I/O系统",
-      "核心概念"
-    ]
-  },
-  {
-    "id": "os-bank-036",
-    "subject": "OS",
-    "chapter": "I/O系统",
-    "chapterSlug": "I/O系统",
-    "stem": "设备独立性主要由哪一层提供？（扩展36）",
-    "options": {
-      "A": "中断处理程序",
-      "B": "设备驱动上层统一接口",
-      "C": "应用层 UI",
-      "D": "BIOS 菜单"
-    },
-    "answer": "B",
-    "analysis": "通过统一抽象屏蔽具体设备差异。",
-    "difficulty": 3,
-    "knowledge_points": [
-      "I/O系统",
-      "核心概念"
-    ]
-  },
-  {
-    "id": "os-bank-037",
-    "subject": "OS",
-    "chapter": "进程与线程",
-    "chapterSlug": "进程与线程",
-    "stem": "进程切换比线程切换开销更大的主要原因是？（扩展37）",
-    "options": {
-      "A": "进程数量更少",
-      "B": "需切换地址空间等更多上下文",
-      "C": "线程不能并发",
-      "D": "线程无需调度"
-    },
-    "answer": "B",
-    "analysis": "进程切换涉及页表和资源上下文。",
-    "difficulty": 2,
-    "knowledge_points": [
-      "进程与线程",
-      "核心概念"
-    ]
-  },
-  {
-    "id": "os-bank-038",
-    "subject": "OS",
-    "chapter": "进程与线程",
-    "chapterSlug": "进程与线程",
-    "stem": "同一进程内多个线程共享的是？（扩展38）",
-    "options": {
-      "A": "栈",
-      "B": "程序计数器",
-      "C": "代码段与堆",
-      "D": "寄存器"
+      "A": "释放资源",
+      "B": "删除信号量",
+      "C": "申请资源，可能阻塞",
+      "D": "强制唤醒"
     },
     "answer": "C",
-    "analysis": "线程共享进程资源，栈/寄存器私有。",
+    "analysis": "本题考查同步与互斥。正确要点：申请资源，可能阻塞。",
     "difficulty": 2,
     "knowledge_points": [
-      "进程与线程",
+      "同步与互斥",
       "核心概念"
     ]
   },
   {
-    "id": "os-bank-039",
+    "id": "os-full-045",
     "subject": "OS",
-    "chapter": "处理机调度",
-    "chapterSlug": "处理机调度",
-    "stem": "时间片轮转算法主要改善的是？（扩展39）",
+    "chapter": "同步与互斥",
+    "chapterSlug": "同步与互斥",
+    "stem": "从原理角度看，P操作的语义通常是？",
     "options": {
-      "A": "吞吐量极大化",
-      "B": "响应时间公平性",
-      "C": "实时性硬保证",
-      "D": "减少内存占用"
+      "A": "强制唤醒",
+      "B": "释放资源",
+      "C": "申请资源，可能阻塞",
+      "D": "删除信号量"
     },
-    "answer": "B",
-    "analysis": "RR 让各进程轮流获得 CPU。",
+    "answer": "C",
+    "analysis": "本题考查同步与互斥。正确要点：申请资源，可能阻塞。",
     "difficulty": 3,
     "knowledge_points": [
-      "处理机调度",
+      "同步与互斥",
       "核心概念"
     ]
   },
   {
-    "id": "os-bank-040",
+    "id": "os-full-046",
     "subject": "OS",
-    "chapter": "处理机调度",
-    "chapterSlug": "处理机调度",
-    "stem": "短作业优先的主要缺点是？（扩展40）",
+    "chapter": "同步与互斥",
+    "chapterSlug": "同步与互斥",
+    "stem": "在系统设计中，P操作的语义通常是？",
     "options": {
-      "A": "上下文切换多",
-      "B": "长作业可能饥饿",
-      "C": "实现简单",
-      "D": "不能抢占"
+      "A": "删除信号量",
+      "B": "强制唤醒",
+      "C": "释放资源",
+      "D": "申请资源，可能阻塞"
     },
-    "answer": "B",
-    "analysis": "长作业等待时间可能过长。",
+    "answer": "D",
+    "analysis": "本题考查同步与互斥。正确要点：申请资源，可能阻塞。",
     "difficulty": 2,
     "knowledge_points": [
-      "处理机调度",
+      "同步与互斥",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "os-full-047",
+    "subject": "OS",
+    "chapter": "同步与互斥",
+    "chapterSlug": "同步与互斥",
+    "stem": "基础题：P操作的语义通常是？",
+    "options": {
+      "A": "删除信号量",
+      "B": "强制唤醒",
+      "C": "申请资源，可能阻塞",
+      "D": "释放资源"
+    },
+    "answer": "C",
+    "analysis": "本题考查同步与互斥。正确要点：申请资源，可能阻塞。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "同步与互斥",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "os-full-048",
+    "subject": "OS",
+    "chapter": "同步与互斥",
+    "chapterSlug": "同步与互斥",
+    "stem": "综合题：P操作的语义通常是？",
+    "options": {
+      "A": "释放资源",
+      "B": "强制唤醒",
+      "C": "申请资源，可能阻塞",
+      "D": "删除信号量"
+    },
+    "answer": "C",
+    "analysis": "本题考查同步与互斥。正确要点：申请资源，可能阻塞。",
+    "difficulty": 3,
+    "knowledge_points": [
+      "同步与互斥",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "os-full-049",
+    "subject": "OS",
+    "chapter": "同步与互斥",
+    "chapterSlug": "同步与互斥",
+    "stem": "互斥锁用于保护？",
+    "options": {
+      "A": "只读缓存",
+      "B": "私有变量",
+      "C": "临界区共享资源",
+      "D": "中断向量"
+    },
+    "answer": "C",
+    "analysis": "本题考查同步与互斥。正确要点：临界区共享资源。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "同步与互斥",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "os-full-050",
+    "subject": "OS",
+    "chapter": "同步与互斥",
+    "chapterSlug": "同步与互斥",
+    "stem": "关于同步与互斥，互斥锁用于保护？",
+    "options": {
+      "A": "中断向量",
+      "B": "私有变量",
+      "C": "只读缓存",
+      "D": "临界区共享资源"
+    },
+    "answer": "D",
+    "analysis": "本题考查同步与互斥。正确要点：临界区共享资源。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "同步与互斥",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "os-full-051",
+    "subject": "OS",
+    "chapter": "同步与互斥",
+    "chapterSlug": "同步与互斥",
+    "stem": "在OS课程中，互斥锁用于保护？",
+    "options": {
+      "A": "临界区共享资源",
+      "B": "私有变量",
+      "C": "只读缓存",
+      "D": "中断向量"
+    },
+    "answer": "A",
+    "analysis": "本题考查同步与互斥。正确要点：临界区共享资源。",
+    "difficulty": 3,
+    "knowledge_points": [
+      "同步与互斥",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "os-full-052",
+    "subject": "OS",
+    "chapter": "同步与互斥",
+    "chapterSlug": "同步与互斥",
+    "stem": "下列说法中，互斥锁用于保护？",
+    "options": {
+      "A": "只读缓存",
+      "B": "中断向量",
+      "C": "私有变量",
+      "D": "临界区共享资源"
+    },
+    "answer": "D",
+    "analysis": "本题考查同步与互斥。正确要点：临界区共享资源。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "同步与互斥",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "os-full-053",
+    "subject": "OS",
+    "chapter": "同步与互斥",
+    "chapterSlug": "同步与互斥",
+    "stem": "考点：互斥锁用于保护？",
+    "options": {
+      "A": "临界区共享资源",
+      "B": "只读缓存",
+      "C": "中断向量",
+      "D": "私有变量"
+    },
+    "answer": "A",
+    "analysis": "本题考查同步与互斥。正确要点：临界区共享资源。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "同步与互斥",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "os-full-054",
+    "subject": "OS",
+    "chapter": "同步与互斥",
+    "chapterSlug": "同步与互斥",
+    "stem": "真题常考：互斥锁用于保护？",
+    "options": {
+      "A": "私有变量",
+      "B": "临界区共享资源",
+      "C": "中断向量",
+      "D": "只读缓存"
+    },
+    "answer": "B",
+    "analysis": "本题考查同步与互斥。正确要点：临界区共享资源。",
+    "difficulty": 3,
+    "knowledge_points": [
+      "同步与互斥",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "os-full-055",
+    "subject": "OS",
+    "chapter": "同步与互斥",
+    "chapterSlug": "同步与互斥",
+    "stem": "请判断：互斥锁用于保护？",
+    "options": {
+      "A": "中断向量",
+      "B": "私有变量",
+      "C": "临界区共享资源",
+      "D": "只读缓存"
+    },
+    "answer": "C",
+    "analysis": "本题考查同步与互斥。正确要点：临界区共享资源。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "同步与互斥",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "os-full-056",
+    "subject": "OS",
+    "chapter": "同步与互斥",
+    "chapterSlug": "同步与互斥",
+    "stem": "以下命题正确的是：互斥锁用于保护？",
+    "options": {
+      "A": "只读缓存",
+      "B": "私有变量",
+      "C": "临界区共享资源",
+      "D": "中断向量"
+    },
+    "answer": "C",
+    "analysis": "本题考查同步与互斥。正确要点：临界区共享资源。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "同步与互斥",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "os-full-057",
+    "subject": "OS",
+    "chapter": "同步与互斥",
+    "chapterSlug": "同步与互斥",
+    "stem": "从原理角度看，互斥锁用于保护？",
+    "options": {
+      "A": "临界区共享资源",
+      "B": "只读缓存",
+      "C": "中断向量",
+      "D": "私有变量"
+    },
+    "answer": "A",
+    "analysis": "本题考查同步与互斥。正确要点：临界区共享资源。",
+    "difficulty": 3,
+    "knowledge_points": [
+      "同步与互斥",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "os-full-058",
+    "subject": "OS",
+    "chapter": "同步与互斥",
+    "chapterSlug": "同步与互斥",
+    "stem": "在系统设计中，互斥锁用于保护？",
+    "options": {
+      "A": "中断向量",
+      "B": "只读缓存",
+      "C": "临界区共享资源",
+      "D": "私有变量"
+    },
+    "answer": "C",
+    "analysis": "本题考查同步与互斥。正确要点：临界区共享资源。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "同步与互斥",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "os-full-059",
+    "subject": "OS",
+    "chapter": "同步与互斥",
+    "chapterSlug": "同步与互斥",
+    "stem": "基础题：互斥锁用于保护？",
+    "options": {
+      "A": "中断向量",
+      "B": "私有变量",
+      "C": "只读缓存",
+      "D": "临界区共享资源"
+    },
+    "answer": "D",
+    "analysis": "本题考查同步与互斥。正确要点：临界区共享资源。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "同步与互斥",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "os-full-060",
+    "subject": "OS",
+    "chapter": "同步与互斥",
+    "chapterSlug": "同步与互斥",
+    "stem": "综合题：互斥锁用于保护？",
+    "options": {
+      "A": "私有变量",
+      "B": "中断向量",
+      "C": "临界区共享资源",
+      "D": "只读缓存"
+    },
+    "answer": "C",
+    "analysis": "本题考查同步与互斥。正确要点：临界区共享资源。",
+    "difficulty": 3,
+    "knowledge_points": [
+      "同步与互斥",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "os-full-061",
+    "subject": "OS",
+    "chapter": "内存管理",
+    "chapterSlug": "内存管理",
+    "stem": "分页系统地址转换依赖？",
+    "options": {
+      "A": "页表",
+      "B": "中断向量表",
+      "C": "路由表",
+      "D": "文件分配表"
+    },
+    "answer": "A",
+    "analysis": "本题考查内存管理。正确要点：页表。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "内存管理",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "os-full-062",
+    "subject": "OS",
+    "chapter": "内存管理",
+    "chapterSlug": "内存管理",
+    "stem": "关于内存管理，分页系统地址转换依赖？",
+    "options": {
+      "A": "中断向量表",
+      "B": "页表",
+      "C": "文件分配表",
+      "D": "路由表"
+    },
+    "answer": "B",
+    "analysis": "本题考查内存管理。正确要点：页表。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "内存管理",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "os-full-063",
+    "subject": "OS",
+    "chapter": "内存管理",
+    "chapterSlug": "内存管理",
+    "stem": "在OS课程中，分页系统地址转换依赖？",
+    "options": {
+      "A": "路由表",
+      "B": "页表",
+      "C": "中断向量表",
+      "D": "文件分配表"
+    },
+    "answer": "B",
+    "analysis": "本题考查内存管理。正确要点：页表。",
+    "difficulty": 3,
+    "knowledge_points": [
+      "内存管理",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "os-full-064",
+    "subject": "OS",
+    "chapter": "内存管理",
+    "chapterSlug": "内存管理",
+    "stem": "下列说法中，分页系统地址转换依赖？",
+    "options": {
+      "A": "页表",
+      "B": "文件分配表",
+      "C": "中断向量表",
+      "D": "路由表"
+    },
+    "answer": "A",
+    "analysis": "本题考查内存管理。正确要点：页表。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "内存管理",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "os-full-065",
+    "subject": "OS",
+    "chapter": "内存管理",
+    "chapterSlug": "内存管理",
+    "stem": "考点：分页系统地址转换依赖？",
+    "options": {
+      "A": "路由表",
+      "B": "文件分配表",
+      "C": "页表",
+      "D": "中断向量表"
+    },
+    "answer": "C",
+    "analysis": "本题考查内存管理。正确要点：页表。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "内存管理",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "os-full-066",
+    "subject": "OS",
+    "chapter": "内存管理",
+    "chapterSlug": "内存管理",
+    "stem": "真题常考：分页系统地址转换依赖？",
+    "options": {
+      "A": "中断向量表",
+      "B": "页表",
+      "C": "路由表",
+      "D": "文件分配表"
+    },
+    "answer": "B",
+    "analysis": "本题考查内存管理。正确要点：页表。",
+    "difficulty": 3,
+    "knowledge_points": [
+      "内存管理",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "os-full-067",
+    "subject": "OS",
+    "chapter": "内存管理",
+    "chapterSlug": "内存管理",
+    "stem": "请判断：分页系统地址转换依赖？",
+    "options": {
+      "A": "中断向量表",
+      "B": "路由表",
+      "C": "文件分配表",
+      "D": "页表"
+    },
+    "answer": "D",
+    "analysis": "本题考查内存管理。正确要点：页表。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "内存管理",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "os-full-068",
+    "subject": "OS",
+    "chapter": "内存管理",
+    "chapterSlug": "内存管理",
+    "stem": "以下命题正确的是：分页系统地址转换依赖？",
+    "options": {
+      "A": "文件分配表",
+      "B": "路由表",
+      "C": "页表",
+      "D": "中断向量表"
+    },
+    "answer": "C",
+    "analysis": "本题考查内存管理。正确要点：页表。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "内存管理",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "os-full-069",
+    "subject": "OS",
+    "chapter": "内存管理",
+    "chapterSlug": "内存管理",
+    "stem": "从原理角度看，分页系统地址转换依赖？",
+    "options": {
+      "A": "文件分配表",
+      "B": "页表",
+      "C": "中断向量表",
+      "D": "路由表"
+    },
+    "answer": "B",
+    "analysis": "本题考查内存管理。正确要点：页表。",
+    "difficulty": 3,
+    "knowledge_points": [
+      "内存管理",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "os-full-070",
+    "subject": "OS",
+    "chapter": "内存管理",
+    "chapterSlug": "内存管理",
+    "stem": "在系统设计中，分页系统地址转换依赖？",
+    "options": {
+      "A": "页表",
+      "B": "路由表",
+      "C": "中断向量表",
+      "D": "文件分配表"
+    },
+    "answer": "A",
+    "analysis": "本题考查内存管理。正确要点：页表。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "内存管理",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "os-full-071",
+    "subject": "OS",
+    "chapter": "内存管理",
+    "chapterSlug": "内存管理",
+    "stem": "基础题：分页系统地址转换依赖？",
+    "options": {
+      "A": "中断向量表",
+      "B": "文件分配表",
+      "C": "页表",
+      "D": "路由表"
+    },
+    "answer": "C",
+    "analysis": "本题考查内存管理。正确要点：页表。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "内存管理",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "os-full-072",
+    "subject": "OS",
+    "chapter": "内存管理",
+    "chapterSlug": "内存管理",
+    "stem": "综合题：分页系统地址转换依赖？",
+    "options": {
+      "A": "中断向量表",
+      "B": "页表",
+      "C": "路由表",
+      "D": "文件分配表"
+    },
+    "answer": "B",
+    "analysis": "本题考查内存管理。正确要点：页表。",
+    "difficulty": 3,
+    "knowledge_points": [
+      "内存管理",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "os-full-073",
+    "subject": "OS",
+    "chapter": "虚拟内存",
+    "chapterSlug": "虚拟内存",
+    "stem": "FIFO页面置换可能出现？",
+    "options": {
+      "A": "Belady异常",
+      "B": "死锁",
+      "C": "饥饿消失",
+      "D": "永不异常"
+    },
+    "answer": "A",
+    "analysis": "本题考查虚拟内存。正确要点：Belady异常。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "虚拟内存",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "os-full-074",
+    "subject": "OS",
+    "chapter": "虚拟内存",
+    "chapterSlug": "虚拟内存",
+    "stem": "关于虚拟内存，FIFO页面置换可能出现？",
+    "options": {
+      "A": "永不异常",
+      "B": "Belady异常",
+      "C": "饥饿消失",
+      "D": "死锁"
+    },
+    "answer": "B",
+    "analysis": "本题考查虚拟内存。正确要点：Belady异常。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "虚拟内存",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "os-full-075",
+    "subject": "OS",
+    "chapter": "虚拟内存",
+    "chapterSlug": "虚拟内存",
+    "stem": "在OS课程中，FIFO页面置换可能出现？",
+    "options": {
+      "A": "死锁",
+      "B": "Belady异常",
+      "C": "饥饿消失",
+      "D": "永不异常"
+    },
+    "answer": "B",
+    "analysis": "本题考查虚拟内存。正确要点：Belady异常。",
+    "difficulty": 3,
+    "knowledge_points": [
+      "虚拟内存",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "os-full-076",
+    "subject": "OS",
+    "chapter": "虚拟内存",
+    "chapterSlug": "虚拟内存",
+    "stem": "下列说法中，FIFO页面置换可能出现？",
+    "options": {
+      "A": "死锁",
+      "B": "永不异常",
+      "C": "饥饿消失",
+      "D": "Belady异常"
+    },
+    "answer": "D",
+    "analysis": "本题考查虚拟内存。正确要点：Belady异常。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "虚拟内存",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "os-full-077",
+    "subject": "OS",
+    "chapter": "虚拟内存",
+    "chapterSlug": "虚拟内存",
+    "stem": "考点：FIFO页面置换可能出现？",
+    "options": {
+      "A": "Belady异常",
+      "B": "饥饿消失",
+      "C": "永不异常",
+      "D": "死锁"
+    },
+    "answer": "A",
+    "analysis": "本题考查虚拟内存。正确要点：Belady异常。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "虚拟内存",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "os-full-078",
+    "subject": "OS",
+    "chapter": "虚拟内存",
+    "chapterSlug": "虚拟内存",
+    "stem": "真题常考：FIFO页面置换可能出现？",
+    "options": {
+      "A": "死锁",
+      "B": "Belady异常",
+      "C": "饥饿消失",
+      "D": "永不异常"
+    },
+    "answer": "B",
+    "analysis": "本题考查虚拟内存。正确要点：Belady异常。",
+    "difficulty": 3,
+    "knowledge_points": [
+      "虚拟内存",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "os-full-079",
+    "subject": "OS",
+    "chapter": "虚拟内存",
+    "chapterSlug": "虚拟内存",
+    "stem": "请判断：FIFO页面置换可能出现？",
+    "options": {
+      "A": "Belady异常",
+      "B": "永不异常",
+      "C": "饥饿消失",
+      "D": "死锁"
+    },
+    "answer": "A",
+    "analysis": "本题考查虚拟内存。正确要点：Belady异常。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "虚拟内存",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "os-full-080",
+    "subject": "OS",
+    "chapter": "虚拟内存",
+    "chapterSlug": "虚拟内存",
+    "stem": "以下命题正确的是：FIFO页面置换可能出现？",
+    "options": {
+      "A": "饥饿消失",
+      "B": "死锁",
+      "C": "永不异常",
+      "D": "Belady异常"
+    },
+    "answer": "D",
+    "analysis": "本题考查虚拟内存。正确要点：Belady异常。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "虚拟内存",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "os-full-081",
+    "subject": "OS",
+    "chapter": "虚拟内存",
+    "chapterSlug": "虚拟内存",
+    "stem": "从原理角度看，FIFO页面置换可能出现？",
+    "options": {
+      "A": "Belady异常",
+      "B": "永不异常",
+      "C": "死锁",
+      "D": "饥饿消失"
+    },
+    "answer": "A",
+    "analysis": "本题考查虚拟内存。正确要点：Belady异常。",
+    "difficulty": 3,
+    "knowledge_points": [
+      "虚拟内存",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "os-full-082",
+    "subject": "OS",
+    "chapter": "虚拟内存",
+    "chapterSlug": "虚拟内存",
+    "stem": "在系统设计中，FIFO页面置换可能出现？",
+    "options": {
+      "A": "死锁",
+      "B": "Belady异常",
+      "C": "饥饿消失",
+      "D": "永不异常"
+    },
+    "answer": "B",
+    "analysis": "本题考查虚拟内存。正确要点：Belady异常。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "虚拟内存",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "os-full-083",
+    "subject": "OS",
+    "chapter": "虚拟内存",
+    "chapterSlug": "虚拟内存",
+    "stem": "基础题：FIFO页面置换可能出现？",
+    "options": {
+      "A": "死锁",
+      "B": "Belady异常",
+      "C": "饥饿消失",
+      "D": "永不异常"
+    },
+    "answer": "B",
+    "analysis": "本题考查虚拟内存。正确要点：Belady异常。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "虚拟内存",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "os-full-084",
+    "subject": "OS",
+    "chapter": "虚拟内存",
+    "chapterSlug": "虚拟内存",
+    "stem": "综合题：FIFO页面置换可能出现？",
+    "options": {
+      "A": "饥饿消失",
+      "B": "永不异常",
+      "C": "死锁",
+      "D": "Belady异常"
+    },
+    "answer": "D",
+    "analysis": "本题考查虚拟内存。正确要点：Belady异常。",
+    "difficulty": 3,
+    "knowledge_points": [
+      "虚拟内存",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "os-full-085",
+    "subject": "OS",
+    "chapter": "文件系统",
+    "chapterSlug": "文件系统",
+    "stem": "FCB主要保存？",
+    "options": {
+      "A": "设备驱动",
+      "B": "文件元数据",
+      "C": "文件正文",
+      "D": "CPU寄存器"
+    },
+    "answer": "B",
+    "analysis": "本题考查文件系统。正确要点：文件元数据。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "文件系统",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "os-full-086",
+    "subject": "OS",
+    "chapter": "文件系统",
+    "chapterSlug": "文件系统",
+    "stem": "关于文件系统，FCB主要保存？",
+    "options": {
+      "A": "文件正文",
+      "B": "文件元数据",
+      "C": "设备驱动",
+      "D": "CPU寄存器"
+    },
+    "answer": "B",
+    "analysis": "本题考查文件系统。正确要点：文件元数据。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "文件系统",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "os-full-087",
+    "subject": "OS",
+    "chapter": "文件系统",
+    "chapterSlug": "文件系统",
+    "stem": "在OS课程中，FCB主要保存？",
+    "options": {
+      "A": "文件元数据",
+      "B": "设备驱动",
+      "C": "文件正文",
+      "D": "CPU寄存器"
+    },
+    "answer": "A",
+    "analysis": "本题考查文件系统。正确要点：文件元数据。",
+    "difficulty": 3,
+    "knowledge_points": [
+      "文件系统",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "os-full-088",
+    "subject": "OS",
+    "chapter": "文件系统",
+    "chapterSlug": "文件系统",
+    "stem": "下列说法中，FCB主要保存？",
+    "options": {
+      "A": "文件元数据",
+      "B": "文件正文",
+      "C": "CPU寄存器",
+      "D": "设备驱动"
+    },
+    "answer": "A",
+    "analysis": "本题考查文件系统。正确要点：文件元数据。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "文件系统",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "os-full-089",
+    "subject": "OS",
+    "chapter": "文件系统",
+    "chapterSlug": "文件系统",
+    "stem": "考点：FCB主要保存？",
+    "options": {
+      "A": "文件元数据",
+      "B": "CPU寄存器",
+      "C": "文件正文",
+      "D": "设备驱动"
+    },
+    "answer": "A",
+    "analysis": "本题考查文件系统。正确要点：文件元数据。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "文件系统",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "os-full-090",
+    "subject": "OS",
+    "chapter": "文件系统",
+    "chapterSlug": "文件系统",
+    "stem": "真题常考：FCB主要保存？",
+    "options": {
+      "A": "文件元数据",
+      "B": "文件正文",
+      "C": "设备驱动",
+      "D": "CPU寄存器"
+    },
+    "answer": "A",
+    "analysis": "本题考查文件系统。正确要点：文件元数据。",
+    "difficulty": 3,
+    "knowledge_points": [
+      "文件系统",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "os-full-091",
+    "subject": "OS",
+    "chapter": "文件系统",
+    "chapterSlug": "文件系统",
+    "stem": "请判断：FCB主要保存？",
+    "options": {
+      "A": "文件元数据",
+      "B": "文件正文",
+      "C": "CPU寄存器",
+      "D": "设备驱动"
+    },
+    "answer": "A",
+    "analysis": "本题考查文件系统。正确要点：文件元数据。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "文件系统",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "os-full-092",
+    "subject": "OS",
+    "chapter": "文件系统",
+    "chapterSlug": "文件系统",
+    "stem": "以下命题正确的是：FCB主要保存？",
+    "options": {
+      "A": "文件正文",
+      "B": "设备驱动",
+      "C": "CPU寄存器",
+      "D": "文件元数据"
+    },
+    "answer": "D",
+    "analysis": "本题考查文件系统。正确要点：文件元数据。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "文件系统",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "os-full-093",
+    "subject": "OS",
+    "chapter": "文件系统",
+    "chapterSlug": "文件系统",
+    "stem": "从原理角度看，FCB主要保存？",
+    "options": {
+      "A": "文件正文",
+      "B": "CPU寄存器",
+      "C": "设备驱动",
+      "D": "文件元数据"
+    },
+    "answer": "D",
+    "analysis": "本题考查文件系统。正确要点：文件元数据。",
+    "difficulty": 3,
+    "knowledge_points": [
+      "文件系统",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "os-full-094",
+    "subject": "OS",
+    "chapter": "文件系统",
+    "chapterSlug": "文件系统",
+    "stem": "在系统设计中，FCB主要保存？",
+    "options": {
+      "A": "文件元数据",
+      "B": "文件正文",
+      "C": "设备驱动",
+      "D": "CPU寄存器"
+    },
+    "answer": "A",
+    "analysis": "本题考查文件系统。正确要点：文件元数据。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "文件系统",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "os-full-095",
+    "subject": "OS",
+    "chapter": "文件系统",
+    "chapterSlug": "文件系统",
+    "stem": "基础题：FCB主要保存？",
+    "options": {
+      "A": "CPU寄存器",
+      "B": "设备驱动",
+      "C": "文件正文",
+      "D": "文件元数据"
+    },
+    "answer": "D",
+    "analysis": "本题考查文件系统。正确要点：文件元数据。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "文件系统",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "os-full-096",
+    "subject": "OS",
+    "chapter": "文件系统",
+    "chapterSlug": "文件系统",
+    "stem": "综合题：FCB主要保存？",
+    "options": {
+      "A": "CPU寄存器",
+      "B": "文件正文",
+      "C": "设备驱动",
+      "D": "文件元数据"
+    },
+    "answer": "D",
+    "analysis": "本题考查文件系统。正确要点：文件元数据。",
+    "difficulty": 3,
+    "knowledge_points": [
+      "文件系统",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "os-full-097",
+    "subject": "OS",
+    "chapter": "I/O系统",
+    "chapterSlug": "I/O系统",
+    "stem": "DMA方式的优势是？",
+    "options": {
+      "A": "不能中断",
+      "B": "只适用字符设备",
+      "C": "必须CPU忙等",
+      "D": "减少CPU搬运开销"
+    },
+    "answer": "D",
+    "analysis": "本题考查I/O系统。正确要点：减少CPU搬运开销。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "I/O系统",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "os-full-098",
+    "subject": "OS",
+    "chapter": "I/O系统",
+    "chapterSlug": "I/O系统",
+    "stem": "关于I/O系统，DMA方式的优势是？",
+    "options": {
+      "A": "不能中断",
+      "B": "减少CPU搬运开销",
+      "C": "只适用字符设备",
+      "D": "必须CPU忙等"
+    },
+    "answer": "B",
+    "analysis": "本题考查I/O系统。正确要点：减少CPU搬运开销。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "I/O系统",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "os-full-099",
+    "subject": "OS",
+    "chapter": "I/O系统",
+    "chapterSlug": "I/O系统",
+    "stem": "在OS课程中，DMA方式的优势是？",
+    "options": {
+      "A": "只适用字符设备",
+      "B": "必须CPU忙等",
+      "C": "不能中断",
+      "D": "减少CPU搬运开销"
+    },
+    "answer": "D",
+    "analysis": "本题考查I/O系统。正确要点：减少CPU搬运开销。",
+    "difficulty": 3,
+    "knowledge_points": [
+      "I/O系统",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "os-full-100",
+    "subject": "OS",
+    "chapter": "I/O系统",
+    "chapterSlug": "I/O系统",
+    "stem": "下列说法中，DMA方式的优势是？",
+    "options": {
+      "A": "只适用字符设备",
+      "B": "不能中断",
+      "C": "减少CPU搬运开销",
+      "D": "必须CPU忙等"
+    },
+    "answer": "C",
+    "analysis": "本题考查I/O系统。正确要点：减少CPU搬运开销。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "I/O系统",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "os-full-101",
+    "subject": "OS",
+    "chapter": "I/O系统",
+    "chapterSlug": "I/O系统",
+    "stem": "考点：DMA方式的优势是？",
+    "options": {
+      "A": "不能中断",
+      "B": "只适用字符设备",
+      "C": "必须CPU忙等",
+      "D": "减少CPU搬运开销"
+    },
+    "answer": "D",
+    "analysis": "本题考查I/O系统。正确要点：减少CPU搬运开销。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "I/O系统",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "os-full-102",
+    "subject": "OS",
+    "chapter": "I/O系统",
+    "chapterSlug": "I/O系统",
+    "stem": "真题常考：DMA方式的优势是？",
+    "options": {
+      "A": "只适用字符设备",
+      "B": "不能中断",
+      "C": "减少CPU搬运开销",
+      "D": "必须CPU忙等"
+    },
+    "answer": "C",
+    "analysis": "本题考查I/O系统。正确要点：减少CPU搬运开销。",
+    "difficulty": 3,
+    "knowledge_points": [
+      "I/O系统",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "os-full-103",
+    "subject": "OS",
+    "chapter": "I/O系统",
+    "chapterSlug": "I/O系统",
+    "stem": "请判断：DMA方式的优势是？",
+    "options": {
+      "A": "不能中断",
+      "B": "必须CPU忙等",
+      "C": "只适用字符设备",
+      "D": "减少CPU搬运开销"
+    },
+    "answer": "D",
+    "analysis": "本题考查I/O系统。正确要点：减少CPU搬运开销。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "I/O系统",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "os-full-104",
+    "subject": "OS",
+    "chapter": "I/O系统",
+    "chapterSlug": "I/O系统",
+    "stem": "以下命题正确的是：DMA方式的优势是？",
+    "options": {
+      "A": "必须CPU忙等",
+      "B": "不能中断",
+      "C": "只适用字符设备",
+      "D": "减少CPU搬运开销"
+    },
+    "answer": "D",
+    "analysis": "本题考查I/O系统。正确要点：减少CPU搬运开销。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "I/O系统",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "os-full-105",
+    "subject": "OS",
+    "chapter": "I/O系统",
+    "chapterSlug": "I/O系统",
+    "stem": "从原理角度看，DMA方式的优势是？",
+    "options": {
+      "A": "减少CPU搬运开销",
+      "B": "必须CPU忙等",
+      "C": "不能中断",
+      "D": "只适用字符设备"
+    },
+    "answer": "A",
+    "analysis": "本题考查I/O系统。正确要点：减少CPU搬运开销。",
+    "difficulty": 3,
+    "knowledge_points": [
+      "I/O系统",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "os-full-106",
+    "subject": "OS",
+    "chapter": "I/O系统",
+    "chapterSlug": "I/O系统",
+    "stem": "在系统设计中，DMA方式的优势是？",
+    "options": {
+      "A": "减少CPU搬运开销",
+      "B": "只适用字符设备",
+      "C": "不能中断",
+      "D": "必须CPU忙等"
+    },
+    "answer": "A",
+    "analysis": "本题考查I/O系统。正确要点：减少CPU搬运开销。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "I/O系统",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "os-full-107",
+    "subject": "OS",
+    "chapter": "I/O系统",
+    "chapterSlug": "I/O系统",
+    "stem": "基础题：DMA方式的优势是？",
+    "options": {
+      "A": "不能中断",
+      "B": "减少CPU搬运开销",
+      "C": "只适用字符设备",
+      "D": "必须CPU忙等"
+    },
+    "answer": "B",
+    "analysis": "本题考查I/O系统。正确要点：减少CPU搬运开销。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "I/O系统",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "os-full-108",
+    "subject": "OS",
+    "chapter": "I/O系统",
+    "chapterSlug": "I/O系统",
+    "stem": "综合题：DMA方式的优势是？",
+    "options": {
+      "A": "只适用字符设备",
+      "B": "减少CPU搬运开销",
+      "C": "必须CPU忙等",
+      "D": "不能中断"
+    },
+    "answer": "B",
+    "analysis": "本题考查I/O系统。正确要点：减少CPU搬运开销。",
+    "difficulty": 3,
+    "knowledge_points": [
+      "I/O系统",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "os-full-109",
+    "subject": "OS",
+    "chapter": "I/O系统",
+    "chapterSlug": "I/O系统",
+    "stem": "中断驱动I/O的特点是？",
+    "options": {
+      "A": "CPU持续轮询",
+      "B": "设备就绪后通知CPU",
+      "C": "仅批处理可用",
+      "D": "无上下文切换"
+    },
+    "answer": "B",
+    "analysis": "本题考查I/O系统。正确要点：设备就绪后通知CPU。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "I/O系统",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "os-full-110",
+    "subject": "OS",
+    "chapter": "I/O系统",
+    "chapterSlug": "I/O系统",
+    "stem": "关于I/O系统，中断驱动I/O的特点是？",
+    "options": {
+      "A": "设备就绪后通知CPU",
+      "B": "无上下文切换",
+      "C": "仅批处理可用",
+      "D": "CPU持续轮询"
+    },
+    "answer": "A",
+    "analysis": "本题考查I/O系统。正确要点：设备就绪后通知CPU。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "I/O系统",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "os-full-111",
+    "subject": "OS",
+    "chapter": "I/O系统",
+    "chapterSlug": "I/O系统",
+    "stem": "在OS课程中，中断驱动I/O的特点是？",
+    "options": {
+      "A": "仅批处理可用",
+      "B": "设备就绪后通知CPU",
+      "C": "无上下文切换",
+      "D": "CPU持续轮询"
+    },
+    "answer": "B",
+    "analysis": "本题考查I/O系统。正确要点：设备就绪后通知CPU。",
+    "difficulty": 3,
+    "knowledge_points": [
+      "I/O系统",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "os-full-112",
+    "subject": "OS",
+    "chapter": "I/O系统",
+    "chapterSlug": "I/O系统",
+    "stem": "下列说法中，中断驱动I/O的特点是？",
+    "options": {
+      "A": "无上下文切换",
+      "B": "仅批处理可用",
+      "C": "设备就绪后通知CPU",
+      "D": "CPU持续轮询"
+    },
+    "answer": "C",
+    "analysis": "本题考查I/O系统。正确要点：设备就绪后通知CPU。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "I/O系统",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "os-full-113",
+    "subject": "OS",
+    "chapter": "I/O系统",
+    "chapterSlug": "I/O系统",
+    "stem": "考点：中断驱动I/O的特点是？",
+    "options": {
+      "A": "仅批处理可用",
+      "B": "设备就绪后通知CPU",
+      "C": "CPU持续轮询",
+      "D": "无上下文切换"
+    },
+    "answer": "B",
+    "analysis": "本题考查I/O系统。正确要点：设备就绪后通知CPU。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "I/O系统",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "os-full-114",
+    "subject": "OS",
+    "chapter": "I/O系统",
+    "chapterSlug": "I/O系统",
+    "stem": "真题常考：中断驱动I/O的特点是？",
+    "options": {
+      "A": "无上下文切换",
+      "B": "仅批处理可用",
+      "C": "CPU持续轮询",
+      "D": "设备就绪后通知CPU"
+    },
+    "answer": "D",
+    "analysis": "本题考查I/O系统。正确要点：设备就绪后通知CPU。",
+    "difficulty": 3,
+    "knowledge_points": [
+      "I/O系统",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "os-full-115",
+    "subject": "OS",
+    "chapter": "I/O系统",
+    "chapterSlug": "I/O系统",
+    "stem": "请判断：中断驱动I/O的特点是？",
+    "options": {
+      "A": "仅批处理可用",
+      "B": "CPU持续轮询",
+      "C": "无上下文切换",
+      "D": "设备就绪后通知CPU"
+    },
+    "answer": "D",
+    "analysis": "本题考查I/O系统。正确要点：设备就绪后通知CPU。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "I/O系统",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "os-full-116",
+    "subject": "OS",
+    "chapter": "I/O系统",
+    "chapterSlug": "I/O系统",
+    "stem": "以下命题正确的是：中断驱动I/O的特点是？",
+    "options": {
+      "A": "无上下文切换",
+      "B": "CPU持续轮询",
+      "C": "设备就绪后通知CPU",
+      "D": "仅批处理可用"
+    },
+    "answer": "C",
+    "analysis": "本题考查I/O系统。正确要点：设备就绪后通知CPU。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "I/O系统",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "os-full-117",
+    "subject": "OS",
+    "chapter": "I/O系统",
+    "chapterSlug": "I/O系统",
+    "stem": "从原理角度看，中断驱动I/O的特点是？",
+    "options": {
+      "A": "CPU持续轮询",
+      "B": "无上下文切换",
+      "C": "仅批处理可用",
+      "D": "设备就绪后通知CPU"
+    },
+    "answer": "D",
+    "analysis": "本题考查I/O系统。正确要点：设备就绪后通知CPU。",
+    "difficulty": 3,
+    "knowledge_points": [
+      "I/O系统",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "os-full-118",
+    "subject": "OS",
+    "chapter": "I/O系统",
+    "chapterSlug": "I/O系统",
+    "stem": "在系统设计中，中断驱动I/O的特点是？",
+    "options": {
+      "A": "无上下文切换",
+      "B": "CPU持续轮询",
+      "C": "仅批处理可用",
+      "D": "设备就绪后通知CPU"
+    },
+    "answer": "D",
+    "analysis": "本题考查I/O系统。正确要点：设备就绪后通知CPU。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "I/O系统",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "os-full-119",
+    "subject": "OS",
+    "chapter": "I/O系统",
+    "chapterSlug": "I/O系统",
+    "stem": "基础题：中断驱动I/O的特点是？",
+    "options": {
+      "A": "设备就绪后通知CPU",
+      "B": "仅批处理可用",
+      "C": "CPU持续轮询",
+      "D": "无上下文切换"
+    },
+    "answer": "A",
+    "analysis": "本题考查I/O系统。正确要点：设备就绪后通知CPU。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "I/O系统",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "os-full-120",
+    "subject": "OS",
+    "chapter": "I/O系统",
+    "chapterSlug": "I/O系统",
+    "stem": "综合题：中断驱动I/O的特点是？",
+    "options": {
+      "A": "设备就绪后通知CPU",
+      "B": "CPU持续轮询",
+      "C": "无上下文切换",
+      "D": "仅批处理可用"
+    },
+    "answer": "A",
+    "analysis": "本题考查I/O系统。正确要点：设备就绪后通知CPU。",
+    "difficulty": 3,
+    "knowledge_points": [
+      "I/O系统",
       "核心概念"
     ]
   }
