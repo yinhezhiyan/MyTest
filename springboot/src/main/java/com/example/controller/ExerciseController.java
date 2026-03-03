@@ -1,10 +1,8 @@
 package com.example.controller;
 
 import com.example.common.Result;
-import com.example.dto.ImportRequest;
 import com.example.dto.SubmitAnswerRequest;
 import com.example.entity.Exercise;
-import com.example.context.UserContext;
 import com.example.service.ExerciseService;
 import org.springframework.web.bind.annotation.*;
 
@@ -16,19 +14,6 @@ public class ExerciseController {
     public ExerciseController(ExerciseService exerciseService) {
         this.exerciseService = exerciseService;
     }
-
-    @PostMapping("/admin/question-bank/import")
-    public Result importBank(@RequestBody ImportRequest request) {
-        return Result.success(exerciseService.importFromJson(request.getSubject(), request.getFilePath()));
-    }
-
-
-    @PostMapping("/admin/question-bank/importCurrent")
-    public Result importCurrent() {
-        String subject = UserContext.get().getSubject();
-        return Result.success(exerciseService.importFromJson(subject, null));
-    }
-
 
     @GetMapping("/admin/question-bank/chapters")
     public Result chapterBank() {
