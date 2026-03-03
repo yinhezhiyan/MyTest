@@ -32,6 +32,7 @@ public class DataInitializer implements CommandLineRunner {
         initUserTable();
         migrateLegacyExerciseTableIfNeeded();
         initExerciseTable();
+        ensureExerciseColumns();
         initUserAnswerTable();
 
         initAdmin("DS");
@@ -91,12 +92,19 @@ public class DataInitializer implements CommandLineRunner {
                     analysis text,
                     difficulty int default 2,
                     knowledge_points text,
+                    attachment_url varchar(255),
                     created_at datetime default current_timestamp,
                     index idx_exercise_subject(subject)
                 )
                 """);
     }
 
+
+    private void ensureExerciseColumns() {
+        if (!columnExists("exercise", "attachment_url")) {
+            jdbcTemplate.execute("alter table exercise add column attachment_url varchar(255)");
+        }
+    }
     private void initUserAnswerTable() {
         jdbcTemplate.execute("""
                 create table if not exists user_answer (

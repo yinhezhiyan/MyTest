@@ -14,6 +14,7 @@ public class Exercise {
     private String analysis;
     private Integer difficulty;
     private String knowledgePoints;
+    private String attachmentUrl;
 
     public String getId() { return id; }
     public void setId(String id) { this.id = id; }
@@ -41,4 +42,6 @@ public class Exercise {
     public void setDifficulty(Integer difficulty) { this.difficulty = difficulty; }
     public String getKnowledgePoints() { return knowledgePoints; }
     public void setKnowledgePoints(String knowledgePoints) { this.knowledgePoints = knowledgePoints; }
+    public String getAttachmentUrl() { return attachmentUrl; }
+    public void setAttachmentUrl(String attachmentUrl) { this.attachmentUrl = attachmentUrl; }
 }

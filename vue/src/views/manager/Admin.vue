@@ -78,16 +78,6 @@ const data = reactive({
 })
 
 
-const importCurrentBank = () => {
-  request.post('/admin/question-bank/importCurrent').then(res => {
-    if (res.code === '200') {
-      ElMessage.success(`已导入 ${res.data.imported} 道题（${res.data.subject}）`)
-    } else {
-      ElMessage.error(res.msg)
-    }
-  })
-}
-
 // 分页查询
 const load = () => {
   request.get('/admin/selectPage', {

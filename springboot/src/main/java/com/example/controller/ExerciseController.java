@@ -3,11 +3,11 @@ package com.example.controller;
 import com.example.common.Result;
 import com.example.dto.ImportRequest;
 import com.example.dto.SubmitAnswerRequest;
+import com.example.entity.Exercise;
 import com.example.context.UserContext;
 import com.example.service.ExerciseService;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.Map;
 
 @RestController
 public class ExerciseController {
@@ -19,16 +19,37 @@ public class ExerciseController {
 
     @PostMapping("/admin/question-bank/import")
     public Result importBank(@RequestBody ImportRequest request) {
-        int count = exerciseService.importFromJson(request.getSubject(), request.getFilePath());
-        return Result.success(Map.of("imported", count));
+        return Result.success(exerciseService.importFromJson(request.getSubject(), request.getFilePath()));
     }
 
 
     @PostMapping("/admin/question-bank/importCurrent")
     public Result importCurrent() {
         String subject = UserContext.get().getSubject();
-        int count = exerciseService.importFromJson(subject, null);
-        return Result.success(Map.of("imported", count, "subject", subject));
+        return Result.success(exerciseService.importFromJson(subject, null));
+    }
+
+
+    @GetMapping("/admin/question-bank/chapters")
+    public Result chapterBank() {
+        return Result.success(exerciseService.chapterBank());
+    }
+
+    @PostMapping("/admin/question-bank/exercise")
+    public Result addExercise(@RequestBody Exercise exercise) {
+        exerciseService.addExerciseByAdmin(exercise);
+        return Result.success();
+    }
+
+    @DeleteMapping("/admin/question-bank/exercise/{id}")
+    public Result deleteExercise(@PathVariable String id) {
+        exerciseService.deleteExerciseByAdmin(id);
+        return Result.success();
+    }
+
+    @GetMapping("/api/profile/summary")
+    public Result studentSummary() {
+        return Result.success(exerciseService.studentHomeSummary());
     }
 
     @GetMapping("/api/exercises/random")

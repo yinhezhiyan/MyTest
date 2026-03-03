@@ -43,10 +43,11 @@ public class ExerciseService {
         e.setAnalysis(rs.getString("analysis"));
         e.setDifficulty(rs.getInt("difficulty"));
         e.setKnowledgePoints(rs.getString("knowledge_points"));
+        try { e.setAttachmentUrl(rs.getString("attachment_url")); } catch (Exception ignored) {}
         return e;
     };
 
-    public int importFromJson(String subject, String filePath) {
+    public Map<String, Object> importFromJson(String subject, String filePath) {
         Account current = requireLogin();
         if (!"ADMIN".equals(current.getRole())) throw new CustomException("仅管理员可导入");
         if (!current.getSubject().equals(subject)) throw new CustomException("不可跨学科导入");
@@ -54,25 +55,39 @@ public class ExerciseService {
             Path source = resolveQuestionBankPath(subject, filePath);
             String content = Files.readString(source);
             List<Map<String, Object>> items = objectMapper.readValue(content, new TypeReference<>() {});
-            int count = 0;
+            int inserted = 0;
+            int updated = 0;
             for (Map<String, Object> item : items) {
+                String id = String.valueOf(item.get("id"));
+                Integer exists = jdbcTemplate.queryForObject("select count(1) from exercise where id=? and subject=?", Integer.class, id, subject);
                 Map<String, String> options = (Map<String, String>) item.get("options");
                 List<String> kps = (List<String>) item.getOrDefault("knowledge_points", new ArrayList<>());
                 String kp = objectMapper.writeValueAsString(kps);
                 jdbcTemplate.update("""
-                        insert into exercise(id, subject, chapter, chapter_slug, stem, option_a, option_b, option_c, option_d, answer, analysis, difficulty, knowledge_points)
-                        values(?,?,?,?,?,?,?,?,?,?,?,?,?)
+                        insert into exercise(id, subject, chapter, chapter_slug, stem, option_a, option_b, option_c, option_d, answer, analysis, difficulty, knowledge_points, attachment_url)
+                        values(?,?,?,?,?,?,?,?,?,?,?,?,?,?)
                         on duplicate key update chapter=values(chapter), chapter_slug=values(chapter_slug), stem=values(stem),
                         option_a=values(option_a), option_b=values(option_b), option_c=values(option_c), option_d=values(option_d),
-                        answer=values(answer), analysis=values(analysis), difficulty=values(difficulty), knowledge_points=values(knowledge_points)
+                        answer=values(answer), analysis=values(analysis), difficulty=values(difficulty), knowledge_points=values(knowledge_points), attachment_url=values(attachment_url)
                         """,
-                        String.valueOf(item.get("id")), subject, String.valueOf(item.get("chapter")), String.valueOf(item.get("chapterSlug")),
+                        id, subject, String.valueOf(item.get("chapter")), String.valueOf(item.get("chapterSlug")),
                         String.valueOf(item.get("stem")), options.get("A"), options.get("B"), options.get("C"), options.get("D"),
                         String.valueOf(item.get("answer")), String.valueOf(item.getOrDefault("analysis", "")),
-                        Integer.parseInt(String.valueOf(item.getOrDefault("difficulty", 2))), kp);
-                count++;
+                        Integer.parseInt(String.valueOf(item.getOrDefault("difficulty", 2))), kp, String.valueOf(item.getOrDefault("attachmentUrl", "")));
+                if (exists != null && exists > 0) {
+                    updated++;
+                } else {
+                    inserted++;
+                }
             }
-            return count;
+            Integer total = jdbcTemplate.queryForObject("select count(1) from exercise where subject=?", Integer.class, subject);
+            Map<String, Object> summary = new HashMap<>();
+            summary.put("subject", subject);
+            summary.put("inserted", inserted);
+            summary.put("updated", updated);
+            summary.put("processed", inserted + updated);
+            summary.put("total", total == null ? 0 : total);
+            return summary;
         } catch (Exception e) {
             throw new CustomException("导入失败:" + e.getMessage());
         }
@@ -196,6 +211,53 @@ public class ExerciseService {
     }
 
 
+
+    public List<Map<String, Object>> chapterBank() {
+        Account current = requireAdmin();
+        List<Map<String, Object>> chapters = jdbcTemplate.queryForList("select chapter, count(1) as total from exercise where subject=? group by chapter order by chapter", current.getSubject());
+        for (Map<String, Object> c : chapters) {
+            List<Map<String, Object>> exercises = jdbcTemplate.queryForList("select id, stem, option_a, option_b, option_c, option_d, answer, attachment_url from exercise where subject=? and chapter=? order by id", current.getSubject(), c.get("chapter"));
+            c.put("exercises", exercises);
+        }
+        return chapters;
+    }
+
+    public void addExerciseByAdmin(Exercise e) {
+        Account current = requireAdmin();
+        if (ObjectUtil.hasEmpty(e.getChapter(), e.getStem(), e.getOptionA(), e.getOptionB(), e.getOptionC(), e.getOptionD(), e.getAnswer())) {
+            throw new CustomException("题目信息不完整");
+        }
+        String id = (ObjectUtil.isNotEmpty(e.getId()) ? e.getId() : (slug(e.getChapter()) + "-" + System.currentTimeMillis() % 1000000));
+        jdbcTemplate.update("""
+                insert into exercise(id, subject, chapter, chapter_slug, stem, option_a, option_b, option_c, option_d, answer, analysis, difficulty, knowledge_points, attachment_url)
+                values(?,?,?,?,?,?,?,?,?,?,?,?,?,?)
+                """,
+                id, current.getSubject(), e.getChapter(), slug(e.getChapter()), e.getStem(), e.getOptionA(), e.getOptionB(), e.getOptionC(), e.getOptionD(),
+                e.getAnswer(), ObjectUtil.defaultIfNull(e.getAnalysis(), ""), ObjectUtil.defaultIfNull(e.getDifficulty(), 2), ObjectUtil.defaultIfNull(e.getKnowledgePoints(), "[]"), ObjectUtil.defaultIfNull(e.getAttachmentUrl(), ""));
+    }
+
+    public void deleteExerciseByAdmin(String id) {
+        Account current = requireAdmin();
+        Integer cnt = jdbcTemplate.queryForObject("select count(1) from exercise where id=? and subject=?", Integer.class, id, current.getSubject());
+        if (cnt == null || cnt == 0) throw new CustomException("题目不存在或无权限");
+        jdbcTemplate.update("delete from exercise where id=? and subject=?", id, current.getSubject());
+    }
+
+    public Map<String, Object> studentHomeSummary() {
+        Account user = requireLogin();
+        Integer total = jdbcTemplate.queryForObject("select count(1) from user_answer where user_id=? and subject=? and date(answered_at)=curdate()", Integer.class, user.getId(), user.getSubject());
+        Integer correct = jdbcTemplate.queryForObject("select count(1) from user_answer where user_id=? and subject=? and date(answered_at)=curdate() and is_correct=1", Integer.class, user.getId(), user.getSubject());
+        Map<String, Object> m = new HashMap<>();
+        m.put("todayTotal", total == null ? 0 : total);
+        m.put("todayCorrect", correct == null ? 0 : correct);
+        m.put("todayWrong", (total == null ? 0 : total) - (correct == null ? 0 : correct));
+        return m;
+    }
+
+    private String slug(String text) {
+        return text == null ? "chapter" : text.toLowerCase().replaceAll("[^a-z0-9\u4e00-\u9fa5]+", "-").replaceAll("-+", "-").replaceAll("(^-|-$)", "");
+    }
+
     private Path resolveQuestionBankPath(String subject, String filePath) {
         if (ObjectUtil.isNotEmpty(filePath)) {
             Path custom = Path.of(filePath);
@@ -215,6 +277,12 @@ public class ExerciseService {
     private Account requireLogin() {
         Account current = UserContext.get();
         if (current == null) throw new CustomException("401");
+        return current;
+    }
+
+    private Account requireAdmin() {
+        Account current = requireLogin();
+        if (!"ADMIN".equals(current.getRole())) throw new CustomException("仅管理员可操作");
         return current;
     }
 }
