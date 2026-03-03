@@ -5,19 +5,14 @@ package com.example.entity;
  */
 public class Account {
     private Integer id;
-    /** 用户名 */
     private String username;
-    /** 名称 */
     private String name;
-    /** 密码 */
     private String password;
-    /** 角色标识 */
     private String role;
-    /** 新密码 */
+    private String subject;
     private String newPassword;
-    /** 头像 */
     private String avatar;
-
+    private String token;
 
     public Integer getId() {
         return id;
@@ -59,6 +54,14 @@ public class Account {
         this.role = role;
     }
 
+    public String getSubject() {
+        return subject;
+    }
+
+    public void setSubject(String subject) {
+        this.subject = subject;
+    }
+
     public String getNewPassword() {
         return newPassword;
     }
@@ -75,4 +78,11 @@ public class Account {
         this.avatar = avatar;
     }
 
+    public String getToken() {
+        return token;
+    }
+
+    public void setToken(String token) {
+        this.token = token;
+    }
 }

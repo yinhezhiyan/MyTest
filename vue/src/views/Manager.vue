@@ -7,9 +7,11 @@
           <div style="font-weight: bold; font-size: 24px; margin-left: 5px; color: #fff">小白做毕设2026</div>
         </div>
       </div>
-      <div style="width: fit-content; padding-right: 10px; display: flex; align-items: center;">
+      <div style="width: fit-content; padding-right: 10px; display: flex; align-items: center; color: #fff; gap: 8px;">
+        <el-tag size="small" type="info">{{ subjectText }}</el-tag>
+        <el-tag size="small" :type="data.user.role === 'ADMIN' ? 'danger' : 'success'">{{ data.user.role === 'ADMIN' ? '管理员' : '学生' }}</el-tag>
         <img style="width: 40px; height: 40px; border-radius: 50%" :src="data.user.avatar || 'https://cube.elemecdn.com/3/7c/3ea6beec64369c2642b92c6726f1epng.png'" alt="">
-        <span style="color: #fff; margin-left: 5px">{{ data.user.name || '代码小白' }}</span>
+        <span>{{ data.user.name || '代码小白' }}</span>
       </div>
     </div>
 
@@ -21,16 +23,16 @@
             :default-active="router.currentRoute.value.path"
             :default-openeds="['user']"
         >
-          <el-menu-item index="/manager/home">
+          <el-menu-item :index="`/manager/${data.user.subject}/home`">
             <el-icon><HomeFilled /></el-icon>
             <span>系统首页</span>
           </el-menu-item>
-          <el-sub-menu index="user">
+          <el-sub-menu index="user" v-if="data.user.role === 'ADMIN'">
             <template #title>
               <el-icon><User /></el-icon>
               <span>用户管理</span>
             </template>
-            <el-menu-item index="/manager/admin">
+            <el-menu-item :index="`/manager/${data.user.subject}/admin`">
               <el-icon><User /></el-icon>
               <span>管理员信息</span>
             </el-menu-item>
@@ -50,18 +52,28 @@
 </template>
 
 <script setup>
-import { reactive } from "vue";
+import {computed, reactive} from "vue";
 import router from "@/router";
 import {ElMessage} from "element-plus";
+import {useRoute} from "vue-router";
+
+const route = useRoute()
 
 const data = reactive({
   user: JSON.parse(localStorage.getItem('system-user') || '{}')
 })
 
-if (!data.user?.id) {
+if (!data.user?.id || !data.user?.subject || !data.user?.token) {
   ElMessage.error('请登录！')
   router.push('/login')
 }
+
+if (route.params.subject && route.params.subject !== data.user.subject) {
+  ElMessage.error('不可跨学科访问')
+  router.push(`/manager/${data.user.subject}/home`)
+}
+
+const subjectText = computed(() => ({MATH: '数学', OS: '操作系统', DS: '数据结构'})[data.user.subject] || data.user.subject)
 
 const updateUser = () => {
   data.user = JSON.parse(localStorage.getItem('system-user') || '{}')
@@ -70,7 +82,7 @@ const updateUser = () => {
 const logout = () => {
   router.push('/login')
   ElMessage.success('退出成功')
-  localStorage.removeItem('code2026-user')
+  localStorage.removeItem('system-user')
 }
 </script>
 

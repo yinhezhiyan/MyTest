@@ -1,0 +1,13 @@
+# Backend build outputs
+springboot/target/
+
+# Frontend dependencies/build outputs
+vue/node_modules/
+vue/dist/
+
+# IDE files
+.idea/
+*.iml
+
+# OS files
+.DS_Store

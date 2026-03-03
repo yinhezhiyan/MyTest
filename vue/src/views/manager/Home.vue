@@ -3,6 +3,7 @@
 
     <div class="card" style="line-height: 30px; margin-bottom: 10px">
       <div style="margin-bottom: 20px; font-size: 24px">青哥带小白做毕设（2026最新版）</div>
+      <div>当前课程：<b style="color:#1967e3">{{ subjectText }}</b>，当前身份：<b style="color:#1967e3">{{ roleText }}</b></div>
       <div>同学们好！我是 <a href="https://space.bilibili.com/402779077">程序员青戈</a>，接下来我会从0开始带你搭建一套完整的毕设Web项目。</div>
       <div>技术栈：SpringBoot3 + Vue3 + MySQL，前后端分离</div>
       <div>目标是让你自己学会做一套完整的前后端分离的项目，<b>毕设不求人！毕设不被骗！</b></div>
@@ -16,10 +17,12 @@
 </template>
 
 <script setup>
-import { reactive } from "vue";
-import request from "@/utils/request";
+import {computed, reactive} from "vue";
 
 const data = reactive({
   user: JSON.parse(localStorage.getItem('system-user') || '{}'),
 })
+
+const subjectText = computed(() => ({MATH: '数学', OS: '操作系统', DS: '数据结构'})[data.user.subject] || data.user.subject)
+const roleText = computed(() => data.user.role === 'ADMIN' ? '管理员' : '学生')
 </script>
