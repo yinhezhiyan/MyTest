@@ -5,29 +5,38 @@
 <mapper namespace="com.example.mapper.AdminMapper">
 
     <select id="selectAll" resultType="com.example.entity.Admin">
-        select * from `admin`
+        select id, username, password, name, avatar, role, subject
+        from sys_user
         <where>
-            <if test="name != null"> and name like concat('%', #{name}, '%')</if>
+            <if test="name != null and name != ''"> and name like concat('%', #{name}, '%')</if>
+            <if test="subject != null and subject != ''"> and subject = #{subject}</if>
+            <if test="role != null and role != ''"> and role = #{role}</if>
         </where>
         order by id desc
     </select>
 
     <select id="selectById" resultType="com.example.entity.Admin">
-        select * from `admin` where id = #{id}
+        select id, username, password, name, avatar, role, subject from sys_user where id = #{id}
     </select>
 
     <delete id="deleteById">
-        delete from `admin` where id = #{id}
+        delete from sys_user where id = #{id}
     </delete>
 
-    <insert id="insert" parameterType="com.example.entity.Admin" useGeneratedKeys="true">
-        insert into `admin`(id, username, password, name, avatar, role)
-        values (#{id}, #{username}, #{password}, #{name}, #{avatar}, #{role})
+    <insert id="insert" parameterType="com.example.entity.Admin" useGeneratedKeys="true" keyProperty="id">
+        insert into sys_user(username, password, name, avatar, role, subject)
+        values (#{username}, #{password}, #{name}, #{avatar}, #{role}, #{subject})
     </insert>
 
     <update id="updateById" parameterType="com.example.entity.Admin">
-        update `admin` set username = #{username}, password = #{password}, name = #{name}, avatar = #{avatar}, role = #{role}
-        where id = #{id} 
+        update sys_user
+        set username = #{username},
+            password = #{password},
+            name = #{name},
+            avatar = #{avatar},
+            role = #{role},
+            subject = #{subject}
+        where id = #{id}
     </update>
 
 </mapper>
