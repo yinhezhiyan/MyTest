@@ -11,6 +11,11 @@ const router = createRouter({
       children: [
         { path: 'home', component: () => import('@/views/manager/Home.vue')},
         { path: 'admin', component: () => import('@/views/manager/Admin.vue')},
+        { path: 'students', component: () => import('@/views/manager/Students.vue')},
+        { path: 'daily', component: () => import('@/views/student/Daily.vue')},
+        { path: 'practice', component: () => import('@/views/student/Practice.vue')},
+        { path: 'recommend', component: () => import('@/views/student/Recommend.vue')},
+        { path: 'records', component: () => import('@/views/student/Records.vue')},
       ]
     },
     { path: '/login', component: () => import('@/views/Login.vue') }
@@ -20,19 +25,9 @@ const router = createRouter({
 router.beforeEach((to, from, next) => {
   const user = JSON.parse(localStorage.getItem('system-user') || '{}')
   if (to.path.startsWith('/manager')) {
-    if (!user?.token) {
-      next('/login')
-      return
-    }
-    const routeSubject = to.params.subject
-    if (routeSubject && routeSubject !== user.subject) {
-      next(`/manager/${user.subject}/home`)
-      return
-    }
-    if (to.path.endsWith('/admin') && user.role !== 'ADMIN') {
-      next(`/manager/${user.subject}/home`)
-      return
-    }
+    if (!user?.token) return next('/login')
+    if (to.params.subject && to.params.subject !== user.subject) return next(`/manager/${user.subject}/home`)
+    if ((to.path.endsWith('/admin') || to.path.endsWith('/students')) && user.role !== 'ADMIN') return next(`/manager/${user.subject}/home`)
   }
   next()
 })

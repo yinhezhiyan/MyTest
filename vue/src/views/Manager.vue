@@ -1,96 +1,92 @@
 <template>
   <div>
-    <div style="height: 60px; background-color: #2e3143; display: flex; align-items: center; border-bottom: 1px solid #ddd">
-      <div style="flex: 1">
-        <div style="padding-left: 20px; display: flex; align-items: center">
-          <img src="@/assets/imgs/logo.png" alt="" style="width: 40px">
-          <div style="font-weight: bold; font-size: 24px; margin-left: 5px; color: #fff">小白做毕设2026</div>
-        </div>
-      </div>
-      <div style="width: fit-content; padding-right: 10px; display: flex; align-items: center; color: #fff; gap: 8px;">
-        <el-tag size="small" type="info">{{ subjectText }}</el-tag>
-        <el-tag size="small" :type="data.user.role === 'ADMIN' ? 'danger' : 'success'">{{ data.user.role === 'ADMIN' ? '管理员' : '学生' }}</el-tag>
-        <img style="width: 40px; height: 40px; border-radius: 50%" :src="data.user.avatar || 'https://cube.elemecdn.com/3/7c/3ea6beec64369c2642b92c6726f1epng.png'" alt="">
-        <span>{{ data.user.name || '代码小白' }}</span>
+    <div class="topbar">
+      <div class="brand"><img src="@/assets/imgs/logo.png" alt=""><span>个性化习题推荐系统</span></div>
+      <div class="userbox">
+        <el-tag>{{ subjectText }}</el-tag>
+        <el-tag :type="data.user.role === 'ADMIN' ? 'danger' : 'success'">{{ data.user.role === 'ADMIN' ? '管理员' : '学生' }}</el-tag>
+        <el-avatar :src="data.user.avatar" :size="34">{{ displayName.slice(0,1) }}</el-avatar>
+        <span>{{ displayName }}</span>
+        <el-button link style="color:#fff" @click="openProfile">个人设置</el-button>
       </div>
     </div>
-
-    <div style="display: flex">
-      <div style="width: 200px; border-right: 1px solid #ddd; min-height: calc(100vh - 60px)">
-        <el-menu
-            router
-            style="border: none"
-            :default-active="router.currentRoute.value.path"
-            :default-openeds="['user']"
-        >
-          <el-menu-item :index="`/manager/${data.user.subject}/home`">
-            <el-icon><HomeFilled /></el-icon>
-            <span>系统首页</span>
-          </el-menu-item>
-          <el-sub-menu index="user" v-if="data.user.role === 'ADMIN'">
-            <template #title>
-              <el-icon><User /></el-icon>
-              <span>用户管理</span>
-            </template>
-            <el-menu-item :index="`/manager/${data.user.subject}/admin`">
-              <el-icon><User /></el-icon>
-              <span>管理员信息</span>
-            </el-menu-item>
-          </el-sub-menu>
-          <el-menu-item @click="logout">
-            <el-icon><SwitchButton /></el-icon>
-            <span>退出系统</span>
-          </el-menu-item>
+    <div class="layout">
+      <div class="sidebar">
+        <el-menu router :default-active="router.currentRoute.value.path" style="border:none;background:transparent;">
+          <el-menu-item :index="`/manager/${data.user.subject}/home`">首页</el-menu-item>
+          <template v-if="data.user.role === 'ADMIN'">
+            <el-menu-item :index="`/manager/${data.user.subject}/admin`">管理员</el-menu-item>
+            <el-menu-item :index="`/manager/${data.user.subject}/students`">学生管理</el-menu-item>
+          </template>
+          <template v-else>
+            <el-menu-item :index="`/manager/${data.user.subject}/daily`">今日个性拓展</el-menu-item>
+            <el-menu-item :index="`/manager/${data.user.subject}/practice`">开始练习</el-menu-item>
+            <el-menu-item :index="`/manager/${data.user.subject}/recommend`">习题推荐</el-menu-item>
+            <el-menu-item :index="`/manager/${data.user.subject}/records`">答题记录</el-menu-item>
+          </template>
+          <el-menu-item @click="logout">退出登录</el-menu-item>
         </el-menu>
       </div>
-      <div style="flex: 1; width: 0; background-color: #f8f8ff; padding: 10px">
-        <router-view @updateUser="updateUser" />
-      </div>
+      <div class="content"><router-view /></div>
     </div>
 
+    <el-dialog v-model="profileVisible" title="个人设置" width="420px">
+      <el-form :model="profile" label-width="70px">
+        <el-form-item label="头像">
+          <el-upload :action="uploadUrl" list-type="picture" :on-success="handleImgSuccess">
+            <el-button type="primary">上传图片</el-button>
+          </el-upload>
+        </el-form-item>
+        <el-form-item label="昵称">
+          <el-input v-model="profile.name" placeholder="请输入昵称"/>
+        </el-form-item>
+      </el-form>
+      <template #footer>
+        <el-button @click="profileVisible=false">取消</el-button>
+        <el-button type="primary" @click="saveProfile">保存</el-button>
+      </template>
+    </el-dialog>
   </div>
 </template>
 
 <script setup>
-import {computed, reactive} from "vue";
+import {computed, reactive, ref} from "vue";
 import router from "@/router";
+import request from "@/utils/request";
 import {ElMessage} from "element-plus";
-import {useRoute} from "vue-router";
 
-const route = useRoute()
+const uploadUrl = import.meta.env.VITE_BASE_URL + '/files/upload'
+const data = reactive({ user: JSON.parse(localStorage.getItem('system-user') || '{}') })
+const profileVisible = ref(false)
+const profile = reactive({ name: '', avatar: '' })
+const displayName = computed(() => data.user.name || data.user.username || '用户')
+const subjectText = computed(() => ({DS: '数据结构', OS: '操作系统', CN: '计网', CO: '计组'})[data.user.subject] || data.user.subject)
 
-const data = reactive({
-  user: JSON.parse(localStorage.getItem('system-user') || '{}')
-})
-
-if (!data.user?.id || !data.user?.subject || !data.user?.token) {
-  ElMessage.error('请登录！')
-  router.push('/login')
+const openProfile = () => {
+  request.get('/account/profile').then(res => {
+    Object.assign(profile, res.data || {})
+    profileVisible.value = true
+  })
 }
-
-if (route.params.subject && route.params.subject !== data.user.subject) {
-  ElMessage.error('不可跨学科访问')
-  router.push(`/manager/${data.user.subject}/home`)
+const handleImgSuccess = (res) => { profile.avatar = res.data }
+const saveProfile = () => {
+  request.put('/account/profile', { name: profile.name, avatar: profile.avatar }).then(res => {
+    if (res.code === '200') {
+      data.user = { ...data.user, ...res.data }
+      localStorage.setItem('system-user', JSON.stringify(data.user))
+      profileVisible.value = false
+      ElMessage.success('保存成功')
+    } else ElMessage.error(res.msg)
+  })
 }
-
-const subjectText = computed(() => ({MATH: '数学', OS: '操作系统', DS: '数据结构'})[data.user.subject] || data.user.subject)
-
-const updateUser = () => {
-  data.user = JSON.parse(localStorage.getItem('system-user') || '{}')
-}
-
-const logout = () => {
-  router.push('/login')
-  ElMessage.success('退出成功')
-  localStorage.removeItem('system-user')
-}
+const logout = () => { localStorage.removeItem('system-user'); router.push('/login') }
 </script>
 
 <style scoped>
-.el-menu-item.is-active {
-  background-color: #d7d7e6 !important;
-}
-.el-menu-item:hover {
-  color: #000;
-}
+.topbar{height:60px;background:#1f2a44;color:#fff;display:flex;justify-content:space-between;align-items:center;padding:0 20px}
+.brand{display:flex;align-items:center;gap:8px;font-weight:700}.brand img{width:34px}
+.userbox{display:flex;align-items:center;gap:8px}
+.layout{display:flex;height:calc(100vh - 60px);background:#f4f7fb}
+.sidebar{width:220px;background:#fff;border-right:1px solid #e5e7eb;padding-top:12px}
+.content{flex:1;padding:16px;overflow:auto}
 </style>
