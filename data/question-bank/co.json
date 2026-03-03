@@ -1,0 +1,10 @@
+[
+  {"id":"data-representation-001","subject":"CO","chapter":"数据表示","chapterSlug":"data-representation","stem":"二进制补码表示中，-x 的求法是？","options":{"A":"按位取反","B":"按位取反加 1","C":"加 1","D":"减 1"},"answer":"B","analysis":"补码定义：反码+1。","difficulty":1,"knowledge_points":["补码"]},
+  {"id":"cpu-001","subject":"CO","chapter":"CPU","chapterSlug":"cpu","stem":"控制器的主要功能是？","options":{"A":"执行算术运算","B":"产生控制信号协调各部件","C":"保存用户程序","D":"管理磁盘文件"},"answer":"B","analysis":"控制器负责取指、译码与控制。","difficulty":1,"knowledge_points":["控制器"]},
+  {"id":"pipeline-001","subject":"CO","chapter":"流水线","chapterSlug":"pipeline","stem":"流水线技术提高的是？","options":{"A":"单条指令延迟","B":"吞吐率","C":"主频下限","D":"存储容量"},"answer":"B","analysis":"流水线主要提升单位时间完成指令数。","difficulty":2,"knowledge_points":["流水线"]},
+  {"id":"memory-hierarchy-001","subject":"CO","chapter":"存储层次","chapterSlug":"memory-hierarchy","stem":"Cache 设计依据的核心原理是？","options":{"A":"香农定理","B":"局部性原理","C":"摩尔定律","D":"Amdahl 定律"},"answer":"B","analysis":"时间/空间局部性支撑多级存储。","difficulty":1,"knowledge_points":["Cache","局部性"]},
+  {"id":"instruction-001","subject":"CO","chapter":"指令系统","chapterSlug":"instruction","stem":"RISC 架构通常具有的特点是？","options":{"A":"指令复杂且长度可变","B":"大量微程序控制","C":"指令格式规整，寻址方式较少","D":"强依赖堆栈式操作"},"answer":"C","analysis":"RISC 追求简单规整和高流水效率。","difficulty":2,"knowledge_points":["RISC/CISC"]},
+  {"id":"bus-001","subject":"CO","chapter":"总线","chapterSlug":"bus","stem":"系统总线中用于传输地址信息的是？","options":{"A":"数据总线","B":"地址总线","C":"控制总线","D":"扩展总线"},"answer":"B","analysis":"地址总线给出访存/IO地址。","difficulty":1,"knowledge_points":["总线"]},
+  {"id":"io-001","subject":"CO","chapter":"输入输出","chapterSlug":"io","stem":"DMA 方式的主要优点是？","options":{"A":"无需中断","B":"CPU 不参与任何控制","C":"减少 CPU 与外设数据传送负担","D":"可替代主存"},"answer":"C","analysis":"DMA 由控制器直接搬运数据，释放CPU。","difficulty":2,"knowledge_points":["DMA"]},
+  {"id":"interrupt-001","subject":"CO","chapter":"中断系统","chapterSlug":"interrupt","stem":"中断响应过程中，CPU 首先应完成？","options":{"A":"关机","B":"保存断点和现场","C":"清空缓存","D":"重装系统"},"answer":"B","analysis":"保证中断返回后可继续原程序。","difficulty":2,"knowledge_points":["中断响应"]}
+]
