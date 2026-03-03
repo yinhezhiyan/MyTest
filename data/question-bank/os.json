@@ -1,0 +1,10 @@
+[
+  {"id":"process-thread-001","subject":"OS","chapter":"进程与线程","chapterSlug":"process-thread","stem":"进程与程序的本质区别是？","options":{"A":"程序更大","B":"进程是程序的一次执行","C":"程序可并发","D":"进程不可调度"},"answer":"B","analysis":"进程是动态概念，程序是静态文件。","difficulty":1,"knowledge_points":["进程","程序"]},
+  {"id":"process-thread-002","subject":"OS","chapter":"进程与线程","chapterSlug":"process-thread","stem":"线程是 CPU 调度的？","options":{"A":"最小单位","B":"最大单位","C":"I/O 单位","D":"存储单位"},"answer":"A","analysis":"现代操作系统通常以线程作为调度基本单位。","difficulty":1,"knowledge_points":["线程调度"]},
+  {"id":"scheduling-001","subject":"OS","chapter":"处理机调度","chapterSlug":"scheduling","stem":"时间片轮转算法主要适用于？","options":{"A":"批处理系统","B":"实时系统","C":"分时系统","D":"嵌入式裸机"},"answer":"C","analysis":"RR 保证交互响应，适合分时系统。","difficulty":2,"knowledge_points":["调度算法"]},
+  {"id":"memory-001","subject":"OS","chapter":"存储管理","chapterSlug":"memory","stem":"虚拟内存技术主要基于？","options":{"A":"覆盖与交换","B":"DMA 与中断","C":"流水与并行","D":"缓存一致性"},"answer":"A","analysis":"通过局部性原理配合请求分页等实现。","difficulty":2,"knowledge_points":["虚拟内存","分页"]},
+  {"id":"memory-002","subject":"OS","chapter":"存储管理","chapterSlug":"memory","stem":"页面置换算法中，Belady 异常可能出现在？","options":{"A":"OPT","B":"LRU","C":"FIFO","D":"Clock"},"answer":"C","analysis":"FIFO 可能出现页框增多缺页反而增加。","difficulty":3,"knowledge_points":["页面置换"]},
+  {"id":"file-001","subject":"OS","chapter":"文件系统","chapterSlug":"file","stem":"文件控制块 FCB 主要用于保存？","options":{"A":"文件数据内容","B":"文件元数据","C":"用户口令","D":"中断向量"},"answer":"B","analysis":"FCB 保存权限、位置、大小等元信息。","difficulty":1,"knowledge_points":["文件系统"]},
+  {"id":"deadlock-001","subject":"OS","chapter":"死锁","chapterSlug":"deadlock","stem":"死锁产生的必要条件不包括？","options":{"A":"互斥","B":"请求和保持","C":"可剥夺","D":"循环等待"},"answer":"C","analysis":"不可剥夺才是必要条件。","difficulty":2,"knowledge_points":["死锁条件"]},
+  {"id":"io-001","subject":"OS","chapter":"设备管理","chapterSlug":"io","stem":"缓冲技术的主要作用是？","options":{"A":"提高CPU频率","B":"匹配设备与CPU速度差异","C":"减少主存容量","D":"避免中断"},"answer":"B","analysis":"通过缓冲减少速度不匹配带来的等待。","difficulty":1,"knowledge_points":["I/O管理","缓冲"]}
+]

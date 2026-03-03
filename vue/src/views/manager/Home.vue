@@ -23,6 +23,6 @@ const data = reactive({
   user: JSON.parse(localStorage.getItem('system-user') || '{}'),
 })
 
-const subjectText = computed(() => ({MATH: '数学', OS: '操作系统', DS: '数据结构'})[data.user.subject] || data.user.subject)
+const subjectText = computed(() => ({DS: '数据结构', OS: '操作系统', CN: '计网', CO: '计组'})[data.user.subject] || data.user.subject)
 const roleText = computed(() => data.user.role === 'ADMIN' ? '管理员' : '学生')
 </script>
