@@ -1,0 +1,2402 @@
+[
+  {
+    "id": "cn-full-001",
+    "subject": "CN",
+    "chapter": "物理层",
+    "chapterSlug": "物理层",
+    "stem": "信道带宽增加且噪声不变时，理论容量通常？",
+    "options": {
+      "A": "增大",
+      "B": "随机",
+      "C": "减小",
+      "D": "不变"
+    },
+    "answer": "A",
+    "analysis": "本题考查物理层。正确要点：增大。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "物理层",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "cn-full-002",
+    "subject": "CN",
+    "chapter": "物理层",
+    "chapterSlug": "物理层",
+    "stem": "关于物理层，信道带宽增加且噪声不变时，理论容量通常？",
+    "options": {
+      "A": "不变",
+      "B": "增大",
+      "C": "随机",
+      "D": "减小"
+    },
+    "answer": "B",
+    "analysis": "本题考查物理层。正确要点：增大。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "物理层",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "cn-full-003",
+    "subject": "CN",
+    "chapter": "物理层",
+    "chapterSlug": "物理层",
+    "stem": "在CN课程中，信道带宽增加且噪声不变时，理论容量通常？",
+    "options": {
+      "A": "随机",
+      "B": "不变",
+      "C": "减小",
+      "D": "增大"
+    },
+    "answer": "D",
+    "analysis": "本题考查物理层。正确要点：增大。",
+    "difficulty": 3,
+    "knowledge_points": [
+      "物理层",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "cn-full-004",
+    "subject": "CN",
+    "chapter": "物理层",
+    "chapterSlug": "物理层",
+    "stem": "下列说法中，信道带宽增加且噪声不变时，理论容量通常？",
+    "options": {
+      "A": "增大",
+      "B": "随机",
+      "C": "减小",
+      "D": "不变"
+    },
+    "answer": "A",
+    "analysis": "本题考查物理层。正确要点：增大。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "物理层",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "cn-full-005",
+    "subject": "CN",
+    "chapter": "物理层",
+    "chapterSlug": "物理层",
+    "stem": "考点：信道带宽增加且噪声不变时，理论容量通常？",
+    "options": {
+      "A": "减小",
+      "B": "增大",
+      "C": "不变",
+      "D": "随机"
+    },
+    "answer": "B",
+    "analysis": "本题考查物理层。正确要点：增大。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "物理层",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "cn-full-006",
+    "subject": "CN",
+    "chapter": "物理层",
+    "chapterSlug": "物理层",
+    "stem": "真题常考：信道带宽增加且噪声不变时，理论容量通常？",
+    "options": {
+      "A": "减小",
+      "B": "不变",
+      "C": "增大",
+      "D": "随机"
+    },
+    "answer": "C",
+    "analysis": "本题考查物理层。正确要点：增大。",
+    "difficulty": 3,
+    "knowledge_points": [
+      "物理层",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "cn-full-007",
+    "subject": "CN",
+    "chapter": "物理层",
+    "chapterSlug": "物理层",
+    "stem": "请判断：信道带宽增加且噪声不变时，理论容量通常？",
+    "options": {
+      "A": "不变",
+      "B": "增大",
+      "C": "减小",
+      "D": "随机"
+    },
+    "answer": "B",
+    "analysis": "本题考查物理层。正确要点：增大。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "物理层",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "cn-full-008",
+    "subject": "CN",
+    "chapter": "物理层",
+    "chapterSlug": "物理层",
+    "stem": "以下命题正确的是：信道带宽增加且噪声不变时，理论容量通常？",
+    "options": {
+      "A": "增大",
+      "B": "不变",
+      "C": "随机",
+      "D": "减小"
+    },
+    "answer": "A",
+    "analysis": "本题考查物理层。正确要点：增大。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "物理层",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "cn-full-009",
+    "subject": "CN",
+    "chapter": "物理层",
+    "chapterSlug": "物理层",
+    "stem": "从原理角度看，信道带宽增加且噪声不变时，理论容量通常？",
+    "options": {
+      "A": "减小",
+      "B": "随机",
+      "C": "不变",
+      "D": "增大"
+    },
+    "answer": "D",
+    "analysis": "本题考查物理层。正确要点：增大。",
+    "difficulty": 3,
+    "knowledge_points": [
+      "物理层",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "cn-full-010",
+    "subject": "CN",
+    "chapter": "物理层",
+    "chapterSlug": "物理层",
+    "stem": "在系统设计中，信道带宽增加且噪声不变时，理论容量通常？",
+    "options": {
+      "A": "不变",
+      "B": "减小",
+      "C": "随机",
+      "D": "增大"
+    },
+    "answer": "D",
+    "analysis": "本题考查物理层。正确要点：增大。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "物理层",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "cn-full-011",
+    "subject": "CN",
+    "chapter": "物理层",
+    "chapterSlug": "物理层",
+    "stem": "基础题：信道带宽增加且噪声不变时，理论容量通常？",
+    "options": {
+      "A": "增大",
+      "B": "不变",
+      "C": "随机",
+      "D": "减小"
+    },
+    "answer": "A",
+    "analysis": "本题考查物理层。正确要点：增大。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "物理层",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "cn-full-012",
+    "subject": "CN",
+    "chapter": "物理层",
+    "chapterSlug": "物理层",
+    "stem": "综合题：信道带宽增加且噪声不变时，理论容量通常？",
+    "options": {
+      "A": "随机",
+      "B": "增大",
+      "C": "不变",
+      "D": "减小"
+    },
+    "answer": "B",
+    "analysis": "本题考查物理层。正确要点：增大。",
+    "difficulty": 3,
+    "knowledge_points": [
+      "物理层",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "cn-full-013",
+    "subject": "CN",
+    "chapter": "数据链路层",
+    "chapterSlug": "数据链路层",
+    "stem": "以太网MAC地址长度通常是？",
+    "options": {
+      "A": "32位",
+      "B": "128位",
+      "C": "64位",
+      "D": "48位"
+    },
+    "answer": "D",
+    "analysis": "本题考查数据链路层。正确要点：48位。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "数据链路层",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "cn-full-014",
+    "subject": "CN",
+    "chapter": "数据链路层",
+    "chapterSlug": "数据链路层",
+    "stem": "关于数据链路层，以太网MAC地址长度通常是？",
+    "options": {
+      "A": "128位",
+      "B": "64位",
+      "C": "32位",
+      "D": "48位"
+    },
+    "answer": "D",
+    "analysis": "本题考查数据链路层。正确要点：48位。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "数据链路层",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "cn-full-015",
+    "subject": "CN",
+    "chapter": "数据链路层",
+    "chapterSlug": "数据链路层",
+    "stem": "在CN课程中，以太网MAC地址长度通常是？",
+    "options": {
+      "A": "48位",
+      "B": "64位",
+      "C": "32位",
+      "D": "128位"
+    },
+    "answer": "A",
+    "analysis": "本题考查数据链路层。正确要点：48位。",
+    "difficulty": 3,
+    "knowledge_points": [
+      "数据链路层",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "cn-full-016",
+    "subject": "CN",
+    "chapter": "数据链路层",
+    "chapterSlug": "数据链路层",
+    "stem": "下列说法中，以太网MAC地址长度通常是？",
+    "options": {
+      "A": "64位",
+      "B": "128位",
+      "C": "48位",
+      "D": "32位"
+    },
+    "answer": "C",
+    "analysis": "本题考查数据链路层。正确要点：48位。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "数据链路层",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "cn-full-017",
+    "subject": "CN",
+    "chapter": "数据链路层",
+    "chapterSlug": "数据链路层",
+    "stem": "考点：以太网MAC地址长度通常是？",
+    "options": {
+      "A": "48位",
+      "B": "64位",
+      "C": "128位",
+      "D": "32位"
+    },
+    "answer": "A",
+    "analysis": "本题考查数据链路层。正确要点：48位。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "数据链路层",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "cn-full-018",
+    "subject": "CN",
+    "chapter": "数据链路层",
+    "chapterSlug": "数据链路层",
+    "stem": "真题常考：以太网MAC地址长度通常是？",
+    "options": {
+      "A": "128位",
+      "B": "64位",
+      "C": "48位",
+      "D": "32位"
+    },
+    "answer": "C",
+    "analysis": "本题考查数据链路层。正确要点：48位。",
+    "difficulty": 3,
+    "knowledge_points": [
+      "数据链路层",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "cn-full-019",
+    "subject": "CN",
+    "chapter": "数据链路层",
+    "chapterSlug": "数据链路层",
+    "stem": "请判断：以太网MAC地址长度通常是？",
+    "options": {
+      "A": "48位",
+      "B": "64位",
+      "C": "32位",
+      "D": "128位"
+    },
+    "answer": "A",
+    "analysis": "本题考查数据链路层。正确要点：48位。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "数据链路层",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "cn-full-020",
+    "subject": "CN",
+    "chapter": "数据链路层",
+    "chapterSlug": "数据链路层",
+    "stem": "以下命题正确的是：以太网MAC地址长度通常是？",
+    "options": {
+      "A": "48位",
+      "B": "64位",
+      "C": "32位",
+      "D": "128位"
+    },
+    "answer": "A",
+    "analysis": "本题考查数据链路层。正确要点：48位。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "数据链路层",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "cn-full-021",
+    "subject": "CN",
+    "chapter": "数据链路层",
+    "chapterSlug": "数据链路层",
+    "stem": "从原理角度看，以太网MAC地址长度通常是？",
+    "options": {
+      "A": "32位",
+      "B": "48位",
+      "C": "64位",
+      "D": "128位"
+    },
+    "answer": "B",
+    "analysis": "本题考查数据链路层。正确要点：48位。",
+    "difficulty": 3,
+    "knowledge_points": [
+      "数据链路层",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "cn-full-022",
+    "subject": "CN",
+    "chapter": "数据链路层",
+    "chapterSlug": "数据链路层",
+    "stem": "在系统设计中，以太网MAC地址长度通常是？",
+    "options": {
+      "A": "64位",
+      "B": "48位",
+      "C": "32位",
+      "D": "128位"
+    },
+    "answer": "B",
+    "analysis": "本题考查数据链路层。正确要点：48位。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "数据链路层",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "cn-full-023",
+    "subject": "CN",
+    "chapter": "数据链路层",
+    "chapterSlug": "数据链路层",
+    "stem": "基础题：以太网MAC地址长度通常是？",
+    "options": {
+      "A": "128位",
+      "B": "32位",
+      "C": "64位",
+      "D": "48位"
+    },
+    "answer": "D",
+    "analysis": "本题考查数据链路层。正确要点：48位。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "数据链路层",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "cn-full-024",
+    "subject": "CN",
+    "chapter": "数据链路层",
+    "chapterSlug": "数据链路层",
+    "stem": "综合题：以太网MAC地址长度通常是？",
+    "options": {
+      "A": "128位",
+      "B": "32位",
+      "C": "64位",
+      "D": "48位"
+    },
+    "answer": "D",
+    "analysis": "本题考查数据链路层。正确要点：48位。",
+    "difficulty": 3,
+    "knowledge_points": [
+      "数据链路层",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "cn-full-025",
+    "subject": "CN",
+    "chapter": "数据链路层",
+    "chapterSlug": "数据链路层",
+    "stem": "CSMA/CD主要用于？",
+    "options": {
+      "A": "应用层通信",
+      "B": "PPP链路",
+      "C": "共享介质有线网络",
+      "D": "纯无线网络"
+    },
+    "answer": "C",
+    "analysis": "本题考查数据链路层。正确要点：共享介质有线网络。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "数据链路层",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "cn-full-026",
+    "subject": "CN",
+    "chapter": "数据链路层",
+    "chapterSlug": "数据链路层",
+    "stem": "关于数据链路层，CSMA/CD主要用于？",
+    "options": {
+      "A": "PPP链路",
+      "B": "共享介质有线网络",
+      "C": "应用层通信",
+      "D": "纯无线网络"
+    },
+    "answer": "B",
+    "analysis": "本题考查数据链路层。正确要点：共享介质有线网络。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "数据链路层",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "cn-full-027",
+    "subject": "CN",
+    "chapter": "数据链路层",
+    "chapterSlug": "数据链路层",
+    "stem": "在CN课程中，CSMA/CD主要用于？",
+    "options": {
+      "A": "纯无线网络",
+      "B": "应用层通信",
+      "C": "共享介质有线网络",
+      "D": "PPP链路"
+    },
+    "answer": "C",
+    "analysis": "本题考查数据链路层。正确要点：共享介质有线网络。",
+    "difficulty": 3,
+    "knowledge_points": [
+      "数据链路层",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "cn-full-028",
+    "subject": "CN",
+    "chapter": "数据链路层",
+    "chapterSlug": "数据链路层",
+    "stem": "下列说法中，CSMA/CD主要用于？",
+    "options": {
+      "A": "应用层通信",
+      "B": "共享介质有线网络",
+      "C": "PPP链路",
+      "D": "纯无线网络"
+    },
+    "answer": "B",
+    "analysis": "本题考查数据链路层。正确要点：共享介质有线网络。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "数据链路层",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "cn-full-029",
+    "subject": "CN",
+    "chapter": "数据链路层",
+    "chapterSlug": "数据链路层",
+    "stem": "考点：CSMA/CD主要用于？",
+    "options": {
+      "A": "纯无线网络",
+      "B": "共享介质有线网络",
+      "C": "应用层通信",
+      "D": "PPP链路"
+    },
+    "answer": "B",
+    "analysis": "本题考查数据链路层。正确要点：共享介质有线网络。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "数据链路层",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "cn-full-030",
+    "subject": "CN",
+    "chapter": "数据链路层",
+    "chapterSlug": "数据链路层",
+    "stem": "真题常考：CSMA/CD主要用于？",
+    "options": {
+      "A": "共享介质有线网络",
+      "B": "纯无线网络",
+      "C": "应用层通信",
+      "D": "PPP链路"
+    },
+    "answer": "A",
+    "analysis": "本题考查数据链路层。正确要点：共享介质有线网络。",
+    "difficulty": 3,
+    "knowledge_points": [
+      "数据链路层",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "cn-full-031",
+    "subject": "CN",
+    "chapter": "数据链路层",
+    "chapterSlug": "数据链路层",
+    "stem": "请判断：CSMA/CD主要用于？",
+    "options": {
+      "A": "纯无线网络",
+      "B": "PPP链路",
+      "C": "应用层通信",
+      "D": "共享介质有线网络"
+    },
+    "answer": "D",
+    "analysis": "本题考查数据链路层。正确要点：共享介质有线网络。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "数据链路层",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "cn-full-032",
+    "subject": "CN",
+    "chapter": "数据链路层",
+    "chapterSlug": "数据链路层",
+    "stem": "以下命题正确的是：CSMA/CD主要用于？",
+    "options": {
+      "A": "纯无线网络",
+      "B": "PPP链路",
+      "C": "应用层通信",
+      "D": "共享介质有线网络"
+    },
+    "answer": "D",
+    "analysis": "本题考查数据链路层。正确要点：共享介质有线网络。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "数据链路层",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "cn-full-033",
+    "subject": "CN",
+    "chapter": "数据链路层",
+    "chapterSlug": "数据链路层",
+    "stem": "从原理角度看，CSMA/CD主要用于？",
+    "options": {
+      "A": "应用层通信",
+      "B": "纯无线网络",
+      "C": "PPP链路",
+      "D": "共享介质有线网络"
+    },
+    "answer": "D",
+    "analysis": "本题考查数据链路层。正确要点：共享介质有线网络。",
+    "difficulty": 3,
+    "knowledge_points": [
+      "数据链路层",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "cn-full-034",
+    "subject": "CN",
+    "chapter": "数据链路层",
+    "chapterSlug": "数据链路层",
+    "stem": "在系统设计中，CSMA/CD主要用于？",
+    "options": {
+      "A": "PPP链路",
+      "B": "共享介质有线网络",
+      "C": "纯无线网络",
+      "D": "应用层通信"
+    },
+    "answer": "B",
+    "analysis": "本题考查数据链路层。正确要点：共享介质有线网络。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "数据链路层",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "cn-full-035",
+    "subject": "CN",
+    "chapter": "数据链路层",
+    "chapterSlug": "数据链路层",
+    "stem": "基础题：CSMA/CD主要用于？",
+    "options": {
+      "A": "PPP链路",
+      "B": "纯无线网络",
+      "C": "共享介质有线网络",
+      "D": "应用层通信"
+    },
+    "answer": "C",
+    "analysis": "本题考查数据链路层。正确要点：共享介质有线网络。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "数据链路层",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "cn-full-036",
+    "subject": "CN",
+    "chapter": "数据链路层",
+    "chapterSlug": "数据链路层",
+    "stem": "综合题：CSMA/CD主要用于？",
+    "options": {
+      "A": "应用层通信",
+      "B": "纯无线网络",
+      "C": "共享介质有线网络",
+      "D": "PPP链路"
+    },
+    "answer": "C",
+    "analysis": "本题考查数据链路层。正确要点：共享介质有线网络。",
+    "difficulty": 3,
+    "knowledge_points": [
+      "数据链路层",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "cn-full-037",
+    "subject": "CN",
+    "chapter": "网络层",
+    "chapterSlug": "网络层",
+    "stem": "路由器转发分组主要依据？",
+    "options": {
+      "A": "MAC地址前缀",
+      "B": "目的IP地址",
+      "C": "应用层字段",
+      "D": "源端口"
+    },
+    "answer": "B",
+    "analysis": "本题考查网络层。正确要点：目的IP地址。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "网络层",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "cn-full-038",
+    "subject": "CN",
+    "chapter": "网络层",
+    "chapterSlug": "网络层",
+    "stem": "关于网络层，路由器转发分组主要依据？",
+    "options": {
+      "A": "目的IP地址",
+      "B": "源端口",
+      "C": "应用层字段",
+      "D": "MAC地址前缀"
+    },
+    "answer": "A",
+    "analysis": "本题考查网络层。正确要点：目的IP地址。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "网络层",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "cn-full-039",
+    "subject": "CN",
+    "chapter": "网络层",
+    "chapterSlug": "网络层",
+    "stem": "在CN课程中，路由器转发分组主要依据？",
+    "options": {
+      "A": "目的IP地址",
+      "B": "应用层字段",
+      "C": "源端口",
+      "D": "MAC地址前缀"
+    },
+    "answer": "A",
+    "analysis": "本题考查网络层。正确要点：目的IP地址。",
+    "difficulty": 3,
+    "knowledge_points": [
+      "网络层",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "cn-full-040",
+    "subject": "CN",
+    "chapter": "网络层",
+    "chapterSlug": "网络层",
+    "stem": "下列说法中，路由器转发分组主要依据？",
+    "options": {
+      "A": "MAC地址前缀",
+      "B": "目的IP地址",
+      "C": "源端口",
+      "D": "应用层字段"
+    },
+    "answer": "B",
+    "analysis": "本题考查网络层。正确要点：目的IP地址。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "网络层",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "cn-full-041",
+    "subject": "CN",
+    "chapter": "网络层",
+    "chapterSlug": "网络层",
+    "stem": "考点：路由器转发分组主要依据？",
+    "options": {
+      "A": "应用层字段",
+      "B": "目的IP地址",
+      "C": "源端口",
+      "D": "MAC地址前缀"
+    },
+    "answer": "B",
+    "analysis": "本题考查网络层。正确要点：目的IP地址。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "网络层",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "cn-full-042",
+    "subject": "CN",
+    "chapter": "网络层",
+    "chapterSlug": "网络层",
+    "stem": "真题常考：路由器转发分组主要依据？",
+    "options": {
+      "A": "MAC地址前缀",
+      "B": "应用层字段",
+      "C": "源端口",
+      "D": "目的IP地址"
+    },
+    "answer": "D",
+    "analysis": "本题考查网络层。正确要点：目的IP地址。",
+    "difficulty": 3,
+    "knowledge_points": [
+      "网络层",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "cn-full-043",
+    "subject": "CN",
+    "chapter": "网络层",
+    "chapterSlug": "网络层",
+    "stem": "请判断：路由器转发分组主要依据？",
+    "options": {
+      "A": "应用层字段",
+      "B": "MAC地址前缀",
+      "C": "源端口",
+      "D": "目的IP地址"
+    },
+    "answer": "D",
+    "analysis": "本题考查网络层。正确要点：目的IP地址。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "网络层",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "cn-full-044",
+    "subject": "CN",
+    "chapter": "网络层",
+    "chapterSlug": "网络层",
+    "stem": "以下命题正确的是：路由器转发分组主要依据？",
+    "options": {
+      "A": "源端口",
+      "B": "目的IP地址",
+      "C": "应用层字段",
+      "D": "MAC地址前缀"
+    },
+    "answer": "B",
+    "analysis": "本题考查网络层。正确要点：目的IP地址。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "网络层",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "cn-full-045",
+    "subject": "CN",
+    "chapter": "网络层",
+    "chapterSlug": "网络层",
+    "stem": "从原理角度看，路由器转发分组主要依据？",
+    "options": {
+      "A": "源端口",
+      "B": "目的IP地址",
+      "C": "MAC地址前缀",
+      "D": "应用层字段"
+    },
+    "answer": "B",
+    "analysis": "本题考查网络层。正确要点：目的IP地址。",
+    "difficulty": 3,
+    "knowledge_points": [
+      "网络层",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "cn-full-046",
+    "subject": "CN",
+    "chapter": "网络层",
+    "chapterSlug": "网络层",
+    "stem": "在系统设计中，路由器转发分组主要依据？",
+    "options": {
+      "A": "MAC地址前缀",
+      "B": "应用层字段",
+      "C": "源端口",
+      "D": "目的IP地址"
+    },
+    "answer": "D",
+    "analysis": "本题考查网络层。正确要点：目的IP地址。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "网络层",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "cn-full-047",
+    "subject": "CN",
+    "chapter": "网络层",
+    "chapterSlug": "网络层",
+    "stem": "基础题：路由器转发分组主要依据？",
+    "options": {
+      "A": "MAC地址前缀",
+      "B": "应用层字段",
+      "C": "目的IP地址",
+      "D": "源端口"
+    },
+    "answer": "C",
+    "analysis": "本题考查网络层。正确要点：目的IP地址。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "网络层",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "cn-full-048",
+    "subject": "CN",
+    "chapter": "网络层",
+    "chapterSlug": "网络层",
+    "stem": "综合题：路由器转发分组主要依据？",
+    "options": {
+      "A": "源端口",
+      "B": "目的IP地址",
+      "C": "应用层字段",
+      "D": "MAC地址前缀"
+    },
+    "answer": "B",
+    "analysis": "本题考查网络层。正确要点：目的IP地址。",
+    "difficulty": 3,
+    "knowledge_points": [
+      "网络层",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "cn-full-049",
+    "subject": "CN",
+    "chapter": "网络层",
+    "chapterSlug": "网络层",
+    "stem": "IPv4分片重组通常发生在？",
+    "options": {
+      "A": "源主机",
+      "B": "中间路由器",
+      "C": "目的主机",
+      "D": "交换机"
+    },
+    "answer": "C",
+    "analysis": "本题考查网络层。正确要点：目的主机。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "网络层",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "cn-full-050",
+    "subject": "CN",
+    "chapter": "网络层",
+    "chapterSlug": "网络层",
+    "stem": "关于网络层，IPv4分片重组通常发生在？",
+    "options": {
+      "A": "目的主机",
+      "B": "中间路由器",
+      "C": "交换机",
+      "D": "源主机"
+    },
+    "answer": "A",
+    "analysis": "本题考查网络层。正确要点：目的主机。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "网络层",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "cn-full-051",
+    "subject": "CN",
+    "chapter": "网络层",
+    "chapterSlug": "网络层",
+    "stem": "在CN课程中，IPv4分片重组通常发生在？",
+    "options": {
+      "A": "源主机",
+      "B": "中间路由器",
+      "C": "目的主机",
+      "D": "交换机"
+    },
+    "answer": "C",
+    "analysis": "本题考查网络层。正确要点：目的主机。",
+    "difficulty": 3,
+    "knowledge_points": [
+      "网络层",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "cn-full-052",
+    "subject": "CN",
+    "chapter": "网络层",
+    "chapterSlug": "网络层",
+    "stem": "下列说法中，IPv4分片重组通常发生在？",
+    "options": {
+      "A": "中间路由器",
+      "B": "目的主机",
+      "C": "源主机",
+      "D": "交换机"
+    },
+    "answer": "B",
+    "analysis": "本题考查网络层。正确要点：目的主机。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "网络层",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "cn-full-053",
+    "subject": "CN",
+    "chapter": "网络层",
+    "chapterSlug": "网络层",
+    "stem": "考点：IPv4分片重组通常发生在？",
+    "options": {
+      "A": "中间路由器",
+      "B": "目的主机",
+      "C": "源主机",
+      "D": "交换机"
+    },
+    "answer": "B",
+    "analysis": "本题考查网络层。正确要点：目的主机。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "网络层",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "cn-full-054",
+    "subject": "CN",
+    "chapter": "网络层",
+    "chapterSlug": "网络层",
+    "stem": "真题常考：IPv4分片重组通常发生在？",
+    "options": {
+      "A": "交换机",
+      "B": "源主机",
+      "C": "目的主机",
+      "D": "中间路由器"
+    },
+    "answer": "C",
+    "analysis": "本题考查网络层。正确要点：目的主机。",
+    "difficulty": 3,
+    "knowledge_points": [
+      "网络层",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "cn-full-055",
+    "subject": "CN",
+    "chapter": "网络层",
+    "chapterSlug": "网络层",
+    "stem": "请判断：IPv4分片重组通常发生在？",
+    "options": {
+      "A": "源主机",
+      "B": "中间路由器",
+      "C": "交换机",
+      "D": "目的主机"
+    },
+    "answer": "D",
+    "analysis": "本题考查网络层。正确要点：目的主机。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "网络层",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "cn-full-056",
+    "subject": "CN",
+    "chapter": "网络层",
+    "chapterSlug": "网络层",
+    "stem": "以下命题正确的是：IPv4分片重组通常发生在？",
+    "options": {
+      "A": "交换机",
+      "B": "源主机",
+      "C": "中间路由器",
+      "D": "目的主机"
+    },
+    "answer": "D",
+    "analysis": "本题考查网络层。正确要点：目的主机。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "网络层",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "cn-full-057",
+    "subject": "CN",
+    "chapter": "网络层",
+    "chapterSlug": "网络层",
+    "stem": "从原理角度看，IPv4分片重组通常发生在？",
+    "options": {
+      "A": "交换机",
+      "B": "源主机",
+      "C": "目的主机",
+      "D": "中间路由器"
+    },
+    "answer": "C",
+    "analysis": "本题考查网络层。正确要点：目的主机。",
+    "difficulty": 3,
+    "knowledge_points": [
+      "网络层",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "cn-full-058",
+    "subject": "CN",
+    "chapter": "网络层",
+    "chapterSlug": "网络层",
+    "stem": "在系统设计中，IPv4分片重组通常发生在？",
+    "options": {
+      "A": "源主机",
+      "B": "目的主机",
+      "C": "交换机",
+      "D": "中间路由器"
+    },
+    "answer": "B",
+    "analysis": "本题考查网络层。正确要点：目的主机。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "网络层",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "cn-full-059",
+    "subject": "CN",
+    "chapter": "网络层",
+    "chapterSlug": "网络层",
+    "stem": "基础题：IPv4分片重组通常发生在？",
+    "options": {
+      "A": "中间路由器",
+      "B": "目的主机",
+      "C": "交换机",
+      "D": "源主机"
+    },
+    "answer": "B",
+    "analysis": "本题考查网络层。正确要点：目的主机。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "网络层",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "cn-full-060",
+    "subject": "CN",
+    "chapter": "网络层",
+    "chapterSlug": "网络层",
+    "stem": "综合题：IPv4分片重组通常发生在？",
+    "options": {
+      "A": "交换机",
+      "B": "中间路由器",
+      "C": "目的主机",
+      "D": "源主机"
+    },
+    "answer": "C",
+    "analysis": "本题考查网络层。正确要点：目的主机。",
+    "difficulty": 3,
+    "knowledge_points": [
+      "网络层",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "cn-full-061",
+    "subject": "CN",
+    "chapter": "传输层",
+    "chapterSlug": "传输层",
+    "stem": "TCP可靠传输主要依赖？",
+    "options": {
+      "A": "静态路由",
+      "B": "ARP协议",
+      "C": "确认与重传",
+      "D": "广播机制"
+    },
+    "answer": "C",
+    "analysis": "本题考查传输层。正确要点：确认与重传。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "传输层",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "cn-full-062",
+    "subject": "CN",
+    "chapter": "传输层",
+    "chapterSlug": "传输层",
+    "stem": "关于传输层，TCP可靠传输主要依赖？",
+    "options": {
+      "A": "确认与重传",
+      "B": "静态路由",
+      "C": "ARP协议",
+      "D": "广播机制"
+    },
+    "answer": "A",
+    "analysis": "本题考查传输层。正确要点：确认与重传。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "传输层",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "cn-full-063",
+    "subject": "CN",
+    "chapter": "传输层",
+    "chapterSlug": "传输层",
+    "stem": "在CN课程中，TCP可靠传输主要依赖？",
+    "options": {
+      "A": "静态路由",
+      "B": "确认与重传",
+      "C": "ARP协议",
+      "D": "广播机制"
+    },
+    "answer": "B",
+    "analysis": "本题考查传输层。正确要点：确认与重传。",
+    "difficulty": 3,
+    "knowledge_points": [
+      "传输层",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "cn-full-064",
+    "subject": "CN",
+    "chapter": "传输层",
+    "chapterSlug": "传输层",
+    "stem": "下列说法中，TCP可靠传输主要依赖？",
+    "options": {
+      "A": "静态路由",
+      "B": "ARP协议",
+      "C": "确认与重传",
+      "D": "广播机制"
+    },
+    "answer": "C",
+    "analysis": "本题考查传输层。正确要点：确认与重传。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "传输层",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "cn-full-065",
+    "subject": "CN",
+    "chapter": "传输层",
+    "chapterSlug": "传输层",
+    "stem": "考点：TCP可靠传输主要依赖？",
+    "options": {
+      "A": "ARP协议",
+      "B": "静态路由",
+      "C": "广播机制",
+      "D": "确认与重传"
+    },
+    "answer": "D",
+    "analysis": "本题考查传输层。正确要点：确认与重传。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "传输层",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "cn-full-066",
+    "subject": "CN",
+    "chapter": "传输层",
+    "chapterSlug": "传输层",
+    "stem": "真题常考：TCP可靠传输主要依赖？",
+    "options": {
+      "A": "确认与重传",
+      "B": "ARP协议",
+      "C": "静态路由",
+      "D": "广播机制"
+    },
+    "answer": "A",
+    "analysis": "本题考查传输层。正确要点：确认与重传。",
+    "difficulty": 3,
+    "knowledge_points": [
+      "传输层",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "cn-full-067",
+    "subject": "CN",
+    "chapter": "传输层",
+    "chapterSlug": "传输层",
+    "stem": "请判断：TCP可靠传输主要依赖？",
+    "options": {
+      "A": "ARP协议",
+      "B": "广播机制",
+      "C": "静态路由",
+      "D": "确认与重传"
+    },
+    "answer": "D",
+    "analysis": "本题考查传输层。正确要点：确认与重传。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "传输层",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "cn-full-068",
+    "subject": "CN",
+    "chapter": "传输层",
+    "chapterSlug": "传输层",
+    "stem": "以下命题正确的是：TCP可靠传输主要依赖？",
+    "options": {
+      "A": "广播机制",
+      "B": "静态路由",
+      "C": "ARP协议",
+      "D": "确认与重传"
+    },
+    "answer": "D",
+    "analysis": "本题考查传输层。正确要点：确认与重传。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "传输层",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "cn-full-069",
+    "subject": "CN",
+    "chapter": "传输层",
+    "chapterSlug": "传输层",
+    "stem": "从原理角度看，TCP可靠传输主要依赖？",
+    "options": {
+      "A": "静态路由",
+      "B": "ARP协议",
+      "C": "确认与重传",
+      "D": "广播机制"
+    },
+    "answer": "C",
+    "analysis": "本题考查传输层。正确要点：确认与重传。",
+    "difficulty": 3,
+    "knowledge_points": [
+      "传输层",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "cn-full-070",
+    "subject": "CN",
+    "chapter": "传输层",
+    "chapterSlug": "传输层",
+    "stem": "在系统设计中，TCP可靠传输主要依赖？",
+    "options": {
+      "A": "静态路由",
+      "B": "确认与重传",
+      "C": "广播机制",
+      "D": "ARP协议"
+    },
+    "answer": "B",
+    "analysis": "本题考查传输层。正确要点：确认与重传。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "传输层",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "cn-full-071",
+    "subject": "CN",
+    "chapter": "传输层",
+    "chapterSlug": "传输层",
+    "stem": "基础题：TCP可靠传输主要依赖？",
+    "options": {
+      "A": "广播机制",
+      "B": "ARP协议",
+      "C": "确认与重传",
+      "D": "静态路由"
+    },
+    "answer": "C",
+    "analysis": "本题考查传输层。正确要点：确认与重传。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "传输层",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "cn-full-072",
+    "subject": "CN",
+    "chapter": "传输层",
+    "chapterSlug": "传输层",
+    "stem": "综合题：TCP可靠传输主要依赖？",
+    "options": {
+      "A": "确认与重传",
+      "B": "广播机制",
+      "C": "静态路由",
+      "D": "ARP协议"
+    },
+    "answer": "A",
+    "analysis": "本题考查传输层。正确要点：确认与重传。",
+    "difficulty": 3,
+    "knowledge_points": [
+      "传输层",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "cn-full-073",
+    "subject": "CN",
+    "chapter": "传输层",
+    "chapterSlug": "传输层",
+    "stem": "UDP更适合哪类业务？",
+    "options": {
+      "A": "事务提交",
+      "B": "远程磁盘镜像",
+      "C": "可靠文件复制",
+      "D": "实时音视频"
+    },
+    "answer": "D",
+    "analysis": "本题考查传输层。正确要点：实时音视频。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "传输层",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "cn-full-074",
+    "subject": "CN",
+    "chapter": "传输层",
+    "chapterSlug": "传输层",
+    "stem": "关于传输层，UDP更适合哪类业务？",
+    "options": {
+      "A": "事务提交",
+      "B": "远程磁盘镜像",
+      "C": "可靠文件复制",
+      "D": "实时音视频"
+    },
+    "answer": "D",
+    "analysis": "本题考查传输层。正确要点：实时音视频。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "传输层",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "cn-full-075",
+    "subject": "CN",
+    "chapter": "传输层",
+    "chapterSlug": "传输层",
+    "stem": "在CN课程中，UDP更适合哪类业务？",
+    "options": {
+      "A": "远程磁盘镜像",
+      "B": "可靠文件复制",
+      "C": "实时音视频",
+      "D": "事务提交"
+    },
+    "answer": "C",
+    "analysis": "本题考查传输层。正确要点：实时音视频。",
+    "difficulty": 3,
+    "knowledge_points": [
+      "传输层",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "cn-full-076",
+    "subject": "CN",
+    "chapter": "传输层",
+    "chapterSlug": "传输层",
+    "stem": "下列说法中，UDP更适合哪类业务？",
+    "options": {
+      "A": "事务提交",
+      "B": "实时音视频",
+      "C": "可靠文件复制",
+      "D": "远程磁盘镜像"
+    },
+    "answer": "B",
+    "analysis": "本题考查传输层。正确要点：实时音视频。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "传输层",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "cn-full-077",
+    "subject": "CN",
+    "chapter": "传输层",
+    "chapterSlug": "传输层",
+    "stem": "考点：UDP更适合哪类业务？",
+    "options": {
+      "A": "实时音视频",
+      "B": "事务提交",
+      "C": "远程磁盘镜像",
+      "D": "可靠文件复制"
+    },
+    "answer": "A",
+    "analysis": "本题考查传输层。正确要点：实时音视频。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "传输层",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "cn-full-078",
+    "subject": "CN",
+    "chapter": "传输层",
+    "chapterSlug": "传输层",
+    "stem": "真题常考：UDP更适合哪类业务？",
+    "options": {
+      "A": "可靠文件复制",
+      "B": "事务提交",
+      "C": "远程磁盘镜像",
+      "D": "实时音视频"
+    },
+    "answer": "D",
+    "analysis": "本题考查传输层。正确要点：实时音视频。",
+    "difficulty": 3,
+    "knowledge_points": [
+      "传输层",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "cn-full-079",
+    "subject": "CN",
+    "chapter": "传输层",
+    "chapterSlug": "传输层",
+    "stem": "请判断：UDP更适合哪类业务？",
+    "options": {
+      "A": "远程磁盘镜像",
+      "B": "事务提交",
+      "C": "可靠文件复制",
+      "D": "实时音视频"
+    },
+    "answer": "D",
+    "analysis": "本题考查传输层。正确要点：实时音视频。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "传输层",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "cn-full-080",
+    "subject": "CN",
+    "chapter": "传输层",
+    "chapterSlug": "传输层",
+    "stem": "以下命题正确的是：UDP更适合哪类业务？",
+    "options": {
+      "A": "可靠文件复制",
+      "B": "实时音视频",
+      "C": "远程磁盘镜像",
+      "D": "事务提交"
+    },
+    "answer": "B",
+    "analysis": "本题考查传输层。正确要点：实时音视频。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "传输层",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "cn-full-081",
+    "subject": "CN",
+    "chapter": "传输层",
+    "chapterSlug": "传输层",
+    "stem": "从原理角度看，UDP更适合哪类业务？",
+    "options": {
+      "A": "事务提交",
+      "B": "远程磁盘镜像",
+      "C": "实时音视频",
+      "D": "可靠文件复制"
+    },
+    "answer": "C",
+    "analysis": "本题考查传输层。正确要点：实时音视频。",
+    "difficulty": 3,
+    "knowledge_points": [
+      "传输层",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "cn-full-082",
+    "subject": "CN",
+    "chapter": "传输层",
+    "chapterSlug": "传输层",
+    "stem": "在系统设计中，UDP更适合哪类业务？",
+    "options": {
+      "A": "实时音视频",
+      "B": "事务提交",
+      "C": "远程磁盘镜像",
+      "D": "可靠文件复制"
+    },
+    "answer": "A",
+    "analysis": "本题考查传输层。正确要点：实时音视频。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "传输层",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "cn-full-083",
+    "subject": "CN",
+    "chapter": "传输层",
+    "chapterSlug": "传输层",
+    "stem": "基础题：UDP更适合哪类业务？",
+    "options": {
+      "A": "实时音视频",
+      "B": "远程磁盘镜像",
+      "C": "可靠文件复制",
+      "D": "事务提交"
+    },
+    "answer": "A",
+    "analysis": "本题考查传输层。正确要点：实时音视频。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "传输层",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "cn-full-084",
+    "subject": "CN",
+    "chapter": "传输层",
+    "chapterSlug": "传输层",
+    "stem": "综合题：UDP更适合哪类业务？",
+    "options": {
+      "A": "可靠文件复制",
+      "B": "实时音视频",
+      "C": "事务提交",
+      "D": "远程磁盘镜像"
+    },
+    "answer": "B",
+    "analysis": "本题考查传输层。正确要点：实时音视频。",
+    "difficulty": 3,
+    "knowledge_points": [
+      "传输层",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "cn-full-085",
+    "subject": "CN",
+    "chapter": "应用层",
+    "chapterSlug": "应用层",
+    "stem": "DNS的主要功能是？",
+    "options": {
+      "A": "链路加密",
+      "B": "域名解析",
+      "C": "拥塞控制",
+      "D": "差错纠正"
+    },
+    "answer": "B",
+    "analysis": "本题考查应用层。正确要点：域名解析。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "应用层",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "cn-full-086",
+    "subject": "CN",
+    "chapter": "应用层",
+    "chapterSlug": "应用层",
+    "stem": "关于应用层，DNS的主要功能是？",
+    "options": {
+      "A": "拥塞控制",
+      "B": "链路加密",
+      "C": "域名解析",
+      "D": "差错纠正"
+    },
+    "answer": "C",
+    "analysis": "本题考查应用层。正确要点：域名解析。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "应用层",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "cn-full-087",
+    "subject": "CN",
+    "chapter": "应用层",
+    "chapterSlug": "应用层",
+    "stem": "在CN课程中，DNS的主要功能是？",
+    "options": {
+      "A": "链路加密",
+      "B": "拥塞控制",
+      "C": "差错纠正",
+      "D": "域名解析"
+    },
+    "answer": "D",
+    "analysis": "本题考查应用层。正确要点：域名解析。",
+    "difficulty": 3,
+    "knowledge_points": [
+      "应用层",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "cn-full-088",
+    "subject": "CN",
+    "chapter": "应用层",
+    "chapterSlug": "应用层",
+    "stem": "下列说法中，DNS的主要功能是？",
+    "options": {
+      "A": "拥塞控制",
+      "B": "域名解析",
+      "C": "差错纠正",
+      "D": "链路加密"
+    },
+    "answer": "B",
+    "analysis": "本题考查应用层。正确要点：域名解析。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "应用层",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "cn-full-089",
+    "subject": "CN",
+    "chapter": "应用层",
+    "chapterSlug": "应用层",
+    "stem": "考点：DNS的主要功能是？",
+    "options": {
+      "A": "差错纠正",
+      "B": "拥塞控制",
+      "C": "域名解析",
+      "D": "链路加密"
+    },
+    "answer": "C",
+    "analysis": "本题考查应用层。正确要点：域名解析。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "应用层",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "cn-full-090",
+    "subject": "CN",
+    "chapter": "应用层",
+    "chapterSlug": "应用层",
+    "stem": "真题常考：DNS的主要功能是？",
+    "options": {
+      "A": "差错纠正",
+      "B": "拥塞控制",
+      "C": "域名解析",
+      "D": "链路加密"
+    },
+    "answer": "C",
+    "analysis": "本题考查应用层。正确要点：域名解析。",
+    "difficulty": 3,
+    "knowledge_points": [
+      "应用层",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "cn-full-091",
+    "subject": "CN",
+    "chapter": "应用层",
+    "chapterSlug": "应用层",
+    "stem": "请判断：DNS的主要功能是？",
+    "options": {
+      "A": "差错纠正",
+      "B": "链路加密",
+      "C": "拥塞控制",
+      "D": "域名解析"
+    },
+    "answer": "D",
+    "analysis": "本题考查应用层。正确要点：域名解析。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "应用层",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "cn-full-092",
+    "subject": "CN",
+    "chapter": "应用层",
+    "chapterSlug": "应用层",
+    "stem": "以下命题正确的是：DNS的主要功能是？",
+    "options": {
+      "A": "链路加密",
+      "B": "域名解析",
+      "C": "差错纠正",
+      "D": "拥塞控制"
+    },
+    "answer": "B",
+    "analysis": "本题考查应用层。正确要点：域名解析。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "应用层",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "cn-full-093",
+    "subject": "CN",
+    "chapter": "应用层",
+    "chapterSlug": "应用层",
+    "stem": "从原理角度看，DNS的主要功能是？",
+    "options": {
+      "A": "域名解析",
+      "B": "拥塞控制",
+      "C": "链路加密",
+      "D": "差错纠正"
+    },
+    "answer": "A",
+    "analysis": "本题考查应用层。正确要点：域名解析。",
+    "difficulty": 3,
+    "knowledge_points": [
+      "应用层",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "cn-full-094",
+    "subject": "CN",
+    "chapter": "应用层",
+    "chapterSlug": "应用层",
+    "stem": "在系统设计中，DNS的主要功能是？",
+    "options": {
+      "A": "域名解析",
+      "B": "链路加密",
+      "C": "拥塞控制",
+      "D": "差错纠正"
+    },
+    "answer": "A",
+    "analysis": "本题考查应用层。正确要点：域名解析。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "应用层",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "cn-full-095",
+    "subject": "CN",
+    "chapter": "应用层",
+    "chapterSlug": "应用层",
+    "stem": "基础题：DNS的主要功能是？",
+    "options": {
+      "A": "差错纠正",
+      "B": "链路加密",
+      "C": "拥塞控制",
+      "D": "域名解析"
+    },
+    "answer": "D",
+    "analysis": "本题考查应用层。正确要点：域名解析。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "应用层",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "cn-full-096",
+    "subject": "CN",
+    "chapter": "应用层",
+    "chapterSlug": "应用层",
+    "stem": "综合题：DNS的主要功能是？",
+    "options": {
+      "A": "差错纠正",
+      "B": "域名解析",
+      "C": "链路加密",
+      "D": "拥塞控制"
+    },
+    "answer": "B",
+    "analysis": "本题考查应用层。正确要点：域名解析。",
+    "difficulty": 3,
+    "knowledge_points": [
+      "应用层",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "cn-full-097",
+    "subject": "CN",
+    "chapter": "网络安全",
+    "chapterSlug": "网络安全",
+    "stem": "TLS通常提供？",
+    "options": {
+      "A": "机密性与完整性保护",
+      "B": "物理编码",
+      "C": "路由聚合",
+      "D": "地址分配"
+    },
+    "answer": "A",
+    "analysis": "本题考查网络安全。正确要点：机密性与完整性保护。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "网络安全",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "cn-full-098",
+    "subject": "CN",
+    "chapter": "网络安全",
+    "chapterSlug": "网络安全",
+    "stem": "关于网络安全，TLS通常提供？",
+    "options": {
+      "A": "机密性与完整性保护",
+      "B": "路由聚合",
+      "C": "地址分配",
+      "D": "物理编码"
+    },
+    "answer": "A",
+    "analysis": "本题考查网络安全。正确要点：机密性与完整性保护。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "网络安全",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "cn-full-099",
+    "subject": "CN",
+    "chapter": "网络安全",
+    "chapterSlug": "网络安全",
+    "stem": "在CN课程中，TLS通常提供？",
+    "options": {
+      "A": "地址分配",
+      "B": "机密性与完整性保护",
+      "C": "路由聚合",
+      "D": "物理编码"
+    },
+    "answer": "B",
+    "analysis": "本题考查网络安全。正确要点：机密性与完整性保护。",
+    "difficulty": 3,
+    "knowledge_points": [
+      "网络安全",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "cn-full-100",
+    "subject": "CN",
+    "chapter": "网络安全",
+    "chapterSlug": "网络安全",
+    "stem": "下列说法中，TLS通常提供？",
+    "options": {
+      "A": "路由聚合",
+      "B": "地址分配",
+      "C": "物理编码",
+      "D": "机密性与完整性保护"
+    },
+    "answer": "D",
+    "analysis": "本题考查网络安全。正确要点：机密性与完整性保护。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "网络安全",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "cn-full-101",
+    "subject": "CN",
+    "chapter": "网络安全",
+    "chapterSlug": "网络安全",
+    "stem": "考点：TLS通常提供？",
+    "options": {
+      "A": "物理编码",
+      "B": "机密性与完整性保护",
+      "C": "地址分配",
+      "D": "路由聚合"
+    },
+    "answer": "B",
+    "analysis": "本题考查网络安全。正确要点：机密性与完整性保护。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "网络安全",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "cn-full-102",
+    "subject": "CN",
+    "chapter": "网络安全",
+    "chapterSlug": "网络安全",
+    "stem": "真题常考：TLS通常提供？",
+    "options": {
+      "A": "地址分配",
+      "B": "物理编码",
+      "C": "机密性与完整性保护",
+      "D": "路由聚合"
+    },
+    "answer": "C",
+    "analysis": "本题考查网络安全。正确要点：机密性与完整性保护。",
+    "difficulty": 3,
+    "knowledge_points": [
+      "网络安全",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "cn-full-103",
+    "subject": "CN",
+    "chapter": "网络安全",
+    "chapterSlug": "网络安全",
+    "stem": "请判断：TLS通常提供？",
+    "options": {
+      "A": "地址分配",
+      "B": "物理编码",
+      "C": "路由聚合",
+      "D": "机密性与完整性保护"
+    },
+    "answer": "D",
+    "analysis": "本题考查网络安全。正确要点：机密性与完整性保护。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "网络安全",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "cn-full-104",
+    "subject": "CN",
+    "chapter": "网络安全",
+    "chapterSlug": "网络安全",
+    "stem": "以下命题正确的是：TLS通常提供？",
+    "options": {
+      "A": "路由聚合",
+      "B": "地址分配",
+      "C": "物理编码",
+      "D": "机密性与完整性保护"
+    },
+    "answer": "D",
+    "analysis": "本题考查网络安全。正确要点：机密性与完整性保护。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "网络安全",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "cn-full-105",
+    "subject": "CN",
+    "chapter": "网络安全",
+    "chapterSlug": "网络安全",
+    "stem": "从原理角度看，TLS通常提供？",
+    "options": {
+      "A": "地址分配",
+      "B": "物理编码",
+      "C": "机密性与完整性保护",
+      "D": "路由聚合"
+    },
+    "answer": "C",
+    "analysis": "本题考查网络安全。正确要点：机密性与完整性保护。",
+    "difficulty": 3,
+    "knowledge_points": [
+      "网络安全",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "cn-full-106",
+    "subject": "CN",
+    "chapter": "网络安全",
+    "chapterSlug": "网络安全",
+    "stem": "在系统设计中，TLS通常提供？",
+    "options": {
+      "A": "地址分配",
+      "B": "路由聚合",
+      "C": "机密性与完整性保护",
+      "D": "物理编码"
+    },
+    "answer": "C",
+    "analysis": "本题考查网络安全。正确要点：机密性与完整性保护。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "网络安全",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "cn-full-107",
+    "subject": "CN",
+    "chapter": "网络安全",
+    "chapterSlug": "网络安全",
+    "stem": "基础题：TLS通常提供？",
+    "options": {
+      "A": "路由聚合",
+      "B": "机密性与完整性保护",
+      "C": "地址分配",
+      "D": "物理编码"
+    },
+    "answer": "B",
+    "analysis": "本题考查网络安全。正确要点：机密性与完整性保护。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "网络安全",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "cn-full-108",
+    "subject": "CN",
+    "chapter": "网络安全",
+    "chapterSlug": "网络安全",
+    "stem": "综合题：TLS通常提供？",
+    "options": {
+      "A": "地址分配",
+      "B": "物理编码",
+      "C": "机密性与完整性保护",
+      "D": "路由聚合"
+    },
+    "answer": "C",
+    "analysis": "本题考查网络安全。正确要点：机密性与完整性保护。",
+    "difficulty": 3,
+    "knowledge_points": [
+      "网络安全",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "cn-full-109",
+    "subject": "CN",
+    "chapter": "网络性能",
+    "chapterSlug": "网络性能",
+    "stem": "RTT指的是？",
+    "options": {
+      "A": "往返时延",
+      "B": "吞吐量",
+      "C": "误码率",
+      "D": "单向时延"
+    },
+    "answer": "A",
+    "analysis": "本题考查网络性能。正确要点：往返时延。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "网络性能",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "cn-full-110",
+    "subject": "CN",
+    "chapter": "网络性能",
+    "chapterSlug": "网络性能",
+    "stem": "关于网络性能，RTT指的是？",
+    "options": {
+      "A": "单向时延",
+      "B": "误码率",
+      "C": "吞吐量",
+      "D": "往返时延"
+    },
+    "answer": "D",
+    "analysis": "本题考查网络性能。正确要点：往返时延。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "网络性能",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "cn-full-111",
+    "subject": "CN",
+    "chapter": "网络性能",
+    "chapterSlug": "网络性能",
+    "stem": "在CN课程中，RTT指的是？",
+    "options": {
+      "A": "误码率",
+      "B": "单向时延",
+      "C": "往返时延",
+      "D": "吞吐量"
+    },
+    "answer": "C",
+    "analysis": "本题考查网络性能。正确要点：往返时延。",
+    "difficulty": 3,
+    "knowledge_points": [
+      "网络性能",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "cn-full-112",
+    "subject": "CN",
+    "chapter": "网络性能",
+    "chapterSlug": "网络性能",
+    "stem": "下列说法中，RTT指的是？",
+    "options": {
+      "A": "单向时延",
+      "B": "往返时延",
+      "C": "误码率",
+      "D": "吞吐量"
+    },
+    "answer": "B",
+    "analysis": "本题考查网络性能。正确要点：往返时延。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "网络性能",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "cn-full-113",
+    "subject": "CN",
+    "chapter": "网络性能",
+    "chapterSlug": "网络性能",
+    "stem": "考点：RTT指的是？",
+    "options": {
+      "A": "往返时延",
+      "B": "单向时延",
+      "C": "误码率",
+      "D": "吞吐量"
+    },
+    "answer": "A",
+    "analysis": "本题考查网络性能。正确要点：往返时延。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "网络性能",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "cn-full-114",
+    "subject": "CN",
+    "chapter": "网络性能",
+    "chapterSlug": "网络性能",
+    "stem": "真题常考：RTT指的是？",
+    "options": {
+      "A": "单向时延",
+      "B": "误码率",
+      "C": "吞吐量",
+      "D": "往返时延"
+    },
+    "answer": "D",
+    "analysis": "本题考查网络性能。正确要点：往返时延。",
+    "difficulty": 3,
+    "knowledge_points": [
+      "网络性能",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "cn-full-115",
+    "subject": "CN",
+    "chapter": "网络性能",
+    "chapterSlug": "网络性能",
+    "stem": "请判断：RTT指的是？",
+    "options": {
+      "A": "往返时延",
+      "B": "单向时延",
+      "C": "吞吐量",
+      "D": "误码率"
+    },
+    "answer": "A",
+    "analysis": "本题考查网络性能。正确要点：往返时延。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "网络性能",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "cn-full-116",
+    "subject": "CN",
+    "chapter": "网络性能",
+    "chapterSlug": "网络性能",
+    "stem": "以下命题正确的是：RTT指的是？",
+    "options": {
+      "A": "误码率",
+      "B": "单向时延",
+      "C": "往返时延",
+      "D": "吞吐量"
+    },
+    "answer": "C",
+    "analysis": "本题考查网络性能。正确要点：往返时延。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "网络性能",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "cn-full-117",
+    "subject": "CN",
+    "chapter": "网络性能",
+    "chapterSlug": "网络性能",
+    "stem": "从原理角度看，RTT指的是？",
+    "options": {
+      "A": "往返时延",
+      "B": "误码率",
+      "C": "单向时延",
+      "D": "吞吐量"
+    },
+    "answer": "A",
+    "analysis": "本题考查网络性能。正确要点：往返时延。",
+    "difficulty": 3,
+    "knowledge_points": [
+      "网络性能",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "cn-full-118",
+    "subject": "CN",
+    "chapter": "网络性能",
+    "chapterSlug": "网络性能",
+    "stem": "在系统设计中，RTT指的是？",
+    "options": {
+      "A": "吞吐量",
+      "B": "往返时延",
+      "C": "单向时延",
+      "D": "误码率"
+    },
+    "answer": "B",
+    "analysis": "本题考查网络性能。正确要点：往返时延。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "网络性能",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "cn-full-119",
+    "subject": "CN",
+    "chapter": "网络性能",
+    "chapterSlug": "网络性能",
+    "stem": "基础题：RTT指的是？",
+    "options": {
+      "A": "单向时延",
+      "B": "往返时延",
+      "C": "吞吐量",
+      "D": "误码率"
+    },
+    "answer": "B",
+    "analysis": "本题考查网络性能。正确要点：往返时延。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "网络性能",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "cn-full-120",
+    "subject": "CN",
+    "chapter": "网络性能",
+    "chapterSlug": "网络性能",
+    "stem": "综合题：RTT指的是？",
+    "options": {
+      "A": "误码率",
+      "B": "单向时延",
+      "C": "吞吐量",
+      "D": "往返时延"
+    },
+    "answer": "D",
+    "analysis": "本题考查网络性能。正确要点：往返时延。",
+    "difficulty": 3,
+    "knowledge_points": [
+      "网络性能",
+      "核心概念"
+    ]
+  }
+]
