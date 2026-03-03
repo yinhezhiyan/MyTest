@@ -1,0 +1,795 @@
+[
+  {
+    "id": "application-layer-001",
+    "subject": "CN",
+    "chapter": "应用层",
+    "chapterSlug": "application-layer",
+    "stem": "HTTP 默认使用的传输层协议是？",
+    "options": {
+      "A": "UDP",
+      "B": "TCP",
+      "C": "ICMP",
+      "D": "ARP"
+    },
+    "answer": "B",
+    "analysis": "HTTP/1.1、2 运行于 TCP。",
+    "difficulty": 1,
+    "knowledge_points": [
+      "HTTP",
+      "TCP"
+    ]
+  },
+  {
+    "id": "transport-layer-001",
+    "subject": "CN",
+    "chapter": "传输层",
+    "chapterSlug": "transport-layer",
+    "stem": "TCP 三次握手的主要目的是？",
+    "options": {
+      "A": "加密传输",
+      "B": "同步序号并建立连接",
+      "C": "路由选择",
+      "D": "地址解析"
+    },
+    "answer": "B",
+    "analysis": "双方确认收发能力并同步初始序号。",
+    "difficulty": 1,
+    "knowledge_points": [
+      "TCP连接"
+    ]
+  },
+  {
+    "id": "transport-layer-002",
+    "subject": "CN",
+    "chapter": "传输层",
+    "chapterSlug": "transport-layer",
+    "stem": "UDP 的典型特点是？",
+    "options": {
+      "A": "面向连接",
+      "B": "可靠传输",
+      "C": "无连接、低开销",
+      "D": "按序确认"
+    },
+    "answer": "C",
+    "analysis": "UDP 不保证可靠与有序。",
+    "difficulty": 1,
+    "knowledge_points": [
+      "UDP"
+    ]
+  },
+  {
+    "id": "network-layer-001",
+    "subject": "CN",
+    "chapter": "网络层",
+    "chapterSlug": "network-layer",
+    "stem": "IP 协议工作在 OSI 的哪一层？",
+    "options": {
+      "A": "数据链路层",
+      "B": "网络层",
+      "C": "传输层",
+      "D": "会话层"
+    },
+    "answer": "B",
+    "analysis": "IP 负责寻址与转发。",
+    "difficulty": 1,
+    "knowledge_points": [
+      "IP"
+    ]
+  },
+  {
+    "id": "routing-001",
+    "subject": "CN",
+    "chapter": "路由算法",
+    "chapterSlug": "routing",
+    "stem": "OSPF 属于哪类路由协议？",
+    "options": {
+      "A": "距离矢量",
+      "B": "链路状态",
+      "C": "路径矢量",
+      "D": "静态路由"
+    },
+    "answer": "B",
+    "analysis": "OSPF 基于链路状态和 Dijkstra。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "OSPF"
+    ]
+  },
+  {
+    "id": "datalink-001",
+    "subject": "CN",
+    "chapter": "数据链路层",
+    "chapterSlug": "datalink",
+    "stem": "以太网 MAC 地址长度通常为？",
+    "options": {
+      "A": "32 位",
+      "B": "48 位",
+      "C": "64 位",
+      "D": "128 位"
+    },
+    "answer": "B",
+    "analysis": "常见 MAC 地址为 48bit。",
+    "difficulty": 1,
+    "knowledge_points": [
+      "MAC"
+    ]
+  },
+  {
+    "id": "physical-001",
+    "subject": "CN",
+    "chapter": "物理层",
+    "chapterSlug": "physical",
+    "stem": "奈奎斯特定理主要用于描述？",
+    "options": {
+      "A": "无噪声信道最高码元速率",
+      "B": "有噪信道最大容量",
+      "C": "误码率",
+      "D": "路由收敛"
+    },
+    "answer": "A",
+    "analysis": "无噪声信道下码元速率上限。",
+    "difficulty": 3,
+    "knowledge_points": [
+      "奈奎斯特"
+    ]
+  },
+  {
+    "id": "security-001",
+    "subject": "CN",
+    "chapter": "网络安全",
+    "chapterSlug": "security",
+    "stem": "TLS 的主要作用是？",
+    "options": {
+      "A": "网络地址转换",
+      "B": "提供传输层加密与认证",
+      "C": "提升带宽",
+      "D": "替代DNS"
+    },
+    "answer": "B",
+    "analysis": "TLS 提供机密性和完整性。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "TLS"
+    ]
+  },
+  {
+    "id": "cn-bank-009",
+    "subject": "CN",
+    "chapter": "物理层",
+    "chapterSlug": "物理层",
+    "stem": "双绞线中常见的抗干扰方式是？",
+    "options": {
+      "A": "同轴屏蔽",
+      "B": "绞合传输",
+      "C": "仅提高电压",
+      "D": "只用单端信号"
+    },
+    "answer": "B",
+    "analysis": "绞合可抵消部分电磁干扰。",
+    "difficulty": 3,
+    "knowledge_points": [
+      "物理层",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "cn-bank-010",
+    "subject": "CN",
+    "chapter": "物理层",
+    "chapterSlug": "物理层",
+    "stem": "信道带宽增大而噪声不变时，理论容量通常？",
+    "options": {
+      "A": "降低",
+      "B": "不变",
+      "C": "提高",
+      "D": "先增后减"
+    },
+    "answer": "C",
+    "analysis": "香农公式显示容量随带宽增大。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "物理层",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "cn-bank-011",
+    "subject": "CN",
+    "chapter": "数据链路层",
+    "chapterSlug": "数据链路层",
+    "stem": "以太网 MAC 地址长度通常为？",
+    "options": {
+      "A": "32 位",
+      "B": "48 位",
+      "C": "64 位",
+      "D": "128 位"
+    },
+    "answer": "B",
+    "analysis": "标准 MAC 地址为 6 字节。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "数据链路层",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "cn-bank-012",
+    "subject": "CN",
+    "chapter": "数据链路层",
+    "chapterSlug": "数据链路层",
+    "stem": "CSMA/CD 工作于哪类网络？",
+    "options": {
+      "A": "无线局域网",
+      "B": "共享介质有线以太网",
+      "C": "广域网 MPLS",
+      "D": "PPP 点到点"
+    },
+    "answer": "B",
+    "analysis": "碰撞检测用于传统共享以太网。",
+    "difficulty": 3,
+    "knowledge_points": [
+      "数据链路层",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "cn-bank-013",
+    "subject": "CN",
+    "chapter": "网络层",
+    "chapterSlug": "网络层",
+    "stem": "IPv4 分片与重组通常由谁完成重组？",
+    "options": {
+      "A": "中间路由器",
+      "B": "源主机",
+      "C": "目的主机",
+      "D": "交换机"
+    },
+    "answer": "C",
+    "analysis": "目的主机按标识重组。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "网络层",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "cn-bank-014",
+    "subject": "CN",
+    "chapter": "网络层",
+    "chapterSlug": "网络层",
+    "stem": "路由器转发分组主要依据？",
+    "options": {
+      "A": "源端口",
+      "B": "目的 IP 地址",
+      "C": "MAC 地址前缀",
+      "D": "TTL 奇偶"
+    },
+    "answer": "B",
+    "analysis": "最长前缀匹配目的网络。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "网络层",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "cn-bank-015",
+    "subject": "CN",
+    "chapter": "传输层",
+    "chapterSlug": "传输层",
+    "stem": "TCP 提供可靠传输主要依赖？",
+    "options": {
+      "A": "广播",
+      "B": "确认、重传与序号",
+      "C": "ARP",
+      "D": "NAT"
+    },
+    "answer": "B",
+    "analysis": "ACK+重传机制保障可靠性。",
+    "difficulty": 3,
+    "knowledge_points": [
+      "传输层",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "cn-bank-016",
+    "subject": "CN",
+    "chapter": "传输层",
+    "chapterSlug": "传输层",
+    "stem": "UDP 适合下列哪种应用？",
+    "options": {
+      "A": "必须严格可靠传输文件",
+      "B": "实时语音视频",
+      "C": "数据库事务",
+      "D": "远程磁盘镜像"
+    },
+    "answer": "B",
+    "analysis": "实时性优先，容忍少量丢包。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "传输层",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "cn-bank-017",
+    "subject": "CN",
+    "chapter": "应用层",
+    "chapterSlug": "应用层",
+    "stem": "DNS 的主要作用是？",
+    "options": {
+      "A": "分配 MAC 地址",
+      "B": "域名解析为 IP",
+      "C": "网页渲染",
+      "D": "链路加密"
+    },
+    "answer": "B",
+    "analysis": "名称到地址映射服务。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "应用层",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "cn-bank-018",
+    "subject": "CN",
+    "chapter": "应用层",
+    "chapterSlug": "应用层",
+    "stem": "SMTP 主要用于？",
+    "options": {
+      "A": "网页传输",
+      "B": "文件共享",
+      "C": "邮件发送",
+      "D": "时间同步"
+    },
+    "answer": "C",
+    "analysis": "邮件提交与转发协议。",
+    "difficulty": 3,
+    "knowledge_points": [
+      "应用层",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "cn-bank-019",
+    "subject": "CN",
+    "chapter": "网络安全",
+    "chapterSlug": "网络安全",
+    "stem": "TLS 在传输层之上主要提供？",
+    "options": {
+      "A": "路由选择",
+      "B": "机密性与完整性保护",
+      "C": "地址分配",
+      "D": "拥塞避免"
+    },
+    "answer": "B",
+    "analysis": "通过握手与加密保障安全。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "网络安全",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "cn-bank-020",
+    "subject": "CN",
+    "chapter": "网络安全",
+    "chapterSlug": "网络安全",
+    "stem": "防火墙最常见的基础功能是？",
+    "options": {
+      "A": "CPU 超频",
+      "B": "访问控制过滤",
+      "C": "数据库备份",
+      "D": "磁盘压缩"
+    },
+    "answer": "B",
+    "analysis": "按策略放行/阻断流量。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "网络安全",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "cn-bank-021",
+    "subject": "CN",
+    "chapter": "网络性能",
+    "chapterSlug": "网络性能",
+    "stem": "RTT 表示？",
+    "options": {
+      "A": "单向传播时延",
+      "B": "往返时延",
+      "C": "吞吐量",
+      "D": "误码率"
+    },
+    "answer": "B",
+    "analysis": "Round Trip Time。",
+    "difficulty": 3,
+    "knowledge_points": [
+      "网络性能",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "cn-bank-022",
+    "subject": "CN",
+    "chapter": "网络性能",
+    "chapterSlug": "网络性能",
+    "stem": "拥塞控制的目标之一是？",
+    "options": {
+      "A": "让链路长期空闲",
+      "B": "避免网络进入拥塞崩溃",
+      "C": "固定窗口不变",
+      "D": "禁用重传"
+    },
+    "answer": "B",
+    "analysis": "控制发送速率维持稳定。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "网络性能",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "cn-bank-023",
+    "subject": "CN",
+    "chapter": "物理层",
+    "chapterSlug": "物理层",
+    "stem": "双绞线中常见的抗干扰方式是？（扩展23）",
+    "options": {
+      "A": "同轴屏蔽",
+      "B": "绞合传输",
+      "C": "仅提高电压",
+      "D": "只用单端信号"
+    },
+    "answer": "B",
+    "analysis": "绞合可抵消部分电磁干扰。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "物理层",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "cn-bank-024",
+    "subject": "CN",
+    "chapter": "物理层",
+    "chapterSlug": "物理层",
+    "stem": "信道带宽增大而噪声不变时，理论容量通常？（扩展24）",
+    "options": {
+      "A": "降低",
+      "B": "不变",
+      "C": "提高",
+      "D": "先增后减"
+    },
+    "answer": "C",
+    "analysis": "香农公式显示容量随带宽增大。",
+    "difficulty": 3,
+    "knowledge_points": [
+      "物理层",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "cn-bank-025",
+    "subject": "CN",
+    "chapter": "数据链路层",
+    "chapterSlug": "数据链路层",
+    "stem": "以太网 MAC 地址长度通常为？（扩展25）",
+    "options": {
+      "A": "32 位",
+      "B": "48 位",
+      "C": "64 位",
+      "D": "128 位"
+    },
+    "answer": "B",
+    "analysis": "标准 MAC 地址为 6 字节。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "数据链路层",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "cn-bank-026",
+    "subject": "CN",
+    "chapter": "数据链路层",
+    "chapterSlug": "数据链路层",
+    "stem": "CSMA/CD 工作于哪类网络？（扩展26）",
+    "options": {
+      "A": "无线局域网",
+      "B": "共享介质有线以太网",
+      "C": "广域网 MPLS",
+      "D": "PPP 点到点"
+    },
+    "answer": "B",
+    "analysis": "碰撞检测用于传统共享以太网。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "数据链路层",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "cn-bank-027",
+    "subject": "CN",
+    "chapter": "网络层",
+    "chapterSlug": "网络层",
+    "stem": "IPv4 分片与重组通常由谁完成重组？（扩展27）",
+    "options": {
+      "A": "中间路由器",
+      "B": "源主机",
+      "C": "目的主机",
+      "D": "交换机"
+    },
+    "answer": "C",
+    "analysis": "目的主机按标识重组。",
+    "difficulty": 3,
+    "knowledge_points": [
+      "网络层",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "cn-bank-028",
+    "subject": "CN",
+    "chapter": "网络层",
+    "chapterSlug": "网络层",
+    "stem": "路由器转发分组主要依据？（扩展28）",
+    "options": {
+      "A": "源端口",
+      "B": "目的 IP 地址",
+      "C": "MAC 地址前缀",
+      "D": "TTL 奇偶"
+    },
+    "answer": "B",
+    "analysis": "最长前缀匹配目的网络。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "网络层",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "cn-bank-029",
+    "subject": "CN",
+    "chapter": "传输层",
+    "chapterSlug": "传输层",
+    "stem": "TCP 提供可靠传输主要依赖？（扩展29）",
+    "options": {
+      "A": "广播",
+      "B": "确认、重传与序号",
+      "C": "ARP",
+      "D": "NAT"
+    },
+    "answer": "B",
+    "analysis": "ACK+重传机制保障可靠性。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "传输层",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "cn-bank-030",
+    "subject": "CN",
+    "chapter": "传输层",
+    "chapterSlug": "传输层",
+    "stem": "UDP 适合下列哪种应用？（扩展30）",
+    "options": {
+      "A": "必须严格可靠传输文件",
+      "B": "实时语音视频",
+      "C": "数据库事务",
+      "D": "远程磁盘镜像"
+    },
+    "answer": "B",
+    "analysis": "实时性优先，容忍少量丢包。",
+    "difficulty": 3,
+    "knowledge_points": [
+      "传输层",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "cn-bank-031",
+    "subject": "CN",
+    "chapter": "应用层",
+    "chapterSlug": "应用层",
+    "stem": "DNS 的主要作用是？（扩展31）",
+    "options": {
+      "A": "分配 MAC 地址",
+      "B": "域名解析为 IP",
+      "C": "网页渲染",
+      "D": "链路加密"
+    },
+    "answer": "B",
+    "analysis": "名称到地址映射服务。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "应用层",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "cn-bank-032",
+    "subject": "CN",
+    "chapter": "应用层",
+    "chapterSlug": "应用层",
+    "stem": "SMTP 主要用于？（扩展32）",
+    "options": {
+      "A": "网页传输",
+      "B": "文件共享",
+      "C": "邮件发送",
+      "D": "时间同步"
+    },
+    "answer": "C",
+    "analysis": "邮件提交与转发协议。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "应用层",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "cn-bank-033",
+    "subject": "CN",
+    "chapter": "网络安全",
+    "chapterSlug": "网络安全",
+    "stem": "TLS 在传输层之上主要提供？（扩展33）",
+    "options": {
+      "A": "路由选择",
+      "B": "机密性与完整性保护",
+      "C": "地址分配",
+      "D": "拥塞避免"
+    },
+    "answer": "B",
+    "analysis": "通过握手与加密保障安全。",
+    "difficulty": 3,
+    "knowledge_points": [
+      "网络安全",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "cn-bank-034",
+    "subject": "CN",
+    "chapter": "网络安全",
+    "chapterSlug": "网络安全",
+    "stem": "防火墙最常见的基础功能是？（扩展34）",
+    "options": {
+      "A": "CPU 超频",
+      "B": "访问控制过滤",
+      "C": "数据库备份",
+      "D": "磁盘压缩"
+    },
+    "answer": "B",
+    "analysis": "按策略放行/阻断流量。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "网络安全",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "cn-bank-035",
+    "subject": "CN",
+    "chapter": "网络性能",
+    "chapterSlug": "网络性能",
+    "stem": "RTT 表示？（扩展35）",
+    "options": {
+      "A": "单向传播时延",
+      "B": "往返时延",
+      "C": "吞吐量",
+      "D": "误码率"
+    },
+    "answer": "B",
+    "analysis": "Round Trip Time。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "网络性能",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "cn-bank-036",
+    "subject": "CN",
+    "chapter": "网络性能",
+    "chapterSlug": "网络性能",
+    "stem": "拥塞控制的目标之一是？（扩展36）",
+    "options": {
+      "A": "让链路长期空闲",
+      "B": "避免网络进入拥塞崩溃",
+      "C": "固定窗口不变",
+      "D": "禁用重传"
+    },
+    "answer": "B",
+    "analysis": "控制发送速率维持稳定。",
+    "difficulty": 3,
+    "knowledge_points": [
+      "网络性能",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "cn-bank-037",
+    "subject": "CN",
+    "chapter": "物理层",
+    "chapterSlug": "物理层",
+    "stem": "双绞线中常见的抗干扰方式是？（扩展37）",
+    "options": {
+      "A": "同轴屏蔽",
+      "B": "绞合传输",
+      "C": "仅提高电压",
+      "D": "只用单端信号"
+    },
+    "answer": "B",
+    "analysis": "绞合可抵消部分电磁干扰。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "物理层",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "cn-bank-038",
+    "subject": "CN",
+    "chapter": "物理层",
+    "chapterSlug": "物理层",
+    "stem": "信道带宽增大而噪声不变时，理论容量通常？（扩展38）",
+    "options": {
+      "A": "降低",
+      "B": "不变",
+      "C": "提高",
+      "D": "先增后减"
+    },
+    "answer": "C",
+    "analysis": "香农公式显示容量随带宽增大。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "物理层",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "cn-bank-039",
+    "subject": "CN",
+    "chapter": "数据链路层",
+    "chapterSlug": "数据链路层",
+    "stem": "以太网 MAC 地址长度通常为？（扩展39）",
+    "options": {
+      "A": "32 位",
+      "B": "48 位",
+      "C": "64 位",
+      "D": "128 位"
+    },
+    "answer": "B",
+    "analysis": "标准 MAC 地址为 6 字节。",
+    "difficulty": 3,
+    "knowledge_points": [
+      "数据链路层",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "cn-bank-040",
+    "subject": "CN",
+    "chapter": "数据链路层",
+    "chapterSlug": "数据链路层",
+    "stem": "CSMA/CD 工作于哪类网络？（扩展40）",
+    "options": {
+      "A": "无线局域网",
+      "B": "共享介质有线以太网",
+      "C": "广域网 MPLS",
+      "D": "PPP 点到点"
+    },
+    "answer": "B",
+    "analysis": "碰撞检测用于传统共享以太网。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "数据链路层",
+      "核心概念"
+    ]
+  }
+]

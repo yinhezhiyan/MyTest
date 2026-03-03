@@ -1,0 +1,799 @@
+[
+  {
+    "id": "linear-list-001",
+    "subject": "DS",
+    "chapter": "线性表",
+    "chapterSlug": "linear-list",
+    "stem": "顺序表中，在第 i 个位置插入一个元素的平均时间复杂度是？",
+    "options": {
+      "A": "O(1)",
+      "B": "O(log n)",
+      "C": "O(n)",
+      "D": "O(n log n)"
+    },
+    "answer": "C",
+    "analysis": "需要移动后续元素，平均移动量与 n 同阶。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "顺序表",
+      "时间复杂度"
+    ]
+  },
+  {
+    "id": "stack-queue-001",
+    "subject": "DS",
+    "chapter": "栈与队列",
+    "chapterSlug": "stack-queue",
+    "stem": "栈的基本操作遵循哪种原则？",
+    "options": {
+      "A": "FIFO",
+      "B": "LIFO",
+      "C": "随机访问",
+      "D": "双端访问"
+    },
+    "answer": "B",
+    "analysis": "栈是后进先出结构。",
+    "difficulty": 1,
+    "knowledge_points": [
+      "栈",
+      "基本概念"
+    ]
+  },
+  {
+    "id": "stack-queue-002",
+    "subject": "DS",
+    "chapter": "栈与队列",
+    "chapterSlug": "stack-queue",
+    "stem": "用两个栈实现一个队列时，出队操作最坏时间复杂度是？",
+    "options": {
+      "A": "O(1)",
+      "B": "O(log n)",
+      "C": "O(n)",
+      "D": "O(n^2)"
+    },
+    "answer": "C",
+    "analysis": "当需要整体搬运元素时为 O(n)。",
+    "difficulty": 3,
+    "knowledge_points": [
+      "队列",
+      "栈应用"
+    ]
+  },
+  {
+    "id": "tree-001",
+    "subject": "DS",
+    "chapter": "树与二叉树",
+    "chapterSlug": "tree",
+    "stem": "一棵有 n 个结点的二叉树，其空指针域个数为？",
+    "options": {
+      "A": "n-1",
+      "B": "n",
+      "C": "n+1",
+      "D": "2n"
+    },
+    "answer": "C",
+    "analysis": "二叉树共有 2n 个指针域，非空边 n-1，故空指针 n+1。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "二叉树性质"
+    ]
+  },
+  {
+    "id": "graph-001",
+    "subject": "DS",
+    "chapter": "图",
+    "chapterSlug": "graph",
+    "stem": "无权图中求单源最短路径应优先使用？",
+    "options": {
+      "A": "DFS",
+      "B": "BFS",
+      "C": "Prim",
+      "D": "Floyd"
+    },
+    "answer": "B",
+    "analysis": "无权图边权相等，BFS 按层扩展可得最短路径。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "图遍历",
+      "最短路径"
+    ]
+  },
+  {
+    "id": "sort-001",
+    "subject": "DS",
+    "chapter": "排序",
+    "chapterSlug": "sort",
+    "stem": "下列排序算法中稳定的是？",
+    "options": {
+      "A": "快速排序",
+      "B": "选择排序",
+      "C": "堆排序",
+      "D": "归并排序"
+    },
+    "answer": "D",
+    "analysis": "归并排序稳定；其余常规实现不稳定。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "排序稳定性"
+    ]
+  },
+  {
+    "id": "search-001",
+    "subject": "DS",
+    "chapter": "查找",
+    "chapterSlug": "search",
+    "stem": "折半查找要求线性表必须？",
+    "options": {
+      "A": "链式存储",
+      "B": "有序",
+      "C": "元素互异",
+      "D": "长度为 2 的幂"
+    },
+    "answer": "B",
+    "analysis": "核心前提是有序。",
+    "difficulty": 1,
+    "knowledge_points": [
+      "折半查找"
+    ]
+  },
+  {
+    "id": "hash-001",
+    "subject": "DS",
+    "chapter": "散列表",
+    "chapterSlug": "hash",
+    "stem": "处理哈希冲突的开放定址法中，查找失败的探测序列长度通常与什么相关？",
+    "options": {
+      "A": "关键字值大小",
+      "B": "装填因子",
+      "C": "散列函数数量",
+      "D": "桶排序轮数"
+    },
+    "answer": "B",
+    "analysis": "装填因子越高，平均探测长度越大。",
+    "difficulty": 3,
+    "knowledge_points": [
+      "哈希表",
+      "冲突处理"
+    ]
+  },
+  {
+    "id": "ds-bank-009",
+    "subject": "DS",
+    "chapter": "线性表",
+    "chapterSlug": "线性表",
+    "stem": "顺序表中删除第 i 个元素，平均需要移动的元素个数约为？",
+    "options": {
+      "A": "i-1",
+      "B": "n-i",
+      "C": "(n-i)/2",
+      "D": "n"
+    },
+    "answer": "C",
+    "analysis": "删除后需前移后续元素，平均移动量约为 (n-i)/2。",
+    "difficulty": 3,
+    "knowledge_points": [
+      "线性表",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "ds-bank-010",
+    "subject": "DS",
+    "chapter": "线性表",
+    "chapterSlug": "线性表",
+    "stem": "单链表中在已知结点 p 后插入结点 s 的时间复杂度是？",
+    "options": {
+      "A": "O(1)",
+      "B": "O(log n)",
+      "C": "O(n)",
+      "D": "O(n log n)"
+    },
+    "answer": "A",
+    "analysis": "只需修改常数次指针。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "线性表",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "ds-bank-011",
+    "subject": "DS",
+    "chapter": "栈与队列",
+    "chapterSlug": "栈与队列",
+    "stem": "表达式求值中用于处理运算符优先级的典型结构是？",
+    "options": {
+      "A": "队列",
+      "B": "栈",
+      "C": "并查集",
+      "D": "哈希表"
+    },
+    "answer": "B",
+    "analysis": "运算符栈用于比较优先级。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "栈与队列",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "ds-bank-012",
+    "subject": "DS",
+    "chapter": "栈与队列",
+    "chapterSlug": "栈与队列",
+    "stem": "循环队列判满条件（保留一个空位）通常是？",
+    "options": {
+      "A": "front==rear",
+      "B": "(rear+1)%M==front",
+      "C": "rear==M-1",
+      "D": "front==0"
+    },
+    "answer": "B",
+    "analysis": "预留空位时 rear 下一位等于 front 表示满。",
+    "difficulty": 3,
+    "knowledge_points": [
+      "栈与队列",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "ds-bank-013",
+    "subject": "DS",
+    "chapter": "树与二叉树",
+    "chapterSlug": "树与二叉树",
+    "stem": "已知先序和中序遍历，能否唯一确定一棵二叉树？",
+    "options": {
+      "A": "总是能",
+      "B": "总是不能",
+      "C": "仅满二叉树能",
+      "D": "仅完全二叉树能"
+    },
+    "answer": "A",
+    "analysis": "先序确定根，中序划分左右子树。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "树与二叉树",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "ds-bank-014",
+    "subject": "DS",
+    "chapter": "树与二叉树",
+    "chapterSlug": "树与二叉树",
+    "stem": "二叉排序树中，中序遍历序列一定是？",
+    "options": {
+      "A": "逆序",
+      "B": "有序",
+      "C": "层序",
+      "D": "随机"
+    },
+    "answer": "B",
+    "analysis": "BST 的中序遍历单调递增。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "树与二叉树",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "ds-bank-015",
+    "subject": "DS",
+    "chapter": "图",
+    "chapterSlug": "图",
+    "stem": "对带权非负图求单源最短路径，通常使用？",
+    "options": {
+      "A": "Kruskal",
+      "B": "Prim",
+      "C": "Dijkstra",
+      "D": "拓扑排序"
+    },
+    "answer": "C",
+    "analysis": "Dijkstra 适用非负边权。",
+    "difficulty": 3,
+    "knowledge_points": [
+      "图",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "ds-bank-016",
+    "subject": "DS",
+    "chapter": "图",
+    "chapterSlug": "图",
+    "stem": "判断无向图是否连通，最直接的方法是？",
+    "options": {
+      "A": "任一点 DFS/BFS 后看是否全访问",
+      "B": "只看边数",
+      "C": "只看顶点度",
+      "D": "求最小生成树权值"
+    },
+    "answer": "A",
+    "analysis": "一次遍历即可判断连通性。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "图",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "ds-bank-017",
+    "subject": "DS",
+    "chapter": "查找",
+    "chapterSlug": "查找",
+    "stem": "二叉排序树平均查找长度与什么最相关？",
+    "options": {
+      "A": "结点值大小",
+      "B": "树高",
+      "C": "存储方式",
+      "D": "遍历顺序"
+    },
+    "answer": "B",
+    "analysis": "路径长度由树高决定。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "查找",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "ds-bank-018",
+    "subject": "DS",
+    "chapter": "查找",
+    "chapterSlug": "查找",
+    "stem": "散列表装填因子 α 增大时，查找性能通常？",
+    "options": {
+      "A": "变好",
+      "B": "不变",
+      "C": "变差",
+      "D": "先差后好"
+    },
+    "answer": "C",
+    "analysis": "冲突概率上升，探测长度增加。",
+    "difficulty": 3,
+    "knowledge_points": [
+      "查找",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "ds-bank-019",
+    "subject": "DS",
+    "chapter": "排序",
+    "chapterSlug": "排序",
+    "stem": "快速排序平均时间复杂度是？",
+    "options": {
+      "A": "O(n)",
+      "B": "O(n log n)",
+      "C": "O(log n)",
+      "D": "O(n^2)"
+    },
+    "answer": "B",
+    "analysis": "平均分治深度为 log n。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "排序",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "ds-bank-020",
+    "subject": "DS",
+    "chapter": "排序",
+    "chapterSlug": "排序",
+    "stem": "堆排序属于哪类排序思想？",
+    "options": {
+      "A": "交换",
+      "B": "选择",
+      "C": "插入",
+      "D": "归并"
+    },
+    "answer": "B",
+    "analysis": "每轮选择堆顶最大/最小元素。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "排序",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "ds-bank-021",
+    "subject": "DS",
+    "chapter": "散列表",
+    "chapterSlug": "散列表",
+    "stem": "拉链法处理冲突时，桶中元素通常组织为？",
+    "options": {
+      "A": "链表",
+      "B": "栈",
+      "C": "数组",
+      "D": "队列"
+    },
+    "answer": "A",
+    "analysis": "同义词结点挂在同一链上。",
+    "difficulty": 3,
+    "knowledge_points": [
+      "散列表",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "ds-bank-022",
+    "subject": "DS",
+    "chapter": "散列表",
+    "chapterSlug": "散列表",
+    "stem": "开放定址法删除元素时常用“删除标记”主要为了？",
+    "options": {
+      "A": "减少内存",
+      "B": "保持探测链不断裂",
+      "C": "加快插入",
+      "D": "防止重复键"
+    },
+    "answer": "B",
+    "analysis": "直接置空会导致后续查找提前失败。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "散列表",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "ds-bank-023",
+    "subject": "DS",
+    "chapter": "线性表",
+    "chapterSlug": "线性表",
+    "stem": "顺序表中删除第 i 个元素，平均需要移动的元素个数约为？（扩展23）",
+    "options": {
+      "A": "i-1",
+      "B": "n-i",
+      "C": "(n-i)/2",
+      "D": "n"
+    },
+    "answer": "C",
+    "analysis": "删除后需前移后续元素，平均移动量约为 (n-i)/2。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "线性表",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "ds-bank-024",
+    "subject": "DS",
+    "chapter": "线性表",
+    "chapterSlug": "线性表",
+    "stem": "单链表中在已知结点 p 后插入结点 s 的时间复杂度是？（扩展24）",
+    "options": {
+      "A": "O(1)",
+      "B": "O(log n)",
+      "C": "O(n)",
+      "D": "O(n log n)"
+    },
+    "answer": "A",
+    "analysis": "只需修改常数次指针。",
+    "difficulty": 3,
+    "knowledge_points": [
+      "线性表",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "ds-bank-025",
+    "subject": "DS",
+    "chapter": "栈与队列",
+    "chapterSlug": "栈与队列",
+    "stem": "表达式求值中用于处理运算符优先级的典型结构是？（扩展25）",
+    "options": {
+      "A": "队列",
+      "B": "栈",
+      "C": "并查集",
+      "D": "哈希表"
+    },
+    "answer": "B",
+    "analysis": "运算符栈用于比较优先级。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "栈与队列",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "ds-bank-026",
+    "subject": "DS",
+    "chapter": "栈与队列",
+    "chapterSlug": "栈与队列",
+    "stem": "循环队列判满条件（保留一个空位）通常是？（扩展26）",
+    "options": {
+      "A": "front==rear",
+      "B": "(rear+1)%M==front",
+      "C": "rear==M-1",
+      "D": "front==0"
+    },
+    "answer": "B",
+    "analysis": "预留空位时 rear 下一位等于 front 表示满。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "栈与队列",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "ds-bank-027",
+    "subject": "DS",
+    "chapter": "树与二叉树",
+    "chapterSlug": "树与二叉树",
+    "stem": "已知先序和中序遍历，能否唯一确定一棵二叉树？（扩展27）",
+    "options": {
+      "A": "总是能",
+      "B": "总是不能",
+      "C": "仅满二叉树能",
+      "D": "仅完全二叉树能"
+    },
+    "answer": "A",
+    "analysis": "先序确定根，中序划分左右子树。",
+    "difficulty": 3,
+    "knowledge_points": [
+      "树与二叉树",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "ds-bank-028",
+    "subject": "DS",
+    "chapter": "树与二叉树",
+    "chapterSlug": "树与二叉树",
+    "stem": "二叉排序树中，中序遍历序列一定是？（扩展28）",
+    "options": {
+      "A": "逆序",
+      "B": "有序",
+      "C": "层序",
+      "D": "随机"
+    },
+    "answer": "B",
+    "analysis": "BST 的中序遍历单调递增。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "树与二叉树",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "ds-bank-029",
+    "subject": "DS",
+    "chapter": "图",
+    "chapterSlug": "图",
+    "stem": "对带权非负图求单源最短路径，通常使用？（扩展29）",
+    "options": {
+      "A": "Kruskal",
+      "B": "Prim",
+      "C": "Dijkstra",
+      "D": "拓扑排序"
+    },
+    "answer": "C",
+    "analysis": "Dijkstra 适用非负边权。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "图",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "ds-bank-030",
+    "subject": "DS",
+    "chapter": "图",
+    "chapterSlug": "图",
+    "stem": "判断无向图是否连通，最直接的方法是？（扩展30）",
+    "options": {
+      "A": "任一点 DFS/BFS 后看是否全访问",
+      "B": "只看边数",
+      "C": "只看顶点度",
+      "D": "求最小生成树权值"
+    },
+    "answer": "A",
+    "analysis": "一次遍历即可判断连通性。",
+    "difficulty": 3,
+    "knowledge_points": [
+      "图",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "ds-bank-031",
+    "subject": "DS",
+    "chapter": "查找",
+    "chapterSlug": "查找",
+    "stem": "二叉排序树平均查找长度与什么最相关？（扩展31）",
+    "options": {
+      "A": "结点值大小",
+      "B": "树高",
+      "C": "存储方式",
+      "D": "遍历顺序"
+    },
+    "answer": "B",
+    "analysis": "路径长度由树高决定。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "查找",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "ds-bank-032",
+    "subject": "DS",
+    "chapter": "查找",
+    "chapterSlug": "查找",
+    "stem": "散列表装填因子 α 增大时，查找性能通常？（扩展32）",
+    "options": {
+      "A": "变好",
+      "B": "不变",
+      "C": "变差",
+      "D": "先差后好"
+    },
+    "answer": "C",
+    "analysis": "冲突概率上升，探测长度增加。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "查找",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "ds-bank-033",
+    "subject": "DS",
+    "chapter": "排序",
+    "chapterSlug": "排序",
+    "stem": "快速排序平均时间复杂度是？（扩展33）",
+    "options": {
+      "A": "O(n)",
+      "B": "O(n log n)",
+      "C": "O(log n)",
+      "D": "O(n^2)"
+    },
+    "answer": "B",
+    "analysis": "平均分治深度为 log n。",
+    "difficulty": 3,
+    "knowledge_points": [
+      "排序",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "ds-bank-034",
+    "subject": "DS",
+    "chapter": "排序",
+    "chapterSlug": "排序",
+    "stem": "堆排序属于哪类排序思想？（扩展34）",
+    "options": {
+      "A": "交换",
+      "B": "选择",
+      "C": "插入",
+      "D": "归并"
+    },
+    "answer": "B",
+    "analysis": "每轮选择堆顶最大/最小元素。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "排序",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "ds-bank-035",
+    "subject": "DS",
+    "chapter": "散列表",
+    "chapterSlug": "散列表",
+    "stem": "拉链法处理冲突时，桶中元素通常组织为？（扩展35）",
+    "options": {
+      "A": "链表",
+      "B": "栈",
+      "C": "数组",
+      "D": "队列"
+    },
+    "answer": "A",
+    "analysis": "同义词结点挂在同一链上。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "散列表",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "ds-bank-036",
+    "subject": "DS",
+    "chapter": "散列表",
+    "chapterSlug": "散列表",
+    "stem": "开放定址法删除元素时常用“删除标记”主要为了？（扩展36）",
+    "options": {
+      "A": "减少内存",
+      "B": "保持探测链不断裂",
+      "C": "加快插入",
+      "D": "防止重复键"
+    },
+    "answer": "B",
+    "analysis": "直接置空会导致后续查找提前失败。",
+    "difficulty": 3,
+    "knowledge_points": [
+      "散列表",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "ds-bank-037",
+    "subject": "DS",
+    "chapter": "线性表",
+    "chapterSlug": "线性表",
+    "stem": "顺序表中删除第 i 个元素，平均需要移动的元素个数约为？（扩展37）",
+    "options": {
+      "A": "i-1",
+      "B": "n-i",
+      "C": "(n-i)/2",
+      "D": "n"
+    },
+    "answer": "C",
+    "analysis": "删除后需前移后续元素，平均移动量约为 (n-i)/2。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "线性表",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "ds-bank-038",
+    "subject": "DS",
+    "chapter": "线性表",
+    "chapterSlug": "线性表",
+    "stem": "单链表中在已知结点 p 后插入结点 s 的时间复杂度是？（扩展38）",
+    "options": {
+      "A": "O(1)",
+      "B": "O(log n)",
+      "C": "O(n)",
+      "D": "O(n log n)"
+    },
+    "answer": "A",
+    "analysis": "只需修改常数次指针。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "线性表",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "ds-bank-039",
+    "subject": "DS",
+    "chapter": "栈与队列",
+    "chapterSlug": "栈与队列",
+    "stem": "表达式求值中用于处理运算符优先级的典型结构是？（扩展39）",
+    "options": {
+      "A": "队列",
+      "B": "栈",
+      "C": "并查集",
+      "D": "哈希表"
+    },
+    "answer": "B",
+    "analysis": "运算符栈用于比较优先级。",
+    "difficulty": 3,
+    "knowledge_points": [
+      "栈与队列",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "ds-bank-040",
+    "subject": "DS",
+    "chapter": "栈与队列",
+    "chapterSlug": "栈与队列",
+    "stem": "循环队列判满条件（保留一个空位）通常是？（扩展40）",
+    "options": {
+      "A": "front==rear",
+      "B": "(rear+1)%M==front",
+      "C": "rear==M-1",
+      "D": "front==0"
+    },
+    "answer": "B",
+    "analysis": "预留空位时 rear 下一位等于 front 表示满。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "栈与队列",
+      "核心概念"
+    ]
+  }
+]

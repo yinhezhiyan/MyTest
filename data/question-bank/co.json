@@ -1,0 +1,795 @@
+[
+  {
+    "id": "data-representation-001",
+    "subject": "CO",
+    "chapter": "数据表示",
+    "chapterSlug": "data-representation",
+    "stem": "二进制补码表示中，-x 的求法是？",
+    "options": {
+      "A": "按位取反",
+      "B": "按位取反加 1",
+      "C": "加 1",
+      "D": "减 1"
+    },
+    "answer": "B",
+    "analysis": "补码定义：反码+1。",
+    "difficulty": 1,
+    "knowledge_points": [
+      "补码"
+    ]
+  },
+  {
+    "id": "cpu-001",
+    "subject": "CO",
+    "chapter": "CPU",
+    "chapterSlug": "cpu",
+    "stem": "控制器的主要功能是？",
+    "options": {
+      "A": "执行算术运算",
+      "B": "产生控制信号协调各部件",
+      "C": "保存用户程序",
+      "D": "管理磁盘文件"
+    },
+    "answer": "B",
+    "analysis": "控制器负责取指、译码与控制。",
+    "difficulty": 1,
+    "knowledge_points": [
+      "控制器"
+    ]
+  },
+  {
+    "id": "pipeline-001",
+    "subject": "CO",
+    "chapter": "流水线",
+    "chapterSlug": "pipeline",
+    "stem": "流水线技术提高的是？",
+    "options": {
+      "A": "单条指令延迟",
+      "B": "吞吐率",
+      "C": "主频下限",
+      "D": "存储容量"
+    },
+    "answer": "B",
+    "analysis": "流水线主要提升单位时间完成指令数。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "流水线"
+    ]
+  },
+  {
+    "id": "memory-hierarchy-001",
+    "subject": "CO",
+    "chapter": "存储层次",
+    "chapterSlug": "memory-hierarchy",
+    "stem": "Cache 设计依据的核心原理是？",
+    "options": {
+      "A": "香农定理",
+      "B": "局部性原理",
+      "C": "摩尔定律",
+      "D": "Amdahl 定律"
+    },
+    "answer": "B",
+    "analysis": "时间/空间局部性支撑多级存储。",
+    "difficulty": 1,
+    "knowledge_points": [
+      "Cache",
+      "局部性"
+    ]
+  },
+  {
+    "id": "instruction-001",
+    "subject": "CO",
+    "chapter": "指令系统",
+    "chapterSlug": "instruction",
+    "stem": "RISC 架构通常具有的特点是？",
+    "options": {
+      "A": "指令复杂且长度可变",
+      "B": "大量微程序控制",
+      "C": "指令格式规整，寻址方式较少",
+      "D": "强依赖堆栈式操作"
+    },
+    "answer": "C",
+    "analysis": "RISC 追求简单规整和高流水效率。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "RISC/CISC"
+    ]
+  },
+  {
+    "id": "bus-001",
+    "subject": "CO",
+    "chapter": "总线",
+    "chapterSlug": "bus",
+    "stem": "系统总线中用于传输地址信息的是？",
+    "options": {
+      "A": "数据总线",
+      "B": "地址总线",
+      "C": "控制总线",
+      "D": "扩展总线"
+    },
+    "answer": "B",
+    "analysis": "地址总线给出访存/IO地址。",
+    "difficulty": 1,
+    "knowledge_points": [
+      "总线"
+    ]
+  },
+  {
+    "id": "io-001",
+    "subject": "CO",
+    "chapter": "输入输出",
+    "chapterSlug": "io",
+    "stem": "DMA 方式的主要优点是？",
+    "options": {
+      "A": "无需中断",
+      "B": "CPU 不参与任何控制",
+      "C": "减少 CPU 与外设数据传送负担",
+      "D": "可替代主存"
+    },
+    "answer": "C",
+    "analysis": "DMA 由控制器直接搬运数据，释放CPU。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "DMA"
+    ]
+  },
+  {
+    "id": "interrupt-001",
+    "subject": "CO",
+    "chapter": "中断系统",
+    "chapterSlug": "interrupt",
+    "stem": "中断响应过程中，CPU 首先应完成？",
+    "options": {
+      "A": "关机",
+      "B": "保存断点和现场",
+      "C": "清空缓存",
+      "D": "重装系统"
+    },
+    "answer": "B",
+    "analysis": "保证中断返回后可继续原程序。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "中断响应"
+    ]
+  },
+  {
+    "id": "co-bank-009",
+    "subject": "CO",
+    "chapter": "数据表示",
+    "chapterSlug": "数据表示",
+    "stem": "IEEE754 单精度浮点数的指数位宽是？",
+    "options": {
+      "A": "5 位",
+      "B": "8 位",
+      "C": "10 位",
+      "D": "11 位"
+    },
+    "answer": "B",
+    "analysis": "单精度指数为 8 位。",
+    "difficulty": 3,
+    "knowledge_points": [
+      "数据表示",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "co-bank-010",
+    "subject": "CO",
+    "chapter": "数据表示",
+    "chapterSlug": "数据表示",
+    "stem": "补码加法中溢出可通过什么判断？",
+    "options": {
+      "A": "进位位是否为1",
+      "B": "符号位进位与出位异或",
+      "C": "最低位是否为1",
+      "D": "只看被加数大小"
+    },
+    "answer": "B",
+    "analysis": "符号位进位不一致表示溢出。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "数据表示",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "co-bank-011",
+    "subject": "CO",
+    "chapter": "运算方法",
+    "chapterSlug": "运算方法",
+    "stem": "Booth 算法用于优化哪种运算？",
+    "options": {
+      "A": "除法",
+      "B": "乘法",
+      "C": "开方",
+      "D": "比较"
+    },
+    "answer": "B",
+    "analysis": "通过编码减少加减次数。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "运算方法",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "co-bank-012",
+    "subject": "CO",
+    "chapter": "运算方法",
+    "chapterSlug": "运算方法",
+    "stem": "定点除法“恢复余数法”中恢复动作发生在？",
+    "options": {
+      "A": "余数同号",
+      "B": "余数为负时",
+      "C": "商为1时",
+      "D": "每一步都恢复"
+    },
+    "answer": "B",
+    "analysis": "试减后为负需恢复。",
+    "difficulty": 3,
+    "knowledge_points": [
+      "运算方法",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "co-bank-013",
+    "subject": "CO",
+    "chapter": "存储系统",
+    "chapterSlug": "存储系统",
+    "stem": "主存按字节编址时，地址递增 1 表示？",
+    "options": {
+      "A": "增加 1 位",
+      "B": "增加 1 字节",
+      "C": "增加 1 字",
+      "D": "增加 1 页"
+    },
+    "answer": "B",
+    "analysis": "字节编址单位是 Byte。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "存储系统",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "co-bank-014",
+    "subject": "CO",
+    "chapter": "存储系统",
+    "chapterSlug": "存储系统",
+    "stem": "Cache 命中率提高通常会？",
+    "options": {
+      "A": "增大平均访存时间",
+      "B": "减小平均访存时间",
+      "C": "不影响性能",
+      "D": "只影响磁盘"
+    },
+    "answer": "B",
+    "analysis": "更多访问在高速缓存完成。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "存储系统",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "co-bank-015",
+    "subject": "CO",
+    "chapter": "指令系统",
+    "chapterSlug": "指令系统",
+    "stem": "RISC 体系结构的典型特点是？",
+    "options": {
+      "A": "指令复杂且多寻址",
+      "B": "定长指令、少而精",
+      "C": "大量微码控制",
+      "D": "以栈机为主"
+    },
+    "answer": "B",
+    "analysis": "RISC 强调简单高效指令。",
+    "difficulty": 3,
+    "knowledge_points": [
+      "指令系统",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "co-bank-016",
+    "subject": "CO",
+    "chapter": "指令系统",
+    "chapterSlug": "指令系统",
+    "stem": "寻址方式中，操作数直接在指令中给出的称为？",
+    "options": {
+      "A": "立即寻址",
+      "B": "间接寻址",
+      "C": "变址寻址",
+      "D": "相对寻址"
+    },
+    "answer": "A",
+    "analysis": "立即数随指令提供。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "指令系统",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "co-bank-017",
+    "subject": "CO",
+    "chapter": "CPU",
+    "chapterSlug": "CPU",
+    "stem": "流水线技术主要目标是提高？",
+    "options": {
+      "A": "单条指令时延",
+      "B": "指令吞吐率",
+      "C": "主频稳定性",
+      "D": "功耗上限"
+    },
+    "answer": "B",
+    "analysis": "多条重叠执行提升吞吐。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "CPU",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "co-bank-018",
+    "subject": "CO",
+    "chapter": "CPU",
+    "chapterSlug": "CPU",
+    "stem": "中断响应中，保存现场的主要目的是？",
+    "options": {
+      "A": "减少中断次数",
+      "B": "返回后继续原程序",
+      "C": "提高主频",
+      "D": "扩展地址空间"
+    },
+    "answer": "B",
+    "analysis": "保证程序可恢复执行。",
+    "difficulty": 3,
+    "knowledge_points": [
+      "CPU",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "co-bank-019",
+    "subject": "CO",
+    "chapter": "总线",
+    "chapterSlug": "总线",
+    "stem": "总线仲裁要解决的核心问题是？",
+    "options": {
+      "A": "地址翻译",
+      "B": "多个主设备的使用权冲突",
+      "C": "数据压缩",
+      "D": "时钟同步到网络"
+    },
+    "answer": "B",
+    "analysis": "决定谁在当前周期占用总线。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "总线",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "co-bank-020",
+    "subject": "CO",
+    "chapter": "总线",
+    "chapterSlug": "总线",
+    "stem": "同步总线与异步总线差别主要在？",
+    "options": {
+      "A": "线数",
+      "B": "是否使用统一时钟",
+      "C": "电压",
+      "D": "接口形状"
+    },
+    "answer": "B",
+    "analysis": "同步总线依赖公共时钟。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "总线",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "co-bank-021",
+    "subject": "CO",
+    "chapter": "输入输出",
+    "chapterSlug": "输入输出",
+    "stem": "程序中断方式相比 DMA 的特点是？",
+    "options": {
+      "A": "CPU 参与更多数据搬运",
+      "B": "完全不占用CPU",
+      "C": "只用于块设备",
+      "D": "不需要控制器"
+    },
+    "answer": "A",
+    "analysis": "中断方式通常逐次由CPU搬运数据。",
+    "difficulty": 3,
+    "knowledge_points": [
+      "输入输出",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "co-bank-022",
+    "subject": "CO",
+    "chapter": "输入输出",
+    "chapterSlug": "输入输出",
+    "stem": "通道（I/O Channel）技术的主要作用是？",
+    "options": {
+      "A": "替代主存",
+      "B": "分担CPU的I/O管理负担",
+      "C": "提升显示分辨率",
+      "D": "管理虚拟内存"
+    },
+    "answer": "B",
+    "analysis": "专用处理器负责 I/O 控制。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "输入输出",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "co-bank-023",
+    "subject": "CO",
+    "chapter": "数据表示",
+    "chapterSlug": "数据表示",
+    "stem": "IEEE754 单精度浮点数的指数位宽是？（扩展23）",
+    "options": {
+      "A": "5 位",
+      "B": "8 位",
+      "C": "10 位",
+      "D": "11 位"
+    },
+    "answer": "B",
+    "analysis": "单精度指数为 8 位。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "数据表示",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "co-bank-024",
+    "subject": "CO",
+    "chapter": "数据表示",
+    "chapterSlug": "数据表示",
+    "stem": "补码加法中溢出可通过什么判断？（扩展24）",
+    "options": {
+      "A": "进位位是否为1",
+      "B": "符号位进位与出位异或",
+      "C": "最低位是否为1",
+      "D": "只看被加数大小"
+    },
+    "answer": "B",
+    "analysis": "符号位进位不一致表示溢出。",
+    "difficulty": 3,
+    "knowledge_points": [
+      "数据表示",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "co-bank-025",
+    "subject": "CO",
+    "chapter": "运算方法",
+    "chapterSlug": "运算方法",
+    "stem": "Booth 算法用于优化哪种运算？（扩展25）",
+    "options": {
+      "A": "除法",
+      "B": "乘法",
+      "C": "开方",
+      "D": "比较"
+    },
+    "answer": "B",
+    "analysis": "通过编码减少加减次数。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "运算方法",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "co-bank-026",
+    "subject": "CO",
+    "chapter": "运算方法",
+    "chapterSlug": "运算方法",
+    "stem": "定点除法“恢复余数法”中恢复动作发生在？（扩展26）",
+    "options": {
+      "A": "余数同号",
+      "B": "余数为负时",
+      "C": "商为1时",
+      "D": "每一步都恢复"
+    },
+    "answer": "B",
+    "analysis": "试减后为负需恢复。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "运算方法",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "co-bank-027",
+    "subject": "CO",
+    "chapter": "存储系统",
+    "chapterSlug": "存储系统",
+    "stem": "主存按字节编址时，地址递增 1 表示？（扩展27）",
+    "options": {
+      "A": "增加 1 位",
+      "B": "增加 1 字节",
+      "C": "增加 1 字",
+      "D": "增加 1 页"
+    },
+    "answer": "B",
+    "analysis": "字节编址单位是 Byte。",
+    "difficulty": 3,
+    "knowledge_points": [
+      "存储系统",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "co-bank-028",
+    "subject": "CO",
+    "chapter": "存储系统",
+    "chapterSlug": "存储系统",
+    "stem": "Cache 命中率提高通常会？（扩展28）",
+    "options": {
+      "A": "增大平均访存时间",
+      "B": "减小平均访存时间",
+      "C": "不影响性能",
+      "D": "只影响磁盘"
+    },
+    "answer": "B",
+    "analysis": "更多访问在高速缓存完成。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "存储系统",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "co-bank-029",
+    "subject": "CO",
+    "chapter": "指令系统",
+    "chapterSlug": "指令系统",
+    "stem": "RISC 体系结构的典型特点是？（扩展29）",
+    "options": {
+      "A": "指令复杂且多寻址",
+      "B": "定长指令、少而精",
+      "C": "大量微码控制",
+      "D": "以栈机为主"
+    },
+    "answer": "B",
+    "analysis": "RISC 强调简单高效指令。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "指令系统",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "co-bank-030",
+    "subject": "CO",
+    "chapter": "指令系统",
+    "chapterSlug": "指令系统",
+    "stem": "寻址方式中，操作数直接在指令中给出的称为？（扩展30）",
+    "options": {
+      "A": "立即寻址",
+      "B": "间接寻址",
+      "C": "变址寻址",
+      "D": "相对寻址"
+    },
+    "answer": "A",
+    "analysis": "立即数随指令提供。",
+    "difficulty": 3,
+    "knowledge_points": [
+      "指令系统",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "co-bank-031",
+    "subject": "CO",
+    "chapter": "CPU",
+    "chapterSlug": "CPU",
+    "stem": "流水线技术主要目标是提高？（扩展31）",
+    "options": {
+      "A": "单条指令时延",
+      "B": "指令吞吐率",
+      "C": "主频稳定性",
+      "D": "功耗上限"
+    },
+    "answer": "B",
+    "analysis": "多条重叠执行提升吞吐。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "CPU",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "co-bank-032",
+    "subject": "CO",
+    "chapter": "CPU",
+    "chapterSlug": "CPU",
+    "stem": "中断响应中，保存现场的主要目的是？（扩展32）",
+    "options": {
+      "A": "减少中断次数",
+      "B": "返回后继续原程序",
+      "C": "提高主频",
+      "D": "扩展地址空间"
+    },
+    "answer": "B",
+    "analysis": "保证程序可恢复执行。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "CPU",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "co-bank-033",
+    "subject": "CO",
+    "chapter": "总线",
+    "chapterSlug": "总线",
+    "stem": "总线仲裁要解决的核心问题是？（扩展33）",
+    "options": {
+      "A": "地址翻译",
+      "B": "多个主设备的使用权冲突",
+      "C": "数据压缩",
+      "D": "时钟同步到网络"
+    },
+    "answer": "B",
+    "analysis": "决定谁在当前周期占用总线。",
+    "difficulty": 3,
+    "knowledge_points": [
+      "总线",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "co-bank-034",
+    "subject": "CO",
+    "chapter": "总线",
+    "chapterSlug": "总线",
+    "stem": "同步总线与异步总线差别主要在？（扩展34）",
+    "options": {
+      "A": "线数",
+      "B": "是否使用统一时钟",
+      "C": "电压",
+      "D": "接口形状"
+    },
+    "answer": "B",
+    "analysis": "同步总线依赖公共时钟。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "总线",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "co-bank-035",
+    "subject": "CO",
+    "chapter": "输入输出",
+    "chapterSlug": "输入输出",
+    "stem": "程序中断方式相比 DMA 的特点是？（扩展35）",
+    "options": {
+      "A": "CPU 参与更多数据搬运",
+      "B": "完全不占用CPU",
+      "C": "只用于块设备",
+      "D": "不需要控制器"
+    },
+    "answer": "A",
+    "analysis": "中断方式通常逐次由CPU搬运数据。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "输入输出",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "co-bank-036",
+    "subject": "CO",
+    "chapter": "输入输出",
+    "chapterSlug": "输入输出",
+    "stem": "通道（I/O Channel）技术的主要作用是？（扩展36）",
+    "options": {
+      "A": "替代主存",
+      "B": "分担CPU的I/O管理负担",
+      "C": "提升显示分辨率",
+      "D": "管理虚拟内存"
+    },
+    "answer": "B",
+    "analysis": "专用处理器负责 I/O 控制。",
+    "difficulty": 3,
+    "knowledge_points": [
+      "输入输出",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "co-bank-037",
+    "subject": "CO",
+    "chapter": "数据表示",
+    "chapterSlug": "数据表示",
+    "stem": "IEEE754 单精度浮点数的指数位宽是？（扩展37）",
+    "options": {
+      "A": "5 位",
+      "B": "8 位",
+      "C": "10 位",
+      "D": "11 位"
+    },
+    "answer": "B",
+    "analysis": "单精度指数为 8 位。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "数据表示",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "co-bank-038",
+    "subject": "CO",
+    "chapter": "数据表示",
+    "chapterSlug": "数据表示",
+    "stem": "补码加法中溢出可通过什么判断？（扩展38）",
+    "options": {
+      "A": "进位位是否为1",
+      "B": "符号位进位与出位异或",
+      "C": "最低位是否为1",
+      "D": "只看被加数大小"
+    },
+    "answer": "B",
+    "analysis": "符号位进位不一致表示溢出。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "数据表示",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "co-bank-039",
+    "subject": "CO",
+    "chapter": "运算方法",
+    "chapterSlug": "运算方法",
+    "stem": "Booth 算法用于优化哪种运算？（扩展39）",
+    "options": {
+      "A": "除法",
+      "B": "乘法",
+      "C": "开方",
+      "D": "比较"
+    },
+    "answer": "B",
+    "analysis": "通过编码减少加减次数。",
+    "difficulty": 3,
+    "knowledge_points": [
+      "运算方法",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "co-bank-040",
+    "subject": "CO",
+    "chapter": "运算方法",
+    "chapterSlug": "运算方法",
+    "stem": "定点除法“恢复余数法”中恢复动作发生在？（扩展40）",
+    "options": {
+      "A": "余数同号",
+      "B": "余数为负时",
+      "C": "商为1时",
+      "D": "每一步都恢复"
+    },
+    "answer": "B",
+    "analysis": "试减后为负需恢复。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "运算方法",
+      "核心概念"
+    ]
+  }
+]

@@ -1,0 +1,797 @@
+[
+  {
+    "id": "process-thread-001",
+    "subject": "OS",
+    "chapter": "进程与线程",
+    "chapterSlug": "process-thread",
+    "stem": "进程与程序的本质区别是？",
+    "options": {
+      "A": "程序更大",
+      "B": "进程是程序的一次执行",
+      "C": "程序可并发",
+      "D": "进程不可调度"
+    },
+    "answer": "B",
+    "analysis": "进程是动态概念，程序是静态文件。",
+    "difficulty": 1,
+    "knowledge_points": [
+      "进程",
+      "程序"
+    ]
+  },
+  {
+    "id": "process-thread-002",
+    "subject": "OS",
+    "chapter": "进程与线程",
+    "chapterSlug": "process-thread",
+    "stem": "线程是 CPU 调度的？",
+    "options": {
+      "A": "最小单位",
+      "B": "最大单位",
+      "C": "I/O 单位",
+      "D": "存储单位"
+    },
+    "answer": "A",
+    "analysis": "现代操作系统通常以线程作为调度基本单位。",
+    "difficulty": 1,
+    "knowledge_points": [
+      "线程调度"
+    ]
+  },
+  {
+    "id": "scheduling-001",
+    "subject": "OS",
+    "chapter": "处理机调度",
+    "chapterSlug": "scheduling",
+    "stem": "时间片轮转算法主要适用于？",
+    "options": {
+      "A": "批处理系统",
+      "B": "实时系统",
+      "C": "分时系统",
+      "D": "嵌入式裸机"
+    },
+    "answer": "C",
+    "analysis": "RR 保证交互响应，适合分时系统。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "调度算法"
+    ]
+  },
+  {
+    "id": "memory-001",
+    "subject": "OS",
+    "chapter": "存储管理",
+    "chapterSlug": "memory",
+    "stem": "虚拟内存技术主要基于？",
+    "options": {
+      "A": "覆盖与交换",
+      "B": "DMA 与中断",
+      "C": "流水与并行",
+      "D": "缓存一致性"
+    },
+    "answer": "A",
+    "analysis": "通过局部性原理配合请求分页等实现。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "虚拟内存",
+      "分页"
+    ]
+  },
+  {
+    "id": "memory-002",
+    "subject": "OS",
+    "chapter": "存储管理",
+    "chapterSlug": "memory",
+    "stem": "页面置换算法中，Belady 异常可能出现在？",
+    "options": {
+      "A": "OPT",
+      "B": "LRU",
+      "C": "FIFO",
+      "D": "Clock"
+    },
+    "answer": "C",
+    "analysis": "FIFO 可能出现页框增多缺页反而增加。",
+    "difficulty": 3,
+    "knowledge_points": [
+      "页面置换"
+    ]
+  },
+  {
+    "id": "file-001",
+    "subject": "OS",
+    "chapter": "文件系统",
+    "chapterSlug": "file",
+    "stem": "文件控制块 FCB 主要用于保存？",
+    "options": {
+      "A": "文件数据内容",
+      "B": "文件元数据",
+      "C": "用户口令",
+      "D": "中断向量"
+    },
+    "answer": "B",
+    "analysis": "FCB 保存权限、位置、大小等元信息。",
+    "difficulty": 1,
+    "knowledge_points": [
+      "文件系统"
+    ]
+  },
+  {
+    "id": "deadlock-001",
+    "subject": "OS",
+    "chapter": "死锁",
+    "chapterSlug": "deadlock",
+    "stem": "死锁产生的必要条件不包括？",
+    "options": {
+      "A": "互斥",
+      "B": "请求和保持",
+      "C": "可剥夺",
+      "D": "循环等待"
+    },
+    "answer": "C",
+    "analysis": "不可剥夺才是必要条件。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "死锁条件"
+    ]
+  },
+  {
+    "id": "io-001",
+    "subject": "OS",
+    "chapter": "设备管理",
+    "chapterSlug": "io",
+    "stem": "缓冲技术的主要作用是？",
+    "options": {
+      "A": "提高CPU频率",
+      "B": "匹配设备与CPU速度差异",
+      "C": "减少主存容量",
+      "D": "避免中断"
+    },
+    "answer": "B",
+    "analysis": "通过缓冲减少速度不匹配带来的等待。",
+    "difficulty": 1,
+    "knowledge_points": [
+      "I/O管理",
+      "缓冲"
+    ]
+  },
+  {
+    "id": "os-bank-009",
+    "subject": "OS",
+    "chapter": "进程与线程",
+    "chapterSlug": "进程与线程",
+    "stem": "进程切换比线程切换开销更大的主要原因是？",
+    "options": {
+      "A": "进程数量更少",
+      "B": "需切换地址空间等更多上下文",
+      "C": "线程不能并发",
+      "D": "线程无需调度"
+    },
+    "answer": "B",
+    "analysis": "进程切换涉及页表和资源上下文。",
+    "difficulty": 3,
+    "knowledge_points": [
+      "进程与线程",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "os-bank-010",
+    "subject": "OS",
+    "chapter": "进程与线程",
+    "chapterSlug": "进程与线程",
+    "stem": "同一进程内多个线程共享的是？",
+    "options": {
+      "A": "栈",
+      "B": "程序计数器",
+      "C": "代码段与堆",
+      "D": "寄存器"
+    },
+    "answer": "C",
+    "analysis": "线程共享进程资源，栈/寄存器私有。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "进程与线程",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "os-bank-011",
+    "subject": "OS",
+    "chapter": "处理机调度",
+    "chapterSlug": "处理机调度",
+    "stem": "时间片轮转算法主要改善的是？",
+    "options": {
+      "A": "吞吐量极大化",
+      "B": "响应时间公平性",
+      "C": "实时性硬保证",
+      "D": "减少内存占用"
+    },
+    "answer": "B",
+    "analysis": "RR 让各进程轮流获得 CPU。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "处理机调度",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "os-bank-012",
+    "subject": "OS",
+    "chapter": "处理机调度",
+    "chapterSlug": "处理机调度",
+    "stem": "短作业优先的主要缺点是？",
+    "options": {
+      "A": "上下文切换多",
+      "B": "长作业可能饥饿",
+      "C": "实现简单",
+      "D": "不能抢占"
+    },
+    "answer": "B",
+    "analysis": "长作业等待时间可能过长。",
+    "difficulty": 3,
+    "knowledge_points": [
+      "处理机调度",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "os-bank-013",
+    "subject": "OS",
+    "chapter": "同步与互斥",
+    "chapterSlug": "同步与互斥",
+    "stem": "PV 操作中的 P 操作本质上是？",
+    "options": {
+      "A": "释放资源",
+      "B": "申请并可能阻塞",
+      "C": "忙等自旋",
+      "D": "删除信号量"
+    },
+    "answer": "B",
+    "analysis": "资源不足则进入等待队列。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "同步与互斥",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "os-bank-014",
+    "subject": "OS",
+    "chapter": "同步与互斥",
+    "chapterSlug": "同步与互斥",
+    "stem": "“一次只允许一个线程进入临界区”描述的是？",
+    "options": {
+      "A": "同步",
+      "B": "互斥",
+      "C": "并行",
+      "D": "虚拟化"
+    },
+    "answer": "B",
+    "analysis": "互斥保护共享临界资源。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "同步与互斥",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "os-bank-015",
+    "subject": "OS",
+    "chapter": "内存管理",
+    "chapterSlug": "内存管理",
+    "stem": "分页存储管理中，页内地址转换由什么决定？",
+    "options": {
+      "A": "页号",
+      "B": "页内偏移",
+      "C": "段号",
+      "D": "TLB 行号"
+    },
+    "answer": "B",
+    "analysis": "物理页框基址 + 页内偏移。",
+    "difficulty": 3,
+    "knowledge_points": [
+      "内存管理",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "os-bank-016",
+    "subject": "OS",
+    "chapter": "内存管理",
+    "chapterSlug": "内存管理",
+    "stem": "分段系统中，一个段通常对应？",
+    "options": {
+      "A": "固定大小块",
+      "B": "逻辑上完整模块",
+      "C": "磁盘柱面",
+      "D": "中断向量"
+    },
+    "answer": "B",
+    "analysis": "段反映程序逻辑结构。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "内存管理",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "os-bank-017",
+    "subject": "OS",
+    "chapter": "虚拟内存",
+    "chapterSlug": "虚拟内存",
+    "stem": "页面置换中，FIFO 可能出现？",
+    "options": {
+      "A": "Belady 异常",
+      "B": "死锁",
+      "C": "饥饿",
+      "D": "抖动消失"
+    },
+    "answer": "A",
+    "analysis": "页框增加反而缺页增加。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "虚拟内存",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "os-bank-018",
+    "subject": "OS",
+    "chapter": "虚拟内存",
+    "chapterSlug": "虚拟内存",
+    "stem": "局部性原理中“时间局部性”指？",
+    "options": {
+      "A": "相邻地址被访问",
+      "B": "刚访问的数据可能再次访问",
+      "C": "仅代码复用",
+      "D": "仅栈增长"
+    },
+    "answer": "B",
+    "analysis": "短时间内重复访问同一数据。",
+    "difficulty": 3,
+    "knowledge_points": [
+      "虚拟内存",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "os-bank-019",
+    "subject": "OS",
+    "chapter": "文件系统",
+    "chapterSlug": "文件系统",
+    "stem": "文件控制块 FCB 主要用于存放？",
+    "options": {
+      "A": "文件数据内容",
+      "B": "文件元数据",
+      "C": "用户密码",
+      "D": "网卡状态"
+    },
+    "answer": "B",
+    "analysis": "如权限、大小、指针等。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "文件系统",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "os-bank-020",
+    "subject": "OS",
+    "chapter": "文件系统",
+    "chapterSlug": "文件系统",
+    "stem": "目录项中最关键的是文件名与？",
+    "options": {
+      "A": "索引节点号",
+      "B": "CPU 编号",
+      "C": "页号",
+      "D": "进程号"
+    },
+    "answer": "A",
+    "analysis": "通过 inode 定位文件元数据。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "文件系统",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "os-bank-021",
+    "subject": "OS",
+    "chapter": "I/O系统",
+    "chapterSlug": "I/O系统",
+    "stem": "DMA 方式相较程序查询方式的优势是？",
+    "options": {
+      "A": "实现最简单",
+      "B": "减少 CPU 参与数据搬运",
+      "C": "不需要中断",
+      "D": "仅适用于字符设备"
+    },
+    "answer": "B",
+    "analysis": "DMA 控制器直接搬运数据。",
+    "difficulty": 3,
+    "knowledge_points": [
+      "I/O系统",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "os-bank-022",
+    "subject": "OS",
+    "chapter": "I/O系统",
+    "chapterSlug": "I/O系统",
+    "stem": "设备独立性主要由哪一层提供？",
+    "options": {
+      "A": "中断处理程序",
+      "B": "设备驱动上层统一接口",
+      "C": "应用层 UI",
+      "D": "BIOS 菜单"
+    },
+    "answer": "B",
+    "analysis": "通过统一抽象屏蔽具体设备差异。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "I/O系统",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "os-bank-023",
+    "subject": "OS",
+    "chapter": "进程与线程",
+    "chapterSlug": "进程与线程",
+    "stem": "进程切换比线程切换开销更大的主要原因是？（扩展23）",
+    "options": {
+      "A": "进程数量更少",
+      "B": "需切换地址空间等更多上下文",
+      "C": "线程不能并发",
+      "D": "线程无需调度"
+    },
+    "answer": "B",
+    "analysis": "进程切换涉及页表和资源上下文。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "进程与线程",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "os-bank-024",
+    "subject": "OS",
+    "chapter": "进程与线程",
+    "chapterSlug": "进程与线程",
+    "stem": "同一进程内多个线程共享的是？（扩展24）",
+    "options": {
+      "A": "栈",
+      "B": "程序计数器",
+      "C": "代码段与堆",
+      "D": "寄存器"
+    },
+    "answer": "C",
+    "analysis": "线程共享进程资源，栈/寄存器私有。",
+    "difficulty": 3,
+    "knowledge_points": [
+      "进程与线程",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "os-bank-025",
+    "subject": "OS",
+    "chapter": "处理机调度",
+    "chapterSlug": "处理机调度",
+    "stem": "时间片轮转算法主要改善的是？（扩展25）",
+    "options": {
+      "A": "吞吐量极大化",
+      "B": "响应时间公平性",
+      "C": "实时性硬保证",
+      "D": "减少内存占用"
+    },
+    "answer": "B",
+    "analysis": "RR 让各进程轮流获得 CPU。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "处理机调度",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "os-bank-026",
+    "subject": "OS",
+    "chapter": "处理机调度",
+    "chapterSlug": "处理机调度",
+    "stem": "短作业优先的主要缺点是？（扩展26）",
+    "options": {
+      "A": "上下文切换多",
+      "B": "长作业可能饥饿",
+      "C": "实现简单",
+      "D": "不能抢占"
+    },
+    "answer": "B",
+    "analysis": "长作业等待时间可能过长。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "处理机调度",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "os-bank-027",
+    "subject": "OS",
+    "chapter": "同步与互斥",
+    "chapterSlug": "同步与互斥",
+    "stem": "PV 操作中的 P 操作本质上是？（扩展27）",
+    "options": {
+      "A": "释放资源",
+      "B": "申请并可能阻塞",
+      "C": "忙等自旋",
+      "D": "删除信号量"
+    },
+    "answer": "B",
+    "analysis": "资源不足则进入等待队列。",
+    "difficulty": 3,
+    "knowledge_points": [
+      "同步与互斥",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "os-bank-028",
+    "subject": "OS",
+    "chapter": "同步与互斥",
+    "chapterSlug": "同步与互斥",
+    "stem": "“一次只允许一个线程进入临界区”描述的是？（扩展28）",
+    "options": {
+      "A": "同步",
+      "B": "互斥",
+      "C": "并行",
+      "D": "虚拟化"
+    },
+    "answer": "B",
+    "analysis": "互斥保护共享临界资源。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "同步与互斥",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "os-bank-029",
+    "subject": "OS",
+    "chapter": "内存管理",
+    "chapterSlug": "内存管理",
+    "stem": "分页存储管理中，页内地址转换由什么决定？（扩展29）",
+    "options": {
+      "A": "页号",
+      "B": "页内偏移",
+      "C": "段号",
+      "D": "TLB 行号"
+    },
+    "answer": "B",
+    "analysis": "物理页框基址 + 页内偏移。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "内存管理",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "os-bank-030",
+    "subject": "OS",
+    "chapter": "内存管理",
+    "chapterSlug": "内存管理",
+    "stem": "分段系统中，一个段通常对应？（扩展30）",
+    "options": {
+      "A": "固定大小块",
+      "B": "逻辑上完整模块",
+      "C": "磁盘柱面",
+      "D": "中断向量"
+    },
+    "answer": "B",
+    "analysis": "段反映程序逻辑结构。",
+    "difficulty": 3,
+    "knowledge_points": [
+      "内存管理",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "os-bank-031",
+    "subject": "OS",
+    "chapter": "虚拟内存",
+    "chapterSlug": "虚拟内存",
+    "stem": "页面置换中，FIFO 可能出现？（扩展31）",
+    "options": {
+      "A": "Belady 异常",
+      "B": "死锁",
+      "C": "饥饿",
+      "D": "抖动消失"
+    },
+    "answer": "A",
+    "analysis": "页框增加反而缺页增加。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "虚拟内存",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "os-bank-032",
+    "subject": "OS",
+    "chapter": "虚拟内存",
+    "chapterSlug": "虚拟内存",
+    "stem": "局部性原理中“时间局部性”指？（扩展32）",
+    "options": {
+      "A": "相邻地址被访问",
+      "B": "刚访问的数据可能再次访问",
+      "C": "仅代码复用",
+      "D": "仅栈增长"
+    },
+    "answer": "B",
+    "analysis": "短时间内重复访问同一数据。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "虚拟内存",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "os-bank-033",
+    "subject": "OS",
+    "chapter": "文件系统",
+    "chapterSlug": "文件系统",
+    "stem": "文件控制块 FCB 主要用于存放？（扩展33）",
+    "options": {
+      "A": "文件数据内容",
+      "B": "文件元数据",
+      "C": "用户密码",
+      "D": "网卡状态"
+    },
+    "answer": "B",
+    "analysis": "如权限、大小、指针等。",
+    "difficulty": 3,
+    "knowledge_points": [
+      "文件系统",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "os-bank-034",
+    "subject": "OS",
+    "chapter": "文件系统",
+    "chapterSlug": "文件系统",
+    "stem": "目录项中最关键的是文件名与？（扩展34）",
+    "options": {
+      "A": "索引节点号",
+      "B": "CPU 编号",
+      "C": "页号",
+      "D": "进程号"
+    },
+    "answer": "A",
+    "analysis": "通过 inode 定位文件元数据。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "文件系统",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "os-bank-035",
+    "subject": "OS",
+    "chapter": "I/O系统",
+    "chapterSlug": "I/O系统",
+    "stem": "DMA 方式相较程序查询方式的优势是？（扩展35）",
+    "options": {
+      "A": "实现最简单",
+      "B": "减少 CPU 参与数据搬运",
+      "C": "不需要中断",
+      "D": "仅适用于字符设备"
+    },
+    "answer": "B",
+    "analysis": "DMA 控制器直接搬运数据。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "I/O系统",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "os-bank-036",
+    "subject": "OS",
+    "chapter": "I/O系统",
+    "chapterSlug": "I/O系统",
+    "stem": "设备独立性主要由哪一层提供？（扩展36）",
+    "options": {
+      "A": "中断处理程序",
+      "B": "设备驱动上层统一接口",
+      "C": "应用层 UI",
+      "D": "BIOS 菜单"
+    },
+    "answer": "B",
+    "analysis": "通过统一抽象屏蔽具体设备差异。",
+    "difficulty": 3,
+    "knowledge_points": [
+      "I/O系统",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "os-bank-037",
+    "subject": "OS",
+    "chapter": "进程与线程",
+    "chapterSlug": "进程与线程",
+    "stem": "进程切换比线程切换开销更大的主要原因是？（扩展37）",
+    "options": {
+      "A": "进程数量更少",
+      "B": "需切换地址空间等更多上下文",
+      "C": "线程不能并发",
+      "D": "线程无需调度"
+    },
+    "answer": "B",
+    "analysis": "进程切换涉及页表和资源上下文。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "进程与线程",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "os-bank-038",
+    "subject": "OS",
+    "chapter": "进程与线程",
+    "chapterSlug": "进程与线程",
+    "stem": "同一进程内多个线程共享的是？（扩展38）",
+    "options": {
+      "A": "栈",
+      "B": "程序计数器",
+      "C": "代码段与堆",
+      "D": "寄存器"
+    },
+    "answer": "C",
+    "analysis": "线程共享进程资源，栈/寄存器私有。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "进程与线程",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "os-bank-039",
+    "subject": "OS",
+    "chapter": "处理机调度",
+    "chapterSlug": "处理机调度",
+    "stem": "时间片轮转算法主要改善的是？（扩展39）",
+    "options": {
+      "A": "吞吐量极大化",
+      "B": "响应时间公平性",
+      "C": "实时性硬保证",
+      "D": "减少内存占用"
+    },
+    "answer": "B",
+    "analysis": "RR 让各进程轮流获得 CPU。",
+    "difficulty": 3,
+    "knowledge_points": [
+      "处理机调度",
+      "核心概念"
+    ]
+  },
+  {
+    "id": "os-bank-040",
+    "subject": "OS",
+    "chapter": "处理机调度",
+    "chapterSlug": "处理机调度",
+    "stem": "短作业优先的主要缺点是？（扩展40）",
+    "options": {
+      "A": "上下文切换多",
+      "B": "长作业可能饥饿",
+      "C": "实现简单",
+      "D": "不能抢占"
+    },
+    "answer": "B",
+    "analysis": "长作业等待时间可能过长。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "处理机调度",
+      "核心概念"
+    ]
+  }
+]
