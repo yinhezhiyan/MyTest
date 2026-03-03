@@ -53,12 +53,13 @@ public class ExerciseController {
     }
 
     @GetMapping("/api/recommendations")
-    public Result recommendations(@RequestParam(defaultValue = "5") Integer topN) {
-        return Result.success(exerciseService.recommendations(topN));
+    public Result recommendations(@RequestParam(defaultValue = "5") Integer topN,
+                                  @RequestParam(defaultValue = "false") Boolean includeDone) {
+        return Result.success(exerciseService.recommendations(topN, includeDone));
     }
 
     @GetMapping("/api/daily")
     public Result daily() {
-        return Result.success(exerciseService.recommendations(5));
+        return Result.success(exerciseService.dailyUnseen(5));
     }
 }
