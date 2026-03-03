@@ -1,10 +1,795 @@
 [
-  {"id":"data-representation-001","subject":"CO","chapter":"数据表示","chapterSlug":"data-representation","stem":"二进制补码表示中，-x 的求法是？","options":{"A":"按位取反","B":"按位取反加 1","C":"加 1","D":"减 1"},"answer":"B","analysis":"补码定义：反码+1。","difficulty":1,"knowledge_points":["补码"]},
-  {"id":"cpu-001","subject":"CO","chapter":"CPU","chapterSlug":"cpu","stem":"控制器的主要功能是？","options":{"A":"执行算术运算","B":"产生控制信号协调各部件","C":"保存用户程序","D":"管理磁盘文件"},"answer":"B","analysis":"控制器负责取指、译码与控制。","difficulty":1,"knowledge_points":["控制器"]},
-  {"id":"pipeline-001","subject":"CO","chapter":"流水线","chapterSlug":"pipeline","stem":"流水线技术提高的是？","options":{"A":"单条指令延迟","B":"吞吐率","C":"主频下限","D":"存储容量"},"answer":"B","analysis":"流水线主要提升单位时间完成指令数。","difficulty":2,"knowledge_points":["流水线"]},
-  {"id":"memory-hierarchy-001","subject":"CO","chapter":"存储层次","chapterSlug":"memory-hierarchy","stem":"Cache 设计依据的核心原理是？","options":{"A":"香农定理","B":"局部性原理","C":"摩尔定律","D":"Amdahl 定律"},"answer":"B","analysis":"时间/空间局部性支撑多级存储。","difficulty":1,"knowledge_points":["Cache","局部性"]},
-  {"id":"instruction-001","subject":"CO","chapter":"指令系统","chapterSlug":"instruction","stem":"RISC 架构通常具有的特点是？","options":{"A":"指令复杂且长度可变","B":"大量微程序控制","C":"指令格式规整，寻址方式较少","D":"强依赖堆栈式操作"},"answer":"C","analysis":"RISC 追求简单规整和高流水效率。","difficulty":2,"knowledge_points":["RISC/CISC"]},
-  {"id":"bus-001","subject":"CO","chapter":"总线","chapterSlug":"bus","stem":"系统总线中用于传输地址信息的是？","options":{"A":"数据总线","B":"地址总线","C":"控制总线","D":"扩展总线"},"answer":"B","analysis":"地址总线给出访存/IO地址。","difficulty":1,"knowledge_points":["总线"]},
-  {"id":"io-001","subject":"CO","chapter":"输入输出","chapterSlug":"io","stem":"DMA 方式的主要优点是？","options":{"A":"无需中断","B":"CPU 不参与任何控制","C":"减少 CPU 与外设数据传送负担","D":"可替代主存"},"answer":"C","analysis":"DMA 由控制器直接搬运数据，释放CPU。","difficulty":2,"knowledge_points":["DMA"]},
-  {"id":"interrupt-001","subject":"CO","chapter":"中断系统","chapterSlug":"interrupt","stem":"中断响应过程中，CPU 首先应完成？","options":{"A":"关机","B":"保存断点和现场","C":"清空缓存","D":"重装系统"},"answer":"B","analysis":"保证中断返回后可继续原程序。","difficulty":2,"knowledge_points":["中断响应"]}
+  {
+    "id": "data-representation-001",
+    "subject": "CO",
+    "chapter": "数据表示",
+    "chapterSlug": "data-representation",
+    "stem": "二进制补码表示中，-x 的求法是？",
+    "options": {
+      "A": "按位取反",
+      "B": "按位取反加 1",
+      "C": "加 1",
+      "D": "减 1"
+    },
+    "answer": "B",
+    "analysis": "补码定义：反码+1。",
+    "difficulty": 1,
+    "knowledge_points": [
+      "补码"
+    ]
+  },
+  {
+    "id": "cpu-001",
+    "subject": "CO",
+    "chapter": "CPU",
+    "chapterSlug": "cpu",
+    "stem": "控制器的主要功能是？",
+    "options": {
+      "A": "执行算术运算",
+      "B": "产生控制信号协调各部件",
+      "C": "保存用户程序",
+      "D": "管理磁盘文件"
+    },
+    "answer": "B",
+    "analysis": "控制器负责取指、译码与控制。",
+    "difficulty": 1,
+    "knowledge_points": [
+      "控制器"
+    ]
+  },
+  {
+    "id": "pipeline-001",
+    "subject": "CO",
+    "chapter": "流水线",
+    "chapterSlug": "pipeline",
+    "stem": "流水线技术提高的是？",
+    "options": {
+      "A": "单条指令延迟",
+      "B": "吞吐率",
+      "C": "主频下限",
+      "D": "存储容量"
+    },
+    "answer": "B",
+    "analysis": "流水线主要提升单位时间完成指令数。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "流水线"
+    ]
+  },
+  {
+    "id": "memory-hierarchy-001",
+    "subject": "CO",
+    "chapter": "存储层次",
+    "chapterSlug": "memory-hierarchy",
+    "stem": "Cache 设计依据的核心原理是？",
+    "options": {
+      "A": "香农定理",
+      "B": "局部性原理",
+      "C": "摩尔定律",
+      "D": "Amdahl 定律"
+    },
+    "answer": "B",
+    "analysis": "时间/空间局部性支撑多级存储。",
+    "difficulty": 1,
+    "knowledge_points": [
+      "Cache",
+      "局部性"
+    ]
+  },
+  {
+    "id": "instruction-001",
+    "subject": "CO",
+    "chapter": "指令系统",
+    "chapterSlug": "instruction",
+    "stem": "RISC 架构通常具有的特点是？",
+    "options": {
+      "A": "指令复杂且长度可变",
+      "B": "大量微程序控制",
+      "C": "指令格式规整，寻址方式较少",
+      "D": "强依赖堆栈式操作"
+    },
+    "answer": "C",
+    "analysis": "RISC 追求简单规整和高流水效率。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "RISC/CISC"
+    ]
+  },
+  {
+    "id": "bus-001",
+    "subject": "CO",
+    "chapter": "总线",
+    "chapterSlug": "bus",
+    "stem": "系统总线中用于传输地址信息的是？",
+    "options": {
+      "A": "数据总线",
+      "B": "地址总线",
+      "C": "控制总线",
+      "D": "扩展总线"
+    },
+    "answer": "B",
+    "analysis": "地址总线给出访存/IO地址。",
+    "difficulty": 1,
+    "knowledge_points": [
+      "总线"
+    ]
+  },
+  {
+    "id": "io-001",
+    "subject": "CO",
+    "chapter": "输入输出",
+    "chapterSlug": "io",
+    "stem": "DMA 方式的主要优点是？",
+    "options": {
+      "A": "无需中断",
+      "B": "CPU 不参与任何控制",
+      "C": "减少 CPU 与外设数据传送负担",
+      "D": "可替代主存"
+    },
+    "answer": "C",
+    "analysis": "DMA 由控制器直接搬运数据，释放CPU。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "DMA"
+    ]
+  },
+  {
+    "id": "interrupt-001",
+    "subject": "CO",
+    "chapter": "中断系统",
+    "chapterSlug": "interrupt",
+    "stem": "中断响应过程中，CPU 首先应完成？",
+    "options": {
+      "A": "关机",
+      "B": "保存断点和现场",
+      "C": "清空缓存",
+      "D": "重装系统"
+    },
+    "answer": "B",
+    "analysis": "保证中断返回后可继续原程序。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "中断响应"
+    ]
+  },
+  {
+    "id": "co-auto-009",
+    "subject": "CO",
+    "chapter": "数据表示",
+    "chapterSlug": "数据表示",
+    "stem": "在CO学科中，关于“数据表示”的下列表述，最合理的是？（题9）",
+    "options": {
+      "A": "该机制不会影响系统性能",
+      "B": "设计时需要在正确性与效率之间权衡",
+      "C": "只与硬件实现有关，与软件无关",
+      "D": "仅在理论模型中存在，实际系统不使用"
+    },
+    "answer": "B",
+    "analysis": "数据表示相关机制在真实系统中通常需要兼顾正确性、复杂度与性能，因此B更符合工程实践。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "数据表示",
+      "综合理解"
+    ]
+  },
+  {
+    "id": "co-auto-010",
+    "subject": "CO",
+    "chapter": "运算方法",
+    "chapterSlug": "运算方法",
+    "stem": "在CO学科中，关于“运算方法”的下列表述，最合理的是？（题10）",
+    "options": {
+      "A": "该机制不会影响系统性能",
+      "B": "设计时需要在正确性与效率之间权衡",
+      "C": "只与硬件实现有关，与软件无关",
+      "D": "仅在理论模型中存在，实际系统不使用"
+    },
+    "answer": "B",
+    "analysis": "运算方法相关机制在真实系统中通常需要兼顾正确性、复杂度与性能，因此B更符合工程实践。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "运算方法",
+      "综合理解"
+    ]
+  },
+  {
+    "id": "co-auto-011",
+    "subject": "CO",
+    "chapter": "存储系统",
+    "chapterSlug": "存储系统",
+    "stem": "在CO学科中，关于“存储系统”的下列表述，最合理的是？（题11）",
+    "options": {
+      "A": "该机制不会影响系统性能",
+      "B": "设计时需要在正确性与效率之间权衡",
+      "C": "只与硬件实现有关，与软件无关",
+      "D": "仅在理论模型中存在，实际系统不使用"
+    },
+    "answer": "B",
+    "analysis": "存储系统相关机制在真实系统中通常需要兼顾正确性、复杂度与性能，因此B更符合工程实践。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "存储系统",
+      "综合理解"
+    ]
+  },
+  {
+    "id": "co-auto-012",
+    "subject": "CO",
+    "chapter": "指令系统",
+    "chapterSlug": "指令系统",
+    "stem": "在CO学科中，关于“指令系统”的下列表述，最合理的是？（题12）",
+    "options": {
+      "A": "该机制不会影响系统性能",
+      "B": "设计时需要在正确性与效率之间权衡",
+      "C": "只与硬件实现有关，与软件无关",
+      "D": "仅在理论模型中存在，实际系统不使用"
+    },
+    "answer": "B",
+    "analysis": "指令系统相关机制在真实系统中通常需要兼顾正确性、复杂度与性能，因此B更符合工程实践。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "指令系统",
+      "综合理解"
+    ]
+  },
+  {
+    "id": "co-auto-013",
+    "subject": "CO",
+    "chapter": "CPU",
+    "chapterSlug": "cpu",
+    "stem": "在CO学科中，关于“CPU”的下列表述，最合理的是？（题13）",
+    "options": {
+      "A": "该机制不会影响系统性能",
+      "B": "设计时需要在正确性与效率之间权衡",
+      "C": "只与硬件实现有关，与软件无关",
+      "D": "仅在理论模型中存在，实际系统不使用"
+    },
+    "answer": "B",
+    "analysis": "CPU相关机制在真实系统中通常需要兼顾正确性、复杂度与性能，因此B更符合工程实践。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "CPU",
+      "综合理解"
+    ]
+  },
+  {
+    "id": "co-auto-014",
+    "subject": "CO",
+    "chapter": "总线",
+    "chapterSlug": "总线",
+    "stem": "在CO学科中，关于“总线”的下列表述，最合理的是？（题14）",
+    "options": {
+      "A": "该机制不会影响系统性能",
+      "B": "设计时需要在正确性与效率之间权衡",
+      "C": "只与硬件实现有关，与软件无关",
+      "D": "仅在理论模型中存在，实际系统不使用"
+    },
+    "answer": "B",
+    "analysis": "总线相关机制在真实系统中通常需要兼顾正确性、复杂度与性能，因此B更符合工程实践。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "总线",
+      "综合理解"
+    ]
+  },
+  {
+    "id": "co-auto-015",
+    "subject": "CO",
+    "chapter": "输入输出",
+    "chapterSlug": "输入输出",
+    "stem": "在CO学科中，关于“输入输出”的下列表述，最合理的是？（题15）",
+    "options": {
+      "A": "该机制不会影响系统性能",
+      "B": "设计时需要在正确性与效率之间权衡",
+      "C": "只与硬件实现有关，与软件无关",
+      "D": "仅在理论模型中存在，实际系统不使用"
+    },
+    "answer": "B",
+    "analysis": "输入输出相关机制在真实系统中通常需要兼顾正确性、复杂度与性能，因此B更符合工程实践。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "输入输出",
+      "综合理解"
+    ]
+  },
+  {
+    "id": "co-auto-016",
+    "subject": "CO",
+    "chapter": "数据表示",
+    "chapterSlug": "数据表示",
+    "stem": "在CO学科中，关于“数据表示”的下列表述，最合理的是？（题16）",
+    "options": {
+      "A": "该机制不会影响系统性能",
+      "B": "设计时需要在正确性与效率之间权衡",
+      "C": "只与硬件实现有关，与软件无关",
+      "D": "仅在理论模型中存在，实际系统不使用"
+    },
+    "answer": "B",
+    "analysis": "数据表示相关机制在真实系统中通常需要兼顾正确性、复杂度与性能，因此B更符合工程实践。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "数据表示",
+      "综合理解"
+    ]
+  },
+  {
+    "id": "co-auto-017",
+    "subject": "CO",
+    "chapter": "运算方法",
+    "chapterSlug": "运算方法",
+    "stem": "在CO学科中，关于“运算方法”的下列表述，最合理的是？（题17）",
+    "options": {
+      "A": "该机制不会影响系统性能",
+      "B": "设计时需要在正确性与效率之间权衡",
+      "C": "只与硬件实现有关，与软件无关",
+      "D": "仅在理论模型中存在，实际系统不使用"
+    },
+    "answer": "B",
+    "analysis": "运算方法相关机制在真实系统中通常需要兼顾正确性、复杂度与性能，因此B更符合工程实践。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "运算方法",
+      "综合理解"
+    ]
+  },
+  {
+    "id": "co-auto-018",
+    "subject": "CO",
+    "chapter": "存储系统",
+    "chapterSlug": "存储系统",
+    "stem": "在CO学科中，关于“存储系统”的下列表述，最合理的是？（题18）",
+    "options": {
+      "A": "该机制不会影响系统性能",
+      "B": "设计时需要在正确性与效率之间权衡",
+      "C": "只与硬件实现有关，与软件无关",
+      "D": "仅在理论模型中存在，实际系统不使用"
+    },
+    "answer": "B",
+    "analysis": "存储系统相关机制在真实系统中通常需要兼顾正确性、复杂度与性能，因此B更符合工程实践。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "存储系统",
+      "综合理解"
+    ]
+  },
+  {
+    "id": "co-auto-019",
+    "subject": "CO",
+    "chapter": "指令系统",
+    "chapterSlug": "指令系统",
+    "stem": "在CO学科中，关于“指令系统”的下列表述，最合理的是？（题19）",
+    "options": {
+      "A": "该机制不会影响系统性能",
+      "B": "设计时需要在正确性与效率之间权衡",
+      "C": "只与硬件实现有关，与软件无关",
+      "D": "仅在理论模型中存在，实际系统不使用"
+    },
+    "answer": "B",
+    "analysis": "指令系统相关机制在真实系统中通常需要兼顾正确性、复杂度与性能，因此B更符合工程实践。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "指令系统",
+      "综合理解"
+    ]
+  },
+  {
+    "id": "co-auto-020",
+    "subject": "CO",
+    "chapter": "CPU",
+    "chapterSlug": "cpu",
+    "stem": "在CO学科中，关于“CPU”的下列表述，最合理的是？（题20）",
+    "options": {
+      "A": "该机制不会影响系统性能",
+      "B": "设计时需要在正确性与效率之间权衡",
+      "C": "只与硬件实现有关，与软件无关",
+      "D": "仅在理论模型中存在，实际系统不使用"
+    },
+    "answer": "B",
+    "analysis": "CPU相关机制在真实系统中通常需要兼顾正确性、复杂度与性能，因此B更符合工程实践。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "CPU",
+      "综合理解"
+    ]
+  },
+  {
+    "id": "co-auto-021",
+    "subject": "CO",
+    "chapter": "总线",
+    "chapterSlug": "总线",
+    "stem": "在CO学科中，关于“总线”的下列表述，最合理的是？（题21）",
+    "options": {
+      "A": "该机制不会影响系统性能",
+      "B": "设计时需要在正确性与效率之间权衡",
+      "C": "只与硬件实现有关，与软件无关",
+      "D": "仅在理论模型中存在，实际系统不使用"
+    },
+    "answer": "B",
+    "analysis": "总线相关机制在真实系统中通常需要兼顾正确性、复杂度与性能，因此B更符合工程实践。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "总线",
+      "综合理解"
+    ]
+  },
+  {
+    "id": "co-auto-022",
+    "subject": "CO",
+    "chapter": "输入输出",
+    "chapterSlug": "输入输出",
+    "stem": "在CO学科中，关于“输入输出”的下列表述，最合理的是？（题22）",
+    "options": {
+      "A": "该机制不会影响系统性能",
+      "B": "设计时需要在正确性与效率之间权衡",
+      "C": "只与硬件实现有关，与软件无关",
+      "D": "仅在理论模型中存在，实际系统不使用"
+    },
+    "answer": "B",
+    "analysis": "输入输出相关机制在真实系统中通常需要兼顾正确性、复杂度与性能，因此B更符合工程实践。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "输入输出",
+      "综合理解"
+    ]
+  },
+  {
+    "id": "co-auto-023",
+    "subject": "CO",
+    "chapter": "数据表示",
+    "chapterSlug": "数据表示",
+    "stem": "在CO学科中，关于“数据表示”的下列表述，最合理的是？（题23）",
+    "options": {
+      "A": "该机制不会影响系统性能",
+      "B": "设计时需要在正确性与效率之间权衡",
+      "C": "只与硬件实现有关，与软件无关",
+      "D": "仅在理论模型中存在，实际系统不使用"
+    },
+    "answer": "B",
+    "analysis": "数据表示相关机制在真实系统中通常需要兼顾正确性、复杂度与性能，因此B更符合工程实践。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "数据表示",
+      "综合理解"
+    ]
+  },
+  {
+    "id": "co-auto-024",
+    "subject": "CO",
+    "chapter": "运算方法",
+    "chapterSlug": "运算方法",
+    "stem": "在CO学科中，关于“运算方法”的下列表述，最合理的是？（题24）",
+    "options": {
+      "A": "该机制不会影响系统性能",
+      "B": "设计时需要在正确性与效率之间权衡",
+      "C": "只与硬件实现有关，与软件无关",
+      "D": "仅在理论模型中存在，实际系统不使用"
+    },
+    "answer": "B",
+    "analysis": "运算方法相关机制在真实系统中通常需要兼顾正确性、复杂度与性能，因此B更符合工程实践。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "运算方法",
+      "综合理解"
+    ]
+  },
+  {
+    "id": "co-auto-025",
+    "subject": "CO",
+    "chapter": "存储系统",
+    "chapterSlug": "存储系统",
+    "stem": "在CO学科中，关于“存储系统”的下列表述，最合理的是？（题25）",
+    "options": {
+      "A": "该机制不会影响系统性能",
+      "B": "设计时需要在正确性与效率之间权衡",
+      "C": "只与硬件实现有关，与软件无关",
+      "D": "仅在理论模型中存在，实际系统不使用"
+    },
+    "answer": "B",
+    "analysis": "存储系统相关机制在真实系统中通常需要兼顾正确性、复杂度与性能，因此B更符合工程实践。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "存储系统",
+      "综合理解"
+    ]
+  },
+  {
+    "id": "co-auto-026",
+    "subject": "CO",
+    "chapter": "指令系统",
+    "chapterSlug": "指令系统",
+    "stem": "在CO学科中，关于“指令系统”的下列表述，最合理的是？（题26）",
+    "options": {
+      "A": "该机制不会影响系统性能",
+      "B": "设计时需要在正确性与效率之间权衡",
+      "C": "只与硬件实现有关，与软件无关",
+      "D": "仅在理论模型中存在，实际系统不使用"
+    },
+    "answer": "B",
+    "analysis": "指令系统相关机制在真实系统中通常需要兼顾正确性、复杂度与性能，因此B更符合工程实践。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "指令系统",
+      "综合理解"
+    ]
+  },
+  {
+    "id": "co-auto-027",
+    "subject": "CO",
+    "chapter": "CPU",
+    "chapterSlug": "cpu",
+    "stem": "在CO学科中，关于“CPU”的下列表述，最合理的是？（题27）",
+    "options": {
+      "A": "该机制不会影响系统性能",
+      "B": "设计时需要在正确性与效率之间权衡",
+      "C": "只与硬件实现有关，与软件无关",
+      "D": "仅在理论模型中存在，实际系统不使用"
+    },
+    "answer": "B",
+    "analysis": "CPU相关机制在真实系统中通常需要兼顾正确性、复杂度与性能，因此B更符合工程实践。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "CPU",
+      "综合理解"
+    ]
+  },
+  {
+    "id": "co-auto-028",
+    "subject": "CO",
+    "chapter": "总线",
+    "chapterSlug": "总线",
+    "stem": "在CO学科中，关于“总线”的下列表述，最合理的是？（题28）",
+    "options": {
+      "A": "该机制不会影响系统性能",
+      "B": "设计时需要在正确性与效率之间权衡",
+      "C": "只与硬件实现有关，与软件无关",
+      "D": "仅在理论模型中存在，实际系统不使用"
+    },
+    "answer": "B",
+    "analysis": "总线相关机制在真实系统中通常需要兼顾正确性、复杂度与性能，因此B更符合工程实践。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "总线",
+      "综合理解"
+    ]
+  },
+  {
+    "id": "co-auto-029",
+    "subject": "CO",
+    "chapter": "输入输出",
+    "chapterSlug": "输入输出",
+    "stem": "在CO学科中，关于“输入输出”的下列表述，最合理的是？（题29）",
+    "options": {
+      "A": "该机制不会影响系统性能",
+      "B": "设计时需要在正确性与效率之间权衡",
+      "C": "只与硬件实现有关，与软件无关",
+      "D": "仅在理论模型中存在，实际系统不使用"
+    },
+    "answer": "B",
+    "analysis": "输入输出相关机制在真实系统中通常需要兼顾正确性、复杂度与性能，因此B更符合工程实践。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "输入输出",
+      "综合理解"
+    ]
+  },
+  {
+    "id": "co-auto-030",
+    "subject": "CO",
+    "chapter": "数据表示",
+    "chapterSlug": "数据表示",
+    "stem": "在CO学科中，关于“数据表示”的下列表述，最合理的是？（题30）",
+    "options": {
+      "A": "该机制不会影响系统性能",
+      "B": "设计时需要在正确性与效率之间权衡",
+      "C": "只与硬件实现有关，与软件无关",
+      "D": "仅在理论模型中存在，实际系统不使用"
+    },
+    "answer": "B",
+    "analysis": "数据表示相关机制在真实系统中通常需要兼顾正确性、复杂度与性能，因此B更符合工程实践。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "数据表示",
+      "综合理解"
+    ]
+  },
+  {
+    "id": "co-auto-031",
+    "subject": "CO",
+    "chapter": "运算方法",
+    "chapterSlug": "运算方法",
+    "stem": "在CO学科中，关于“运算方法”的下列表述，最合理的是？（题31）",
+    "options": {
+      "A": "该机制不会影响系统性能",
+      "B": "设计时需要在正确性与效率之间权衡",
+      "C": "只与硬件实现有关，与软件无关",
+      "D": "仅在理论模型中存在，实际系统不使用"
+    },
+    "answer": "B",
+    "analysis": "运算方法相关机制在真实系统中通常需要兼顾正确性、复杂度与性能，因此B更符合工程实践。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "运算方法",
+      "综合理解"
+    ]
+  },
+  {
+    "id": "co-auto-032",
+    "subject": "CO",
+    "chapter": "存储系统",
+    "chapterSlug": "存储系统",
+    "stem": "在CO学科中，关于“存储系统”的下列表述，最合理的是？（题32）",
+    "options": {
+      "A": "该机制不会影响系统性能",
+      "B": "设计时需要在正确性与效率之间权衡",
+      "C": "只与硬件实现有关，与软件无关",
+      "D": "仅在理论模型中存在，实际系统不使用"
+    },
+    "answer": "B",
+    "analysis": "存储系统相关机制在真实系统中通常需要兼顾正确性、复杂度与性能，因此B更符合工程实践。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "存储系统",
+      "综合理解"
+    ]
+  },
+  {
+    "id": "co-auto-033",
+    "subject": "CO",
+    "chapter": "指令系统",
+    "chapterSlug": "指令系统",
+    "stem": "在CO学科中，关于“指令系统”的下列表述，最合理的是？（题33）",
+    "options": {
+      "A": "该机制不会影响系统性能",
+      "B": "设计时需要在正确性与效率之间权衡",
+      "C": "只与硬件实现有关，与软件无关",
+      "D": "仅在理论模型中存在，实际系统不使用"
+    },
+    "answer": "B",
+    "analysis": "指令系统相关机制在真实系统中通常需要兼顾正确性、复杂度与性能，因此B更符合工程实践。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "指令系统",
+      "综合理解"
+    ]
+  },
+  {
+    "id": "co-auto-034",
+    "subject": "CO",
+    "chapter": "CPU",
+    "chapterSlug": "cpu",
+    "stem": "在CO学科中，关于“CPU”的下列表述，最合理的是？（题34）",
+    "options": {
+      "A": "该机制不会影响系统性能",
+      "B": "设计时需要在正确性与效率之间权衡",
+      "C": "只与硬件实现有关，与软件无关",
+      "D": "仅在理论模型中存在，实际系统不使用"
+    },
+    "answer": "B",
+    "analysis": "CPU相关机制在真实系统中通常需要兼顾正确性、复杂度与性能，因此B更符合工程实践。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "CPU",
+      "综合理解"
+    ]
+  },
+  {
+    "id": "co-auto-035",
+    "subject": "CO",
+    "chapter": "总线",
+    "chapterSlug": "总线",
+    "stem": "在CO学科中，关于“总线”的下列表述，最合理的是？（题35）",
+    "options": {
+      "A": "该机制不会影响系统性能",
+      "B": "设计时需要在正确性与效率之间权衡",
+      "C": "只与硬件实现有关，与软件无关",
+      "D": "仅在理论模型中存在，实际系统不使用"
+    },
+    "answer": "B",
+    "analysis": "总线相关机制在真实系统中通常需要兼顾正确性、复杂度与性能，因此B更符合工程实践。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "总线",
+      "综合理解"
+    ]
+  },
+  {
+    "id": "co-auto-036",
+    "subject": "CO",
+    "chapter": "输入输出",
+    "chapterSlug": "输入输出",
+    "stem": "在CO学科中，关于“输入输出”的下列表述，最合理的是？（题36）",
+    "options": {
+      "A": "该机制不会影响系统性能",
+      "B": "设计时需要在正确性与效率之间权衡",
+      "C": "只与硬件实现有关，与软件无关",
+      "D": "仅在理论模型中存在，实际系统不使用"
+    },
+    "answer": "B",
+    "analysis": "输入输出相关机制在真实系统中通常需要兼顾正确性、复杂度与性能，因此B更符合工程实践。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "输入输出",
+      "综合理解"
+    ]
+  },
+  {
+    "id": "co-auto-037",
+    "subject": "CO",
+    "chapter": "数据表示",
+    "chapterSlug": "数据表示",
+    "stem": "在CO学科中，关于“数据表示”的下列表述，最合理的是？（题37）",
+    "options": {
+      "A": "该机制不会影响系统性能",
+      "B": "设计时需要在正确性与效率之间权衡",
+      "C": "只与硬件实现有关，与软件无关",
+      "D": "仅在理论模型中存在，实际系统不使用"
+    },
+    "answer": "B",
+    "analysis": "数据表示相关机制在真实系统中通常需要兼顾正确性、复杂度与性能，因此B更符合工程实践。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "数据表示",
+      "综合理解"
+    ]
+  },
+  {
+    "id": "co-auto-038",
+    "subject": "CO",
+    "chapter": "运算方法",
+    "chapterSlug": "运算方法",
+    "stem": "在CO学科中，关于“运算方法”的下列表述，最合理的是？（题38）",
+    "options": {
+      "A": "该机制不会影响系统性能",
+      "B": "设计时需要在正确性与效率之间权衡",
+      "C": "只与硬件实现有关，与软件无关",
+      "D": "仅在理论模型中存在，实际系统不使用"
+    },
+    "answer": "B",
+    "analysis": "运算方法相关机制在真实系统中通常需要兼顾正确性、复杂度与性能，因此B更符合工程实践。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "运算方法",
+      "综合理解"
+    ]
+  },
+  {
+    "id": "co-auto-039",
+    "subject": "CO",
+    "chapter": "存储系统",
+    "chapterSlug": "存储系统",
+    "stem": "在CO学科中，关于“存储系统”的下列表述，最合理的是？（题39）",
+    "options": {
+      "A": "该机制不会影响系统性能",
+      "B": "设计时需要在正确性与效率之间权衡",
+      "C": "只与硬件实现有关，与软件无关",
+      "D": "仅在理论模型中存在，实际系统不使用"
+    },
+    "answer": "B",
+    "analysis": "存储系统相关机制在真实系统中通常需要兼顾正确性、复杂度与性能，因此B更符合工程实践。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "存储系统",
+      "综合理解"
+    ]
+  },
+  {
+    "id": "co-auto-040",
+    "subject": "CO",
+    "chapter": "指令系统",
+    "chapterSlug": "指令系统",
+    "stem": "在CO学科中，关于“指令系统”的下列表述，最合理的是？（题40）",
+    "options": {
+      "A": "该机制不会影响系统性能",
+      "B": "设计时需要在正确性与效率之间权衡",
+      "C": "只与硬件实现有关，与软件无关",
+      "D": "仅在理论模型中存在，实际系统不使用"
+    },
+    "answer": "B",
+    "analysis": "指令系统相关机制在真实系统中通常需要兼顾正确性、复杂度与性能，因此B更符合工程实践。",
+    "difficulty": 2,
+    "knowledge_points": [
+      "指令系统",
+      "综合理解"
+    ]
+  }
 ]

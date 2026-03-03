@@ -140,10 +140,6 @@ public class DataInitializer implements CommandLineRunner {
     }
 
     private void importDefaultBankIfNeeded(String subject, String fileName) {
-        Integer count = jdbcTemplate.queryForObject("select count(1) from exercise where subject = ?", Integer.class, subject);
-        if (count != null && count > 0) {
-            return;
-        }
         Path file = resolveQuestionBank(fileName);
         if (file == null) {
             return;
@@ -156,16 +152,18 @@ public class DataInitializer implements CommandLineRunner {
                 List<String> kps = (List<String>) item.getOrDefault("knowledge_points", new ArrayList<>());
                 String kp = objectMapper.writeValueAsString(kps);
                 jdbcTemplate.update("""
-                        insert into exercise(id, subject, chapter, chapter_slug, stem, option_a, option_b, option_c, option_d, answer, analysis, difficulty, knowledge_points)
-                        values(?,?,?,?,?,?,?,?,?,?,?,?,?)
+                        insert into exercise(id, subject, chapter, chapter_slug, stem, option_a, option_b, option_c, option_d, answer, analysis, difficulty, knowledge_points, attachment_url)
+                        values(?,?,?,?,?,?,?,?,?,?,?,?,?,?)
                         on duplicate key update chapter=values(chapter), chapter_slug=values(chapter_slug), stem=values(stem),
                         option_a=values(option_a), option_b=values(option_b), option_c=values(option_c), option_d=values(option_d),
-                        answer=values(answer), analysis=values(analysis), difficulty=values(difficulty), knowledge_points=values(knowledge_points)
+                        answer=values(answer), analysis=values(analysis), difficulty=values(difficulty), knowledge_points=values(knowledge_points),
+                        attachment_url=values(attachment_url)
                         """,
                         String.valueOf(item.get("id")), subject, String.valueOf(item.get("chapter")), String.valueOf(item.get("chapterSlug")),
                         String.valueOf(item.get("stem")), options.get("A"), options.get("B"), options.get("C"), options.get("D"),
                         String.valueOf(item.get("answer")), String.valueOf(item.getOrDefault("analysis", "")),
-                        Integer.parseInt(String.valueOf(item.getOrDefault("difficulty", 2))), kp);
+                        Integer.parseInt(String.valueOf(item.getOrDefault("difficulty", 2))), kp,
+                        String.valueOf(item.getOrDefault("attachment_url", "")));
             }
         } catch (Exception ignored) {
         }
