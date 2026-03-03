@@ -51,7 +51,8 @@ public class ExerciseService {
         if (!"ADMIN".equals(current.getRole())) throw new CustomException("仅管理员可导入");
         if (!current.getSubject().equals(subject)) throw new CustomException("不可跨学科导入");
         try {
-            String content = Files.readString(Path.of(filePath));
+            Path source = resolveQuestionBankPath(subject, filePath);
+            String content = Files.readString(source);
             List<Map<String, Object>> items = objectMapper.readValue(content, new TypeReference<>() {});
             int count = 0;
             for (Map<String, Object> item : items) {
@@ -178,6 +179,23 @@ public class ExerciseService {
         return ranked.stream().sorted((a, b) -> Double.compare((Double) b.get("score"), (Double) a.get("score"))).limit(topN).collect(Collectors.toList());
     }
 
+
+    private Path resolveQuestionBankPath(String subject, String filePath) {
+        if (ObjectUtil.isNotEmpty(filePath)) {
+            Path custom = Path.of(filePath);
+            if (Files.exists(custom)) return custom;
+        }
+        String lower = subject == null ? "" : subject.toLowerCase();
+        List<Path> candidates = List.of(
+                Path.of("data/question-bank", lower + ".json"),
+                Path.of("../data/question-bank", lower + ".json"),
+                Path.of("/workspace/MyTest/data/question-bank", lower + ".json")
+        );
+        for (Path candidate : candidates) {
+            if (Files.exists(candidate)) return candidate;
+        }
+        throw new CustomException("题库文件不存在");
+    }
     private Account requireLogin() {
         Account current = UserContext.get();
         if (current == null) throw new CustomException("401");

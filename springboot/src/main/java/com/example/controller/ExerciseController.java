@@ -3,6 +3,7 @@ package com.example.controller;
 import com.example.common.Result;
 import com.example.dto.ImportRequest;
 import com.example.dto.SubmitAnswerRequest;
+import com.example.context.UserContext;
 import com.example.service.ExerciseService;
 import org.springframework.web.bind.annotation.*;
 
@@ -20,6 +21,14 @@ public class ExerciseController {
     public Result importBank(@RequestBody ImportRequest request) {
         int count = exerciseService.importFromJson(request.getSubject(), request.getFilePath());
         return Result.success(Map.of("imported", count));
+    }
+
+
+    @PostMapping("/admin/question-bank/importCurrent")
+    public Result importCurrent() {
+        String subject = UserContext.get().getSubject();
+        int count = exerciseService.importFromJson(subject, null);
+        return Result.success(Map.of("imported", count, "subject", subject));
     }
 
     @GetMapping("/api/exercises/random")
