@@ -32,9 +32,45 @@ public class DataInitializer implements CommandLineRunner {
                 )
                 """);
 
-        initAdmin("MATH");
-        initAdmin("OS");
+        jdbcTemplate.execute("""
+                create table if not exists exercise (
+                    id varchar(64) primary key,
+                    subject varchar(20) not null,
+                    chapter varchar(100) not null,
+                    chapter_slug varchar(100),
+                    stem text not null,
+                    option_a varchar(255),
+                    option_b varchar(255),
+                    option_c varchar(255),
+                    option_d varchar(255),
+                    answer varchar(4) not null,
+                    analysis text,
+                    difficulty int default 2,
+                    knowledge_points text,
+                    created_at datetime default current_timestamp,
+                    index idx_exercise_subject(subject)
+                )
+                """);
+
+        jdbcTemplate.execute("""
+                create table if not exists user_answer (
+                    id bigint primary key auto_increment,
+                    user_id int not null,
+                    subject varchar(20) not null,
+                    exercise_id varchar(64) not null,
+                    is_correct tinyint not null,
+                    chosen_option varchar(4),
+                    correct_answer varchar(4),
+                    answered_at datetime,
+                    index idx_answer_user_subject(user_id, subject),
+                    index idx_answer_exercise(exercise_id)
+                )
+                """);
+
         initAdmin("DS");
+        initAdmin("OS");
+        initAdmin("CN");
+        initAdmin("CO");
     }
 
     private void initAdmin(String subject) {

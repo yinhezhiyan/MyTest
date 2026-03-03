@@ -66,13 +66,14 @@ import {ElMessage} from "element-plus";
 import router from "@/router";
 
 const data = reactive({
-  form: { role: 'ADMIN', subject: 'MATH' },
+  form: { role: 'ADMIN', subject: 'DS' },
   registerVisible: false,
-  registerForm: { role: 'STUDENT', subject: 'MATH' },
+  registerForm: { role: 'STUDENT', subject: 'DS' },
   subjects: [
-    { label: '数学', value: 'MATH' },
-    { label: '操作系统', value: 'OS' },
     { label: '数据结构', value: 'DS' },
+    { label: '操作系统', value: 'OS' },
+    { label: '计网', value: 'CN' },
+    { label: '计组', value: 'CO' },
   ],
   rules: {
     role: [{ required: true, message: '请选择身份', trigger: 'change' }],
