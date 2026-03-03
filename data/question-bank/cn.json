@@ -1,0 +1,10 @@
+[
+  {"id":"application-layer-001","subject":"CN","chapter":"应用层","chapterSlug":"application-layer","stem":"HTTP 默认使用的传输层协议是？","options":{"A":"UDP","B":"TCP","C":"ICMP","D":"ARP"},"answer":"B","analysis":"HTTP/1.1、2 运行于 TCP。","difficulty":1,"knowledge_points":["HTTP","TCP"]},
+  {"id":"transport-layer-001","subject":"CN","chapter":"传输层","chapterSlug":"transport-layer","stem":"TCP 三次握手的主要目的是？","options":{"A":"加密传输","B":"同步序号并建立连接","C":"路由选择","D":"地址解析"},"answer":"B","analysis":"双方确认收发能力并同步初始序号。","difficulty":1,"knowledge_points":["TCP连接"]},
+  {"id":"transport-layer-002","subject":"CN","chapter":"传输层","chapterSlug":"transport-layer","stem":"UDP 的典型特点是？","options":{"A":"面向连接","B":"可靠传输","C":"无连接、低开销","D":"按序确认"},"answer":"C","analysis":"UDP 不保证可靠与有序。","difficulty":1,"knowledge_points":["UDP"]},
+  {"id":"network-layer-001","subject":"CN","chapter":"网络层","chapterSlug":"network-layer","stem":"IP 协议工作在 OSI 的哪一层？","options":{"A":"数据链路层","B":"网络层","C":"传输层","D":"会话层"},"answer":"B","analysis":"IP 负责寻址与转发。","difficulty":1,"knowledge_points":["IP"]},
+  {"id":"routing-001","subject":"CN","chapter":"路由算法","chapterSlug":"routing","stem":"OSPF 属于哪类路由协议？","options":{"A":"距离矢量","B":"链路状态","C":"路径矢量","D":"静态路由"},"answer":"B","analysis":"OSPF 基于链路状态和 Dijkstra。","difficulty":2,"knowledge_points":["OSPF"]},
+  {"id":"datalink-001","subject":"CN","chapter":"数据链路层","chapterSlug":"datalink","stem":"以太网 MAC 地址长度通常为？","options":{"A":"32 位","B":"48 位","C":"64 位","D":"128 位"},"answer":"B","analysis":"常见 MAC 地址为 48bit。","difficulty":1,"knowledge_points":["MAC"]},
+  {"id":"physical-001","subject":"CN","chapter":"物理层","chapterSlug":"physical","stem":"奈奎斯特定理主要用于描述？","options":{"A":"无噪声信道最高码元速率","B":"有噪信道最大容量","C":"误码率","D":"路由收敛"},"answer":"A","analysis":"无噪声信道下码元速率上限。","difficulty":3,"knowledge_points":["奈奎斯特"]},
+  {"id":"security-001","subject":"CN","chapter":"网络安全","chapterSlug":"security","stem":"TLS 的主要作用是？","options":{"A":"网络地址转换","B":"提供传输层加密与认证","C":"提升带宽","D":"替代DNS"},"answer":"B","analysis":"TLS 提供机密性和完整性。","difficulty":2,"knowledge_points":["TLS"]}
+]
