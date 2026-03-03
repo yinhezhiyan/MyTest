@@ -136,8 +136,7 @@ public class ExerciseService {
         String subject = user.getSubject();
         Integer uid = user.getId();
         List<Map<String, Object>> stats = jdbcTemplate.queryForList("""
-                select exercise_id, sum(case when is_correct=0 then 2 else 0 end) + count(*) * 0.5 as score,
-                       max(answered_at) as latest
+                select exercise_id, sum(case when is_correct=0 then 2 else 0 end) + count(*) * 0.5 as score
                 from user_answer where user_id=? and subject=?
                 group by exercise_id
                 """, uid, subject);
@@ -156,7 +155,7 @@ public class ExerciseService {
         Set<String> weakChapters = weak.stream().map(x -> (String) x.get("chapter")).collect(Collectors.toSet());
 
         List<Exercise> all = jdbcTemplate.query("select * from exercise where subject=?", exerciseMapper, subject);
-        List<String> done = jdbcTemplate.queryForList("select distinct exercise_id from user_answer where user_id=? and subject=?", String.class, uid, subject);
+        Set<String> done = new HashSet<>(jdbcTemplate.queryForList("select distinct exercise_id from user_answer where user_id=? and subject=?", String.class, uid, subject));
 
         List<Map<String, Object>> ranked = new ArrayList<>();
         for (Exercise e : all) {
@@ -166,17 +165,61 @@ public class ExerciseService {
             double kgScore = weakChapters.contains(e.getChapter()) ? 1.0 : 0.2;
             double finalScore = 0.6 * cfScore + 0.4 * kgScore;
             String reason = weakChapters.contains(e.getChapter())
-                    ? "你在「" + e.getChapter() + "」错题较多，知识图谱邻接章节需要巩固；相似行为题型优先推荐"
+                    ? "你在「" + e.getChapter() + "」错题较多，推荐同章节强化"
                     : "基于相似学生行为与知识图谱扩展推荐";
-            Map<String, Object> item = new HashMap<>();
-            item.put("exerciseId", e.getId());
-            item.put("chapter", e.getChapter());
-            item.put("stem", e.getStem());
-            item.put("score", finalScore);
-            item.put("reason", reason);
-            ranked.add(item);
+            ranked.add(buildRecommendationItem(e, finalScore, reason));
         }
-        return ranked.stream().sorted((a, b) -> Double.compare((Double) b.get("score"), (Double) a.get("score"))).limit(topN).collect(Collectors.toList());
+
+        List<Map<String, Object>> result = ranked.stream()
+                .sorted((a, b) -> Double.compare((Double) b.get("score"), (Double) a.get("score")))
+                .limit(topN)
+                .collect(Collectors.toList());
+
+        if (!result.isEmpty()) {
+            return result;
+        }
+
+        // 回退1：如果用户做过题但新题已做完，则推荐错题复习，避免界面变空
+        List<Exercise> wrongReview = jdbcTemplate.query("""
+                select e.* from user_answer ua
+                join exercise e on ua.exercise_id = e.id
+                where ua.user_id = ? and ua.subject = ? and ua.is_correct = 0
+                group by e.id
+                order by count(*) desc, max(ua.answered_at) desc
+                limit ?
+                """, exerciseMapper, uid, subject, topN);
+        if (!wrongReview.isEmpty()) {
+            return wrongReview.stream()
+                    .map(e -> buildRecommendationItem(e, 1.0, "你此前在该题作答错误，建议复习巩固"))
+                    .collect(Collectors.toList());
+        }
+
+        // 回退2：若没有错题，则回看最近做过的题，保证做过题后不空
+        List<Exercise> recentReview = jdbcTemplate.query("""
+                select e.* from user_answer ua
+                join exercise e on ua.exercise_id = e.id
+                where ua.user_id = ? and ua.subject = ?
+                group by e.id
+                order by max(ua.answered_at) desc
+                limit ?
+                """, exerciseMapper, uid, subject, topN);
+        if (!recentReview.isEmpty()) {
+            return recentReview.stream()
+                    .map(e -> buildRecommendationItem(e, 0.8, "最近练习记录回顾，帮助稳固记忆"))
+                    .collect(Collectors.toList());
+        }
+
+        return Collections.emptyList();
+    }
+
+    private Map<String, Object> buildRecommendationItem(Exercise e, double score, String reason) {
+        Map<String, Object> item = new HashMap<>();
+        item.put("exerciseId", e.getId());
+        item.put("chapter", e.getChapter());
+        item.put("stem", e.getStem());
+        item.put("score", score);
+        item.put("reason", reason);
+        return item;
     }
 
 
