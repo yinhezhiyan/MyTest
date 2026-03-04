@@ -546,27 +546,6 @@
     "source_num": 9
   },
   {
-    "id": "cn-txt-0027",
-    "subject": "CN",
-    "chapter": "计算机网络体系结构与参考模型",
-    "chapterSlug": "计算机网络体系结构与参考模型",
-    "stem": "下图是 TCP 报文段的首部格式, 它描述的是网络协议三要素中的( )",
-    "options": {
-      "A": "（自动补全选项A）A项表述。",
-      "B": "（自动补全选项B）B项表述。",
-      "C": "（自动补全选项C）C项表述。",
-      "D": "（自动补全选项D）D项表述。"
-    },
-    "answer": "A",
-    "analysis": "依据答案文本已回填；选项缺失处已自动补全。",
-    "difficulty": 2,
-    "knowledge_points": [
-      "计算机网络体系结构与参考模型",
-      "question-txt导入"
-    ],
-    "source_num": 10
-  },
-  {
     "id": "cn-txt-0028",
     "subject": "CN",
     "chapter": "计算机网络体系结构与参考模型",
@@ -840,27 +819,6 @@
     "source_num": 22
   },
   {
-    "id": "cn-txt-0041",
-    "subject": "CN",
-    "chapter": "计算机网络体系结构与参考模型",
-    "chapterSlug": "计算机网络体系结构与参考模型",
-    "stem": "在 OSI 参考模型中, 提供流量控制功能的层是第 (@) 层; 提供建立、维护和拆除端到端的连接的层是(②);为数据分组提供在网络中路由的功能的是 (③);传输层提供(④)的数据传送；为网络层实体提供数据发送和接收功能及过程的是(⑤) ①A.1、2、3                B.2、3、4                   C.3、4、5                   D.4、5、6 ② A.物理层                  B.数据链路层               C.会话层                      D.传输层 ③ A.物理层                   B.数据链路层               C.会话层                      D.传输层 ④ A.主机进程之间        B.网络之间                    C.数据链路之间            D.物理线路之间 ⑤ A.物理层                   B.数据链路层               C.会话层                      D.传输层",
-    "options": {
-      "A": "（自动补全选项A）A项表述。",
-      "B": "（自动补全选项B）B项表述。",
-      "C": "（自动补全选项C）C项表述。",
-      "D": "（自动补全选项D）D项表述。"
-    },
-    "answer": "B",
-    "analysis": "依据答案文本已回填；选项缺失处已自动补全。",
-    "difficulty": 2,
-    "knowledge_points": [
-      "计算机网络体系结构与参考模型",
-      "question-txt导入"
-    ],
-    "source_num": 23
-  },
-  {
     "id": "cn-txt-0042",
     "subject": "CN",
     "chapter": "计算机网络体系结构与参考模型",
@@ -880,27 +838,6 @@
       "question-txt导入"
     ],
     "source_num": 24
-  },
-  {
-    "id": "cn-txt-0043",
-    "subject": "CN",
-    "chapter": "计算机网络体系结构与参考模型",
-    "chapterSlug": "计算机网络体系结构与参考模型",
-    "stem": "互联网采用的核心技术是( )",
-    "options": {
-      "A": "（自动补全选项A）A项表述。",
-      "B": "（自动补全选项B）B项表述。",
-      "C": "（自动补全选项C）C项表述。",
-      "D": "（自动补全选项D）D项表述。"
-    },
-    "answer": "C",
-    "analysis": "依据答案文本已回填；选项缺失处已自动补全。",
-    "difficulty": 2,
-    "knowledge_points": [
-      "计算机网络体系结构与参考模型",
-      "question-txt导入"
-    ],
-    "source_num": 25
   },
   {
     "id": "cn-txt-0044",
@@ -943,27 +880,6 @@
       "question-txt导入"
     ],
     "source_num": 27
-  },
-  {
-    "id": "cn-txt-0046",
-    "subject": "CN",
-    "chapter": "计算机网络体系结构与参考模型",
-    "chapterSlug": "计算机网络体系结构与参考模型",
-    "stem": "在 OSI 参考模型中, 各层都有差错控制过程, 指出以下每种差错发生在哪些层中。噪声使传输链路上的一个0变成1或一个1变成0(①)；收到一个序号错误的目的帧(②)；一台打印机正在打印，突然收到一个错误指令要打印头回到本行的开始位置 (③) ① A.物理层                   B.网络层                       C.数据链路层               D.会话层 ② A.物理层                   B.网络层                      C.数据链路层               D.会话层 ③ A.物理层                  B.网络层                      C.应用层                      D.会话层",
-    "options": {
-      "A": "（自动补全选项A）A项表述。",
-      "B": "（自动补全选项B）B项表述。",
-      "C": "（自动补全选项C）C项表述。",
-      "D": "（自动补全选项D）D项表述。"
-    },
-    "answer": "B",
-    "analysis": "依据答案文本已回填；选项缺失处已自动补全。",
-    "difficulty": 2,
-    "knowledge_points": [
-      "计算机网络体系结构与参考模型",
-      "question-txt导入"
-    ],
-    "source_num": 28
   },
   {
     "id": "cn-txt-0047",
@@ -1111,27 +1027,6 @@
       "question-txt导入"
     ],
     "source_num": 35
-  },
-  {
-    "id": "cn-txt-0054",
-    "subject": "CN",
-    "chapter": "计算机网络体系结构与参考模型",
-    "chapterSlug": "计算机网络体系结构与参考模型",
-    "stem": "【2020 统考真题】下图描述的协议要素是( )",
-    "options": {
-      "A": "（自动补全选项A）A项表述。",
-      "B": "（自动补全选项B）B项表述。",
-      "C": "（自动补全选项C）C项表述。",
-      "D": "（自动补全选项D）D项表述。"
-    },
-    "answer": "B",
-    "analysis": "依据答案文本已回填；选项缺失处已自动补全。",
-    "difficulty": 2,
-    "knowledge_points": [
-      "计算机网络体系结构与参考模型",
-      "question-txt导入"
-    ],
-    "source_num": 36
   },
   {
     "id": "cn-txt-0055",
@@ -1302,48 +1197,6 @@
     "source_num": 5
   },
   {
-    "id": "cn-txt-0063",
-    "subject": "CN",
-    "chapter": "通信基础",
-    "chapterSlug": "通信基础",
-    "stem": "不含同步信息的编码是( )",
-    "options": {
-      "A": "（自动补全选项A）A项表述。",
-      "B": "（自动补全选项B）B项表述。",
-      "C": "（自动补全选项C）C项表述。",
-      "D": "（自动补全选项D）D项表述。"
-    },
-    "answer": "A",
-    "analysis": "依据答案文本已回填；选项缺失处已自动补全。",
-    "difficulty": 2,
-    "knowledge_points": [
-      "通信基础",
-      "question-txt导入"
-    ],
-    "source_num": 6
-  },
-  {
-    "id": "cn-txt-0064",
-    "subject": "CN",
-    "chapter": "通信基础",
-    "chapterSlug": "通信基础",
-    "stem": "非归零编码                   11. 曼彻斯特编码             III.差分曼彻斯特编码",
-    "options": {
-      "A": "（自动补全选项A）A项表述。",
-      "B": "（自动补全选项B）B项表述。",
-      "C": "（自动补全选项C）C项表述。",
-      "D": "（自动补全选项D）D项表述。"
-    },
-    "answer": "B",
-    "analysis": "依据答案文本已回填；选项缺失处已自动补全。",
-    "difficulty": 2,
-    "knowledge_points": [
-      "通信基础",
-      "question-txt导入"
-    ],
-    "source_num": 1
-  },
-  {
     "id": "cn-txt-0065",
     "subject": "CN",
     "chapter": "通信基础",
@@ -1447,27 +1300,6 @@
       "question-txt导入"
     ],
     "source_num": 11
-  },
-  {
-    "id": "cn-txt-0070",
-    "subject": "CN",
-    "chapter": "通信基础",
-    "chapterSlug": "通信基础",
-    "stem": "二进制信号在信噪比为127:1的4kHz信道上传输，最大数据传输速率可以达到( )",
-    "options": {
-      "A": "（自动补全选项A）A项表述。",
-      "B": "（自动补全选项B）B项表述。",
-      "C": "（自动补全选项C）C项表述。",
-      "D": "（自动补全选项D）D项表述。"
-    },
-    "answer": "D",
-    "analysis": "依据答案文本已回填；选项缺失处已自动补全。",
-    "difficulty": 2,
-    "knowledge_points": [
-      "通信基础",
-      "question-txt导入"
-    ],
-    "source_num": 12
   },
   {
     "id": "cn-txt-0071",
@@ -2793,27 +2625,6 @@
     "source_num": 13
   },
   {
-    "id": "cn-txt-0134",
-    "subject": "CN",
-    "chapter": "流量控制与可靠传输机制",
-    "chapterSlug": "流量控制与可靠传输机制",
-    "stem": "对于窗口总大小为  的滑动窗口，最多可以有()帧已发送但没有确认。",
-    "options": {
-      "A": "0",
-      "B": "（自动补全选项B）B项表述。",
-      "C": "n",
-      "D": "（自动补全选项D）D项表述。"
-    },
-    "answer": "D",
-    "analysis": "依据答案文本已回填；选项缺失处已自动补全。",
-    "difficulty": 2,
-    "knowledge_points": [
-      "流量控制与可靠传输机制",
-      "question-txt导入"
-    ],
-    "source_num": 14
-  },
-  {
     "id": "cn-txt-0135",
     "subject": "CN",
     "chapter": "流量控制与可靠传输机制",
@@ -2833,27 +2644,6 @@
       "question-txt导入"
     ],
     "source_num": 15
-  },
-  {
-    "id": "cn-txt-0136",
-    "subject": "CN",
-    "chapter": "流量控制与可靠传输机制",
-    "chapterSlug": "流量控制与可靠传输机制",
-    "stem": "对无序接收的滑动窗口协议，若序号位数为 则接收窗口最大尺寸为( )",
-    "options": {
-      "A": "（自动补全选项A）A项表述。",
-      "B": "2n",
-      "C": "（自动补全选项C）C项表述。",
-      "D": "（自动补全选项D）D项表述。"
-    },
-    "answer": "C",
-    "analysis": "依据答案文本已回填；选项缺失处已自动补全。",
-    "difficulty": 2,
-    "knowledge_points": [
-      "流量控制与可靠传输机制",
-      "question-txt导入"
-    ],
-    "source_num": 16
   },
   {
     "id": "cn-txt-0137",
@@ -2917,48 +2707,6 @@
       "question-txt导入"
     ],
     "source_num": 19
-  },
-  {
-    "id": "cn-txt-0140",
-    "subject": "CN",
-    "chapter": "流量控制与可靠传输机制",
-    "chapterSlug": "流量控制与可靠传输机制",
-    "stem": "在下列滑动窗口机制中，理论上可以达到100%信道利用率的是( )",
-    "options": {
-      "A": "（自动补全选项A）A项表述。",
-      "B": "（自动补全选项B）B项表述。",
-      "C": "（自动补全选项C）C项表述。",
-      "D": "（自动补全选项D）D项表述。"
-    },
-    "answer": "C",
-    "analysis": "依据答案文本已回填；选项缺失处已自动补全。",
-    "difficulty": 2,
-    "knowledge_points": [
-      "流量控制与可靠传输机制",
-      "question-txt导入"
-    ],
-    "source_num": 20
-  },
-  {
-    "id": "cn-txt-0141",
-    "subject": "CN",
-    "chapter": "流量控制与可靠传输机制",
-    "chapterSlug": "流量控制与可靠传输机制",
-    "stem": "停止-等待协议             Ⅱ.后退N帧协议            III.选择重传协议",
-    "options": {
-      "A": "（自动补全选项A）A项表述。",
-      "B": "（自动补全选项B）B项表述。",
-      "C": "（自动补全选项C）C项表述。",
-      "D": "（自动补全选项D）D项表述。"
-    },
-    "answer": "B",
-    "analysis": "依据答案文本已回填；选项缺失处已自动补全。",
-    "difficulty": 2,
-    "knowledge_points": [
-      "流量控制与可靠传输机制",
-      "question-txt导入"
-    ],
-    "source_num": 1
   },
   {
     "id": "cn-txt-0142",
@@ -3148,27 +2896,6 @@
       "question-txt导入"
     ],
     "source_num": 29
-  },
-  {
-    "id": "cn-txt-0151",
-    "subject": "CN",
-    "chapter": "流量控制与可靠传输机制",
-    "chapterSlug": "流量控制与可靠传输机制",
-    "stem": "【2023 统考真题】假设通过同一条信道, 数据链路层分别采用停止-等待协议、GBN 协议和 SR 协议 （发送窗口和接收窗口相等) 传输数据, 三个协议的数据帧长相同, 忽略确认帧长, 帧序号位数为 3 比特。若对应三个协议的发送方最大信道利用率分别是 和 则 和 满足的关系是( )",
-    "options": {
-      "A": "（自动补全选项A）A项表述。",
-      "B": "（自动补全选项B）B项表述。",
-      "C": "（自动补全选项C）C项表述。",
-      "D": "（自动补全选项D）D项表述。"
-    },
-    "answer": "B",
-    "analysis": "依据答案文本已回填；选项缺失处已自动补全。",
-    "difficulty": 2,
-    "knowledge_points": [
-      "流量控制与可靠传输机制",
-      "question-txt导入"
-    ],
-    "source_num": 30
   },
   {
     "id": "cn-txt-0152",
@@ -3591,27 +3318,6 @@
     "source_num": 20
   },
   {
-    "id": "cn-txt-0172",
-    "subject": "CN",
-    "chapter": "介质访问控制",
-    "chapterSlug": "介质访问控制",
-    "stem": "在某 CSMA/CD 局域网中, 使用一个 Hub 连接所有站点, 且限定站点到 Hub 的最长距离为 100m,信号的传播速率为200000km/s，则站点的最长冲突检测时间是( )",
-    "options": {
-      "A": "（自动补全选项A）A项表述。",
-      "B": "（自动补全选项B）B项表述。",
-      "C": "（自动补全选项C）C项表述。",
-      "D": "（自动补全选项D）D项表述。"
-    },
-    "answer": "A",
-    "analysis": "依据答案文本已回填；选项缺失处已自动补全。",
-    "difficulty": 2,
-    "knowledge_points": [
-      "介质访问控制",
-      "question-txt导入"
-    ],
-    "source_num": 21
-  },
-  {
     "id": "cn-txt-0173",
     "subject": "CN",
     "chapter": "介质访问控制",
@@ -3675,27 +3381,6 @@
     "source_num": 24
   },
   {
-    "id": "cn-txt-0176",
-    "subject": "CN",
-    "chapter": "介质访问控制",
-    "chapterSlug": "介质访问控制",
-    "stem": "在 CSMA/CA 协议中, 有三种不同的时间参数：短帧间间隔 SIFS、分布式协调帧间间隔 DIFS 和点协调帧间间隔PIFS。它们之间的长度关系是( )",
-    "options": {
-      "A": "（自动补全选项A）A项表述。",
-      "B": "（自动补全选项B）B项表述。",
-      "C": "（自动补全选项C）C项表述。",
-      "D": "（自动补全选项D）D项表述。"
-    },
-    "answer": "C",
-    "analysis": "依据答案文本已回填；选项缺失处已自动补全。",
-    "difficulty": 2,
-    "knowledge_points": [
-      "介质访问控制",
-      "question-txt导入"
-    ],
-    "source_num": 25
-  },
-  {
     "id": "cn-txt-0177",
     "subject": "CN",
     "chapter": "介质访问控制",
@@ -3715,27 +3400,6 @@
       "question-txt导入"
     ],
     "source_num": 26
-  },
-  {
-    "id": "cn-txt-0178",
-    "subject": "CN",
-    "chapter": "介质访问控制",
-    "chapterSlug": "介质访问控制",
-    "stem": "下列关于令牌环网络的说法中，错误的是( ) I.信道的利用率比较公平 II.重负载下信道利用率高 I1.节点可以一直持有令牌，直至所要发送的数据传输完毕 IV.节点只能持有令牌一段固定的时间，对于没有数据要发送的节点也是如此",
-    "options": {
-      "A": "（自动补全选项A）A项表述。",
-      "B": "（自动补全选项B）B项表述。",
-      "C": "（自动补全选项C）C项表述。",
-      "D": "（自动补全选项D）D项表述。"
-    },
-    "answer": "A",
-    "analysis": "依据答案文本已回填；选项缺失处已自动补全。",
-    "difficulty": 2,
-    "knowledge_points": [
-      "介质访问控制",
-      "question-txt导入"
-    ],
-    "source_num": 27
   },
   {
     "id": "cn-txt-0179",
@@ -4410,27 +4074,6 @@
     "source_num": 16
   },
   {
-    "id": "cn-txt-0211",
-    "subject": "CN",
-    "chapter": "局域网",
-    "chapterSlug": "局域网",
-    "stem": "高速以太网使用的 MAC 帧格式与标准以太网的帧格式( )",
-    "options": {
-      "A": "完全相同",
-      "B": "完全不同",
-      "C": "部分相同",
-      "D": "（自动补全选项D）D项表述。"
-    },
-    "answer": "B",
-    "analysis": "依据答案文本已回填；选项缺失处已自动补全。",
-    "difficulty": 2,
-    "knowledge_points": [
-      "局域网",
-      "question-txt导入"
-    ],
-    "source_num": 17
-  },
-  {
     "id": "cn-txt-0212",
     "subject": "CN",
     "chapter": "局域网",
@@ -4534,27 +4177,6 @@
       "question-txt导入"
     ],
     "source_num": 22
-  },
-  {
-    "id": "cn-txt-0217",
-    "subject": "CN",
-    "chapter": "局域网",
-    "chapterSlug": "局域网",
-    "stem": "下列选项中，()不是虚拟局域网(VLAN)的优点。",
-    "options": {
-      "A": "有效共享网络资源",
-      "B": "简化网络管理",
-      "C": "链路聚合",
-      "D": "（自动补全选项D）D项表述。"
-    },
-    "answer": "D",
-    "analysis": "依据答案文本已回填；选项缺失处已自动补全。",
-    "difficulty": 2,
-    "knowledge_points": [
-      "局域网",
-      "question-txt导入"
-    ],
-    "source_num": 23
   },
   {
     "id": "cn-txt-0218",
@@ -4828,27 +4450,6 @@
       "question-txt导入"
     ],
     "source_num": 8
-  },
-  {
-    "id": "cn-txt-0231",
-    "subject": "CN",
-    "chapter": "广域网",
-    "chapterSlug": "广域网",
-    "stem": "PPP 提供的功能有( )",
-    "options": {
-      "A": "一种组帧方法",
-      "B": "链路控制协议(LCP) 网络控制协议(NCP)",
-      "C": "网络控制协议(NCP)",
-      "D": "（自动补全选项D）D项表述。"
-    },
-    "answer": "D",
-    "analysis": "依据答案文本已回填；选项缺失处已自动补全。",
-    "difficulty": 2,
-    "knowledge_points": [
-      "广域网",
-      "question-txt导入"
-    ],
-    "source_num": 9
   },
   {
     "id": "cn-txt-0232",
@@ -5565,27 +5166,6 @@
     "source_num": 10
   },
   {
-    "id": "cn-txt-0266",
-    "subject": "CN",
-    "chapter": "网络层的功能",
-    "chapterSlug": "网络层的功能",
-    "stem": "同一报文中的分组可以由不同的传输路径通过通信子网的方法是( )",
-    "options": {
-      "A": "分组交换",
-      "B": "电路交换",
-      "C": "虚电路方式",
-      "D": "（自动补全选项D）D项表述。"
-    },
-    "answer": "D",
-    "analysis": "依据答案文本已回填；选项缺失处已自动补全。",
-    "difficulty": 2,
-    "knowledge_points": [
-      "网络层的功能",
-      "question-txt导入"
-    ],
-    "source_num": 11
-  },
-  {
     "id": "cn-txt-0267",
     "subject": "CN",
     "chapter": "网络层的功能",
@@ -5689,27 +5269,6 @@
       "question-txt导入"
     ],
     "source_num": 16
-  },
-  {
-    "id": "cn-txt-0272",
-    "subject": "CN",
-    "chapter": "网络层的功能",
-    "chapterSlug": "网络层的功能",
-    "stem": "下列描述中，()不是软件定义网络(SDN)的特点。",
-    "options": {
-      "A": "控制与转发功能分离",
-      "B": "控制平面集中化",
-      "C": "（自动补全选项C）C项表述。",
-      "D": "（自动补全选项D）D项表述。"
-    },
-    "answer": "A",
-    "analysis": "依据答案文本已回填；选项缺失处已自动补全。",
-    "difficulty": 2,
-    "knowledge_points": [
-      "网络层的功能",
-      "question-txt导入"
-    ],
-    "source_num": 17
   },
   {
     "id": "cn-txt-0273",
@@ -6025,27 +5584,6 @@
       "question-txt导入"
     ],
     "source_num": 11
-  },
-  {
-    "id": "cn-txt-0288",
-    "subject": "CN",
-    "chapter": "IPv4",
-    "chapterSlug": "ipv4",
-    "stem": "路由器 RO 的路由表见下表。若进入路由器 RO 的分组的目的地址为 132.19.237.5, 则该分组应该被转发到( )下一跳路由器。 目的网络\t下一跳",
-    "options": {
-      "A": "（自动补全选项A）A项表述。",
-      "B": "（自动补全选项B）B项表述。",
-      "C": "（自动补全选项C）C项表述。",
-      "D": "（自动补全选项D）D项表述。"
-    },
-    "answer": "A",
-    "analysis": "依据答案文本已回填；选项缺失处已自动补全。",
-    "difficulty": 2,
-    "knowledge_points": [
-      "IPv4",
-      "question-txt导入"
-    ],
-    "source_num": 12
   },
   {
     "id": "cn-txt-0289",
@@ -6993,27 +6531,6 @@
     "source_num": 57
   },
   {
-    "id": "cn-txt-0334",
-    "subject": "CN",
-    "chapter": ".0.0/0\tR4",
-    "chapterSlug": "0-0-0-r4",
-    "stem": "【2015 统考真题】某路由器的路由表如下所示： 目的网络\t下一跳\t接口",
-    "options": {
-      "A": "（自动补全选项A）A项表述。",
-      "B": "（自动补全选项B）B项表述。",
-      "C": "（自动补全选项C）C项表述。",
-      "D": "（自动补全选项D）D项表述。"
-    },
-    "answer": "D",
-    "analysis": "依据答案文本已回填；选项缺失处已自动补全。",
-    "difficulty": 2,
-    "knowledge_points": [
-      ".0.0/0\tR4",
-      "question-txt导入"
-    ],
-    "source_num": 58
-  },
-  {
     "id": "cn-txt-0335",
     "subject": "CN",
     "chapter": ".4.4\tS1",
@@ -7117,27 +6634,6 @@
       "question-txt导入"
     ],
     "source_num": 63
-  },
-  {
-    "id": "cn-txt-0340",
-    "subject": "CN",
-    "chapter": ".4.4\tS1",
-    "chapterSlug": "4-4-s1",
-    "stem": "【2018 统考真题】路由器 R 通过以太网交换机 S1 和 S2 连接两个网络, R 的接口、主机 H1 和 H2 的IP地址与 MAC 地址如下图所示。若 H1 向 H2 发送一个 IP  分组 则H1 发出的封装 P 的以太网的 地址、H2 收到的封装 P的以太网帧的源 地址分别是( ) 192.168.3.2                                                                         192.168.4.2 00-1a-2b-3c-4d-52                                                               00-a1-b2-c3-d4-62",
-    "options": {
-      "A": "B",
-      "B": "（自动补全选项B）B项表述。",
-      "C": "（自动补全选项C）C项表述。",
-      "D": "（自动补全选项D）D项表述。"
-    },
-    "answer": "B",
-    "analysis": "依据答案文本已回填；选项缺失处已自动补全。",
-    "difficulty": 2,
-    "knowledge_points": [
-      ".4.4\tS1",
-      "question-txt导入"
-    ],
-    "source_num": 64
   },
   {
     "id": "cn-txt-0341",
@@ -7371,27 +6867,6 @@
     "source_num": 3
   },
   {
-    "id": "cn-txt-0352",
-    "subject": "CN",
-    "chapter": "IPv6",
-    "chapterSlug": "ipv6",
-    "stem": "一个 IPv6 地址的简化写法为 8::D0:123:CDEF:89A, 则其完整地址应该是( )",
-    "options": {
-      "A": "8000:0000:0000：0000：00D0：1230：CDEF:89A0 B, 0008;0000:0000:0000:00D0:0123;CDEF:89A0",
-      "B": "（自动补全选项B）B项表述。",
-      "C": "8000:0000:0000:0000:D000:1230:CDEF:89A0",
-      "D": "0008:0000：0000:0000：00D0：0123:CDEF:089A"
-    },
-    "answer": "A",
-    "analysis": "依据答案文本已回填；选项缺失处已自动补全。",
-    "difficulty": 2,
-    "knowledge_points": [
-      "IPv6",
-      "question-txt导入"
-    ],
-    "source_num": 4
-  },
-  {
     "id": "cn-txt-0353",
     "subject": "CN",
     "chapter": "IPv6",
@@ -7518,27 +6993,6 @@
     "source_num": 3
   },
   {
-    "id": "cn-txt-0359",
-    "subject": "CN",
-    "chapter": "路由算法与路由协议",
-    "chapterSlug": "路由算法与路由协议",
-    "stem": "在链路状态路由算法中, 每个路由器都得到网络的完整拓扑结构后, 使用( )算法来找出它到其他路由器的路径长度。",
-    "options": {
-      "A": "Kruskal 最小生成树算法",
-      "B": "（自动补全选项B）B项表述。",
-      "C": "Kruskal 最小生成树算法",
-      "D": "拓扑排序"
-    },
-    "answer": "B",
-    "analysis": "依据答案文本已回填；选项缺失处已自动补全。",
-    "difficulty": 2,
-    "knowledge_points": [
-      "路由算法与路由协议",
-      "question-txt导入"
-    ],
-    "source_num": 4
-  },
-  {
     "id": "cn-txt-0360",
     "subject": "CN",
     "chapter": "路由算法与路由协议",
@@ -7644,27 +7098,6 @@
     "source_num": 9
   },
   {
-    "id": "cn-txt-0365",
-    "subject": "CN",
-    "chapter": "路由算法与路由协议",
-    "chapterSlug": "路由算法与路由协议",
-    "stem": "在RIP中，假设路由器 和路由器 是两个相邻的路由器  ，向K说：“我到目的网络 的距离为 ，则收到此信息的 就知道：“若将到网络 的下一个路由器选为 则我到网络的距离为( )（假设 小于 15)",
-    "options": {
-      "A": "N",
-      "B": "（自动补全选项B）B项表述。",
-      "C": "1",
-      "D": "（自动补全选项D）D项表述。"
-    },
-    "answer": "A",
-    "analysis": "依据答案文本已回填；选项缺失处已自动补全。",
-    "difficulty": 2,
-    "knowledge_points": [
-      "路由算法与路由协议",
-      "question-txt导入"
-    ],
-    "source_num": 10
-  },
-  {
     "id": "cn-txt-0366",
     "subject": "CN",
     "chapter": "路由算法与路由协议",
@@ -7747,27 +7180,6 @@
       "question-txt导入"
     ],
     "source_num": 14
-  },
-  {
-    "id": "cn-txt-0370",
-    "subject": "CN",
-    "chapter": "路由算法与路由协议",
-    "chapterSlug": "路由算法与路由协议",
-    "stem": "OSPF协议使用()分组来保持与其邻居的连接。",
-    "options": {
-      "A": "SPF（最短路径优先）",
-      "B": "（自动补全选项B）B项表述。",
-      "C": "SPF（最短路径优先）",
-      "D": "LSU（链路状态更新）"
-    },
-    "answer": "B",
-    "analysis": "依据答案文本已回填；选项缺失处已自动补全。",
-    "difficulty": 2,
-    "knowledge_points": [
-      "路由算法与路由协议",
-      "question-txt导入"
-    ],
-    "source_num": 15
   },
   {
     "id": "cn-txt-0371",
@@ -7894,27 +7306,6 @@
       "question-txt导入"
     ],
     "source_num": 21
-  },
-  {
-    "id": "cn-txt-0377",
-    "subject": "CN",
-    "chapter": "路由算法与路由协议",
-    "chapterSlug": "路由算法与路由协议",
-    "stem": "考虑如下图所示的子网, 该子网使用了距离向量算法, 下面的向量刚刚到达路由器 C:来自 B 的向量为 来自 D 的向量为 (16, 12, 6, 0, 9, 10); 来自 E的向量为 经过测量, C到B、D和E的延迟分别为6、3和  那么  到达所有节点的最短路径是( )",
-    "options": {
-      "A": "（自动补全选项A）A项表述。",
-      "B": "（自动补全选项B）B项表述。",
-      "C": "（自动补全选项C）C项表述。",
-      "D": "（自动补全选项D）D项表述。"
-    },
-    "answer": "D",
-    "analysis": "依据答案文本已回填；选项缺失处已自动补全。",
-    "difficulty": 2,
-    "knowledge_points": [
-      "路由算法与路由协议",
-      "question-txt导入"
-    ],
-    "source_num": 22
   },
   {
     "id": "cn-txt-0378",
@@ -8547,27 +7938,6 @@
     "source_num": 18
   },
   {
-    "id": "cn-txt-0408",
-    "subject": "CN",
-    "chapter": "网络层设备",
-    "chapterSlug": "网络层设备",
-    "stem": "【2010统考真题】下列网络设备中，能够抑制广播风暴的是( )",
-    "options": {
-      "A": "（自动补全选项A）A项表述。",
-      "B": "（自动补全选项B）B项表述。",
-      "C": "（自动补全选项C）C项表述。",
-      "D": "（自动补全选项D）D项表述。"
-    },
-    "answer": "C",
-    "analysis": "依据答案文本已回填；选项缺失处已自动补全。",
-    "difficulty": 2,
-    "knowledge_points": [
-      "网络层设备",
-      "question-txt导入"
-    ],
-    "source_num": 19
-  },
-  {
     "id": "cn-txt-0409",
     "subject": "CN",
     "chapter": "网络层设备",
@@ -8587,27 +7957,6 @@
       "question-txt导入"
     ],
     "source_num": 1
-  },
-  {
-    "id": "cn-txt-0410",
-    "subject": "CN",
-    "chapter": "网络层设备",
-    "chapterSlug": "网络层设备",
-    "stem": "【2012 统考真题】下列关于IP路由器功能的描述中，正确的是() I.运行路由协议, 设备路由表 I.监测到拥塞时，合理丢弃IP分组 III. 对收到的 IP 分组头进行差错检验, 确保传输的 IP 分组不丢失 IV.根据收到的IP分组的目的IP地址，将其转发到合适的输出线路上",
-    "options": {
-      "A": "（自动补全选项A）A项表述。",
-      "B": "（自动补全选项B）B项表述。",
-      "C": "（自动补全选项C）C项表述。",
-      "D": "（自动补全选项D）D项表述。"
-    },
-    "answer": "B",
-    "analysis": "依据答案文本已回填；选项缺失处已自动补全。",
-    "difficulty": 2,
-    "knowledge_points": [
-      "网络层设备",
-      "question-txt导入"
-    ],
-    "source_num": 20
   },
   {
     "id": "cn-txt-0411",
@@ -8755,27 +8104,6 @@
       "question-txt导入"
     ],
     "source_num": 6
-  },
-  {
-    "id": "cn-txt-0418",
-    "subject": "CN",
-    "chapter": "传输层提供的服务",
-    "chapterSlug": "传输层提供的服务",
-    "stem": "在()范围内的端口号被称为“熟知端口号”并限制使用，这些端口号是为常用的应用层协议如FTP、HTTP等保留的。",
-    "options": {
-      "A": "0~127",
-      "B": "0~255",
-      "C": "0~511",
-      "D": "（自动补全选项D）D项表述。"
-    },
-    "answer": "B",
-    "analysis": "依据答案文本已回填；选项缺失处已自动补全。",
-    "difficulty": 2,
-    "knowledge_points": [
-      "传输层提供的服务",
-      "question-txt导入"
-    ],
-    "source_num": 7
   },
   {
     "id": "cn-txt-0419",
@@ -9114,27 +8442,6 @@
     "source_num": 13
   },
   {
-    "id": "cn-txt-0435",
-    "subject": "CN",
-    "chapter": "UDP",
-    "chapterSlug": "udp",
-    "stem": "【2014统考真题】下列关于UDP的叙述中，正确的是( ) I.提供无连接服务                                                        II. 提供复用/分用服务 III.通过差错检验，保障可靠数据传输",
-    "options": {
-      "A": "（自动补全选项A）A项表述。",
-      "B": "（自动补全选项B）B项表述。",
-      "C": "（自动补全选项C）C项表述。",
-      "D": "（自动补全选项D）D项表述。"
-    },
-    "answer": "C",
-    "analysis": "依据答案文本已回填；选项缺失处已自动补全。",
-    "difficulty": 2,
-    "knowledge_points": [
-      "UDP",
-      "question-txt导入"
-    ],
-    "source_num": 14
-  },
-  {
     "id": "cn-txt-0436",
     "subject": "CN",
     "chapter": "UDP",
@@ -9282,27 +8589,6 @@
     "source_num": 5
   },
   {
-    "id": "cn-txt-0443",
-    "subject": "CN",
-    "chapter": "TCP",
-    "chapterSlug": "tcp",
-    "stem": "下列几种字段中，包含在TCP首部中而不包含在UDP首部中的是( )",
-    "options": {
-      "A": "（自动补全选项A）A项表述。",
-      "B": "（自动补全选项B）B项表述。",
-      "C": "（自动补全选项C）C项表述。",
-      "D": "（自动补全选项D）D项表述。"
-    },
-    "answer": "C",
-    "analysis": "依据答案文本已回填；选项缺失处已自动补全。",
-    "difficulty": 2,
-    "knowledge_points": [
-      "TCP",
-      "question-txt导入"
-    ],
-    "source_num": 6
-  },
-  {
     "id": "cn-txt-0444",
     "subject": "CN",
     "chapter": "TCP",
@@ -9366,27 +8652,6 @@
     "source_num": 9
   },
   {
-    "id": "cn-txt-0447",
-    "subject": "CN",
-    "chapter": "TCP",
-    "chapterSlug": "tcp",
-    "stem": "在采用 TCP 连接的数据传输阶段, 若发送端的发送窗口值由 1000 变为 2000, 则发送端在收到一个确认之前可以发送( )",
-    "options": {
-      "A": "（自动补全选项A）A项表述。",
-      "B": "（自动补全选项B）B项表述。",
-      "C": "（自动补全选项C）C项表述。",
-      "D": "（自动补全选项D）D项表述。"
-    },
-    "answer": "C",
-    "analysis": "依据答案文本已回填；选项缺失处已自动补全。",
-    "difficulty": 2,
-    "knowledge_points": [
-      "TCP",
-      "question-txt导入"
-    ],
-    "source_num": 10
-  },
-  {
     "id": "cn-txt-0448",
     "subject": "CN",
     "chapter": "TCP",
@@ -9406,27 +8671,6 @@
       "question-txt导入"
     ],
     "source_num": 11
-  },
-  {
-    "id": "cn-txt-0449",
-    "subject": "CN",
-    "chapter": "TCP",
-    "chapterSlug": "tcp",
-    "stem": "当 TCP 在传送大量数据时, 是以( )的大小将数据进行分割发送的, 进行重发时同样也是以此为单位的。",
-    "options": {
-      "A": "（自动补全选项A）A项表述。",
-      "B": "（自动补全选项B）B项表述。",
-      "C": "（自动补全选项C）C项表述。",
-      "D": "（自动补全选项D）D项表述。"
-    },
-    "answer": "A",
-    "analysis": "依据答案文本已回填；选项缺失处已自动补全。",
-    "difficulty": 2,
-    "knowledge_points": [
-      "TCP",
-      "question-txt导入"
-    ],
-    "source_num": 12
   },
   {
     "id": "cn-txt-0450",
@@ -9555,48 +8799,6 @@
     "source_num": 18
   },
   {
-    "id": "cn-txt-0456",
-    "subject": "CN",
-    "chapter": "TCP",
-    "chapterSlug": "tcp",
-    "stem": "TCP使用三次握手协议来建立连接，设A、B双方发送报文的初始序列号分别为 和 发送 )的报文给 B.B 接收到报文后发送(②)的报文给A，然后A发送一个确认报文给B便建立了连接（注意， 的下标为捎带的序号) 1A.SYN=1，序号                                    B. 序号=X+1， ACKx=1",
-    "options": {
-      "A": "序号",
-      "B": "（自动补全选项B）B项表述。",
-      "C": "序号",
-      "D": "序号"
-    },
-    "answer": "B",
-    "analysis": "依据答案文本已回填；选项缺失处已自动补全。",
-    "difficulty": 2,
-    "knowledge_points": [
-      "TCP",
-      "question-txt导入"
-    ],
-    "source_num": 19
-  },
-  {
-    "id": "cn-txt-0457",
-    "subject": "CN",
-    "chapter": "TCP",
-    "chapterSlug": "tcp",
-    "stem": "TCP“三次握手”过程中, 第二次“握手”时, 发送的报文段中( )标志位被置为 1",
-    "options": {
-      "A": "（自动补全选项A）A项表述。",
-      "B": "（自动补全选项B）B项表述。",
-      "C": "（自动补全选项C）C项表述。",
-      "D": "（自动补全选项D）D项表述。"
-    },
-    "answer": "C",
-    "analysis": "依据答案文本已回填；选项缺失处已自动补全。",
-    "difficulty": 2,
-    "knowledge_points": [
-      "TCP",
-      "question-txt导入"
-    ],
-    "source_num": 20
-  },
-  {
     "id": "cn-txt-0458",
     "subject": "CN",
     "chapter": "TCP",
@@ -9639,27 +8841,6 @@
     "source_num": 22
   },
   {
-    "id": "cn-txt-0460",
-    "subject": "CN",
-    "chapter": "TCP",
-    "chapterSlug": "tcp",
-    "stem": "A 和B之间建立了 TCP连接，A 向B发送了一个报文段, 其中序号字段 确认号字段ack=201， 数据部分有2个字节，则在 B对该报文的确认报文段中( )",
-    "options": {
-      "A": "（自动补全选项A）A项表述。",
-      "B": "（自动补全选项B）B项表述。",
-      "C": "（自动补全选项C）C项表述。",
-      "D": "（自动补全选项D）D项表述。"
-    },
-    "answer": "C",
-    "analysis": "依据答案文本已回填；选项缺失处已自动补全。",
-    "difficulty": 2,
-    "knowledge_points": [
-      "TCP",
-      "question-txt导入"
-    ],
-    "source_num": 23
-  },
-  {
     "id": "cn-txt-0461",
     "subject": "CN",
     "chapter": "TCP",
@@ -9679,27 +8860,6 @@
       "question-txt导入"
     ],
     "source_num": 24
-  },
-  {
-    "id": "cn-txt-0462",
-    "subject": "CN",
-    "chapter": "TCP",
-    "chapterSlug": "tcp",
-    "stem": "某客户与服务器建立TCP连接，当连接断开时，客户先向服务器发送一个标志 的报文段A，此报文段中 seq 值为 x, ack 值为 一段时间后，客户收到了服务器发来的一个标志 的报文段 B, 则下列关于报文段B的说法中，正确的是()",
-    "options": {
-      "A": "B中的seq值一定为y B中的ack值一定为x",
-      "B": "（自动补全选项B）B项表述。",
-      "C": "B中的ack值一定为x",
-      "D": "B中的ack值一定为"
-    },
-    "answer": "C",
-    "analysis": "依据答案文本已回填；选项缺失处已自动补全。",
-    "difficulty": 2,
-    "knowledge_points": [
-      "TCP",
-      "question-txt导入"
-    ],
-    "source_num": 25
   },
   {
     "id": "cn-txt-0463",
@@ -9912,27 +9072,6 @@
     "source_num": 35
   },
   {
-    "id": "cn-txt-0473",
-    "subject": "CN",
-    "chapter": "TCP",
-    "chapterSlug": "tcp",
-    "stem": "假设一个 TCP 连接的传输过程在慢开始阶段, 在 时刻到 时刻之间发送了  个数据段，假设仍然保持在慢开始阶段，预期在(t+1)RTT时刻到 时刻之间将发送( )个数据段(假设接收方有足够的缓存)",
-    "options": {
-      "A": "k",
-      "B": "（自动补全选项B）B项表述。",
-      "C": "（自动补全选项C）C项表述。",
-      "D": "2k"
-    },
-    "answer": "A",
-    "analysis": "依据答案文本已回填；选项缺失处已自动补全。",
-    "difficulty": 2,
-    "knowledge_points": [
-      "TCP",
-      "question-txt导入"
-    ],
-    "source_num": 36
-  },
-  {
     "id": "cn-txt-0474",
     "subject": "CN",
     "chapter": "TCP",
@@ -10101,27 +9240,6 @@
     "source_num": 44
   },
   {
-    "id": "cn-txt-0482",
-    "subject": "CN",
-    "chapter": "TCP",
-    "chapterSlug": "tcp",
-    "stem": "【2011 统考真题】主机甲向主机乙发送一个 的TCP段，期望与主机乙建立TCP连接，若主机乙接受该连接请求，则主机乙向主机甲发送的正确的TCP段可能是() C     C",
-    "options": {
-      "A": "（自动补全选项A）A项表述。",
-      "B": "（自动补全选项B）B项表述。",
-      "C": "（自动补全选项C）C项表述。",
-      "D": "（自动补全选项D）D项表述。"
-    },
-    "answer": "A",
-    "analysis": "依据答案文本已回填；选项缺失处已自动补全。",
-    "difficulty": 2,
-    "knowledge_points": [
-      "TCP",
-      "question-txt导入"
-    ],
-    "source_num": 45
-  },
-  {
     "id": "cn-txt-0483",
     "subject": "CN",
     "chapter": "TCP",
@@ -10225,27 +9343,6 @@
       "question-txt导入"
     ],
     "source_num": 50
-  },
-  {
-    "id": "cn-txt-0488",
-    "subject": "CN",
-    "chapter": "TCP",
-    "chapterSlug": "tcp",
-    "stem": "【2019 统考真题】某客户通过一个 TCP 连接向服务器发送数据的部分过程如图所示。客 户在一时一次收到确认序列号ack_seq-100的段，并发送序列号 的段，但发生丢失。若TCP支持快速重传，则客户重新发送seq=100段的时刻是( )",
-    "options": {
-      "A": "（自动补全选项A）A项表述。",
-      "B": "（自动补全选项B）B项表述。",
-      "C": "（自动补全选项C）C项表述。",
-      "D": "（自动补全选项D）D项表述。"
-    },
-    "answer": "C",
-    "analysis": "依据答案文本已回填；选项缺失处已自动补全。",
-    "difficulty": 2,
-    "knowledge_points": [
-      "TCP",
-      "question-txt导入"
-    ],
-    "source_num": 51
   },
   {
     "id": "cn-txt-0489",
@@ -10353,27 +9450,6 @@
     "source_num": 56
   },
   {
-    "id": "cn-txt-0494",
-    "subject": "CN",
-    "chapter": "TCP",
-    "chapterSlug": "tcp",
-    "stem": "【2021 统考真题】设主机甲通过 TCP 向主机乙发送数据, 部分过程如下图所示。 甲在一时刻发送序号seq=501、封装200B数据的段 ,在 时刻收到乙发送的 确认序号 接收窗口 的段, 则甲在未收到新的确认段之前, 可以继续向乙发送的数据序号范围是()",
-    "options": {
-      "A": "（自动补全选项A）A项表述。",
-      "B": "（自动补全选项B）B项表述。",
-      "C": "（自动补全选项C）C项表述。",
-      "D": "（自动补全选项D）D项表述。"
-    },
-    "answer": "D",
-    "analysis": "依据答案文本已回填；选项缺失处已自动补全。",
-    "difficulty": 2,
-    "knowledge_points": [
-      "TCP",
-      "question-txt导入"
-    ],
-    "source_num": 57
-  },
-  {
     "id": "cn-txt-0495",
     "subject": "CN",
     "chapter": "TCP",
@@ -10477,48 +9553,6 @@
       "question-txt导入"
     ],
     "source_num": 2
-  },
-  {
-    "id": "cn-txt-0500",
-    "subject": "CN",
-    "chapter": "网络应用模型",
-    "chapterSlug": "网络应用模型",
-    "stem": "下面关于客户/服务器模型的描述，()存在错误。",
-    "options": {
-      "A": "（自动补全选项A）A项表述。",
-      "B": "（自动补全选项B）B项表述。",
-      "C": "（自动补全选项C）C项表述。",
-      "D": "（自动补全选项D）D项表述。"
-    },
-    "answer": "B",
-    "analysis": "依据答案文本已回填；选项缺失处已自动补全。",
-    "difficulty": 2,
-    "knowledge_points": [
-      "网络应用模型",
-      "question-txt导入"
-    ],
-    "source_num": 3
-  },
-  {
-    "id": "cn-txt-0501",
-    "subject": "CN",
-    "chapter": "网络应用模型",
-    "chapterSlug": "网络应用模型",
-    "stem": "客户端必须提前知道服务器的地址，而服务器则不需要提前知道客户端的地址 II. 客户端主要实现如何显示信息与收集用户的输入, 而服务器主要实现数据的处理 II.浏览器显示的内容来自服务器 IV.客户端是请求方，即使连接建立后，服务器也不能主动发送数据",
-    "options": {
-      "A": "（自动补全选项A）A项表述。",
-      "B": "（自动补全选项B）B项表述。",
-      "C": "（自动补全选项C）C项表述。",
-      "D": "（自动补全选项D）D项表述。"
-    },
-    "answer": "D",
-    "analysis": "依据答案文本已回填；选项缺失处已自动补全。",
-    "difficulty": 2,
-    "knowledge_points": [
-      "网络应用模型",
-      "question-txt导入"
-    ],
-    "source_num": 1
   },
   {
     "id": "cn-txt-0502",
@@ -10626,27 +9660,6 @@
     "source_num": 2
   },
   {
-    "id": "cn-txt-0507",
-    "subject": "CN",
-    "chapter": "域名系统",
-    "chapterSlug": "域名系统",
-    "stem": "DNS是基于( )模型的分布式系统。",
-    "options": {
-      "A": "C/S",
-      "B": "B/S",
-      "C": "P2P",
-      "D": "（自动补全选项D）D项表述。"
-    },
-    "answer": "B",
-    "analysis": "依据答案文本已回填；选项缺失处已自动补全。",
-    "difficulty": 2,
-    "knowledge_points": [
-      "域名系统",
-      "question-txt导入"
-    ],
-    "source_num": 3
-  },
-  {
     "id": "cn-txt-0508",
     "subject": "CN",
     "chapter": "域名系统",
@@ -10666,27 +9679,6 @@
       "question-txt导入"
     ],
     "source_num": 4
-  },
-  {
-    "id": "cn-txt-0509",
-    "subject": "CN",
-    "chapter": "域名系统",
-    "chapterSlug": "域名系统",
-    "stem": "互联网中域名解析依赖于由域名服务器组成的逻辑树。在域名解析过程中, 主机上请求域名解析的软件不需要知道()信息。",
-    "options": {
-      "A": "（自动补全选项A）A项表述。",
-      "B": "（自动补全选项B）B项表述。",
-      "C": "（自动补全选项C）C项表述。",
-      "D": "（自动补全选项D）D项表述。"
-    },
-    "answer": "C",
-    "analysis": "依据答案文本已回填；选项缺失处已自动补全。",
-    "difficulty": 2,
-    "knowledge_points": [
-      "域名系统",
-      "question-txt导入"
-    ],
-    "source_num": 5
   },
   {
     "id": "cn-txt-0510",
@@ -11298,27 +10290,6 @@
     "source_num": 6
   },
   {
-    "id": "cn-txt-0539",
-    "subject": "CN",
-    "chapter": "电子邮件",
-    "chapterSlug": "电子邮件",
-    "stem": "下列关于电子邮件格式的说法中，错误的是( )",
-    "options": {
-      "A": "电子邮件内容包括邮件头与邮件体两部分",
-      "B": "邮件头中发信人地址 (From:)、发送时间、收信人地址 (To:) 及邮件主题 (Subject:) 是由系统自动生成的",
-      "C": "邮件体是实际要传送的信函内容 D, MIME 允许电子邮件系统传输文字、图像、语音与视频等多种信息",
-      "D": "（自动补全选项D）D项表述。"
-    },
-    "answer": "D",
-    "analysis": "依据答案文本已回填；选项缺失处已自动补全。",
-    "difficulty": 2,
-    "knowledge_points": [
-      "电子邮件",
-      "question-txt导入"
-    ],
-    "source_num": 7
-  },
-  {
     "id": "cn-txt-0540",
     "subject": "CN",
     "chapter": "电子邮件",
@@ -11359,27 +10330,6 @@
       "question-txt导入"
     ],
     "source_num": 9
-  },
-  {
-    "id": "cn-txt-0542",
-    "subject": "CN",
-    "chapter": "电子邮件",
-    "chapterSlug": "电子邮件",
-    "stem": "【2013统考真题】下列关于SMTP的叙述中，正确的是( )",
-    "options": {
-      "A": "（自动补全选项A）A项表述。",
-      "B": "（自动补全选项B）B项表述。",
-      "C": "（自动补全选项C）C项表述。",
-      "D": "（自动补全选项D）D项表述。"
-    },
-    "answer": "C",
-    "analysis": "依据答案文本已回填；选项缺失处已自动补全。",
-    "difficulty": 2,
-    "knowledge_points": [
-      "电子邮件",
-      "question-txt导入"
-    ],
-    "source_num": 10
   },
   {
     "id": "cn-txt-0543",
@@ -11508,27 +10458,6 @@
     "source_num": 3
   },
   {
-    "id": "cn-txt-0549",
-    "subject": "CN",
-    "chapter": "万维网",
-    "chapterSlug": "万维网",
-    "stem": "从某个已知的 URL 获得一个万维网文档时, 若该万维网服务器的 IP 地址开始时并不知道, 则需要用到的应用层协议有(④)，需要用到的传输层协议有(2) ①A.FTP、HTTP          B.DNS、FTP               C.DNS、HTTP            D.TELNET、HTTP ②A. UDP                    B.TCP                        C.UDP、TCP              D.TCP、IP",
-    "options": {
-      "A": "（自动补全选项A）A项表述。",
-      "B": "（自动补全选项B）B项表述。",
-      "C": "（自动补全选项C）C项表述。",
-      "D": "（自动补全选项D）D项表述。"
-    },
-    "answer": "A",
-    "analysis": "依据答案文本已回填；选项缺失处已自动补全。",
-    "difficulty": 2,
-    "knowledge_points": [
-      "万维网",
-      "question-txt导入"
-    ],
-    "source_num": 4
-  },
-  {
     "id": "cn-txt-0550",
     "subject": "CN",
     "chapter": "万维网",
@@ -11590,27 +10519,6 @@
       "question-txt导入"
     ],
     "source_num": 7
-  },
-  {
-    "id": "cn-txt-0553",
-    "subject": "CN",
-    "chapter": "万维网",
-    "chapterSlug": "万维网",
-    "stem": "HTTP是一个无状态协议，然而Web站点经常希望能够识别用户，这时需要用到()",
-    "options": {
-      "A": "（自动补全选项A）A项表述。",
-      "B": "（自动补全选项B）B项表述。",
-      "C": "（自动补全选项C）C项表述。",
-      "D": "（自动补全选项D）D项表述。"
-    },
-    "answer": "C",
-    "analysis": "依据答案文本已回填；选项缺失处已自动补全。",
-    "difficulty": 2,
-    "knowledge_points": [
-      "万维网",
-      "question-txt导入"
-    ],
-    "source_num": 8
   },
   {
     "id": "cn-txt-0554",

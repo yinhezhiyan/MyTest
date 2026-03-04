@@ -506,28 +506,6 @@
     "source_num": 9
   },
   {
-    "id": "os-ocr-0024",
-    "subject": "OS",
-    "chapter": "操作系统发展历程",
-    "chapterSlug": "操作系统发展历程",
-    "stem": "分时系统追求的目标是（）",
-    "options": {
-      "A": "充分利用I/O设备B.比较快速响应用户",
-      "B": "",
-      "C": "提高系统吞吐率",
-      "D": "充分利用内存"
-    },
-    "answer": "",
-    "analysis": "",
-    "difficulty": 2,
-    "knowledge_points": [
-      "操作系统发展历程",
-      "OCR导入"
-    ],
-    "source_page": 6,
-    "source_num": 10
-  },
-  {
     "id": "os-ocr-0025",
     "subject": "OS",
     "chapter": "操作系统发展历程",
@@ -660,28 +638,6 @@
     "source_num": 16
   },
   {
-    "id": "os-ocr-0031",
-    "subject": "OS",
-    "chapter": "操作系统发展历程",
-    "chapterSlug": "操作系统发展历程",
-    "stem": "【2016统考真题】下列关于批处理系统的叙述中,正确的是（）",
-    "options": {
-      "A": "",
-      "B": "",
-      "C": "",
-      "D": ""
-    },
-    "answer": "",
-    "analysis": "",
-    "difficulty": 2,
-    "knowledge_points": [
-      "操作系统发展历程",
-      "OCR导入"
-    ],
-    "source_page": 6,
-    "source_num": 17
-  },
-  {
     "id": "os-ocr-0032",
     "subject": "OS",
     "chapter": "操作系统发展历程",
@@ -790,28 +746,6 @@
     ],
     "source_page": 7,
     "source_num": 1
-  },
-  {
-    "id": "os-ocr-0037",
-    "subject": "OS",
-    "chapter": "操作系统的运行环境",
-    "chapterSlug": "操作系统的运行环境",
-    "stem": "下列说法中,正确的是（）",
-    "options": {
-      "A": "",
-      "B": "",
-      "C": "",
-      "D": ""
-    },
-    "answer": "",
-    "analysis": "",
-    "difficulty": 2,
-    "knowledge_points": [
-      "操作系统的运行环境",
-      "OCR导入"
-    ],
-    "source_page": 7,
-    "source_num": 2
   },
   {
     "id": "os-ocr-0038",
@@ -1804,28 +1738,6 @@
     "source_num": 15
   },
   {
-    "id": "os-ocr-0083",
-    "subject": "OS",
-    "chapter": "虚拟机",
-    "chapterSlug": "虚拟机",
-    "stem": "下列关于虚拟机的说法中，正确的是（)",
-    "options": {
-      "A": "",
-      "B": "",
-      "C": "",
-      "D": ""
-    },
-    "answer": "",
-    "analysis": "",
-    "difficulty": 2,
-    "knowledge_points": [
-      "虚拟机",
-      "OCR导入"
-    ],
-    "source_page": 13,
-    "source_num": 16
-  },
-  {
     "id": "os-ocr-0084",
     "subject": "OS",
     "chapter": "虚拟机",
@@ -1934,28 +1846,6 @@
     ],
     "source_page": 14,
     "source_num": 1
-  },
-  {
-    "id": "os-ocr-0089",
-    "subject": "OS",
-    "chapter": "进程与线程",
-    "chapterSlug": "进程与线程",
-    "stem": "进程之间交换数据不能通过（）途径进行。",
-    "options": {
-      "A": "共享文件",
-      "B": "消息传递",
-      "C": "访问进程地址空间D.访问共享存储区",
-      "D": ""
-    },
-    "answer": "",
-    "analysis": "",
-    "difficulty": 2,
-    "knowledge_points": [
-      "进程与线程",
-      "OCR导入"
-    ],
-    "source_page": 14,
-    "source_num": 2
   },
   {
     "id": "os-ocr-0090",
@@ -2112,28 +2002,6 @@
     "source_num": 9
   },
   {
-    "id": "os-ocr-0097",
-    "subject": "OS",
-    "chapter": "进程与线程",
-    "chapterSlug": "进程与线程",
-    "stem": "下列选项中，导致创建新进程的操作是（)",
-    "options": {
-      "A": "",
-      "B": "",
-      "C": "",
-      "D": ""
-    },
-    "answer": "",
-    "analysis": "",
-    "difficulty": 2,
-    "knowledge_points": [
-      "进程与线程",
-      "OCR导入"
-    ],
-    "source_page": 15,
-    "source_num": 10
-  },
-  {
     "id": "os-ocr-0098",
     "subject": "OS",
     "chapter": "进程与线程",
@@ -2242,28 +2110,6 @@
     ],
     "source_page": 15,
     "source_num": 14
-  },
-  {
-    "id": "os-ocr-0103",
-    "subject": "OS",
-    "chapter": "进程与线程",
-    "chapterSlug": "进程与线程",
-    "stem": "系统进程所请求的一次I0操作完成后，将使进程状态从（）",
-    "options": {
-      "A": "运行态变为就绪态B.运行态变为阻塞态",
-      "B": "",
-      "C": "就绪态变为运行态D.阻塞态变为就绪态",
-      "D": ""
-    },
-    "answer": "",
-    "analysis": "",
-    "difficulty": 2,
-    "knowledge_points": [
-      "进程与线程",
-      "OCR导入"
-    ],
-    "source_page": 15,
-    "source_num": 15
   },
   {
     "id": "os-ocr-0104",
@@ -2506,28 +2352,6 @@
     ],
     "source_page": 16,
     "source_num": 26
-  },
-  {
-    "id": "os-ocr-0115",
-    "subject": "OS",
-    "chapter": "进程与线程",
-    "chapterSlug": "进程与线程",
-    "stem": "进程自身决定（）",
-    "options": {
-      "A": "从运行态到阻塞态B.从运行态到就绪态",
-      "B": "",
-      "C": "从就绪态到运行态",
-      "D": "从阻塞态到就绪态"
-    },
-    "answer": "",
-    "analysis": "",
-    "difficulty": 2,
-    "knowledge_points": [
-      "进程与线程",
-      "OCR导入"
-    ],
-    "source_page": 16,
-    "source_num": 27
   },
   {
     "id": "os-ocr-0116",
@@ -2814,28 +2638,6 @@
     ],
     "source_page": 18,
     "source_num": 40
-  },
-  {
-    "id": "os-ocr-0129",
-    "subject": "OS",
-    "chapter": "进程与线程",
-    "chapterSlug": "进程与线程",
-    "stem": "在进程转换时，下列（）转换是不可能发生的。",
-    "options": {
-      "A": "就绪态→运行态B.运行态→就绪态",
-      "B": "",
-      "C": "运行态→阻塞态",
-      "D": "阻塞态→运行态"
-    },
-    "answer": "",
-    "analysis": "",
-    "difficulty": 2,
-    "knowledge_points": [
-      "进程与线程",
-      "OCR导入"
-    ],
-    "source_page": 18,
-    "source_num": 41
   },
   {
     "id": "os-ocr-0130",
@@ -3564,28 +3366,6 @@
     "source_num": 75
   },
   {
-    "id": "os-ocr-0163",
-    "subject": "OS",
-    "chapter": "CPU调度",
-    "chapterSlug": "cpu调度",
-    "stem": "中级调度的目的是（）",
-    "options": {
-      "A": "提高CPU的效率",
-      "B": "降低系统开销",
-      "C": "提高CPU的利用率D.节省内存",
-      "D": ""
-    },
-    "answer": "",
-    "analysis": "",
-    "difficulty": 2,
-    "knowledge_points": [
-      "CPU调度",
-      "OCR导入"
-    ],
-    "source_page": 22,
-    "source_num": 1
-  },
-  {
     "id": "os-ocr-0164",
     "subject": "OS",
     "chapter": "CPU调度",
@@ -4092,94 +3872,6 @@
     "source_num": 25
   },
   {
-    "id": "os-ocr-0187",
-    "subject": "OS",
-    "chapter": "CPU调度",
-    "chapterSlug": "cpu调度",
-    "stem": "有以下的进程需要调度执行(见下表)： 进程名 到达时间 运行时间",
-    "options": {
-      "A": "",
-      "B": "",
-      "C": "",
-      "D": ""
-    },
-    "answer": "",
-    "analysis": "",
-    "difficulty": 2,
-    "knowledge_points": [
-      "CPU调度",
-      "OCR导入"
-    ],
-    "source_page": 24,
-    "source_num": 26
-  },
-  {
-    "id": "os-ocr-0188",
-    "subject": "OS",
-    "chapter": "CPU调度",
-    "chapterSlug": "cpu调度",
-    "stem": "0 P1",
-    "options": {
-      "A": "",
-      "B": "",
-      "C": "",
-      "D": ""
-    },
-    "answer": "",
-    "analysis": "",
-    "difficulty": 2,
-    "knowledge_points": [
-      "CPU调度",
-      "OCR导入"
-    ],
-    "source_page": 24,
-    "source_num": 0
-  },
-  {
-    "id": "os-ocr-0189",
-    "subject": "OS",
-    "chapter": "CPU调度",
-    "chapterSlug": "cpu调度",
-    "stem": "4 P2",
-    "options": {
-      "A": "",
-      "B": "",
-      "C": "",
-      "D": ""
-    },
-    "answer": "",
-    "analysis": "",
-    "difficulty": 2,
-    "knowledge_points": [
-      "CPU调度",
-      "OCR导入"
-    ],
-    "source_page": 24,
-    "source_num": 0
-  },
-  {
-    "id": "os-ocr-0190",
-    "subject": "OS",
-    "chapter": "CPU调度",
-    "chapterSlug": "cpu调度",
-    "stem": "0 P3",
-    "options": {
-      "A": "",
-      "B": "",
-      "C": "",
-      "D": ""
-    },
-    "answer": "",
-    "analysis": "",
-    "difficulty": 2,
-    "knowledge_points": [
-      "CPU调度",
-      "OCR导入"
-    ],
-    "source_page": 24,
-    "source_num": 1
-  },
-  {
     "id": "os-ocr-0191",
     "subject": "OS",
     "chapter": "CPU调度",
@@ -4376,28 +4068,6 @@
     ],
     "source_page": 25,
     "source_num": 34
-  },
-  {
-    "id": "os-ocr-0200",
-    "subject": "OS",
-    "chapter": "CPU调度",
-    "chapterSlug": "cpu调度",
-    "stem": "下列进程调度算法中，可能导致饥饿现象的有（） ⅡI.短作业优先调度算法",
-    "options": {
-      "A": "",
-      "B": "",
-      "C": "",
-      "D": ""
-    },
-    "answer": "",
-    "analysis": "",
-    "difficulty": 2,
-    "knowledge_points": [
-      "CPU调度",
-      "OCR导入"
-    ],
-    "source_page": 25,
-    "source_num": 35
   },
   {
     "id": "os-ocr-0201",
@@ -5346,28 +5016,6 @@
     "source_num": 22
   },
   {
-    "id": "os-ocr-0244",
-    "subject": "OS",
-    "chapter": "同步与互斥",
-    "chapterSlug": "同步与互斥",
-    "stem": "用来实现进程同步与互斥的PV操作实际上是由（）过程组成的。",
-    "options": {
-      "A": "一个可被中断的 」C.两个可被中断的",
-      "B": "一个不可被中断的",
-      "C": "",
-      "D": "两个不可被中断的"
-    },
-    "answer": "",
-    "analysis": "",
-    "difficulty": 2,
-    "knowledge_points": [
-      "同步与互斥",
-      "OCR导入"
-    ],
-    "source_page": 30,
-    "source_num": 23
-  },
-  {
     "id": "os-ocr-0245",
     "subject": "OS",
     "chapter": "同步与互斥",
@@ -5520,28 +5168,6 @@
     ],
     "source_page": 31,
     "source_num": 30
-  },
-  {
-    "id": "os-ocr-0252",
-    "subject": "OS",
-    "chapter": "同步与互斥",
-    "chapterSlug": "同步与互斥",
-    "stem": "若系统有n个进程,则就绪队列中进程的个数最多有(①)个；阻塞队列中进程的个数最多有(②)个。 ① A. n+1",
-    "options": {
-      "A": "",
-      "B": "n",
-      "C": "n-1 ② A.n+1",
-      "D": "1"
-    },
-    "answer": "",
-    "analysis": "",
-    "difficulty": 2,
-    "knowledge_points": [
-      "同步与互斥",
-      "OCR导入"
-    ],
-    "source_page": 31,
-    "source_num": 31
   },
   {
     "id": "os-ocr-0253",
@@ -6116,28 +5742,6 @@
     "source_num": 58
   },
   {
-    "id": "os-ocr-0279",
-    "subject": "OS",
-    "chapter": "同步与互斥",
-    "chapterSlug": "同步与互斥",
-    "stem": "【2020统考真题】下列准则中,实现临界区互斥机制必须遵循的是（）",
-    "options": {
-      "A": "",
-      "B": "",
-      "C": "",
-      "D": ""
-    },
-    "answer": "",
-    "analysis": "",
-    "difficulty": 2,
-    "knowledge_points": [
-      "同步与互斥",
-      "OCR导入"
-    ],
-    "source_page": 36,
-    "source_num": 59
-  },
-  {
     "id": "os-ocr-0280",
     "subject": "OS",
     "chapter": "死锁",
@@ -6246,28 +5850,6 @@
     ],
     "source_page": 36,
     "source_num": 4
-  },
-  {
-    "id": "os-ocr-0285",
-    "subject": "OS",
-    "chapter": "死锁",
-    "chapterSlug": "死锁",
-    "stem": "系统产生死锁的可能原因是（）",
-    "options": {
-      "A": "独占资源分配不当B.系统资源不足",
-      "B": "",
-      "C": "进程运行太快",
-      "D": "CPU内核太多"
-    },
-    "answer": "",
-    "analysis": "",
-    "difficulty": 2,
-    "knowledge_points": [
-      "死锁",
-      "OCR导入"
-    ],
-    "source_page": 36,
-    "source_num": 5
   },
   {
     "id": "os-ocr-0286",
@@ -6444,28 +6026,6 @@
     ],
     "source_page": 37,
     "source_num": 13
-  },
-  {
-    "id": "os-ocr-0294",
-    "subject": "OS",
-    "chapter": "死锁",
-    "chapterSlug": "死锁",
-    "stem": "在下列死锁的解决方法中，属于死锁预防策略的是（）",
-    "options": {
-      "A": "银行家算法",
-      "B": "资源有序分配算法C.死锁检测算法",
-      "C": "",
-      "D": "资源分配图化简法"
-    },
-    "answer": "",
-    "analysis": "",
-    "difficulty": 2,
-    "knowledge_points": [
-      "死锁",
-      "OCR导入"
-    ],
-    "source_page": 37,
-    "source_num": 14
   },
   {
     "id": "os-ocr-0295",
@@ -6710,50 +6270,6 @@
     "source_num": 25
   },
   {
-    "id": "os-ocr-0306",
-    "subject": "OS",
-    "chapter": "死锁",
-    "chapterSlug": "死锁",
-    "stem": "假设具有5个进程的进程集合P={Po,P,P2,P3,P4},系统中有三类资源A,B,C,假设在某时刻有如下 状态,见下表。系统是处于安全状态的,则x,y,z 的取值可能是（） Max Available Allocation 进程名 ABC ABC Po ABC P1 P2 xyz P3 P4 IⅢI. 1, 1, 1 IV. 0, 4, 7",
-    "options": {
-      "A": "",
-      "B": "",
-      "C": "",
-      "D": ""
-    },
-    "answer": "",
-    "analysis": "",
-    "difficulty": 2,
-    "knowledge_points": [
-      "死锁",
-      "OCR导入"
-    ],
-    "source_page": 39,
-    "source_num": 26
-  },
-  {
-    "id": "os-ocr-0307",
-    "subject": "OS",
-    "chapter": "死锁",
-    "chapterSlug": "死锁",
-    "stem": "1,4, 0",
-    "options": {
-      "A": "",
-      "B": "",
-      "C": "",
-      "D": ""
-    },
-    "answer": "",
-    "analysis": "",
-    "difficulty": 2,
-    "knowledge_points": [
-      "死锁",
-      "OCR导入"
-    ],
-    "source_page": 39,
-    "source_num": 1
-  },
-  {
     "id": "os-ocr-0308",
     "subject": "OS",
     "chapter": "死锁",
@@ -6952,28 +6468,6 @@
     "source_num": 35
   },
   {
-    "id": "os-ocr-0317",
-    "subject": "OS",
-    "chapter": "死锁",
-    "chapterSlug": "死锁",
-    "stem": "【2013统考真题】下列关于银行家算法的叙述中,正确的是（）",
-    "options": {
-      "A": "银行家算法可以预防死锁",
-      "B": "当系统处于安全状态时，系统中一定无死锁进程",
-      "C": "当系统处于不安全状态时，系统中一定会出现死锁进程",
-      "D": ""
-    },
-    "answer": "",
-    "analysis": "",
-    "difficulty": 2,
-    "knowledge_points": [
-      "死锁",
-      "OCR导入"
-    ],
-    "source_page": 41,
-    "source_num": 36
-  },
-  {
     "id": "os-ocr-0318",
     "subject": "OS",
     "chapter": "死锁",
@@ -7060,28 +6554,6 @@
     ],
     "source_page": 41,
     "source_num": 40
-  },
-  {
-    "id": "os-ocr-0322",
-    "subject": "OS",
-    "chapter": "死锁",
-    "chapterSlug": "死锁",
-    "stem": "【2019统考真题】下列关于死锁的叙述中，正确的是（）",
-    "options": {
-      "A": "",
-      "B": "",
-      "C": "",
-      "D": ""
-    },
-    "answer": "",
-    "analysis": "",
-    "difficulty": 2,
-    "knowledge_points": [
-      "死锁",
-      "OCR导入"
-    ],
-    "source_page": 41,
-    "source_num": 41
   },
   {
     "id": "os-ocr-0323",
@@ -8426,28 +7898,6 @@
     "source_num": 58
   },
   {
-    "id": "os-ocr-0384",
-    "subject": "OS",
-    "chapter": "内存管理概念",
-    "chapterSlug": "内存管理概念",
-    "stem": "若对经典的页式存储管理方式的页表做出稍微改造，允许不同页表的页表项指向同一个页帧，则可能的 结果有（）",
-    "options": {
-      "A": "",
-      "B": "",
-      "C": "",
-      "D": ""
-    },
-    "answer": "",
-    "analysis": "",
-    "difficulty": 2,
-    "knowledge_points": [
-      "内存管理概念",
-      "OCR导入"
-    ],
-    "source_page": 49,
-    "source_num": 59
-  },
-  {
     "id": "os-ocr-0385",
     "subject": "OS",
     "chapter": "内存管理概念",
@@ -8600,28 +8050,6 @@
     ],
     "source_page": 49,
     "source_num": 65
-  },
-  {
-    "id": "os-ocr-0392",
-    "subject": "OS",
-    "chapter": "内存管理概念",
-    "chapterSlug": "内存管理概念",
-    "stem": "【2016统考真题】某进程的段表内容如下所示。 段长 内存起始地址 权限 状态 段号 只读 在内存 不在内存 读写 一 读写 在内存 访问段号为2、段内地址为400的逻辑地址时,进行地址转换的结果是（）",
-    "options": {
-      "A": "段缺失异常",
-      "B": "得到内存地址4400 0C.越权异常",
-      "C": "",
-      "D": "越界异常"
-    },
-    "answer": "",
-    "analysis": "",
-    "difficulty": 2,
-    "knowledge_points": [
-      "内存管理概念",
-      "OCR导入"
-    ],
-    "source_page": 50,
-    "source_num": 66
   },
   {
     "id": "os-ocr-0393",
@@ -9372,28 +8800,6 @@
     "source_num": 27
   },
   {
-    "id": "os-ocr-0427",
-    "subject": "OS",
-    "chapter": "虚拟内存管理",
-    "chapterSlug": "虚拟内存管理",
-    "stem": "下列关于驻留集和工作集的表述中，正确的是（)",
-    "options": {
-      "A": "",
-      "B": "",
-      "C": "",
-      "D": ""
-    },
-    "answer": "",
-    "analysis": "",
-    "difficulty": 2,
-    "knowledge_points": [
-      "虚拟内存管理",
-      "OCR导入"
-    ],
-    "source_page": 53,
-    "source_num": 28
-  },
-  {
     "id": "os-ocr-0428",
     "subject": "OS",
     "chapter": "虚拟内存管理",
@@ -9524,28 +8930,6 @@
     ],
     "source_page": 54,
     "source_num": 33
-  },
-  {
-    "id": "os-ocr-0434",
-    "subject": "OS",
-    "chapter": "虚拟内存管理",
-    "chapterSlug": "虚拟内存管理",
-    "stem": "提供虚拟存储技术的存储管理方法有（）",
-    "options": {
-      "A": "动态分区存储管理B.页式存储管理",
-      "B": "",
-      "C": "请求段式存储管理D.存储覆盖技术",
-      "D": ""
-    },
-    "answer": "",
-    "analysis": "",
-    "difficulty": 2,
-    "knowledge_points": [
-      "虚拟内存管理",
-      "OCR导入"
-    ],
-    "source_page": 54,
-    "source_num": 34
   },
   {
     "id": "os-ocr-0435",
@@ -10164,28 +9548,6 @@
     "source_num": 5
   },
   {
-    "id": "os-ocr-0463",
-    "subject": "OS",
-    "chapter": "进程与线程",
-    "chapterSlug": "进程与线程",
-    "stem": "读文件操作的正确次序应该是（)",
-    "options": {
-      "A": "",
-      "B": "",
-      "C": "",
-      "D": ""
-    },
-    "answer": "",
-    "analysis": "",
-    "difficulty": 2,
-    "knowledge_points": [
-      "进程与线程",
-      "OCR导入"
-    ],
-    "source_page": 58,
-    "source_num": 6
-  },
-  {
     "id": "os-ocr-0464",
     "subject": "OS",
     "chapter": "进程与线程",
@@ -10670,28 +10032,6 @@
     "source_num": 27
   },
   {
-    "id": "os-ocr-0486",
-    "subject": "OS",
-    "chapter": "进程与线程",
-    "chapterSlug": "进程与线程",
-    "stem": "逻辑文件存放到存储介质上时，采用的组织形式与（）有关。",
-    "options": {
-      "A": "逻辑文件结构",
-      "B": "存储介质特性",
-      "C": "主存储器管理方式D.设备分配方式",
-      "D": ""
-    },
-    "answer": "",
-    "analysis": "",
-    "difficulty": 2,
-    "knowledge_points": [
-      "进程与线程",
-      "OCR导入"
-    ],
-    "source_page": 60,
-    "source_num": 28
-  },
-  {
     "id": "os-ocr-0487",
     "subject": "OS",
     "chapter": "进程与线程",
@@ -10998,28 +10338,6 @@
     ],
     "source_page": 61,
     "source_num": 43
-  },
-  {
-    "id": "os-ocr-0501",
-    "subject": "OS",
-    "chapter": "进程与线程",
-    "chapterSlug": "进程与线程",
-    "stem": "【2012统考真题】若一个用户进程通过read系统调用读取一个磁盘文件中的数据，则下列关于此过程 的叙述中,正确的是（）",
-    "options": {
-      "A": "",
-      "B": "",
-      "C": "",
-      "D": ""
-    },
-    "answer": "",
-    "analysis": "",
-    "difficulty": 2,
-    "knowledge_points": [
-      "进程与线程",
-      "OCR导入"
-    ],
-    "source_page": 62,
-    "source_num": 44
   },
   {
     "id": "os-ocr-0502",
@@ -11856,28 +11174,6 @@
     ],
     "source_page": 66,
     "source_num": 9
-  },
-  {
-    "id": "os-ocr-0540",
-    "subject": "OS",
-    "chapter": "文件系统",
-    "chapterSlug": "文件系统",
-    "stem": "若用8个字(字长32位)组成的位示图管理内存，即位示图有8行、32列，行号和列号均从1开始，则 块号为100的内存块所对应位示图的位置是（）",
-    "options": {
-      "A": "字号为3,位号为5B.字号为4,位号为4C.字号为3,位号为4D.字号为4,位号为5",
-      "B": "",
-      "C": "",
-      "D": ""
-    },
-    "answer": "",
-    "analysis": "",
-    "difficulty": 2,
-    "knowledge_points": [
-      "文件系统",
-      "OCR导入"
-    ],
-    "source_page": 66,
-    "source_num": 10
   },
   {
     "id": "os-ocr-0541",
@@ -12826,28 +12122,6 @@
     "source_num": 12
   },
   {
-    "id": "os-ocr-0584",
-    "subject": "OS",
-    "chapter": "设备独立性软件",
-    "chapterSlug": "设备独立性软件",
-    "stem": "考虑单用户计算机上的下列I/O操作，需要使用缓冲技术的是（）",
-    "options": {
-      "A": "",
-      "B": "",
-      "C": "",
-      "D": ""
-    },
-    "answer": "",
-    "analysis": "",
-    "difficulty": 2,
-    "knowledge_points": [
-      "设备独立性软件",
-      "OCR导入"
-    ],
-    "source_page": 71,
-    "source_num": 13
-  },
-  {
     "id": "os-ocr-0585",
     "subject": "OS",
     "chapter": "设备独立性软件",
@@ -13110,28 +12384,6 @@
     ],
     "source_page": 71,
     "source_num": 24
-  },
-  {
-    "id": "os-ocr-0597",
-    "subject": "OS",
-    "chapter": "设备独立性软件",
-    "chapterSlug": "设备独立性软件",
-    "stem": "下面关于SPOOLing系统的说法中，正确的是（）",
-    "options": {
-      "A": "构成SPOOLing系统的基本条件是有外围输入机与外围输出机",
-      "B": "",
-      "C": "当输入设备忙时，SPOOLing系统中的用户程序暂停执行，待IO空闲时再被唤醒执行输出操作",
-      "D": "SPOOLing系统中的用户程序可以随时将输出数据送到输出井中，待输出设备空闲时再由SPOOLing 系统完成数据的输出操作"
-    },
-    "answer": "",
-    "analysis": "",
-    "difficulty": 2,
-    "knowledge_points": [
-      "设备独立性软件",
-      "OCR导入"
-    ],
-    "source_page": 72,
-    "source_num": 25
   },
   {
     "id": "os-ocr-0598",
@@ -13398,28 +12650,6 @@
     "source_num": 38
   },
   {
-    "id": "os-ocr-0610",
-    "subject": "OS",
-    "chapter": "设备独立性软件",
-    "chapterSlug": "设备独立性软件",
-    "stem": "【2013统考真题】用户程序发出磁盘I0请求后，系统的处理流程是：用户程序→系统调用处理程序 →设备驱动程序→中断处理程序。其中,计算数据所在磁盘的柱面号、磁头号、扇区号的程序是（）",
-    "options": {
-      "A": "用户程序",
-      "B": "系统调用处理程序C.设备驱动程序",
-      "C": "",
-      "D": "中断处理程序"
-    },
-    "answer": "",
-    "analysis": "",
-    "difficulty": 2,
-    "knowledge_points": [
-      "设备独立性软件",
-      "OCR导入"
-    ],
-    "source_page": 73,
-    "source_num": 39
-  },
-  {
     "id": "os-ocr-0611",
     "subject": "OS",
     "chapter": "设备独立性软件",
@@ -13594,28 +12824,6 @@
     ],
     "source_page": 74,
     "source_num": 2
-  },
-  {
-    "id": "os-ocr-0619",
-    "subject": "OS",
-    "chapter": "磁盘和固态硬盘",
-    "chapterSlug": "磁盘和固态硬盘",
-    "stem": "既可以顺序读/写，又可以按任意次序读/写的存储器有（） IⅢI.U盘 ⅡI.磁带 IV.磁盘",
-    "options": {
-      "A": "",
-      "B": "",
-      "C": "",
-      "D": ""
-    },
-    "answer": "",
-    "analysis": "",
-    "difficulty": 2,
-    "knowledge_points": [
-      "磁盘和固态硬盘",
-      "OCR导入"
-    ],
-    "source_page": 74,
-    "source_num": 3
   },
   {
     "id": "os-ocr-0620",
