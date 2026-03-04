@@ -55,7 +55,7 @@ import router from "@/router";
 import request from "@/utils/request";
 import {ElMessage} from "element-plus";
 
-const uploadUrl = import.meta.env.VITE_BASE_URL + '/files/upload'
+const uploadUrl = import.meta.env.VITE_API_BASE_URL + '/files/upload'
 const data = reactive({ user: JSON.parse(localStorage.getItem('system-user') || '{}') })
 const profileVisible = ref(false)
 const profile = reactive({ name: '', avatar: '' })

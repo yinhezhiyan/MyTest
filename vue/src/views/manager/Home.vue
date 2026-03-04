@@ -78,7 +78,7 @@ const chapters = ref([])
 const summary = reactive({ todayTotal: 0, todayCorrect: 0, todayWrong: 0 })
 const addVisible = ref(false)
 const form = reactive({ chapter:'', stem:'', optionA:'', optionB:'', optionC:'', optionD:'', answer:'A', analysis:'', attachmentUrl:'' })
-const uploadUrl = import.meta.env.VITE_BASE_URL + '/files/upload'
+const uploadUrl = import.meta.env.VITE_API_BASE_URL + '/files/upload'
 
 const syncUserFromStorage = () => {
   const latest = JSON.parse(localStorage.getItem('system-user') || '{}')
