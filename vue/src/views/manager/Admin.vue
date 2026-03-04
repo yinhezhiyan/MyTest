@@ -64,7 +64,7 @@ import {reactive} from "vue";
 import {ElMessageBox, ElMessage} from "element-plus";
 
 // 文件上传的接口地址
-const uploadUrl = import.meta.env.VITE_BASE_URL + '/files/upload'
+const uploadUrl = import.meta.env.VITE_API_BASE_URL + '/files/upload'
 
 const data = reactive({
   pageNum: 1,
