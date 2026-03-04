@@ -40,10 +40,10 @@ public class DataInitializer implements CommandLineRunner {
         initAdmin("CN");
         initAdmin("CO");
 
-        importDefaultBankIfNeeded("DS", "ds.json");
-        importDefaultBankIfNeeded("OS", "os.json");
-        importDefaultBankIfNeeded("CN", "cn.json");
-        importDefaultBankIfNeeded("CO", "co.json");
+        replaceSubjectBankFromFile("DS", "ds.json");
+        replaceSubjectBankFromFile("OS", "os.json");
+        replaceSubjectBankFromFile("CN", "cn.json");
+        replaceSubjectBankFromFile("CO", "co.json");
     }
 
     private void initUserTable() {
@@ -139,7 +139,7 @@ public class DataInitializer implements CommandLineRunner {
         }
     }
 
-    private void importDefaultBankIfNeeded(String subject, String fileName) {
+    private void replaceSubjectBankFromFile(String subject, String fileName) {
         Path file = resolveQuestionBank(fileName);
         if (file == null) {
             return;
@@ -147,17 +147,16 @@ public class DataInitializer implements CommandLineRunner {
         try {
             String content = Files.readString(file);
             List<Map<String, Object>> items = objectMapper.readValue(content, new TypeReference<>() {});
+
+            jdbcTemplate.update("delete from exercise where subject=?", subject);
+
             for (Map<String, Object> item : items) {
-                Map<String, String> options = (Map<String, String>) item.get("options");
+                Map<String, String> options = (Map<String, String>) item.getOrDefault("options", Map.of());
                 List<String> kps = (List<String>) item.getOrDefault("knowledge_points", new ArrayList<>());
                 String kp = objectMapper.writeValueAsString(kps);
                 jdbcTemplate.update("""
                         insert into exercise(id, subject, chapter, chapter_slug, stem, option_a, option_b, option_c, option_d, answer, analysis, difficulty, knowledge_points, attachment_url)
                         values(?,?,?,?,?,?,?,?,?,?,?,?,?,?)
-                        on duplicate key update chapter=values(chapter), chapter_slug=values(chapter_slug), stem=values(stem),
-                        option_a=values(option_a), option_b=values(option_b), option_c=values(option_c), option_d=values(option_d),
-                        answer=values(answer), analysis=values(analysis), difficulty=values(difficulty), knowledge_points=values(knowledge_points),
-                        attachment_url=values(attachment_url)
                         """,
                         String.valueOf(item.get("id")), subject, String.valueOf(item.get("chapter")), String.valueOf(item.get("chapterSlug")),
                         String.valueOf(item.get("stem")), options.get("A"), options.get("B"), options.get("C"), options.get("D"),
@@ -165,7 +164,8 @@ public class DataInitializer implements CommandLineRunner {
                         Integer.parseInt(String.valueOf(item.getOrDefault("difficulty", 2))), kp,
                         String.valueOf(item.getOrDefault("attachment_url", "")));
             }
-        } catch (Exception ignored) {
+        } catch (Exception e) {
+            throw new IllegalStateException("初始化题库失败: " + subject + "(" + fileName + ")", e);
         }
     }
 

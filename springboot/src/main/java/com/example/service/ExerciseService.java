@@ -55,37 +55,30 @@ public class ExerciseService {
             Path source = resolveQuestionBankPath(subject, filePath);
             String content = Files.readString(source);
             List<Map<String, Object>> items = objectMapper.readValue(content, new TypeReference<>() {});
+            jdbcTemplate.update("delete from exercise where subject=?", subject);
             int inserted = 0;
             int updated = 0;
             for (Map<String, Object> item : items) {
                 String id = String.valueOf(item.get("id"));
-                Integer exists = jdbcTemplate.queryForObject("select count(1) from exercise where id=? and subject=?", Integer.class, id, subject);
-                Map<String, String> options = (Map<String, String>) item.get("options");
+                Map<String, String> options = (Map<String, String>) item.getOrDefault("options", Map.of());
                 List<String> kps = (List<String>) item.getOrDefault("knowledge_points", new ArrayList<>());
                 String kp = objectMapper.writeValueAsString(kps);
                 jdbcTemplate.update("""
                         insert into exercise(id, subject, chapter, chapter_slug, stem, option_a, option_b, option_c, option_d, answer, analysis, difficulty, knowledge_points, attachment_url)
                         values(?,?,?,?,?,?,?,?,?,?,?,?,?,?)
-                        on duplicate key update chapter=values(chapter), chapter_slug=values(chapter_slug), stem=values(stem),
-                        option_a=values(option_a), option_b=values(option_b), option_c=values(option_c), option_d=values(option_d),
-                        answer=values(answer), analysis=values(analysis), difficulty=values(difficulty), knowledge_points=values(knowledge_points), attachment_url=values(attachment_url)
                         """,
                         id, subject, String.valueOf(item.get("chapter")), String.valueOf(item.get("chapterSlug")),
                         String.valueOf(item.get("stem")), options.get("A"), options.get("B"), options.get("C"), options.get("D"),
                         String.valueOf(item.get("answer")), String.valueOf(item.getOrDefault("analysis", "")),
                         Integer.parseInt(String.valueOf(item.getOrDefault("difficulty", 2))), kp, String.valueOf(item.getOrDefault("attachmentUrl", "")));
-                if (exists != null && exists > 0) {
-                    updated++;
-                } else {
-                    inserted++;
-                }
+                inserted++;
             }
             Integer total = jdbcTemplate.queryForObject("select count(1) from exercise where subject=?", Integer.class, subject);
             Map<String, Object> summary = new HashMap<>();
             summary.put("subject", subject);
             summary.put("inserted", inserted);
             summary.put("updated", updated);
-            summary.put("processed", inserted + updated);
+            summary.put("processed", inserted);
             summary.put("total", total == null ? 0 : total);
             return summary;
         } catch (Exception e) {
