@@ -12,7 +12,7 @@
   </div>
 </template>
 <script setup>
-import {computed, onMounted, reactive, ref} from 'vue';
+import {computed, onMounted, reactive, ref, watch} from 'vue';
 import request from '@/utils/request';
 import {ElMessage} from 'element-plus';
 import {useRoute} from 'vue-router';
@@ -23,6 +23,13 @@ const wrong = ref('');
 const history = ref([])
 const historyIndex = ref(-1)
 const sequenceIds = ref([])
+
+const resetState = () => {
+  chosen.value = ''
+  wrong.value = ''
+  history.value = []
+  historyIndex.value = -1
+}
 
 const displayQuestionNo = computed(() => {
   const id = String(q.id || '')
@@ -93,18 +100,26 @@ const submit = ()=>{
   })
 }
 
-onMounted(()=> {
-  if (route.query.ids) {
-    sequenceIds.value = String(route.query.ids).split(',').filter(Boolean)
-  }
+const initByRoute = () => {
+  resetState()
+  sequenceIds.value = route.query.ids ? String(route.query.ids).split(',').filter(Boolean) : []
   if (route.query.id) {
     loadById(route.query.id)
-  } else if (sequenceIds.value.length > 0) {
-    loadById(sequenceIds.value[0])
-  } else {
-    nextRandom()
+    return
   }
-})
+  if (sequenceIds.value.length > 0) {
+    loadById(sequenceIds.value[0])
+    return
+  }
+  nextRandom()
+}
+
+onMounted(initByRoute)
+
+watch(
+  () => route.fullPath,
+  () => initByRoute()
+)
 </script>
 <style scoped>
 .card{background:#fff;padding:18px;border-radius:12px}
