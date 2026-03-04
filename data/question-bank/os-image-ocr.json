@@ -1,0 +1,1535 @@
+[
+  {
+    "id": "os-img-0001",
+    "subject": "OS",
+    "chapter": "进程与线程",
+    "chapterSlug": "进程与线程",
+    "stem": "一个进程映像是（)",
+    "options": {
+      "A": "由协处理器执行的一个程序",
+      "B": "一个独立的程序+数据集",
+      "C": "PCB结构与程序和数据的组合",
+      "D": "一个独立的程序"
+    },
+    "answer": "",
+    "analysis": "图片OCR导入（待补答案）",
+    "difficulty": 2,
+    "knowledge_points": [
+      "进程与线程",
+      "图片OCR导入"
+    ],
+    "source_num": 1
+  },
+  {
+    "id": "os-img-0002",
+    "subject": "OS",
+    "chapter": "进程与线程",
+    "chapterSlug": "进程与线程",
+    "stem": "进程之间交换数据不能通过（）途径进行。",
+    "options": {
+      "A": "共享文件",
+      "B": "消息传递",
+      "C": "访问进程地址空间D.访问共享存储区",
+      "D": ""
+    },
+    "answer": "",
+    "analysis": "图片OCR导入（待补答案）",
+    "difficulty": 2,
+    "knowledge_points": [
+      "进程与线程",
+      "图片OCR导入"
+    ],
+    "source_num": 2
+  },
+  {
+    "id": "os-img-0003",
+    "subject": "OS",
+    "chapter": "进程与线程",
+    "chapterSlug": "进程与线程",
+    "stem": "进程与程序的根本区别是（)",
+    "options": {
+      "A": "静态和动态特点",
+      "B": "是不是被调入内存",
+      "C": "是不是具有就绪、运行和等待三种状态",
+      "D": "是不是占有处理器"
+    },
+    "answer": "",
+    "analysis": "图片OCR导入（待补答案）",
+    "difficulty": 2,
+    "knowledge_points": [
+      "进程与线程",
+      "图片OCR导入"
+    ],
+    "source_num": 3
+  },
+  {
+    "id": "os-img-0004",
+    "subject": "OS",
+    "chapter": "进程与线程",
+    "chapterSlug": "进程与线程",
+    "stem": "下列关于进程的描述中，最不符合操作系统对进程的理解的是（）",
+    "options": {
+      "A": "进程是在多程序环境中的完整程序",
+      "B": "进程可以由程序、数据和PCB描述",
+      "C": "线程（Thread)是一种特殊的进程",
+      "D": "进程是程序在一个数据集合上的运行过程，它是系统进行资源分配和调度的一个独立单元"
+    },
+    "answer": "",
+    "analysis": "图片OCR导入（待补答案）",
+    "difficulty": 2,
+    "knowledge_points": [
+      "进程与线程",
+      "图片OCR导入"
+    ],
+    "source_num": 4
+  },
+  {
+    "id": "os-img-0005",
+    "subject": "OS",
+    "chapter": "进程与线程",
+    "chapterSlug": "进程与线程",
+    "stem": "下列关于并发进程特性的叙述中，正确的是（)",
+    "options": {
+      "A": "进程是一个动态过程，其生命周期是连续的",
+      "B": "并发进程执行完毕后，一定能够得到相同的结果",
+      "C": "并发进程对共享变量的操作结果与执行速度无关",
+      "D": "并发进程的运行结果具有不可再现性"
+    },
+    "answer": "",
+    "analysis": "图片OCR导入（待补答案）",
+    "difficulty": 2,
+    "knowledge_points": [
+      "进程与线程",
+      "图片OCR导入"
+    ],
+    "source_num": 5
+  },
+  {
+    "id": "os-img-0006",
+    "subject": "OS",
+    "chapter": "进程与线程",
+    "chapterSlug": "进程与线程",
+    "stem": "下列关于进程的叙述中，正确的是（)",
+    "options": {
+      "A": "进程获得处理器运行是通过调度得到的",
+      "B": "优先级是进程调度的重要依据，一旦确定不能改动",
+      "C": "在单处理器系统中，任何时刻都只有一个进程处于运行态",
+      "D": "进程申请处理器而得不到满足时，其状态变为阻塞态"
+    },
+    "answer": "",
+    "analysis": "图片OCR导入（待补答案）",
+    "difficulty": 2,
+    "knowledge_points": [
+      "进程与线程",
+      "图片OCR导入"
+    ],
+    "source_num": 6
+  },
+  {
+    "id": "os-img-0007",
+    "subject": "OS",
+    "chapter": "进程与线程",
+    "chapterSlug": "进程与线程",
+    "stem": "并发进程执行的相对速度是（）",
+    "options": {
+      "A": "由进程的程序结构决定的",
+      "B": "由进程自己来控制的",
+      "C": "与进程调度策略有关",
+      "D": "在进程被创建时确定的"
+    },
+    "answer": "",
+    "analysis": "图片OCR导入（待补答案）",
+    "difficulty": 2,
+    "knowledge_points": [
+      "进程与线程",
+      "图片OCR导入"
+    ],
+    "source_num": 7
+  },
+  {
+    "id": "os-img-0008",
+    "subject": "OS",
+    "chapter": "进程与线程",
+    "chapterSlug": "进程与线程",
+    "stem": "下列任务中，（）不是由进程创建原语完成的。",
+    "options": {
+      "A": "申请PCB并初始化",
+      "B": "为进程分配内存空问",
+      "C": "为进程分配CPU",
+      "D": "将进程插入就绪队列"
+    },
+    "answer": "",
+    "analysis": "图片OCR导入（待补答案）",
+    "difficulty": 2,
+    "knowledge_points": [
+      "进程与线程",
+      "图片OCR导入"
+    ],
+    "source_num": 8
+  },
+  {
+    "id": "os-img-0009",
+    "subject": "OS",
+    "chapter": "进程与线程",
+    "chapterSlug": "进程与线程",
+    "stem": "下列关于进程和程序的叙述中,错误的是（)",
+    "options": {
+      "A": "一个进程在其生命周期中可执行多个程序",
+      "B": "一个进程在同一时刻可执行多个程序",
+      "C": "一个程序的多次运行可形成多个不同的进程",
+      "D": "一个程序的一次执行可产生多个进程"
+    },
+    "answer": "",
+    "analysis": "图片OCR导入（待补答案）",
+    "difficulty": 2,
+    "knowledge_points": [
+      "进程与线程",
+      "图片OCR导入"
+    ],
+    "source_num": 9
+  },
+  {
+    "id": "os-img-0010",
+    "subject": "OS",
+    "chapter": "进程与线程",
+    "chapterSlug": "进程与线程",
+    "stem": "下列选项中，导致创建新进程的操作是（)",
+    "options": {
+      "A": "",
+      "B": "",
+      "C": "",
+      "D": ""
+    },
+    "answer": "",
+    "analysis": "图片OCR导入（待补答案）",
+    "difficulty": 2,
+    "knowledge_points": [
+      "进程与线程",
+      "图片OCR导入"
+    ],
+    "source_num": 10
+  },
+  {
+    "id": "os-img-0011",
+    "subject": "OS",
+    "chapter": "进程与线程",
+    "chapterSlug": "进程与线程",
+    "stem": "操作系统是根据（）来对并发执行的进程进行控制和管理的。",
+    "options": {
+      "A": "进程的基本状态",
+      "B": "进程控制块",
+      "C": "多道程序设计",
+      "D": "进程的优先权"
+    },
+    "answer": "",
+    "analysis": "图片OCR导入（待补答案）",
+    "difficulty": 2,
+    "knowledge_points": [
+      "进程与线程",
+      "图片OCR导入"
+    ],
+    "source_num": 11
+  },
+  {
+    "id": "os-img-0012",
+    "subject": "OS",
+    "chapter": "进程与线程",
+    "chapterSlug": "进程与线程",
+    "stem": "在任何时刻，一个进程的状态变化（）引起另一个进程的状态变化。",
+    "options": {
+      "A": "必定",
+      "B": "一定不",
+      "C": "不一定",
+      "D": "不可能"
+    },
+    "answer": "",
+    "analysis": "图片OCR导入（待补答案）",
+    "difficulty": 2,
+    "knowledge_points": [
+      "进程与线程",
+      "图片OCR导入"
+    ],
+    "source_num": 12
+  },
+  {
+    "id": "os-img-0013",
+    "subject": "OS",
+    "chapter": "进程与线程",
+    "chapterSlug": "进程与线程",
+    "stem": "在单处理器系统中,若同时存在10个进程，则处于就绪队列中的进程最多有（）个。",
+    "options": {
+      "A": "1",
+      "B": "8",
+      "C": "9",
+      "D": "10"
+    },
+    "answer": "",
+    "analysis": "图片OCR导入（待补答案）",
+    "difficulty": 2,
+    "knowledge_points": [
+      "进程与线程",
+      "图片OCR导入"
+    ],
+    "source_num": 13
+  },
+  {
+    "id": "os-img-0014",
+    "subject": "OS",
+    "chapter": "进程与线程",
+    "chapterSlug": "进程与线程",
+    "stem": "一个进程释放了一台打印机，它可能会改变（）的状态。",
+    "options": {
+      "A": "自身进程",
+      "B": "输入/输出进程",
+      "C": "另一个等待打印机的进程",
+      "D": "所有等待打印机的进程"
+    },
+    "answer": "",
+    "analysis": "图片OCR导入（待补答案）",
+    "difficulty": 2,
+    "knowledge_points": [
+      "进程与线程",
+      "图片OCR导入"
+    ],
+    "source_num": 14
+  },
+  {
+    "id": "os-img-0015",
+    "subject": "OS",
+    "chapter": "进程与线程",
+    "chapterSlug": "进程与线程",
+    "stem": "系统进程所请求的一次I0操作完成后，将使进程状态从（）",
+    "options": {
+      "A": "运行态变为就绪态B.运行态变为阻塞态",
+      "B": "",
+      "C": "就绪态变为运行态D.阻塞态变为就绪态",
+      "D": ""
+    },
+    "answer": "",
+    "analysis": "图片OCR导入（待补答案）",
+    "difficulty": 2,
+    "knowledge_points": [
+      "进程与线程",
+      "图片OCR导入"
+    ],
+    "source_num": 15
+  },
+  {
+    "id": "os-img-0016",
+    "subject": "OS",
+    "chapter": "进程与线程",
+    "chapterSlug": "进程与线程",
+    "stem": "一个进程的基本状态可以从其他两种基本状态转变过去，这个基本的状态一定是（）)",
+    "options": {
+      "A": "运行态",
+      "B": "阻塞态",
+      "C": "就绪态",
+      "D": "终止态"
+    },
+    "answer": "",
+    "analysis": "图片OCR导入（待补答案）",
+    "difficulty": 2,
+    "knowledge_points": [
+      "进程与线程",
+      "图片OCR导入"
+    ],
+    "source_num": 16
+  },
+  {
+    "id": "os-img-0017",
+    "subject": "OS",
+    "chapter": "进程与线程",
+    "chapterSlug": "进程与线程",
+    "stem": "在分时系统中,通常处于（）的进程最多。",
+    "options": {
+      "A": "运行态",
+      "B": "就绪态",
+      "C": "阻塞态",
+      "D": "终止态"
+    },
+    "answer": "",
+    "analysis": "图片OCR导入（待补答案）",
+    "difficulty": 2,
+    "knowledge_points": [
+      "进程与线程",
+      "图片OCR导入"
+    ],
+    "source_num": 17
+  },
+  {
+    "id": "os-img-0018",
+    "subject": "OS",
+    "chapter": "进程与线程",
+    "chapterSlug": "进程与线程",
+    "stem": "并发进程失去封闭性,是指（)",
+    "options": {
+      "A": "多个相对独立的进程以各自的速度向前推进",
+      "B": "并发进程的执行结果与速度无关",
+      "C": "并发进程执行时，在不同时刻发生的错误",
+      "D": "并发进程共享变量，其执行结果与速度有关"
+    },
+    "answer": "",
+    "analysis": "图片OCR导入（待补答案）",
+    "difficulty": 2,
+    "knowledge_points": [
+      "进程与线程",
+      "图片OCR导入"
+    ],
+    "source_num": 18
+  },
+  {
+    "id": "os-img-0019",
+    "subject": "OS",
+    "chapter": "进程与线程",
+    "chapterSlug": "进程与线程",
+    "stem": "通常用户进程被建立后，（）",
+    "options": {
+      "A": "便一直存在于系统中，直到被操作人员撤销",
+      "B": "随着进程运行的正常或不正常结束而撤销",
+      "C": "随着时间片轮转而撤销与建立",
+      "D": "随着进程的阻塞或者唤醒而撤销与建立"
+    },
+    "answer": "",
+    "analysis": "图片OCR导入（待补答案）",
+    "difficulty": 2,
+    "knowledge_points": [
+      "进程与线程",
+      "图片OCR导入"
+    ],
+    "source_num": 19
+  },
+  {
+    "id": "os-img-0020",
+    "subject": "OS",
+    "chapter": "进程与线程",
+    "chapterSlug": "进程与线程",
+    "stem": "进程在处理器上执行时，（)",
+    "options": {
+      "A": "进程之间是无关的，具有封闭特性",
+      "B": "进程之间都有交互性，相互依赖、相互制约，具有并发性",
+      "C": "具有并发性,即同时执行的特性",
+      "D": "进程之间可能是无关的，但也可能是有交互性的"
+    },
+    "answer": "",
+    "analysis": "图片OCR导入（待补答案）",
+    "difficulty": 2,
+    "knowledge_points": [
+      "进程与线程",
+      "图片OCR导入"
+    ],
+    "source_num": 20
+  },
+  {
+    "id": "os-img-0021",
+    "subject": "OS",
+    "chapter": "进程与线程",
+    "chapterSlug": "进程与线程",
+    "stem": "下列关于父进程和子进程的叙述中，正确的是（）",
+    "options": {
+      "A": "为了标志父子关系，可让子进程和父进程拥有相同的PID",
+      "B": "父进程和子进程是相互独立的，可以并发执行",
+      "C": "撤销子进程时，一定会同时撤销父进程",
+      "D": "父进程创建了子进程，要等父进程执行完后，子进程才能执行"
+    },
+    "answer": "",
+    "analysis": "图片OCR导入（待补答案）",
+    "difficulty": 2,
+    "knowledge_points": [
+      "进程与线程",
+      "图片OCR导入"
+    ],
+    "source_num": 21
+  },
+  {
+    "id": "os-img-0022",
+    "subject": "OS",
+    "chapter": "进程与线程",
+    "chapterSlug": "进程与线程",
+    "stem": "若一个进程实体由PCB、共享正文段、数据堆段和数据栈段组成，请指出下列C语言程序中的内容及 相关数据结构各位于哪一段中。【微信公众号：研七七】 I.全局赋值变量,（） II.未赋值的局部变量,（) III.函数调用实参传递值，（） IV.用mallocO要求动态分配的存储区，（） VI.进程的优先级，（） V.常量值（如1995、\"string\"),（）",
+    "options": {
+      "A": "PCB",
+      "B": "正文段",
+      "C": "堆段",
+      "D": "栈段"
+    },
+    "answer": "",
+    "analysis": "图片OCR导入（待补答案）",
+    "difficulty": 2,
+    "knowledge_points": [
+      "进程与线程",
+      "图片OCR导入"
+    ],
+    "source_num": 22
+  },
+  {
+    "id": "os-img-0023",
+    "subject": "OS",
+    "chapter": "进程与线程",
+    "chapterSlug": "进程与线程",
+    "stem": "同一程序经过多次创建，运行在不同的数据集上，形成了（）的进程。",
+    "options": {
+      "A": "不同",
+      "B": "相同",
+      "C": "同步",
+      "D": "互斥"
+    },
+    "answer": "",
+    "analysis": "图片OCR导入（待补答案）",
+    "difficulty": 2,
+    "knowledge_points": [
+      "进程与线程",
+      "图片OCR导入"
+    ],
+    "source_num": 23
+  },
+  {
+    "id": "os-img-0024",
+    "subject": "OS",
+    "chapter": "进程与线程",
+    "chapterSlug": "进程与线程",
+    "stem": "PCB是进程存在的唯一标志，下列（）不属于PCB。",
+    "options": {
+      "A": "进程ID",
+      "B": "CPU状态",
+      "C": "堆栈指针",
+      "D": "全局变量"
+    },
+    "answer": "",
+    "analysis": "图片OCR导入（待补答案）",
+    "difficulty": 2,
+    "knowledge_points": [
+      "进程与线程",
+      "图片OCR导入"
+    ],
+    "source_num": 24
+  },
+  {
+    "id": "os-img-0025",
+    "subject": "OS",
+    "chapter": "进程与线程",
+    "chapterSlug": "进程与线程",
+    "stem": "一个计算机系统中,进程的最大数量主要受到（）限制。",
+    "options": {
+      "A": "内存大小",
+      "B": "用户数目",
+      "C": "打开的文件数",
+      "D": "外部设备数量"
+    },
+    "answer": "",
+    "analysis": "图片OCR导入（待补答案）",
+    "difficulty": 2,
+    "knowledge_points": [
+      "进程与线程",
+      "图片OCR导入"
+    ],
+    "source_num": 25
+  },
+  {
+    "id": "os-img-0026",
+    "subject": "OS",
+    "chapter": "进程与线程",
+    "chapterSlug": "进程与线程",
+    "stem": "进程创建完成后会进入一个序列,这个序列称为（）",
+    "options": {
+      "A": "阻塞队列",
+      "B": "挂起序列",
+      "C": "就绪队列",
+      "D": "运行队列"
+    },
+    "answer": "",
+    "analysis": "图片OCR导入（待补答案）",
+    "difficulty": 2,
+    "knowledge_points": [
+      "进程与线程",
+      "图片OCR导入"
+    ],
+    "source_num": 26
+  },
+  {
+    "id": "os-img-0027",
+    "subject": "OS",
+    "chapter": "进程与线程",
+    "chapterSlug": "进程与线程",
+    "stem": "进程自身决定（）",
+    "options": {
+      "A": "从运行态到阻塞态B.从运行态到就绪态",
+      "B": "",
+      "C": "从就绪态到运行态",
+      "D": "从阻塞态到就绪态"
+    },
+    "answer": "",
+    "analysis": "图片OCR导入（待补答案）",
+    "difficulty": 2,
+    "knowledge_points": [
+      "进程与线程",
+      "图片OCR导入"
+    ],
+    "source_num": 27
+  },
+  {
+    "id": "os-img-0028",
+    "subject": "OS",
+    "chapter": "进程与线程",
+    "chapterSlug": "进程与线程",
+    "stem": "下列关于原语操作的叙述中，错误的是（）",
+    "options": {
+      "A": "操作系统使用原语对进程进行管理和控制",
+      "B": "原语在执行过程中不允许被中断",
+      "C": "原语在内核态下执行，常驻内存",
+      "D": "原语被定义为“原子操作”，意思是其执行速度非常快"
+    },
+    "answer": "",
+    "analysis": "图片OCR导入（待补答案）",
+    "difficulty": 2,
+    "knowledge_points": [
+      "进程与线程",
+      "图片OCR导入"
+    ],
+    "source_num": 28
+  },
+  {
+    "id": "os-img-0029",
+    "subject": "OS",
+    "chapter": "进程与线程",
+    "chapterSlug": "进程与线程",
+    "stem": "用信箱实现进程间互通信息的通信机制要有两个通信原语，它们是（）",
+    "options": {
+      "A": "发送原语和执行原语",
+      "B": "就绪原语和执行原语",
+      "C": "发送原语和接收原语",
+      "D": "就绪原语和接收原语"
+    },
+    "answer": "",
+    "analysis": "图片OCR导入（待补答案）",
+    "difficulty": 2,
+    "knowledge_points": [
+      "进程与线程",
+      "图片OCR导入"
+    ],
+    "source_num": 29
+  },
+  {
+    "id": "os-img-0030",
+    "subject": "OS",
+    "chapter": "进程与线程",
+    "chapterSlug": "进程与线程",
+    "stem": "速度最快的进程通信方式是（）",
+    "options": {
+      "A": "消息传递",
+      "B": "Socket",
+      "C": "共享内存",
+      "D": "管道"
+    },
+    "answer": "",
+    "analysis": "图片OCR导入（待补答案）",
+    "difficulty": 2,
+    "knowledge_points": [
+      "进程与线程",
+      "图片OCR导入"
+    ],
+    "source_num": 30
+  },
+  {
+    "id": "os-img-0031",
+    "subject": "OS",
+    "chapter": "进程与线程",
+    "chapterSlug": "进程与线程",
+    "stem": "信箱通信是一种（）通信方式。",
+    "options": {
+      "A": "直接通信",
+      "B": "间接通信",
+      "C": "低级通信",
+      "D": "信号量"
+    },
+    "answer": "",
+    "analysis": "图片OCR导入（待补答案）",
+    "difficulty": 2,
+    "knowledge_points": [
+      "进程与线程",
+      "图片OCR导入"
+    ],
+    "source_num": 31
+  },
+  {
+    "id": "os-img-0032",
+    "subject": "OS",
+    "chapter": "进程与线程",
+    "chapterSlug": "进程与线程",
+    "stem": "下列关于信号发送和处理的描述中，错误的是（）",
+    "options": {
+      "A": "一个进程可以给自己发送信号",
+      "B": "操作系统的内核可以给进程发送信号",
+      "C": "操作系统的内核对每种信号都有默认处理程序",
+      "D": "用户可以对每种信号自定义处理函数"
+    },
+    "answer": "",
+    "analysis": "图片OCR导入（待补答案）",
+    "difficulty": 2,
+    "knowledge_points": [
+      "进程与线程",
+      "图片OCR导入"
+    ],
+    "source_num": 32
+  },
+  {
+    "id": "os-img-0033",
+    "subject": "OS",
+    "chapter": "进程与线程",
+    "chapterSlug": "进程与线程",
+    "stem": "下列关于信号的处理的描述中，错误的是（)",
+    "options": {
+      "A": "当进程从内核态转为用户态时，会检查是否有待处理的信号",
+      "B": "当进程从用户态转为内核态时，也会检查是否有待处理的信号",
+      "C": "操作系统对某些信号的处理是可以忽略的",
+      "D": "操作系统允许进程通过系统调用，自定义某些信号的处理程序"
+    },
+    "answer": "",
+    "analysis": "图片OCR导入（待补答案）",
+    "difficulty": 2,
+    "knowledge_points": [
+      "进程与线程",
+      "图片OCR导入"
+    ],
+    "source_num": 33
+  },
+  {
+    "id": "os-img-0034",
+    "subject": "OS",
+    "chapter": "进程与线程",
+    "chapterSlug": "进程与线程",
+    "stem": "下面的叙述中，正确的是（）",
+    "options": {
+      "A": "引入线程后，处理器只能在线程间切换",
+      "B": "引入线程后，处理器仍在进程间切换",
+      "C": "线程的切换，不会引起进程的切换",
+      "D": "线程的切换，可能引起进程的切换"
+    },
+    "answer": "",
+    "analysis": "图片OCR导入（待补答案）",
+    "difficulty": 2,
+    "knowledge_points": [
+      "进程与线程",
+      "图片OCR导入"
+    ],
+    "source_num": 34
+  },
+  {
+    "id": "os-img-0035",
+    "subject": "OS",
+    "chapter": "进程与线程",
+    "chapterSlug": "进程与线程",
+    "stem": "下列关于线程的叙述中，正确的是（）",
+    "options": {
+      "A": "线程包含CPU现场，可以独立执行程序",
+      "B": "每个线程都有自己独立的地址空间",
+      "C": "每个进程只能包含一个线程",
+      "D": "同一进程中的线程间通信也必须使用系统调用函数"
+    },
+    "answer": "",
+    "analysis": "图片OCR导入（待补答案）",
+    "difficulty": 2,
+    "knowledge_points": [
+      "进程与线程",
+      "图片OCR导入"
+    ],
+    "source_num": 35
+  },
+  {
+    "id": "os-img-0036",
+    "subject": "OS",
+    "chapter": "进程与线程",
+    "chapterSlug": "进程与线程",
+    "stem": "下面的叙述中，正确的是（）",
+    "options": {
+      "A": "线程是比进程更小的能独立运行的基本单位，可以脱离进程独立运行",
+      "B": "引入线程可提高程序并发执行的程度，可进一步提高系统效率",
+      "C": "线程的引入增加了程序执行时的时空开销",
+      "D": "一个进程一定包含多个线程"
+    },
+    "answer": "",
+    "analysis": "图片OCR导入（待补答案）",
+    "difficulty": 2,
+    "knowledge_points": [
+      "进程与线程",
+      "图片OCR导入"
+    ],
+    "source_num": 36
+  },
+  {
+    "id": "os-img-0037",
+    "subject": "OS",
+    "chapter": "进程与线程",
+    "chapterSlug": "进程与线程",
+    "stem": "下面的叙述中，正确的是（）",
+    "options": {
+      "A": "同一进程内的线程可并发执行，不同进程的线程只能串行执行",
+      "B": "同一进程内的线程只能串行执行，不同进程的线程可并发执行",
+      "C": "同一进程或不同进程内的线程都只能串行执行",
+      "D": "同一进程或不同进程内的线程都可以并发执行"
+    },
+    "answer": "",
+    "analysis": "图片OCR导入（待补答案）",
+    "difficulty": 2,
+    "knowledge_points": [
+      "进程与线程",
+      "图片OCR导入"
+    ],
+    "source_num": 37
+  },
+  {
+    "id": "os-img-0038",
+    "subject": "OS",
+    "chapter": "进程与线程",
+    "chapterSlug": "进程与线程",
+    "stem": "下列选项中，（）不是线程的优点。",
+    "options": {
+      "A": "提高系统并发性",
+      "B": "节约系统资源",
+      "C": "便于进程通信",
+      "D": "增强进程安全性"
+    },
+    "answer": "",
+    "analysis": "图片OCR导入（待补答案）",
+    "difficulty": 2,
+    "knowledge_points": [
+      "进程与线程",
+      "图片OCR导入"
+    ],
+    "source_num": 38
+  },
+  {
+    "id": "os-img-0039",
+    "subject": "OS",
+    "chapter": "进程与线程",
+    "chapterSlug": "进程与线程",
+    "stem": "下列关于进程和线程的说法中，正确的是（)",
+    "options": {
+      "A": "一个进程可以包含一个或多个线程，一个线程可以属于一个或多个进程",
+      "B": "多线程技术具有明显的优越性，如速度快、通信简便、设备并行性高等",
+      "C": "由于线程不作为资源分配单位，线程之间可以无约束地并行执行",
+      "D": "线程又称轻量级进程，因为线程都比进程小"
+    },
+    "answer": "",
+    "analysis": "图片OCR导入（待补答案）",
+    "difficulty": 2,
+    "knowledge_points": [
+      "进程与线程",
+      "图片OCR导入"
+    ],
+    "source_num": 39
+  },
+  {
+    "id": "os-img-0040",
+    "subject": "OS",
+    "chapter": "进程与线程",
+    "chapterSlug": "进程与线程",
+    "stem": "在以下描述中，（）并不是多线程系统的特长。",
+    "options": {
+      "A": "利用线程并行地执行矩阵乘法运算",
+      "B": "Web服务器利用线程响应HTTP请求",
+      "C": "键盘驱动程序为每个正在运行的应用配备一个线程，用以响应该应用的键盘输入",
+      "D": "基于GUI的调试程序用不同的线程分别处理用户输入、计算和跟踪等操作"
+    },
+    "answer": "",
+    "analysis": "图片OCR导入（待补答案）",
+    "difficulty": 2,
+    "knowledge_points": [
+      "进程与线程",
+      "图片OCR导入"
+    ],
+    "source_num": 40
+  },
+  {
+    "id": "os-img-0041",
+    "subject": "OS",
+    "chapter": "进程与线程",
+    "chapterSlug": "进程与线程",
+    "stem": "在进程转换时，下列（）转换是不可能发生的。",
+    "options": {
+      "A": "就绪态→运行态B.运行态→就绪态",
+      "B": "",
+      "C": "运行态→阻塞态",
+      "D": "阻塞态→运行态"
+    },
+    "answer": "",
+    "analysis": "图片OCR导入（待补答案）",
+    "difficulty": 2,
+    "knowledge_points": [
+      "进程与线程",
+      "图片OCR导入"
+    ],
+    "source_num": 41
+  },
+  {
+    "id": "os-img-0042",
+    "subject": "OS",
+    "chapter": "进程与线程",
+    "chapterSlug": "进程与线程",
+    "stem": "当（）时,进程从执行状态转变为就绪态。",
+    "options": {
+      "A": "进程被调度程序选中",
+      "B": "时间片到",
+      "C": "等待某一事件",
+      "D": "等待的事件发生"
+    },
+    "answer": "",
+    "analysis": "图片OCR导入（待补答案）",
+    "difficulty": 2,
+    "knowledge_points": [
+      "进程与线程",
+      "图片OCR导入"
+    ],
+    "source_num": 42
+  },
+  {
+    "id": "os-img-0043",
+    "subject": "OS",
+    "chapter": "进程与线程",
+    "chapterSlug": "进程与线程",
+    "stem": "两个合作进程（CooperatingProcesses）无法利用（）交换数据。",
+    "options": {
+      "A": "文件系统",
+      "B": "共享内存",
+      "C": "高级语言程序设计中的全局变量",
+      "D": "消息传递系统"
+    },
+    "answer": "",
+    "analysis": "图片OCR导入（待补答案）",
+    "difficulty": 2,
+    "knowledge_points": [
+      "进程与线程",
+      "图片OCR导入"
+    ],
+    "source_num": 43
+  },
+  {
+    "id": "os-img-0044",
+    "subject": "OS",
+    "chapter": "进程与线程",
+    "chapterSlug": "进程与线程",
+    "stem": "以下可能导致一个进程从运行态变为就绪态的事件是（）",
+    "options": {
+      "A": "一次I/O操作结束",
+      "B": "运行进程需做I/O操作",
+      "C": "运行进程结束",
+      "D": "出现了比现在进程优先级更高的进程"
+    },
+    "answer": "",
+    "analysis": "图片OCR导入（待补答案）",
+    "difficulty": 2,
+    "knowledge_points": [
+      "进程与线程",
+      "图片OCR导入"
+    ],
+    "source_num": 44
+  },
+  {
+    "id": "os-img-0045",
+    "subject": "OS",
+    "chapter": "进程与线程",
+    "chapterSlug": "进程与线程",
+    "stem": "（）必会引起进程切换。",
+    "options": {
+      "A": "一个进程创建后，进入就绪态",
+      "B": "一个进程从运行态变为就绪态",
+      "C": "一个进程从阻塞态变为就绪态",
+      "D": "以上答案都不对"
+    },
+    "answer": "",
+    "analysis": "图片OCR导入（待补答案）",
+    "difficulty": 2,
+    "knowledge_points": [
+      "进程与线程",
+      "图片OCR导入"
+    ],
+    "source_num": 45
+  },
+  {
+    "id": "os-img-0046",
+    "subject": "OS",
+    "chapter": "进程与线程",
+    "chapterSlug": "进程与线程",
+    "stem": "进程处于（）时，它处于非阻塞态。",
+    "options": {
+      "A": "等待从键盘输入数据",
+      "B": "等待协作进程的一个信号",
+      "C": "等待操作系统分配CPU时间",
+      "D": "等待网络数据进入内存"
+    },
+    "answer": "",
+    "analysis": "图片OCR导入（待补答案）",
+    "difficulty": 2,
+    "knowledge_points": [
+      "进程与线程",
+      "图片OCR导入"
+    ],
+    "source_num": 46
+  },
+  {
+    "id": "os-img-0047",
+    "subject": "OS",
+    "chapter": "进程与线程",
+    "chapterSlug": "进程与线程",
+    "stem": "一个进程被唤醒，意味着（）",
+    "options": {
+      "A": "该进程可以重新竞争CPU",
+      "B": "优先级变大",
+      "C": "PCB移动到就绪队列之首",
+      "D": "进程变为运行态"
+    },
+    "answer": "",
+    "analysis": "图片OCR导入（待补答案）",
+    "difficulty": 2,
+    "knowledge_points": [
+      "进程与线程",
+      "图片OCR导入"
+    ],
+    "source_num": 47
+  },
+  {
+    "id": "os-img-0048",
+    "subject": "OS",
+    "chapter": "进程与线程",
+    "chapterSlug": "进程与线程",
+    "stem": "进程创建时，不需要做的是（）",
+    "options": {
+      "A": "填写一个该进程的进程表项",
+      "B": "分配该进程适当的内存",
+      "C": "将该进程插入就绪队列",
+      "D": "为该进程分配CPU"
+    },
+    "answer": "",
+    "analysis": "图片OCR导入（待补答案）",
+    "difficulty": 2,
+    "knowledge_points": [
+      "进程与线程",
+      "图片OCR导入"
+    ],
+    "source_num": 48
+  },
+  {
+    "id": "os-img-0049",
+    "subject": "OS",
+    "chapter": "进程与线程",
+    "chapterSlug": "进程与线程",
+    "stem": "计算机两个系统中两个协作进程之间不能用来进行进程间通信的是（）",
+    "options": {
+      "A": "数据库",
+      "B": "共享内存",
+      "C": "消息传递机制",
+      "D": "管道"
+    },
+    "answer": "",
+    "analysis": "图片OCR导入（待补答案）",
+    "difficulty": 2,
+    "knowledge_points": [
+      "进程与线程",
+      "图片OCR导入"
+    ],
+    "source_num": 49
+  },
+  {
+    "id": "os-img-0050",
+    "subject": "OS",
+    "chapter": "进程与线程",
+    "chapterSlug": "进程与线程",
+    "stem": "下面关于用户级线程和内核级线程的描述中，错误的是（）",
+    "options": {
+      "A": "采用轮转调度算法，进程中设置内核级线程和用户级线程的效果完全不同",
+      "B": "跨进程的用户级线程调度也不需要内核参与，控制简单",
+      "C": "用户级线程可以在任何操作系统中运行",
+      "D": "若系统中只有用户级线程，则CPU的调度对象是进程"
+    },
+    "answer": "",
+    "analysis": "图片OCR导入（待补答案）",
+    "difficulty": 2,
+    "knowledge_points": [
+      "进程与线程",
+      "图片OCR导入"
+    ],
+    "source_num": 50
+  },
+  {
+    "id": "os-img-0051",
+    "subject": "OS",
+    "chapter": "进程与线程",
+    "chapterSlug": "进程与线程",
+    "stem": "在内核级线程相对于用户级线程的优点的如下描述中，错误的是（）",
+    "options": {
+      "A": "同一进程内的线程切换，系统开销小",
+      "B": "当内核线程阻塞时，CPU将会调度同一进程中的其他内核线程执行",
+      "C": "内核级线程的程序实体可以在内核态运行",
+      "D": "对多处理器系统，核心可以同时调度同一进程的多个线程并行运行"
+    },
+    "answer": "",
+    "analysis": "图片OCR导入（待补答案）",
+    "difficulty": 2,
+    "knowledge_points": [
+      "进程与线程",
+      "图片OCR导入"
+    ],
+    "source_num": 51
+  },
+  {
+    "id": "os-img-0052",
+    "subject": "OS",
+    "chapter": "进程与线程",
+    "chapterSlug": "进程与线程",
+    "stem": "下列关于用户级线程相对于内核级线程的优点的描述中，错误的是（）",
+    "options": {
+      "A": "一个线程阻塞不影响另一个线程的运行",
+      "B": "线程的调度不需要内核直接参与，控制简单",
+      "C": "线程切换代价小",
+      "D": "允许每个进程定制自己的调度算法，线程管理比较灵活"
+    },
+    "answer": "",
+    "analysis": "图片OCR导入（待补答案）",
+    "difficulty": 2,
+    "knowledge_points": [
+      "进程与线程",
+      "图片OCR导入"
+    ],
+    "source_num": 52
+  },
+  {
+    "id": "os-img-0053",
+    "subject": "OS",
+    "chapter": "进程与线程",
+    "chapterSlug": "进程与线程",
+    "stem": "下列关于用户级线程的优点的描述中,不正确的是（）",
+    "options": {
+      "A": "线程切换不需要切换到内核态",
+      "B": "支持不同的应用程序采用不同的调度算法",
+      "C": "在不同操作系统上不经修改就可直接运行",
+      "D": "同一个进程内的多个线程可以同时调度到多个处理器上执行"
+    },
+    "answer": "",
+    "analysis": "图片OCR导入（待补答案）",
+    "difficulty": 2,
+    "knowledge_points": [
+      "进程与线程",
+      "图片OCR导入"
+    ],
+    "source_num": 53
+  },
+  {
+    "id": "os-img-0054",
+    "subject": "OS",
+    "chapter": "进程与线程",
+    "chapterSlug": "进程与线程",
+    "stem": "下列选项中，可能导致用户级线程切换的事件是（）",
+    "options": {
+      "A": "系统调用",
+      "B": "I/O请求",
+      "C": "异常处理",
+      "D": "线程同步"
+    },
+    "answer": "",
+    "analysis": "图片OCR导入（待补答案）",
+    "difficulty": 2,
+    "knowledge_points": [
+      "进程与线程",
+      "图片OCR导入"
+    ],
+    "source_num": 54
+  },
+  {
+    "id": "os-img-0055",
+    "subject": "OS",
+    "chapter": "进程与线程",
+    "chapterSlug": "进程与线程",
+    "stem": "下列关于用户级线程的描述中，错误的是（）",
+    "options": {
+      "A": "用户级线程由线程库进行管理",
+      "B": "用户级线程只有在创建和调度时需要内核的干预",
+      "C": "操作系统无法直接调度用户级线程",
+      "D": "线程库中线程的切换不会导致进程切换"
+    },
+    "answer": "",
+    "analysis": "图片OCR导入（待补答案）",
+    "difficulty": 2,
+    "knowledge_points": [
+      "进程与线程",
+      "图片OCR导入"
+    ],
+    "source_num": 55
+  },
+  {
+    "id": "os-img-0056",
+    "subject": "OS",
+    "chapter": "进程与线程",
+    "chapterSlug": "进程与线程",
+    "stem": "下面的说法中，正确的是（）",
+    "options": {
+      "A": "不论是系统支持的线程还是用户级线程，其切换都需要内核的支持",
+      "B": "线程是资源分配的单位，进程是调度和分派的单位",
+      "C": "不管系统中是否有线程，进程都是拥有资源的独立单位",
+      "D": "在引入线程的系统中，进程仍是资源调度和分派的基本单位"
+    },
+    "answer": "",
+    "analysis": "图片OCR导入（待补答案）",
+    "difficulty": 2,
+    "knowledge_points": [
+      "进程与线程",
+      "图片OCR导入"
+    ],
+    "source_num": 56
+  },
+  {
+    "id": "os-img-0057",
+    "subject": "OS",
+    "chapter": "进程与线程",
+    "chapterSlug": "进程与线程",
+    "stem": "在多对一的线程模型中，当一个多线程进程中的某个线程被阻塞后，（）",
+    "options": {
+      "A": "该进程的其他线程仍可继续运行",
+      "B": "整个进程都将阻塞",
+      "C": "该阻塞线程将被撤销",
+      "D": "该阻塞线程将永远不可能再执行"
+    },
+    "answer": "",
+    "analysis": "图片OCR导入（待补答案）",
+    "difficulty": 2,
+    "knowledge_points": [
+      "进程与线程",
+      "图片OCR导入"
+    ],
+    "source_num": 57
+  },
+  {
+    "id": "os-img-0058",
+    "subject": "OS",
+    "chapter": "进程与线程",
+    "chapterSlug": "进程与线程",
+    "stem": "并发性较好的多线程模型有（） III.多对多模型 I.一对一模型 II.多对一模型",
+    "options": {
+      "A": "仅I",
+      "B": "I和ⅡI",
+      "C": "I和IⅢI",
+      "D": "I、Ⅱ和ⅢI"
+    },
+    "answer": "",
+    "analysis": "图片OCR导入（待补答案）",
+    "difficulty": 2,
+    "knowledge_points": [
+      "进程与线程",
+      "图片OCR导入"
+    ],
+    "source_num": 58
+  },
+  {
+    "id": "os-img-0059",
+    "subject": "OS",
+    "chapter": "进程与线程",
+    "chapterSlug": "进程与线程",
+    "stem": "下列关于多对一模型的叙述中,错误的是（）",
+    "options": {
+      "A": "一个进程的多个线程不能并行运行在多个处理器上",
+      "B": "进程中的用户级线程由进程自己管理",
+      "C": "线程切换会导致进程切换",
+      "D": "一个线程的系统调用会导致整个进程阻塞 IⅡI.设备分配"
+    },
+    "answer": "",
+    "analysis": "图片OCR导入（待补答案）",
+    "difficulty": 2,
+    "knowledge_points": [
+      "进程与线程",
+      "图片OCR导入"
+    ],
+    "source_num": 59
+  },
+  {
+    "id": "os-img-0060",
+    "subject": "OS",
+    "chapter": "进程与线程",
+    "chapterSlug": "进程与线程",
+    "stem": "【2011统考真题】在支持多线程的系统中,进程P创建的若干线程不能共享的是（）",
+    "options": {
+      "A": "进程P的代码段",
+      "B": "进程P中打开的文件",
+      "C": "进程P的全局变量",
+      "D": "进程P中某线程的栈指针"
+    },
+    "answer": "",
+    "analysis": "图片OCR导入（待补答案）",
+    "difficulty": 2,
+    "knowledge_points": [
+      "进程与线程",
+      "图片OCR导入"
+    ],
+    "source_num": 61
+  },
+  {
+    "id": "os-img-0061",
+    "subject": "OS",
+    "chapter": "进程与线程",
+    "chapterSlug": "进程与线程",
+    "stem": "【2012统考真题】下列关于进程和线程的叙述中，正确的是（）",
+    "options": {
+      "A": "不管系统是否支持线程，进程都是资源分配的基本单位",
+      "B": "线程是资源分配的基本单位，进程是调度的基本单位",
+      "C": "系统级线程和用户级线程的切换都需要内核的支持",
+      "D": "同一进程中的各个线程拥有各自不同的地址空间"
+    },
+    "answer": "",
+    "analysis": "图片OCR导入（待补答案）",
+    "difficulty": 2,
+    "knowledge_points": [
+      "进程与线程",
+      "图片OCR导入"
+    ],
+    "source_num": 62
+  },
+  {
+    "id": "os-img-0062",
+    "subject": "OS",
+    "chapter": "进程与线程",
+    "chapterSlug": "进程与线程",
+    "stem": "【2014统考真题】一个进程的读磁盘操作完成后，操作系统针对该进程必做的是（）",
+    "options": {
+      "A": "修改进程状态为就绪态",
+      "B": "降低进程优先级",
+      "C": "给进程分配用户内存空间",
+      "D": "增加进程时间片大小"
+    },
+    "answer": "",
+    "analysis": "图片OCR导入（待补答案）",
+    "difficulty": 2,
+    "knowledge_points": [
+      "进程与线程",
+      "图片OCR导入"
+    ],
+    "source_num": 63
+  },
+  {
+    "id": "os-img-0063",
+    "subject": "OS",
+    "chapter": "进程与线程",
+    "chapterSlug": "进程与线程",
+    "stem": "【2014统考真题】下列关于管道(Pipe)通信的叙述中，正确的是（）",
+    "options": {
+      "A": "一个管道可实现双向数据传输",
+      "B": "管道的容量仅受磁盘容量大小限制",
+      "C": "进程对管道进行读操作和写操作都可能被阻塞",
+      "D": "一个管道只能有一个读进程或一个写进程对其操作"
+    },
+    "answer": "",
+    "analysis": "图片OCR导入（待补答案）",
+    "difficulty": 2,
+    "knowledge_points": [
+      "进程与线程",
+      "图片OCR导入"
+    ],
+    "source_num": 64
+  },
+  {
+    "id": "os-img-0064",
+    "subject": "OS",
+    "chapter": "进程与线程",
+    "chapterSlug": "进程与线程",
+    "stem": "【2015统考真题】下列选项中,会导致进程从执行态变为就绪态的事件是（）",
+    "options": {
+      "A": "执行P(wait)操作",
+      "B": "申请内存失败",
+      "C": "启动I/O设备",
+      "D": "被高优先级进程抢占"
+    },
+    "answer": "",
+    "analysis": "图片OCR导入（待补答案）",
+    "difficulty": 2,
+    "knowledge_points": [
+      "进程与线程",
+      "图片OCR导入"
+    ],
+    "source_num": 65
+  },
+  {
+    "id": "os-img-0065",
+    "subject": "OS",
+    "chapter": "进程与线程",
+    "chapterSlug": "进程与线程",
+    "stem": "【2018统考真题】下列选项中,可能导致当前进程P阻塞的事件是（） I.进程P申请临界资源 II.进程P从磁盘读数据 III.系统将CPU分配给高优先权的进程",
+    "options": {
+      "A": "仅I",
+      "B": "仅ⅡI",
+      "C": "仅I、IⅡI",
+      "D": "I、ⅡI、III"
+    },
+    "answer": "",
+    "analysis": "图片OCR导入（待补答案）",
+    "difficulty": 2,
+    "knowledge_points": [
+      "进程与线程",
+      "图片OCR导入"
+    ],
+    "source_num": 66
+  },
+  {
+    "id": "os-img-0066",
+    "subject": "OS",
+    "chapter": "进程与线程",
+    "chapterSlug": "进程与线程",
+    "stem": "【2019统考真题】下列选项中,可能会将进程唤醒的事件是（） II.某进程退出临界区 I.I/O结束 III.当前进程的时间片用完",
+    "options": {
+      "A": "仅I",
+      "B": "仅IⅢI",
+      "C": "仅I、IⅡI",
+      "D": "I、II、III"
+    },
+    "answer": "",
+    "analysis": "图片OCR导入（待补答案）",
+    "difficulty": 2,
+    "knowledge_points": [
+      "进程与线程",
+      "图片OCR导入"
+    ],
+    "source_num": 67
+  },
+  {
+    "id": "os-img-0067",
+    "subject": "OS",
+    "chapter": "进程与线程",
+    "chapterSlug": "进程与线程",
+    "stem": "【2019统考真题】下列关于线程的描述中，错误的是（）",
+    "options": {
+      "A": "内核级线程的调度由操作系统完成",
+      "B": "操作系统为每个用户级线程建立一个线程控制块",
+      "C": "用户级线程间的切换比内核级线程间的切换效率高",
+      "D": "用户级线程可以在不支持内核级线程的操作系统上实现"
+    },
+    "answer": "",
+    "analysis": "图片OCR导入（待补答案）",
+    "difficulty": 2,
+    "knowledge_points": [
+      "进程与线程",
+      "图片OCR导入"
+    ],
+    "source_num": 68
+  },
+  {
+    "id": "os-img-0068",
+    "subject": "OS",
+    "chapter": "进程与线程",
+    "chapterSlug": "进程与线程",
+    "stem": "【2020统考真题】下列关于父进程与子进程的叙述中，错误的是（）",
+    "options": {
+      "A": "父进程与子进程可以并发执行",
+      "B": "父进程与子进程共享虚拟地址空间",
+      "C": "父进程与子进程有不同的进程控制块",
+      "D": "父进程与子进程不能同时使用同一临界资源"
+    },
+    "answer": "",
+    "analysis": "图片OCR导入（待补答案）",
+    "difficulty": 2,
+    "knowledge_points": [
+      "进程与线程",
+      "图片OCR导入"
+    ],
+    "source_num": 69
+  },
+  {
+    "id": "os-img-0069",
+    "subject": "OS",
+    "chapter": "进程与线程",
+    "chapterSlug": "进程与线程",
+    "stem": "【2021统考真题】下列操作中,操作系统在创建新进程时，必须完成的是（） I.申请空白的进程控制块 II.初始化进程控制块 III.设置进程状态为执行态",
+    "options": {
+      "A": "仅I",
+      "B": "仅I、ⅡI",
+      "C": "仅I、IⅢII",
+      "D": "仅Ⅱ、IⅢI"
+    },
+    "answer": "",
+    "analysis": "图片OCR导入（待补答案）",
+    "difficulty": 2,
+    "knowledge_points": [
+      "进程与线程",
+      "图片OCR导入"
+    ],
+    "source_num": 70
+  },
+  {
+    "id": "os-img-0070",
+    "subject": "OS",
+    "chapter": "进程与线程",
+    "chapterSlug": "进程与线程",
+    "stem": "【2022统考真题】下列事件或操作中，可能导致进程P由执行态变为阻塞态的是（） II.进程P的时间片用完 I.进程P读文件 III.进程P申请外设 IV.进程P执行信号量的waitO操作",
+    "options": {
+      "A": "仅I、IV",
+      "B": "仅ⅡIIII",
+      "C": "仅III、IV",
+      "D": "仅I、I、IV"
+    },
+    "answer": "",
+    "analysis": "图片OCR导入（待补答案）",
+    "difficulty": 2,
+    "knowledge_points": [
+      "进程与线程",
+      "图片OCR导入"
+    ],
+    "source_num": 71
+  },
+  {
+    "id": "os-img-0071",
+    "subject": "OS",
+    "chapter": "进程与线程",
+    "chapterSlug": "进程与线程",
+    "stem": "【2023统考真题】下列操作完成时，导致CPU从内核态转为用户态的是（）",
+    "options": {
+      "A": "阻塞进程",
+      "B": "执行CPU调度",
+      "C": "唤醒进程",
+      "D": "执行系统调用"
+    },
+    "answer": "",
+    "analysis": "图片OCR导入（待补答案）",
+    "difficulty": 2,
+    "knowledge_points": [
+      "进程与线程",
+      "图片OCR导入"
+    ],
+    "source_num": 72
+  },
+  {
+    "id": "os-img-0072",
+    "subject": "OS",
+    "chapter": "进程与线程",
+    "chapterSlug": "进程与线程",
+    "stem": "【2023统考真题】下列由当前线程引起的事件或执行的操作中，可能导致该线程由执行态变为就绪态 的是（）【微信公众号：研七七】",
+    "options": {
+      "A": "终止子进程",
+      "B": "回收进程占用的设备",
+      "C": "释放进程控制块",
+      "D": "回收为进程分配的内存"
+    },
+    "answer": "",
+    "analysis": "图片OCR导入（待补答案）",
+    "difficulty": 2,
+    "knowledge_points": [
+      "进程与线程",
+      "图片OCR导入"
+    ],
+    "source_num": 73
+  },
+  {
+    "id": "os-img-0073",
+    "subject": "OS",
+    "chapter": "进程与线程",
+    "chapterSlug": "进程与线程",
+    "stem": "【2024统考真题】若进程P中的线程T先打开文件，得到文件描述符fd,再创建两个线程Ta和Tb,则 在下列资源中,Ta与Tb可共享的是（） IⅡI.线程T的栈 I.进程P的地址空间 III.文件描述符fd",
+    "options": {
+      "A": "仅I",
+      "B": "仅I、IⅡI",
+      "C": "仅ⅡI、II",
+      "D": "I、II、III"
+    },
+    "answer": "",
+    "analysis": "图片OCR导入（待补答案）",
+    "difficulty": 2,
+    "knowledge_points": [
+      "进程与线程",
+      "图片OCR导入"
+    ],
+    "source_num": 75
+  }
+]

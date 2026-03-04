@@ -1,4 +1,4 @@
--- [已弃用] 该文件为旧版JSON导入。请改用 reset-db-and-import-os-ocr.sql
+-- [已弃用] 该文件为旧版题库导入，请改用 reset-db-and-import-os-images.sql
 -- 一键重建核心表并仅导入「操作系统(OS)」题库
 -- 用法：在 Navicat 里打开 system 库 -> 新建查询 -> 粘贴本文件全部内容执行
 SET NAMES utf8mb4;
