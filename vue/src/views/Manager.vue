@@ -89,4 +89,9 @@ const logout = () => { localStorage.removeItem('system-user'); router.push('/log
 .layout{display:flex;height:calc(100vh - 60px);background:#f4f7fb}
 .sidebar{width:220px;background:#fff;border-right:1px solid #e5e7eb;padding-top:12px}
 .content{flex:1;padding:16px;overflow:auto}
+:deep(.el-menu-item.is-active){
+  background:#e7eefc !important;
+  color:#1f2a44 !important;
+  font-weight:700;
+}
 </style>
