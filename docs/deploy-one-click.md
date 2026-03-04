@@ -46,12 +46,6 @@ COMPOSE_PROJECT_NAME=mytest docker compose down
 bash scripts/package-and-link.sh
 ```
 
-- Windows PowerShell（推荐，不依赖 WSL）：
-
-```powershell
-powershell -ExecutionPolicy Bypass -File .\scripts\package-and-link.ps1
-```
-
 脚本会自动构建并启动服务，然后直接打印可访问链接（localhost + 局域网IP）。脚本固定使用 `mytest` 项目名并复用数据库卷，保证学生注册信息、答题记录长期保留。
 
 如果你要一个可分享的公网临时链接（例如发给别人直接点开）：
