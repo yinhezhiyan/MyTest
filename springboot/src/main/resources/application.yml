@@ -1,13 +1,13 @@
 server:
-  port: 9090
+  port: ${PORT:9090}
 
-# 数据库配置
+# 数据库配置（线上优先读环境变量，本地可走默认值）
 spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    username: root
-    password: 123456
-    url: jdbc:mysql://localhost:3306/code2026?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&useSSL=false&serverTimezone=GMT%2b8&allowPublicKeyRetrieval=true
+    username: ${DB_USERNAME:root}
+    password: ${DB_PASSWORD:123456}
+    url: ${DB_URL:jdbc:mysql://localhost:3306/code2026?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&useSSL=false&serverTimezone=GMT%2B8&allowPublicKeyRetrieval=true}
   servlet:
     multipart:
       max-file-size: 100MB
@@ -20,4 +20,14 @@ mybatis:
     log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
     map-underscore-to-camel-case: true
 
-fileBaseUrl: http://localhost
+# 文件访问基础地址（本地默认 localhost，线上请通过环境变量覆盖）
+fileBaseUrl: ${FILE_BASE_URL:http://localhost}
+
+# JWT 配置（生产环境务必注入强随机密钥）
+jwt:
+  secret: ${JWT_SECRET:code2026-code2026-code2026-code2026}
+  expire-millis: ${JWT_EXPIRE_MILLIS:86400000}
+
+app:
+  cors:
+    allowed-origin-patterns: ${CORS_ALLOWED_ORIGIN_PATTERNS:http://localhost:5173,http://127.0.0.1:5173,https://*.vercel.app}
