@@ -7,7 +7,7 @@
     </el-radio-group>
     <div class="actions">
       <el-button :disabled="historyIndex <= 0" @click="prevQuestion">上一题</el-button>
-      <el-button @click="nextRandom">下一题</el-button>
+      <el-button @click="nextQuestion">下一题</el-button>
     </div>
   </div>
 </template>
@@ -22,6 +22,7 @@ const chosen = ref('');
 const wrong = ref('');
 const history = ref([])
 const historyIndex = ref(-1)
+const sequenceIds = ref([])
 
 const displayQuestionNo = computed(() => {
   const id = String(q.id || '')
@@ -37,8 +38,11 @@ const fillQuestion = (item) => {
 const loadById = (id)=> request.get('/api/exercises/'+id).then(res=> {
   const item = res.data || {}
   fillQuestion(item)
-  history.value = [item]
-  historyIndex.value = 0
+  if (historyIndex.value < history.value.length - 1) {
+    history.value = history.value.slice(0, historyIndex.value + 1)
+  }
+  history.value.push(item)
+  historyIndex.value = history.value.length - 1
 })
 
 const nextRandom = ()=>{
@@ -55,6 +59,26 @@ const nextRandom = ()=>{
   })
 }
 
+const nextBySequence = () => {
+  const currentIdx = sequenceIds.value.indexOf(q.id)
+  const nextId = currentIdx >= 0 ? sequenceIds.value[currentIdx + 1] : null
+  if (!nextId) {
+    ElMessage.info('已经是该列表最后一题')
+    return
+  }
+  chosen.value = ''
+  wrong.value = ''
+  loadById(nextId)
+}
+
+const nextQuestion = () => {
+  if (sequenceIds.value.length > 0) {
+    nextBySequence()
+    return
+  }
+  nextRandom()
+}
+
 const prevQuestion = () => {
   if (historyIndex.value <= 0) return
   historyIndex.value -= 1
@@ -65,11 +89,22 @@ const prevQuestion = () => {
 
 const submit = ()=>{
   request.post('/api/answers/submit',{exerciseId:q.id, chosenOption:chosen.value}).then(res=>{
-    if (res.data.isCorrect){ElMessage.success('回答正确，自动下一题');nextRandom()} else {wrong.value=chosen.value;ElMessage.error('错误，请继续作答')}
+    if (res.data.isCorrect){ElMessage.success('回答正确，自动下一题');nextQuestion()} else {wrong.value=chosen.value;ElMessage.error('错误，请继续作答')}
   })
 }
 
-onMounted(()=> route.query.id ? loadById(route.query.id) : nextRandom())
+onMounted(()=> {
+  if (route.query.ids) {
+    sequenceIds.value = String(route.query.ids).split(',').filter(Boolean)
+  }
+  if (route.query.id) {
+    loadById(route.query.id)
+  } else if (sequenceIds.value.length > 0) {
+    loadById(sequenceIds.value[0])
+  } else {
+    nextRandom()
+  }
+})
 </script>
 <style scoped>
 .card{background:#fff;padding:18px;border-radius:12px}

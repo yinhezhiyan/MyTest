@@ -39,7 +39,18 @@ const load = ()=> {
   request.get('/api/recommendations', { params: { includeDone: includeDone.value } }).then(res=> list.value=res.data||[])
 }
 onMounted(load)
-const go = (id)=> router.push(`/manager/${user.subject}/practice?id=${id}`)
+const go = (id)=> {
+  const ids = list.value.map(item => item.exerciseId)
+  const index = ids.indexOf(id)
+  router.push({
+    path: `/manager/${user.subject}/practice`,
+    query: {
+      id,
+      ids: ids.join(','),
+      idx: index < 0 ? 0 : index
+    }
+  })
+}
 </script>
 <style scoped>
 .card{background:#fff;padding:18px;border-radius:12px}
