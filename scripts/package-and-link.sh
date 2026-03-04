@@ -4,6 +4,7 @@ set -euo pipefail
 ROOT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 cd "$ROOT_DIR"
 
+PROJECT_NAME="mytest"
 PUBLIC_LINK="false"
 if [[ "${1:-}" == "--public" ]]; then
   PUBLIC_LINK="true"
@@ -15,7 +16,7 @@ if ! command -v docker >/dev/null 2>&1; then
 fi
 
 echo "[1/2] 构建并启动服务（MySQL + Backend + Web）..."
-docker compose up -d --build
+COMPOSE_PROJECT_NAME="$PROJECT_NAME" docker compose up -d --build
 
 HOST_IP="$(hostname -I 2>/dev/null | awk '{print $1}')"
 if [[ -z "${HOST_IP}" ]]; then
@@ -28,7 +29,8 @@ echo "- 本机链接: http://localhost:8088"
 echo "- 局域网链接: http://${HOST_IP}:8088"
 
 echo
-echo "停止服务命令：docker compose down"
+echo "停止服务命令：COMPOSE_PROJECT_NAME=${PROJECT_NAME} docker compose down"
+echo "（说明：不会删除数据库卷，学生注册信息和答题记录会持久保留）"
 
 if [[ "$PUBLIC_LINK" == "true" ]]; then
   if ! command -v npx >/dev/null 2>&1; then
