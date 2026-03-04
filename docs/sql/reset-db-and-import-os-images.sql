@@ -1,4 +1,4 @@
--- 基于用户提供图片现场OCR整理的操作系统题库导入脚本
+-- 基于图片OCR题库的操作系统题目导入脚本
 USE `system`;
 SET NAMES utf8mb4;
 SET FOREIGN_KEY_CHECKS = 0;
@@ -23,6 +23,7 @@ CREATE TABLE `sys_user` (
   `created_at` datetime DEFAULT CURRENT_TIMESTAMP,
   UNIQUE KEY `uk_user_identity` (`username`,`role`,`subject`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
 CREATE TABLE `exercise` (
   `id` varchar(64) PRIMARY KEY,
   `subject` varchar(20) NOT NULL,
@@ -41,6 +42,7 @@ CREATE TABLE `exercise` (
   `created_at` datetime DEFAULT CURRENT_TIMESTAMP,
   KEY `idx_exercise_subject` (`subject`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
 CREATE TABLE `user_answer` (
   `id` bigint PRIMARY KEY AUTO_INCREMENT,
   `user_id` int NOT NULL,
@@ -54,7 +56,7 @@ CREATE TABLE `user_answer` (
   KEY `idx_answer_exercise` (`exercise_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
--- 图片OCR题目，共 73 题
+-- 图片OCR题目，共 73 题（仅保留 OS）
 INSERT INTO `exercise` (`id`,`subject`,`chapter`,`chapter_slug`,`stem`,`option_a`,`option_b`,`option_c`,`option_d`,`answer`,`analysis`,`difficulty`,`knowledge_points`,`attachment_url`) VALUES
 ('os-img-0001','OS','进程与线程','进程与线程','一个进程映像是（)','由协处理器执行的一个程序','一个独立的程序+数据集','PCB结构与程序和数据的组合','一个独立的程序','','图片OCR导入（待补答案）',2,'["进程与线程", "图片OCR导入"]',''),
 ('os-img-0002','OS','进程与线程','进程与线程','进程之间交换数据不能通过（）途径进行。','共享文件','消息传递','访问进程地址空间D.访问共享存储区','','','图片OCR导入（待补答案）',2,'["进程与线程", "图片OCR导入"]',''),
