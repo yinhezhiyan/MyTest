@@ -28,3 +28,15 @@ CREATE TABLE IF NOT EXISTS user_answer (
     INDEX idx_answer_user_subject(user_id, subject),
     INDEX idx_answer_exercise(exercise_id)
 );
+
+CREATE TABLE IF NOT EXISTS knowledge_relation (
+    id BIGINT PRIMARY KEY AUTO_INCREMENT,
+    subject VARCHAR(20) NOT NULL,
+    source_kp VARCHAR(100) NOT NULL,
+    target_kp VARCHAR(100) NOT NULL,
+    relation_type VARCHAR(32) DEFAULT 'related',
+    weight DECIMAL(6,2) DEFAULT 1.00,
+    created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
+    INDEX idx_kg_subject_source(subject, source_kp),
+    INDEX idx_kg_subject_target(subject, target_kp)
+);

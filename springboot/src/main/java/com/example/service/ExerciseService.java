@@ -8,6 +8,7 @@ import com.example.entity.Exercise;
 import com.example.exception.CustomException;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import org.springframework.dao.DataAccessException;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;
 import org.springframework.stereotype.Service;
@@ -147,35 +148,19 @@ public class ExerciseService {
         Account user = requireLogin();
         String subject = user.getSubject();
         Integer uid = user.getId();
-        List<Map<String, Object>> stats = jdbcTemplate.queryForList("""
-                select exercise_id, sum(case when is_correct=0 then 2 else 0 end) + count(*) * 0.5 as score
-                from user_answer where user_id=? and subject=?
-                group by exercise_id
-                """, uid, subject);
-
-        Map<String, Double> cf = new HashMap<>();
-        for (Map<String, Object> st : stats) {
-            cf.put((String) st.get("exercise_id"), ((Number) st.get("score")).doubleValue());
-        }
-
-        Set<String> weakChapters = jdbcTemplate.queryForList("""
-                select e.chapter from user_answer ua
-                join exercise e on ua.exercise_id=e.id
-                where ua.user_id=? and ua.subject=? and ua.is_correct=0
-                group by e.chapter
-                """, String.class, uid, subject).stream().collect(Collectors.toSet());
-
         List<Exercise> all = jdbcTemplate.query("select * from exercise where subject=?", exerciseMapper, subject);
         Set<String> done = new HashSet<>(jdbcTemplate.queryForList("select distinct exercise_id from user_answer where user_id=? and subject=?", String.class, uid, subject));
+        Map<String, Double> cfScores = computeCollaborativeFilteringScores(subject, uid);
+        Map<String, Double> weakKnowledge = loadWeakKnowledge(subject, uid);
+        Map<String, List<KnowledgeEdge>> relationGraph = loadKnowledgeRelationGraph(subject);
 
         List<Map<String, Object>> ranked = new ArrayList<>();
         for (Exercise e : all) {
             if (!includeDone && done.contains(e.getId())) {
                 continue;
             }
-            double cfScore = weakChapters.contains(e.getChapter()) ? 1.0 : 0.3;
-            cfScore += cf.getOrDefault(e.getId(), 0.0);
-            double kgScore = weakChapters.contains(e.getChapter()) ? 1.0 : 0.2;
+            double cfScore = cfScores.getOrDefault(e.getId(), 0.0);
+            double kgScore = knowledgeGraphScore(e, weakKnowledge, relationGraph);
             double finalScore = 0.6 * cfScore + 0.4 * kgScore;
             ranked.add(buildRecommendationItem(e, finalScore, ""));
         }
@@ -189,6 +174,145 @@ public class ExerciseService {
         }
         return result;
     }
+
+    private Map<String, Double> computeCollaborativeFilteringScores(String subject, Integer currentUserId) {
+        List<Map<String, Object>> rows = jdbcTemplate.queryForList("""
+                select user_id, exercise_id,
+                       avg(case when is_correct=1 then 0.2 else 1.0 end) as preference
+                from user_answer
+                where subject=?
+                group by user_id, exercise_id
+                """, subject);
+
+        Map<Integer, Map<String, Double>> userItemPrefs = new HashMap<>();
+        for (Map<String, Object> row : rows) {
+            Integer userId = ((Number) row.get("user_id")).intValue();
+            String exerciseId = (String) row.get("exercise_id");
+            double preference = ((Number) row.get("preference")).doubleValue();
+            userItemPrefs.computeIfAbsent(userId, k -> new HashMap<>()).put(exerciseId, preference);
+        }
+
+        Map<String, Double> currentUserPrefs = userItemPrefs.getOrDefault(currentUserId, Map.of());
+        if (currentUserPrefs.isEmpty()) {
+            return Map.of();
+        }
+
+        Map<Integer, Double> similarityByUser = new HashMap<>();
+        for (Map.Entry<Integer, Map<String, Double>> entry : userItemPrefs.entrySet()) {
+            Integer userId = entry.getKey();
+            if (Objects.equals(userId, currentUserId)) continue;
+            double similarity = cosineSimilarity(currentUserPrefs, entry.getValue());
+            if (similarity > 0) {
+                similarityByUser.put(userId, similarity);
+            }
+        }
+
+        Map<String, Double> scores = new HashMap<>();
+        for (Map.Entry<Integer, Double> sim : similarityByUser.entrySet()) {
+            Map<String, Double> otherPrefs = userItemPrefs.getOrDefault(sim.getKey(), Map.of());
+            for (Map.Entry<String, Double> pref : otherPrefs.entrySet()) {
+                if (currentUserPrefs.containsKey(pref.getKey())) continue;
+                scores.merge(pref.getKey(), sim.getValue() * pref.getValue(), Double::sum);
+            }
+        }
+        return scores;
+    }
+
+    private double cosineSimilarity(Map<String, Double> a, Map<String, Double> b) {
+        double dot = 0;
+        double normA = 0;
+        double normB = 0;
+        for (Map.Entry<String, Double> e : a.entrySet()) {
+            double av = e.getValue();
+            normA += av * av;
+            double bv = b.getOrDefault(e.getKey(), 0.0);
+            dot += av * bv;
+        }
+        for (double bv : b.values()) {
+            normB += bv * bv;
+        }
+        if (normA == 0 || normB == 0) {
+            return 0;
+        }
+        return dot / (Math.sqrt(normA) * Math.sqrt(normB));
+    }
+
+    private Map<String, Double> loadWeakKnowledge(String subject, Integer userId) {
+        List<String> wrongKnowledgeJson = jdbcTemplate.queryForList("""
+                select e.knowledge_points
+                from user_answer ua
+                join exercise e on ua.exercise_id = e.id and ua.subject = e.subject
+                where ua.user_id=? and ua.subject=? and ua.is_correct=0
+                """, String.class, userId, subject);
+        Map<String, Double> weakKnowledge = new HashMap<>();
+        for (String kpJson : wrongKnowledgeJson) {
+            for (String kp : parseKnowledgePoints(kpJson)) {
+                weakKnowledge.merge(kp, 1.0, Double::sum);
+            }
+        }
+        return weakKnowledge;
+    }
+
+    private Map<String, List<KnowledgeEdge>> loadKnowledgeRelationGraph(String subject) {
+        try {
+            List<Map<String, Object>> edges = jdbcTemplate.queryForList("""
+                    select source_kp, target_kp, relation_type, weight
+                    from knowledge_relation
+                    where subject=?
+                    """, subject);
+            Map<String, List<KnowledgeEdge>> graph = new HashMap<>();
+            for (Map<String, Object> edge : edges) {
+                String source = (String) edge.get("source_kp");
+                String target = (String) edge.get("target_kp");
+                String relationType = (String) edge.get("relation_type");
+                Number weightNum = (Number) edge.get("weight");
+                double weight = weightNum == null ? 1.0 : weightNum.doubleValue();
+                graph.computeIfAbsent(source, k -> new ArrayList<>())
+                        .add(new KnowledgeEdge(target, relationType, weight));
+            }
+            return graph;
+        } catch (DataAccessException e) {
+            return Map.of();
+        }
+    }
+
+    private double knowledgeGraphScore(Exercise exercise,
+                                       Map<String, Double> weakKnowledge,
+                                       Map<String, List<KnowledgeEdge>> relationGraph) {
+        List<String> candidateKnowledge = parseKnowledgePoints(exercise.getKnowledgePoints());
+        if (candidateKnowledge.isEmpty()) {
+            return 0;
+        }
+        Set<String> targetSet = new HashSet<>(candidateKnowledge);
+        double directScore = 0;
+        for (String kp : candidateKnowledge) {
+            directScore += weakKnowledge.getOrDefault(kp, 0.0);
+        }
+
+        double relationScore = 0;
+        for (Map.Entry<String, Double> weak : weakKnowledge.entrySet()) {
+            List<KnowledgeEdge> outs = relationGraph.getOrDefault(weak.getKey(), List.of());
+            for (KnowledgeEdge edge : outs) {
+                if (targetSet.contains(edge.target())) {
+                    relationScore += weak.getValue() * edge.weight();
+                }
+            }
+        }
+        return directScore + relationScore;
+    }
+
+    private List<String> parseKnowledgePoints(String kpJson) {
+        if (ObjectUtil.isEmpty(kpJson)) {
+            return List.of();
+        }
+        try {
+            return objectMapper.readValue(kpJson, new TypeReference<List<String>>() {});
+        } catch (Exception ignored) {
+            return List.of();
+        }
+    }
+
+    private record KnowledgeEdge(String target, String relationType, double weight) {}
 
     public List<Map<String, Object>> dailyUnseen(int topN) {
         return recommendations(topN, false);
