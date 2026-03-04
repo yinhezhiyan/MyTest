@@ -21,27 +21,6 @@
     "source_num": 1
   },
   {
-    "id": "os-txt-0002",
-    "subject": "OS",
-    "chapter": "操作系统的基本概念",
-    "chapterSlug": "操作系统的基本概念",
-    "stem": "下面的( )资源不是操作系统应该管理的。",
-    "options": {
-      "A": "（自动补全选项A）A项表述。",
-      "B": "（自动补全选项B）B项表述。",
-      "C": "（自动补全选项C）C项表述。",
-      "D": "（自动补全选项D）D项表述。"
-    },
-    "answer": "D",
-    "analysis": "依据答案文本已回填；选项缺失处已自动补全。",
-    "difficulty": 2,
-    "knowledge_points": [
-      "操作系统的基本概念",
-      "question-txt导入"
-    ],
-    "source_num": 2
-  },
-  {
     "id": "os-txt-0003",
     "subject": "OS",
     "chapter": "操作系统的基本概念",
@@ -672,48 +651,6 @@
     "source_num": 18
   },
   {
-    "id": "os-txt-0033",
-    "subject": "OS",
-    "chapter": "操作系统发展历程",
-    "chapterSlug": "操作系统发展历程",
-    "stem": "【2018统考真题】下列关于多任务操作系统的叙述中，正确的是( )",
-    "options": {
-      "A": "（自动补全选项A）A项表述。",
-      "B": "（自动补全选项B）B项表述。",
-      "C": "（自动补全选项C）C项表述。",
-      "D": "（自动补全选项D）D项表述。"
-    },
-    "answer": "C",
-    "analysis": "依据答案文本已回填；选项缺失处已自动补全。",
-    "difficulty": 2,
-    "knowledge_points": [
-      "操作系统发展历程",
-      "question-txt导入"
-    ],
-    "source_num": 19
-  },
-  {
-    "id": "os-txt-0034",
-    "subject": "OS",
-    "chapter": "操作系统发展历程",
-    "chapterSlug": "操作系统发展历程",
-    "stem": "具有并发和并行的特点                                         I.需要实现对共享资源的保护 III.需要运行在多CPU的硬件平台上",
-    "options": {
-      "A": "（自动补全选项A）A项表述。",
-      "B": "（自动补全选项B）B项表述。",
-      "C": "（自动补全选项C）C项表述。",
-      "D": "（自动补全选项D）D项表述。"
-    },
-    "answer": "D",
-    "analysis": "依据答案文本已回填；选项缺失处已自动补全。",
-    "difficulty": 2,
-    "knowledge_points": [
-      "操作系统发展历程",
-      "question-txt导入"
-    ],
-    "source_num": 1
-  },
-  {
     "id": "os-txt-0035",
     "subject": "OS",
     "chapter": "操作系统发展历程",
@@ -756,27 +693,6 @@
     "source_num": 1
   },
   {
-    "id": "os-txt-0037",
-    "subject": "OS",
-    "chapter": "操作系统的运行环境",
-    "chapterSlug": "操作系统的运行环境",
-    "stem": "下列说法中，正确的是( )",
-    "options": {
-      "A": "（自动补全选项A）A项表述。",
-      "B": "（自动补全选项B）B项表述。",
-      "C": "（自动补全选项C）C项表述。",
-      "D": "（自动补全选项D）D项表述。"
-    },
-    "answer": "C",
-    "analysis": "依据答案文本已回填；选项缺失处已自动补全。",
-    "difficulty": 2,
-    "knowledge_points": [
-      "操作系统的运行环境",
-      "question-txt导入"
-    ],
-    "source_num": 2
-  },
-  {
     "id": "os-txt-0038",
     "subject": "OS",
     "chapter": "操作系统的运行环境",
@@ -796,27 +712,6 @@
       "question-txt导入"
     ],
     "source_num": 1
-  },
-  {
-    "id": "os-txt-0039",
-    "subject": "OS",
-    "chapter": "操作系统的运行环境",
-    "chapterSlug": "操作系统的运行环境",
-    "stem": "下列关于系统调用的说法中，正确的是( )",
-    "options": {
-      "A": "（自动补全选项A）A项表述。",
-      "B": "（自动补全选项B）B项表述。",
-      "C": "（自动补全选项C）C项表述。",
-      "D": "（自动补全选项D）D项表述。"
-    },
-    "answer": "D",
-    "analysis": "依据答案文本已回填；选项缺失处已自动补全。",
-    "difficulty": 2,
-    "knowledge_points": [
-      "操作系统的运行环境",
-      "question-txt导入"
-    ],
-    "source_num": 3
   },
   {
     "id": "os-txt-0040",
@@ -1008,48 +903,6 @@
     "source_num": 11
   },
   {
-    "id": "os-txt-0049",
-    "subject": "OS",
-    "chapter": "操作系统的运行环境",
-    "chapterSlug": "操作系统的运行环境",
-    "stem": "下列中断事件中，能引起外部中断的事件是( )",
-    "options": {
-      "A": "（自动补全选项A）A项表述。",
-      "B": "（自动补全选项B）B项表述。",
-      "C": "（自动补全选项C）C项表述。",
-      "D": "（自动补全选项D）D项表述。"
-    },
-    "answer": "A",
-    "analysis": "依据答案文本已回填；选项缺失处已自动补全。",
-    "difficulty": 2,
-    "knowledge_points": [
-      "操作系统的运行环境",
-      "question-txt导入"
-    ],
-    "source_num": 12
-  },
-  {
-    "id": "os-txt-0050",
-    "subject": "OS",
-    "chapter": "操作系统的运行环境",
-    "chapterSlug": "操作系统的运行环境",
-    "stem": "时钟中断                      II. 访管中断                    III.缺页中断",
-    "options": {
-      "A": "（自动补全选项A）A项表述。",
-      "B": "（自动补全选项B）B项表述。",
-      "C": "（自动补全选项C）C项表述。",
-      "D": "（自动补全选项D）D项表述。"
-    },
-    "answer": "A",
-    "analysis": "依据答案文本已回填；选项缺失处已自动补全。",
-    "difficulty": 2,
-    "knowledge_points": [
-      "操作系统的运行环境",
-      "question-txt导入"
-    ],
-    "source_num": 1
-  },
-  {
     "id": "os-txt-0051",
     "subject": "OS",
     "chapter": "操作系统的运行环境",
@@ -1176,27 +1029,6 @@
     "source_num": 18
   },
   {
-    "id": "os-txt-0057",
-    "subject": "OS",
-    "chapter": "操作系统的运行环境",
-    "chapterSlug": "操作系统的运行环境",
-    "stem": "【2013统考真题】下列选项中，会导致用户进程从用户态切换到内核态的操作是( )",
-    "options": {
-      "A": "（自动补全选项A）A项表述。",
-      "B": "（自动补全选项B）B项表述。",
-      "C": "（自动补全选项C）C项表述。",
-      "D": "（自动补全选项D）D项表述。"
-    },
-    "answer": "A",
-    "analysis": "依据答案文本已回填；选项缺失处已自动补全。",
-    "difficulty": 2,
-    "knowledge_points": [
-      "操作系统的运行环境",
-      "question-txt导入"
-    ],
-    "source_num": 19
-  },
-  {
     "id": "os-txt-0058",
     "subject": "OS",
     "chapter": "操作系统的运行环境",
@@ -1260,27 +1092,6 @@
     "source_num": 21
   },
   {
-    "id": "os-txt-0061",
-    "subject": "OS",
-    "chapter": "操作系统的运行环境",
-    "chapterSlug": "操作系统的运行环境",
-    "stem": "【2015 统考真题】假定下列指令已装入指令寄存器, 则执行时不可能导致 CPU 从用户态变为内核态 （系统态)的是( )",
-    "options": {
-      "A": "DIV RO, R1 ；(RO)/(R1)→RO",
-      "B": "（自动补全选项B）B项表述。",
-      "C": "（自动补全选项C）C项表述。",
-      "D": "MOV RO, addr ；把地址addr处的内存数据放入寄存器RO"
-    },
-    "answer": "D",
-    "analysis": "依据答案文本已回填；选项缺失处已自动补全。",
-    "difficulty": 2,
-    "knowledge_points": [
-      "操作系统的运行环境",
-      "question-txt导入"
-    ],
-    "source_num": 22
-  },
-  {
     "id": "os-txt-0062",
     "subject": "OS",
     "chapter": "操作系统的运行环境",
@@ -1323,48 +1134,6 @@
     "source_num": 24
   },
   {
-    "id": "os-txt-0064",
-    "subject": "OS",
-    "chapter": "操作系统的运行环境",
-    "chapterSlug": "操作系统的运行环境",
-    "stem": "【2018 统考真题】定时器产生时钟中断后, 由时钟中断服务程序更新的部分内容是() I.内核中时钟变量的值                                           II.当前进程占用CPU的时间 III.当前进程在时间片内的剩余执行时间",
-    "options": {
-      "A": "（自动补全选项A）A项表述。",
-      "B": "（自动补全选项B）B项表述。",
-      "C": "（自动补全选项C）C项表述。",
-      "D": "（自动补全选项D）D项表述。"
-    },
-    "answer": "C",
-    "analysis": "依据答案文本已回填；选项缺失处已自动补全。",
-    "difficulty": 2,
-    "knowledge_points": [
-      "操作系统的运行环境",
-      "question-txt导入"
-    ],
-    "source_num": 25
-  },
-  {
-    "id": "os-txt-0065",
-    "subject": "OS",
-    "chapter": "操作系统的运行环境",
-    "chapterSlug": "操作系统的运行环境",
-    "stem": "【2019统考真题】下列关于系统调用的叙述中，正确的是( )",
-    "options": {
-      "A": "（自动补全选项A）A项表述。",
-      "B": "（自动补全选项B）B项表述。",
-      "C": "（自动补全选项C）C项表述。",
-      "D": "（自动补全选项D）D项表述。"
-    },
-    "answer": "B",
-    "analysis": "依据答案文本已回填；选项缺失处已自动补全。",
-    "difficulty": 2,
-    "knowledge_points": [
-      "操作系统的运行环境",
-      "question-txt导入"
-    ],
-    "source_num": 26
-  },
-  {
     "id": "os-txt-0066",
     "subject": "OS",
     "chapter": "操作系统的运行环境",
@@ -1384,27 +1153,6 @@
       "question-txt导入"
     ],
     "source_num": 1
-  },
-  {
-    "id": "os-txt-0067",
-    "subject": "OS",
-    "chapter": "操作系统的运行环境",
-    "chapterSlug": "操作系统的运行环境",
-    "stem": "【2020统考真题】下列与中断相关的操作中，由操作系统完成的是( )",
-    "options": {
-      "A": "（自动补全选项A）A项表述。",
-      "B": "（自动补全选项B）B项表述。",
-      "C": "（自动补全选项C）C项表述。",
-      "D": "（自动补全选项D）D项表述。"
-    },
-    "answer": "A",
-    "analysis": "依据答案文本已回填；选项缺失处已自动补全。",
-    "difficulty": 2,
-    "knowledge_points": [
-      "操作系统的运行环境",
-      "question-txt导入"
-    ],
-    "source_num": 27
   },
   {
     "id": "os-txt-0068",
@@ -1554,27 +1302,6 @@
     "source_num": 33
   },
   {
-    "id": "os-txt-0075",
-    "subject": "OS",
-    "chapter": "虚拟机",
-    "chapterSlug": "虚拟机",
-    "stem": "用()设计的操作系统结构清晰且便于调试。",
-    "options": {
-      "A": "分层式构架",
-      "B": "模块化构架",
-      "C": "微内核构架",
-      "D": "（自动补全选项D）D项表述。"
-    },
-    "answer": "C",
-    "analysis": "依据答案文本已回填；选项缺失处已自动补全。",
-    "difficulty": 2,
-    "knowledge_points": [
-      "虚拟机",
-      "question-txt导入"
-    ],
-    "source_num": 1
-  },
-  {
     "id": "os-txt-0076",
     "subject": "OS",
     "chapter": "虚拟机",
@@ -1659,27 +1386,6 @@
     "source_num": 5
   },
   {
-    "id": "os-txt-0080",
-    "subject": "OS",
-    "chapter": "虚拟机",
-    "chapterSlug": "虚拟机",
-    "stem": "对于以下五种服务，在采用微内核结构的操作系统中，()不宣放在微内核中。",
-    "options": {
-      "A": "（自动补全选项A）A项表述。",
-      "B": "（自动补全选项B）B项表述。",
-      "C": "（自动补全选项C）C项表述。",
-      "D": "（自动补全选项D）D项表述。"
-    },
-    "answer": "D",
-    "analysis": "依据答案文本已回填；选项缺失处已自动补全。",
-    "difficulty": 2,
-    "knowledge_points": [
-      "虚拟机",
-      "question-txt导入"
-    ],
-    "source_num": 6
-  },
-  {
     "id": "os-txt-0081",
     "subject": "OS",
     "chapter": "虚拟机",
@@ -1720,27 +1426,6 @@
       "question-txt导入"
     ],
     "source_num": 7
-  },
-  {
-    "id": "os-txt-0083",
-    "subject": "OS",
-    "chapter": "虚拟机",
-    "chapterSlug": "虚拟机",
-    "stem": "下列关于操作系统结构的说法中，正确的是( ) I. 当前广泛使用的Windows 操作系统采用的是分层式 OS 结构 II. 模块化的 OS 结构设计的基本原则是, 每一层都仅使用其底层所提供的功能和服务, 这样就使系统的调试和验证都变得容易 III.因为微内核结构能有效支持多处理机运行，所以非常适合于分布式系统环境 IV. 采用微内核结构设计和实现操作系统具有诸多好处, 如添加系统服务时, 不必修改内核、使系统更高效",
-    "options": {
-      "A": "（自动补全选项A）A项表述。",
-      "B": "（自动补全选项B）B项表述。",
-      "C": "（自动补全选项C）C项表述。",
-      "D": "（自动补全选项D）D项表述。"
-    },
-    "answer": "A",
-    "analysis": "依据答案文本已回填；选项缺失处已自动补全。",
-    "difficulty": 2,
-    "knowledge_points": [
-      "虚拟机",
-      "question-txt导入"
-    ],
-    "source_num": 8
   },
   {
     "id": "os-txt-0084",
@@ -1869,27 +1554,6 @@
     "source_num": 14
   },
   {
-    "id": "os-txt-0090",
-    "subject": "OS",
-    "chapter": "虚拟机",
-    "chapterSlug": "虚拟机",
-    "stem": "检查分区表是否正确, 确定哪个分区为活动分区, 并在程序结束时将该分区的启动程序 （操作系统引导扇区)调入内存加以执行，这是( )的任务。",
-    "options": {
-      "A": "（自动补全选项A）A项表述。",
-      "B": "（自动补全选项B）B项表述。",
-      "C": "（自动补全选项C）C项表述。",
-      "D": "（自动补全选项D）D项表述。"
-    },
-    "answer": "C",
-    "analysis": "依据答案文本已回填；选项缺失处已自动补全。",
-    "difficulty": 2,
-    "knowledge_points": [
-      "虚拟机",
-      "question-txt导入"
-    ],
-    "source_num": 15
-  },
-  {
     "id": "os-txt-0091",
     "subject": "OS",
     "chapter": "虚拟机",
@@ -1930,27 +1594,6 @@
       "question-txt导入"
     ],
     "source_num": 17
-  },
-  {
-    "id": "os-txt-0093",
-    "subject": "OS",
-    "chapter": "虚拟机",
-    "chapterSlug": "虚拟机",
-    "stem": "虚拟机的实现离不开虚拟机管理程序 (VMM), 下列关于 VMM 的说法中正确的是( ) L. 第一类 VMM 直接运行在硬件上, 其效率通常高于第二类 VMM II. 由于 VMM 的上层需要支持操作系统的运行、应用程序的运行, 因此实现 VMM 的代码量通常大于实现一个完整操作系统的代码量 III.VMM可将一台物理机器虚拟化为多台虚拟机器 IV. 为了支持客户操作系统的运行, 第二类 VMM 需要完全运行在最高特权级",
-    "options": {
-      "A": "（自动补全选项A）A项表述。",
-      "B": "（自动补全选项B）B项表述。",
-      "C": "（自动补全选项C）C项表述。",
-      "D": "（自动补全选项D）D项表述。"
-    },
-    "answer": "D",
-    "analysis": "依据答案文本已回填；选项缺失处已自动补全。",
-    "difficulty": 2,
-    "knowledge_points": [
-      "虚拟机",
-      "question-txt导入"
-    ],
-    "source_num": 18
   },
   {
     "id": "os-txt-0094",
@@ -2205,27 +1848,6 @@
     "source_num": 9
   },
   {
-    "id": "os-txt-0106",
-    "subject": "OS",
-    "chapter": "进程与线程",
-    "chapterSlug": "进程与线程",
-    "stem": "下列选项中，导致创建新进程的操作是()",
-    "options": {
-      "A": "（自动补全选项A）A项表述。",
-      "B": "（自动补全选项B）B项表述。",
-      "C": "（自动补全选项C）C项表述。",
-      "D": "（自动补全选项D）D项表述。"
-    },
-    "answer": "D",
-    "analysis": "依据答案文本已回填；选项缺失处已自动补全。",
-    "difficulty": 2,
-    "knowledge_points": [
-      "进程与线程",
-      "question-txt导入"
-    ],
-    "source_num": 10
-  },
-  {
     "id": "os-txt-0107",
     "subject": "OS",
     "chapter": "进程与线程",
@@ -2478,48 +2100,6 @@
     "source_num": 21
   },
   {
-    "id": "os-txt-0119",
-    "subject": "OS",
-    "chapter": "进程与线程",
-    "chapterSlug": "进程与线程",
-    "stem": "若一个进程实体由 PCB、共享正文段、数据堆段和数据栈段组成, 请指出下列 C 语言程序中的内容及相关数据结构各位于哪一段中。",
-    "options": {
-      "A": "（自动补全选项A）A项表述。",
-      "B": "（自动补全选项B）B项表述。",
-      "C": "（自动补全选项C）C项表述。",
-      "D": "（自动补全选项D）D项表述。"
-    },
-    "answer": "B",
-    "analysis": "依据答案文本已回填；选项缺失处已自动补全。",
-    "difficulty": 2,
-    "knowledge_points": [
-      "进程与线程",
-      "question-txt导入"
-    ],
-    "source_num": 22
-  },
-  {
-    "id": "os-txt-0120",
-    "subject": "OS",
-    "chapter": "进程与线程",
-    "chapterSlug": "进程与线程",
-    "stem": "全局赋值变量，( )                                                  II.未赋值的局部变量，( ) III.函数调用实参传递值，( )                                   IV.用mallocO要求动态分配的存储区，( ) V. 常量值 （如 1995、\"”string”），（ ）                                VI.进程的优先级，( )",
-    "options": {
-      "A": "（自动补全选项A）A项表述。",
-      "B": "（自动补全选项B）B项表述。",
-      "C": "（自动补全选项C）C项表述。",
-      "D": "（自动补全选项D）D项表述。"
-    },
-    "answer": "D",
-    "analysis": "依据答案文本已回填；选项缺失处已自动补全。",
-    "difficulty": 2,
-    "knowledge_points": [
-      "进程与线程",
-      "question-txt导入"
-    ],
-    "source_num": 1
-  },
-  {
     "id": "os-txt-0121",
     "subject": "OS",
     "chapter": "进程与线程",
@@ -2667,27 +2247,6 @@
     "source_num": 29
   },
   {
-    "id": "os-txt-0128",
-    "subject": "OS",
-    "chapter": "进程与线程",
-    "chapterSlug": "进程与线程",
-    "stem": "速度最快的进程通信方式是( )",
-    "options": {
-      "A": "（自动补全选项A）A项表述。",
-      "B": "（自动补全选项B）B项表述。",
-      "C": "（自动补全选项C）C项表述。",
-      "D": "（自动补全选项D）D项表述。"
-    },
-    "answer": "C",
-    "analysis": "依据答案文本已回填；选项缺失处已自动补全。",
-    "difficulty": 2,
-    "knowledge_points": [
-      "进程与线程",
-      "question-txt导入"
-    ],
-    "source_num": 30
-  },
-  {
     "id": "os-txt-0129",
     "subject": "OS",
     "chapter": "进程与线程",
@@ -2833,27 +2392,6 @@
       "question-txt导入"
     ],
     "source_num": 37
-  },
-  {
-    "id": "os-txt-0136",
-    "subject": "OS",
-    "chapter": "进程与线程",
-    "chapterSlug": "进程与线程",
-    "stem": "下列选项中，( )不是线程的优点。",
-    "options": {
-      "A": "提高系统并发性",
-      "B": "节约系统资源",
-      "C": "便于进程通信",
-      "D": "（自动补全选项D）D项表述。"
-    },
-    "answer": "D",
-    "analysis": "依据答案文本已回填；选项缺失处已自动补全。",
-    "difficulty": 2,
-    "knowledge_points": [
-      "进程与线程",
-      "question-txt导入"
-    ],
-    "source_num": 38
   },
   {
     "id": "os-txt-0137",
@@ -3171,27 +2709,6 @@
     "source_num": 53
   },
   {
-    "id": "os-txt-0152",
-    "subject": "OS",
-    "chapter": "进程与线程",
-    "chapterSlug": "进程与线程",
-    "stem": "下列选项中, 可能导致用户级线程切换的事件是( )",
-    "options": {
-      "A": "系统调用",
-      "B": "I/O请求",
-      "C": "异常处理",
-      "D": "（自动补全选项D）D项表述。"
-    },
-    "answer": "C",
-    "analysis": "依据答案文本已回填；选项缺失处已自动补全。",
-    "difficulty": 2,
-    "knowledge_points": [
-      "进程与线程",
-      "question-txt导入"
-    ],
-    "source_num": 54
-  },
-  {
     "id": "os-txt-0153",
     "subject": "OS",
     "chapter": "进程与线程",
@@ -3255,27 +2772,6 @@
     "source_num": 57
   },
   {
-    "id": "os-txt-0156",
-    "subject": "OS",
-    "chapter": "进程与线程",
-    "chapterSlug": "进程与线程",
-    "stem": "并发性较好的多线程模型有( )",
-    "options": {
-      "A": "（自动补全选项A）A项表述。",
-      "B": "（自动补全选项B）B项表述。",
-      "C": "（自动补全选项C）C项表述。",
-      "D": "（自动补全选项D）D项表述。"
-    },
-    "answer": "B",
-    "analysis": "依据答案文本已回填；选项缺失处已自动补全。",
-    "difficulty": 2,
-    "knowledge_points": [
-      "进程与线程",
-      "question-txt导入"
-    ],
-    "source_num": 58
-  },
-  {
     "id": "os-txt-0157",
     "subject": "OS",
     "chapter": "进程与线程",
@@ -3316,27 +2812,6 @@
       "question-txt导入"
     ],
     "source_num": 59
-  },
-  {
-    "id": "os-txt-0159",
-    "subject": "OS",
-    "chapter": "进程与线程",
-    "chapterSlug": "进程与线程",
-    "stem": "【2010统考真题】下列选项中，导致创建新进程的操作是( ) I.用户登录成功              II. 设备分配                     III. 启动程序执行",
-    "options": {
-      "A": "（自动补全选项A）A项表述。",
-      "B": "（自动补全选项B）B项表述。",
-      "C": "（自动补全选项C）C项表述。",
-      "D": "（自动补全选项D）D项表述。"
-    },
-    "answer": "D",
-    "analysis": "依据答案文本已回填；选项缺失处已自动补全。",
-    "difficulty": 2,
-    "knowledge_points": [
-      "进程与线程",
-      "question-txt导入"
-    ],
-    "source_num": 60
   },
   {
     "id": "os-txt-0160",
@@ -3442,48 +2917,6 @@
       "question-txt导入"
     ],
     "source_num": 65
-  },
-  {
-    "id": "os-txt-0165",
-    "subject": "OS",
-    "chapter": "进程与线程",
-    "chapterSlug": "进程与线程",
-    "stem": "【2018统考真题】下列选项中，可能导致当前进程P阻塞的事件是( ) I.进程P申请临界资源                                           II.进程P从磁盘读数据 III. 系统将 CPU 分配给高优先权的进程",
-    "options": {
-      "A": "（自动补全选项A）A项表述。",
-      "B": "（自动补全选项B）B项表述。",
-      "C": "（自动补全选项C）C项表述。",
-      "D": "（自动补全选项D）D项表述。"
-    },
-    "answer": "C",
-    "analysis": "依据答案文本已回填；选项缺失处已自动补全。",
-    "difficulty": 2,
-    "knowledge_points": [
-      "进程与线程",
-      "question-txt导入"
-    ],
-    "source_num": 66
-  },
-  {
-    "id": "os-txt-0166",
-    "subject": "OS",
-    "chapter": "进程与线程",
-    "chapterSlug": "进程与线程",
-    "stem": "【2019统考真题】下列选项中，可能会将进程唤醒的事件是( ) 1.1/O结束                                                                 II. 某进程退出临界区 III. 当前进程的时间片用完",
-    "options": {
-      "A": "仅工",
-      "B": "仅 I",
-      "C": "仅1、Ⅱ",
-      "D": "（自动补全选项D）D项表述。"
-    },
-    "answer": "B",
-    "analysis": "依据答案文本已回填；选项缺失处已自动补全。",
-    "difficulty": 2,
-    "knowledge_points": [
-      "进程与线程",
-      "question-txt导入"
-    ],
-    "source_num": 67
   },
   {
     "id": "os-txt-0167",
@@ -3633,27 +3066,6 @@
     "source_num": 74
   },
   {
-    "id": "os-txt-0174",
-    "subject": "OS",
-    "chapter": "进程与线程",
-    "chapterSlug": "进程与线程",
-    "stem": "【2024 统考真题】若进程 P 中的线程T先打开文件, 得到文件描述符 fd, 再创建两个线程 Ta 和 Tb, 则在下列资源中，Ta与Tb可共享的是( ) I.进程P的地址空间      II.线程T的栈                III. 文件描述符 fd",
-    "options": {
-      "A": "（自动补全选项A）A项表述。",
-      "B": "（自动补全选项B）B项表述。",
-      "C": "（自动补全选项C）C项表述。",
-      "D": "（自动补全选项D）D项表述。"
-    },
-    "answer": "D",
-    "analysis": "依据答案文本已回填；选项缺失处已自动补全。",
-    "difficulty": 2,
-    "knowledge_points": [
-      "进程与线程",
-      "question-txt导入"
-    ],
-    "source_num": 75
-  },
-  {
     "id": "os-txt-0175",
     "subject": "OS",
     "chapter": "CPU 调度",
@@ -3694,48 +3106,6 @@
       "question-txt导入"
     ],
     "source_num": 2
-  },
-  {
-    "id": "os-txt-0177",
-    "subject": "OS",
-    "chapter": "CPU 调度",
-    "chapterSlug": "cpu-调度",
-    "stem": "下列哪些指标是调度算法设计时应该考虑的?( )",
-    "options": {
-      "A": "（自动补全选项A）A项表述。",
-      "B": "（自动补全选项B）B项表述。",
-      "C": "（自动补全选项C）C项表述。",
-      "D": "（自动补全选项D）D项表述。"
-    },
-    "answer": "D",
-    "analysis": "依据答案文本已回填；选项缺失处已自动补全。",
-    "difficulty": 2,
-    "knowledge_points": [
-      "CPU 调度",
-      "question-txt导入"
-    ],
-    "source_num": 3
-  },
-  {
-    "id": "os-txt-0178",
-    "subject": "OS",
-    "chapter": "CPU 调度",
-    "chapterSlug": "cpu-调度",
-    "stem": "公平性                         II. 资源利用率                III.互斥性                      IV.平均周转时间",
-    "options": {
-      "A": "（自动补全选项A）A项表述。",
-      "B": "（自动补全选项B）B项表述。",
-      "C": "（自动补全选项C）C项表述。",
-      "D": "（自动补全选项D）D项表述。"
-    },
-    "answer": "B",
-    "analysis": "依据答案文本已回填；选项缺失处已自动补全。",
-    "difficulty": 2,
-    "knowledge_points": [
-      "CPU 调度",
-      "question-txt导入"
-    ],
-    "source_num": 1
   },
   {
     "id": "os-txt-0179",
@@ -3864,27 +3234,6 @@
     "source_num": 9
   },
   {
-    "id": "os-txt-0185",
-    "subject": "OS",
-    "chapter": "CPU 调度",
-    "chapterSlug": "cpu-调度",
-    "stem": "( )有利于CPU繁忙型的作业，而不利于VO繁忙型的作业。",
-    "options": {
-      "A": "时间片轮转调度算法",
-      "B": "先来先服务调度算法",
-      "C": "（自动补全选项C）C项表述。",
-      "D": "（自动补全选项D）D项表述。"
-    },
-    "answer": "D",
-    "analysis": "依据答案文本已回填；选项缺失处已自动补全。",
-    "difficulty": 2,
-    "knowledge_points": [
-      "CPU 调度",
-      "question-txt导入"
-    ],
-    "source_num": 10
-  },
-  {
     "id": "os-txt-0186",
     "subject": "OS",
     "chapter": "CPU 调度",
@@ -3946,27 +3295,6 @@
       "question-txt导入"
     ],
     "source_num": 13
-  },
-  {
-    "id": "os-txt-0189",
-    "subject": "OS",
-    "chapter": "CPU 调度",
-    "chapterSlug": "cpu-调度",
-    "stem": "进程（线程）调度的时机有（ ）",
-    "options": {
-      "A": "（自动补全选项A）A项表述。",
-      "B": "（自动补全选项B）B项表述。",
-      "C": "（自动补全选项C）C项表述。",
-      "D": "（自动补全选项D）D项表述。"
-    },
-    "answer": "D",
-    "analysis": "依据答案文本已回填；选项缺失处已自动补全。",
-    "difficulty": 2,
-    "knowledge_points": [
-      "CPU 调度",
-      "question-txt导入"
-    ],
-    "source_num": 14
   },
   {
     "id": "os-txt-0190",
@@ -4051,48 +3379,6 @@
       "question-txt导入"
     ],
     "source_num": 17
-  },
-  {
-    "id": "os-txt-0194",
-    "subject": "OS",
-    "chapter": "CPU 调度",
-    "chapterSlug": "cpu-调度",
-    "stem": "现在有三个同时到达的作业 它们的执行时间分别是 且  系统按单道方式运行且采用短作业优先调度算法，则平均周转时间是( )",
-    "options": {
-      "A": "（自动补全选项A）A项表述。",
-      "B": "（自动补全选项B）B项表述。",
-      "C": "（自动补全选项C）C项表述。",
-      "D": "（自动补全选项D）D项表述。"
-    },
-    "answer": "B",
-    "analysis": "依据答案文本已回填；选项缺失处已自动补全。",
-    "difficulty": 2,
-    "knowledge_points": [
-      "CPU 调度",
-      "question-txt导入"
-    ],
-    "source_num": 18
-  },
-  {
-    "id": "os-txt-0195",
-    "subject": "OS",
-    "chapter": "CPU 调度",
-    "chapterSlug": "cpu-调度",
-    "stem": "设有三个作业, 其运行时间分别是 2h, 5h, 3h， 假定它们同时到达，并在同一台处理器上以单道方式运行，则平均周转时间最小的执行顺序是( )",
-    "options": {
-      "A": "（自动补全选项A）A项表述。",
-      "B": "（自动补全选项B）B项表述。",
-      "C": "（自动补全选项C）C项表述。",
-      "D": "（自动补全选项D）D项表述。"
-    },
-    "answer": "B",
-    "analysis": "依据答案文本已回填；选项缺失处已自动补全。",
-    "difficulty": 2,
-    "knowledge_points": [
-      "CPU 调度",
-      "question-txt导入"
-    ],
-    "source_num": 19
   },
   {
     "id": "os-txt-0196",
@@ -4410,27 +3696,6 @@
     "source_num": 34
   },
   {
-    "id": "os-txt-0211",
-    "subject": "OS",
-    "chapter": "CPU 调度",
-    "chapterSlug": "cpu-调度",
-    "stem": "下列进程调度算法中，可能导致饥饿现象的有( ) I. 先来先服务调度算法                                               II.短作业优先调度算法 III.优先级调度算法                                                    IV.时间片轮转调度算法",
-    "options": {
-      "A": "（自动补全选项A）A项表述。",
-      "B": "（自动补全选项B）B项表述。",
-      "C": "（自动补全选项C）C项表述。",
-      "D": "（自动补全选项D）D项表述。"
-    },
-    "answer": "C",
-    "analysis": "依据答案文本已回填；选项缺失处已自动补全。",
-    "difficulty": 2,
-    "knowledge_points": [
-      "CPU 调度",
-      "question-txt导入"
-    ],
-    "source_num": 35
-  },
-  {
     "id": "os-txt-0212",
     "subject": "OS",
     "chapter": "CPU 调度",
@@ -4557,27 +3822,6 @@
     "source_num": 41
   },
   {
-    "id": "os-txt-0218",
-    "subject": "OS",
-    "chapter": "CPU 调度",
-    "chapterSlug": "cpu-调度",
-    "stem": "【2013统考真题】某系统正在执行三个进程 和 各进程的计算 (CPU) 时间和 I/O 时间比例如下表所示。为提高系统资源利用率，合理的进程优先级设置应为( ) 进程名  计算时间  I/O 时间 Pi       90%       10% P2      50%      50% P3      15%      85%",
-    "options": {
-      "A": "（自动补全选项A）A项表述。",
-      "B": "（自动补全选项B）B项表述。",
-      "C": "（自动补全选项C）C项表述。",
-      "D": "（自动补全选项D）D项表述。"
-    },
-    "answer": "D",
-    "analysis": "依据答案文本已回填；选项缺失处已自动补全。",
-    "difficulty": 2,
-    "knowledge_points": [
-      "CPU 调度",
-      "question-txt导入"
-    ],
-    "source_num": 42
-  },
-  {
     "id": "os-txt-0219",
     "subject": "OS",
     "chapter": "CPU 调度",
@@ -4620,27 +3864,6 @@
     "source_num": 44
   },
   {
-    "id": "os-txt-0221",
-    "subject": "OS",
-    "chapter": "CPU 调度",
-    "chapterSlug": "cpu-调度",
-    "stem": "【2017 统考真题】假设 4 个作业到达系统的时刻和运行时间如下表所示。系统在 时开始作业调度。若分别采用先来先服务和短作业优先调度算法，则选中的作业分别是( ) 作业号  到达时刻  运行时间 0      3 1        3 Js     3      1",
-    "options": {
-      "A": "（自动补全选项A）A项表述。",
-      "B": "（自动补全选项B）B项表述。",
-      "C": "（自动补全选项C）C项表述。",
-      "D": "（自动补全选项D）D项表述。"
-    },
-    "answer": "A",
-    "analysis": "依据答案文本已回填；选项缺失处已自动补全。",
-    "difficulty": 2,
-    "knowledge_points": [
-      "CPU 调度",
-      "question-txt导入"
-    ],
-    "source_num": 45
-  },
-  {
     "id": "os-txt-0222",
     "subject": "OS",
     "chapter": "CPU 调度",
@@ -4660,27 +3883,6 @@
       "question-txt导入"
     ],
     "source_num": 46
-  },
-  {
-    "id": "os-txt-0223",
-    "subject": "OS",
-    "chapter": "CPU 调度",
-    "chapterSlug": "cpu-调度",
-    "stem": "【2018 统考真题】某系统采用基于优先权的非抢占式进程调度策略, 完成一次进程调度和进程切换的系统时间开销为 lμs。在 一时刻就绪队列中有3个进程 和 其在就绪队列中的等待时间、需要的 CPU 时间和优先权如下表所示。若优先权值大的进程优先获得CP U, 从一时刻起系统开度，则系统的平均周转时间为( ) 进程名   等待时间   需要的CPU 时间  优先权",
-    "options": {
-      "A": "（自动补全选项A）A项表述。",
-      "B": "（自动补全选项B）B项表述。",
-      "C": "（自动补全选项C）C项表述。",
-      "D": "（自动补全选项D）D项表述。"
-    },
-    "answer": "C",
-    "analysis": "依据答案文本已回填；选项缺失处已自动补全。",
-    "difficulty": 2,
-    "knowledge_points": [
-      "CPU 调度",
-      "question-txt导入"
-    ],
-    "source_num": 47
   },
   {
     "id": "os-txt-0224",
@@ -4704,27 +3906,6 @@
     "source_num": 48
   },
   {
-    "id": "os-txt-0225",
-    "subject": "OS",
-    "chapter": "CPU 调度",
-    "chapterSlug": "cpu-调度",
-    "stem": "【2020 统考真题】下列与进程调度有关的因素中, 在设计多级反馈队列调度算法时需要考虑的是( )",
-    "options": {
-      "A": "（自动补全选项A）A项表述。",
-      "B": "（自动补全选项B）B项表述。",
-      "C": "（自动补全选项C）C项表述。",
-      "D": "（自动补全选项D）D项表述。"
-    },
-    "answer": "D",
-    "analysis": "依据答案文本已回填；选项缺失处已自动补全。",
-    "difficulty": 2,
-    "knowledge_points": [
-      "CPU 调度",
-      "question-txt导入"
-    ],
-    "source_num": 49
-  },
-  {
     "id": "os-txt-0226",
     "subject": "OS",
     "chapter": "CPU 调度",
@@ -4746,27 +3927,6 @@
     "source_num": 1
   },
   {
-    "id": "os-txt-0227",
-    "subject": "OS",
-    "chapter": "CPU 调度",
-    "chapterSlug": "cpu-调度",
-    "stem": "【2021 统考真题】在下列内核的数据结构或程序中，分时系统实现时间片轮转调度需要使用的是()",
-    "options": {
-      "A": "（自动补全选项A）A项表述。",
-      "B": "（自动补全选项B）B项表述。",
-      "C": "（自动补全选项C）C项表述。",
-      "D": "（自动补全选项D）D项表述。"
-    },
-    "answer": "B",
-    "analysis": "依据答案文本已回填；选项缺失处已自动补全。",
-    "difficulty": 2,
-    "knowledge_points": [
-      "CPU 调度",
-      "question-txt导入"
-    ],
-    "source_num": 50
-  },
-  {
     "id": "os-txt-0228",
     "subject": "OS",
     "chapter": "CPU 调度",
@@ -4786,27 +3946,6 @@
       "question-txt导入"
     ],
     "source_num": 1
-  },
-  {
-    "id": "os-txt-0229",
-    "subject": "OS",
-    "chapter": "CPU 调度",
-    "chapterSlug": "cpu-调度",
-    "stem": "【2021统考真题】下列事件中，可能引起进程调度程序执行的是( )",
-    "options": {
-      "A": "（自动补全选项A）A项表述。",
-      "B": "（自动补全选项B）B项表述。",
-      "C": "（自动补全选项C）C项表述。",
-      "D": "（自动补全选项D）D项表述。"
-    },
-    "answer": "C",
-    "analysis": "依据答案文本已回填；选项缺失处已自动补全。",
-    "difficulty": 2,
-    "knowledge_points": [
-      "CPU 调度",
-      "question-txt导入"
-    ],
-    "source_num": 51
   },
   {
     "id": "os-txt-0230",
@@ -4891,48 +4030,6 @@
       "question-txt导入"
     ],
     "source_num": 54
-  },
-  {
-    "id": "os-txt-0234",
-    "subject": "OS",
-    "chapter": "CPU 调度",
-    "chapterSlug": "cpu-调度",
-    "stem": "【2024统考真题】在支持页式存储管理的系统中，进程切换时操作系统需要执行的操作是()",
-    "options": {
-      "A": "（自动补全选项A）A项表述。",
-      "B": "（自动补全选项B）B项表述。",
-      "C": "（自动补全选项C）C项表述。",
-      "D": "（自动补全选项D）D项表述。"
-    },
-    "answer": "C",
-    "analysis": "依据答案文本已回填；选项缺失处已自动补全。",
-    "difficulty": 2,
-    "knowledge_points": [
-      "CPU 调度",
-      "question-txt导入"
-    ],
-    "source_num": 55
-  },
-  {
-    "id": "os-txt-0235",
-    "subject": "OS",
-    "chapter": "CPU 调度",
-    "chapterSlug": "cpu-调度",
-    "stem": "更新程序计数器的值                                             II.更新栈基址寄存器的值 III. 更新页表基地址寄存器的值",
-    "options": {
-      "A": "（自动补全选项A）A项表述。",
-      "B": "（自动补全选项B）B项表述。",
-      "C": "（自动补全选项C）C项表述。",
-      "D": "（自动补全选项D）D项表述。"
-    },
-    "answer": "B",
-    "analysis": "依据答案文本已回填；选项缺失处已自动补全。",
-    "difficulty": 2,
-    "knowledge_points": [
-      "CPU 调度",
-      "question-txt导入"
-    ],
-    "source_num": 1
   },
   {
     "id": "os-txt-0236",
@@ -5292,27 +4389,6 @@
     "source_num": 17
   },
   {
-    "id": "os-txt-0253",
-    "subject": "OS",
-    "chapter": "同步与互斥",
-    "chapterSlug": "同步与互斥",
-    "stem": "用 操作实现进程同步，信号量的初值为( )",
-    "options": {
-      "A": "（自动补全选项A）A项表述。",
-      "B": "（自动补全选项B）B项表述。",
-      "C": "（自动补全选项C）C项表述。",
-      "D": "（自动补全选项D）D项表述。"
-    },
-    "answer": "B",
-    "analysis": "依据答案文本已回填；选项缺失处已自动补全。",
-    "difficulty": 2,
-    "knowledge_points": [
-      "同步与互斥",
-      "question-txt导入"
-    ],
-    "source_num": 18
-  },
-  {
     "id": "os-txt-0254",
     "subject": "OS",
     "chapter": "同步与互斥",
@@ -5332,27 +4408,6 @@
       "question-txt导入"
     ],
     "source_num": 19
-  },
-  {
-    "id": "os-txt-0255",
-    "subject": "OS",
-    "chapter": "同步与互斥",
-    "chapterSlug": "同步与互斥",
-    "stem": "一个进程映像由程序、数据及PCB组成，其中()必须用可重入编码编写。",
-    "options": {
-      "A": "（自动补全选项A）A项表述。",
-      "B": "（自动补全选项B）B项表述。",
-      "C": "（自动补全选项C）C项表述。",
-      "D": "（自动补全选项D）D项表述。"
-    },
-    "answer": "C",
-    "analysis": "依据答案文本已回填；选项缺失处已自动补全。",
-    "difficulty": 2,
-    "knowledge_points": [
-      "同步与互斥",
-      "question-txt导入"
-    ],
-    "source_num": 20
   },
   {
     "id": "os-txt-0256",
@@ -5523,48 +4578,6 @@
     "source_num": 28
   },
   {
-    "id": "os-txt-0264",
-    "subject": "OS",
-    "chapter": "同步与互斥",
-    "chapterSlug": "同步与互斥",
-    "stem": "对信号量S执行P操作后,使该进程进入资源等待队列的条件是()",
-    "options": {
-      "A": "（自动补全选项A）A项表述。",
-      "B": "（自动补全选项B）B项表述。",
-      "C": "（自动补全选项C）C项表述。",
-      "D": "（自动补全选项D）D项表述。"
-    },
-    "answer": "C",
-    "analysis": "依据答案文本已回填；选项缺失处已自动补全。",
-    "difficulty": 2,
-    "knowledge_points": [
-      "同步与互斥",
-      "question-txt导入"
-    ],
-    "source_num": 30
-  },
-  {
-    "id": "os-txt-0265",
-    "subject": "OS",
-    "chapter": "同步与互斥",
-    "chapterSlug": "同步与互斥",
-    "stem": "若系统有  个进程, 则就绪队列中进程的个数最多有(①)个；阻塞队列中进程的个数最多有(②)个。",
-    "options": {
-      "A": "（自动补全选项A）A项表述。",
-      "B": "（自动补全选项B）B项表述。",
-      "C": "（自动补全选项C）C项表述。",
-      "D": "（自动补全选项D）D项表述。"
-    },
-    "answer": "D",
-    "analysis": "依据答案文本已回填；选项缺失处已自动补全。",
-    "difficulty": 2,
-    "knowledge_points": [
-      "同步与互斥",
-      "question-txt导入"
-    ],
-    "source_num": 31
-  },
-  {
     "id": "os-txt-0266",
     "subject": "OS",
     "chapter": "同步与互斥",
@@ -5584,27 +4597,6 @@
       "question-txt导入"
     ],
     "source_num": 32
-  },
-  {
-    "id": "os-txt-0267",
-    "subject": "OS",
-    "chapter": "同步与互斥",
-    "chapterSlug": "同步与互斥",
-    "stem": "下列关于临界区和临界资源的说法中，正确的是( ) I.银行家算法可以用来解决临界区(Critical Section)问题 IⅡ.临界区是指进程中用于实现进程互斥的那段代码 III.公用队列属于临界资源 IV.私用数据属于临界资源",
-    "options": {
-      "A": "（自动补全选项A）A项表述。",
-      "B": "（自动补全选项B）B项表述。",
-      "C": "（自动补全选项C）C项表述。",
-      "D": "（自动补全选项D）D项表述。"
-    },
-    "answer": "C",
-    "analysis": "依据答案文本已回填；选项缺失处已自动补全。",
-    "difficulty": 2,
-    "knowledge_points": [
-      "同步与互斥",
-      "question-txt导入"
-    ],
-    "source_num": 33
   },
   {
     "id": "os-txt-0268",
@@ -5628,27 +4620,6 @@
     "source_num": 34
   },
   {
-    "id": "os-txt-0269",
-    "subject": "OS",
-    "chapter": "同步与互斥",
-    "chapterSlug": "同步与互斥",
-    "stem": "有两个并发进程 和 其程序代码如下： PIOE                               P20（ x=1;           //A1                   x=-3;      //B1 可能打印出的一值有( )，可能打印出的 值有( )(其中 为 的共享变量)。",
-    "options": {
-      "A": "（自动补全选项A）A项表述。",
-      "B": "（自动补全选项B）B项表述。",
-      "C": "（自动补全选项C）C项表述。",
-      "D": "（自动补全选项D）D项表述。"
-    },
-    "answer": "D",
-    "analysis": "依据答案文本已回填；选项缺失处已自动补全。",
-    "difficulty": 2,
-    "knowledge_points": [
-      "同步与互斥",
-      "question-txt导入"
-    ],
-    "source_num": 35
-  },
-  {
     "id": "os-txt-0270",
     "subject": "OS",
     "chapter": "同步与互斥",
@@ -5668,48 +4639,6 @@
       "question-txt导入"
     ],
     "source_num": 36
-  },
-  {
-    "id": "os-txt-0271",
-    "subject": "OS",
-    "chapter": "同步与互斥",
-    "chapterSlug": "同步与互斥",
-    "stem": "若系统中有 4 个进程共享 3 台打印机, 采用信号量机制控制打印机的共享使用, 则信号量的取值范围是()",
-    "options": {
-      "A": "（自动补全选项A）A项表述。",
-      "B": "（自动补全选项B）B项表述。",
-      "C": "（自动补全选项C）C项表述。",
-      "D": "（自动补全选项D）D项表述。"
-    },
-    "answer": "C",
-    "analysis": "依据答案文本已回填；选项缺失处已自动补全。",
-    "difficulty": 2,
-    "knowledge_points": [
-      "同步与互斥",
-      "question-txt导入"
-    ],
-    "source_num": 37
-  },
-  {
-    "id": "os-txt-0272",
-    "subject": "OS",
-    "chapter": "同步与互斥",
-    "chapterSlug": "同步与互斥",
-    "stem": "两个进程 和 互斥的Peterson 算法描述如下： 进程PO                                      进程PI flag[0]=1；                                             flag[1]=1; (1);                                                      (2); while(flag[1]&& turn =1)；                   while(flag[0]&& turn ==0)； 临界区；                                                  临界区； flag[0]=0；                                              flag[1]-0; 其余代码;                                             其余代码； 其中，(1)和(2)处的代码分别为( )",
-    "options": {
-      "A": "（自动补全选项A）A项表述。",
-      "B": "（自动补全选项B）B项表述。",
-      "C": "（自动补全选项C）C项表述。",
-      "D": "（自动补全选项D）D项表述。"
-    },
-    "answer": "B",
-    "analysis": "依据答案文本已回填；选项缺失处已自动补全。",
-    "difficulty": 2,
-    "knowledge_points": [
-      "同步与互斥",
-      "question-txt导入"
-    ],
-    "source_num": 38
   },
   {
     "id": "os-txt-0273",
@@ -5794,27 +4723,6 @@
       "question-txt导入"
     ],
     "source_num": 42
-  },
-  {
-    "id": "os-txt-0277",
-    "subject": "OS",
-    "chapter": "同步与互斥",
-    "chapterSlug": "同步与互斥",
-    "stem": "下列关于生产者-消费者问题的唤醒操作的说法中，正确的是( )",
-    "options": {
-      "A": "（自动补全选项A）A项表述。",
-      "B": "（自动补全选项B）B项表述。",
-      "C": "（自动补全选项C）C项表述。",
-      "D": "（自动补全选项D）D项表述。"
-    },
-    "answer": "C",
-    "analysis": "依据答案文本已回填；选项缺失处已自动补全。",
-    "difficulty": 2,
-    "knowledge_points": [
-      "同步与互斥",
-      "question-txt导入"
-    ],
-    "source_num": 43
   },
   {
     "id": "os-txt-0278",
@@ -6027,27 +4935,6 @@
     "source_num": 52
   },
   {
-    "id": "os-txt-0288",
-    "subject": "OS",
-    "chapter": "同步与互斥",
-    "chapterSlug": "同步与互斥",
-    "stem": "【2016 统考真题】进程 和均包含并发执行的线程，部分伪代码描述如下所示。 //进程 PI                                  //进程P2 int x = 0;                                          int x = 0; Thread10f                         Thread30f int a;                                             int a; x+=1；                               x +=3; Thread20f                           Thread40f int a;                                                int b; a = 2;                                b=x; x+=2;                            x+= 4; 下列选项中，需要互斥执行的操作是( )",
-    "options": {
-      "A": "（自动补全选项A）A项表述。",
-      "B": "（自动补全选项B）B项表述。",
-      "C": "（自动补全选项C）C项表述。",
-      "D": "（自动补全选项D）D项表述。"
-    },
-    "answer": "A",
-    "analysis": "依据答案文本已回填；选项缺失处已自动补全。",
-    "difficulty": 2,
-    "knowledge_points": [
-      "同步与互斥",
-      "question-txt导入"
-    ],
-    "source_num": 53
-  },
-  {
     "id": "os-txt-0289",
     "subject": "OS",
     "chapter": "同步与互斥",
@@ -6151,27 +5038,6 @@
       "question-txt导入"
     ],
     "source_num": 58
-  },
-  {
-    "id": "os-txt-0294",
-    "subject": "OS",
-    "chapter": "同步与互斥",
-    "chapterSlug": "同步与互斥",
-    "stem": "【2020 统考真题】下列准则中, 实现临界区互斥机制必须遵循的是( )",
-    "options": {
-      "A": "（自动补全选项A）A项表述。",
-      "B": "（自动补全选项B）B项表述。",
-      "C": "（自动补全选项C）C项表述。",
-      "D": "（自动补全选项D）D项表述。"
-    },
-    "answer": "B",
-    "analysis": "依据答案文本已回填；选项缺失处已自动补全。",
-    "difficulty": 2,
-    "knowledge_points": [
-      "同步与互斥",
-      "question-txt导入"
-    ],
-    "source_num": 59
   },
   {
     "id": "os-txt-0295",
@@ -6615,69 +5481,6 @@
     "source_num": 20
   },
   {
-    "id": "os-txt-0316",
-    "subject": "OS",
-    "chapter": "死锁",
-    "chapterSlug": "死锁",
-    "stem": "系统的资源分配图在下列情况下， 无法判断是否处于死锁状态的有()",
-    "options": {
-      "A": "（自动补全选项A）A项表述。",
-      "B": "（自动补全选项B）B项表述。",
-      "C": "（自动补全选项C）C项表述。",
-      "D": "（自动补全选项D）D项表述。"
-    },
-    "answer": "C",
-    "analysis": "依据答案文本已回填；选项缺失处已自动补全。",
-    "difficulty": 2,
-    "knowledge_points": [
-      "死锁",
-      "question-txt导入"
-    ],
-    "source_num": 21
-  },
-  {
-    "id": "os-txt-0317",
-    "subject": "OS",
-    "chapter": "死锁",
-    "chapterSlug": "死锁",
-    "stem": "出现了环路                                                           I1.没有环路 II.每种资源只有一个，并出现环路                           IV.每个进程结点至少有一条请求边",
-    "options": {
-      "A": "（自动补全选项A）A项表述。",
-      "B": "（自动补全选项B）B项表述。",
-      "C": "（自动补全选项C）C项表述。",
-      "D": "（自动补全选项D）D项表述。"
-    },
-    "answer": "A",
-    "analysis": "依据答案文本已回填；选项缺失处已自动补全。",
-    "difficulty": 2,
-    "knowledge_points": [
-      "死锁",
-      "question-txt导入"
-    ],
-    "source_num": 1
-  },
-  {
-    "id": "os-txt-0318",
-    "subject": "OS",
-    "chapter": "死锁",
-    "chapterSlug": "死锁",
-    "stem": "下列关于死锁的说法中，正确的有( ) I.死锁状态一定是不安全状态 II.产生死锁的根本原因是系统资源分配不足和进程推进顺序非法 III. 资源的有序分配策略可以破坏死锁的循环等待条件 IV.采用资源剥夺法可以解除死锁，还可以采用撤销进程方法解除死锁",
-    "options": {
-      "A": "（自动补全选项A）A项表述。",
-      "B": "（自动补全选项B）B项表述。",
-      "C": "（自动补全选项C）C项表述。",
-      "D": "（自动补全选项D）D项表述。"
-    },
-    "answer": "B",
-    "analysis": "依据答案文本已回填；选项缺失处已自动补全。",
-    "difficulty": 2,
-    "knowledge_points": [
-      "死锁",
-      "question-txt导入"
-    ],
-    "source_num": 22
-  },
-  {
     "id": "os-txt-0319",
     "subject": "OS",
     "chapter": "死锁",
@@ -6739,27 +5542,6 @@
       "question-txt导入"
     ],
     "source_num": 25
-  },
-  {
-    "id": "os-txt-0322",
-    "subject": "OS",
-    "chapter": "死锁",
-    "chapterSlug": "死锁",
-    "stem": "假设具有5个进程的进程集合 系统中有三类资源 A, B, C, 假设在某时刻有如下状态，见下表。系统是处于安全状态的，则 的取值可能是() Allocation  Max  Available 进程名 A BC  ABC P:      135    235   xyz Pa     001    065 1.1, 4，0                               11. 0, 6, 2                             III. 1, 1, 1                            IV.0,4,7",
-    "options": {
-      "A": "（自动补全选项A）A项表述。",
-      "B": "（自动补全选项B）B项表述。",
-      "C": "（自动补全选项C）C项表述。",
-      "D": "（自动补全选项D）D项表述。"
-    },
-    "answer": "D",
-    "analysis": "依据答案文本已回填；选项缺失处已自动补全。",
-    "difficulty": 2,
-    "knowledge_points": [
-      "死锁",
-      "question-txt导入"
-    ],
-    "source_num": 26
   },
   {
     "id": "os-txt-0323",
@@ -6909,48 +5691,6 @@
     "source_num": 33
   },
   {
-    "id": "os-txt-0330",
-    "subject": "OS",
-    "chapter": "死锁",
-    "chapterSlug": "死锁",
-    "stem": "【2011统考真题】某时刻进程的资源使用情况见下表，此时的安全序列是( ) 进程名      已分配资源          尚需分配            可用资源 R;  R:  Ry  Ri       Ry R R2 Ry Pi   2  0  0  0  0   1 Ps   0  1  1  1  3  1",
-    "options": {
-      "A": "（自动补全选项A）A项表述。",
-      "B": "（自动补全选项B）B项表述。",
-      "C": "（自动补全选项C）C项表述。",
-      "D": "（自动补全选项D）D项表述。"
-    },
-    "answer": "B",
-    "analysis": "依据答案文本已回填；选项缺失处已自动补全。",
-    "difficulty": 2,
-    "knowledge_points": [
-      "死锁",
-      "question-txt导入"
-    ],
-    "source_num": 34
-  },
-  {
-    "id": "os-txt-0331",
-    "subject": "OS",
-    "chapter": "死锁",
-    "chapterSlug": "死锁",
-    "stem": "【2012统考真题】假设5个进程 共享三类资源 这些资源总数分别为18, 6， 时刻的资源分配情况如下表所示，此时存在的一个安全序列是( ) 进程名         已分配资源           资源最大需求 R;   R:   R3   R;   Rz   Ry Pz     4   0   5   4   0 Ps   3  1  4  4  2   4",
-    "options": {
-      "A": "（自动补全选项A）A项表述。",
-      "B": "（自动补全选项B）B项表述。",
-      "C": "（自动补全选项C）C项表述。",
-      "D": "（自动补全选项D）D项表述。"
-    },
-    "answer": "D",
-    "analysis": "依据答案文本已回填；选项缺失处已自动补全。",
-    "difficulty": 2,
-    "knowledge_points": [
-      "死锁",
-      "question-txt导入"
-    ],
-    "source_num": 35
-  },
-  {
     "id": "os-txt-0332",
     "subject": "OS",
     "chapter": "死锁",
@@ -6993,48 +5733,6 @@
     "source_num": 37
   },
   {
-    "id": "os-txt-0334",
-    "subject": "OS",
-    "chapter": "死锁",
-    "chapterSlug": "死锁",
-    "stem": "【2015 统考真题】若系统 采用死锁避免方法， 采用死锁检测方法。下列叙述中，正确的是()",
-    "options": {
-      "A": "（自动补全选项A）A项表述。",
-      "B": "（自动补全选项B）B项表述。",
-      "C": "（自动补全选项C）C项表述。",
-      "D": "（自动补全选项D）D项表述。"
-    },
-    "answer": "B",
-    "analysis": "依据答案文本已回填；选项缺失处已自动补全。",
-    "difficulty": 2,
-    "knowledge_points": [
-      "死锁",
-      "question-txt导入"
-    ],
-    "source_num": 38
-  },
-  {
-    "id": "os-txt-0335",
-    "subject": "OS",
-    "chapter": "死锁",
-    "chapterSlug": "死锁",
-    "stem": "会限制用户申请资源的顺序，而 不会 II. 需要进程运行所需的资源总量信息，而 不需要 III.不会给可能导致死锁的进程分配资源，而 会",
-    "options": {
-      "A": "（自动补全选项A）A项表述。",
-      "B": "（自动补全选项B）B项表述。",
-      "C": "（自动补全选项C）C项表述。",
-      "D": "（自动补全选项D）D项表述。"
-    },
-    "answer": "A",
-    "analysis": "依据答案文本已回填；选项缺失处已自动补全。",
-    "difficulty": 2,
-    "knowledge_points": [
-      "死锁",
-      "question-txt导入"
-    ],
-    "source_num": 1
-  },
-  {
     "id": "os-txt-0336",
     "subject": "OS",
     "chapter": "死锁",
@@ -7075,27 +5773,6 @@
       "question-txt导入"
     ],
     "source_num": 40
-  },
-  {
-    "id": "os-txt-0338",
-    "subject": "OS",
-    "chapter": "死锁",
-    "chapterSlug": "死锁",
-    "stem": "【2019统考真题】下列关于死锁的叙述中，正确的是()",
-    "options": {
-      "A": "（自动补全选项A）A项表述。",
-      "B": "（自动补全选项B）B项表述。",
-      "C": "（自动补全选项C）C项表述。",
-      "D": "（自动补全选项D）D项表述。"
-    },
-    "answer": "B",
-    "analysis": "依据答案文本已回填；选项缺失处已自动补全。",
-    "difficulty": 2,
-    "knowledge_points": [
-      "死锁",
-      "question-txt导入"
-    ],
-    "source_num": 41
   },
   {
     "id": "os-txt-0339",
@@ -7350,27 +6027,6 @@
     "source_num": 8
   },
   {
-    "id": "os-txt-0351",
-    "subject": "OS",
-    "chapter": "内存管理概念",
-    "chapterSlug": "内存管理概念",
-    "stem": "某分段存储管理系统中, 段表内容如下表所示, 逻辑地址的格式为（段号, 段内偏移）, 则逻辑地址 （2.154）对应的物理地址是( ) 段号          段首址          段长度 0        120K        40K 1         760K         30K 2         480K         20K 3        370K        20K",
-    "options": {
-      "A": "（自动补全选项A）A项表述。",
-      "B": "480K+154",
-      "C": "30K+154",
-      "D": "480K+2"
-    },
-    "answer": "B",
-    "analysis": "依据答案文本已回填；选项缺失处已自动补全。",
-    "difficulty": 2,
-    "knowledge_points": [
-      "内存管理概念",
-      "question-txt导入"
-    ],
-    "source_num": 9
-  },
-  {
     "id": "os-txt-0352",
     "subject": "OS",
     "chapter": "内存管理概念",
@@ -7411,69 +6067,6 @@
       "question-txt导入"
     ],
     "source_num": 11
-  },
-  {
-    "id": "os-txt-0354",
-    "subject": "OS",
-    "chapter": "内存管理概念",
-    "chapterSlug": "内存管理概念",
-    "stem": "动态重定位的过程依赖于( ) I.可重定位装入程序      II. 重定位寄存器             III.地址变换机构",
-    "options": {
-      "A": "I和Ⅱ",
-      "B": "II和I",
-      "C": "I、II和I",
-      "D": "（自动补全选项D）D项表述。"
-    },
-    "answer": "B",
-    "analysis": "依据答案文本已回填；选项缺失处已自动补全。",
-    "difficulty": 2,
-    "knowledge_points": [
-      "内存管理概念",
-      "question-txt导入"
-    ],
-    "source_num": 12
-  },
-  {
-    "id": "os-txt-0355",
-    "subject": "OS",
-    "chapter": "内存管理概念",
-    "chapterSlug": "内存管理概念",
-    "stem": "为保证一个程序在主存中被改变存放位置后仍能正确执行，应采用( )",
-    "options": {
-      "A": "静态重定位",
-      "B": "动态重定位",
-      "C": "动态分配",
-      "D": "（自动补全选项D）D项表述。"
-    },
-    "answer": "A",
-    "analysis": "依据答案文本已回填；选项缺失处已自动补全。",
-    "difficulty": 2,
-    "knowledge_points": [
-      "内存管理概念",
-      "question-txt导入"
-    ],
-    "source_num": 13
-  },
-  {
-    "id": "os-txt-0356",
-    "subject": "OS",
-    "chapter": "内存管理概念",
-    "chapterSlug": "内存管理概念",
-    "stem": "下面的存储管理方案中，( )方式可以采用静态重定位。",
-    "options": {
-      "A": "固定分区",
-      "B": "可变分区",
-      "C": "页式",
-      "D": "（自动补全选项D）D项表述。"
-    },
-    "answer": "BC",
-    "analysis": "依据答案文本已回填；选项缺失处已自动补全。",
-    "difficulty": 2,
-    "knowledge_points": [
-      "内存管理概念",
-      "question-txt导入"
-    ],
-    "source_num": 14
   },
   {
     "id": "os-txt-0357",
@@ -7747,27 +6340,6 @@
       "question-txt导入"
     ],
     "source_num": 27
-  },
-  {
-    "id": "os-txt-0370",
-    "subject": "OS",
-    "chapter": "内存管理概念",
-    "chapterSlug": "内存管理概念",
-    "stem": "在段式存储管理中，若一个进程有  个段，则该进程需要( )个段表。",
-    "options": {
-      "A": "n",
-      "B": "（自动补全选项B）B项表述。",
-      "C": "1",
-      "D": "2"
-    },
-    "answer": "A",
-    "analysis": "依据答案文本已回填；选项缺失处已自动补全。",
-    "difficulty": 2,
-    "knowledge_points": [
-      "内存管理概念",
-      "question-txt导入"
-    ],
-    "source_num": 28
   },
   {
     "id": "os-txt-0371",
@@ -8274,48 +6846,6 @@
     "source_num": 52
   },
   {
-    "id": "os-txt-0395",
-    "subject": "OS",
-    "chapter": "内存管理概念",
-    "chapterSlug": "内存管理概念",
-    "stem": "以下存储管理方式中，会产生内部碎片的是( ) I.分段虚拟存储管理      II.分页虚拟存储管理    III. 段页式分区管理       IV.固定式分区管理",
-    "options": {
-      "A": "（自动补全选项A）A项表述。",
-      "B": "（自动补全选项B）B项表述。",
-      "C": "（自动补全选项C）C项表述。",
-      "D": "（自动补全选项D）D项表述。"
-    },
-    "answer": "B",
-    "analysis": "依据答案文本已回填；选项缺失处已自动补全。",
-    "difficulty": 2,
-    "knowledge_points": [
-      "内存管理概念",
-      "question-txt导入"
-    ],
-    "source_num": 53
-  },
-  {
-    "id": "os-txt-0396",
-    "subject": "OS",
-    "chapter": "内存管理概念",
-    "chapterSlug": "内存管理概念",
-    "stem": "下列关于页式存储管理的论述中，正确的是( ) I.若关闭TLB，则每取一条指令或一个操作数都至少要访存2次 Ⅱ.页式存储管理不会产生内部碎片 III.页式存储管理中的页面是为用户所感知的 IV.页式存储方式可以采用静态重定位",
-    "options": {
-      "A": "（自动补全选项A）A项表述。",
-      "B": "（自动补全选项B）B项表述。",
-      "C": "（自动补全选项C）C项表述。",
-      "D": "（自动补全选项D）D项表述。"
-    },
-    "answer": "B",
-    "analysis": "依据答案文本已回填；选项缺失处已自动补全。",
-    "difficulty": 2,
-    "knowledge_points": [
-      "内存管理概念",
-      "question-txt导入"
-    ],
-    "source_num": 54
-  },
-  {
     "id": "os-txt-0397",
     "subject": "OS",
     "chapter": "内存管理概念",
@@ -8398,27 +6928,6 @@
       "question-txt导入"
     ],
     "source_num": 58
-  },
-  {
-    "id": "os-txt-0401",
-    "subject": "OS",
-    "chapter": "内存管理概念",
-    "chapterSlug": "内存管理概念",
-    "stem": "若对经典的页式存储管理方式的页表做出稍微改造, 允许不同页表的页表项指向同一个页帧, 则可能的结果有( ) I.可以实现对可重入代码的共享 IⅡ.只需修改页表项，就能实现内存“复制”操作 III.容易发生越界访问 IV. 可以实现进程间通信",
-    "options": {
-      "A": "（自动补全选项A）A项表述。",
-      "B": "（自动补全选项B）B项表述。",
-      "C": "（自动补全选项C）C项表述。",
-      "D": "（自动补全选项D）D项表述。"
-    },
-    "answer": "B",
-    "analysis": "依据答案文本已回填；选项缺失处已自动补全。",
-    "difficulty": 2,
-    "knowledge_points": [
-      "内存管理概念",
-      "question-txt导入"
-    ],
-    "source_num": 59
   },
   {
     "id": "os-txt-0402",
@@ -8673,27 +7182,6 @@
     "source_num": 71
   },
   {
-    "id": "os-txt-0414",
-    "subject": "OS",
-    "chapter": "内存管理概念",
-    "chapterSlug": "内存管理概念",
-    "stem": "【2023统考真题】进程 R 和S共享数据data,若data 在R和S中所在页的页号分别为pl 和p2, 两个页所对应的页框号分别为fl和f2，则下列叙述中，正确的是( )",
-    "options": {
-      "A": "p1和 一定相等，f1和f2一定相等",
-      "B": "pl和p2一定相等，f1和f2不一定相等",
-      "C": "（自动补全选项C）C项表述。",
-      "D": "（自动补全选项D）D项表述。"
-    },
-    "answer": "D",
-    "analysis": "依据答案文本已回填；选项缺失处已自动补全。",
-    "difficulty": 2,
-    "knowledge_points": [
-      "内存管理概念",
-      "question-txt导入"
-    ],
-    "source_num": 72
-  },
-  {
     "id": "os-txt-0415",
     "subject": "OS",
     "chapter": "内存管理概念",
@@ -8946,27 +7434,6 @@
     "source_num": 11
   },
   {
-    "id": "os-txt-0427",
-    "subject": "OS",
-    "chapter": "虚拟内存管理",
-    "chapterSlug": "虚拟内存管理",
-    "stem": "假设某个进程分配有 4 个页框, 每个页框大小为 128 个字 （一个整数占一个字）。进程的代码段正好可以存放在一页中, 而且总是占用0号页框。数据会在其他3个页框中换进或换出。数组X为按行优先存储，则执行该进程会发生( )次缺页中断。 int X[64][64]；",
-    "options": {
-      "A": "（自动补全选项A）A项表述。",
-      "B": "（自动补全选项B）B项表述。",
-      "C": "（自动补全选项C）C项表述。",
-      "D": "（自动补全选项D）D项表述。"
-    },
-    "answer": "B",
-    "analysis": "依据答案文本已回填；选项缺失处已自动补全。",
-    "difficulty": 2,
-    "knowledge_points": [
-      "虚拟内存管理",
-      "question-txt导入"
-    ],
-    "source_num": 12
-  },
-  {
     "id": "os-txt-0428",
     "subject": "OS",
     "chapter": "虚拟内存管理",
@@ -9009,27 +7476,6 @@
     "source_num": 14
   },
   {
-    "id": "os-txt-0430",
-    "subject": "OS",
-    "chapter": "虚拟内存管理",
-    "chapterSlug": "虚拟内存管理",
-    "stem": "考虑页面置换算法，系统有 个物理块供调度, 初始时全空, 页面引用串长度为 包含了 个不同的页号，无论用什么算法，缺页次数不会少于( )",
-    "options": {
-      "A": "（自动补全选项A）A项表述。",
-      "B": "（自动补全选项B）B项表述。",
-      "C": "（自动补全选项C）C项表述。",
-      "D": "（自动补全选项D）D项表述。"
-    },
-    "answer": "C",
-    "analysis": "依据答案文本已回填；选项缺失处已自动补全。",
-    "difficulty": 2,
-    "knowledge_points": [
-      "虚拟内存管理",
-      "question-txt导入"
-    ],
-    "source_num": 15
-  },
-  {
     "id": "os-txt-0431",
     "subject": "OS",
     "chapter": "虚拟内存管理",
@@ -9049,27 +7495,6 @@
       "question-txt导入"
     ],
     "source_num": 16
-  },
-  {
-    "id": "os-txt-0432",
-    "subject": "OS",
-    "chapter": "虚拟内存管理",
-    "chapterSlug": "虚拟内存管理",
-    "stem": "一台机器有32位虚拟地址和16位物理地址，若页面大小为512B，采用单级页表，则页表共有( )个页表项。",
-    "options": {
-      "A": "（自动补全选项A）A项表述。",
-      "B": "（自动补全选项B）B项表述。",
-      "C": "（自动补全选项C）C项表述。",
-      "D": "（自动补全选项D）D项表述。"
-    },
-    "answer": "B",
-    "analysis": "依据答案文本已回填；选项缺失处已自动补全。",
-    "difficulty": 2,
-    "knowledge_points": [
-      "虚拟内存管理",
-      "question-txt导入"
-    ],
-    "source_num": 18
   },
   {
     "id": "os-txt-0433",
@@ -9175,27 +7600,6 @@
       "question-txt导入"
     ],
     "source_num": 23
-  },
-  {
-    "id": "os-txt-0438",
-    "subject": "OS",
-    "chapter": "虚拟内存管理",
-    "chapterSlug": "虚拟内存管理",
-    "stem": "在页面置换策略中，( )策略可能引起抖动",
-    "options": {
-      "A": "（自动补全选项A）A项表述。",
-      "B": "（自动补全选项B）B项表述。",
-      "C": "（自动补全选项C）C项表述。",
-      "D": "（自动补全选项D）D项表述。"
-    },
-    "answer": "B",
-    "analysis": "依据答案文本已回填；选项缺失处已自动补全。",
-    "difficulty": 2,
-    "knowledge_points": [
-      "虚拟内存管理",
-      "question-txt导入"
-    ],
-    "source_num": 24
   },
   {
     "id": "os-txt-0439",
@@ -9450,27 +7854,6 @@
     "source_num": 36
   },
   {
-    "id": "os-txt-0451",
-    "subject": "OS",
-    "chapter": "虚拟内存管理",
-    "chapterSlug": "虚拟内存管理",
-    "stem": "下列说法中，正确的是( )",
-    "options": {
-      "A": "（自动补全选项A）A项表述。",
-      "B": "（自动补全选项B）B项表述。",
-      "C": "（自动补全选项C）C项表述。",
-      "D": "（自动补全选项D）D项表述。"
-    },
-    "answer": "D",
-    "analysis": "依据答案文本已回填；选项缺失处已自动补全。",
-    "difficulty": 2,
-    "knowledge_points": [
-      "虚拟内存管理",
-      "question-txt导入"
-    ],
-    "source_num": 38
-  },
-  {
     "id": "os-txt-0452",
     "subject": "OS",
     "chapter": "虚拟内存管理",
@@ -9513,27 +7896,6 @@
     "source_num": 39
   },
   {
-    "id": "os-txt-0454",
-    "subject": "OS",
-    "chapter": "虚拟内存管理",
-    "chapterSlug": "虚拟内存管理",
-    "stem": "假定有一个请求分页存储管理系统, 测得系统各相关设备的利用率为: CPU 的利用率为 10%, 磁盘交换区的利用率为 99.7%, 其他 I/O 设备的利用率为5%。下面()措施将可能改进CPU的利用率。",
-    "options": {
-      "A": "（自动补全选项A）A项表述。",
-      "B": "（自动补全选项B）B项表述。",
-      "C": "（自动补全选项C）C项表述。",
-      "D": "（自动补全选项D）D项表述。"
-    },
-    "answer": "A",
-    "analysis": "依据答案文本已回填；选项缺失处已自动补全。",
-    "difficulty": 2,
-    "knowledge_points": [
-      "虚拟内存管理",
-      "question-txt导入"
-    ],
-    "source_num": 40
-  },
-  {
     "id": "os-txt-0455",
     "subject": "OS",
     "chapter": "虚拟内存管理",
@@ -9555,27 +7917,6 @@
     "source_num": 1
   },
   {
-    "id": "os-txt-0456",
-    "subject": "OS",
-    "chapter": "虚拟内存管理",
-    "chapterSlug": "虚拟内存管理",
-    "stem": "在请求分页存储管理系统中，为了提高TLB命中率，可行的方法是( )",
-    "options": {
-      "A": "（自动补全选项A）A项表述。",
-      "B": "（自动补全选项B）B项表述。",
-      "C": "（自动补全选项C）C项表述。",
-      "D": "（自动补全选项D）D项表述。"
-    },
-    "answer": "B",
-    "analysis": "依据答案文本已回填；选项缺失处已自动补全。",
-    "difficulty": 2,
-    "knowledge_points": [
-      "虚拟内存管理",
-      "question-txt导入"
-    ],
-    "source_num": 41
-  },
-  {
     "id": "os-txt-0457",
     "subject": "OS",
     "chapter": "虚拟内存管理",
@@ -9595,27 +7936,6 @@
       "question-txt导入"
     ],
     "source_num": 1
-  },
-  {
-    "id": "os-txt-0458",
-    "subject": "OS",
-    "chapter": "虚拟内存管理",
-    "chapterSlug": "虚拟内存管理",
-    "stem": "【2011统考真题】在缺页处理过程中，操作系统执行的操作可能是( )",
-    "options": {
-      "A": "（自动补全选项A）A项表述。",
-      "B": "（自动补全选项B）B项表述。",
-      "C": "（自动补全选项C）C项表述。",
-      "D": "（自动补全选项D）D项表述。"
-    },
-    "answer": "D",
-    "analysis": "依据答案文本已回填；选项缺失处已自动补全。",
-    "difficulty": 2,
-    "knowledge_points": [
-      "虚拟内存管理",
-      "question-txt导入"
-    ],
-    "source_num": 42
   },
   {
     "id": "os-txt-0459",
@@ -9679,27 +7999,6 @@
       "question-txt导入"
     ],
     "source_num": 44
-  },
-  {
-    "id": "os-txt-0462",
-    "subject": "OS",
-    "chapter": "虚拟内存管理",
-    "chapterSlug": "虚拟内存管理",
-    "stem": "【2013统考真题】若用户进程访问内存时产生缺页，则下列选项中，操作系统可能执行的操作是()",
-    "options": {
-      "A": "（自动补全选项A）A项表述。",
-      "B": "（自动补全选项B）B项表述。",
-      "C": "（自动补全选项C）C项表述。",
-      "D": "（自动补全选项D）D项表述。"
-    },
-    "answer": "A",
-    "analysis": "依据答案文本已回填；选项缺失处已自动补全。",
-    "difficulty": 2,
-    "knowledge_points": [
-      "虚拟内存管理",
-      "question-txt导入"
-    ],
-    "source_num": 45
   },
   {
     "id": "os-txt-0463",
@@ -9807,48 +8106,6 @@
     "source_num": 49
   },
   {
-    "id": "os-txt-0468",
-    "subject": "OS",
-    "chapter": "虚拟内存管理",
-    "chapterSlug": "虚拟内存管理",
-    "stem": "【2016 统考真题】某系统采用改进型 置换算法，页表项中字段  为访问位， 为修改位。 表示页最近没有被访问， 表示页最近被访问过。 表示页未被修改过， 表示页被修改过。按 所有可能的取值, 将页分为 和 四类，则该算法淘汰页的次序为( )",
-    "options": {
-      "A": "（自动补全选项A）A项表述。",
-      "B": "（自动补全选项B）B项表述。",
-      "C": "（自动补全选项C）C项表述。",
-      "D": "（自动补全选项D）D项表述。"
-    },
-    "answer": "D",
-    "analysis": "依据答案文本已回填；选项缺失处已自动补全。",
-    "difficulty": 2,
-    "knowledge_points": [
-      "虚拟内存管理",
-      "question-txt导入"
-    ],
-    "source_num": 50
-  },
-  {
-    "id": "os-txt-0469",
-    "subject": "OS",
-    "chapter": "虚拟内存管理",
-    "chapterSlug": "虚拟内存管理",
-    "stem": "【2016 统考真题】某进程访问页面的序列如下所示（注意, 抖动和工作集已从最新大纲中删除）。 若工作集的窗口大小为 则在  时刻的工作集为( )",
-    "options": {
-      "A": "（自动补全选项A）A项表述。",
-      "B": "（自动补全选项B）B项表述。",
-      "C": "（自动补全选项C）C项表述。",
-      "D": "（自动补全选项D）D项表述。"
-    },
-    "answer": "B",
-    "analysis": "依据答案文本已回填；选项缺失处已自动补全。",
-    "difficulty": 2,
-    "knowledge_points": [
-      "虚拟内存管理",
-      "question-txt导入"
-    ],
-    "source_num": 51
-  },
-  {
     "id": "os-txt-0470",
     "subject": "OS",
     "chapter": "虚拟内存管理",
@@ -9868,27 +8125,6 @@
       "question-txt导入"
     ],
     "source_num": 52
-  },
-  {
-    "id": "os-txt-0471",
-    "subject": "OS",
-    "chapter": "虚拟内存管理",
-    "chapterSlug": "虚拟内存管理",
-    "stem": "【2020统考真题】下列因素中，影响请求分页系统有效（平均）访存时间的是（ ）",
-    "options": {
-      "A": "（自动补全选项A）A项表述。",
-      "B": "（自动补全选项B）B项表述。",
-      "C": "（自动补全选项C）C项表述。",
-      "D": "（自动补全选项D）D项表述。"
-    },
-    "answer": "A",
-    "analysis": "依据答案文本已回填；选项缺失处已自动补全。",
-    "difficulty": 2,
-    "knowledge_points": [
-      "虚拟内存管理",
-      "question-txt导入"
-    ],
-    "source_num": 53
   },
   {
     "id": "os-txt-0472",
@@ -10458,48 +8694,6 @@
     "source_num": 22
   },
   {
-    "id": "os-txt-0499",
-    "subject": "OS",
-    "chapter": "进程与线程",
-    "chapterSlug": "进程与线程",
-    "stem": "若文件的物理结构采用连续分配, 则 FCB 中有关文件的物理位置的信息应包括( )",
-    "options": {
-      "A": "（自动补全选项A）A项表述。",
-      "B": "（自动补全选项B）B项表述。",
-      "C": "（自动补全选项C）C项表述。",
-      "D": "（自动补全选项D）D项表述。"
-    },
-    "answer": "B",
-    "analysis": "依据答案文本已回填；选项缺失处已自动补全。",
-    "difficulty": 2,
-    "knowledge_points": [
-      "进程与线程",
-      "question-txt导入"
-    ],
-    "source_num": 23
-  },
-  {
-    "id": "os-txt-0500",
-    "subject": "OS",
-    "chapter": "进程与线程",
-    "chapterSlug": "进程与线程",
-    "stem": "首块地址                      I1. 文件长度                    III.索引表地址",
-    "options": {
-      "A": "（自动补全选项A）A项表述。",
-      "B": "（自动补全选项B）B项表述。",
-      "C": "（自动补全选项C）C项表述。",
-      "D": "（自动补全选项D）D项表述。"
-    },
-    "answer": "B",
-    "analysis": "依据答案文本已回填；选项缺失处已自动补全。",
-    "difficulty": 2,
-    "knowledge_points": [
-      "进程与线程",
-      "question-txt导入"
-    ],
-    "source_num": 1
-  },
-  {
     "id": "os-txt-0501",
     "subject": "OS",
     "chapter": "进程与线程",
@@ -10792,27 +8986,6 @@
       "question-txt导入"
     ],
     "source_num": 37
-  },
-  {
-    "id": "os-txt-0515",
-    "subject": "OS",
-    "chapter": "进程与线程",
-    "chapterSlug": "进程与线程",
-    "stem": "文件系统采用两级索引分配方式。若每个磁盘块的大小为 1KB, 每个盘块号占 4B, 则该系统中单个文件的最大长度是( )",
-    "options": {
-      "A": "（自动补全选项A）A项表述。",
-      "B": "（自动补全选项B）B项表述。",
-      "C": "（自动补全选项C）C项表述。",
-      "D": "（自动补全选项D）D项表述。"
-    },
-    "answer": "D",
-    "analysis": "依据答案文本已回填；选项缺失处已自动补全。",
-    "difficulty": 2,
-    "knowledge_points": [
-      "进程与线程",
-      "question-txt导入"
-    ],
-    "source_num": 38
   },
   {
     "id": "os-txt-0516",
@@ -11277,48 +9450,6 @@
     "source_num": 4
   },
   {
-    "id": "os-txt-0538",
-    "subject": "OS",
-    "chapter": "目录",
-    "chapterSlug": "目录",
-    "stem": "下面的说法中，错误的是( )",
-    "options": {
-      "A": "（自动补全选项A）A项表述。",
-      "B": "（自动补全选项B）B项表述。",
-      "C": "（自动补全选项C）C项表述。",
-      "D": "（自动补全选项D）D项表述。"
-    },
-    "answer": "C",
-    "analysis": "依据答案文本已回填；选项缺失处已自动补全。",
-    "difficulty": 2,
-    "knowledge_points": [
-      "目录",
-      "question-txt导入"
-    ],
-    "source_num": 5
-  },
-  {
-    "id": "os-txt-0539",
-    "subject": "OS",
-    "chapter": "目录",
-    "chapterSlug": "目录",
-    "stem": "一个文件在同一系统中、不同的存储介质上的复制文件, 应采用同一种物理结构 II.对一个文件的访问，常由用户访问权限和用户优先级共同限制 III. 文件系统采用树形目录结构后,对于不同用户的文件, 其文件名应该不同 IV.为防止系统故障造成系统内文件受损，常采用存取控制矩阵方法保护文件",
-    "options": {
-      "A": "（自动补全选项A）A项表述。",
-      "B": "（自动补全选项B）B项表述。",
-      "C": "（自动补全选项C）C项表述。",
-      "D": "（自动补全选项D）D项表述。"
-    },
-    "answer": "B",
-    "analysis": "依据答案文本已回填；选项缺失处已自动补全。",
-    "difficulty": 2,
-    "knowledge_points": [
-      "目录",
-      "question-txt导入"
-    ],
-    "source_num": 1
-  },
-  {
     "id": "os-txt-0540",
     "subject": "OS",
     "chapter": "目录",
@@ -11380,27 +9511,6 @@
       "question-txt导入"
     ],
     "source_num": 8
-  },
-  {
-    "id": "os-txt-0543",
-    "subject": "OS",
-    "chapter": "目录",
-    "chapterSlug": "目录",
-    "stem": "在访问文件时，需要根据文件名对目录文件进行检索，其检索性能主要由( )决定。",
-    "options": {
-      "A": "（自动补全选项A）A项表述。",
-      "B": "（自动补全选项B）B项表述。",
-      "C": "（自动补全选项C）C项表述。",
-      "D": "（自动补全选项D）D项表述。"
-    },
-    "answer": "C",
-    "analysis": "依据答案文本已回填；选项缺失处已自动补全。",
-    "difficulty": 2,
-    "knowledge_points": [
-      "目录",
-      "question-txt导入"
-    ],
-    "source_num": 9
   },
   {
     "id": "os-txt-0544",
@@ -11611,27 +9721,6 @@
       "question-txt导入"
     ],
     "source_num": 1
-  },
-  {
-    "id": "os-txt-0554",
-    "subject": "OS",
-    "chapter": "文件系统",
-    "chapterSlug": "文件系统",
-    "stem": "逻辑文件系统的功能有( )",
-    "options": {
-      "A": "（自动补全选项A）A项表述。",
-      "B": "（自动补全选项B）B项表述。",
-      "C": "（自动补全选项C）C项表述。",
-      "D": "（自动补全选项D）D项表述。"
-    },
-    "answer": "A",
-    "analysis": "依据答案文本已回填；选项缺失处已自动补全。",
-    "difficulty": 2,
-    "knowledge_points": [
-      "文件系统",
-      "question-txt导入"
-    ],
-    "source_num": 2
   },
   {
     "id": "os-txt-0555",
@@ -11907,27 +9996,6 @@
     "source_num": 14
   },
   {
-    "id": "os-txt-0568",
-    "subject": "OS",
-    "chapter": "文件系统",
-    "chapterSlug": "文件系统",
-    "stem": "【2019 统考真题】下列选项中, 可用于文件系统管理空闲磁盘块的数据结构是( )",
-    "options": {
-      "A": "（自动补全选项A）A项表述。",
-      "B": "（自动补全选项B）B项表述。",
-      "C": "（自动补全选项C）C项表述。",
-      "D": "（自动补全选项D）D项表述。"
-    },
-    "answer": "C",
-    "analysis": "依据答案文本已回填；选项缺失处已自动补全。",
-    "difficulty": 2,
-    "knowledge_points": [
-      "文件系统",
-      "question-txt导入"
-    ],
-    "source_num": 15
-  },
-  {
     "id": "os-txt-0569",
     "subject": "OS",
     "chapter": "文件系统",
@@ -12033,27 +10101,6 @@
     "source_num": 2
   },
   {
-    "id": "os-txt-0574",
-    "subject": "OS",
-    "chapter": "1/O 管理概述",
-    "chapterSlug": "1-o-管理概述",
-    "stem": "磁盘设备的I/O控制主要采取()方式。",
-    "options": {
-      "A": "（自动补全选项A）A项表述。",
-      "B": "（自动补全选项B）B项表述。",
-      "C": "（自动补全选项C）C项表述。",
-      "D": "（自动补全选项D）D项表述。"
-    },
-    "answer": "B",
-    "analysis": "依据答案文本已回填；选项缺失处已自动补全。",
-    "difficulty": 2,
-    "knowledge_points": [
-      "1/O 管理概述",
-      "question-txt导入"
-    ],
-    "source_num": 3
-  },
-  {
     "id": "os-txt-0575",
     "subject": "OS",
     "chapter": "1/O 管理概述",
@@ -12073,27 +10120,6 @@
       "question-txt导入"
     ],
     "source_num": 4
-  },
-  {
-    "id": "os-txt-0576",
-    "subject": "OS",
-    "chapter": "1/O 管理概述",
-    "chapterSlug": "1-o-管理概述",
-    "stem": "在设备控制器中用于实现设备控制功能的是( )",
-    "options": {
-      "A": "I/O逻辑",
-      "B": "（自动补全选项B）B项表述。",
-      "C": "I/O逻辑",
-      "D": "设备控制器与设备的接口"
-    },
-    "answer": "A",
-    "analysis": "依据答案文本已回填；选项缺失处已自动补全。",
-    "difficulty": 2,
-    "knowledge_points": [
-      "1/O 管理概述",
-      "question-txt导入"
-    ],
-    "source_num": 5
   },
   {
     "id": "os-txt-0577",
@@ -12390,27 +10416,6 @@
     "source_num": 19
   },
   {
-    "id": "os-txt-0591",
-    "subject": "OS",
-    "chapter": "1/O 管理概述",
-    "chapterSlug": "1-o-管理概述",
-    "stem": "下列1/O方式中，会导致用户进程进入阻塞态的是( )",
-    "options": {
-      "A": "（自动补全选项A）A项表述。",
-      "B": "（自动补全选项B）B项表述。",
-      "C": "（自动补全选项C）C项表述。",
-      "D": "（自动补全选项D）D项表述。"
-    },
-    "answer": "B",
-    "analysis": "依据答案文本已回填；选项缺失处已自动补全。",
-    "difficulty": 2,
-    "knowledge_points": [
-      "1/O 管理概述",
-      "question-txt导入"
-    ],
-    "source_num": 20
-  },
-  {
     "id": "os-txt-0592",
     "subject": "OS",
     "chapter": "1/O 管理概述",
@@ -12621,27 +10626,6 @@
     "source_num": 3
   },
   {
-    "id": "os-txt-0602",
-    "subject": "OS",
-    "chapter": "设备独立性软件",
-    "chapterSlug": "设备独立性软件",
-    "stem": "缓冲技术中的缓冲池在( )中。",
-    "options": {
-      "A": "（自动补全选项A）A项表述。",
-      "B": "（自动补全选项B）B项表述。",
-      "C": "（自动补全选项C）C项表述。",
-      "D": "（自动补全选项D）D项表述。"
-    },
-    "answer": "A",
-    "analysis": "依据答案文本已回填；选项缺失处已自动补全。",
-    "difficulty": 2,
-    "knowledge_points": [
-      "设备独立性软件",
-      "question-txt导入"
-    ],
-    "source_num": 4
-  },
-  {
     "id": "os-txt-0603",
     "subject": "OS",
     "chapter": "设备独立性软件",
@@ -12747,27 +10731,6 @@
     "source_num": 9
   },
   {
-    "id": "os-txt-0608",
-    "subject": "OS",
-    "chapter": "设备独立性软件",
-    "chapterSlug": "设备独立性软件",
-    "stem": "某操作系统采用双缓冲区传送磁盘上的数据。设从磁盘将数据传送到缓冲区所用的时间为 将缓冲区中的数据传送到用户区所用的时间为T, CPU 处理一块数据所用的时间为 假设一个磁盘块和一个缓冲区的大小相等, 某系统在一段时间内连续处理一大批数据, 则平均处理一个磁盘块数据的时间为( )",
-    "options": {
-      "A": "（自动补全选项A）A项表述。",
-      "B": "（自动补全选项B）B项表述。",
-      "C": "（自动补全选项C）C项表述。",
-      "D": "（自动补全选项D）D项表述。"
-    },
-    "answer": "D",
-    "analysis": "依据答案文本已回填；选项缺失处已自动补全。",
-    "difficulty": 2,
-    "knowledge_points": [
-      "设备独立性软件",
-      "question-txt导入"
-    ],
-    "source_num": 10
-  },
-  {
     "id": "os-txt-0609",
     "subject": "OS",
     "chapter": "设备独立性软件",
@@ -12808,27 +10771,6 @@
       "question-txt导入"
     ],
     "source_num": 12
-  },
-  {
-    "id": "os-txt-0611",
-    "subject": "OS",
-    "chapter": "设备独立性软件",
-    "chapterSlug": "设备独立性软件",
-    "stem": "考虑单用户计算机上的下列/O操作，需要使用缓冲技术的是() I. 图形用户界面下使用鼠标 I.多任务操作系统下的磁带驱动器（假设没有设备预分配） III.包含用户文件的磁盘驱动器 IV. 使用存储器映射 IO, 直接和总线相连的图形卡",
-    "options": {
-      "A": "（自动补全选项A）A项表述。",
-      "B": "（自动补全选项B）B项表述。",
-      "C": "（自动补全选项C）C项表述。",
-      "D": "（自动补全选项D）D项表述。"
-    },
-    "answer": "D",
-    "analysis": "依据答案文本已回填；选项缺失处已自动补全。",
-    "difficulty": 2,
-    "knowledge_points": [
-      "设备独立性软件",
-      "question-txt导入"
-    ],
-    "source_num": 13
   },
   {
     "id": "os-txt-0612",
@@ -12913,27 +10855,6 @@
       "question-txt导入"
     ],
     "source_num": 17
-  },
-  {
-    "id": "os-txt-0616",
-    "subject": "OS",
-    "chapter": "设备独立性软件",
-    "chapterSlug": "设备独立性软件",
-    "stem": "提高单机资源利用率的关键技术是( )",
-    "options": {
-      "A": "（自动补全选项A）A项表述。",
-      "B": "（自动补全选项B）B项表述。",
-      "C": "（自动补全选项C）C项表述。",
-      "D": "（自动补全选项D）D项表述。"
-    },
-    "answer": "A",
-    "analysis": "依据答案文本已回填；选项缺失处已自动补全。",
-    "difficulty": 2,
-    "knowledge_points": [
-      "设备独立性软件",
-      "question-txt导入"
-    ],
-    "source_num": 18
   },
   {
     "id": "os-txt-0617",
@@ -13102,27 +11023,6 @@
       "question-txt导入"
     ],
     "source_num": 26
-  },
-  {
-    "id": "os-txt-0625",
-    "subject": "OS",
-    "chapter": "设备独立性软件",
-    "chapterSlug": "设备独立性软件",
-    "stem": "( )是操作系统中采用的以空间换取时间的技术。",
-    "options": {
-      "A": "（自动补全选项A）A项表述。",
-      "B": "（自动补全选项B）B项表述。",
-      "C": "（自动补全选项C）C项表述。",
-      "D": "（自动补全选项D）D项表述。"
-    },
-    "answer": "B",
-    "analysis": "依据答案文本已回填；选项缺失处已自动补全。",
-    "difficulty": 2,
-    "knowledge_points": [
-      "设备独立性软件",
-      "question-txt导入"
-    ],
-    "source_num": 27
   },
   {
     "id": "os-txt-0626",
@@ -13461,48 +11361,6 @@
     "source_num": 43
   },
   {
-    "id": "os-txt-0642",
-    "subject": "OS",
-    "chapter": "设备独立性软件",
-    "chapterSlug": "设备独立性软件",
-    "stem": "【2023统考真题】下列关于设备分配的叙述中，需要考虑的是( )",
-    "options": {
-      "A": "（自动补全选项A）A项表述。",
-      "B": "（自动补全选项B）B项表述。",
-      "C": "（自动补全选项C）C项表述。",
-      "D": "（自动补全选项D）D项表述。"
-    },
-    "answer": "B",
-    "analysis": "依据答案文本已回填；选项缺失处已自动补全。",
-    "difficulty": 2,
-    "knowledge_points": [
-      "设备独立性软件",
-      "question-txt导入"
-    ],
-    "source_num": 44
-  },
-  {
-    "id": "os-txt-0643",
-    "subject": "OS",
-    "chapter": "设备独立性软件",
-    "chapterSlug": "设备独立性软件",
-    "stem": "设备的类型                                                             II.设备的访问权限 III. 设备的占用状态                                                      IV.逻辑设备与物理设备的映射关系",
-    "options": {
-      "A": "（自动补全选项A）A项表述。",
-      "B": "（自动补全选项B）B项表述。",
-      "C": "（自动补全选项C）C项表述。",
-      "D": "（自动补全选项D）D项表述。"
-    },
-    "answer": "D",
-    "analysis": "依据答案文本已回填；选项缺失处已自动补全。",
-    "difficulty": 2,
-    "knowledge_points": [
-      "设备独立性软件",
-      "question-txt导入"
-    ],
-    "source_num": 1
-  },
-  {
     "id": "os-txt-0644",
     "subject": "OS",
     "chapter": "设备独立性软件",
@@ -13564,48 +11422,6 @@
       "question-txt导入"
     ],
     "source_num": 2
-  },
-  {
-    "id": "os-txt-0647",
-    "subject": "OS",
-    "chapter": "磁盘和固态硬盘",
-    "chapterSlug": "磁盘和固态硬盘",
-    "stem": "既可以顺序读/写，又可以按任意次序读/写的存储器有()",
-    "options": {
-      "A": "（自动补全选项A）A项表述。",
-      "B": "（自动补全选项B）B项表述。",
-      "C": "（自动补全选项C）C项表述。",
-      "D": "（自动补全选项D）D项表述。"
-    },
-    "answer": "A",
-    "analysis": "依据答案文本已回填；选项缺失处已自动补全。",
-    "difficulty": 2,
-    "knowledge_points": [
-      "磁盘和固态硬盘",
-      "question-txt导入"
-    ],
-    "source_num": 3
-  },
-  {
-    "id": "os-txt-0648",
-    "subject": "OS",
-    "chapter": "磁盘和固态硬盘",
-    "chapterSlug": "磁盘和固态硬盘",
-    "stem": "光盘                            11.磁带                          III. U 盘                         IV.磁盘",
-    "options": {
-      "A": "（自动补全选项A）A项表述。",
-      "B": "（自动补全选项B）B项表述。",
-      "C": "（自动补全选项C）C项表述。",
-      "D": "（自动补全选项D）D项表述。"
-    },
-    "answer": "A",
-    "analysis": "依据答案文本已回填；选项缺失处已自动补全。",
-    "difficulty": 2,
-    "knowledge_points": [
-      "磁盘和固态硬盘",
-      "question-txt导入"
-    ],
-    "source_num": 1
   },
   {
     "id": "os-txt-0649",
@@ -13881,27 +11697,6 @@
     "source_num": 16
   },
   {
-    "id": "os-txt-0662",
-    "subject": "OS",
-    "chapter": "磁盘和固态硬盘",
-    "chapterSlug": "磁盘和固态硬盘",
-    "stem": "已知某磁盘的平均转速为  秒/转, 平均寻道时间为 秒，每个磁道可以存储的字节数为 现向该磁盘读/写  字节的数据, 采用随机寻道的方法, 每道的所有扇区组成一个簇, 其平均访问时间是( )",
-    "options": {
-      "A": "（自动补全选项A）A项表述。",
-      "B": "（自动补全选项B）B项表述。",
-      "C": "（自动补全选项C）C项表述。",
-      "D": "（自动补全选项D）D项表述。"
-    },
-    "answer": "A",
-    "analysis": "依据答案文本已回填；选项缺失处已自动补全。",
-    "difficulty": 2,
-    "knowledge_points": [
-      "磁盘和固态硬盘",
-      "question-txt导入"
-    ],
-    "source_num": 17
-  },
-  {
     "id": "os-txt-0663",
     "subject": "OS",
     "chapter": "磁盘和固态硬盘",
@@ -14133,27 +11928,6 @@
     "source_num": 29
   },
   {
-    "id": "os-txt-0674",
-    "subject": "OS",
-    "chapter": "磁盘和固态硬盘",
-    "chapterSlug": "磁盘和固态硬盘",
-    "stem": "【2018统考真题】下列选项中,磁盘逻辑格式化程序所做的工作是()",
-    "options": {
-      "A": "（自动补全选项A）A项表述。",
-      "B": "（自动补全选项B）B项表述。",
-      "C": "（自动补全选项C）C项表述。",
-      "D": "（自动补全选项D）D项表述。"
-    },
-    "answer": "A",
-    "analysis": "依据答案文本已回填；选项缺失处已自动补全。",
-    "difficulty": 2,
-    "knowledge_points": [
-      "磁盘和固态硬盘",
-      "question-txt导入"
-    ],
-    "source_num": 30
-  },
-  {
     "id": "os-txt-0675",
     "subject": "OS",
     "chapter": "磁盘和固态硬盘",
@@ -14164,48 +11938,6 @@
       "B": "仅 I、IV",
       "C": "仅II、IV",
       "D": "仅1、II、IV"
-    },
-    "answer": "A",
-    "analysis": "依据答案文本已回填；选项缺失处已自动补全。",
-    "difficulty": 2,
-    "knowledge_points": [
-      "磁盘和固态硬盘",
-      "question-txt导入"
-    ],
-    "source_num": 1
-  },
-  {
-    "id": "os-txt-0676",
-    "subject": "OS",
-    "chapter": "磁盘和固态硬盘",
-    "chapterSlug": "磁盘和固态硬盘",
-    "stem": "【2018统考真题】下列优化方法中，可以提高文件访问速度的是( )",
-    "options": {
-      "A": "（自动补全选项A）A项表述。",
-      "B": "（自动补全选项B）B项表述。",
-      "C": "（自动补全选项C）C项表述。",
-      "D": "（自动补全选项D）D项表述。"
-    },
-    "answer": "A",
-    "analysis": "依据答案文本已回填；选项缺失处已自动补全。",
-    "difficulty": 2,
-    "knowledge_points": [
-      "磁盘和固态硬盘",
-      "question-txt导入"
-    ],
-    "source_num": 31
-  },
-  {
-    "id": "os-txt-0677",
-    "subject": "OS",
-    "chapter": "磁盘和固态硬盘",
-    "chapterSlug": "磁盘和固态硬盘",
-    "stem": "提前读                                                                      II.为文件分配连续的簇 III.延迟写                                                                   IV.采用磁盘高速缓存",
-    "options": {
-      "A": "（自动补全选项A）A项表述。",
-      "B": "（自动补全选项B）B项表述。",
-      "C": "（自动补全选项C）C项表述。",
-      "D": "（自动补全选项D）D项表述。"
     },
     "answer": "A",
     "analysis": "依据答案文本已回填；选项缺失处已自动补全。",
