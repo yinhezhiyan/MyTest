@@ -70,10 +70,30 @@ jdbc:mysql://<AIVEN_HOST>:<AIVEN_PORT>/<DB_NAME>?useUnicode=true&characterEncodi
 
 ## 2. 后端部署到 Render（Spring Boot）
 
+你现在这个 Render 界面如果 **Language 下拉里没有 Java**，不要慌，直接用 **Docker** 部署（最稳）：
+
+### 2.0 方式选择
+
+- **优先方案（你当前界面可用）**：`Language = Docker`
+- 备选方案（若你后续账号界面出现 Java）：`Language = Java`
+
+### 2.0.A Docker 部署（推荐，适配你截图这种“没有 Java”）
+
+在 Render 新建 **Web Service**：
+
+- **Language**: `Docker`
+- **Root Directory**: 留空（仓库根目录）
+- **Dockerfile Path**: `springboot/Dockerfile`
+- **Build/Start Command**: 不用填（Dockerfile 已定义）
+
+> 说明：本仓库的 `springboot/Dockerfile` 会构建 Spring Boot 并运行 `app.jar`。
+
+### 2.0.B Java 部署（仅当你的 Render 有 Java 选项时）
+
 在 Render 新建 **Web Service**（连接你的 GitHub 仓库）：
 
 - **Root Directory**: `springboot`
-- **Environment**: `Java`
+- **Language**: `Java`
 - **Build Command**:
   ```bash
   ./mvnw clean package -DskipTests
@@ -150,7 +170,13 @@ jdbc:mysql://<AIVEN_HOST>:<AIVEN_PORT>/<DB_NAME>?useUnicode=true&characterEncodi
 
 ## 6. 你在三个平台需要“复制粘贴”的关键内容
 
-### Render
+### Render（你当前没有 Java 选项时）
+- Language: `Docker`
+- Root Directory: 留空
+- Dockerfile Path: `springboot/Dockerfile`
+
+### Render（若界面出现 Java，可用此配置）
+- Language: `Java`
 - Root Directory: `springboot`
 - Build Command: `./mvnw clean package -DskipTests`
 - Start Command: `java -jar target/springboot-0.0.1-SNAPSHOT.jar`
