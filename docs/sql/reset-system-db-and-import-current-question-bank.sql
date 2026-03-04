@@ -49,8 +49,22 @@ CREATE TABLE IF NOT EXISTS `user_answer` (
   KEY `idx_answer_exercise` (`exercise_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+
+CREATE TABLE IF NOT EXISTS `knowledge_relation` (
+  `id` bigint PRIMARY KEY AUTO_INCREMENT,
+  `subject` varchar(20) NOT NULL,
+  `source_kp` varchar(100) NOT NULL,
+  `target_kp` varchar(100) NOT NULL,
+  `relation_type` varchar(32) DEFAULT 'related',
+  `weight` decimal(6,2) DEFAULT 1.00,
+  `created_at` datetime DEFAULT CURRENT_TIMESTAMP,
+  KEY `idx_kg_subject_source` (`subject`,`source_kp`),
+  KEY `idx_kg_subject_target` (`subject`,`target_kp`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
 -- 重置业务数据
 TRUNCATE TABLE `user_answer`;
+TRUNCATE TABLE `knowledge_relation`;
 TRUNCATE TABLE `exercise`;
 DELETE FROM `sys_user` WHERE `subject` IN ('DS','OS','CN','CO');
 
