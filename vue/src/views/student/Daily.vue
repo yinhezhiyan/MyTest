@@ -17,7 +17,18 @@ import router from '@/router';
 const user = JSON.parse(localStorage.getItem('system-user') || '{}')
 const list = ref([])
 const load = ()=> request.get('/api/daily').then(res=> list.value = res.data || [])
-const go = (id)=> router.push(`/manager/${user.subject}/practice?id=${id}`)
+const go = (id)=> {
+  const ids = list.value.map(item => item.exerciseId)
+  const index = ids.indexOf(id)
+  router.push({
+    path: `/manager/${user.subject}/practice`,
+    query: {
+      id,
+      ids: ids.join(','),
+      idx: index < 0 ? 0 : index
+    }
+  })
+}
 onMounted(load)
 </script>
 <style scoped>.card{background:#fff;padding:18px;border-radius:12px}.item-title{font-weight:600}</style>
