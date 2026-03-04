@@ -21,27 +21,6 @@
     "source_num": 1
   },
   {
-    "id": "os-img-0002",
-    "subject": "OS",
-    "chapter": "进程与线程",
-    "chapterSlug": "进程与线程",
-    "stem": "进程之间交换数据不能通过（）途径进行。",
-    "options": {
-      "A": "共享文件",
-      "B": "消息传递",
-      "C": "访问进程地址空间D.访问共享存储区",
-      "D": "直接通信寄存器"
-    },
-    "answer": "",
-    "analysis": "图片OCR导入（待补答案）",
-    "difficulty": 2,
-    "knowledge_points": [
-      "进程与线程",
-      "图片OCR导入"
-    ],
-    "source_num": 2
-  },
-  {
     "id": "os-img-0003",
     "subject": "OS",
     "chapter": "进程与线程",
@@ -189,27 +168,6 @@
     "source_num": 9
   },
   {
-    "id": "os-img-0010",
-    "subject": "OS",
-    "chapter": "进程与线程",
-    "chapterSlug": "进程与线程",
-    "stem": "下列选项中，导致创建新进程的操作是（)",
-    "options": {
-      "A": "用户登录成功",
-      "B": "设备分配完成",
-      "C": "执行fork系统调用",
-      "D": "时间片用完"
-    },
-    "answer": "",
-    "analysis": "图片OCR导入（待补答案）",
-    "difficulty": 2,
-    "knowledge_points": [
-      "进程与线程",
-      "图片OCR导入"
-    ],
-    "source_num": 10
-  },
-  {
     "id": "os-img-0011",
     "subject": "OS",
     "chapter": "进程与线程",
@@ -292,27 +250,6 @@
       "图片OCR导入"
     ],
     "source_num": 14
-  },
-  {
-    "id": "os-img-0015",
-    "subject": "OS",
-    "chapter": "进程与线程",
-    "chapterSlug": "进程与线程",
-    "stem": "系统进程所请求的一次I0操作完成后，将使进程状态从（）",
-    "options": {
-      "A": "运行态变为就绪态B.运行态变为阻塞态",
-      "B": "运行态变为阻塞态",
-      "C": "就绪态变为运行态D.阻塞态变为就绪态",
-      "D": "阻塞态变为就绪态"
-    },
-    "answer": "",
-    "analysis": "图片OCR导入（待补答案）",
-    "difficulty": 2,
-    "knowledge_points": [
-      "进程与线程",
-      "图片OCR导入"
-    ],
-    "source_num": 15
   },
   {
     "id": "os-img-0016",
@@ -544,27 +481,6 @@
       "图片OCR导入"
     ],
     "source_num": 26
-  },
-  {
-    "id": "os-img-0027",
-    "subject": "OS",
-    "chapter": "进程与线程",
-    "chapterSlug": "进程与线程",
-    "stem": "进程自身决定（）",
-    "options": {
-      "A": "从运行态到阻塞态B.从运行态到就绪态",
-      "B": "从运行态到就绪态",
-      "C": "从就绪态到运行态",
-      "D": "从阻塞态到就绪态"
-    },
-    "answer": "",
-    "analysis": "图片OCR导入（待补答案）",
-    "difficulty": 2,
-    "knowledge_points": [
-      "进程与线程",
-      "图片OCR导入"
-    ],
-    "source_num": 27
   },
   {
     "id": "os-img-0028",
@@ -838,27 +754,6 @@
       "图片OCR导入"
     ],
     "source_num": 40
-  },
-  {
-    "id": "os-img-0041",
-    "subject": "OS",
-    "chapter": "进程与线程",
-    "chapterSlug": "进程与线程",
-    "stem": "在进程转换时，下列（）转换是不可能发生的。",
-    "options": {
-      "A": "就绪态→运行态B.运行态→就绪态",
-      "B": "运行态→结束态",
-      "C": "运行态→阻塞态",
-      "D": "阻塞态→运行态"
-    },
-    "answer": "",
-    "analysis": "图片OCR导入（待补答案）",
-    "difficulty": 2,
-    "knowledge_points": [
-      "进程与线程",
-      "图片OCR导入"
-    ],
-    "source_num": 41
   },
   {
     "id": "os-img-0042",
