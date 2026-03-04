@@ -1,6 +1,6 @@
 <template>
   <div class="card" v-if="q.id">
-    <h3>{{ q.chapter }} · {{ q.id }}</h3>
+    <h3>{{ q.chapter }} · {{ displayQuestionNo }}</h3>
     <p>{{ q.stem }}</p>
     <el-radio-group v-model="chosen" @change="submit">
       <el-radio v-for="k in ['A','B','C','D']" :key="k" :label="k" :class="wrong===k ? 'wrong' : ''">{{k}}. {{ q['option'+k] }}</el-radio>
@@ -12,7 +12,7 @@
   </div>
 </template>
 <script setup>
-import {onMounted, reactive, ref} from 'vue';
+import {computed, onMounted, reactive, ref} from 'vue';
 import request from '@/utils/request';
 import {ElMessage} from 'element-plus';
 import {useRoute} from 'vue-router';
@@ -22,6 +22,12 @@ const chosen = ref('');
 const wrong = ref('');
 const history = ref([])
 const historyIndex = ref(-1)
+
+const displayQuestionNo = computed(() => {
+  const id = String(q.id || '')
+  const matched = id.match(/(\d{4,})$/)
+  return matched ? matched[1] : id
+})
 
 const fillQuestion = (item) => {
   Object.keys(q).forEach(k => delete q[k])
