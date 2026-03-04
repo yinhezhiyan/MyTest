@@ -68,17 +68,32 @@
 </template>
 
 <script setup>
-import {computed, reactive, ref} from 'vue'
+import {computed, onBeforeUnmount, onMounted, reactive, ref} from 'vue'
 import request from '@/utils/request'
 import {ElMessage, ElMessageBox} from 'element-plus'
 
-const user = JSON.parse(localStorage.getItem('system-user') || '{}')
+const user = reactive(JSON.parse(localStorage.getItem('system-user') || '{}'))
 const displayName = computed(() => user.name || user.username || '用户')
 const chapters = ref([])
 const summary = reactive({ todayTotal: 0, todayCorrect: 0, todayWrong: 0 })
 const addVisible = ref(false)
 const form = reactive({ chapter:'', stem:'', optionA:'', optionB:'', optionC:'', optionD:'', answer:'A', analysis:'', attachmentUrl:'' })
 const uploadUrl = import.meta.env.VITE_BASE_URL + '/files/upload'
+
+const syncUserFromStorage = () => {
+  const latest = JSON.parse(localStorage.getItem('system-user') || '{}')
+  Object.keys(user).forEach(k => delete user[k])
+  Object.assign(user, latest)
+}
+
+const onUserProfileUpdated = (event) => {
+  if (event?.detail && Object.keys(event.detail).length > 0) {
+    Object.keys(user).forEach(k => delete user[k])
+    Object.assign(user, event.detail)
+    return
+  }
+  syncUserFromStorage()
+}
 
 const loadAdmin = ()=> request.get('/admin/question-bank/chapters').then(res=> chapters.value = res.data || [])
 const loadStudent = ()=> request.get('/api/profile/summary').then(res=> Object.assign(summary, res.data || {}))
@@ -88,7 +103,14 @@ const onUpload = (res)=> { form.attachmentUrl = res.data }
 const save = ()=> request.post('/admin/question-bank/exercise', form).then(res=> { if(res.code==='200'){ ElMessage.success('新增成功'); addVisible.value=false; loadAdmin() } else ElMessage.error(res.msg) })
 const del = (id)=> ElMessageBox.confirm('确定删除该题吗？','提示',{type:'warning'}).then(()=> request.delete('/admin/question-bank/exercise/'+id).then(res=> { if(res.code==='200'){ ElMessage.success('删除成功'); loadAdmin()} else ElMessage.error(res.msg)}))
 
-if (user.role === 'ADMIN') loadAdmin(); else loadStudent()
+onMounted(() => {
+  window.addEventListener('user-profile-updated', onUserProfileUpdated)
+  if (user.role === 'ADMIN') loadAdmin(); else loadStudent()
+})
+
+onBeforeUnmount(() => {
+  window.removeEventListener('user-profile-updated', onUserProfileUpdated)
+})
 </script>
 
 <style scoped>

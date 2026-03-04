@@ -62,24 +62,42 @@ const profile = reactive({ name: '', avatar: '' })
 const displayName = computed(() => data.user.name || data.user.username || '用户')
 const subjectText = computed(() => ({DS: '数据结构', OS: '操作系统', CN: '计网', CO: '计组'})[data.user.subject] || data.user.subject)
 
+const syncUser = (nextUser) => {
+  data.user = nextUser
+  localStorage.setItem('system-user', JSON.stringify(nextUser))
+  window.dispatchEvent(new CustomEvent('user-profile-updated', { detail: nextUser }))
+}
+
 const openProfile = () => {
   request.get('/account/profile').then(res => {
     Object.assign(profile, res.data || {})
     profileVisible.value = true
   })
 }
-const handleImgSuccess = (res) => { profile.avatar = res.data }
+
+const handleImgSuccess = (res) => {
+  profile.avatar = res.data
+  const nextUser = { ...data.user, avatar: res.data }
+  syncUser(nextUser)
+}
+
 const saveProfile = () => {
   request.put('/account/profile', { name: profile.name, avatar: profile.avatar }).then(res => {
     if (res.code === '200') {
-      data.user = { ...data.user, ...res.data }
-      localStorage.setItem('system-user', JSON.stringify(data.user))
+      const currentToken = data.user.token
+      const nextUser = { ...data.user, ...res.data, token: res.data?.token || currentToken }
+      syncUser(nextUser)
       profileVisible.value = false
       ElMessage.success('保存成功')
     } else ElMessage.error(res.msg)
   })
 }
-const logout = () => { localStorage.removeItem('system-user'); router.push('/login') }
+
+const logout = () => {
+  localStorage.removeItem('system-user')
+  window.dispatchEvent(new CustomEvent('user-profile-updated', { detail: {} }))
+  router.push('/login')
+}
 </script>
 
 <style scoped>
