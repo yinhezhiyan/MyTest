@@ -33,3 +33,21 @@ docker compose down
 - 后端容器会自动初始化表结构并从 `data/question-bank` 导入题库。
 
 > 如果你需要**公网链接**（别人也能访问），还需要把这套服务部署到云服务器/平台，并绑定公网域名。
+
+
+## 一键脚本（推荐）
+在仓库根目录执行：
+
+```bash
+bash scripts/package-and-link.sh
+```
+
+脚本会自动构建并启动服务，然后直接打印可访问链接（localhost + 局域网IP）。
+
+如果你要一个可分享的公网临时链接（例如发给别人直接点开）：
+
+```bash
+bash scripts/package-and-link.sh --public
+```
+
+该命令会调用 `localtunnel` 生成公网临时 URL（终端关闭后链接失效）。
