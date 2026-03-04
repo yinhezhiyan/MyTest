@@ -1,26 +1,49 @@
-# 操作系统题库重置与导入说明
+# 操作系统题库（OCR版）重置与导入说明
 
-你现在可以直接用 `docs/sql/reset-db-and-import-os.sql` 完成“删旧库 + 按当前项目结构重建 + 仅导入操作系统题目”。
+你说得对：你截图里 `system.exercise` 还是旧结构（`title/content/knowledge_point_id`），说明之前脚本没有真正落到当前库结构。
 
-## 你要粘贴到哪里？
-在 Navicat 中按以下步骤：
+最常见原因：
+- 没在 `system` 库执行；
+- 没整段执行到 `DROP TABLE`；
+- 执行中断后只跑了部分语句。
 
-1. 连接到 `localhost_3306`。
-2. 选择数据库 `system`。
-3. 点击 **新建查询**。
-4. 打开并复制 `docs/sql/reset-db-and-import-os.sql` 全部内容。
-5. 粘贴到查询窗口，点击 **运行**。
+这次我给你的是 **OCR 全量生成版**，来源是项目内 `docs/question-pdf/operating-systems.pdf`，通过 OCR 扫描题页生成。
 
-## 执行后效果
-- 会删除截图中旧结构相关表（如 `knowledge_point`、旧 `exercise` 等）。
-- 会按当前 SpringBoot 项目需要重建：
-  - `sys_user`
-  - `exercise`
-  - `user_answer`
-- 只导入 `OS` 学科题目（120题）。
+---
 
-## 说明
-- 本脚本中的 OS 题目数据来源于项目内 `data/question-bank/os.json` 的全量题目，已转成可直接执行的 SQL `INSERT`。
-- 执行末尾有校验 SQL：
-  - `SELECT subject, COUNT(*) AS total FROM exercise GROUP BY subject;`
-  - 预期只看到 `OS | 120`。
+## 你应该粘贴哪段代码、粘贴到哪里
+
+### 直接执行（推荐）
+1. 打开 Navicat，连接 `localhost_3306`。
+2. 选中数据库 `system`。
+3. 新建查询。
+4. 打开文件：`docs/sql/reset-db-and-import-os-ocr.sql`。
+5. 复制**全部内容**粘贴执行。
+
+该 SQL 会：
+- 强制 `USE system`；
+- 删除旧表（包括旧 `exercise`）；
+- 按当前项目结构重建 `sys_user / exercise / user_answer`；
+- 导入 OCR 识别出的 OS 题目（当前 620 题）。
+
+### 执行后核验
+在 Navicat 执行：
+```sql
+SELECT DATABASE() AS current_db;
+SHOW COLUMNS FROM exercise;
+SELECT COUNT(*) AS total FROM exercise WHERE subject = 'OS';
+```
+
+如果列名是 `id/subject/chapter/stem/option_a...`，且题量是 620，就说明已成功替换掉旧表。
+
+---
+
+## OCR 数据文件（可选）
+- OCR 结果 JSON：`data/question-bank/os-ocr.json`
+- 生成脚本：`scripts/ocr_extract_os_questions.py`
+
+如果你后续再换 PDF，只要重新跑：
+```bash
+python scripts/ocr_extract_os_questions.py
+```
+就会重新生成 SQL。
