@@ -36,7 +36,7 @@ const includeDone = ref(localStorage.getItem('recommend-include-done') === '1')
 const list = ref([])
 const load = ()=> {
   localStorage.setItem('recommend-include-done', includeDone.value ? '1' : '0')
-  request.get('/api/recommendations', { params: { includeDone: includeDone.value } }).then(res=> list.value=res.data||[])
+  request.get('/api/recommendations', { params: { topN: 15, includeDone: includeDone.value } }).then(res=> list.value=res.data||[])
 }
 onMounted(load)
 const go = (id)=> {
