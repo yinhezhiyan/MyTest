@@ -18,6 +18,9 @@ import java.util.Map;
 @Component
 public class DataInitializer implements CommandLineRunner {
 
+    private static final String BANK_TYPE_MAIN = "MAIN";
+    private static final String BANK_TYPE_EXTENSION = "EXTENSION";
+
     private final JdbcTemplate jdbcTemplate;
     private final ObjectMapper objectMapper;
     private final BCryptPasswordEncoder passwordEncoder = new BCryptPasswordEncoder();
@@ -34,16 +37,24 @@ public class DataInitializer implements CommandLineRunner {
         initExerciseTable();
         ensureExerciseColumns();
         initUserAnswerTable();
+        initKnowledgeRelationTable();
 
         initAdmin("DS");
         initAdmin("OS");
         initAdmin("CN");
         initAdmin("CO");
 
-        replaceSubjectBankFromFile("DS", "ds.json");
-        replaceSubjectBankFromFile("OS", "os.json");
-        replaceSubjectBankFromFile("CN", "cn.json");
-        replaceSubjectBankFromFile("CO", "co.json");
+        replaceSubjectBankFromFile("DS", "ds.json", BANK_TYPE_MAIN);
+        replaceSubjectBankFromFile("OS", "os.json", BANK_TYPE_MAIN);
+        replaceSubjectBankFromFile("CN", "cn.json", BANK_TYPE_MAIN);
+        replaceSubjectBankFromFile("CO", "co.json", BANK_TYPE_MAIN);
+
+        replaceSubjectBankFromFile("DS", "ds-extension.json", BANK_TYPE_EXTENSION);
+        replaceSubjectBankFromFile("OS", "os-extension.json", BANK_TYPE_EXTENSION);
+        replaceSubjectBankFromFile("CN", "cn-extension.json", BANK_TYPE_EXTENSION);
+        replaceSubjectBankFromFile("CO", "co-extension.json", BANK_TYPE_EXTENSION);
+
+        seedKnowledgeRelations();
     }
 
     private void initUserTable() {
@@ -93,18 +104,23 @@ public class DataInitializer implements CommandLineRunner {
                     difficulty int default 2,
                     knowledge_points text,
                     attachment_url varchar(255),
+                    bank_type varchar(20) default 'MAIN',
                     created_at datetime default current_timestamp,
-                    index idx_exercise_subject(subject)
+                    index idx_exercise_subject(subject),
+                    index idx_exercise_subject_bank(subject, bank_type)
                 )
                 """);
     }
-
 
     private void ensureExerciseColumns() {
         if (!columnExists("exercise", "attachment_url")) {
             jdbcTemplate.execute("alter table exercise add column attachment_url varchar(255)");
         }
+        if (!columnExists("exercise", "bank_type")) {
+            jdbcTemplate.execute("alter table exercise add column bank_type varchar(20) default 'MAIN'");
+        }
     }
+
     private void initUserAnswerTable() {
         jdbcTemplate.execute("""
                 create table if not exists user_answer (
@@ -118,6 +134,22 @@ public class DataInitializer implements CommandLineRunner {
                     answered_at datetime,
                     index idx_answer_user_subject(user_id, subject),
                     index idx_answer_exercise(exercise_id)
+                )
+                """);
+    }
+
+    private void initKnowledgeRelationTable() {
+        jdbcTemplate.execute("""
+                create table if not exists knowledge_relation (
+                    id bigint primary key auto_increment,
+                    subject varchar(20) not null,
+                    source_kp varchar(100) not null,
+                    target_kp varchar(100) not null,
+                    relation_type varchar(32) default 'related',
+                    weight decimal(6,2) default 1.00,
+                    created_at datetime default current_timestamp,
+                    index idx_kg_subject_source(subject, source_kp),
+                    index idx_kg_subject_target(subject, target_kp)
                 )
                 """);
     }
@@ -139,7 +171,7 @@ public class DataInitializer implements CommandLineRunner {
         }
     }
 
-    private void replaceSubjectBankFromFile(String subject, String fileName) {
+    private void replaceSubjectBankFromFile(String subject, String fileName, String bankType) {
         Path file = resolveQuestionBank(fileName);
         if (file == null) {
             return;
@@ -148,24 +180,52 @@ public class DataInitializer implements CommandLineRunner {
             String content = Files.readString(file);
             List<Map<String, Object>> items = objectMapper.readValue(content, new TypeReference<>() {});
 
-            jdbcTemplate.update("delete from exercise where subject=?", subject);
+            jdbcTemplate.update("delete from exercise where subject=? and bank_type=?", subject, bankType);
 
             for (Map<String, Object> item : items) {
                 Map<String, String> options = (Map<String, String>) item.getOrDefault("options", Map.of());
                 List<String> kps = (List<String>) item.getOrDefault("knowledge_points", new ArrayList<>());
                 String kp = objectMapper.writeValueAsString(kps);
                 jdbcTemplate.update("""
-                        insert into exercise(id, subject, chapter, chapter_slug, stem, option_a, option_b, option_c, option_d, answer, analysis, difficulty, knowledge_points, attachment_url)
-                        values(?,?,?,?,?,?,?,?,?,?,?,?,?,?)
+                        insert into exercise(id, subject, chapter, chapter_slug, stem, option_a, option_b, option_c, option_d, answer, analysis, difficulty, knowledge_points, attachment_url, bank_type)
+                        values(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)
                         """,
                         String.valueOf(item.get("id")), subject, String.valueOf(item.get("chapter")), String.valueOf(item.get("chapterSlug")),
                         String.valueOf(item.get("stem")), options.get("A"), options.get("B"), options.get("C"), options.get("D"),
                         String.valueOf(item.get("answer")), String.valueOf(item.getOrDefault("analysis", "")),
                         Integer.parseInt(String.valueOf(item.getOrDefault("difficulty", 2))), kp,
-                        String.valueOf(item.getOrDefault("attachment_url", "")));
+                        String.valueOf(item.getOrDefault("attachment_url", "")), bankType);
             }
         } catch (Exception e) {
             throw new IllegalStateException("初始化题库失败: " + subject + "(" + fileName + ")", e);
+        }
+    }
+
+    private void seedKnowledgeRelations() {
+        jdbcTemplate.update("delete from knowledge_relation");
+        List<Object[]> rows = List.of(
+                new Object[]{"DS", "数据结构的基本概念", "算法复杂度", "related", 1.15},
+                new Object[]{"DS", "线性表", "递归与分治", "related", 1.05},
+                new Object[]{"DS", "树和二叉树", "平衡树与索引", "contains", 1.20},
+                new Object[]{"DS", "图", "最短路径与导航", "contains", 1.20},
+                new Object[]{"OS", "操作系统的基本概念", "系统调用与用户态内核态", "contains", 1.15},
+                new Object[]{"OS", "进程管理", "容器与命名空间", "related", 1.20},
+                new Object[]{"OS", "存储管理", "虚拟化与内存隔离", "related", 1.10},
+                new Object[]{"OS", "文件管理", "日志型文件系统", "contains", 1.05},
+                new Object[]{"CN", "计算机网络概述", "QUIC与HTTP/3", "related", 1.20},
+                new Object[]{"CN", "数据链路层", "交换网络与VLAN", "contains", 1.10},
+                new Object[]{"CN", "网络层", "软件定义网络", "related", 1.15},
+                new Object[]{"CN", "运输层", "拥塞控制演进", "contains", 1.10},
+                new Object[]{"CO", "计算机系统层次结构", "性能评测与Amdahl定律", "related", 1.15},
+                new Object[]{"CO", "运算方法和运算器", "SIMD与并行计算", "related", 1.10},
+                new Object[]{"CO", "存储系统", "多级缓存一致性", "contains", 1.20},
+                new Object[]{"CO", "中央处理器", "指令流水线与冒险处理", "contains", 1.15}
+        );
+        for (Object[] row : rows) {
+            jdbcTemplate.update(
+                    "insert into knowledge_relation(subject, source_kp, target_kp, relation_type, weight) values(?,?,?,?,?)",
+                    row
+            );
         }
     }
 

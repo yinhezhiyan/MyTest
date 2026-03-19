@@ -1,0 +1,82 @@
+[
+  {
+    "id": "co-ext-0001",
+    "subject": "CO",
+    "chapter": "拓展：性能评测与 Amdahl 定律",
+    "chapterSlug": "拓展-性能评测与Amdahl定律",
+    "stem": "Amdahl 定律主要用于分析什么问题？",
+    "options": {
+      "A": "程序界面美观度",
+      "B": "局部加速对系统整体性能提升的上限",
+      "C": "磁盘容量大小",
+      "D": "网络地址分配"
+    },
+    "answer": "B",
+    "analysis": "Amdahl 定律说明受未优化部分限制，整体加速比存在上限。",
+    "difficulty": 3,
+    "knowledge_points": [
+      "计算机系统层次结构",
+      "性能评测与Amdahl定律"
+    ]
+  },
+  {
+    "id": "co-ext-0002",
+    "subject": "CO",
+    "chapter": "拓展：SIMD 与并行计算",
+    "chapterSlug": "拓展-SIMD与并行计算",
+    "stem": "SIMD 指令最适合处理哪类任务？",
+    "options": {
+      "A": "大量相同操作作用于多份数据",
+      "B": "只包含单个标量加法",
+      "C": "所有分支完全不同的流程",
+      "D": "纯文本排版"
+    },
+    "answer": "A",
+    "analysis": "SIMD 强调单指令多数据，适合向量化计算与媒体处理等场景。",
+    "difficulty": 4,
+    "knowledge_points": [
+      "运算方法和运算器",
+      "SIMD与并行计算"
+    ]
+  },
+  {
+    "id": "co-ext-0003",
+    "subject": "CO",
+    "chapter": "拓展：多级缓存一致性",
+    "chapterSlug": "拓展-多级缓存一致性",
+    "stem": "在多核处理器中，引入缓存一致性协议的主要目的是什么？",
+    "options": {
+      "A": "让每个核心永久保存不同版本的数据",
+      "B": "保证多个缓存副本对共享数据的视图尽量一致",
+      "C": "取消主存",
+      "D": "只提升显示分辨率"
+    },
+    "answer": "B",
+    "analysis": "缓存一致性协议用于协调多核共享数据时的缓存副本状态。",
+    "difficulty": 4,
+    "knowledge_points": [
+      "存储系统",
+      "多级缓存一致性"
+    ]
+  },
+  {
+    "id": "co-ext-0004",
+    "subject": "CO",
+    "chapter": "拓展：指令流水线与冒险处理",
+    "chapterSlug": "拓展-指令流水线与冒险处理",
+    "stem": "下列哪一项属于典型的数据冒险（Data Hazard）缓解手段？",
+    "options": {
+      "A": "转发（forwarding）",
+      "B": "增加屏幕亮度",
+      "C": "关闭主存",
+      "D": "删除指令集"
+    },
+    "answer": "A",
+    "analysis": "数据转发可减少因结果未写回而导致的流水线停顿。",
+    "difficulty": 4,
+    "knowledge_points": [
+      "中央处理器",
+      "指令流水线与冒险处理"
+    ]
+  }
+]

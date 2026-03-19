@@ -21,6 +21,9 @@ import java.util.stream.Collectors;
 
 @Service
 public class ExerciseService {
+    private static final String BANK_TYPE_MAIN = "MAIN";
+    private static final String BANK_TYPE_EXTENSION = "EXTENSION";
+
     private final JdbcTemplate jdbcTemplate;
     private final ObjectMapper objectMapper;
 
@@ -44,7 +47,14 @@ public class ExerciseService {
         e.setAnalysis(rs.getString("analysis"));
         e.setDifficulty(rs.getInt("difficulty"));
         e.setKnowledgePoints(rs.getString("knowledge_points"));
-        try { e.setAttachmentUrl(rs.getString("attachment_url")); } catch (Exception ignored) {}
+        try {
+            e.setAttachmentUrl(rs.getString("attachment_url"));
+        } catch (Exception ignored) {
+        }
+        try {
+            e.setBankType(rs.getString("bank_type"));
+        } catch (Exception ignored) {
+        }
         return e;
     };
 
@@ -56,7 +66,7 @@ public class ExerciseService {
             Path source = resolveQuestionBankPath(subject, filePath);
             String content = Files.readString(source);
             List<Map<String, Object>> items = objectMapper.readValue(content, new TypeReference<>() {});
-            jdbcTemplate.update("delete from exercise where subject=?", subject);
+            jdbcTemplate.update("delete from exercise where subject=? and bank_type=?", subject, BANK_TYPE_MAIN);
             int inserted = 0;
             int updated = 0;
             for (Map<String, Object> item : items) {
@@ -65,16 +75,17 @@ public class ExerciseService {
                 List<String> kps = (List<String>) item.getOrDefault("knowledge_points", new ArrayList<>());
                 String kp = objectMapper.writeValueAsString(kps);
                 jdbcTemplate.update("""
-                        insert into exercise(id, subject, chapter, chapter_slug, stem, option_a, option_b, option_c, option_d, answer, analysis, difficulty, knowledge_points, attachment_url)
-                        values(?,?,?,?,?,?,?,?,?,?,?,?,?,?)
+                        insert into exercise(id, subject, chapter, chapter_slug, stem, option_a, option_b, option_c, option_d, answer, analysis, difficulty, knowledge_points, attachment_url, bank_type)
+                        values(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)
                         """,
                         id, subject, String.valueOf(item.get("chapter")), String.valueOf(item.get("chapterSlug")),
                         String.valueOf(item.get("stem")), options.get("A"), options.get("B"), options.get("C"), options.get("D"),
                         String.valueOf(item.get("answer")), String.valueOf(item.getOrDefault("analysis", "")),
-                        Integer.parseInt(String.valueOf(item.getOrDefault("difficulty", 2))), kp, String.valueOf(item.getOrDefault("attachmentUrl", "")));
+                        Integer.parseInt(String.valueOf(item.getOrDefault("difficulty", 2))), kp,
+                        String.valueOf(item.getOrDefault("attachmentUrl", "")), BANK_TYPE_MAIN);
                 inserted++;
             }
-            Integer total = jdbcTemplate.queryForObject("select count(1) from exercise where subject=?", Integer.class, subject);
+            Integer total = jdbcTemplate.queryForObject("select count(1) from exercise where subject=? and bank_type=?", Integer.class, subject, BANK_TYPE_MAIN);
             Map<String, Object> summary = new HashMap<>();
             summary.put("subject", subject);
             summary.put("inserted", inserted);
@@ -89,7 +100,7 @@ public class ExerciseService {
 
     public Exercise randomExercise() {
         String subject = requireLogin().getSubject();
-        List<Exercise> list = jdbcTemplate.query("select * from exercise where subject=? order by rand() limit 1", exerciseMapper, subject);
+        List<Exercise> list = jdbcTemplate.query("select * from exercise where subject=? and bank_type=? order by rand() limit 1", exerciseMapper, subject, BANK_TYPE_MAIN);
         if (list.isEmpty()) throw new CustomException("当前学科暂无题目");
         Exercise e = list.getFirst();
         e.setAnswer(null);
@@ -148,21 +159,21 @@ public class ExerciseService {
         Account user = requireLogin();
         String subject = user.getSubject();
         Integer uid = user.getId();
-        List<Exercise> all = jdbcTemplate.query("select * from exercise where subject=?", exerciseMapper, subject);
-        Set<String> done = new HashSet<>(jdbcTemplate.queryForList("select distinct exercise_id from user_answer where user_id=? and subject=?", String.class, uid, subject));
-        Map<String, Double> cfScores = computeCollaborativeFilteringScores(subject, uid);
-        Map<String, Double> weakKnowledge = loadWeakKnowledge(subject, uid);
+        List<Exercise> all = loadExercises(subject, BANK_TYPE_MAIN);
+        Set<String> done = loadDoneExerciseIds(uid, subject, BANK_TYPE_MAIN);
+        Map<String, Double> cfScores = computeCollaborativeFilteringScores(subject, uid, BANK_TYPE_MAIN);
+        Map<String, Double> weakKnowledge = loadWeakKnowledge(subject, uid, BANK_TYPE_MAIN);
         Map<String, List<KnowledgeEdge>> relationGraph = loadKnowledgeRelationGraph(subject);
+        DifficultyPreference difficultyPreference = loadDifficultyPreference(subject, uid, BANK_TYPE_MAIN);
+        Map<String, Integer> exposure = loadKnowledgeExposure(subject, uid, BANK_TYPE_MAIN);
 
         List<Map<String, Object>> ranked = new ArrayList<>();
         for (Exercise e : all) {
             if (!includeDone && done.contains(e.getId())) {
                 continue;
             }
-            double cfScore = cfScores.getOrDefault(e.getId(), 0.0);
-            double kgScore = knowledgeGraphScore(e, weakKnowledge, relationGraph);
-            double finalScore = 0.6 * cfScore + 0.4 * kgScore;
-            ranked.add(buildRecommendationItem(e, finalScore, ""));
+            RecommendationBreakdown breakdown = scoreMainExercise(e, cfScores, weakKnowledge, relationGraph, difficultyPreference, exposure, done);
+            ranked.add(buildRecommendationItem(e, breakdown.score(), breakdown.reason()));
         }
 
         List<Map<String, Object>> result = ranked.stream()
@@ -175,14 +186,39 @@ public class ExerciseService {
         return result;
     }
 
-    private Map<String, Double> computeCollaborativeFilteringScores(String subject, Integer currentUserId) {
+    private RecommendationBreakdown scoreMainExercise(Exercise exercise,
+                                                      Map<String, Double> cfScores,
+                                                      Map<String, Double> weakKnowledge,
+                                                      Map<String, List<KnowledgeEdge>> relationGraph,
+                                                      DifficultyPreference difficultyPreference,
+                                                      Map<String, Integer> exposure,
+                                                      Set<String> done) {
+        double cfScore = normalizeScore(cfScores.getOrDefault(exercise.getId(), 0.0), 3.0);
+        double weaknessScore = normalizeScore(knowledgeGraphScore(exercise, weakKnowledge, relationGraph), 6.0);
+        double difficultyScore = difficultyMatch(exercise.getDifficulty(), difficultyPreference);
+        double noveltyScore = done.contains(exercise.getId()) ? 0.2 : 1.0;
+        double coverageScore = knowledgeCoverageScore(exercise, exposure);
+
+        double finalScore = 0.42 * cfScore
+                + 0.33 * weaknessScore
+                + 0.15 * difficultyScore
+                + 0.10 * coverageScore;
+        finalScore *= noveltyScore;
+
+        String reason = buildMainReason(cfScore, weaknessScore, difficultyScore, coverageScore, exercise);
+        return new RecommendationBreakdown(finalScore, reason);
+    }
+
+    private Map<String, Double> computeCollaborativeFilteringScores(String subject, Integer currentUserId, String bankType) {
         List<Map<String, Object>> rows = jdbcTemplate.queryForList("""
-                select user_id, exercise_id,
-                       avg(case when is_correct=1 then 0.2 else 1.0 end) as preference
-                from user_answer
-                where subject=?
-                group by user_id, exercise_id
-                """, subject);
+                select ua.user_id,
+                       ua.exercise_id,
+                       avg(case when ua.is_correct=1 then 0.25 else 1.0 end + coalesce(e.difficulty, 2) * 0.08) as preference
+                from user_answer ua
+                join exercise e on ua.exercise_id = e.id and ua.subject = e.subject
+                where ua.subject=? and e.bank_type=?
+                group by ua.user_id, ua.exercise_id
+                """, subject, bankType);
 
         Map<Integer, Map<String, Double>> userItemPrefs = new HashMap<>();
         for (Map<String, Object> row : rows) {
@@ -201,34 +237,50 @@ public class ExerciseService {
         for (Map.Entry<Integer, Map<String, Double>> entry : userItemPrefs.entrySet()) {
             Integer userId = entry.getKey();
             if (Objects.equals(userId, currentUserId)) continue;
-            double similarity = cosineSimilarity(currentUserPrefs, entry.getValue());
-            if (similarity > 0) {
-                similarityByUser.put(userId, similarity);
+            double similarity = adjustedCosineSimilarity(currentUserPrefs, entry.getValue());
+            if (similarity > 0.05) {
+                int common = overlapCount(currentUserPrefs, entry.getValue());
+                double shrink = common / (common + 2.0);
+                similarityByUser.put(userId, similarity * shrink);
             }
         }
 
-        Map<String, Double> scores = new HashMap<>();
+        Map<String, Double> weighted = new HashMap<>();
+        Map<String, Double> similaritySum = new HashMap<>();
         for (Map.Entry<Integer, Double> sim : similarityByUser.entrySet()) {
             Map<String, Double> otherPrefs = userItemPrefs.getOrDefault(sim.getKey(), Map.of());
             for (Map.Entry<String, Double> pref : otherPrefs.entrySet()) {
                 if (currentUserPrefs.containsKey(pref.getKey())) continue;
-                scores.merge(pref.getKey(), sim.getValue() * pref.getValue(), Double::sum);
+                weighted.merge(pref.getKey(), sim.getValue() * pref.getValue(), Double::sum);
+                similaritySum.merge(pref.getKey(), sim.getValue(), Double::sum);
+            }
+        }
+
+        Map<String, Double> scores = new HashMap<>();
+        for (Map.Entry<String, Double> entry : weighted.entrySet()) {
+            double denom = similaritySum.getOrDefault(entry.getKey(), 0.0);
+            if (denom > 0) {
+                scores.put(entry.getKey(), entry.getValue() / denom);
             }
         }
         return scores;
     }
 
-    private double cosineSimilarity(Map<String, Double> a, Map<String, Double> b) {
+    private double adjustedCosineSimilarity(Map<String, Double> a, Map<String, Double> b) {
+        Set<String> common = a.keySet().stream().filter(b::containsKey).collect(Collectors.toSet());
+        if (common.isEmpty()) {
+            return 0;
+        }
+        double avgA = common.stream().mapToDouble(a::get).average().orElse(0);
+        double avgB = common.stream().mapToDouble(b::get).average().orElse(0);
         double dot = 0;
         double normA = 0;
         double normB = 0;
-        for (Map.Entry<String, Double> e : a.entrySet()) {
-            double av = e.getValue();
-            normA += av * av;
-            double bv = b.getOrDefault(e.getKey(), 0.0);
+        for (String key : common) {
+            double av = a.get(key) - avgA;
+            double bv = b.get(key) - avgB;
             dot += av * bv;
-        }
-        for (double bv : b.values()) {
+            normA += av * av;
             normB += bv * bv;
         }
         if (normA == 0 || normB == 0) {
@@ -237,20 +289,77 @@ public class ExerciseService {
         return dot / (Math.sqrt(normA) * Math.sqrt(normB));
     }
 
-    private Map<String, Double> loadWeakKnowledge(String subject, Integer userId) {
-        List<String> wrongKnowledgeJson = jdbcTemplate.queryForList("""
-                select e.knowledge_points
+    private int overlapCount(Map<String, Double> a, Map<String, Double> b) {
+        int count = 0;
+        for (String key : a.keySet()) {
+            if (b.containsKey(key)) {
+                count++;
+            }
+        }
+        return count;
+    }
+
+    private Map<String, Double> loadWeakKnowledge(String subject, Integer userId, String bankType) {
+        List<Map<String, Object>> rows = jdbcTemplate.queryForList("""
+                select e.knowledge_points,
+                       sum(case when ua.is_correct=0 then 1 else 0 end) as wrong_times,
+                       count(*) as total_times
                 from user_answer ua
                 join exercise e on ua.exercise_id = e.id and ua.subject = e.subject
-                where ua.user_id=? and ua.subject=? and ua.is_correct=0
-                """, String.class, userId, subject);
+                where ua.user_id=? and ua.subject=? and e.bank_type=?
+                group by e.knowledge_points
+                """, userId, subject, bankType);
         Map<String, Double> weakKnowledge = new HashMap<>();
-        for (String kpJson : wrongKnowledgeJson) {
-            for (String kp : parseKnowledgePoints(kpJson)) {
-                weakKnowledge.merge(kp, 1.0, Double::sum);
+        for (Map<String, Object> row : rows) {
+            double wrongTimes = ((Number) row.get("wrong_times")).doubleValue();
+            double totalTimes = ((Number) row.get("total_times")).doubleValue();
+            double weakness = totalTimes == 0 ? 0 : (wrongTimes / totalTimes) * (1 + Math.log1p(totalTimes));
+            for (String kp : parseKnowledgePoints((String) row.get("knowledge_points"))) {
+                weakKnowledge.merge(kp, weakness, Double::sum);
             }
         }
         return weakKnowledge;
+    }
+
+    private Map<String, Integer> loadKnowledgeExposure(String subject, Integer userId, String bankType) {
+        List<String> kpRows = jdbcTemplate.queryForList("""
+                select e.knowledge_points
+                from user_answer ua
+                join exercise e on ua.exercise_id = e.id and ua.subject = e.subject
+                where ua.user_id=? and ua.subject=? and e.bank_type=?
+                """, String.class, userId, subject, bankType);
+        Map<String, Integer> exposure = new HashMap<>();
+        for (String kpJson : kpRows) {
+            for (String kp : parseKnowledgePoints(kpJson)) {
+                exposure.merge(kp, 1, Integer::sum);
+            }
+        }
+        return exposure;
+    }
+
+    private DifficultyPreference loadDifficultyPreference(String subject, Integer userId, String bankType) {
+        List<Map<String, Object>> rows = jdbcTemplate.queryForList("""
+                select e.difficulty, avg(case when ua.is_correct=1 then 1 else 0 end) as accuracy, count(*) as times
+                from user_answer ua
+                join exercise e on ua.exercise_id = e.id and ua.subject = e.subject
+                where ua.user_id=? and ua.subject=? and e.bank_type=?
+                group by e.difficulty
+                """, userId, subject, bankType);
+        if (rows.isEmpty()) {
+            return new DifficultyPreference(2.0, 1.0);
+        }
+        double weightedDifficulty = 0;
+        double totalWeight = 0;
+        for (Map<String, Object> row : rows) {
+            double difficulty = ((Number) row.get("difficulty")).doubleValue();
+            double accuracy = ((Number) row.get("accuracy")).doubleValue();
+            double times = ((Number) row.get("times")).doubleValue();
+            double weight = times * (0.6 + (1 - Math.abs(accuracy - 0.65)));
+            weightedDifficulty += difficulty * weight;
+            totalWeight += weight;
+        }
+        double preferred = totalWeight == 0 ? 2.0 : weightedDifficulty / totalWeight;
+        return new DifficultyPreference(preferred, 1.2);
     }
 
     private Map<String, List<KnowledgeEdge>> loadKnowledgeRelationGraph(String subject) {
@@ -294,11 +403,66 @@ public class ExerciseService {
             List<KnowledgeEdge> outs = relationGraph.getOrDefault(weak.getKey(), List.of());
             for (KnowledgeEdge edge : outs) {
                 if (targetSet.contains(edge.target())) {
-                    relationScore += weak.getValue() * edge.weight();
+                    double relationBoost = switch (edge.relationType()) {
+                        case "prerequisite" -> 1.15;
+                        case "contains" -> 1.05;
+                        default -> 1.0;
+                    };
+                    relationScore += weak.getValue() * edge.weight() * relationBoost;
                 }
             }
         }
         return directScore + relationScore;
+    }
+
+    private double knowledgeCoverageScore(Exercise exercise, Map<String, Integer> exposure) {
+        List<String> knowledge = parseKnowledgePoints(exercise.getKnowledgePoints());
+        if (knowledge.isEmpty()) {
+            return 0.4;
+        }
+        double total = 0;
+        for (String kp : knowledge) {
+            int count = exposure.getOrDefault(kp, 0);
+            total += 1.0 / (1.0 + count);
+        }
+        return Math.min(1.0, total / knowledge.size());
+    }
+
+    private double difficultyMatch(Integer difficulty, DifficultyPreference preference) {
+        double candidate = difficulty == null ? 2.0 : difficulty;
+        double diff = Math.abs(candidate - preference.preferredDifficulty());
+        return Math.max(0.2, 1 - diff / Math.max(1.0, preference.tolerance()));
+    }
+
+    private String buildMainReason(double cfScore,
+                                   double weaknessScore,
+                                   double difficultyScore,
+                                   double coverageScore,
+                                   Exercise exercise) {
+        List<String> tags = new ArrayList<>();
+        if (weaknessScore >= 0.55) {
+            tags.add("针对薄弱知识点强化");
+        }
+        if (cfScore >= 0.55) {
+            tags.add("协同过滤命中相似学生错题");
+        }
+        if (difficultyScore >= 0.75) {
+            tags.add("难度与当前水平匹配");
+        }
+        if (coverageScore >= 0.6) {
+            tags.add("兼顾知识覆盖");
+        }
+        if (tags.isEmpty()) {
+            tags.add("推荐复习" + exercise.getChapter());
+        }
+        return String.join(" · ", tags);
+    }
+
+    private double normalizeScore(double score, double ceiling) {
+        if (score <= 0) {
+            return 0;
+        }
+        return Math.min(1.0, score / ceiling);
     }
 
     private List<String> parseKnowledgePoints(String kpJson) {
@@ -312,10 +476,36 @@ public class ExerciseService {
         }
     }
 
-    private record KnowledgeEdge(String target, String relationType, double weight) {}
-
     public List<Map<String, Object>> dailyUnseen(int topN) {
-        return recommendations(topN, false);
+        Account user = requireLogin();
+        String subject = user.getSubject();
+        Integer uid = user.getId();
+        List<Exercise> extensionExercises = loadExercises(subject, BANK_TYPE_EXTENSION);
+        Set<String> done = loadDoneExerciseIds(uid, subject, BANK_TYPE_EXTENSION);
+        Map<String, Double> weakKnowledge = loadWeakKnowledge(subject, uid, BANK_TYPE_MAIN);
+        Map<String, List<KnowledgeEdge>> relationGraph = loadKnowledgeRelationGraph(subject);
+        Map<String, Integer> extensionExposure = loadKnowledgeExposure(subject, uid, BANK_TYPE_EXTENSION);
+
+        List<Map<String, Object>> result = extensionExercises.stream()
+                .filter(e -> !done.contains(e.getId()))
+                .map(e -> {
+                    double graphScore = normalizeScore(knowledgeGraphScore(e, weakKnowledge, relationGraph), 6.0);
+                    double freshnessScore = knowledgeCoverageScore(e, extensionExposure);
+                    double finalScore = 0.7 * graphScore + 0.3 * freshnessScore;
+                    String reason = graphScore > 0.45 ? "从你的薄弱知识点延伸拓展" : "为你补充同学科进阶知识";
+                    return buildRecommendationItem(e, finalScore, reason);
+                })
+                .sorted((a, b) -> Double.compare((Double) b.get("score"), (Double) a.get("score")))
+                .limit(topN)
+                .collect(Collectors.toList());
+
+        if (result.isEmpty()) {
+            return extensionExercises.stream()
+                    .limit(topN)
+                    .map(e -> buildRecommendationItem(e, 0.3, "推荐浏览本学科拓展知识"))
+                    .collect(Collectors.toList());
+        }
+        return result;
     }
 
     private Map<String, Object> buildRecommendationItem(Exercise e, double score, String reason) {
@@ -324,16 +514,16 @@ public class ExerciseService {
         item.put("chapter", e.getChapter());
         item.put("stem", e.getStem());
         item.put("score", score);
+        item.put("reason", reason);
+        item.put("bankType", e.getBankType());
         return item;
     }
 
-
-
     public List<Map<String, Object>> chapterBank() {
         Account current = requireAdmin();
-        List<Map<String, Object>> chapters = jdbcTemplate.queryForList("select chapter, count(1) as total from exercise where subject=? group by chapter order by chapter", current.getSubject());
+        List<Map<String, Object>> chapters = jdbcTemplate.queryForList("select chapter, count(1) as total from exercise where subject=? and bank_type=? group by chapter order by chapter", current.getSubject(), BANK_TYPE_MAIN);
         for (Map<String, Object> c : chapters) {
-            List<Map<String, Object>> exercises = jdbcTemplate.queryForList("select id, stem, option_a, option_b, option_c, option_d, answer, attachment_url from exercise where subject=? and chapter=? order by id", current.getSubject(), c.get("chapter"));
+            List<Map<String, Object>> exercises = jdbcTemplate.queryForList("select id, stem, option_a, option_b, option_c, option_d, answer, attachment_url from exercise where subject=? and chapter=? and bank_type=? order by id", current.getSubject(), c.get("chapter"), BANK_TYPE_MAIN);
             c.put("exercises", exercises);
         }
         return chapters;
@@ -346,18 +536,18 @@ public class ExerciseService {
         }
         String id = (ObjectUtil.isNotEmpty(e.getId()) ? e.getId() : (slug(e.getChapter()) + "-" + System.currentTimeMillis() % 1000000));
         jdbcTemplate.update("""
-                insert into exercise(id, subject, chapter, chapter_slug, stem, option_a, option_b, option_c, option_d, answer, analysis, difficulty, knowledge_points, attachment_url)
-                values(?,?,?,?,?,?,?,?,?,?,?,?,?,?)
+                insert into exercise(id, subject, chapter, chapter_slug, stem, option_a, option_b, option_c, option_d, answer, analysis, difficulty, knowledge_points, attachment_url, bank_type)
+                values(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)
                 """,
                 id, current.getSubject(), e.getChapter(), slug(e.getChapter()), e.getStem(), e.getOptionA(), e.getOptionB(), e.getOptionC(), e.getOptionD(),
-                e.getAnswer(), ObjectUtil.defaultIfNull(e.getAnalysis(), ""), ObjectUtil.defaultIfNull(e.getDifficulty(), 2), ObjectUtil.defaultIfNull(e.getKnowledgePoints(), "[]"), ObjectUtil.defaultIfNull(e.getAttachmentUrl(), ""));
+                e.getAnswer(), ObjectUtil.defaultIfNull(e.getAnalysis(), ""), ObjectUtil.defaultIfNull(e.getDifficulty(), 2), ObjectUtil.defaultIfNull(e.getKnowledgePoints(), "[]"), ObjectUtil.defaultIfNull(e.getAttachmentUrl(), ""), BANK_TYPE_MAIN);
     }
 
     public void deleteExerciseByAdmin(String id) {
         Account current = requireAdmin();
-        Integer cnt = jdbcTemplate.queryForObject("select count(1) from exercise where id=? and subject=?", Integer.class, id, current.getSubject());
+        Integer cnt = jdbcTemplate.queryForObject("select count(1) from exercise where id=? and subject=? and bank_type=?", Integer.class, id, current.getSubject(), BANK_TYPE_MAIN);
         if (cnt == null || cnt == 0) throw new CustomException("题目不存在或无权限");
-        jdbcTemplate.update("delete from exercise where id=? and subject=?", id, current.getSubject());
+        jdbcTemplate.update("delete from exercise where id=? and subject=? and bank_type=?", id, current.getSubject(), BANK_TYPE_MAIN);
     }
 
     public Map<String, Object> studentHomeSummary() {
@@ -369,6 +559,19 @@ public class ExerciseService {
         m.put("todayCorrect", correct == null ? 0 : correct);
         m.put("todayWrong", (total == null ? 0 : total) - (correct == null ? 0 : correct));
         return m;
+    }
+
+    private List<Exercise> loadExercises(String subject, String bankType) {
+        return jdbcTemplate.query("select * from exercise where subject=? and bank_type=?", exerciseMapper, subject, bankType);
+    }
+
+    private Set<String> loadDoneExerciseIds(Integer userId, String subject, String bankType) {
+        return new HashSet<>(jdbcTemplate.queryForList("""
+                select distinct ua.exercise_id
+                from user_answer ua
+                join exercise e on ua.exercise_id = e.id and ua.subject = e.subject
+                where ua.user_id=? and ua.subject=? and e.bank_type=?
+                """, String.class, userId, subject, bankType));
     }
 
     private String slug(String text) {
@@ -391,6 +594,7 @@ public class ExerciseService {
         }
         throw new CustomException("题库文件不存在");
     }
+
     private Account requireLogin() {
         Account current = UserContext.get();
         if (current == null) throw new CustomException("401");
@@ -402,4 +606,10 @@ public class ExerciseService {
         if (!"ADMIN".equals(current.getRole())) throw new CustomException("仅管理员可操作");
         return current;
     }
+
+    private record KnowledgeEdge(String target, String relationType, double weight) {}
+
+    private record DifficultyPreference(double preferredDifficulty, double tolerance) {}
+
+    private record RecommendationBreakdown(double score, String reason) {}
 }

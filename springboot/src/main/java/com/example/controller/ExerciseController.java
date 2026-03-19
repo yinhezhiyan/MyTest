@@ -60,7 +60,7 @@ public class ExerciseController {
     }
 
     @GetMapping("/api/recommendations")
-    public Result recommendations(@RequestParam(defaultValue = "5") Integer topN,
+    public Result recommendations(@RequestParam(defaultValue = "15") Integer topN,
                                   @RequestParam(defaultValue = "false") Boolean includeDone) {
         return Result.success(exerciseService.recommendations(topN, includeDone));
     }

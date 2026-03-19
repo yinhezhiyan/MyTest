@@ -1,0 +1,82 @@
+[
+  {
+    "id": "cn-ext-0001",
+    "subject": "CN",
+    "chapter": "拓展：QUIC 与 HTTP/3",
+    "chapterSlug": "拓展-QUIC-HTTP3",
+    "stem": "HTTP/3 选择基于 QUIC 而不是传统 TCP 的一个重要原因是？",
+    "options": {
+      "A": "QUIC 运行在 UDP 之上，便于减少握手和队头阻塞影响",
+      "B": "QUIC 不需要加密",
+      "C": "QUIC 不能多路复用",
+      "D": "QUIC 只用于局域网"
+    },
+    "answer": "A",
+    "analysis": "QUIC 集成传输与安全机制，并改善了连接建立与多路复用体验。",
+    "difficulty": 4,
+    "knowledge_points": [
+      "计算机网络概述",
+      "QUIC与HTTP/3"
+    ]
+  },
+  {
+    "id": "cn-ext-0002",
+    "subject": "CN",
+    "chapter": "拓展：交换网络与 VLAN",
+    "chapterSlug": "拓展-交换网络与VLAN",
+    "stem": "VLAN 的主要作用是？",
+    "options": {
+      "A": "增加网线长度",
+      "B": "在二层交换网络中进行逻辑分段",
+      "C": "替代所有路由器",
+      "D": "提升 CPU 主频"
+    },
+    "answer": "B",
+    "analysis": "VLAN 可以在同一交换基础设施上实现逻辑隔离。",
+    "difficulty": 3,
+    "knowledge_points": [
+      "数据链路层",
+      "交换网络与VLAN"
+    ]
+  },
+  {
+    "id": "cn-ext-0003",
+    "subject": "CN",
+    "chapter": "拓展：软件定义网络",
+    "chapterSlug": "拓展-软件定义网络",
+    "stem": "软件定义网络（SDN）的核心思想是？",
+    "options": {
+      "A": "把控制平面与转发平面解耦",
+      "B": "完全取消交换机",
+      "C": "所有路由都人工配置",
+      "D": "只支持无线网络"
+    },
+    "answer": "A",
+    "analysis": "SDN 通过集中化控制器管理网络策略，强调控制与转发分离。",
+    "difficulty": 4,
+    "knowledge_points": [
+      "网络层",
+      "软件定义网络"
+    ]
+  },
+  {
+    "id": "cn-ext-0004",
+    "subject": "CN",
+    "chapter": "拓展：拥塞控制演进",
+    "chapterSlug": "拓展-拥塞控制演进",
+    "stem": "TCP 拥塞控制中“慢开始”的主要目的是什么？",
+    "options": {
+      "A": "让连接立即占满全部带宽",
+      "B": "以指数方式探测可用带宽，避免一开始就造成严重拥塞",
+      "C": "关闭接收窗口",
+      "D": "跳过三次握手"
+    },
+    "answer": "B",
+    "analysis": "慢开始通过逐步增加拥塞窗口来探测网络承载能力。",
+    "difficulty": 4,
+    "knowledge_points": [
+      "运输层",
+      "拥塞控制演进"
+    ]
+  }
+]

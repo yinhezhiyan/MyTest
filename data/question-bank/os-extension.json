@@ -1,0 +1,82 @@
+[
+  {
+    "id": "os-ext-0001",
+    "subject": "OS",
+    "chapter": "拓展：系统调用与用户态内核态",
+    "chapterSlug": "拓展-系统调用与用户态内核态",
+    "stem": "应用程序请求操作系统打开文件时，通常通过什么机制进入内核？",
+    "options": {
+      "A": "系统调用",
+      "B": "DMA",
+      "C": "页面置换",
+      "D": "中断屏蔽"
+    },
+    "answer": "A",
+    "analysis": "系统调用是用户态程序向内核请求服务的标准接口。",
+    "difficulty": 3,
+    "knowledge_points": [
+      "操作系统的基本概念",
+      "系统调用与用户态内核态"
+    ]
+  },
+  {
+    "id": "os-ext-0002",
+    "subject": "OS",
+    "chapter": "拓展：容器与命名空间",
+    "chapterSlug": "拓展-容器与命名空间",
+    "stem": "Linux 容器实现“进程彼此看不见”的关键机制之一是？",
+    "options": {
+      "A": "文件碎片整理",
+      "B": "命名空间 namespace",
+      "C": "引导装载程序",
+      "D": "磁盘阵列 RAID"
+    },
+    "answer": "B",
+    "analysis": "namespace 为进程提供隔离视图，是容器技术的基础能力之一。",
+    "difficulty": 4,
+    "knowledge_points": [
+      "进程管理",
+      "容器与命名空间"
+    ]
+  },
+  {
+    "id": "os-ext-0003",
+    "subject": "OS",
+    "chapter": "拓展：虚拟化与内存隔离",
+    "chapterSlug": "拓展-虚拟化与内存隔离",
+    "stem": "虚拟机监控器（Hypervisor）的主要作用是？",
+    "options": {
+      "A": "只负责显示桌面图标",
+      "B": "管理并隔离多个虚拟机对硬件资源的访问",
+      "C": "替代 CPU 执行算术运算",
+      "D": "只做数据备份"
+    },
+    "answer": "B",
+    "analysis": "Hypervisor 负责资源抽象、调度和隔离，是虚拟化平台的核心。",
+    "difficulty": 4,
+    "knowledge_points": [
+      "存储管理",
+      "虚拟化与内存隔离"
+    ]
+  },
+  {
+    "id": "os-ext-0004",
+    "subject": "OS",
+    "chapter": "拓展：日志型文件系统",
+    "chapterSlug": "拓展-日志型文件系统",
+    "stem": "日志型文件系统在系统异常断电后更容易恢复一致性的主要原因是？",
+    "options": {
+      "A": "所有文件都不占磁盘空间",
+      "B": "关键元数据更新会先记录日志",
+      "C": "不需要目录结构",
+      "D": "永远不会发生写放大"
+    },
+    "answer": "B",
+    "analysis": "通过先写日志再提交元数据变更，可以在故障恢复时回放或回滚操作。",
+    "difficulty": 3,
+    "knowledge_points": [
+      "文件管理",
+      "日志型文件系统"
+    ]
+  }
+]
