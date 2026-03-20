@@ -119,6 +119,7 @@ import request from '@/utils/request'
 import {ElMessage, ElMessageBox} from 'element-plus'
 import router from '@/router'
 import KnowledgeGraphPanel from '@/components/KnowledgeGraphPanel.vue'
+import {parseKnowledgePoints, sanitizeKnowledgePoints} from '@/utils/knowledge'
 
 const user = reactive(JSON.parse(localStorage.getItem('system-user') || '{}'))
 const displayName = computed(() => user.name || user.username || '用户')
@@ -139,12 +140,7 @@ const syncUserFromStorage = () => {
   Object.assign(user, latest)
 }
 
-const normalizeKnowledgePoints = (text) => JSON.stringify(
-  String(text || '')
-    .split(/[，,]/)
-    .map(item => item.trim())
-    .filter(Boolean)
-)
+const normalizeKnowledgePoints = (text) => JSON.stringify(sanitizeKnowledgePoints(text))
 
 const fillForm = (payload = {}) => {
   Object.assign(form, {
@@ -159,15 +155,7 @@ const fillForm = (payload = {}) => {
     analysis: payload.analysis || '',
     attachmentUrl: payload.attachmentUrl || '',
     difficulty: payload.difficulty || 2,
-    knowledgePointText: Array.isArray(payload.knowledgePoints)
-      ? payload.knowledgePoints.join('，')
-      : (() => {
-        try {
-          return JSON.parse(payload.knowledgePoints || '[]').join('，')
-        } catch (e) {
-          return ''
-        }
-      })()
+    knowledgePointText: parseKnowledgePoints(payload.knowledgePoints).join('，')
   })
 }
 

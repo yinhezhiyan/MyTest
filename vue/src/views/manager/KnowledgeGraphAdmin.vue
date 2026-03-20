@@ -1,16 +1,28 @@
 <template>
   <div class="grid-wrap">
     <div class="card full-width">
+      <KnowledgeGraphPanel :graph-data="overview" title="本学科知识图谱" />
+    </div>
+
+    <div class="card full-width">
       <div class="header-row">
         <div>
           <h2>知识图谱管理</h2>
-          <div class="subline">查看知识点、调整知识点权重，并批量维护知识关系。</div>
+          <div class="subline">恢复统计视图，并按当前学科全部学生的答题数据聚合展示。</div>
         </div>
         <div class="action-row">
           <el-button @click="load">刷新</el-button>
           <el-button @click="batchVisible = true">批量维护关系</el-button>
           <el-button type="primary" @click="openCreate">新增关系</el-button>
         </div>
+      </div>
+
+      <div class="summary-strip">
+        <div class="summary-item"><span>知识点总数</span><strong>{{ overview.summary?.nodeCount || 0 }}</strong></div>
+        <div class="summary-item"><span>关系边总数</span><strong>{{ overview.summary?.edgeCount || 0 }}</strong></div>
+        <div class="summary-item"><span>激活知识点</span><strong>{{ overview.summary?.activatedNodeCount || 0 }}</strong></div>
+        <div class="summary-item"><span>薄弱知识点</span><strong>{{ overview.summary?.weakNodeCount || 0 }}</strong></div>
+        <div class="summary-item"><span>已掌握知识点</span><strong>{{ overview.summary?.masteredNodeCount || 0 }}</strong></div>
       </div>
 
       <el-table :data="points" size="small" max-height="420">
@@ -82,7 +94,7 @@
     <el-dialog v-model="batchVisible" title="批量维护知识关系" width="700px">
       <el-alert type="info" show-icon :closable="false" style="margin-bottom: 12px;"
                 title="每行一条：源知识点,目标知识点,关系类型,权重。关系类型可填 related / prerequisite / contains。"/>
-      <el-input v-model="batchText" type="textarea" :rows="12" placeholder="例如：\n线性表,栈,prerequisite,1.2\n线性表,队列,prerequisite,1.2"/>
+      <el-input v-model="batchText" type="textarea" :rows="12" :placeholder="batchPlaceholder"/>
       <template #footer>
         <el-button @click="batchVisible = false">取消</el-button>
         <el-button type="primary" @click="saveBatch">提交批量维护</el-button>
@@ -95,16 +107,20 @@
 import {computed, reactive, ref} from 'vue'
 import request from '@/utils/request'
 import {ElMessage, ElMessageBox} from 'element-plus'
+import KnowledgeGraphPanel from '@/components/KnowledgeGraphPanel.vue'
 
+const overview = ref({})
 const relations = ref([])
 const points = ref([])
 const dialogVisible = ref(false)
 const batchVisible = ref(false)
 const batchText = ref('')
+const batchPlaceholder = '例如：\n线性表,栈,prerequisite,1.2\n线性表,队列,prerequisite,1.2'
 const form = reactive({ id: null, sourceKp: '', targetKp: '', relationType: 'related', weight: 1 })
 const pointOptions = computed(() => points.value.map(item => item.kp_name))
 
 const load = () => Promise.all([
+  request.get('/admin/knowledge-graph/overview').then(res => overview.value = res.data || {}),
   request.get('/admin/knowledge-graph/relations').then(res => relations.value = res.data || []),
   request.get('/admin/knowledge-graph/points').then(res => points.value = (res.data || []).map(item => ({ ...item, weight: Number(item.weight || 1) })))
 ])
@@ -185,4 +201,8 @@ load()
 .header-row{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-bottom:12px}
 .subline{margin-top:6px;color:#64748b;font-size:13px}
 .action-row,.weight-cell{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+.summary-strip{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:12px;margin-bottom:16px}
+.summary-item{padding:12px 14px;border-radius:12px;background:#f8fafc;border:1px solid #e5e7eb;display:flex;flex-direction:column;gap:4px}
+.summary-item span{font-size:12px;color:#64748b}
+.summary-item strong{font-size:22px;color:#111827}
 </style>

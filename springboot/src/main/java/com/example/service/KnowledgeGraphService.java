@@ -177,86 +177,33 @@ public class KnowledgeGraphService {
         return studentKnowledgeGraph(studentId, admin.getSubject());
     }
 
+    public Map<String, Object> adminSubjectKnowledgeGraph() {
+        Account admin = requireAdmin();
+        String subject = admin.getSubject();
+        Map<String, Object> summary = new LinkedHashMap<>();
+        summary.put("subject", subject);
+        summary.put("studentCount", jdbcTemplate.queryForObject(
+                "select count(1) from sys_user where role='STUDENT' and subject=?",
+                Integer.class,
+                subject
+        ));
+        summary.put("studentName", "本学科学生聚合视图");
+        summary.put("username", "全部学生");
+        return buildKnowledgeGraph(subject, loadSubjectMetrics(subject), summary, null);
+    }
+
     public Map<String, Object> studentKnowledgeGraph(Integer studentId, String subject) {
         Map<String, Object> student = loadStudentProfile(studentId, subject);
         if (student == null) {
             throw new CustomException("学生不存在或不属于当前学科");
         }
 
-        sanitizeExerciseKnowledgePoints(subject);
-        normalizeKnowledgeRelations(subject);
-        refreshKnowledgePoints(subject);
-
-        List<Map<String, Object>> points = jdbcTemplate.queryForList(
-                "select id, kp_name, description, chapter_refs, exercise_count, weight from knowledge_point where subject=? order by weight desc, exercise_count desc, kp_name asc",
-                subject
-        );
-        List<Map<String, Object>> relations = relationRows(subject);
-        Map<String, KnowledgeMetric> metrics = loadStudentMetrics(studentId, subject);
-
-        List<Map<String, Object>> nodes = new ArrayList<>();
-        for (Map<String, Object> point : points) {
-            String kpName = Objects.toString(point.get("kp_name"), "");
-            KnowledgeMetric metric = metrics.getOrDefault(kpName, KnowledgeMetric.empty());
-            double weight = parseWeight(point.get("weight"));
-            Map<String, Object> node = new LinkedHashMap<>();
-            node.put("id", kpName);
-            node.put("pointId", point.get("id"));
-            node.put("label", kpName);
-            node.put("description", point.get("description"));
-            node.put("exerciseCount", ((Number) point.get("exercise_count")).intValue());
-            node.put("weight", weight);
-            node.put("chapters", parseStringList((String) point.get("chapter_refs")));
-            node.put("wrongTimes", metric.wrongTimes());
-            node.put("totalTimes", metric.totalTimes());
-            node.put("exposure", metric.exposure());
-            node.put("mastery", metric.mastery());
-            node.put("weakness", metric.weakness(weight));
-            node.put("status", metric.status(weight));
-            nodes.add(node);
-        }
-
-        List<Map<String, Object>> edges = relations.stream().map(edge -> {
-            Map<String, Object> item = new LinkedHashMap<>();
-            item.put("id", edge.get("id"));
-            item.put("source", edge.get("source_kp"));
-            item.put("target", edge.get("target_kp"));
-            item.put("relationType", edge.get("relation_type"));
-            item.put("weight", edge.get("weight"));
-            return item;
-        }).collect(Collectors.toList());
-
-        List<Map<String, Object>> weakTop = nodes.stream()
-                .sorted((a, b) -> Double.compare(((Number) b.get("weakness")).doubleValue(), ((Number) a.get("weakness")).doubleValue()))
-                .filter(node -> ((Number) node.get("weakness")).doubleValue() > 0)
-                .limit(8)
-                .collect(Collectors.toList());
-        List<Map<String, Object>> masteryTop = nodes.stream()
-                .sorted((a, b) -> Double.compare(((Number) b.get("mastery")).doubleValue(), ((Number) a.get("mastery")).doubleValue()))
-                .filter(node -> ((Number) node.get("totalTimes")).intValue() > 0)
-                .limit(8)
-                .collect(Collectors.toList());
-
         Map<String, Object> summary = new LinkedHashMap<>();
         summary.put("studentId", studentId);
         summary.put("studentName", student.get("name"));
         summary.put("username", student.get("username"));
         summary.put("subject", subject);
-        summary.put("nodeCount", nodes.size());
-        summary.put("edgeCount", edges.size());
-        summary.put("activatedNodeCount", nodes.stream().filter(node -> ((Number) node.get("totalTimes")).intValue() > 0).count());
-        summary.put("weakNodeCount", nodes.stream().filter(node -> "WEAK".equals(node.get("status"))).count());
-        summary.put("masteredNodeCount", nodes.stream().filter(node -> "MASTERED".equals(node.get("status"))).count());
-        summary.put("avgMastery", round(nodes.stream().mapToDouble(node -> ((Number) node.get("mastery")).doubleValue()).average().orElse(0)));
-
-        Map<String, Object> result = new LinkedHashMap<>();
-        result.put("summary", summary);
-        result.put("student", student);
-        result.put("nodes", nodes);
-        result.put("edges", edges);
-        result.put("weakTop", weakTop);
-        result.put("masteryTop", masteryTop);
-        return result;
+        return buildKnowledgeGraph(subject, loadStudentMetrics(studentId, subject), summary, student);
     }
 
     public List<Map<String, Object>> relationList() {
@@ -360,6 +307,81 @@ public class KnowledgeGraphService {
         );
     }
 
+    private Map<String, Object> buildKnowledgeGraph(String subject,
+                                                   Map<String, KnowledgeMetric> metrics,
+                                                   Map<String, Object> summarySeed,
+                                                   Map<String, Object> student) {
+        sanitizeExerciseKnowledgePoints(subject);
+        normalizeKnowledgeRelations(subject);
+        refreshKnowledgePoints(subject);
+
+        List<Map<String, Object>> points = jdbcTemplate.queryForList(
+                "select id, kp_name, description, chapter_refs, exercise_count, weight from knowledge_point where subject=? order by weight desc, exercise_count desc, kp_name asc",
+                subject
+        );
+        List<Map<String, Object>> relations = relationRows(subject);
+
+        List<Map<String, Object>> nodes = new ArrayList<>();
+        for (Map<String, Object> point : points) {
+            String kpName = Objects.toString(point.get("kp_name"), "");
+            KnowledgeMetric metric = metrics.getOrDefault(kpName, KnowledgeMetric.empty());
+            double weight = parseWeight(point.get("weight"));
+            Map<String, Object> node = new LinkedHashMap<>();
+            node.put("id", kpName);
+            node.put("pointId", point.get("id"));
+            node.put("label", kpName);
+            node.put("description", point.get("description"));
+            node.put("exerciseCount", ((Number) point.get("exercise_count")).intValue());
+            node.put("weight", weight);
+            node.put("chapters", parseStringList((String) point.get("chapter_refs")));
+            node.put("wrongTimes", metric.wrongTimes());
+            node.put("totalTimes", metric.totalTimes());
+            node.put("exposure", metric.exposure());
+            node.put("mastery", metric.mastery());
+            node.put("weakness", metric.weakness(weight));
+            node.put("status", metric.status(weight));
+            nodes.add(node);
+        }
+
+        List<Map<String, Object>> edges = relations.stream().map(edge -> {
+            Map<String, Object> item = new LinkedHashMap<>();
+            item.put("id", edge.get("id"));
+            item.put("source", edge.get("source_kp"));
+            item.put("target", edge.get("target_kp"));
+            item.put("relationType", edge.get("relation_type"));
+            item.put("weight", edge.get("weight"));
+            return item;
+        }).collect(Collectors.toList());
+
+        List<Map<String, Object>> weakTop = nodes.stream()
+                .sorted((a, b) -> Double.compare(((Number) b.get("weakness")).doubleValue(), ((Number) a.get("weakness")).doubleValue()))
+                .filter(node -> ((Number) node.get("weakness")).doubleValue() > 0)
+                .limit(8)
+                .collect(Collectors.toList());
+        List<Map<String, Object>> masteryTop = nodes.stream()
+                .sorted((a, b) -> Double.compare(((Number) b.get("mastery")).doubleValue(), ((Number) a.get("mastery")).doubleValue()))
+                .filter(node -> ((Number) node.get("totalTimes")).intValue() > 0)
+                .limit(8)
+                .collect(Collectors.toList());
+
+        Map<String, Object> summary = new LinkedHashMap<>(summarySeed);
+        summary.put("nodeCount", nodes.size());
+        summary.put("edgeCount", edges.size());
+        summary.put("activatedNodeCount", nodes.stream().filter(node -> ((Number) node.get("totalTimes")).intValue() > 0).count());
+        summary.put("weakNodeCount", nodes.stream().filter(node -> "WEAK".equals(node.get("status"))).count());
+        summary.put("masteredNodeCount", nodes.stream().filter(node -> "MASTERED".equals(node.get("status"))).count());
+        summary.put("avgMastery", round(nodes.stream().mapToDouble(node -> ((Number) node.get("mastery")).doubleValue()).average().orElse(0)));
+
+        Map<String, Object> result = new LinkedHashMap<>();
+        result.put("summary", summary);
+        result.put("student", student);
+        result.put("nodes", nodes);
+        result.put("edges", edges);
+        result.put("weakTop", weakTop);
+        result.put("masteryTop", masteryTop);
+        return result;
+    }
+
     private List<Map<String, Object>> relationRows(String subject) {
         return jdbcTemplate.queryForList(
                 "select id, subject, source_kp, target_kp, relation_type, weight from knowledge_relation where subject=? order by source_kp, target_kp, relation_type, id",
@@ -377,6 +399,36 @@ public class KnowledgeGraphService {
         } catch (DataAccessException e) {
             return null;
         }
+    }
+
+    private Map<String, KnowledgeMetric> loadSubjectMetrics(String subject) {
+        List<Map<String, Object>> rows = jdbcTemplate.queryForList(
+                """
+                select e.knowledge_points,
+                       sum(case when ua.is_correct=0 then 1 else 0 end) as wrong_times,
+                       count(*) as total_times
+                from user_answer ua
+                join exercise e on ua.exercise_id = e.id and ua.subject = e.subject
+                join sys_user su on ua.user_id = su.id
+                where ua.subject=? and su.role='STUDENT' and su.subject=?
+                group by e.knowledge_points
+                """,
+                subject,
+                subject
+        );
+        List<String> exposures = jdbcTemplate.queryForList(
+                """
+                select e.knowledge_points
+                from user_answer ua
+                join exercise e on ua.exercise_id = e.id and ua.subject = e.subject
+                join sys_user su on ua.user_id = su.id
+                where ua.subject=? and su.role='STUDENT' and su.subject=?
+                """,
+                String.class,
+                subject,
+                subject
+        );
+        return buildMetrics(rows, exposures);
     }
 
     private Map<String, KnowledgeMetric> loadStudentMetrics(Integer studentId, String subject) {
@@ -405,6 +457,10 @@ public class KnowledgeGraphService {
                 subject
         );
 
+        return buildMetrics(rows, exposures);
+    }
+
+    private Map<String, KnowledgeMetric> buildMetrics(List<Map<String, Object>> rows, List<String> exposures) {
         Map<String, Integer> exposureByKp = new HashMap<>();
         for (String kpJson : exposures) {
             for (String kp : sanitizeKnowledgePoints(parseKnowledgePoints(kpJson))) {

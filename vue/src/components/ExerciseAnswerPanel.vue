@@ -27,6 +27,7 @@
 import {computed, onMounted, reactive, ref, watch} from 'vue'
 import request from '@/utils/request'
 import {ElMessage} from 'element-plus'
+import {parseKnowledgePoints} from '@/utils/knowledge'
 
 const props = defineProps({
   initialId: { type: String, default: '' },
@@ -44,13 +45,7 @@ const historyIndex = ref(-1)
 const sequenceIds = ref([])
 const feedback = reactive({ visible: false, type: 'info', title: '', description: '' })
 
-const knowledgePoints = computed(() => {
-  try {
-    return Array.isArray(q.knowledgePoints) ? q.knowledgePoints : JSON.parse(q.knowledgePoints || '[]')
-  } catch (e) {
-    return []
-  }
-})
+const knowledgePoints = computed(() => parseKnowledgePoints(q.knowledgePoints))
 
 const displayQuestionNo = computed(() => {
   const id = String(q.id || '')

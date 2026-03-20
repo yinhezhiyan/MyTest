@@ -25,6 +25,11 @@ public class KnowledgeGraphController {
         return Result.success(knowledgeGraphService.studentKnowledgeGraphForAdmin(studentId));
     }
 
+    @GetMapping("/admin/knowledge-graph/overview")
+    public Result adminKnowledgeGraph() {
+        return Result.success(knowledgeGraphService.adminSubjectKnowledgeGraph());
+    }
+
     @GetMapping("/admin/knowledge-graph/relations")
     public Result relationList() {
         return Result.success(knowledgeGraphService.relationList());

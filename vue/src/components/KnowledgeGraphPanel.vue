@@ -4,13 +4,15 @@
       <div>
         <h3>{{ title }}</h3>
         <div class="kg-subtitle" v-if="summary.studentName">
-          {{ summary.studentName }}（{{ summary.username }}） · {{ subjectText }}
+          {{ summary.studentName }}<template v-if="summary.username">（{{ summary.username }}）</template> · {{ subjectText }}
         </div>
       </div>
       <div class="kg-stats">
         <div class="stat-card"><span>知识点</span><strong>{{ summary.nodeCount || nodes.length }}</strong></div>
         <div class="stat-card"><span>关系边</span><strong>{{ summary.edgeCount || edges.length }}</strong></div>
-        <div class="stat-card"><span>薄弱点</span><strong>{{ summary.weakNodeCount || 0 }}</strong></div>
+        <div class="stat-card" v-if="summary.studentCount !== undefined"><span>学生数</span><strong>{{ summary.studentCount || 0 }}</strong></div>
+        <div class="stat-card" v-else><span>薄弱点</span><strong>{{ summary.weakNodeCount || 0 }}</strong></div>
+        <div class="stat-card"><span>已激活</span><strong>{{ summary.activatedNodeCount || 0 }}</strong></div>
         <div class="stat-card"><span>平均掌握度</span><strong>{{ formatPercent(summary.avgMastery || 0) }}</strong></div>
       </div>
     </div>
