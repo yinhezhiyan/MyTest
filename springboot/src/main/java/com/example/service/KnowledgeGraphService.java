@@ -11,10 +11,13 @@ import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Service;
 
 import java.util.*;
+import java.util.regex.Pattern;
 import java.util.stream.Collectors;
 
 @Service
 public class KnowledgeGraphService {
+
+    private static final Pattern INVALID_KNOWLEDGE_POINT = Pattern.compile("(?i)(question-?txt导入|txt导入|ocr导入|图片ocr导入|导入标记|导入来源)");
 
     private final JdbcTemplate jdbcTemplate;
     private final ObjectMapper objectMapper;
@@ -26,7 +29,77 @@ public class KnowledgeGraphService {
 
     public void refreshAllSubjects(List<String> subjects) {
         for (String subject : subjects) {
+            sanitizeExerciseKnowledgePoints(subject);
+            normalizeKnowledgeRelations(subject);
             refreshKnowledgePoints(subject);
+        }
+    }
+
+    public List<String> sanitizeKnowledgePoints(Collection<String> rawKnowledgePoints) {
+        if (rawKnowledgePoints == null) {
+            return List.of();
+        }
+        LinkedHashSet<String> cleaned = new LinkedHashSet<>();
+        for (String raw : rawKnowledgePoints) {
+            String normalized = normalizeKnowledgePoint(raw);
+            if (!normalized.isEmpty()) {
+                cleaned.add(normalized);
+            }
+        }
+        return new ArrayList<>(cleaned);
+    }
+
+    public String sanitizeKnowledgePointsJson(String knowledgePointsJson) {
+        return writeJson(sanitizeKnowledgePoints(parseKnowledgePoints(knowledgePointsJson)));
+    }
+
+    public void sanitizeExerciseKnowledgePoints(String subject) {
+        List<Map<String, Object>> rows = jdbcTemplate.queryForList(
+                "select id, knowledge_points from exercise where subject=?",
+                subject
+        );
+        for (Map<String, Object> row : rows) {
+            String exerciseId = Objects.toString(row.get("id"), "");
+            String original = Objects.toString(row.get("knowledge_points"), "[]");
+            String sanitized = sanitizeKnowledgePointsJson(original);
+            if (!Objects.equals(original, sanitized)) {
+                jdbcTemplate.update("update exercise set knowledge_points=? where id=? and subject=?", sanitized, exerciseId, subject);
+            }
+        }
+    }
+
+    public void normalizeKnowledgeRelations(String subject) {
+        List<Map<String, Object>> rows = jdbcTemplate.queryForList(
+                "select id, source_kp, target_kp, relation_type, weight from knowledge_relation where subject=? order by id asc",
+                subject
+        );
+        Map<String, Long> keeper = new LinkedHashMap<>();
+        Set<Long> deleteIds = new LinkedHashSet<>();
+        for (Map<String, Object> row : rows) {
+            Long id = ((Number) row.get("id")).longValue();
+            String source = normalizeKnowledgePoint((String) row.get("source_kp"));
+            String target = normalizeKnowledgePoint((String) row.get("target_kp"));
+            String relationType = normalizeRelationType((String) row.get("relation_type"));
+            double weight = parseWeight(row.get("weight"));
+
+            if (source.isEmpty() || target.isEmpty()) {
+                deleteIds.add(id);
+                continue;
+            }
+
+            jdbcTemplate.update(
+                    "update knowledge_relation set source_kp=?, target_kp=?, relation_type=?, weight=? where id=? and subject=?",
+                    source, target, relationType, weight, id, subject
+            );
+            String signature = source + "|" + target + "|" + relationType;
+            if (keeper.containsKey(signature)) {
+                deleteIds.add(id);
+            } else {
+                keeper.put(signature, id);
+            }
+        }
+        for (Long deleteId : deleteIds) {
+            jdbcTemplate.update("delete from knowledge_relation where id=? and subject=?", deleteId, subject);
         }
     }
 
@@ -40,7 +113,7 @@ public class KnowledgeGraphService {
         );
         for (Map<String, Object> row : rows) {
             String chapter = Objects.toString(row.get("chapter"), "未分类章节");
-            for (String kp : parseKnowledgePoints((String) row.get("knowledge_points"))) {
+            for (String kp : sanitizeKnowledgePoints(parseKnowledgePoints((String) row.get("knowledge_points")))) {
                 chapterRefs.computeIfAbsent(kp, key -> new LinkedHashSet<>()).add(chapter);
                 exerciseCounts.merge(kp, 1, Integer::sum);
             }
@@ -51,8 +124,8 @@ public class KnowledgeGraphService {
                 subject
         );
         for (Map<String, Object> edge : edges) {
-            String source = Objects.toString(edge.get("source_kp"), "").trim();
-            String target = Objects.toString(edge.get("target_kp"), "").trim();
+            String source = normalizeKnowledgePoint((String) edge.get("source_kp"));
+            String target = normalizeKnowledgePoint((String) edge.get("target_kp"));
             if (!source.isEmpty()) {
                 chapterRefs.computeIfAbsent(source, key -> new LinkedHashSet<>());
                 exerciseCounts.putIfAbsent(source, 0);
@@ -74,14 +147,15 @@ public class KnowledgeGraphService {
             String chapterJson = writeJson(new ArrayList<>(chapterRefs.getOrDefault(kp, Set.of())));
             jdbcTemplate.update(
                     """
-                    insert into knowledge_point(subject, kp_name, chapter_refs, exercise_count, source_type)
-                    values(?,?,?,?,?)
+                    insert into knowledge_point(subject, kp_name, chapter_refs, exercise_count, weight, source_type)
+                    values(?,?,?,?,?,?)
                     on duplicate key update chapter_refs=values(chapter_refs), exercise_count=values(exercise_count)
                     """,
                     subject,
                     kp,
                     chapterJson,
                     exerciseCounts.getOrDefault(kp, 0),
+                    1.0,
                     exerciseCounts.getOrDefault(kp, 0) > 0 ? "EXERCISE" : "RELATION"
             );
         }
@@ -109,32 +183,36 @@ public class KnowledgeGraphService {
             throw new CustomException("学生不存在或不属于当前学科");
         }
 
+        sanitizeExerciseKnowledgePoints(subject);
+        normalizeKnowledgeRelations(subject);
+        refreshKnowledgePoints(subject);
+
         List<Map<String, Object>> points = jdbcTemplate.queryForList(
-                "select kp_name, description, chapter_refs, exercise_count from knowledge_point where subject=? order by exercise_count desc, kp_name asc",
+                "select id, kp_name, description, chapter_refs, exercise_count, weight from knowledge_point where subject=? order by weight desc, exercise_count desc, kp_name asc",
                 subject
         );
-        List<Map<String, Object>> relations = jdbcTemplate.queryForList(
-                "select id, source_kp, target_kp, relation_type, weight from knowledge_relation where subject=? order by source_kp, target_kp",
-                subject
-        );
+        List<Map<String, Object>> relations = relationRows(subject);
         Map<String, KnowledgeMetric> metrics = loadStudentMetrics(studentId, subject);
 
         List<Map<String, Object>> nodes = new ArrayList<>();
         for (Map<String, Object> point : points) {
             String kpName = Objects.toString(point.get("kp_name"), "");
             KnowledgeMetric metric = metrics.getOrDefault(kpName, KnowledgeMetric.empty());
+            double weight = parseWeight(point.get("weight"));
             Map<String, Object> node = new LinkedHashMap<>();
             node.put("id", kpName);
+            node.put("pointId", point.get("id"));
             node.put("label", kpName);
             node.put("description", point.get("description"));
             node.put("exerciseCount", ((Number) point.get("exercise_count")).intValue());
+            node.put("weight", weight);
             node.put("chapters", parseStringList((String) point.get("chapter_refs")));
             node.put("wrongTimes", metric.wrongTimes());
             node.put("totalTimes", metric.totalTimes());
             node.put("exposure", metric.exposure());
             node.put("mastery", metric.mastery());
-            node.put("weakness", metric.weakness());
-            node.put("status", metric.status());
+            node.put("weakness", metric.weakness(weight));
+            node.put("status", metric.status(weight));
             nodes.add(node);
         }
 
@@ -183,39 +261,51 @@ public class KnowledgeGraphService {
 
     public List<Map<String, Object>> relationList() {
         Account admin = requireAdmin();
+        sanitizeExerciseKnowledgePoints(admin.getSubject());
+        normalizeKnowledgeRelations(admin.getSubject());
         refreshKnowledgePoints(admin.getSubject());
-        return jdbcTemplate.queryForList(
-                "select id, subject, source_kp, target_kp, relation_type, weight from knowledge_relation where subject=? order by source_kp, target_kp, relation_type",
-                admin.getSubject()
-        );
+        return relationRows(admin.getSubject());
     }
 
     public List<Map<String, Object>> pointList() {
         Account admin = requireAdmin();
+        sanitizeExerciseKnowledgePoints(admin.getSubject());
+        normalizeKnowledgeRelations(admin.getSubject());
         refreshKnowledgePoints(admin.getSubject());
         return jdbcTemplate.queryForList(
-                "select kp_name, description, chapter_refs, exercise_count, source_type from knowledge_point where subject=? order by exercise_count desc, kp_name asc",
+                "select id, kp_name, description, chapter_refs, exercise_count, weight, source_type from knowledge_point where subject=? order by weight desc, exercise_count desc, kp_name asc",
                 admin.getSubject()
         ).stream().peek(row -> row.put("chapter_refs", parseStringList((String) row.get("chapter_refs")))).collect(Collectors.toList());
     }
 
-    public void saveRelation(Map<String, Object> payload) {
+    public void updatePointWeight(Long id, Object weightRaw) {
         Account admin = requireAdmin();
-        String source = cleanText(payload.get("sourceKp"));
-        String target = cleanText(payload.get("targetKp"));
-        String relationType = cleanText(payload.getOrDefault("relationType", "related"));
-        double weight = parseWeight(payload.get("weight"));
-        if (source.isEmpty() || target.isEmpty()) {
-            throw new CustomException("请填写完整的知识点关系");
-        }
-        jdbcTemplate.update(
-                """
-                insert into knowledge_relation(subject, source_kp, target_kp, relation_type, weight)
-                values(?,?,?,?,?)
-                on duplicate key update weight=values(weight)
-                """,
-                admin.getSubject(), source, target, relationType, weight
+        double weight = parseWeight(weightRaw);
+        Integer exists = jdbcTemplate.queryForObject(
+                "select count(1) from knowledge_point where id=? and subject=?",
+                Integer.class,
+                id,
+                admin.getSubject()
         );
+        if (exists == null || exists == 0) {
+            throw new CustomException("知识点不存在");
+        }
+        jdbcTemplate.update("update knowledge_point set weight=? where id=? and subject=?", weight, id, admin.getSubject());
+    }
+
+    public void saveRelation(Map<String, Object> payload) {
+        saveRelationInternal(requireAdmin().getSubject(), payload);
+    }
+
+    public void saveRelations(List<Map<String, Object>> payloads) {
+        Account admin = requireAdmin();
+        if (payloads == null || payloads.isEmpty()) {
+            throw new CustomException("请至少提供一条知识关系");
+        }
+        for (Map<String, Object> payload : payloads) {
+            saveRelationInternal(admin.getSubject(), payload);
+        }
+        normalizeKnowledgeRelations(admin.getSubject());
         refreshKnowledgePoints(admin.getSubject());
     }
 
@@ -230,9 +320,9 @@ public class KnowledgeGraphService {
         if (exists == null || exists == 0) {
             throw new CustomException("关系不存在");
         }
-        String source = cleanText(payload.get("sourceKp"));
-        String target = cleanText(payload.get("targetKp"));
-        String relationType = cleanText(payload.getOrDefault("relationType", "related"));
+        String source = normalizeKnowledgePoint(Objects.toString(payload.get("sourceKp"), ""));
+        String target = normalizeKnowledgePoint(Objects.toString(payload.get("targetKp"), ""));
+        String relationType = normalizeRelationType(Objects.toString(payload.getOrDefault("relationType", "related"), "related"));
         double weight = parseWeight(payload.get("weight"));
         if (source.isEmpty() || target.isEmpty()) {
             throw new CustomException("请填写完整的知识点关系");
@@ -241,13 +331,40 @@ public class KnowledgeGraphService {
                 "update knowledge_relation set source_kp=?, target_kp=?, relation_type=?, weight=? where id=? and subject=?",
                 source, target, relationType, weight, id, admin.getSubject()
         );
+        normalizeKnowledgeRelations(admin.getSubject());
         refreshKnowledgePoints(admin.getSubject());
     }
 
     public void deleteRelation(Long id) {
         Account admin = requireAdmin();
         jdbcTemplate.update("delete from knowledge_relation where id=? and subject=?", id, admin.getSubject());
+        normalizeKnowledgeRelations(admin.getSubject());
         refreshKnowledgePoints(admin.getSubject());
+    }
+
+    private void saveRelationInternal(String subject, Map<String, Object> payload) {
+        String source = normalizeKnowledgePoint(Objects.toString(payload.get("sourceKp"), ""));
+        String target = normalizeKnowledgePoint(Objects.toString(payload.get("targetKp"), ""));
+        String relationType = normalizeRelationType(Objects.toString(payload.getOrDefault("relationType", "related"), "related"));
+        double weight = parseWeight(payload.get("weight"));
+        if (source.isEmpty() || target.isEmpty()) {
+            throw new CustomException("请填写完整的知识点关系");
+        }
+        jdbcTemplate.update(
+                """
+                insert into knowledge_relation(subject, source_kp, target_kp, relation_type, weight)
+                values(?,?,?,?,?)
+                on duplicate key update weight=values(weight)
+                """,
+                subject, source, target, relationType, weight
+        );
+    }
+
+    private List<Map<String, Object>> relationRows(String subject) {
+        return jdbcTemplate.queryForList(
+                "select id, subject, source_kp, target_kp, relation_type, weight from knowledge_relation where subject=? order by source_kp, target_kp, relation_type, id",
+                subject
+        );
     }
 
     private Map<String, Object> loadStudentProfile(Integer studentId, String subject) {
@@ -290,7 +407,7 @@ public class KnowledgeGraphService {
 
         Map<String, Integer> exposureByKp = new HashMap<>();
         for (String kpJson : exposures) {
-            for (String kp : parseKnowledgePoints(kpJson)) {
+            for (String kp : sanitizeKnowledgePoints(parseKnowledgePoints(kpJson))) {
                 exposureByKp.merge(kp, 1, Integer::sum);
             }
         }
@@ -299,7 +416,7 @@ public class KnowledgeGraphService {
         for (Map<String, Object> row : rows) {
             int wrong = ((Number) row.get("wrong_times")).intValue();
             int total = ((Number) row.get("total_times")).intValue();
-            for (String kp : parseKnowledgePoints((String) row.get("knowledge_points"))) {
+            for (String kp : sanitizeKnowledgePoints(parseKnowledgePoints((String) row.get("knowledge_points")))) {
                 int[] slot = stats.computeIfAbsent(kp, key -> new int[2]);
                 slot[0] += wrong;
                 slot[1] += total;
@@ -349,8 +466,27 @@ public class KnowledgeGraphService {
         }
     }
 
-    private String cleanText(Object raw) {
-        return Objects.toString(raw, "").trim();
+    private String normalizeKnowledgePoint(String raw) {
+        if (raw == null) {
+            return "";
+        }
+        String normalized = raw.replace('\t', ' ')
+                .replace('\n', ' ')
+                .replace('\r', ' ')
+                .replaceAll("\\s+", " ")
+                .trim();
+        if (normalized.isEmpty() || INVALID_KNOWLEDGE_POINT.matcher(normalized).find()) {
+            return "";
+        }
+        return normalized;
+    }
+
+    private String normalizeRelationType(String raw) {
+        String relationType = Objects.toString(raw, "related").trim().toLowerCase(Locale.ROOT);
+        return switch (relationType) {
+            case "prerequisite", "contains", "related" -> relationType;
+            default -> "related";
+        };
     }
 
     private double parseWeight(Object raw) {
@@ -382,28 +518,37 @@ public class KnowledgeGraphService {
         return current;
     }
 
-    private record KnowledgeMetric(int wrongTimes, int totalTimes, int exposure, double mastery, double weakness, String status) {
+    private record KnowledgeMetric(int wrongTimes, int totalTimes, int exposure, double mastery, double weaknessBase) {
         private static KnowledgeMetric of(int wrongTimes, int totalTimes, int exposure) {
             double wrongRate = totalTimes == 0 ? 0 : (double) wrongTimes / totalTimes;
-            double weakness = totalTimes == 0 ? 0 : Math.min(1.0, wrongRate * (0.7 + Math.log1p(totalTimes) / 2));
+            double weaknessBase = totalTimes == 0 ? 0 : Math.min(1.0, wrongRate * (0.7 + Math.log1p(totalTimes) / 2));
             double mastery = totalTimes == 0 ? 0.15 : Math.max(0, Math.min(1.0, 1 - wrongRate));
-            String status;
-            if (totalTimes == 0 && exposure > 0) {
-                status = "SEEN";
-            } else if (weakness >= 0.45) {
-                status = "WEAK";
-            } else if (mastery >= 0.8 && totalTimes >= 2) {
-                status = "MASTERED";
-            } else if (totalTimes > 0) {
-                status = "LEARNING";
-            } else {
-                status = "UNSEEN";
-            }
-            return new KnowledgeMetric(wrongTimes, totalTimes, exposure, mastery, weakness, status);
+            return new KnowledgeMetric(wrongTimes, totalTimes, exposure, mastery, weaknessBase);
         }
 
         private static KnowledgeMetric empty() {
-            return new KnowledgeMetric(0, 0, 0, 0.15, 0, "UNSEEN");
+            return new KnowledgeMetric(0, 0, 0, 0.15, 0);
+        }
+
+        private double weakness(double pointWeight) {
+            return Math.min(1.0, weaknessBase * Math.max(0.2, pointWeight));
+        }
+
+        private String status(double pointWeight) {
+            double weakness = weakness(pointWeight);
+            if (totalTimes == 0 && exposure > 0) {
+                return "SEEN";
+            }
+            if (weakness >= 0.45) {
+                return "WEAK";
+            }
+            if (mastery >= 0.8 && totalTimes >= 2) {
+                return "MASTERED";
+            }
+            if (totalTimes > 0) {
+                return "LEARNING";
+            }
+            return "UNSEEN";
         }
     }
 }

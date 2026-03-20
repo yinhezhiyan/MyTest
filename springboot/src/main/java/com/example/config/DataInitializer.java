@@ -41,6 +41,7 @@ public class DataInitializer implements CommandLineRunner {
         ensureExerciseColumns();
         initUserAnswerTable();
         initKnowledgePointTable();
+        ensureKnowledgePointColumns();
         initKnowledgeRelationTable();
 
         initAdmin("DS");
@@ -152,6 +153,7 @@ public class DataInitializer implements CommandLineRunner {
                     description text,
                     chapter_refs text,
                     exercise_count int default 0,
+                    weight decimal(6,2) default 1.00,
                     source_type varchar(20) default 'AUTO',
                     created_at datetime default current_timestamp,
                     updated_at datetime default current_timestamp on update current_timestamp,
@@ -159,6 +161,12 @@ public class DataInitializer implements CommandLineRunner {
                     index idx_kp_subject(subject)
                 )
                 """);
+    }
+
+    private void ensureKnowledgePointColumns() {
+        if (!columnExists("knowledge_point", "weight")) {
+            jdbcTemplate.execute("alter table knowledge_point add column weight decimal(6,2) default 1.00");
+        }
     }
 
     private void initKnowledgeRelationTable() {

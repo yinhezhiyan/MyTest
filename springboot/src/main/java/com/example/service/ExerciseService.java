@@ -75,7 +75,7 @@ public class ExerciseService {
                 String id = String.valueOf(item.get("id"));
                 Map<String, String> options = (Map<String, String>) item.getOrDefault("options", Map.of());
                 List<String> kps = (List<String>) item.getOrDefault("knowledge_points", new ArrayList<>());
-                String kp = objectMapper.writeValueAsString(kps);
+                String kp = objectMapper.writeValueAsString(knowledgeGraphService.sanitizeKnowledgePoints(kps));
                 jdbcTemplate.update("""
                         insert into exercise(id, subject, chapter, chapter_slug, stem, option_a, option_b, option_c, option_d, answer, analysis, difficulty, knowledge_points, attachment_url, bank_type)
                         values(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)
@@ -474,7 +474,7 @@ public class ExerciseService {
             return List.of();
         }
         try {
-            return objectMapper.readValue(kpJson, new TypeReference<List<String>>() {});
+            return knowledgeGraphService.sanitizeKnowledgePoints(objectMapper.readValue(kpJson, new TypeReference<List<String>>() {}));
         } catch (Exception ignored) {
             return List.of();
         }
@@ -547,7 +547,7 @@ public class ExerciseService {
                 values(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)
                 """,
                 id, current.getSubject(), e.getChapter(), slug(e.getChapter()), e.getStem(), e.getOptionA(), e.getOptionB(), e.getOptionC(), e.getOptionD(),
-                e.getAnswer(), ObjectUtil.defaultIfNull(e.getAnalysis(), ""), ObjectUtil.defaultIfNull(e.getDifficulty(), 2), ObjectUtil.defaultIfNull(e.getKnowledgePoints(), "[]"), ObjectUtil.defaultIfNull(e.getAttachmentUrl(), ""), BANK_TYPE_MAIN);
+                e.getAnswer(), ObjectUtil.defaultIfNull(e.getAnalysis(), ""), ObjectUtil.defaultIfNull(e.getDifficulty(), 2), knowledgeGraphService.sanitizeKnowledgePointsJson(ObjectUtil.defaultIfNull(e.getKnowledgePoints(), "[]")), ObjectUtil.defaultIfNull(e.getAttachmentUrl(), ""), BANK_TYPE_MAIN);
         knowledgeGraphService.refreshKnowledgePoints(current.getSubject());
     }
 
@@ -591,7 +591,7 @@ public class ExerciseService {
                 """,
                 e.getChapter(), slug(e.getChapter()), e.getStem(), e.getOptionA(), e.getOptionB(), e.getOptionC(), e.getOptionD(),
                 e.getAnswer(), ObjectUtil.defaultIfNull(e.getAnalysis(), ""), ObjectUtil.defaultIfNull(e.getDifficulty(), 2),
-                ObjectUtil.defaultIfNull(e.getKnowledgePoints(), "[]"), ObjectUtil.defaultIfNull(e.getAttachmentUrl(), ""),
+                knowledgeGraphService.sanitizeKnowledgePointsJson(ObjectUtil.defaultIfNull(e.getKnowledgePoints(), "[]")), ObjectUtil.defaultIfNull(e.getAttachmentUrl(), ""),
                 id, current.getSubject(), BANK_TYPE_MAIN);
         knowledgeGraphService.refreshKnowledgePoints(current.getSubject());
     }

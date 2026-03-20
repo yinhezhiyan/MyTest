@@ -4,26 +4,28 @@
       <div class="header-row">
         <div>
           <h2>知识图谱管理</h2>
-          <div class="subline">维护本学科知识点之间的先修、包含、关联关系，并查看全局图谱。</div>
+          <div class="subline">查看知识点、调整知识点权重，并批量维护知识关系。</div>
         </div>
         <div class="action-row">
           <el-button @click="load">刷新</el-button>
+          <el-button @click="batchVisible = true">批量维护关系</el-button>
           <el-button type="primary" @click="openCreate">新增关系</el-button>
         </div>
       </div>
-      <KnowledgeGraphPanel :graph-data="graphData" title="当前学科知识图谱" />
-    </div>
 
-    <div class="card full-width">
-      <div class="header-row">
-        <h3>知识点清单</h3>
-        <el-tag>{{ points.length }} 个知识点</el-tag>
-      </div>
-      <el-table :data="points" size="small" max-height="320">
+      <el-table :data="points" size="small" max-height="420">
         <el-table-column prop="kp_name" label="知识点" min-width="180"/>
-        <el-table-column prop="exercise_count" label="关联题目数" width="110"/>
+        <el-table-column prop="exercise_count" label="关联题目数" width="120"/>
+        <el-table-column label="当前权重" width="180">
+          <template #default="scope">
+            <div class="weight-cell">
+              <el-input-number v-model="scope.row.weight" :min="0.1" :max="5" :step="0.1"/>
+              <el-button link type="primary" @click="saveWeight(scope.row)">保存</el-button>
+            </div>
+          </template>
+        </el-table-column>
         <el-table-column prop="source_type" label="来源" width="100"/>
-        <el-table-column label="章节" min-width="220">
+        <el-table-column label="章节" min-width="260">
           <template #default="scope">{{ (scope.row.chapter_refs || []).join('、') || '-' }}</template>
         </el-table-column>
       </el-table>
@@ -32,7 +34,7 @@
     <div class="card full-width">
       <div class="header-row">
         <h3>知识关系维护</h3>
-        <el-tag type="success">支持批量维护</el-tag>
+        <el-tag>{{ relations.length }} 条</el-tag>
       </div>
       <el-table :data="relations" size="small">
         <el-table-column prop="source_kp" label="源知识点" min-width="180"/>
@@ -76,6 +78,16 @@
         <el-button type="primary" @click="save">保存</el-button>
       </template>
     </el-dialog>
+
+    <el-dialog v-model="batchVisible" title="批量维护知识关系" width="700px">
+      <el-alert type="info" show-icon :closable="false" style="margin-bottom: 12px;"
+                title="每行一条：源知识点,目标知识点,关系类型,权重。关系类型可填 related / prerequisite / contains。"/>
+      <el-input v-model="batchText" type="textarea" :rows="12" placeholder="例如：\n线性表,栈,prerequisite,1.2\n线性表,队列,prerequisite,1.2"/>
+      <template #footer>
+        <el-button @click="batchVisible = false">取消</el-button>
+        <el-button type="primary" @click="saveBatch">提交批量维护</el-button>
+      </template>
+    </el-dialog>
   </div>
 </template>
 
@@ -83,40 +95,18 @@
 import {computed, reactive, ref} from 'vue'
 import request from '@/utils/request'
 import {ElMessage, ElMessageBox} from 'element-plus'
-import KnowledgeGraphPanel from '@/components/KnowledgeGraphPanel.vue'
 
 const relations = ref([])
 const points = ref([])
 const dialogVisible = ref(false)
+const batchVisible = ref(false)
+const batchText = ref('')
 const form = reactive({ id: null, sourceKp: '', targetKp: '', relationType: 'related', weight: 1 })
-const subject = computed(() => JSON.parse(localStorage.getItem('system-user') || '{}').subject || '')
 const pointOptions = computed(() => points.value.map(item => item.kp_name))
-const graphData = computed(() => ({
-  summary: { subject: subject.value, nodeCount: points.value.length, edgeCount: relations.value.length, avgMastery: 0 },
-  nodes: points.value.map(item => ({
-    id: item.kp_name,
-    label: item.kp_name,
-    mastery: item.exercise_count ? 0.6 : 0.15,
-    weakness: 0,
-    totalTimes: item.exercise_count || 0,
-    wrongTimes: 0,
-    chapters: item.chapter_refs || [],
-    status: item.exercise_count ? 'LEARNING' : 'UNSEEN'
-  })),
-  edges: relations.value.map(item => ({
-    id: item.id,
-    source: item.source_kp,
-    target: item.target_kp,
-    relationType: item.relation_type,
-    weight: item.weight
-  })),
-  weakTop: [],
-  masteryTop: []
-}))
 
 const load = () => Promise.all([
   request.get('/admin/knowledge-graph/relations').then(res => relations.value = res.data || []),
-  request.get('/admin/knowledge-graph/points').then(res => points.value = res.data || [])
+  request.get('/admin/knowledge-graph/points').then(res => points.value = (res.data || []).map(item => ({ ...item, weight: Number(item.weight || 1) })))
 ])
 
 const resetForm = () => {
@@ -154,6 +144,36 @@ const remove = (id) => ElMessageBox.confirm('确认删除该知识关系吗？',
     } else ElMessage.error(res.msg)
   })
 })
+const saveWeight = (row) => {
+  request.put(`/admin/knowledge-graph/points/${row.id}/weight`, { weight: row.weight }).then(res => {
+    if (res.code === '200') {
+      ElMessage.success(`已更新 ${row.kp_name} 的权重`)
+      load()
+    } else ElMessage.error(res.msg)
+  })
+}
+const saveBatch = () => {
+  const payload = batchText.value
+    .split('\n')
+    .map(line => line.trim())
+    .filter(Boolean)
+    .map(line => {
+      const [sourceKp, targetKp, relationType = 'related', weight = '1'] = line.split(',').map(item => item.trim())
+      return { sourceKp, targetKp, relationType, weight: Number(weight || 1) }
+    })
+  if (!payload.length) {
+    ElMessage.warning('请先输入批量关系内容')
+    return
+  }
+  request.post('/admin/knowledge-graph/relations/batch', payload).then(res => {
+    if (res.code === '200') {
+      ElMessage.success('批量维护完成')
+      batchVisible.value = false
+      batchText.value = ''
+      load()
+    } else ElMessage.error(res.msg)
+  })
+}
 
 load()
 </script>
@@ -164,5 +184,5 @@ load()
 .card{background:#fff;padding:16px;border-radius:12px}
 .header-row{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-bottom:12px}
 .subline{margin-top:6px;color:#64748b;font-size:13px}
-.action-row{display:flex;gap:8px;flex-wrap:wrap}
+.action-row,.weight-cell{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
 </style>

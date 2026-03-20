@@ -35,9 +35,21 @@ public class KnowledgeGraphController {
         return Result.success(knowledgeGraphService.pointList());
     }
 
+    @PutMapping("/admin/knowledge-graph/points/{id}/weight")
+    public Result updatePointWeight(@PathVariable Long id, @RequestBody Map<String, Object> payload) {
+        knowledgeGraphService.updatePointWeight(id, payload.get("weight"));
+        return Result.success();
+    }
+
     @PostMapping("/admin/knowledge-graph/relations")
     public Result createRelation(@RequestBody Map<String, Object> payload) {
         knowledgeGraphService.saveRelation(payload);
+        return Result.success();
+    }
+
+    @PostMapping("/admin/knowledge-graph/relations/batch")
+    public Result createRelations(@RequestBody java.util.List<Map<String, Object>> payloads) {
+        knowledgeGraphService.saveRelations(payloads);
         return Result.success();
     }
 

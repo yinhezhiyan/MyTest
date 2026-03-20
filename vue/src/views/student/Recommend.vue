@@ -36,36 +36,49 @@
         </template>
       </el-table-column>
       <el-table-column label="操作" width="120">
-        <template #default="scope"><el-button type="primary" link @click="go(scope.row.exerciseId)">去作答</el-button></template>
+        <template #default="scope"><el-button type="primary" link @click="openAnswer(scope.row.exerciseId)">去作答</el-button></template>
       </el-table-column>
     </el-table>
+
+    <el-dialog v-model="answerVisible" title="推荐题目作答" width="70%" top="6vh" destroy-on-close>
+      <ExerciseAnswerPanel
+        v-if="answerVisible"
+        :key="dialogKey"
+        :initial-id="activeId"
+        :sequence-ids="sequenceIds"
+        :embedded="true"
+        :random-when-empty="false"
+        @close="answerVisible = false"
+      />
+    </el-dialog>
   </div>
 </template>
 <script setup>
-import {onMounted, ref} from 'vue';
+import {onMounted, ref} from 'vue'
 import {MoreFilled} from '@element-plus/icons-vue'
-import request from '@/utils/request';
-import router from '@/router';
-const user = JSON.parse(localStorage.getItem('system-user') || '{}')
+import request from '@/utils/request'
+import ExerciseAnswerPanel from '@/components/ExerciseAnswerPanel.vue'
+
 const includeDone = ref(localStorage.getItem('recommend-include-done') === '1')
 const list = ref([])
-const load = ()=> {
+const answerVisible = ref(false)
+const activeId = ref('')
+const sequenceIds = ref([])
+const dialogKey = ref(0)
+
+const load = () => {
   localStorage.setItem('recommend-include-done', includeDone.value ? '1' : '0')
-  request.get('/api/recommendations', { params: { topN: 15, includeDone: includeDone.value } }).then(res=> list.value=res.data||[])
+  request.get('/api/recommendations', { params: { topN: 15, includeDone: includeDone.value } }).then(res => list.value = res.data || [])
 }
+
+const openAnswer = (id) => {
+  activeId.value = id
+  sequenceIds.value = list.value.map(item => item.exerciseId)
+  dialogKey.value += 1
+  answerVisible.value = true
+}
+
 onMounted(load)
-const go = (id)=> {
-  const ids = list.value.map(item => item.exerciseId)
-  const index = ids.indexOf(id)
-  router.push({
-    path: `/manager/${user.subject}/practice`,
-    query: {
-      id,
-      ids: ids.join(','),
-      idx: index < 0 ? 0 : index
-    }
-  })
-}
 </script>
 <style scoped>
 .card{background:#fff;padding:18px;border-radius:12px}
