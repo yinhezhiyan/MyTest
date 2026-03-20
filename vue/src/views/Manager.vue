@@ -17,6 +17,7 @@
           <template v-if="data.user.role === 'ADMIN'">
             <el-menu-item :index="`/manager/${data.user.subject}/admin`">管理员</el-menu-item>
             <el-menu-item :index="`/manager/${data.user.subject}/students`">学生管理</el-menu-item>
+            <el-menu-item :index="`/manager/${data.user.subject}/knowledge-graph`">知识图谱管理</el-menu-item>
           </template>
           <template v-else>
             <el-menu-item :index="`/manager/${data.user.subject}/daily`">今日个性拓展</el-menu-item>

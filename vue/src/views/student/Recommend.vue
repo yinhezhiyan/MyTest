@@ -20,6 +20,21 @@
     <el-table :data="list">
       <el-table-column prop="chapter" label="章节" width="160"/>
       <el-table-column prop="stem" label="题目"/>
+      <el-table-column label="推荐说明" min-width="280">
+        <template #default="scope">
+          <div class="reason-wrap">
+            <div class="score-line">
+              <el-tag type="success">推荐分 {{ Number(scope.row.score || 0).toFixed(2) }}</el-tag>
+              <el-tag v-if="scope.row.difficulty">难度 {{ scope.row.difficulty }}</el-tag>
+            </div>
+            <div class="reason-text">{{ scope.row.reason || '系统综合推荐' }}</div>
+            <div class="tag-row">
+              <el-tag v-for="tag in scope.row.reasonTags || []" :key="tag" size="small" effect="plain">{{ tag }}</el-tag>
+              <el-tag v-for="kp in scope.row.knowledgePoints || []" :key="`${scope.row.exerciseId}-${kp}`" size="small" type="info" effect="plain">{{ kp }}</el-tag>
+            </div>
+          </div>
+        </template>
+      </el-table-column>
       <el-table-column label="操作" width="120">
         <template #default="scope"><el-button type="primary" link @click="go(scope.row.exerciseId)">去作答</el-button></template>
       </el-table-column>
@@ -56,4 +71,7 @@ const go = (id)=> {
 .card{background:#fff;padding:18px;border-radius:12px}
 .header-row{display:flex;align-items:center;justify-content:space-between;margin-bottom:8px}
 .setting-item{display:flex;align-items:center;justify-content:space-between;gap:12px;width:220px}
+.reason-wrap{display:flex;flex-direction:column;gap:8px;padding:6px 0}
+.score-line,.tag-row{display:flex;gap:6px;flex-wrap:wrap}
+.reason-text{color:#475569;line-height:1.6}
 </style>
