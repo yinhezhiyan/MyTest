@@ -11,8 +11,11 @@
         </el-table-column>
         <el-table-column prop="username" label="账号"/>
         <el-table-column prop="name" label="昵称"/>
-        <el-table-column label="操作" width="140">
-          <template #default="scope"><el-button link type="primary" @click="openRecords(scope.row)">答题记录</el-button></template>
+        <el-table-column label="操作" width="220">
+          <template #default="scope">
+            <el-button link type="primary" @click="openRecords(scope.row)">答题记录</el-button>
+            <el-button link type="success" @click="openKnowledgeGraph(scope.row)">知识图谱</el-button>
+          </template>
         </el-table-column>
       </el-table>
       <el-pagination background layout="prev, pager, next" v-model:current-page="pageNum" v-model:page-size="pageSize" :total="total" @current-change="load"/>
@@ -31,12 +34,17 @@
         <el-table-column prop="correct_answer" label="正确" width="90"/>
       </el-table>
     </el-dialog>
+
+    <el-dialog v-model="knowledgeGraphVisible" width="85%" title="学生知识图谱" top="4vh">
+      <KnowledgeGraphPanel :graph-data="knowledgeGraph" :title="knowledgeGraph.summary?.studentName ? `${knowledgeGraph.summary.studentName} 的知识图谱` : '学生知识图谱'" />
+    </el-dialog>
   </div>
 </template>
 
 <script setup>
 import {ref} from 'vue'
 import request from '@/utils/request'
+import KnowledgeGraphPanel from '@/components/KnowledgeGraphPanel.vue'
 
 const pageNum = ref(1), pageSize = ref(10), total = ref(0), name = ref('')
 const tableData = ref([])
@@ -44,6 +52,8 @@ const recordVisible = ref(false)
 const currentStudentId = ref(null)
 const date = ref('')
 const records = ref([])
+const knowledgeGraphVisible = ref(false)
+const knowledgeGraph = ref({})
 
 const load = ()=> {
   request.get('/admin/student/selectPage', { params: { pageNum: pageNum.value, pageSize: pageSize.value, name: name.value || undefined } }).then(res => {
@@ -57,6 +67,12 @@ const openRecords = (row) => {
   date.value = ''
   recordVisible.value = true
   loadRecords()
+}
+
+const openKnowledgeGraph = (row) => {
+  currentStudentId.value = row.id
+  knowledgeGraphVisible.value = true
+  request.get(`/admin/student/${row.id}/knowledge-graph`).then(res => knowledgeGraph.value = res.data || {})
 }
 
 const loadRecords = () => {

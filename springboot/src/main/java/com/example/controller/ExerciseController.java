@@ -1,6 +1,7 @@
 package com.example.controller;
 
 import com.example.common.Result;
+import com.example.dto.ImportRequest;
 import com.example.dto.SubmitAnswerRequest;
 import com.example.entity.Exercise;
 import com.example.service.ExerciseService;
@@ -30,6 +31,22 @@ public class ExerciseController {
     public Result deleteExercise(@PathVariable String id) {
         exerciseService.deleteExerciseByAdmin(id);
         return Result.success();
+    }
+
+    @GetMapping("/admin/question-bank/exercise/{id}")
+    public Result exerciseDetail(@PathVariable String id) {
+        return Result.success(exerciseService.getExerciseForAdmin(id));
+    }
+
+    @PutMapping("/admin/question-bank/exercise/{id}")
+    public Result updateExercise(@PathVariable String id, @RequestBody Exercise exercise) {
+        exerciseService.updateExerciseByAdmin(id, exercise);
+        return Result.success();
+    }
+
+    @PostMapping("/admin/question-bank/import")
+    public Result importQuestionBank(@RequestBody ImportRequest request) {
+        return Result.success(exerciseService.importFromJson(request.getSubject(), request.getFilePath()));
     }
 
     @GetMapping("/api/profile/summary")
