@@ -500,16 +500,40 @@ public class ExerciseService {
                     return buildRecommendationItem(e, finalScore, reason, List.of("知识图谱拓展", reason));
                 })
                 .sorted((a, b) -> Double.compare((Double) b.get("score"), (Double) a.get("score")))
-                .limit(topN)
                 .collect(Collectors.toList());
 
-        if (result.isEmpty()) {
-            return extensionExercises.stream()
-                    .limit(topN)
-                    .map(e -> buildRecommendationItem(e, 0.3, "推荐浏览本学科拓展知识", List.of("拓展知识")))
-                    .collect(Collectors.toList());
+        if (result.size() < topN) {
+            extensionExercises.stream()
+                    .filter(e -> done.contains(e.getId()))
+                    .map(e -> buildRecommendationItem(e, 0.28, "继续巩固本学科拓展知识", List.of("拓展知识回顾")))
+                    .forEach(item -> addIfMissing(result, item, topN));
         }
-        return result;
+
+        if (result.size() < topN) {
+            recommendations(topN * 2, true).stream()
+                    .map(item -> {
+                        Map<String, Object> copy = new HashMap<>(item);
+                        List<String> tags = new ArrayList<>((List<String>) copy.getOrDefault("reasonTags", List.of()));
+                        tags.add(0, "每日补充练习");
+                        copy.put("reasonTags", tags.stream().distinct().collect(Collectors.toList()));
+                        copy.put("reason", "拓展题不足，补充推荐练习");
+                        return copy;
+                    })
+                    .forEach(item -> addIfMissing(result, item, topN));
+        }
+
+        return result.stream().limit(topN).collect(Collectors.toList());
+    }
+
+    private void addIfMissing(List<Map<String, Object>> target, Map<String, Object> item, int limit) {
+        if (target.size() >= limit) {
+            return;
+        }
+        String exerciseId = Objects.toString(item.get("exerciseId"), "");
+        boolean exists = target.stream().anyMatch(current -> Objects.equals(Objects.toString(current.get("exerciseId"), ""), exerciseId));
+        if (!exists) {
+            target.add(item);
+        }
     }
 
     private Map<String, Object> buildRecommendationItem(Exercise e, double score, String reason, List<String> reasonTags) {

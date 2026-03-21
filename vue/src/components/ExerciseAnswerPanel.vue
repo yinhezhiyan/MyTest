@@ -17,7 +17,7 @@
     </el-radio-group>
     <el-alert v-if="feedback.visible" :type="feedback.type" :title="feedback.title" :description="feedback.description" show-icon :closable="false"/>
     <div class="actions">
-      <el-button :disabled="historyIndex <= 0" @click="prevQuestion">上一题</el-button>
+      <el-button :disabled="!canGoPrev" @click="prevQuestion">上一题</el-button>
       <el-button @click="nextQuestion">下一题</el-button>
     </div>
   </div>
@@ -46,6 +46,8 @@ const sequenceIds = ref([])
 const feedback = reactive({ visible: false, type: 'info', title: '', description: '' })
 
 const knowledgePoints = computed(() => parseKnowledgePoints(q.knowledgePoints))
+const currentSequenceIndex = computed(() => sequenceIds.value.indexOf(q.id))
+const canGoPrev = computed(() => historyIndex.value > 0 || currentSequenceIndex.value > 0)
 
 const displayQuestionNo = computed(() => {
   const id = String(q.id || '')
@@ -81,13 +83,33 @@ const appendHistory = (item) => {
   historyIndex.value = history.value.length - 1
 }
 
-const loadById = (id) => request.get('/api/exercises/' + id).then(res => {
-  const item = res.data || {}
-  fillQuestion(item)
-  appendHistory(item)
+const prependHistory = (item) => {
+  const current = history.value[historyIndex.value] || null
+  history.value = current ? [item, current, ...history.value.slice(historyIndex.value + 1)] : [item, ...history.value]
+  historyIndex.value = 0
+}
+
+const resetChoiceState = () => {
   chosen.value = ''
   wrong.value = ''
   resetFeedback()
+}
+
+const moveInHistory = (targetIndex) => {
+  historyIndex.value = targetIndex
+  resetChoiceState()
+  fillQuestion(history.value[targetIndex])
+}
+
+const loadById = (id, historyMode = 'append') => request.get('/api/exercises/' + id).then(res => {
+  const item = res.data || {}
+  fillQuestion(item)
+  if (historyMode === 'prepend') {
+    prependHistory(item)
+  } else if (historyMode !== 'skip') {
+    appendHistory(item)
+  }
+  resetChoiceState()
 })
 
 const nextRandom = () => {
@@ -112,6 +134,10 @@ const nextBySequence = () => {
 }
 
 const nextQuestion = () => {
+  if (historyIndex.value < history.value.length - 1) {
+    moveInHistory(historyIndex.value + 1)
+    return
+  }
   if (sequenceIds.value.length > 0) {
     nextBySequence()
     return
@@ -124,12 +150,13 @@ const nextQuestion = () => {
 }
 
 const prevQuestion = () => {
-  if (historyIndex.value <= 0) return
-  historyIndex.value -= 1
-  chosen.value = ''
-  wrong.value = ''
-  resetFeedback()
-  fillQuestion(history.value[historyIndex.value])
+  if (historyIndex.value > 0) {
+    moveInHistory(historyIndex.value - 1)
+    return
+  }
+  if (currentSequenceIndex.value > 0) {
+    loadById(sequenceIds.value[currentSequenceIndex.value - 1], 'prepend')
+  }
 }
 
 const submit = () => {
@@ -178,6 +205,9 @@ watch(() => [props.initialId, JSON.stringify(props.sequenceIds), props.randomWhe
 .panel-header h3{margin:0}
 .knowledge-row,.action-row,.actions{display:flex;gap:8px;flex-wrap:wrap}
 .stem{line-height:1.8;margin:0}
-.option-group{display:flex;flex-direction:column;gap:8px}
+.option-group{display:flex;flex-direction:column;gap:8px;align-items:stretch}
+.option-group :deep(.el-radio){display:flex;align-items:flex-start;justify-content:flex-start;margin-right:0;text-align:left;white-space:normal}
+.option-group :deep(.el-radio__input){margin-top:3px}
+.option-group :deep(.el-radio__label){display:block;white-space:normal;line-height:1.8;padding-left:8px;text-align:left}
 .wrong{color:#f56c6c}
 </style>
