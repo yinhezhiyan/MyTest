@@ -11,7 +11,7 @@
       "C": "PCB结构与程序和数据的组合",
       "D": "一个独立的程序"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "图片OCR导入（待补答案）",
     "difficulty": 2,
     "knowledge_points": [
@@ -32,7 +32,7 @@
       "C": "是不是具有就绪、运行和等待三种状态",
       "D": "是不是占有处理器"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "图片OCR导入（待补答案）",
     "difficulty": 2,
     "knowledge_points": [
@@ -53,7 +53,7 @@
       "C": "线程（Thread)是一种特殊的进程",
       "D": "进程是程序在一个数据集合上的运行过程，它是系统进行资源分配和调度的一个独立单元"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "图片OCR导入（待补答案）",
     "difficulty": 2,
     "knowledge_points": [
@@ -74,7 +74,7 @@
       "C": "并发进程对共享变量的操作结果与执行速度无关",
       "D": "并发进程的运行结果具有不可再现性"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "图片OCR导入（待补答案）",
     "difficulty": 2,
     "knowledge_points": [
@@ -95,7 +95,7 @@
       "C": "在单处理器系统中，任何时刻都只有一个进程处于运行态",
       "D": "进程申请处理器而得不到满足时，其状态变为阻塞态"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "图片OCR导入（待补答案）",
     "difficulty": 2,
     "knowledge_points": [
@@ -116,7 +116,7 @@
       "C": "与进程调度策略有关",
       "D": "在进程被创建时确定的"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "图片OCR导入（待补答案）",
     "difficulty": 2,
     "knowledge_points": [
@@ -137,7 +137,7 @@
       "C": "为进程分配CPU",
       "D": "将进程插入就绪队列"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "图片OCR导入（待补答案）",
     "difficulty": 2,
     "knowledge_points": [
@@ -158,7 +158,7 @@
       "C": "一个程序的多次运行可形成多个不同的进程",
       "D": "一个程序的一次执行可产生多个进程"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "图片OCR导入（待补答案）",
     "difficulty": 2,
     "knowledge_points": [
@@ -179,7 +179,7 @@
       "C": "多道程序设计",
       "D": "进程的优先权"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "图片OCR导入（待补答案）",
     "difficulty": 2,
     "knowledge_points": [
@@ -200,7 +200,7 @@
       "C": "不一定",
       "D": "不可能"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "图片OCR导入（待补答案）",
     "difficulty": 2,
     "knowledge_points": [
@@ -221,7 +221,7 @@
       "C": "9",
       "D": "10"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "图片OCR导入（待补答案）",
     "difficulty": 2,
     "knowledge_points": [
@@ -242,7 +242,7 @@
       "C": "另一个等待打印机的进程",
       "D": "所有等待打印机的进程"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "图片OCR导入（待补答案）",
     "difficulty": 2,
     "knowledge_points": [
@@ -263,7 +263,7 @@
       "C": "就绪态",
       "D": "终止态"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "图片OCR导入（待补答案）",
     "difficulty": 2,
     "knowledge_points": [
@@ -284,7 +284,7 @@
       "C": "阻塞态",
       "D": "终止态"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "图片OCR导入（待补答案）",
     "difficulty": 2,
     "knowledge_points": [
@@ -305,7 +305,7 @@
       "C": "并发进程执行时，在不同时刻发生的错误",
       "D": "并发进程共享变量，其执行结果与速度有关"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "图片OCR导入（待补答案）",
     "difficulty": 2,
     "knowledge_points": [
@@ -326,7 +326,7 @@
       "C": "随着时间片轮转而撤销与建立",
       "D": "随着进程的阻塞或者唤醒而撤销与建立"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "图片OCR导入（待补答案）",
     "difficulty": 2,
     "knowledge_points": [
@@ -347,7 +347,7 @@
       "C": "具有并发性,即同时执行的特性",
       "D": "进程之间可能是无关的，但也可能是有交互性的"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "图片OCR导入（待补答案）",
     "difficulty": 2,
     "knowledge_points": [
@@ -368,7 +368,7 @@
       "C": "撤销子进程时，一定会同时撤销父进程",
       "D": "父进程创建了子进程，要等父进程执行完后，子进程才能执行"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "图片OCR导入（待补答案）",
     "difficulty": 2,
     "knowledge_points": [
@@ -389,7 +389,7 @@
       "C": "堆段",
       "D": "栈段"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "图片OCR导入（待补答案）",
     "difficulty": 2,
     "knowledge_points": [
@@ -410,7 +410,7 @@
       "C": "同步",
       "D": "互斥"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "图片OCR导入（待补答案）",
     "difficulty": 2,
     "knowledge_points": [
@@ -431,7 +431,7 @@
       "C": "堆栈指针",
       "D": "全局变量"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "图片OCR导入（待补答案）",
     "difficulty": 2,
     "knowledge_points": [
@@ -452,7 +452,7 @@
       "C": "打开的文件数",
       "D": "外部设备数量"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "图片OCR导入（待补答案）",
     "difficulty": 2,
     "knowledge_points": [
@@ -473,7 +473,7 @@
       "C": "就绪队列",
       "D": "运行队列"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "图片OCR导入（待补答案）",
     "difficulty": 2,
     "knowledge_points": [
@@ -494,7 +494,7 @@
       "C": "原语在内核态下执行，常驻内存",
       "D": "原语被定义为“原子操作”，意思是其执行速度非常快"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "图片OCR导入（待补答案）",
     "difficulty": 2,
     "knowledge_points": [
@@ -515,7 +515,7 @@
       "C": "发送原语和接收原语",
       "D": "就绪原语和接收原语"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "图片OCR导入（待补答案）",
     "difficulty": 2,
     "knowledge_points": [
@@ -536,7 +536,7 @@
       "C": "共享内存",
       "D": "管道"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "图片OCR导入（待补答案）",
     "difficulty": 2,
     "knowledge_points": [
@@ -557,7 +557,7 @@
       "C": "低级通信",
       "D": "信号量"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "图片OCR导入（待补答案）",
     "difficulty": 2,
     "knowledge_points": [
@@ -578,7 +578,7 @@
       "C": "操作系统的内核对每种信号都有默认处理程序",
       "D": "用户可以对每种信号自定义处理函数"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "图片OCR导入（待补答案）",
     "difficulty": 2,
     "knowledge_points": [
@@ -599,7 +599,7 @@
       "C": "操作系统对某些信号的处理是可以忽略的",
       "D": "操作系统允许进程通过系统调用，自定义某些信号的处理程序"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "图片OCR导入（待补答案）",
     "difficulty": 2,
     "knowledge_points": [
@@ -620,7 +620,7 @@
       "C": "线程的切换，不会引起进程的切换",
       "D": "线程的切换，可能引起进程的切换"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "图片OCR导入（待补答案）",
     "difficulty": 2,
     "knowledge_points": [
@@ -641,7 +641,7 @@
       "C": "每个进程只能包含一个线程",
       "D": "同一进程中的线程间通信也必须使用系统调用函数"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "图片OCR导入（待补答案）",
     "difficulty": 2,
     "knowledge_points": [
@@ -662,7 +662,7 @@
       "C": "线程的引入增加了程序执行时的时空开销",
       "D": "一个进程一定包含多个线程"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "图片OCR导入（待补答案）",
     "difficulty": 2,
     "knowledge_points": [
@@ -683,7 +683,7 @@
       "C": "同一进程或不同进程内的线程都只能串行执行",
       "D": "同一进程或不同进程内的线程都可以并发执行"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "图片OCR导入（待补答案）",
     "difficulty": 2,
     "knowledge_points": [
@@ -704,7 +704,7 @@
       "C": "便于进程通信",
       "D": "增强进程安全性"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "图片OCR导入（待补答案）",
     "difficulty": 2,
     "knowledge_points": [
@@ -725,7 +725,7 @@
       "C": "由于线程不作为资源分配单位，线程之间可以无约束地并行执行",
       "D": "线程又称轻量级进程，因为线程都比进程小"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "图片OCR导入（待补答案）",
     "difficulty": 2,
     "knowledge_points": [
@@ -746,7 +746,7 @@
       "C": "键盘驱动程序为每个正在运行的应用配备一个线程，用以响应该应用的键盘输入",
       "D": "基于GUI的调试程序用不同的线程分别处理用户输入、计算和跟踪等操作"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "图片OCR导入（待补答案）",
     "difficulty": 2,
     "knowledge_points": [
@@ -767,7 +767,7 @@
       "C": "等待某一事件",
       "D": "等待的事件发生"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "图片OCR导入（待补答案）",
     "difficulty": 2,
     "knowledge_points": [
@@ -788,7 +788,7 @@
       "C": "高级语言程序设计中的全局变量",
       "D": "消息传递系统"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "图片OCR导入（待补答案）",
     "difficulty": 2,
     "knowledge_points": [
@@ -809,7 +809,7 @@
       "C": "运行进程结束",
       "D": "出现了比现在进程优先级更高的进程"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "图片OCR导入（待补答案）",
     "difficulty": 2,
     "knowledge_points": [
@@ -830,7 +830,7 @@
       "C": "一个进程从阻塞态变为就绪态",
       "D": "以上答案都不对"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "图片OCR导入（待补答案）",
     "difficulty": 2,
     "knowledge_points": [
@@ -851,7 +851,7 @@
       "C": "等待操作系统分配CPU时间",
       "D": "等待网络数据进入内存"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "图片OCR导入（待补答案）",
     "difficulty": 2,
     "knowledge_points": [
@@ -872,7 +872,7 @@
       "C": "PCB移动到就绪队列之首",
       "D": "进程变为运行态"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "图片OCR导入（待补答案）",
     "difficulty": 2,
     "knowledge_points": [
@@ -893,7 +893,7 @@
       "C": "将该进程插入就绪队列",
       "D": "为该进程分配CPU"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "图片OCR导入（待补答案）",
     "difficulty": 2,
     "knowledge_points": [
@@ -914,7 +914,7 @@
       "C": "消息传递机制",
       "D": "管道"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "图片OCR导入（待补答案）",
     "difficulty": 2,
     "knowledge_points": [
@@ -935,7 +935,7 @@
       "C": "用户级线程可以在任何操作系统中运行",
       "D": "若系统中只有用户级线程，则CPU的调度对象是进程"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "图片OCR导入（待补答案）",
     "difficulty": 2,
     "knowledge_points": [
@@ -956,7 +956,7 @@
       "C": "内核级线程的程序实体可以在内核态运行",
       "D": "对多处理器系统，核心可以同时调度同一进程的多个线程并行运行"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "图片OCR导入（待补答案）",
     "difficulty": 2,
     "knowledge_points": [
@@ -977,7 +977,7 @@
       "C": "线程切换代价小",
       "D": "允许每个进程定制自己的调度算法，线程管理比较灵活"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "图片OCR导入（待补答案）",
     "difficulty": 2,
     "knowledge_points": [
@@ -998,7 +998,7 @@
       "C": "在不同操作系统上不经修改就可直接运行",
       "D": "同一个进程内的多个线程可以同时调度到多个处理器上执行"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "图片OCR导入（待补答案）",
     "difficulty": 2,
     "knowledge_points": [
@@ -1019,7 +1019,7 @@
       "C": "异常处理",
       "D": "线程同步"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "图片OCR导入（待补答案）",
     "difficulty": 2,
     "knowledge_points": [
@@ -1040,7 +1040,7 @@
       "C": "操作系统无法直接调度用户级线程",
       "D": "线程库中线程的切换不会导致进程切换"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "图片OCR导入（待补答案）",
     "difficulty": 2,
     "knowledge_points": [
@@ -1061,7 +1061,7 @@
       "C": "不管系统中是否有线程，进程都是拥有资源的独立单位",
       "D": "在引入线程的系统中，进程仍是资源调度和分派的基本单位"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "图片OCR导入（待补答案）",
     "difficulty": 2,
     "knowledge_points": [
@@ -1082,7 +1082,7 @@
       "C": "该阻塞线程将被撤销",
       "D": "该阻塞线程将永远不可能再执行"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "图片OCR导入（待补答案）",
     "difficulty": 2,
     "knowledge_points": [
@@ -1103,7 +1103,7 @@
       "C": "I和IⅢI",
       "D": "I、Ⅱ和ⅢI"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "图片OCR导入（待补答案）",
     "difficulty": 2,
     "knowledge_points": [
@@ -1124,7 +1124,7 @@
       "C": "线程切换会导致进程切换",
       "D": "一个线程的系统调用会导致整个进程阻塞 IⅡI.设备分配"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "图片OCR导入（待补答案）",
     "difficulty": 2,
     "knowledge_points": [
@@ -1145,7 +1145,7 @@
       "C": "进程P的全局变量",
       "D": "进程P中某线程的栈指针"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "图片OCR导入（待补答案）",
     "difficulty": 2,
     "knowledge_points": [
@@ -1166,7 +1166,7 @@
       "C": "系统级线程和用户级线程的切换都需要内核的支持",
       "D": "同一进程中的各个线程拥有各自不同的地址空间"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "图片OCR导入（待补答案）",
     "difficulty": 2,
     "knowledge_points": [
@@ -1187,7 +1187,7 @@
       "C": "给进程分配用户内存空间",
       "D": "增加进程时间片大小"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "图片OCR导入（待补答案）",
     "difficulty": 2,
     "knowledge_points": [
@@ -1208,7 +1208,7 @@
       "C": "进程对管道进行读操作和写操作都可能被阻塞",
       "D": "一个管道只能有一个读进程或一个写进程对其操作"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "图片OCR导入（待补答案）",
     "difficulty": 2,
     "knowledge_points": [
@@ -1229,7 +1229,7 @@
       "C": "启动I/O设备",
       "D": "被高优先级进程抢占"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "图片OCR导入（待补答案）",
     "difficulty": 2,
     "knowledge_points": [
@@ -1250,7 +1250,7 @@
       "C": "仅I、IⅡI",
       "D": "I、ⅡI、III"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "图片OCR导入（待补答案）",
     "difficulty": 2,
     "knowledge_points": [
@@ -1271,7 +1271,7 @@
       "C": "仅I、IⅡI",
       "D": "I、II、III"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "图片OCR导入（待补答案）",
     "difficulty": 2,
     "knowledge_points": [
@@ -1292,7 +1292,7 @@
       "C": "用户级线程间的切换比内核级线程间的切换效率高",
       "D": "用户级线程可以在不支持内核级线程的操作系统上实现"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "图片OCR导入（待补答案）",
     "difficulty": 2,
     "knowledge_points": [
@@ -1313,7 +1313,7 @@
       "C": "父进程与子进程有不同的进程控制块",
       "D": "父进程与子进程不能同时使用同一临界资源"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "图片OCR导入（待补答案）",
     "difficulty": 2,
     "knowledge_points": [
@@ -1334,7 +1334,7 @@
       "C": "仅I、IⅢII",
       "D": "仅Ⅱ、IⅢI"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "图片OCR导入（待补答案）",
     "difficulty": 2,
     "knowledge_points": [
@@ -1355,7 +1355,7 @@
       "C": "仅III、IV",
       "D": "仅I、I、IV"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "图片OCR导入（待补答案）",
     "difficulty": 2,
     "knowledge_points": [
@@ -1376,7 +1376,7 @@
       "C": "唤醒进程",
       "D": "执行系统调用"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "图片OCR导入（待补答案）",
     "difficulty": 2,
     "knowledge_points": [
@@ -1397,7 +1397,7 @@
       "C": "释放进程控制块",
       "D": "回收为进程分配的内存"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "图片OCR导入（待补答案）",
     "difficulty": 2,
     "knowledge_points": [
@@ -1418,7 +1418,7 @@
       "C": "仅ⅡI、II",
       "D": "I、II、III"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "图片OCR导入（待补答案）",
     "difficulty": 2,
     "knowledge_points": [

@@ -26,10 +26,12 @@ public class ExerciseService {
 
     private final JdbcTemplate jdbcTemplate;
     private final ObjectMapper objectMapper;
+    private final KnowledgeGraphService knowledgeGraphService;
 
-    public ExerciseService(JdbcTemplate jdbcTemplate, ObjectMapper objectMapper) {
+    public ExerciseService(JdbcTemplate jdbcTemplate, ObjectMapper objectMapper, KnowledgeGraphService knowledgeGraphService) {
         this.jdbcTemplate = jdbcTemplate;
         this.objectMapper = objectMapper;
+        this.knowledgeGraphService = knowledgeGraphService;
     }
 
     private final RowMapper<Exercise> exerciseMapper = (rs, rowNum) -> {
@@ -43,7 +45,7 @@ public class ExerciseService {
         e.setOptionB(rs.getString("option_b"));
         e.setOptionC(rs.getString("option_c"));
         e.setOptionD(rs.getString("option_d"));
-        e.setAnswer(rs.getString("answer"));
+        e.setAnswer(normalizeAnswer(rs.getString("answer")));
         e.setAnalysis(rs.getString("analysis"));
         e.setDifficulty(rs.getInt("difficulty"));
         e.setKnowledgePoints(rs.getString("knowledge_points"));
@@ -73,14 +75,14 @@ public class ExerciseService {
                 String id = String.valueOf(item.get("id"));
                 Map<String, String> options = (Map<String, String>) item.getOrDefault("options", Map.of());
                 List<String> kps = (List<String>) item.getOrDefault("knowledge_points", new ArrayList<>());
-                String kp = objectMapper.writeValueAsString(kps);
+                String kp = objectMapper.writeValueAsString(knowledgeGraphService.sanitizeKnowledgePoints(kps));
                 jdbcTemplate.update("""
                         insert into exercise(id, subject, chapter, chapter_slug, stem, option_a, option_b, option_c, option_d, answer, analysis, difficulty, knowledge_points, attachment_url, bank_type)
                         values(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)
                         """,
                         id, subject, String.valueOf(item.get("chapter")), String.valueOf(item.get("chapterSlug")),
                         String.valueOf(item.get("stem")), options.get("A"), options.get("B"), options.get("C"), options.get("D"),
-                        String.valueOf(item.get("answer")), String.valueOf(item.getOrDefault("analysis", "")),
+                        normalizeAnswer(String.valueOf(item.get("answer"))), String.valueOf(item.getOrDefault("analysis", "")),
                         Integer.parseInt(String.valueOf(item.getOrDefault("difficulty", 2))), kp,
                         String.valueOf(item.getOrDefault("attachmentUrl", "")), BANK_TYPE_MAIN);
                 inserted++;
@@ -92,6 +94,7 @@ public class ExerciseService {
             summary.put("updated", updated);
             summary.put("processed", inserted);
             summary.put("total", total == null ? 0 : total);
+            knowledgeGraphService.refreshKnowledgePoints(subject);
             return summary;
         } catch (Exception e) {
             throw new CustomException("导入失败:" + e.getMessage());
@@ -121,9 +124,10 @@ public class ExerciseService {
         List<Exercise> list = jdbcTemplate.query("select * from exercise where id=? and subject=?", exerciseMapper, request.getExerciseId(), user.getSubject());
         if (list.isEmpty()) throw new CustomException("题目不存在或跨学科");
         Exercise e = list.getFirst();
-        boolean correct = e.getAnswer().equalsIgnoreCase(request.getChosenOption());
+        String chosenOption = normalizeAnswer(request.getChosenOption());
+        boolean correct = e.getAnswer().equalsIgnoreCase(chosenOption);
         jdbcTemplate.update("insert into user_answer(user_id, subject, exercise_id, is_correct, chosen_option, correct_answer, answered_at) values(?,?,?,?,?,?,?)",
-                user.getId(), user.getSubject(), e.getId(), correct ? 1 : 0, request.getChosenOption(), e.getAnswer(), LocalDateTime.now());
+                user.getId(), user.getSubject(), e.getId(), correct ? 1 : 0, chosenOption, e.getAnswer(), LocalDateTime.now());
         Map<String, Object> res = new HashMap<>();
         res.put("isCorrect", correct);
         res.put("correctAnswer", e.getAnswer());
@@ -173,7 +177,7 @@ public class ExerciseService {
                 continue;
             }
             RecommendationBreakdown breakdown = scoreMainExercise(e, cfScores, weakKnowledge, relationGraph, difficultyPreference, exposure, done);
-            ranked.add(buildRecommendationItem(e, breakdown.score(), breakdown.reason()));
+            ranked.add(buildRecommendationItem(e, breakdown.score(), breakdown.reason(), breakdown.reasonTags()));
         }
 
         List<Map<String, Object>> result = ranked.stream()
@@ -205,8 +209,9 @@ public class ExerciseService {
                 + 0.10 * coverageScore;
         finalScore *= noveltyScore;
 
-        String reason = buildMainReason(cfScore, weaknessScore, difficultyScore, coverageScore, exercise);
-        return new RecommendationBreakdown(finalScore, reason);
+        List<String> tags = buildMainReasonTags(cfScore, weaknessScore, difficultyScore, coverageScore, exercise);
+        String reason = String.join(" · ", tags);
+        return new RecommendationBreakdown(finalScore, reason, tags);
     }
 
     private Map<String, Double> computeCollaborativeFilteringScores(String subject, Integer currentUserId, String bankType) {
@@ -434,11 +439,11 @@ public class ExerciseService {
         return Math.max(0.2, 1 - diff / Math.max(1.0, preference.tolerance()));
     }
 
-    private String buildMainReason(double cfScore,
-                                   double weaknessScore,
-                                   double difficultyScore,
-                                   double coverageScore,
-                                   Exercise exercise) {
+    private List<String> buildMainReasonTags(double cfScore,
+                                             double weaknessScore,
+                                             double difficultyScore,
+                                             double coverageScore,
+                                             Exercise exercise) {
         List<String> tags = new ArrayList<>();
         if (weaknessScore >= 0.55) {
             tags.add("针对薄弱知识点强化");
@@ -455,7 +460,7 @@ public class ExerciseService {
         if (tags.isEmpty()) {
             tags.add("推荐复习" + exercise.getChapter());
         }
-        return String.join(" · ", tags);
+        return tags;
     }
 
     private double normalizeScore(double score, double ceiling) {
@@ -470,7 +475,7 @@ public class ExerciseService {
             return List.of();
         }
         try {
-            return objectMapper.readValue(kpJson, new TypeReference<List<String>>() {});
+            return knowledgeGraphService.sanitizeKnowledgePoints(objectMapper.readValue(kpJson, new TypeReference<List<String>>() {}));
         } catch (Exception ignored) {
             return List.of();
         }
@@ -493,29 +498,56 @@ public class ExerciseService {
                     double freshnessScore = knowledgeCoverageScore(e, extensionExposure);
                     double finalScore = 0.7 * graphScore + 0.3 * freshnessScore;
                     String reason = graphScore > 0.45 ? "从你的薄弱知识点延伸拓展" : "为你补充同学科进阶知识";
-                    return buildRecommendationItem(e, finalScore, reason);
+                    return buildRecommendationItem(e, finalScore, reason, List.of("知识图谱拓展", reason));
                 })
                 .sorted((a, b) -> Double.compare((Double) b.get("score"), (Double) a.get("score")))
-                .limit(topN)
                 .collect(Collectors.toList());
 
-        if (result.isEmpty()) {
-            return extensionExercises.stream()
-                    .limit(topN)
-                    .map(e -> buildRecommendationItem(e, 0.3, "推荐浏览本学科拓展知识"))
-                    .collect(Collectors.toList());
+        if (result.size() < topN) {
+            extensionExercises.stream()
+                    .filter(e -> done.contains(e.getId()))
+                    .map(e -> buildRecommendationItem(e, 0.28, "继续巩固本学科拓展知识", List.of("拓展知识回顾")))
+                    .forEach(item -> addIfMissing(result, item, topN));
         }
-        return result;
+
+        if (result.size() < topN) {
+            recommendations(topN * 2, true).stream()
+                    .map(item -> {
+                        Map<String, Object> copy = new HashMap<>(item);
+                        List<String> tags = new ArrayList<>((List<String>) copy.getOrDefault("reasonTags", List.of()));
+                        tags.add(0, "每日补充练习");
+                        copy.put("reasonTags", tags.stream().distinct().collect(Collectors.toList()));
+                        copy.put("reason", "拓展题不足，补充推荐练习");
+                        return copy;
+                    })
+                    .forEach(item -> addIfMissing(result, item, topN));
+        }
+
+        return result.stream().limit(topN).collect(Collectors.toList());
     }
 
-    private Map<String, Object> buildRecommendationItem(Exercise e, double score, String reason) {
+    private void addIfMissing(List<Map<String, Object>> target, Map<String, Object> item, int limit) {
+        if (target.size() >= limit) {
+            return;
+        }
+        String exerciseId = Objects.toString(item.get("exerciseId"), "");
+        boolean exists = target.stream().anyMatch(current -> Objects.equals(Objects.toString(current.get("exerciseId"), ""), exerciseId));
+        if (!exists) {
+            target.add(item);
+        }
+    }
+
+    private Map<String, Object> buildRecommendationItem(Exercise e, double score, String reason, List<String> reasonTags) {
         Map<String, Object> item = new HashMap<>();
         item.put("exerciseId", e.getId());
         item.put("chapter", e.getChapter());
         item.put("stem", e.getStem());
         item.put("score", score);
         item.put("reason", reason);
+        item.put("reasonTags", reasonTags);
         item.put("bankType", e.getBankType());
+        item.put("difficulty", e.getDifficulty());
+        item.put("knowledgePoints", parseKnowledgePoints(e.getKnowledgePoints()));
         return item;
     }
 
@@ -540,7 +572,8 @@ public class ExerciseService {
                 values(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)
                 """,
                 id, current.getSubject(), e.getChapter(), slug(e.getChapter()), e.getStem(), e.getOptionA(), e.getOptionB(), e.getOptionC(), e.getOptionD(),
-                e.getAnswer(), ObjectUtil.defaultIfNull(e.getAnalysis(), ""), ObjectUtil.defaultIfNull(e.getDifficulty(), 2), ObjectUtil.defaultIfNull(e.getKnowledgePoints(), "[]"), ObjectUtil.defaultIfNull(e.getAttachmentUrl(), ""), BANK_TYPE_MAIN);
+                normalizeAnswer(e.getAnswer()), ObjectUtil.defaultIfNull(e.getAnalysis(), ""), ObjectUtil.defaultIfNull(e.getDifficulty(), 2), knowledgeGraphService.sanitizeKnowledgePointsJson(ObjectUtil.defaultIfNull(e.getKnowledgePoints(), "[]")), ObjectUtil.defaultIfNull(e.getAttachmentUrl(), ""), BANK_TYPE_MAIN);
+        knowledgeGraphService.refreshKnowledgePoints(current.getSubject());
     }
 
     public void deleteExerciseByAdmin(String id) {
@@ -548,6 +581,44 @@ public class ExerciseService {
         Integer cnt = jdbcTemplate.queryForObject("select count(1) from exercise where id=? and subject=? and bank_type=?", Integer.class, id, current.getSubject(), BANK_TYPE_MAIN);
         if (cnt == null || cnt == 0) throw new CustomException("题目不存在或无权限");
         jdbcTemplate.update("delete from exercise where id=? and subject=? and bank_type=?", id, current.getSubject(), BANK_TYPE_MAIN);
+        knowledgeGraphService.refreshKnowledgePoints(current.getSubject());
+    }
+
+    public Exercise getExerciseForAdmin(String id) {
+        Account current = requireAdmin();
+        List<Exercise> list = jdbcTemplate.query(
+                "select * from exercise where id=? and subject=? and bank_type=?",
+                exerciseMapper,
+                id,
+                current.getSubject(),
+                BANK_TYPE_MAIN
+        );
+        if (list.isEmpty()) {
+            throw new CustomException("题目不存在或无权限");
+        }
+        return list.getFirst();
+    }
+
+    public void updateExerciseByAdmin(String id, Exercise e) {
+        Account current = requireAdmin();
+        Integer cnt = jdbcTemplate.queryForObject("select count(1) from exercise where id=? and subject=? and bank_type=?", Integer.class, id, current.getSubject(), BANK_TYPE_MAIN);
+        if (cnt == null || cnt == 0) {
+            throw new CustomException("题目不存在或无权限");
+        }
+        if (ObjectUtil.hasEmpty(e.getChapter(), e.getStem(), e.getOptionA(), e.getOptionB(), e.getOptionC(), e.getOptionD(), e.getAnswer())) {
+            throw new CustomException("题目信息不完整");
+        }
+        jdbcTemplate.update("""
+                update exercise
+                set chapter=?, chapter_slug=?, stem=?, option_a=?, option_b=?, option_c=?, option_d=?,
+                    answer=?, analysis=?, difficulty=?, knowledge_points=?, attachment_url=?
+                where id=? and subject=? and bank_type=?
+                """,
+                e.getChapter(), slug(e.getChapter()), e.getStem(), e.getOptionA(), e.getOptionB(), e.getOptionC(), e.getOptionD(),
+                normalizeAnswer(e.getAnswer()), ObjectUtil.defaultIfNull(e.getAnalysis(), ""), ObjectUtil.defaultIfNull(e.getDifficulty(), 2),
+                knowledgeGraphService.sanitizeKnowledgePointsJson(ObjectUtil.defaultIfNull(e.getKnowledgePoints(), "[]")), ObjectUtil.defaultIfNull(e.getAttachmentUrl(), ""),
+                id, current.getSubject(), BANK_TYPE_MAIN);
+        knowledgeGraphService.refreshKnowledgePoints(current.getSubject());
     }
 
     public Map<String, Object> studentHomeSummary() {
@@ -559,6 +630,19 @@ public class ExerciseService {
         m.put("todayCorrect", correct == null ? 0 : correct);
         m.put("todayWrong", (total == null ? 0 : total) - (correct == null ? 0 : correct));
         return m;
+    }
+
+    private String normalizeAnswer(String raw) {
+        if (raw == null) {
+            return "A";
+        }
+        String upper = raw.trim().toUpperCase(Locale.ROOT);
+        for (char ch : upper.toCharArray()) {
+            if (ch >= 'A' && ch <= 'D') {
+                return String.valueOf(ch);
+            }
+        }
+        return "A";
     }
 
     private List<Exercise> loadExercises(String subject, String bankType) {
@@ -611,5 +695,5 @@ public class ExerciseService {
 
     private record DifficultyPreference(double preferredDifficulty, double tolerance) {}
 
-    private record RecommendationBreakdown(double score, String reason) {}
+    private record RecommendationBreakdown(double score, String reason, List<String> reasonTags) {}
 }
