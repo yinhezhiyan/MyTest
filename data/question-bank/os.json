@@ -515,7 +515,7 @@
       "C": "50ms",
       "D": "100ms"
     },
-    "answer": "BACD",
+    "answer": "B",
     "analysis": "依据答案文本已回填；选项缺失处已自动补全。",
     "difficulty": 2,
     "knowledge_points": [
@@ -1922,7 +1922,7 @@
       "C": "9",
       "D": "10"
     },
-    "answer": "BDCA",
+    "answer": "B",
     "analysis": "依据答案文本已回填；选项缺失处已自动补全。",
     "difficulty": 2,
     "knowledge_points": [
@@ -3119,7 +3119,7 @@
       "C": "优先级较高的进程得到及时响应",
       "D": "需要CPU时间最少的进程最先做"
     },
-    "answer": "BCD",
+    "answer": "B",
     "analysis": "依据答案文本已回填；选项缺失处已自动补全。",
     "difficulty": 2,
     "knowledge_points": [
@@ -4316,7 +4316,7 @@
       "C": "可中断的指令序列",
       "D": "不可分割的指令序列"
     },
-    "answer": "CB",
+    "answer": "C",
     "analysis": "依据答案文本已回填；选项缺失处已自动补全。",
     "difficulty": 2,
     "knowledge_points": [

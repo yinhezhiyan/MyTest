@@ -45,7 +45,7 @@ public class ExerciseService {
         e.setOptionB(rs.getString("option_b"));
         e.setOptionC(rs.getString("option_c"));
         e.setOptionD(rs.getString("option_d"));
-        e.setAnswer(rs.getString("answer"));
+        e.setAnswer(normalizeAnswer(rs.getString("answer")));
         e.setAnalysis(rs.getString("analysis"));
         e.setDifficulty(rs.getInt("difficulty"));
         e.setKnowledgePoints(rs.getString("knowledge_points"));
@@ -82,7 +82,7 @@ public class ExerciseService {
                         """,
                         id, subject, String.valueOf(item.get("chapter")), String.valueOf(item.get("chapterSlug")),
                         String.valueOf(item.get("stem")), options.get("A"), options.get("B"), options.get("C"), options.get("D"),
-                        String.valueOf(item.get("answer")), String.valueOf(item.getOrDefault("analysis", "")),
+                        normalizeAnswer(String.valueOf(item.get("answer"))), String.valueOf(item.getOrDefault("analysis", "")),
                         Integer.parseInt(String.valueOf(item.getOrDefault("difficulty", 2))), kp,
                         String.valueOf(item.getOrDefault("attachmentUrl", "")), BANK_TYPE_MAIN);
                 inserted++;
@@ -124,9 +124,10 @@ public class ExerciseService {
         List<Exercise> list = jdbcTemplate.query("select * from exercise where id=? and subject=?", exerciseMapper, request.getExerciseId(), user.getSubject());
         if (list.isEmpty()) throw new CustomException("题目不存在或跨学科");
         Exercise e = list.getFirst();
-        boolean correct = e.getAnswer().equalsIgnoreCase(request.getChosenOption());
+        String chosenOption = normalizeAnswer(request.getChosenOption());
+        boolean correct = e.getAnswer().equalsIgnoreCase(chosenOption);
         jdbcTemplate.update("insert into user_answer(user_id, subject, exercise_id, is_correct, chosen_option, correct_answer, answered_at) values(?,?,?,?,?,?,?)",
-                user.getId(), user.getSubject(), e.getId(), correct ? 1 : 0, request.getChosenOption(), e.getAnswer(), LocalDateTime.now());
+                user.getId(), user.getSubject(), e.getId(), correct ? 1 : 0, chosenOption, e.getAnswer(), LocalDateTime.now());
         Map<String, Object> res = new HashMap<>();
         res.put("isCorrect", correct);
         res.put("correctAnswer", e.getAnswer());
@@ -571,7 +572,7 @@ public class ExerciseService {
                 values(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)
                 """,
                 id, current.getSubject(), e.getChapter(), slug(e.getChapter()), e.getStem(), e.getOptionA(), e.getOptionB(), e.getOptionC(), e.getOptionD(),
-                e.getAnswer(), ObjectUtil.defaultIfNull(e.getAnalysis(), ""), ObjectUtil.defaultIfNull(e.getDifficulty(), 2), knowledgeGraphService.sanitizeKnowledgePointsJson(ObjectUtil.defaultIfNull(e.getKnowledgePoints(), "[]")), ObjectUtil.defaultIfNull(e.getAttachmentUrl(), ""), BANK_TYPE_MAIN);
+                normalizeAnswer(e.getAnswer()), ObjectUtil.defaultIfNull(e.getAnalysis(), ""), ObjectUtil.defaultIfNull(e.getDifficulty(), 2), knowledgeGraphService.sanitizeKnowledgePointsJson(ObjectUtil.defaultIfNull(e.getKnowledgePoints(), "[]")), ObjectUtil.defaultIfNull(e.getAttachmentUrl(), ""), BANK_TYPE_MAIN);
         knowledgeGraphService.refreshKnowledgePoints(current.getSubject());
     }
 
@@ -614,7 +615,7 @@ public class ExerciseService {
                 where id=? and subject=? and bank_type=?
                 """,
                 e.getChapter(), slug(e.getChapter()), e.getStem(), e.getOptionA(), e.getOptionB(), e.getOptionC(), e.getOptionD(),
-                e.getAnswer(), ObjectUtil.defaultIfNull(e.getAnalysis(), ""), ObjectUtil.defaultIfNull(e.getDifficulty(), 2),
+                normalizeAnswer(e.getAnswer()), ObjectUtil.defaultIfNull(e.getAnalysis(), ""), ObjectUtil.defaultIfNull(e.getDifficulty(), 2),
                 knowledgeGraphService.sanitizeKnowledgePointsJson(ObjectUtil.defaultIfNull(e.getKnowledgePoints(), "[]")), ObjectUtil.defaultIfNull(e.getAttachmentUrl(), ""),
                 id, current.getSubject(), BANK_TYPE_MAIN);
         knowledgeGraphService.refreshKnowledgePoints(current.getSubject());
@@ -629,6 +630,19 @@ public class ExerciseService {
         m.put("todayCorrect", correct == null ? 0 : correct);
         m.put("todayWrong", (total == null ? 0 : total) - (correct == null ? 0 : correct));
         return m;
+    }
+
+    private String normalizeAnswer(String raw) {
+        if (raw == null) {
+            return "A";
+        }
+        String upper = raw.trim().toUpperCase(Locale.ROOT);
+        for (char ch : upper.toCharArray()) {
+            if (ch >= 'A' && ch <= 'D') {
+                return String.valueOf(ch);
+            }
+        }
+        return "A";
     }
 
     private List<Exercise> loadExercises(String subject, String bankType) {

@@ -11,7 +11,7 @@
       "C": "计算机资源",
       "D": "应用程序"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -33,7 +33,7 @@
       "C": "外存",
       "D": "源程序"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -55,7 +55,7 @@
       "C": "管理计算机系统资源",
       "D": "高级程序设计语言的编译器"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -77,7 +77,7 @@
       "C": "提供方便的可视化编辑程序",
       "D": "控制和管理系统内的各种资源"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -99,7 +99,7 @@
       "C": "共享和虚拟",
       "D": "虚拟和不确定"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -121,7 +121,7 @@
       "C": "并发性是指若干事件在同一时间间隔内发生",
       "D": "并发性是指若干事件在不同时间间隔内发生"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -143,7 +143,7 @@
       "C": "命令接口和文件管理",
       "D": "设备管理方式和系统调用"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -165,7 +165,7 @@
       "C": "是命令接口中的命令",
       "D": "与系统的命令一样"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -187,7 +187,7 @@
       "C": "系统调用",
       "D": "子程序"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -209,7 +209,7 @@
       "C": "申请系统资源",
       "D": "释放系统资源"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -231,7 +231,7 @@
       "C": "联机用户接口和程序接口",
       "D": "脱机用户接口和图形接口"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -253,7 +253,7 @@
       "C": "操作系统是能使系统资源提高效率的程序",
       "D": "操作系统是用来编程的程序"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -275,7 +275,7 @@
       "C": "I、II、IV",
       "D": "II、II、IV"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -297,7 +297,7 @@
       "C": "库函数",
       "D": "原语"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -319,7 +319,7 @@
       "C": "交换技术",
       "D": "多道程序设计技术"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -341,7 +341,7 @@
       "C": "资源利用率低",
       "D": "无交互能力"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -363,7 +363,7 @@
       "C": "顺序性",
       "D": "共享性"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -385,7 +385,7 @@
       "C": "单用户系统、多用户系统和批处理操作系统",
       "D": "实时操作系统、分时操作系统和多用户系统"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -407,7 +407,7 @@
       "C": "周转时间",
       "D": "时间片"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -429,7 +429,7 @@
       "C": "及时响应",
       "D": "快速处理"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -451,7 +451,7 @@
       "C": "I、V和IV",
       "D": "I、ⅢI和VI"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -473,7 +473,7 @@
       "C": "分时系统的响应时间好",
       "D": "分时系统是一种多用户操作系统"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -495,7 +495,7 @@
       "C": "优先级+非抢占式调度算法",
       "D": "代码可重入"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -517,7 +517,7 @@
       "C": "用户数越多",
       "D": "用户数越少"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -539,7 +539,7 @@
       "C": "50ms",
       "D": "100ms"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -561,7 +561,7 @@
       "C": "实时操作系统",
       "D": "微型计算机操作系统"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -583,7 +583,7 @@
       "C": "批处理系统",
       "D": "实时系统"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -605,7 +605,7 @@
       "C": "分时操作系统必须在周转时间内处理完来自外部的事件",
       "D": "分时操作系统必须在调度时间内处理完来自外部的事件"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -627,7 +627,7 @@
       "C": "中断功能",
       "D": "分时功能"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -649,7 +649,7 @@
       "C": "仅I、II",
       "D": "仅I、II"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -671,7 +671,7 @@
       "C": "仅I、IⅢI",
       "D": "仅I、ⅢI、IV"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -693,7 +693,7 @@
       "C": "仅I、II",
       "D": "I、I、II"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -715,7 +715,7 @@
       "C": "需要实现对共享资源的管理",
       "D": "进程数越多CPU利用率越高"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -737,7 +737,7 @@
       "C": "II、III",
       "D": "I、II、II、IV"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -759,7 +759,7 @@
       "C": "II、IV",
       "D": "II、II、IV"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -781,7 +781,7 @@
       "C": "I、II、IV",
       "D": "II、II、IV"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -803,7 +803,7 @@
       "C": "中断处理",
       "D": "编译源程序"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -825,7 +825,7 @@
       "C": "目标程序",
       "D": "操作系统"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -847,7 +847,7 @@
       "C": "中断",
       "D": "中断处理程序"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -869,7 +869,7 @@
       "C": "II、III、IV",
       "D": "II、III"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -891,7 +891,7 @@
       "C": "II、III、V",
       "D": "I、IV"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -913,7 +913,7 @@
       "C": "I、II、IV",
       "D": "ⅡI、IⅢI"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -935,7 +935,7 @@
       "C": "只有访管指令",
       "D": "除访管指令之外的全部指令"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -957,7 +957,7 @@
       "C": "I和ⅡI",
       "D": "ⅡI和IⅢII"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -979,7 +979,7 @@
       "C": "库函数不方便替换，系统调用通常很方便被替换",
       "D": "库函数可以很方便地调试，而系统调用很麻烦"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -1001,7 +1001,7 @@
       "C": "一般过程调用的被调用过程一定运行在用户态",
       "D": "两者的调用过程与被调用过程一定都运行在用户态"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -1023,7 +1023,7 @@
       "C": "原语",
       "D": "图形用户接口"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -1045,7 +1045,7 @@
       "C": "进程调度程序",
       "D": "时钟中断处理程序"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -1067,7 +1067,7 @@
       "C": "进程切换",
       "D": "缺页"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -1089,7 +1089,7 @@
       "C": "通用数据寄存器",
       "D": "通用地址寄存器"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -1111,7 +1111,7 @@
       "C": "仅ⅡI、IⅢI",
       "D": "I、Ⅱ和ⅢI"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -1133,7 +1133,7 @@
       "C": "压栈指令",
       "D": "关中断指令"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -1155,7 +1155,7 @@
       "C": "块表(TLB)中的内容",
       "D": "Cache 中的内容"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -1177,7 +1177,7 @@
       "C": "NOT RO ；把地址addr处的内存数据放入寄存器R0",
       "D": "MOV R0, addr"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -1199,7 +1199,7 @@
       "C": "“DMA传送结束”属于中断",
       "D": "“存储保护错”属于异常"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -1221,7 +1221,7 @@
       "C": "③→②→④→①",
       "D": "③→④→②→①"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -1243,7 +1243,7 @@
       "C": "仅I、III",
       "D": "I、II、III"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -1265,7 +1265,7 @@
       "C": "仅I、II、IV",
       "D": "仅I、ⅢI、IV"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -1287,7 +1287,7 @@
       "C": "仅ⅢI、IV",
       "D": "仅I、IⅢI、IV"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -1309,7 +1309,7 @@
       "C": "数据传送指令",
       "D": "设置断点指令"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -1331,7 +1331,7 @@
       "C": "创建新进程",
       "D": "生成随机整数"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -1353,7 +1353,7 @@
       "C": "CPU处于用户态时只能执行非特权指令",
       "D": "CPU处于内核态时只能执行非特权指令"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -1375,7 +1375,7 @@
       "C": "单向链表",
       "D": "双向链表"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -1397,7 +1397,7 @@
       "C": "中断处理程序开始执行时，CPU处于内核态",
       "D": "系统添加新类型设备时，需要注册相应的中断服务例程"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -1419,7 +1419,7 @@
       "C": "微内核构架",
       "D": "宏内核构架"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -1441,7 +1441,7 @@
       "C": "具有非常灵活的依赖关系",
       "D": "系统效率较低"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -1463,7 +1463,7 @@
       "C": "内核中的各个模块，可以相互调用，无须通过消息传递进行通信，效率高",
       "D": "各模块间相互依赖，相比于分层式操作系统，模块化操作系统更难调试和验证"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -1485,7 +1485,7 @@
       "C": "内核切换太慢",
       "D": "可靠性较低"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -1507,7 +1507,7 @@
       "C": "基于C/S模式",
       "D": "策略与机制分离"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -1529,7 +1529,7 @@
       "C": "仅V",
       "D": "IV和V"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -1551,7 +1551,7 @@
       "C": "II、IV",
       "D": "I、IV"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -1573,7 +1573,7 @@
       "C": "III",
       "D": "IⅢ和IV"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -1595,7 +1595,7 @@
       "C": "可提高操作系统的可移植性",
       "D": "可提高操作系统的可拓展性"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -1617,7 +1617,7 @@
       "C": "外核负责完成进程调度",
       "D": "外核可以减少虚拟硬件资源的“映射”开销，提升系统效率"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -1639,7 +1639,7 @@
       "C": "引导程序会将硬盘中存储的操作系统全部加载到内存中",
       "D": "若计算机中安装了双系统，引导程序会与用户交互加载有关系统"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -1661,7 +1661,7 @@
       "C": "ROM",
       "D": "CMOS"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -1683,7 +1683,7 @@
       "C": "主存ROM区",
       "D": "硬盘"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -1705,7 +1705,7 @@
       "C": "①③④5②",
       "D": "①5③④②"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -1727,7 +1727,7 @@
       "C": "操作系统",
       "D": "BIOS"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -1749,7 +1749,7 @@
       "C": "仅I",
       "D": "I、ⅡI和IⅢI"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -1771,7 +1771,7 @@
       "C": "I、IⅢI和IV",
       "D": "I、ⅡI、ⅢI、IV"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -1793,7 +1793,7 @@
       "C": "硬盘分区表",
       "D": "文件系统的索引结点表"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -1815,7 +1815,7 @@
       "C": "仅I、III、IV",
       "D": "仅II、III、IV"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -1837,7 +1837,7 @@
       "C": "PCB结构与程序和数据的组合",
       "D": "一个独立的程序"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -1859,7 +1859,7 @@
       "C": "是不是具有就绪、运行和等待三种状态",
       "D": "是不是占有处理器"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -1881,7 +1881,7 @@
       "C": "线程（Thread)是一种特殊的进程",
       "D": "进程是程序在一个数据集合上的运行过程，它是系统进行资源分配和调度的一个独立单元"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -1903,7 +1903,7 @@
       "C": "并发进程对共享变量的操作结果与执行速度无关",
       "D": "并发进程的运行结果具有不可再现性"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -1925,7 +1925,7 @@
       "C": "在单处理器系统中，任何时刻都只有一个进程处于运行态",
       "D": "进程申请处理器而得不到满足时，其状态变为阻塞态"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -1947,7 +1947,7 @@
       "C": "与进程调度策略有关",
       "D": "在进程被创建时确定的"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -1969,7 +1969,7 @@
       "C": "为进程分配CPU",
       "D": "将进程插入就绪队列"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -1991,7 +1991,7 @@
       "C": "一个程序的多次运行可形成多个不同的进程",
       "D": "一个程序的一次执行可产生多个进程"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -2013,7 +2013,7 @@
       "C": "I、ⅡI和IV",
       "D": "全部"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -2035,7 +2035,7 @@
       "C": "多道程序设计",
       "D": "进程的优先权"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -2057,7 +2057,7 @@
       "C": "不一定",
       "D": "不可能"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -2079,7 +2079,7 @@
       "C": "9",
       "D": "10"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -2101,7 +2101,7 @@
       "C": "另一个等待打印机的进程",
       "D": "所有等待打印机的进程"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -2123,7 +2123,7 @@
       "C": "就绪态",
       "D": "终止态"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -2145,7 +2145,7 @@
       "C": "阻塞态",
       "D": "终止态"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -2167,7 +2167,7 @@
       "C": "并发进程执行时，在不同时刻发生的错误",
       "D": "并发进程共享变量，其执行结果与速度有关"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -2189,7 +2189,7 @@
       "C": "随着时间片轮转而撤销与建立",
       "D": "随着进程的阻塞或者唤醒而撤销与建立"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -2211,7 +2211,7 @@
       "C": "具有并发性,即同时执行的特性",
       "D": "进程之间可能是无关的，但也可能是有交互性的"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -2233,7 +2233,7 @@
       "C": "撤销子进程时，一定会同时撤销父进程",
       "D": "父进程创建了子进程，要等父进程执行完后，子进程才能执行"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -2255,7 +2255,7 @@
       "C": "堆段",
       "D": "栈段"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -2277,7 +2277,7 @@
       "C": "同步",
       "D": "互斥"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -2299,7 +2299,7 @@
       "C": "堆栈指针",
       "D": "全局变量"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -2321,7 +2321,7 @@
       "C": "打开的文件数",
       "D": "外部设备数量"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -2343,7 +2343,7 @@
       "C": "就绪队列",
       "D": "运行队列"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -2365,7 +2365,7 @@
       "C": "原语在内核态下执行，常驻内存",
       "D": "原语被定义为“原子操作”，意思是其执行速度非常快"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -2387,7 +2387,7 @@
       "C": "发送原语和接收原语",
       "D": "就绪原语和接收原语"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -2409,7 +2409,7 @@
       "C": "共享内存",
       "D": "管道"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -2431,7 +2431,7 @@
       "C": "低级通信",
       "D": "信号量"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -2453,7 +2453,7 @@
       "C": "操作系统的内核对每种信号都有默认处理程序",
       "D": "用户可以对每种信号自定义处理函数"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -2475,7 +2475,7 @@
       "C": "操作系统对某些信号的处理是可以忽略的",
       "D": "操作系统允许进程通过系统调用，自定义某些信号的处理程序"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -2497,7 +2497,7 @@
       "C": "线程的切换，不会引起进程的切换",
       "D": "线程的切换，可能引起进程的切换"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -2519,7 +2519,7 @@
       "C": "每个进程只能包含一个线程",
       "D": "同一进程中的线程间通信也必须使用系统调用函数"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -2541,7 +2541,7 @@
       "C": "线程的引入增加了程序执行时的时空开销",
       "D": "一个进程一定包含多个线程"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -2563,7 +2563,7 @@
       "C": "同一进程或不同进程内的线程都只能串行执行",
       "D": "同一进程或不同进程内的线程都可以并发执行"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -2585,7 +2585,7 @@
       "C": "便于进程通信",
       "D": "增强进程安全性"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -2607,7 +2607,7 @@
       "C": "由于线程不作为资源分配单位，线程之间可以无约束地并行执行",
       "D": "线程又称轻量级进程，因为线程都比进程小"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -2629,7 +2629,7 @@
       "C": "键盘驱动程序为每个正在运行的应用配备一个线程，用以响应该应用的键盘输入",
       "D": "基于GUI的调试程序用不同的线程分别处理用户输入、计算和跟踪等操作"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -2651,7 +2651,7 @@
       "C": "等待某一事件",
       "D": "等待的事件发生"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -2673,7 +2673,7 @@
       "C": "高级语言程序设计中的全局变量",
       "D": "消息传递系统"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -2695,7 +2695,7 @@
       "C": "运行进程结束",
       "D": "出现了比现在进程优先级更高的进程"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -2717,7 +2717,7 @@
       "C": "一个进程从阻塞态变为就绪态",
       "D": "以上答案都不对"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -2739,7 +2739,7 @@
       "C": "等待操作系统分配CPU时间",
       "D": "等待网络数据进入内存"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -2761,7 +2761,7 @@
       "C": "PCB移动到就绪队列之首",
       "D": "进程变为运行态"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -2783,7 +2783,7 @@
       "C": "将该进程插入就绪队列",
       "D": "为该进程分配CPU"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -2805,7 +2805,7 @@
       "C": "消息传递机制",
       "D": "管道"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -2827,7 +2827,7 @@
       "C": "用户级线程可以在任何操作系统中运行",
       "D": "若系统中只有用户级线程，则CPU的调度对象是进程"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -2849,7 +2849,7 @@
       "C": "内核级线程的程序实体可以在内核态运行",
       "D": "对多处理器系统，核心可以同时调度同一进程的多个线程并行运行"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -2871,7 +2871,7 @@
       "C": "线程切换代价小",
       "D": "允许每个进程定制自己的调度算法，线程管理比较灵活"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -2893,7 +2893,7 @@
       "C": "在不同操作系统上不经修改就可直接运行",
       "D": "同一个进程内的多个线程可以同时调度到多个处理器上执行"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -2915,7 +2915,7 @@
       "C": "异常处理",
       "D": "线程同步"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -2937,7 +2937,7 @@
       "C": "操作系统无法直接调度用户级线程",
       "D": "线程库中线程的切换不会导致进程切换"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -2959,7 +2959,7 @@
       "C": "不管系统中是否有线程，进程都是拥有资源的独立单位",
       "D": "在引入线程的系统中，进程仍是资源调度和分派的基本单位"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -2981,7 +2981,7 @@
       "C": "该阻塞线程将被撤销",
       "D": "该阻塞线程将永远不可能再执行"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -3003,7 +3003,7 @@
       "C": "I和IⅢI",
       "D": "I、Ⅱ和ⅢI"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -3025,7 +3025,7 @@
       "C": "线程切换会导致进程切换",
       "D": "一个线程的系统调用会导致整个进程阻塞 IⅡI.设备分配"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -3047,7 +3047,7 @@
       "C": "仅I和IⅢI",
       "D": "I、II、III"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -3069,7 +3069,7 @@
       "C": "进程P的全局变量",
       "D": "进程P中某线程的栈指针"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -3091,7 +3091,7 @@
       "C": "系统级线程和用户级线程的切换都需要内核的支持",
       "D": "同一进程中的各个线程拥有各自不同的地址空间"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -3113,7 +3113,7 @@
       "C": "给进程分配用户内存空间",
       "D": "增加进程时间片大小"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -3135,7 +3135,7 @@
       "C": "进程对管道进行读操作和写操作都可能被阻塞",
       "D": "一个管道只能有一个读进程或一个写进程对其操作"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -3157,7 +3157,7 @@
       "C": "启动I/O设备",
       "D": "被高优先级进程抢占"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -3179,7 +3179,7 @@
       "C": "仅I、IⅡI",
       "D": "I、ⅡI、III"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -3201,7 +3201,7 @@
       "C": "仅I、IⅡI",
       "D": "I、II、III"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -3223,7 +3223,7 @@
       "C": "用户级线程间的切换比内核级线程间的切换效率高",
       "D": "用户级线程可以在不支持内核级线程的操作系统上实现"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -3245,7 +3245,7 @@
       "C": "父进程与子进程有不同的进程控制块",
       "D": "父进程与子进程不能同时使用同一临界资源"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -3267,7 +3267,7 @@
       "C": "仅I、IⅢII",
       "D": "仅Ⅱ、IⅢI"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -3289,7 +3289,7 @@
       "C": "仅III、IV",
       "D": "仅I、I、IV"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -3311,7 +3311,7 @@
       "C": "唤醒进程",
       "D": "执行系统调用"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -3333,7 +3333,7 @@
       "C": "释放进程控制块",
       "D": "回收为进程分配的内存"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -3355,7 +3355,7 @@
       "C": "仅ⅡI、II",
       "D": "I、II、III"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -3377,7 +3377,7 @@
       "C": "高级调度",
       "D": "低级调度"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -3399,7 +3399,7 @@
       "C": "I、ⅢI、IV",
       "D": "全部都是"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -3421,7 +3421,7 @@
       "C": "优先级较高的进程得到及时响应",
       "D": "需要CPU时间最少的进程最先做"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -3443,7 +3443,7 @@
       "C": "进程特点和进程调度策略",
       "D": "进程完成什么功能"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -3465,7 +3465,7 @@
       "C": "上下文切换是进程调度的实现手段",
       "D": "处于临界区的进程在退出临界区前，无法被调度"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -3487,7 +3487,7 @@
       "C": "中断向量",
       "D": "用户堆栈"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -3509,7 +3509,7 @@
       "C": "进程上下文切换过程中必须保存换下进程在切换处的程序计数器的值",
       "D": "进程上下文切换过程中必须将换下进程的代码和数据从主存保存到磁盘"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -3531,7 +3531,7 @@
       "C": "I、ⅡI",
       "D": "I、、IV"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -3553,7 +3553,7 @@
       "C": "短作业(进程)优先算法",
       "D": "优先权调度算法"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -3575,7 +3575,7 @@
       "C": "尽可能提高系统吞吐量",
       "D": "适当增长进程就绪队列的等待时间"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -3597,7 +3597,7 @@
       "C": "抢占式的优先级高者优先",
       "D": "高响应比优先"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -3619,7 +3619,7 @@
       "C": "运行进程要等待某一事件发生",
       "D": "有新进程被创建进入就绪态"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -3641,7 +3641,7 @@
       "C": "2.5h",
       "D": "8h"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -3663,7 +3663,7 @@
       "C": "时间片轮转调度算法",
       "D": "多级反馈队列调度算法 E.剥夺式优先级调度算法"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -3685,7 +3685,7 @@
       "C": "短作业",
       "D": "静态"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -3707,7 +3707,7 @@
       "C": "(T1+T2+T3)/3",
       "D": "(T1 +2T2 +3T3)/3"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -3729,7 +3729,7 @@
       "C": "J2,J1,J3",
       "D": "J1,J3,J2"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -3751,7 +3751,7 @@
       "C": "就绪",
       "D": "消亡"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -3773,7 +3773,7 @@
       "C": "3",
       "D": "0.5"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -3795,7 +3795,7 @@
       "C": "在动态优先权中，随着作业等待时间的增加，其优先权将随之下降",
       "D": "在动态优先权中，随着进程执行时间的增加,其优先权降低"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -3817,7 +3817,7 @@
       "C": "优先级",
       "D": "短进程优先"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -3839,7 +3839,7 @@
       "C": "前者是批处理的，后者是分时的",
       "D": "后者是可并发执行，前者则不同"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -3861,7 +3861,7 @@
       "C": "短进程优先",
       "D": "以上选项都不对"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -3883,7 +3883,7 @@
       "C": "10.62; 6.34",
       "D": "10.62; 6.8"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -3905,7 +3905,7 @@
       "C": "先来先服务(按照顺序10,6,2,4,8)",
       "D": "短作业优先"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -3927,7 +3927,7 @@
       "C": "27h",
       "D": "28h"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -3949,7 +3949,7 @@
       "C": "110ms",
       "D": "120ms"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -3971,7 +3971,7 @@
       "C": "短作业优先",
       "D": "优先级"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -3993,7 +3993,7 @@
       "C": "高响应比优先调度算法",
       "D": "多级反馈队列调度算法"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -4015,7 +4015,7 @@
       "C": "时间片轮转",
       "D": "优先级"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -4037,7 +4037,7 @@
       "C": "系统开销小",
       "D": "并行度高"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -4059,7 +4059,7 @@
       "C": "先来先服务调度算法",
       "D": "时间片轮转调度算法"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -4081,7 +4081,7 @@
       "C": "ⅡI、IⅢI和IV",
       "D": "III"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -4103,7 +4103,7 @@
       "C": "I和IⅢI",
       "D": "I、Ⅱ和IⅢI"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -4125,7 +4125,7 @@
       "C": "先来先服务调度算法",
       "D": "高响应比优先调度算法"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -4147,7 +4147,7 @@
       "C": "进程长期处于就绪队列",
       "D": "进程从就绪态转为运行态"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -4169,7 +4169,7 @@
       "C": "时间片轮转",
       "D": "非抢占式短作业优先"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -4191,7 +4191,7 @@
       "C": "340ms",
       "D": "360ms"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -4213,7 +4213,7 @@
       "C": "在进程处于临界区时不能进行处理机调度",
       "D": "在系统调用完成并返回用户态时能进行处理机调度"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -4235,7 +4235,7 @@
       "C": "P2 > P1 =P3",
       "D": "P1 > P2= P3"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -4257,7 +4257,7 @@
       "C": "非抢占式短任务优先",
       "D": "抢占式短任务优先"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -4279,7 +4279,7 @@
       "C": "22ms",
       "D": "27ms"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -4301,7 +4301,7 @@
       "C": "J2,J4",
       "D": "J1,J3"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -4323,7 +4323,7 @@
       "C": "时钟中断发生后，系统会修改当前进程在时间片内的剩余时间",
       "D": "影响时间片大小的主要因素包括响应时间、系统开销和进程数量等"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -4345,7 +4345,7 @@
       "C": "74μs",
       "D": "75μs"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -4367,7 +4367,7 @@
       "C": "15ms",
       "D": "10ms"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -4389,7 +4389,7 @@
       "C": "仅ⅡI、IⅢI、IV",
       "D": "I、II、ⅢI和IV"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -4411,7 +4411,7 @@
       "C": "仅I、II、IⅢII",
       "D": "仅I、ⅡI、IV"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -4433,7 +4433,7 @@
       "C": "仅III、IV",
       "D": "I、ⅡI、IⅢ和IV"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -4455,7 +4455,7 @@
       "C": "6",
       "D": "7"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -4477,7 +4477,7 @@
       "C": "70ms",
       "D": "71ms"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -4499,7 +4499,7 @@
       "C": "250ms",
       "D": "295ms"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -4521,7 +4521,7 @@
       "C": "仅I、III",
       "D": "I、II、III"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -4543,7 +4543,7 @@
       "C": "临界区是指进程中用于实现进程通信的那段代码",
       "D": "临界区是指进程中用于访问临界资源的那段代码"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -4565,7 +4565,7 @@
       "C": "执行的前驱关系",
       "D": "进程的并发执行"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -4587,7 +4587,7 @@
       "C": "3",
       "D": "4"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -4609,7 +4609,7 @@
       "C": "允许其他进程抢占处理器，但不得进入该进程的临界区",
       "D": "不允许任何进程抢占处理器"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -4631,7 +4631,7 @@
       "C": "飞机票",
       "D": "旅行社与航空公司"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -4653,7 +4653,7 @@
       "C": "数据",
       "D": "代码程序"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -4675,7 +4675,7 @@
       "C": "忙则等待",
       "D": "无限等待"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -4697,7 +4697,7 @@
       "C": "共享变量",
       "D": "共享缓冲区"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -4719,7 +4719,7 @@
       "C": "私用数据",
       "D": "可重入的程序代码"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -4741,7 +4741,7 @@
       "C": "并发进程是异步的",
       "D": "进程具有结构性"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -4763,7 +4763,7 @@
       "C": "互斥和同步关系",
       "D": "无制约关系"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -4785,7 +4785,7 @@
       "C": "作业控制命令",
       "D": "低级进程通信原语"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -4807,7 +4807,7 @@
       "C": "进程阻塞",
       "D": "新进程创建"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -4829,7 +4829,7 @@
       "C": "可中断的指令序列",
       "D": "不可分割的指令序列"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -4851,7 +4851,7 @@
       "C": "线程",
       "D": "程序"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -4873,7 +4873,7 @@
       "C": "就绪",
       "D": "完成"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -4895,7 +4895,7 @@
       "C": "2",
       "D": "3"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -4917,7 +4917,7 @@
       "C": "1",
       "D": "由用户确定"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -4939,7 +4939,7 @@
       "C": "不允许任何修改的代码",
       "D": "无转移指令代码"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -4961,7 +4961,7 @@
       "C": "数据",
       "D": "共享程序段"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -4983,7 +4983,7 @@
       "C": "互斥锁可用于多线程或多进程之间，但只能由创建它的线程或进程来加锁和解锁",
       "D": "互斥锁可用于多线程或多进程之间，但只能由对它加锁的线程或进程来解锁"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -5005,7 +5005,7 @@
       "C": "两个线程分别对两个不同的互斥锁先后加锁，但顺序相反",
       "D": "一个线程对一个互斥锁加锁后忘记解锁"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -5027,7 +5027,7 @@
       "C": "有一个进程进入临界区，另一个进程等待进入",
       "D": "有一个进程在等待进入"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -5049,7 +5049,7 @@
       "C": "表示有一个进程进入临界区，另一个进程等待进入",
       "D": "表示有两个进程进入临界区"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -5071,7 +5071,7 @@
       "C": "大于等于0",
       "D": "小于等于0"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -5093,7 +5093,7 @@
       "C": "5",
       "D": "6"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -5115,7 +5115,7 @@
       "C": "管程外过程调用管程内数据结构的说明",
       "D": "对局限于管程的数据结构设置初始值的语句"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -5137,7 +5137,7 @@
       "C": "管程中signal操作的作用和信号量机制中的V操作相同",
       "D": "管程是被进程调用的，管程是语法范围，无法创建和撤销"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -5159,7 +5159,7 @@
       "C": "S.value > 0",
       "D": "S.value >= 0"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -5181,7 +5181,7 @@
       "C": "I、I、IV",
       "D": "I、IV"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -5203,7 +5203,7 @@
       "C": "仅IⅢI",
       "D": "以上答案都错误"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -5225,7 +5225,7 @@
       "C": "5",
       "D": "7"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -5247,7 +5247,7 @@
       "C": "z=-1,3,1;c=9",
       "D": "z=3;c=1,9"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -5269,7 +5269,7 @@
       "C": "可能相关的",
       "D": "可能是无关的，也可能是有交往的"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -5291,7 +5291,7 @@
       "C": "[-1,3]",
       "D": "[-3,2]"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -5313,7 +5313,7 @@
       "C": "turn = 1, turn = 0",
       "D": "turn =1, turn = 1"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -5335,7 +5335,7 @@
       "C": "表示每个线程是否已退出临界区",
       "D": "表示每个线程是否已完成任务"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -5357,7 +5357,7 @@
       "C": "表示哪个线程后发出访问请求",
       "D": "表示哪个线程已进入临界区"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -5379,7 +5379,7 @@
       "C": "多个进程共享资源的死锁与饥饿问题",
       "D": "利用信号量实现多个进程并发的问题"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -5401,7 +5401,7 @@
       "C": "缓冲区不可用",
       "D": "缓冲区半空"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -5423,7 +5423,7 @@
       "C": "II和III",
       "D": "I、ⅡI、IⅢ和IV"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -5445,7 +5445,7 @@
       "C": "8",
       "D": "9"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -5467,7 +5467,7 @@
       "C": "I和ⅢI",
       "D": "ⅡI和IV"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -5489,7 +5489,7 @@
       "C": "不同的读者",
       "D": "都不能"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -5511,7 +5511,7 @@
       "C": "不剥夺条件",
       "D": "循环等待条件"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -5533,7 +5533,7 @@
       "C": "4",
       "D": "5"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -5555,7 +5555,7 @@
       "C": "5,12,9",
       "D": "5, 12,4"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -5577,7 +5577,7 @@
       "C": "1,2",
       "D": "2,0"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -5599,7 +5599,7 @@
       "C": "能保证进程互斥进入临界区，会出现“饥饿”现象",
       "D": "能保证进程互斥进入临界区,不会出现“饥饿”现象"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -5621,7 +5621,7 @@
       "C": "可能为0,1或2",
       "D": "可能为-1,0,1或2"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -5643,7 +5643,7 @@
       "C": "上述伪代码满足“让权等待”的同步准则",
       "D": "while(TSL(&lock))语句应在关中断状态下执行"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -5665,7 +5665,7 @@
       "C": "任何时候只能有一个进程在管程中执行",
       "D": "管程中定义的变量只能被管程内的过程访问"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -5687,7 +5687,7 @@
       "C": "3",
       "D": "4"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -5709,7 +5709,7 @@
       "C": "根据x的值判断该进程是否进入阻塞态",
       "D": "阻塞该进程，并将之插入x的阻塞队列中"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -5731,7 +5731,7 @@
       "C": "信号量方法",
       "D": "TestAndSet指令"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -5753,7 +5753,7 @@
       "C": "仅I、II、IⅢI",
       "D": "仅I、III、IV"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -5775,7 +5775,7 @@
       "C": "多个进程竞争资源出现了循环等待",
       "D": "多个进程竞争使用共享型的设备"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -5797,7 +5797,7 @@
       "C": "限制允许拿起筷子的哲学家数量可以预防死锁，它破坏了“循环等待”条件",
       "D": "对哲学家顺序编号，奇数号哲学家先拿左筷子，然后拿右筷子，而偶数号哲学家刚好相反，可以预防 死锁，它破坏了“互斥”条件"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -5819,7 +5819,7 @@
       "C": "若所有进程的执行严格区分优先级，就不会发生死锁",
       "D": "若进程资源请求之间不存在循环等待，就不会发生死锁"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -5841,7 +5841,7 @@
       "C": "非剥夺",
       "D": "循环等待"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -5863,7 +5863,7 @@
       "C": "破坏死锁的四个必要条件之一",
       "D": "防止系统进入不安全状态"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -5885,7 +5885,7 @@
       "C": "剥夺资源法",
       "D": "资源有序分配策略"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -5907,7 +5907,7 @@
       "C": "采用资源静态分配策略",
       "D": "定时运行死锁检测程序"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -5929,7 +5929,7 @@
       "C": "11",
       "D": "12"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -5951,7 +5951,7 @@
       "C": "6",
       "D": "7"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -5973,7 +5973,7 @@
       "C": "有4个进程，每个进程需3个资源",
       "D": "有3个进程，每个进程需4个资源"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -5995,7 +5995,7 @@
       "C": "从死锁进程处抢夺资源",
       "D": "从非死锁进程处抢夺资源"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -6017,7 +6017,7 @@
       "C": "拒绝分配新资源",
       "D": "修改信号量"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -6039,7 +6039,7 @@
       "C": "进程请求该类资源必然能得到",
       "D": "必然是死锁"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -6061,7 +6061,7 @@
       "C": "圆圈结点表示资源类",
       "D": "资源分配图是一个有向图，用于表示某时刻系统资源与进程之间的状态"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -6083,7 +6083,7 @@
       "C": "占有且等待资源",
       "D": "非抢夺式分配"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -6105,7 +6105,7 @@
       "C": "不安全状态就是死锁状态",
       "D": "死锁状态一定是不安全状态"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -6127,7 +6127,7 @@
       "C": "搜索树",
       "D": "安全图"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -6149,7 +6149,7 @@
       "C": "回退",
       "D": "饥饿"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -6171,7 +6171,7 @@
       "C": "I、IV",
       "D": "以上答案都不正确"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -6193,7 +6193,7 @@
       "C": "IV",
       "D": "四个说法都对"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -6215,7 +6215,7 @@
       "C": "进程会死锁，但是不会“饥饿”",
       "D": "进程会死锁，也会“饥饿”"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -6237,7 +6237,7 @@
       "C": "程序不能正确运行，结果不确定",
       "D": "程序不能正确运行，可能会死锁"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -6259,7 +6259,7 @@
       "C": "不剥夺条件",
       "D": "防止系统进入不安全状态"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -6281,7 +6281,7 @@
       "C": "仅I",
       "D": "I、IⅢI"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -6303,7 +6303,7 @@
       "C": "检测死锁",
       "D": "解除死锁"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -6325,7 +6325,7 @@
       "C": "小于m+n",
       "D": "大于m+n"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -6347,7 +6347,7 @@
       "C": "任何时刻都能保证每个进程能得到所需的资源",
       "D": "任何时刻都能保证至少有一个进程可以得到所需的全部资源"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -6369,7 +6369,7 @@
       "C": "进程已占有的资源数与本次申请的资源数之和不超过对资源的最大需求量，且现存资源量能满足尚 需的最大资源量",
       "D": "进程已占有的资源数与本次申请的资源数之和不超过对资源的最大需求量，且现存资源量能满足本 次申请量，但不能满足尚需的最大资源量"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -6391,7 +6391,7 @@
       "C": "降低部分或全部死锁进程的优先级",
       "D": "A和B都可以"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -6413,7 +6413,7 @@
       "C": "4",
       "D": "5"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -6435,7 +6435,7 @@
       "C": "P1, P4, P3,P2",
       "D": "不存在"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -6457,7 +6457,7 @@
       "C": "P2,P1,Po,P3,P4",
       "D": "P3,P4,P2,P1,P0"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -6479,7 +6479,7 @@
       "C": "11",
       "D": "12"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -6501,7 +6501,7 @@
       "C": "仅I、IⅢI",
       "D": "I、Ⅱ、III"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -6523,7 +6523,7 @@
       "C": "3",
       "D": "4"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -6545,7 +6545,7 @@
       "C": "存在唯一安全序列P3,P1,P2，系统处于安全状态",
       "D": "存在唯一安全序列P3,P2,P1，系统处于安全状态"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -6567,7 +6567,7 @@
       "C": "仅I、II、ⅢI",
       "D": "仅I、ⅢI、IV"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -6589,7 +6589,7 @@
       "C": "存在安全序列P2,P3,P1",
       "D": "不存在安全序列"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -6611,7 +6611,7 @@
       "C": "n+1",
       "D": "2n"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -6633,7 +6633,7 @@
       "C": "3",
       "D": "4"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -6655,7 +6655,7 @@
       "C": "在虚拟内存系统中，只要磁盘空间无限大，作业就能拥有任意大的编址空间",
       "D": "实现虚拟内存管理必须有相应硬件的支持"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -6677,7 +6677,7 @@
       "C": "提高内存的利用率",
       "D": "提高内存的物理存取速度"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -6699,7 +6699,7 @@
       "C": "内存保护的方法有界地址保护和上下限地址保护",
       "D": "一个进程不能直接跳转到另一个进程的指令地址中"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -6721,7 +6721,7 @@
       "C": "操作系统和硬件机构合作",
       "D": "操作系统或者硬件机构独立完成"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -6743,7 +6743,7 @@
       "C": "III、IV、V",
       "D": "II、I、IV、V"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -6765,7 +6765,7 @@
       "C": "相同",
       "D": "可以不同但根据作业长度固定"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -6787,7 +6787,7 @@
       "C": "有下邻空闲区但无上邻空闲区",
       "D": "有上邻空闲区也有下邻空闲区"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -6809,7 +6809,7 @@
       "C": "330K",
       "D": "410K"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -6831,7 +6831,7 @@
       "C": "30K+154",
       "D": "480K+2"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -6853,7 +6853,7 @@
       "C": "链接过程",
       "D": "执行过程"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -6875,7 +6875,7 @@
       "C": "被访问单元的物理地址=逻辑地址+重定位寄存器的值",
       "D": "逻辑地址到物理地址的映射过程在进程执行时发生"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -6897,7 +6897,7 @@
       "C": "I、ⅡI和IⅢII",
       "D": "I、ⅡI、IⅢ和IV"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -6919,7 +6919,7 @@
       "C": "动态分配",
       "D": "静态分配"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -6941,7 +6941,7 @@
       "C": "页式",
       "D": "段式"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -6963,7 +6963,7 @@
       "C": "为每道程序设置两个重定位寄存器",
       "D": "为每道程序和数据都设置一个重定位寄存器"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -6985,7 +6985,7 @@
       "C": "增加主存容量",
       "D": "便于地址转换"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -7007,7 +7007,7 @@
       "C": "2049",
       "D": "1025"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -7029,7 +7029,7 @@
       "C": "固定分区式存储管理",
       "D": "段页式存储管理"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -7051,7 +7051,7 @@
       "C": "内存扩充",
       "D": "地址映射"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -7073,7 +7073,7 @@
       "C": "动态重定位",
       "D": "静态重定位和动态重定位"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -7095,7 +7095,7 @@
       "C": "最差适应法",
       "D": "都不需要"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -7117,7 +7117,7 @@
       "C": "地址递增",
       "D": "地址递减"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -7139,7 +7139,7 @@
       "C": "按地址由小到大排列",
       "D": "按地址由大到小排列"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -7161,7 +7161,7 @@
       "C": "哈希算法",
       "D": "最佳适应算法"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -7183,7 +7183,7 @@
       "C": "满足用户的需要",
       "D": "更好的满足多道程序的需要"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -7205,7 +7205,7 @@
       "C": "链接程序",
       "D": "操作系统"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -7227,7 +7227,7 @@
       "C": "多个进程共享同一段逻辑地址空间",
       "D": "多个进程共享同一段号"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -7249,7 +7249,7 @@
       "C": "1",
       "D": "2"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -7271,7 +7271,7 @@
       "C": "不能确定",
       "D": "一样大"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -7293,7 +7293,7 @@
       "C": "编译系统所感知的",
       "D": "连接装配程序所感知的"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -7315,7 +7315,7 @@
       "C": "快表 (TLB)",
       "D": "页表寄存器"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -7337,7 +7337,7 @@
       "C": "硬件",
       "D": "存储管理进程"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -7359,7 +7359,7 @@
       "C": "装作业",
       "D": "程序执行"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -7381,7 +7381,7 @@
       "C": "逻辑",
       "D": "实"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -7403,7 +7403,7 @@
       "C": "提高对换速度",
       "D": "减少对换数量"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -7425,7 +7425,7 @@
       "C": "分段",
       "D": "段页式"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -7447,7 +7447,7 @@
       "C": "在作业完成时",
       "D": "在作业未装入时"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -7469,7 +7469,7 @@
       "C": "I和IⅡI",
       "D": "I、ⅡI和IⅢI"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -7491,7 +7491,7 @@
       "C": "要根据CPU的地址结构确定",
       "D": "要依据外存和内存的大小确定"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -7513,7 +7513,7 @@
       "C": "共享和保护",
       "D": "动态链接和增长"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -7535,7 +7535,7 @@
       "C": "随存储器的管理方案不同而异",
       "D": "以用户的逻辑记录为单位"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -7557,7 +7557,7 @@
       "C": "可变式分区分配",
       "D": "分页式存储管理方式"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -7579,7 +7579,7 @@
       "C": "以物理段进行",
       "D": "以逻辑记录大小进行"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -7601,7 +7601,7 @@
       "C": "2",
       "D": "4"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -7623,7 +7623,7 @@
       "C": "2",
       "D": "4"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -7645,7 +7645,7 @@
       "C": "三维的",
       "D": "四维的"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -7667,7 +7667,7 @@
       "C": "每个进程一张段表，每个段一张页表",
       "D": "每个进程一张页表，每个段一张段表"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -7689,7 +7689,7 @@
       "C": "所有进程共享一张页表，以节约有限的内存空间，但页表必须驻留在内存中",
       "D": "所有进程共享一张页表，只有页表中当前使用的页面必须驻留在内存中，以最大限度地节省有限的 内存空间"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -7711,7 +7711,7 @@
       "C": "段与段之间必定连续",
       "D": "每段是等长的"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -7733,7 +7733,7 @@
       "C": "每个段表项必须记录对应段在主存的起始位置和段的长度",
       "D": "分段方式对低级语言程序员和编译器来说是透明的"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -7755,7 +7755,7 @@
       "C": "用分段方法来分配和管理主存空间，用分页方法来管理辅存空间",
       "D": "用分段方法来分配和管理辅存空间，用分页方法来管理主存空间"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -7777,7 +7777,7 @@
       "C": "仅ⅡI",
       "D": "II、ⅢIIV"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -7799,7 +7799,7 @@
       "C": "仅I",
       "D": "全都正确"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -7821,7 +7821,7 @@
       "C": "256、128、5596、7",
       "D": "256、128、3548、7"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -7843,7 +7843,7 @@
       "C": "2048",
       "D": "4096"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -7865,7 +7865,7 @@
       "C": "分页是信息的物理单位，页长由用户决定",
       "D": "页面在物理内存中只能从页面大小的整数倍地址开始存放"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -7887,7 +7887,7 @@
       "C": "4",
       "D": "5"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -7909,7 +7909,7 @@
       "C": "I、II、III",
       "D": "仅I"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -7931,7 +7931,7 @@
       "C": "数据保护",
       "D": "栈保护"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -7953,7 +7953,7 @@
       "C": "24B",
       "D": "232B"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -7975,7 +7975,7 @@
       "C": "10MB",
       "D": "15MB"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -7997,7 +7997,7 @@
       "C": "256",
       "D": "512"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -8019,7 +8019,7 @@
       "C": "链接",
       "D": "装载"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -8041,7 +8041,7 @@
       "C": "减少页表项所占字节数",
       "D": "减少页表所占的连续内存空间"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -8063,7 +8063,7 @@
       "C": "4、20K、180KB",
       "D": "4、500K、80KB"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -8085,7 +8085,7 @@
       "C": "P和P2共享段S在共享段表中的段表项",
       "D": "P和P2都不再使用段S时才回收段S所占的内存空间"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -8107,7 +8107,7 @@
       "C": "201H,101H",
       "D": "201H,401H"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -8129,7 +8129,7 @@
       "C": "最佳适应算法",
       "D": "循环首次适应算法"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -8151,7 +8151,7 @@
       "C": "当前进程的二级页表的起始虚拟地址",
       "D": "当前进程的二级页表的起始物理地址"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -8173,7 +8173,7 @@
       "C": "p1和p2不一定相等，f1和f2一定相等",
       "D": "p1和p2不一定相等,f1 和f2不一定相等"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -8195,7 +8195,7 @@
       "C": "最坏适应算法",
       "D": "首次适应算法"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -8217,7 +8217,7 @@
       "C": "不变",
       "D": "可能增加也可能减少"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -8239,7 +8239,7 @@
       "C": "被中断的后一条",
       "D": "启动时的第一条"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -8261,7 +8261,7 @@
       "C": "补充外存空间的技术",
       "D": "扩充输入/输出缓冲区的技术"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -8283,7 +8283,7 @@
       "C": "作业在运行前，不必全部装入内存，但在运行过程中必须一直驻留内存",
       "D": "作业在运行前，必须全部装入内存，但在运行过程中不必一直驻留内存"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -8305,7 +8305,7 @@
       "C": "对换性",
       "D": "离散性"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -8327,7 +8327,7 @@
       "C": "该程序应具有较好的局部性",
       "D": "该程序的指令相关性不应过多"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -8349,7 +8349,7 @@
       "C": "采用快表技术",
       "D": "不必将作业装入连续区域"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -8371,7 +8371,7 @@
       "C": "防止程序间相互越界访问",
       "D": "防止程序源码被人偷窃"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -8393,7 +8393,7 @@
       "C": "运行时动态链接",
       "D": "不确定哪种链接方式"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -8415,7 +8415,7 @@
       "C": "内存与磁盘交换数据时使用的地址",
       "D": "寄存器的地址"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -8437,7 +8437,7 @@
       "C": "128",
       "D": "16384"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -8459,7 +8459,7 @@
       "C": "2048",
       "D": "其他都不对"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -8481,7 +8481,7 @@
       "C": "1.75",
       "D": "2"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -8503,7 +8503,7 @@
       "C": "LRU算法基于局部性原理，首先调出最近一段时间内最长时间未被访问过的页面",
       "D": "CLOCK算法首先调出一段时间内被访问次数多的页面"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -8525,7 +8525,7 @@
       "C": "n",
       "D": "min(m,n)"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -8547,7 +8547,7 @@
       "C": "无影响",
       "D": "可能增加也可能减少"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -8569,7 +8569,7 @@
       "C": "1MB+232MB",
       "D": "232B"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -8591,7 +8591,7 @@
       "C": "223",
       "D": "232"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -8613,7 +8613,7 @@
       "C": "DE6FH",
       "D": "EE6FH"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -8635,7 +8635,7 @@
       "C": "IO开销",
       "D": "页内碎片"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -8657,7 +8657,7 @@
       "C": "6",
       "D": "7"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -8679,7 +8679,7 @@
       "C": "需要在页表中标明特殊的页类型",
       "D": "需要对所有的页进行排序"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -8701,7 +8701,7 @@
       "C": "页类型",
       "D": "保护码"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -8723,7 +8723,7 @@
       "C": "没有一种",
       "D": "所有"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -8745,7 +8745,7 @@
       "C": "局部性",
       "D": "全局性"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -8767,7 +8767,7 @@
       "C": "便于动态链接",
       "D": "便于信息共享"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -8789,7 +8789,7 @@
       "C": "置换算法",
       "D": "程序访问"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -8811,7 +8811,7 @@
       "C": "II、III",
       "D": "I、I、ⅢII"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -8833,7 +8833,7 @@
       "C": "1.6μs, 1.7μs",
       "D": "1.35μs, 1.8, μs"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -8855,7 +8855,7 @@
       "C": "磁盘数据读入内存的频率",
       "D": "CPU与内存交换的速度"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -8877,7 +8877,7 @@
       "C": "进程外置换",
       "D": "进程内置换"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -8899,7 +8899,7 @@
       "C": "最近最久未使用算法(LRU)",
       "D": "最近未使用算法 (NRU)"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -8921,7 +8921,7 @@
       "C": "不要求进行缺页中断处理",
       "D": "不要求进行页面置换"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -8943,7 +8943,7 @@
       "C": "内存映射文件可以通过修改内存中的数据来实现对文件的写操作",
       "D": "由于进程的虚拟地址空间是独立的，内存映射文件不支持多进程映射到同一文件"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -8965,7 +8965,7 @@
       "C": "缺页中断→决定淘汰页→页面调出→页面调入",
       "D": "缺页中断→决定淘汰页→页面调入→页面调出"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -8987,7 +8987,7 @@
       "C": "4, 12",
       "D": "4, 14"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -9009,7 +9009,7 @@
       "C": "II、III",
       "D": "ⅡI、IV"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -9031,7 +9031,7 @@
       "C": "增加运行进程数",
       "D": "加内存条来增加物理空间容量"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -9053,7 +9053,7 @@
       "C": "II、III、V",
       "D": "II、VI"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -9075,7 +9075,7 @@
       "C": "I、ⅡI和IⅢI",
       "D": "IⅡI和IⅢI"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -9097,7 +9097,7 @@
       "C": "仅III",
       "D": "I、ⅡI和IⅢI"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -9119,7 +9119,7 @@
       "C": "仅IⅢI",
       "D": "仅I、ⅡI"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -9141,7 +9141,7 @@
       "C": "虚拟存储容量只受外存容量的限制",
       "D": "虚拟存储容量只受内存容量的限制"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -9163,7 +9163,7 @@
       "C": "仅I、IⅢI",
       "D": "I、ⅡI和IⅢI"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -9185,7 +9185,7 @@
       "C": "仅I、ⅡI",
       "D": "仅Ⅱ、IⅢI"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -9207,7 +9207,7 @@
       "C": "仅I、II",
       "D": "仅ⅡI、IⅢI"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -9229,7 +9229,7 @@
       "C": "固定分配，全局置换",
       "D": "固定分配,局部置换"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -9251,7 +9251,7 @@
       "C": "4",
       "D": "8"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -9273,7 +9273,7 @@
       "C": "(0, 0), (0, 1), (1, 1), (1, 0)",
       "D": "(0, 0), (1, 1), (0, 1), (1, 0)"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -9295,7 +9295,7 @@
       "C": "{0,4,3,2,9}",
       "D": "{4,5,6,0,3,2}"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -9317,7 +9317,7 @@
       "C": "5",
       "D": "6"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -9339,7 +9339,7 @@
       "C": "仅I、IⅢI、IV",
       "D": "I、ⅡI、IⅢI和IV"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -9361,7 +9361,7 @@
       "C": "60A01H",
       "D": "80A01H"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -9383,7 +9383,7 @@
       "C": "将页b从外存读入内存",
       "D": "修改页表中页b对应的存在位"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -9405,7 +9405,7 @@
       "C": "进程的数量",
       "D": "页缓冲队列的长度"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -9427,7 +9427,7 @@
       "C": "进程对数据段和代码段可以有不同的访问权限",
       "D": "虚拟地址空间的大小由内存和硬盘的大小决定"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -9449,7 +9449,7 @@
       "C": "索引文件",
       "D": "特殊文件"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -9471,7 +9471,7 @@
       "C": "逻辑结构",
       "D": "逻辑空间"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -9493,7 +9493,7 @@
       "C": "在指定文件所在的存储介质上找到指定文件的目录项",
       "D": "在内存寻找指定的文件"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -9515,7 +9515,7 @@
       "C": "openO调用完成后，系统打开文件表将增加一个表目",
       "D": "openO调用的参数的文件名不同时，必然会打开不同的文件实体"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -9537,7 +9537,7 @@
       "C": "将位示图从内存写回磁盘",
       "D": "将超级块当前的信息从内存写回磁盘"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -9559,7 +9559,7 @@
       "C": "IV、IⅢI、ⅡI、I",
       "D": "II、IV、I、II"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -9581,7 +9581,7 @@
       "C": "该目录中所有数据文件目录",
       "D": "该目录中所有子目录文件和数据文件的目录"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -9603,7 +9603,7 @@
       "C": "文件长度",
       "D": "文件类型"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -9625,7 +9625,7 @@
       "C": "文件控制块的物理位置",
       "D": "文件所在的物理位置"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -9647,7 +9647,7 @@
       "C": "减少查找文件时的IO信息量",
       "D": "减少复制文件时的I/O信息量"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -9669,7 +9669,7 @@
       "C": "文件转储",
       "D": "文件共享"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -9691,7 +9691,7 @@
       "C": "用户权限表",
       "D": "读写之后使用关闭命令"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -9713,7 +9713,7 @@
       "C": "优先级和文件属性",
       "D": "文件属性和口令"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -9735,7 +9735,7 @@
       "C": "用户级",
       "D": "文件级"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -9757,7 +9757,7 @@
       "C": "磁盘调度算法",
       "D": "异步I/O"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -9779,7 +9779,7 @@
       "C": "链接文件",
       "D": "流式文件"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -9801,7 +9801,7 @@
       "C": "主存容量",
       "D": "用户"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -9823,7 +9823,7 @@
       "C": "索引表中含有索引文件的数据及其物理地址",
       "D": "建立索引的目的之一是减少存储空间"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -9845,7 +9845,7 @@
       "C": "100",
       "D": "500"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -9867,7 +9867,7 @@
       "C": "索引文件",
       "D": "目录文件"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -9889,7 +9889,7 @@
       "C": "索引分配",
       "D": "以上都适合"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -9911,7 +9911,7 @@
       "C": "索引结构",
       "D": "散列结构"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -9933,7 +9933,7 @@
       "C": "II、III",
       "D": "I、IⅢI"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -9955,7 +9955,7 @@
       "C": "索引存放",
       "D": "显式链接"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -9977,7 +9977,7 @@
       "C": "外存容量",
       "D": "操作系统"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -9999,7 +9999,7 @@
       "C": "索引表",
       "D": "空闲盘块链表"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -10021,7 +10021,7 @@
       "C": "创建一个文件时，可以分配连续的区域，也可以分配不连续的物理块",
       "D": "Hash结构文件的优点是能够实现物理块的动态分配和回收"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -10043,7 +10043,7 @@
       "C": "显示链接分配",
       "D": "索引分配"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -10065,7 +10065,7 @@
       "C": "5",
       "D": "6"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -10087,7 +10087,7 @@
       "C": "75",
       "D": "63"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -10109,7 +10109,7 @@
       "C": "5次读盘和2次写盘",
       "D": "4次读盘和1次写盘"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -10131,7 +10131,7 @@
       "C": "512KB",
       "D": "1024KB"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -10153,7 +10153,7 @@
       "C": "链接分配",
       "D": "连续分配或链接分配"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -10175,7 +10175,7 @@
       "C": "采用隐式链接分配，将最后一个数据块插入文件头部",
       "D": "采用隐式链接分配，将第一个数据块插入文件尾部"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -10197,7 +10197,7 @@
       "C": "一级索引分配",
       "D": "多级索引分配"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -10219,7 +10219,7 @@
       "C": "1024",
       "D": "1034"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -10241,7 +10241,7 @@
       "C": "32MB",
       "D": "以上都错误"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -10263,7 +10263,7 @@
       "C": "调度器的就绪队列D.中断向量表",
       "D": "2TB"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -10285,7 +10285,7 @@
       "C": "用户口令表",
       "D": "系统注册表"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -10307,7 +10307,7 @@
       "C": "链式结构且磁盘块定长",
       "D": "链式结构且磁盘块变长"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -10329,7 +10329,7 @@
       "C": "1057KB",
       "D": "16516KB"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -10351,7 +10351,7 @@
       "C": "删除与此文件对应的文件控制块",
       "D": "释放与此文件关联的内存缓冲区"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -10373,7 +10373,7 @@
       "C": "地址项的个数",
       "D": "文件块大小"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -10395,7 +10395,7 @@
       "C": "直接索引结构",
       "D": "多级索引结构"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -10417,7 +10417,7 @@
       "C": "修改文件控制块中的读写权限",
       "D": "将文件的数据缓冲区首指针返回给用户进程"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -10439,7 +10439,7 @@
       "C": "2,3",
       "D": "2, 4"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -10461,7 +10461,7 @@
       "C": "12",
       "D": "20"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -10483,7 +10483,7 @@
       "C": "1538B",
       "D": "2048B"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -10505,7 +10505,7 @@
       "C": "260",
       "D": "264"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -10527,7 +10527,7 @@
       "C": "各进程的用户打开文件表中关于F的表项内容相同",
       "D": "进程关闭F时，系统删除F在系统打开文件表中的表项"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -10549,7 +10549,7 @@
       "C": "连续分配",
       "D": "动态分区分配"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -10571,7 +10571,7 @@
       "C": "释放F的索引节点所占的外存空间",
       "D": "文件磁盘索引节点中的链接计数减1"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -10593,7 +10593,7 @@
       "C": "writeO",
       "D": "closeO"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -10615,7 +10615,7 @@
       "C": "在利用顺序检索法时，只要路径名的一个分量名未找到，就应停止查找",
       "D": "利用顺序检索法查找完成后，即可得到文件的物理地址"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -10637,7 +10637,7 @@
       "C": "多级目录",
       "D": "二级目录"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -10659,7 +10659,7 @@
       "C": "解决命名冲突",
       "D": "缩短传送时间"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -10681,7 +10681,7 @@
       "C": "树形目录结构",
       "D": "多级目录结构"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -10703,7 +10703,7 @@
       "C": "I、III、IV",
       "D": "全选"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -10725,7 +10725,7 @@
       "C": "1、0",
       "D": "2、2"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -10747,7 +10747,7 @@
       "C": "若删除文件F3，则F2的引用计数值减1",
       "D": "进程P读取F时需要提供F的绝对路径作为系统调用参数"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -10769,7 +10769,7 @@
       "C": "从当前目录开始的路径名",
       "D": "文件描述符"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -10791,7 +10791,7 @@
       "C": "I、IⅢ和IV",
       "D": "I、Ⅱ和IV"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -10813,7 +10813,7 @@
       "C": "同一个磁盘的不同目录下",
       "D": "同一个磁盘的同一目录下"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -10835,7 +10835,7 @@
       "C": "查找作业表",
       "D": "地址转换机构"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -10857,7 +10857,7 @@
       "C": "100",
       "D": "200"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -10879,7 +10879,7 @@
       "C": "51",
       "D": "52"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -10901,7 +10901,7 @@
       "C": "1,2",
       "D": "2, 1"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -10923,7 +10923,7 @@
       "C": "加快文件的检索速度",
       "D": "加快文件的读/写速度"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -10945,7 +10945,7 @@
       "C": "仅I、ⅡI",
       "D": "I、Ⅱ和ⅢI"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -10967,7 +10967,7 @@
       "C": "释放file1占用的磁盘空间",
       "D": "删除目录dir中与file1对应的目录项"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -10989,7 +10989,7 @@
       "C": "实现虚拟存储",
       "D": "保存用户和系统文档及数据"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -11011,7 +11011,7 @@
       "C": "I、I和IV",
       "D": "I、I、ⅢI和IV"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -11033,7 +11033,7 @@
       "C": "一个文件系统中单个文件的大小只受磁盘剩余空间大小的限制",
       "D": "一个文件系统不能将数据存放在多个磁盘上"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -11055,7 +11055,7 @@
       "C": "目录项",
       "D": "空闲块"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -11077,7 +11077,7 @@
       "C": "外存空闲区",
       "D": "文件控制块"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -11099,7 +11099,7 @@
       "C": "降低存储费用",
       "D": "提高存储空间的利用率"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -11121,7 +11121,7 @@
       "C": "主存空间的管理",
       "D": "文件的保密"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -11143,7 +11143,7 @@
       "C": "位示图法",
       "D": "成组链接法"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -11165,7 +11165,7 @@
       "C": "只包含主引导程序",
       "D": "只包含分区表"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -11187,7 +11187,7 @@
       "C": "位示图",
       "D": "成组链接"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -11209,7 +11209,7 @@
       "C": "文件(file)对象",
       "D": "数据(data)对象"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -11231,7 +11231,7 @@
       "C": "80K",
       "D": "320K"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -11253,7 +11253,7 @@
       "C": "82,1",
       "D": "82, 2"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -11275,7 +11275,7 @@
       "C": "仅I、III",
       "D": "仅I、I、IV"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -11297,7 +11297,7 @@
       "C": "512KB",
       "D": "4MB"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -11319,7 +11319,7 @@
       "C": "成组链接法",
       "D": "空闲链表法"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -11341,7 +11341,7 @@
       "C": "共享设备是指同一时间内允许多个进程同时访问的设备",
       "D": "在分配共享设备和独占设备时都可能引起进程死锁"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -11363,7 +11363,7 @@
       "C": "把一个物理设备变换成多个对应的逻辑设备",
       "D": "允许用户程序不必全部装入主存便可使用系统中的设备"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -11385,7 +11385,7 @@
       "C": "帧",
       "D": "DMA"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -11407,7 +11407,7 @@
       "C": "中断寄存器、控制寄存器和控制命令",
       "D": "控制寄存器、编程空间和控制逻辑寄存器"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -11429,7 +11429,7 @@
       "C": "I/O逻辑",
       "D": "设备控制器与设备的接口"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -11451,7 +11451,7 @@
       "C": "I/O设备和CPU",
       "D": "CPU和主存"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -11473,7 +11473,7 @@
       "C": "SPOOLing 技术",
       "D": "内存覆盖技术"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -11495,7 +11495,7 @@
       "C": "DMA方式",
       "D": "直接存取方式"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -11517,7 +11517,7 @@
       "C": "CPU通过程序的方式给出DMA可以解释的程序",
       "D": "DMA不需要CPU指出所取数据的地址与长度"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -11539,7 +11539,7 @@
       "C": "数据寄存器",
       "D": "堆栈指针寄存器"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -11561,7 +11561,7 @@
       "C": "预处理阶段不需要CPU参与，后处理阶段需要CPU参与",
       "D": "预处理阶段请求I/O的进程处于运行态，后处理阶段处于阻塞态"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -11583,7 +11583,7 @@
       "C": "设备独立性",
       "D": "安全性"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -11605,7 +11605,7 @@
       "C": "类型号",
       "D": "符号"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -11627,7 +11627,7 @@
       "C": "通道控制设备控制器、设备控制器控制设备工作",
       "D": "以上答案都不对"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -11649,7 +11649,7 @@
       "C": "2",
       "D": "1"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -11671,7 +11671,7 @@
       "C": "中断处理",
       "D": "设备驱动程序"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -11693,7 +11693,7 @@
       "C": "设备驱动程序",
       "D": "中断处理程序"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -11715,7 +11715,7 @@
       "C": "20%",
       "D": "50%"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -11737,7 +11737,7 @@
       "C": "主机获取设备输入",
       "D": "保存用户程序的断点"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -11759,7 +11759,7 @@
       "C": "II、III",
       "D": "I、I、II"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -11781,7 +11781,7 @@
       "C": "中断处理结束后，需要恢复CPU现场，此时一定会返回到被中断的进程",
       "D": "I/O操作完成后，驱动程序必须检查本次I/O操作中是否发生了错误"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -11803,7 +11803,7 @@
       "C": "系统调用服务程序D.用户登录程序",
       "D": "流设备接口"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -11825,7 +11825,7 @@
       "C": "用户程序→设备驱动程序→系统调用处理程序→中断处理程序",
       "D": "用户程序→设备驱动程序→中断处理程序→系统调用处理程序"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -11847,7 +11847,7 @@
       "C": "用户级I/O软件、设备驱动程序、设备无关软件、中断处理程序",
       "D": "用户级I/O软件、中断处理程序、设备无关软件、设备驱动程序"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -11869,7 +11869,7 @@
       "C": "②→①→③→④",
       "D": "①→②→④→③"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -11891,7 +11891,7 @@
       "C": "用户编程时使用的设备与实际使用的设备无关",
       "D": "每台设备都有一个唯一的编号"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -11913,7 +11913,7 @@
       "C": "改善CPU与IO设备速度不匹配的问题",
       "D": "节省内存"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -11935,7 +11935,7 @@
       "C": "单缓冲",
       "D": "双缓冲"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -11957,7 +11957,7 @@
       "C": "ROM",
       "D": "寄存器"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -11979,7 +11979,7 @@
       "C": "多缓冲区",
       "D": "缓冲池"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -12001,7 +12001,7 @@
       "C": "缓冲区只能用于输入设备，不能用于输出设备",
       "D": "缓冲区只能用于块设备，不能用于字符设备"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -12023,7 +12023,7 @@
       "C": "都",
       "D": "都不"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -12045,7 +12045,7 @@
       "C": "150μs",
       "D": "70μs"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -12067,7 +12067,7 @@
       "C": "max(T1,T3) +T2",
       "D": "max(T1,T2 +T3)"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -12089,7 +12089,7 @@
       "C": "均衡",
       "D": "以上答案都不对"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -12111,7 +12111,7 @@
       "C": "实现进程访问缓冲区的同步",
       "D": "限制进程的数量"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -12133,7 +12133,7 @@
       "C": "II、I、IV",
       "D": "全选"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -12155,7 +12155,7 @@
       "C": "COCT",
       "D": "CHCT"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -12177,7 +12177,7 @@
       "C": "虚拟分配",
       "D": "分区分配"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -12199,7 +12199,7 @@
       "C": "SDT, COCT, CHCT, DCT",
       "D": "COCT, CHCT, SDT, DCT"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -12221,7 +12221,7 @@
       "C": "磁盘",
       "D": "磁带机和磁盘"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -12243,7 +12243,7 @@
       "C": "交换技术",
       "D": "多道程序设计技术"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -12265,7 +12265,7 @@
       "C": "SPOOLing",
       "D": "控制器"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -12287,7 +12287,7 @@
       "C": "减轻用户编程负担",
       "D": "提供主、辅存接口"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -12309,7 +12309,7 @@
       "C": "终端",
       "D": "打印机"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -12331,7 +12331,7 @@
       "C": "至少一台",
       "D": "0台"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -12353,7 +12353,7 @@
       "C": "输入程序、井管理程序和输出程序",
       "D": "预输入程序、井管理程序和输出程序"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -12375,7 +12375,7 @@
       "C": "设备的一部分存储区",
       "D": "设备的一部分空间"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -12397,7 +12397,7 @@
       "C": "SPOOLing系统使独占设备变成共享设备",
       "D": "SPOOLing系统提高了独占设备的利用率"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -12419,7 +12419,7 @@
       "C": "覆盖与交换技术",
       "D": "通道技术"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -12441,7 +12441,7 @@
       "C": "虚拟设备",
       "D": "一般物理设备"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -12463,7 +12463,7 @@
       "C": "共享设备是指一个作业尚未撤离，另一个作业即可使用，但每个时刻只有一个作业使用",
       "D": "对共享设备往往采用静态分配方式"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -12485,7 +12485,7 @@
       "C": "文件系统和设备管理程序",
       "D": "打印机启动程序和设备管理程序"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -12507,7 +12507,7 @@
       "C": "II和IV",
       "D": "I、ⅢI和IV"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -12529,7 +12529,7 @@
       "C": "III、IV",
       "D": "I、II、III"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -12551,7 +12551,7 @@
       "C": "发出IO命令，启动I/O设备",
       "D": "对I/O设备传回的数据进行分析和缓冲"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -12573,7 +12573,7 @@
       "C": "①④②5③",
       "D": "④①②5③"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -12595,7 +12595,7 @@
       "C": "主设备号",
       "D": "从设备号"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -12617,7 +12617,7 @@
       "C": "1550μs, 1550μs",
       "D": "2000μs, 2000μs"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -12639,7 +12639,7 @@
       "C": "300",
       "D": "390"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -12661,7 +12661,7 @@
       "C": "提高磁盘数据可靠性",
       "D": "实现设备无关性"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -12683,7 +12683,7 @@
       "C": "可以让多个作业共享一台独占式设备",
       "D": "由用户作业控制设备与输入/输出井之间的数据传送"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -12705,7 +12705,7 @@
       "C": "需要建立逻辑设备与物理设备之间的映射关系",
       "D": "更换物理设备后必须修改访问该设备的应用程序"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -12727,7 +12727,7 @@
       "C": "进程在执行驱动程序时可能进入阻塞态",
       "D": "读/写设备的操作是由驱动程序控制完成的"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -12749,7 +12749,7 @@
       "C": "仅IⅢI、IV",
       "D": "I、Ⅱ、ⅢI、IV"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -12771,7 +12771,7 @@
       "C": "内核缓冲区",
       "D": "键盘控制器的数据寄存器"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -12793,7 +12793,7 @@
       "C": "文件系统就是整个磁盘",
       "D": "没有关系"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -12815,7 +12815,7 @@
       "C": "至少能由一个",
       "D": "至多能由一个"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [
@@ -12837,7 +12837,7 @@
       "C": "III、IV",
       "D": "仅IV"
     },
-    "answer": "",
+    "answer": "A",
     "analysis": "",
     "difficulty": 2,
     "knowledge_points": [

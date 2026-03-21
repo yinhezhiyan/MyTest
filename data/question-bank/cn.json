@@ -137,7 +137,7 @@
       "C": "减少传输时延",
       "D": "增加传输时延 路由算法更简单 4"
     },
-    "answer": "AC",
+    "answer": "A",
     "analysis": "依据答案文本已回填；选项缺失处已自动补全。",
     "difficulty": 2,
     "knowledge_points": [
@@ -809,7 +809,7 @@
       "C": "传输层将数据流封装成数据帧，并增加可靠性和流控制信息",
       "D": "表示层将高层协议产生的数据分割成数据段, 并增加相应的源和目的端口信息"
     },
-    "answer": "BDCA",
+    "answer": "B",
     "analysis": "依据答案文本已回填；选项缺失处已自动补全。",
     "difficulty": 2,
     "knowledge_points": [
@@ -872,7 +872,7 @@
       "C": "IP 地址]",
       "D": "MAC地址"
     },
-    "answer": "AC",
+    "answer": "A",
     "analysis": "依据答案文本已回填；选项缺失处已自动补全。",
     "difficulty": 2,
     "knowledge_points": [
@@ -5849,7 +5849,7 @@
       "C": "所在地址块包含的地址数为210",
       "D": "126.166.66.99 是所在地址块的第一个地址"
     },
-    "answer": "DA",
+    "answer": "D",
     "analysis": "依据答案文本已回填；选项缺失处已自动补全。",
     "difficulty": 2,
     "knowledge_points": [
@@ -8747,7 +8747,7 @@
       "C": "大于滑动窗口的大小",
       "D": "等于滑动窗口的大小"
     },
-    "answer": "AC",
+    "answer": "A",
     "analysis": "依据答案文本已回填；选项缺失处已自动补全。",
     "difficulty": 2,
     "knowledge_points": [

@@ -599,7 +599,7 @@
       "C": "在单链表第一个元素前插入一个新元素",
       "D": "在单链表最后一个元素后插入一个新元素"
     },
-    "answer": "BA",
+    "answer": "B",
     "analysis": "依据答案文本已回填；选项缺失处已自动补全。",
     "difficulty": 2,
     "knowledge_points": [
@@ -2111,7 +2111,7 @@
       "C": "都有可能",
       "D": "无法判断"
     },
-    "answer": "CD",
+    "answer": "C",
     "analysis": "依据答案文本已回填；选项缺失处已自动补全。",
     "difficulty": 2,
     "knowledge_points": [
@@ -4568,7 +4568,7 @@
       "C": "第 行非 且非0的元素个数",
       "D": "第 列非 且非0的元素个数"
     },
-    "answer": "BD",
+    "answer": "B",
     "analysis": "依据答案文本已回填；选项缺失处已自动补全。",
     "difficulty": 2,
     "knowledge_points": [
@@ -4841,7 +4841,7 @@
       "C": "连通分量数",
       "D": "不确定"
     },
-    "answer": "CA",
+    "answer": "C",
     "analysis": "依据答案文本已回填；选项缺失处已自动补全。",
     "difficulty": 2,
     "knowledge_points": [
@@ -4883,7 +4883,7 @@
       "C": "3",
       "D": "2"
     },
-    "answer": "BD",
+    "answer": "B",
     "analysis": "依据答案文本已回填；选项缺失处已自动补全。",
     "difficulty": 2,
     "knowledge_points": [
@@ -4904,7 +4904,7 @@
       "C": "后序遍历",
       "D": "按层次遍历"
     },
-    "answer": "AB",
+    "answer": "A",
     "analysis": "依据答案文本已回填；选项缺失处已自动补全。",
     "difficulty": 2,
     "knowledge_points": [
@@ -5870,7 +5870,7 @@
       "C": "6, 7, 9, 11",
       "D": "6, 8, 9, 11"
     },
-    "answer": "AB",
+    "answer": "A",
     "analysis": "依据答案文本已回填；选项缺失处已自动补全。",
     "difficulty": 2,
     "knowledge_points": [
@@ -5891,7 +5891,7 @@
       "C": "4",
       "D": "6"
     },
-    "answer": "AD",
+    "answer": "A",
     "analysis": "依据答案文本已回填；选项缺失处已自动补全。",
     "difficulty": 2,
     "knowledge_points": [
@@ -6668,7 +6668,7 @@
       "C": "III、IV",
       "D": "I、II、IV"
     },
-    "answer": "CB",
+    "answer": "C",
     "analysis": "依据答案文本已回填；选项缺失处已自动补全。",
     "difficulty": 2,
     "knowledge_points": [
@@ -7130,7 +7130,7 @@
       "C": "不直接依赖于",
       "D": "直接依赖于表长"
     },
-    "answer": "AC",
+    "answer": "A",
     "analysis": "依据答案文本已回填；选项缺失处已自动补全。",
     "difficulty": 2,
     "knowledge_points": [
@@ -7928,7 +7928,7 @@
       "C": "(40, 38, 46, 56, 79, 84)",
       "D": "(40, 38, 46, 84,56, 79)"
     },
-    "answer": "AD",
+    "answer": "A",
     "analysis": "依据答案文本已回填；选项缺失处已自动补全。",
     "difficulty": 2,
     "knowledge_points": [
@@ -7991,7 +7991,7 @@
       "C": "选择排序",
       "D": "插入排序"
     },
-    "answer": "BC",
+    "answer": "B",
     "analysis": "依据答案文本已回填；选项缺失处已自动补全。",
     "difficulty": 2,
     "knowledge_points": [
@@ -8243,7 +8243,7 @@
       "C": "堆排序",
       "D": "直接插入排序"
     },
-    "answer": "AD",
+    "answer": "A",
     "analysis": "依据答案文本已回填；选项缺失处已自动补全。",
     "difficulty": 2,
     "knowledge_points": [
@@ -8474,7 +8474,7 @@
       "C": "6, 9, 5, 1, 8, 4, 7 → 9, 6, 5, 1, 8, 4, 7 →9, 6, 7, 1, 8, 4, 5 →9, 8, 7, 1,6, 4, 5",
       "D": "6, 1, 7, 9, 8, 4, 5 →7, 1, 6, 9, 8, 4, 5 → 7, 9, 6, 1, 8, 4, 5 → 9, 7, 6, 1, 8, 4, 5 → 9, 8, 6, 1, 7, 4, 5"
     },
-    "answer": "DC",
+    "answer": "D",
     "analysis": "依据答案文本已回填；选项缺失处已自动补全。",
     "difficulty": 2,
     "knowledge_points": [
@@ -8558,7 +8558,7 @@
       "C": "归并排序",
       "D": "堆排序"
     },
-    "answer": "AB",
+    "answer": "A",
     "analysis": "依据答案文本已回填；选项缺失处已自动补全。",
     "difficulty": 2,
     "knowledge_points": [
@@ -9188,7 +9188,7 @@
       "C": "仅 II、IV",
       "D": "仅IV、V"
     },
-    "answer": "DA",
+    "answer": "D",
     "analysis": "依据答案文本已回填；选项缺失处已自动补全。",
     "difficulty": 2,
     "knowledge_points": [

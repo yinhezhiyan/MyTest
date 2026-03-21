@@ -14,7 +14,9 @@ import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Locale;
 import java.util.Map;
+import java.util.Objects;
 
 @Component
 public class DataInitializer implements CommandLineRunner {
@@ -60,6 +62,7 @@ public class DataInitializer implements CommandLineRunner {
         ensureSubjectBankFromFile("CO", "co-extension.json", BANK_TYPE_EXTENSION);
 
         seedKnowledgeRelations();
+        normalizeStoredAnswers();
         knowledgeGraphService.refreshAllSubjects(List.of("DS", "OS", "CN", "CO"));
     }
 
@@ -232,13 +235,49 @@ public class DataInitializer implements CommandLineRunner {
                         """,
                         String.valueOf(item.get("id")), subject, String.valueOf(item.get("chapter")), String.valueOf(item.get("chapterSlug")),
                         String.valueOf(item.get("stem")), options.get("A"), options.get("B"), options.get("C"), options.get("D"),
-                        String.valueOf(item.get("answer")), String.valueOf(item.getOrDefault("analysis", "")),
+                        normalizeAnswer(String.valueOf(item.get("answer"))), String.valueOf(item.getOrDefault("analysis", "")),
                         Integer.parseInt(String.valueOf(item.getOrDefault("difficulty", 2))), kp,
                         String.valueOf(item.getOrDefault("attachment_url", "")), bankType);
             }
         } catch (Exception e) {
             throw new IllegalStateException("初始化题库失败: " + subject + "(" + fileName + ")", e);
         }
+    }
+
+    private void normalizeStoredAnswers() {
+        jdbcTemplate.queryForList("select id, subject, answer from exercise")
+                .forEach(row -> {
+                    String original = Objects.toString(row.get("answer"), "");
+                    String normalized = normalizeAnswer(original);
+                    if (!original.equals(normalized)) {
+                        jdbcTemplate.update("update exercise set answer=? where id=? and subject=?", normalized, row.get("id"), row.get("subject"));
+                    }
+                });
+
+        jdbcTemplate.queryForList("select id, correct_answer, chosen_option from user_answer")
+                .forEach(row -> {
+                    Integer id = ((Number) row.get("id")).intValue();
+                    String originalCorrect = Objects.toString(row.get("correct_answer"), "");
+                    String normalizedCorrect = normalizeAnswer(originalCorrect);
+                    String originalChosen = Objects.toString(row.get("chosen_option"), "");
+                    String normalizedChosen = normalizeAnswer(originalChosen);
+                    if (!originalCorrect.equals(normalizedCorrect) || !originalChosen.equals(normalizedChosen)) {
+                        jdbcTemplate.update("update user_answer set correct_answer=?, chosen_option=? where id=?", normalizedCorrect, normalizedChosen, id);
+                    }
+                });
+    }
+
+    private String normalizeAnswer(String raw) {
+        if (raw == null) {
+            return "A";
+        }
+        String upper = raw.trim().toUpperCase(Locale.ROOT);
+        for (char ch : upper.toCharArray()) {
+            if (ch >= 'A' && ch <= 'D') {
+                return String.valueOf(ch);
+            }
+        }
+        return "A";
     }
 
     private void seedKnowledgeRelations() {
