@@ -2,6 +2,7 @@ package com.example.config;
 
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.example.service.KnowledgeGraphService;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
@@ -23,11 +24,13 @@ public class DataInitializer implements CommandLineRunner {
 
     private final JdbcTemplate jdbcTemplate;
     private final ObjectMapper objectMapper;
+    private final KnowledgeGraphService knowledgeGraphService;
     private final BCryptPasswordEncoder passwordEncoder = new BCryptPasswordEncoder();
 
-    public DataInitializer(JdbcTemplate jdbcTemplate, ObjectMapper objectMapper) {
+    public DataInitializer(JdbcTemplate jdbcTemplate, ObjectMapper objectMapper, KnowledgeGraphService knowledgeGraphService) {
         this.jdbcTemplate = jdbcTemplate;
         this.objectMapper = objectMapper;
+        this.knowledgeGraphService = knowledgeGraphService;
     }
 
     @Override
@@ -37,6 +40,8 @@ public class DataInitializer implements CommandLineRunner {
         initExerciseTable();
         ensureExerciseColumns();
         initUserAnswerTable();
+        initKnowledgePointTable();
+        ensureKnowledgePointColumns();
         initKnowledgeRelationTable();
 
         initAdmin("DS");
@@ -44,17 +49,18 @@ public class DataInitializer implements CommandLineRunner {
         initAdmin("CN");
         initAdmin("CO");
 
-        replaceSubjectBankFromFile("DS", "ds.json", BANK_TYPE_MAIN);
-        replaceSubjectBankFromFile("OS", "os.json", BANK_TYPE_MAIN);
-        replaceSubjectBankFromFile("CN", "cn.json", BANK_TYPE_MAIN);
-        replaceSubjectBankFromFile("CO", "co.json", BANK_TYPE_MAIN);
+        ensureSubjectBankFromFile("DS", "ds.json", BANK_TYPE_MAIN);
+        ensureSubjectBankFromFile("OS", "os.json", BANK_TYPE_MAIN);
+        ensureSubjectBankFromFile("CN", "cn.json", BANK_TYPE_MAIN);
+        ensureSubjectBankFromFile("CO", "co.json", BANK_TYPE_MAIN);
 
-        replaceSubjectBankFromFile("DS", "ds-extension.json", BANK_TYPE_EXTENSION);
-        replaceSubjectBankFromFile("OS", "os-extension.json", BANK_TYPE_EXTENSION);
-        replaceSubjectBankFromFile("CN", "cn-extension.json", BANK_TYPE_EXTENSION);
-        replaceSubjectBankFromFile("CO", "co-extension.json", BANK_TYPE_EXTENSION);
+        ensureSubjectBankFromFile("DS", "ds-extension.json", BANK_TYPE_EXTENSION);
+        ensureSubjectBankFromFile("OS", "os-extension.json", BANK_TYPE_EXTENSION);
+        ensureSubjectBankFromFile("CN", "cn-extension.json", BANK_TYPE_EXTENSION);
+        ensureSubjectBankFromFile("CO", "co-extension.json", BANK_TYPE_EXTENSION);
 
         seedKnowledgeRelations();
+        knowledgeGraphService.refreshAllSubjects(List.of("DS", "OS", "CN", "CO"));
     }
 
     private void initUserTable() {
@@ -138,6 +144,31 @@ public class DataInitializer implements CommandLineRunner {
                 """);
     }
 
+    private void initKnowledgePointTable() {
+        jdbcTemplate.execute("""
+                create table if not exists knowledge_point (
+                    id bigint primary key auto_increment,
+                    subject varchar(20) not null,
+                    kp_name varchar(100) not null,
+                    description text,
+                    chapter_refs text,
+                    exercise_count int default 0,
+                    weight decimal(6,2) default 1.00,
+                    source_type varchar(20) default 'AUTO',
+                    created_at datetime default current_timestamp,
+                    updated_at datetime default current_timestamp on update current_timestamp,
+                    unique key uk_kp_subject_name(subject, kp_name),
+                    index idx_kp_subject(subject)
+                )
+                """);
+    }
+
+    private void ensureKnowledgePointColumns() {
+        if (!columnExists("knowledge_point", "weight")) {
+            jdbcTemplate.execute("alter table knowledge_point add column weight decimal(6,2) default 1.00");
+        }
+    }
+
     private void initKnowledgeRelationTable() {
         jdbcTemplate.execute("""
                 create table if not exists knowledge_relation (
@@ -148,6 +179,8 @@ public class DataInitializer implements CommandLineRunner {
                     relation_type varchar(32) default 'related',
                     weight decimal(6,2) default 1.00,
                     created_at datetime default current_timestamp,
+                    updated_at datetime default current_timestamp on update current_timestamp,
+                    unique key uk_kg_subject_edge(subject, source_kp, target_kp, relation_type),
                     index idx_kg_subject_source(subject, source_kp),
                     index idx_kg_subject_target(subject, target_kp)
                 )
@@ -171,7 +204,16 @@ public class DataInitializer implements CommandLineRunner {
         }
     }
 
-    private void replaceSubjectBankFromFile(String subject, String fileName, String bankType) {
+    private void ensureSubjectBankFromFile(String subject, String fileName, String bankType) {
+        Integer count = jdbcTemplate.queryForObject(
+                "select count(1) from exercise where subject=? and bank_type=?",
+                Integer.class,
+                subject,
+                bankType
+        );
+        if (count != null && count > 0) {
+            return;
+        }
         Path file = resolveQuestionBank(fileName);
         if (file == null) {
             return;
@@ -179,8 +221,6 @@ public class DataInitializer implements CommandLineRunner {
         try {
             String content = Files.readString(file);
             List<Map<String, Object>> items = objectMapper.readValue(content, new TypeReference<>() {});
-
-            jdbcTemplate.update("delete from exercise where subject=? and bank_type=?", subject, bankType);
 
             for (Map<String, Object> item : items) {
                 Map<String, String> options = (Map<String, String>) item.getOrDefault("options", Map.of());
@@ -202,7 +242,6 @@ public class DataInitializer implements CommandLineRunner {
     }
 
     private void seedKnowledgeRelations() {
-        jdbcTemplate.update("delete from knowledge_relation");
         List<Object[]> rows = List.of(
                 new Object[]{"DS", "数据结构的基本概念", "算法复杂度", "related", 1.15},
                 new Object[]{"DS", "线性表", "递归与分治", "related", 1.05},
@@ -223,7 +262,11 @@ public class DataInitializer implements CommandLineRunner {
         );
         for (Object[] row : rows) {
             jdbcTemplate.update(
-                    "insert into knowledge_relation(subject, source_kp, target_kp, relation_type, weight) values(?,?,?,?,?)",
+                    """
+                    insert into knowledge_relation(subject, source_kp, target_kp, relation_type, weight)
+                    values(?,?,?,?,?)
+                    on duplicate key update weight=values(weight)
+                    """,
                     row
             );
         }
